@@ -1,0 +1,431 @@
+\begin{thebibliography}{67}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abbott(1983)}]{Abbott1983}
+Abbott, Russell~J. 1983.
+\newblock Program design by informal {E}nglish descriptions.
+\newblock \emph{Communications of the ACM} 26. 882--894.
+\newblock \urlprefix\url{doi:10.1145/182.358441}.
+
+\bibitem[{Amith \& Maxwell(2005)}]{AmithEtAl2005}
+Amith, Jonathan~D. \& Michael Maxwell. 2005.
+\newblock Language documentation: {T}he {N}ahuatl grammar.
+\newblock In \emph{\textit{Computational {L}inguistics and {I}ntelligent {T}ext
+  {P}rocessing}} Lecture Notes in Computer Science, 474--485. Berlin: Springer.
+\newblock
+  \urlprefix\url{http://www.springerlink.com/content/26tpwwnptltcvjy8/}.
+
+\bibitem[{Bahrani et~al.(2011)Bahrani, Sameti \& Manshadi}]{BahraniEtAl2011}
+Bahrani, Mohammad, Hossein Sameti \& Mehdi~Hafezi Manshadi. 2011.
+\newblock A computational grammar for {P}ersian based on {G}{P}{S}G.
+\newblock \urlprefix\url{doi: 10.1007/s10579-011-9144-1}.
+
+\bibitem[{Baraby(this volume)}]{Barabytv}
+Baraby, Anne-Marie. this volume.
+\newblock Reference grammars for speakers of minority languages.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  78--101. Manoa: University of Hawai'i Press.
+
+\bibitem[{Bauer(2010)}]{Bauer2010}
+Bauer, Laurie. 2010.
+\newblock An overview of morphological universals.
+\newblock \emph{Word Structure} 3. 131--140.
+\newblock \urlprefix\url{doi:10.3366/word.2010.0001}.
+
+\bibitem[{Beesley \& Karttunen(2003)}]{BeesleyEtAl2003}
+Beesley, Kenneth~R. \& Lauri Karttunen. 2003.
+\newblock \emph{Finite {S}tate {M}orphology} CSLI Studies in Computational
+  Linguistics.
+\newblock Chicago: University of Chicago Press.
+
+\bibitem[{Bender et~al.(2010)Bender, Drellishak, Fokkens, Goodman, Mills,
+  Poulson \& Saleem}]{BenderEtAl2010}
+Bender, Emily, Scott Drellishak, Antske Fokkens, Michael~Wayne Goodman,
+  Daniel~P. Mills, Laurie Poulson \& Sa[FB01?]yyah Saleem. 2010.
+\newblock Grammar prototyping and testing with the {L}in{G}{O} grammar matrix
+  customization system.
+\newblock In \emph{A{C}{L} 2010 {S}ystem {D}emonstrations}, 1--6.
+\newblock \urlprefix\url{http://aclweb.org/anthology-new/P/P10/P10-4.pdf}.
+
+\bibitem[{Bender et~al.(this volume)Bender, Ghodke, Baldwin \&
+  Dridan}]{Bendertv}
+Bender, Emily~M., Sumukh Ghodke, Timothy Baldwin \& Rebecca Dridan. this
+  volume.
+\newblock From {D}atabase to {T}reebank: {O}n {E}nhancing {H}ypertext
+  {G}rammars with {G}rammar {E}ngineering and {T}reebank {S}earch.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  179--206. Manoa: University of Hawai'i Press.
+
+\bibitem[{Berry \& Kamsties(2003)}]{BerryEtAL2003}
+Berry, Daniel~M. \& Erik Kamsties. 2003.
+\newblock Ambiguity in requirements specification.
+\newblock In \emph{Perspectives on {S}oftware {R}equirements}, vol. 753 The
+  Springer International Series in Engineering and Computer Science, Springer.
+
+\bibitem[{Bird \& Simons(2003)}]{BirdEtAl2003}
+Bird, Steven \& Gary Simons. 2003.
+\newblock Seven dimensions of portability for language documentation and
+  description.
+\newblock \emph{Language} 79. 557--582.
+
+\bibitem[{Borghoff \& Schmitz(2003)}]{BorghoffEtAl2003}
+Borghoff, Jan~Scheffczyk, Uwe M.; Peter~R\"odig \& Lothar Schmitz. 2003.
+\newblock \emph{Long-{T}erm {P}reservation of {D}igital {D}ocuments:
+  {P}rinciples and {P}ractices}.
+\newblock Berlin: Springer.
+
+\bibitem[{Buckheit \& Donoho(1995)}]{BuckheitEtAl1995}
+Buckheit, J \& D~L Donoho. 1995.
+\newblock Wavelab and {R}eproducible {R}esearch.
+\newblock In A~Antoniadis (ed.), \emph{Wavelets and {S}tatistics}, 55--81.
+  Springer.
+\newblock
+  \urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.53.62%
+01}.
+
+\bibitem[{Carrier(1979)}]{Carrier1979}
+Carrier, Jill. 1979.
+\newblock \emph{The interaction of morphological and phonological rules in
+  {T}agalog: a study in the relationship between rule components in grammar}.
+\newblock Cambridge, MA: MIT dissertation.
+\newblock \urlprefix\url{http://hdl.handle.net/1721.1/16199}.
+
+\bibitem[{Carstairs(1987)}]{Carstairs1987}
+Carstairs, Andrew. 1987.
+\newblock \emph{Allomorphy in {I}nflexion} Croom Helm Lingustic Series.
+\newblock Croom Helm.
+
+\bibitem[{Chomsky(1956)}]{Chomsky1956}
+Chomsky, Noam. 1956.
+\newblock {T}hree models for the description of language.
+\newblock \emph{IRE Transactions on Information Theory} 2. 113--124.
+\newblock \urlprefix\url{http://www.chomsky.info/articles/195609--.pdf}.
+
+\bibitem[{Chomsky(1964)}]{Chomsky1964}
+Chomsky, Noam. 1964.
+\newblock The logical basis of linguistic theory.
+\newblock In \emph{Ninth {I}nternational {C}ongress of {L}inguists}, 914--1008.
+  The Hague: Mouton.
+
+\bibitem[{Chomsky(1965)}]{Chomsky1965}
+Chomsky, Noam. 1965.
+\newblock \emph{Aspects of the {T}heory of {S}yntax}.
+\newblock Cambridge, MA: MIT Press.
+
+\bibitem[{Chomsky \& Halle(1965)}]{ChomskyEtAl1965}
+Chomsky, Noam \& Morris Halle. 1965.
+\newblock Some controversial questions in phonological theory.
+\newblock \emph{Journal of Linguistics} 1. 97--138.
+
+\bibitem[{Claerbout \& Karrenbach(1992)}]{ClaerboutEtAl1992}
+Claerbout, Jon \& Martin Karrenbach. 1992.
+\newblock Electronic documents give reproducible research a new meaning.
+\newblock In \emph{62nd {A}nnual {I}nternational {M}eeting of the {S}ociety of
+  {E}xploration {G}eophysics}, 601--604.
+\newblock
+  \urlprefix\url{http://sepwww.stanford.edu/doku.php?id=sep:research:reproduci%
+ble:seg92}.
+
+\bibitem[{David \& Maxwell(2008)}]{DavidEtAl2008}
+David, Anne \& Michael Maxwell. 2008.
+\newblock Joint grammar development by linguists and computer scientists.
+\newblock In \emph{Workshop on {N}{L}{P} for {L}ess {P}rivileged {L}anguages,
+  {T}hird {I}nternational {J}oint {C}onference on {N}atural {L}anguage
+  {P}rocessing}, 27--34. Hyderabad, India: Asian Federation of Natural Language
+  Processing.
+\newblock \urlprefix\url{http://hdl.handle.net/1903/7567}.
+
+\bibitem[{Dixon(2010)}]{Dixon2010}
+Dixon, R.M.W. 2010.
+\newblock \emph{Basic {L}inguistic {T}heory, {V}olume 1: {M}ethodology}.
+\newblock Oxford: Oxford University Press.
+
+\bibitem[{Donoho et~al.(2009)Donoho, Maleki, Rahman, Shahram \&
+  Stodden}]{DonohoEtAl2009}
+Donoho, David~L., Arian Maleki, Inam~Ur Rahman, Morteza Shahram \& Victoria
+  Stodden. 2009.
+\newblock Reproducible research in computational harmonic analysis.
+\newblock \emph{Computing in Science and Engineering} 11. 8--18.
+\newblock
+  \urlprefix\url{http://doi.ieeecomputersociety.org/10.1109/MCSE.2009.15}.
+
+\bibitem[{Dryer(2006)}]{Dryer2006}
+Dryer, Matthew. 2006.
+\newblock Descriptive theories, explanatory theories, and basic linguistic
+  theory.
+\newblock In A.~Dench F.~Ameka \& N.~Evans (eds.), \emph{Catching {L}anguage:
+  {T}he {S}tanding {C}hallenge of {G}rammar {W}riting}, 235--268. Berlin:
+  Mouton de Gruyter.
+
+\bibitem[{Fomel \& Claerbout(2009)}]{FomelEtAl2009}
+Fomel, S. \& J.~F Claerbout. 2009.
+\newblock Guest editors' introduction: {R}eproducible research.
+\newblock \emph{Computing in Science Engineering} 11. 5--7.
+\newblock \urlprefix\url{doi:10.1109/MCSE.2009.14}.
+
+\bibitem[{Frampton(2009)}]{Frampton2009}
+Frampton, J. 2009.
+\newblock \emph{Distributed reduplication}.
+\newblock MIT Press.
+
+\bibitem[{Gamboa(2003)}]{Gamboa2003}
+Gamboa, R. 2003.
+\newblock Writing literate proofs with {X}{M}{L} tools.
+\newblock In \emph{Fourth {I}nternational {W}orkshop on the {A}{C}{L}2
+  {T}heorem {P}rover and its {A}pplications}, Boulder, CO.
+
+\bibitem[{Gentleman \& Lang(2004)}]{GentlemanEtAl2004}
+Gentleman, Robert \& Duncan~Temple Lang. 2004.
+\newblock \emph{Statistical analyses and reproducible research} Bioconductor
+  Project Working Papers Working Paper 2.
+\newblock \urlprefix\url{http://www.bepress.com/bioconductor/paper2}.
+
+\bibitem[{Goldsmith(2001)}]{Goldsmith2001}
+Goldsmith, John. 2001.
+\newblock Unsupervised learning of the morphology of a natural language.
+\newblock \emph{Computational Linguistics} 153--189.
+
+\bibitem[{Hothorn \& Leisch(2011)}]{Hothorn2011}
+Hothorn, Torsten \& Friedrich Leisch. 2011.
+\newblock Case studies in reproducibility.
+\newblock \emph{Briefings in Bioinformatics}
+  \urlprefix\url{doi:10.1093/bib/bbq084.}
+
+\bibitem[{Hughes \& Bow(2003)}]{HughesEtAL2003}
+Hughes, Baden; Steven~Bird \& Catherine Bow. 2003.
+\newblock Encoding and presenting interlinear text using {X}{M}{L}
+  technologies.
+\newblock In \emph{Australasian {L}anguage {T}echnology {W}orkshop 2003},
+  Melbourne, Australia.
+
+\bibitem[{Inkelas \& Zoll(2005)}]{InkelasEtAl2005}
+Inkelas, Sharon \& Cheryl Zoll. 2005.
+\newblock \emph{Reduplication: doubling in morphology} Cambridge studies in
+  linguistics.
+\newblock Cambridge, UK: Cambridge University Press.
+
+\bibitem[{Kamsties et~al.(2003)Kamsties, Berry \& Krieger}]{KamstiesEtAl2003}
+Kamsties, Erik, Daniel~M. Berry \& Mickey Krieger. 2003.
+\newblock \emph{From contract drafting to software specification: {L}inguistic
+  sources of ambiguity, {A} {H}andbook}.
+\newblock Waterloo, Ontario: School of Computer Science, University of
+  Waterloo.
+\newblock
+  \urlprefix\url{http://se.uwaterloo.ca/~dberry/handbook/ambiguityHandbook.pdf%
+}.
+
+\bibitem[{Karttunen(2006)}]{Karttunen2006}
+Karttunen, Lauri. 2006.
+\newblock The insufficiency of paper-and-pencil linguistics: the case of
+  {F}innish prosody -- {I}ntelligent {L}inguistic {A}rchitectures --
+  {V}ariations on themes by {R}onald {M}. {K}aplan, 287--300. Stanford,
+  California: CSLI Publications.
+
+\bibitem[{Knuth(1986)}]{Knuth1986}
+Knuth, Donald~E. 1986.
+\newblock Computers and typesetting.
+\newblock \emph{TUGboat} 7.
+\newblock Reprinted in Donald Knuth (1999) pp. 95-98.
+
+\bibitem[{Knuth(1992)}]{Knuth1992}
+Knuth, Donald~E. 1992.
+\newblock \emph{Literate {P}rogramming} CSLI Lecture Notes.
+\newblock Stanford: Center for the Study of Language and Information.
+
+\bibitem[{Knuth(1999)}]{Knuth1999}
+Knuth, Donald~E. 1999, vol.~78 CSLI Lecture Notes.
+\newblock Stanford: CSLI Publications.
+
+\bibitem[{Knuth(1996)}]{Knuth1996}
+Knuth, Donald E.~1996. 1996.
+\newblock Questions and {A}nswers, {I}I.
+\newblock \emph{TUGboat} 17. 355--367.
+\newblock Reprinted in Donald Knuth (1999) pp. 601-624.
+
+\bibitem[{Koenker \& Zeileis(2009)}]{KoenkerEtAl2009}
+Koenker, Roger \& Achim Zeileis. 2009.
+\newblock On reproducible econometric research.
+\newblock \emph{Journal of Applied Econometrics} 24. 833--847.
+\newblock \urlprefix\url{doi:10.1002/jae.1083}.
+
+\bibitem[{Laine et~al.(2007)Laine, Goodman, Griswold \& Sox}]{LaineEtAl2007}
+Laine, Christine, Steven~N Goodman, Michael~E Griswold \& Harold~C Sox. 2007.
+\newblock Reproducible research: {M}oving toward research the public can really
+  trust.
+\newblock \emph{Annals of Internal Medicine} 146. 450--453.
+
+\bibitem[{Leisch(2002)}]{Leisch2002}
+Leisch, Friedrich. 2002.
+\newblock Sweave: {D}ynamic generation of statistical reports using literate
+  data analysis.
+\newblock In Wolfgang H\"ardle \& Bernd R\"onz (eds.), \emph{Compstat
+  2002---{P}roceedings in {C}omputational {S}tatistics}, 575--580. Heidelberg:
+  Physica Verlag.
+\newblock \urlprefix\url{http://www.stat.uni-muenchen.de/leisch/Sweave}.
+
+\bibitem[{Lenth \& H{\o}jsgaard(2011)}]{LenthEtAl2011}
+Lenth, Russell \& S{\o}ren H{\o}jsgaard. 2011.
+\newblock Reproducible statistical analysis with multiple languages.
+\newblock \emph{Computational Statistics} 1--8.
+\newblock \urlprefix\url{doi:10.1007/s00180-011-0245-5}.
+
+\bibitem[{Lewis et~al.(2008)Lewis, Xia \& Jinguji}]{LewisEtAl2008}
+Lewis, William, Fei Xia \& Dan Jinguji. 2008.
+\newblock Enriching language data through projected structures.
+\newblock \emph{Texas Linguistics Society} 10. 85--98.
+\newblock
+  \urlprefix\url{http://csli-publications.stanford.edu/TLS/TLS10-2006/TLS10_Le%
+wis_Xia_Jinguji.pdf}.
+
+\bibitem[{Marantz(1982)}]{Marantz1982}
+Marantz, Alec. 1982.
+\newblock Re-reduplication.
+\newblock \emph{Linguistic Inquiry} 13. 435--482.
+
+\bibitem[{Maxwell \& Amith(2005)}]{MaxwellEtAl2005}
+Maxwell, Michael \& Jonathan Amith. 2005.
+\newblock {L}anguage documentation -- {A}rchiving grammars.
+\newblock Presented at CLS 2005.
+
+\bibitem[{Maxwell \& David(2008)}]{MaxwellEtAl2008}
+Maxwell, Michael \& Anne David. 2008.
+\newblock Interoperable grammars.
+\newblock In \emph{First {I}nternational {C}onference on {G}lobal
+  {I}nteroperability for {L}anguage {R}esources ({I}{C}{G}{L} 2008)}, 155--162.
+  Hong Kong.
+\newblock \urlprefix\url{http://hdl.handle.net/1903/7568}.
+
+\bibitem[{Maxwell(1996)}]{Maxwell1996}
+Maxwell, Michael~B. 1996.
+\newblock {T}wo theories of morphology, one implementation.
+\newblock Paper presented at the meeting of the SIL 1996 General CARLA
+  Conference, Waxhaw, NC.
+\newblock \urlprefix\url{http://www.sil.org/silewp/1998/001/}.
+
+\bibitem[{McCarthy \& Prince(1995)}]{McCarthyEtAl1995}
+McCarthy, John~J. \& Alan Prince. 1995.
+\newblock Faithfulness and reduplicative identity.
+\newblock In Laura~Walsh Jill N.~Beckman \& Suzanne Urbanczyk (eds.),
+  \emph{University of {M}assachusetts {O}ccasional {P}apers}, vol.~18 Papers in
+  Optimality Theory, 249--384. University of Massachusetts, Amherst: UMOP.
+
+\bibitem[{Meyer(1985)}]{Meyer1985}
+Meyer, Bertrand. 1985.
+\newblock On formalism in specifications.
+\newblock \emph{IEEE Software} 3. 6--25.
+
+\bibitem[{Mielke(2008)}]{Mielke2008}
+Mielke, Jeff. 2008.
+\newblock \emph{The emergence of distinctive features}.
+\newblock Oxford: Oxford University Press.
+
+\bibitem[{Morse \& Maxwell(1999)}]{MorseEtAl1999}
+Morse, Nancy~L. \& Michael~B. Maxwell. 1999.
+\newblock \emph{Cubeo {G}rammar}, vol.~5.
+\newblock Dallas, TX: Summer Institute of Linguistics.
+
+\bibitem[{Munro \& Benson(1973)}]{MunroEtAl1973}
+Munro, P. \& P.~J. Benson. 1973.
+\newblock Reduplication and rule ordering in {L}uise{\~n}o.
+\newblock \emph{IJAL} 39. 15--21.
+
+\bibitem[{Musgrave \& Thieberger(this volume)}]{Thiebergertv}
+Musgrave, Simon \& Nick Thieberger. this volume.
+\newblock Language description and hypertext: {N}unggubuyu as a case study.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  63--77. Manoa: University of Hawai'i Press.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008}
+Nordhoff, S. 2008.
+\newblock Electronic reference grammars for typology: {C}hallenges and
+  solutions.
+\newblock \emph{Language Documentation \& Conservation} 2. 296--324.
+\newblock \urlprefix\url{http://hdl.handle.net/10125/4352}.
+
+\bibitem[{Payne(1981)}]{Payne1981}
+Payne, David~L. 1981.
+\newblock \emph{he {P}honology and morphology of {A}xininca {C}ampa}, vol.~66
+  Summer Institute of Linguistics Publications in Linguistics.
+\newblock Dallas, TX: Summer Inst. of Ling. and Univ. of Texas at Arlington.
+
+\bibitem[{Pedersen(2008)}]{Pedersen2008}
+Pedersen, Ted. 2008.
+\newblock Empiricism is not a matter of faith.
+\newblock \emph{Computational Linguistics} 34. 465--470.
+
+\bibitem[{Peng \& Zeger(2006)}]{PengEtAl2006}
+Peng, Francesca~Dominici, Roger~D \& Scott~L Zeger. 2006.
+\newblock Reproducible epidemiologic research.
+\newblock \emph{American Journal of Epidemiology} 163. 783--789.
+\newblock \urlprefix\url{doi:10.1093/aje/kwj093}.
+
+\bibitem[{Peng(2009)}]{Peng2009}
+Peng, Roger~D. 2009.
+\newblock Reproducible research and biostatistics.
+\newblock \emph{Biostatistics} 10. 405--408.
+\newblock \urlprefix\url{doi:10.1093/biostatistics/kxp014}.
+
+\bibitem[{Raimy(2000)}]{Raimy2000}
+Raimy, E. 2000.
+\newblock \emph{The phonology and morphology of reduplication} Studies in
+  generative grammar.
+\newblock The Hague: Mouton de Gruyter.
+
+\bibitem[{Raymond(2004)}]{Raymond2004}
+Raymond, Eric~Steven. 2004.
+\newblock \emph{The art of {U}{N}{I}{X} programming}.
+\newblock Boston: Addison-Wesley.
+
+\bibitem[{Schmid(2005)}]{Schmid2005}
+Schmid, Helmut. 2005.
+\newblock A {P}rogramming language for finite state transducers.
+
+\bibitem[{Thieberger(2009)}]{Thieberger2009}
+Thieberger, N. 2009.
+\newblock Steps toward a grammar embedded in data.
+\newblock In Patricia Epps \& Alexandre Arkhipov (eds.), \emph{New {C}hallenges
+  in {T}ypology: {T}ranscending the {B}orders and {R}efining the
+  {D}istinctions}, 389--408. Berlin, New York, NY: Mouton de Gruyter.
+
+\bibitem[{Vandewalle et~al.(2009)Vandewalle, Kova\v{c}evi\'c \&
+  Vetterli}]{VandewalleEtAl2009}
+Vandewalle, Patrick, Jelena Kova\v{c}evi\'c \& Martin Vetterli. 2009.
+\newblock Reproducible research in signal {P}rocessing---{W}hat, why and how.
+\newblock \emph{IEEE Signal Processing Magazine} 26. 37--47.
+\newblock \urlprefix\url{doi:10.1109/MSP.2009.932122}.
+
+\bibitem[{Walsh(2002)}]{Walsh2002}
+Walsh, Norman. 2002.
+\newblock \emph{Literate programming in {X}{M}L}.
+\newblock \urlprefix\url{http://nwalsh.com/docs/articles/xml2002/paper.pdf}.
+
+\bibitem[{Walsh \& Hamilton(2011)}]{WalshEtAl2011}
+Walsh, Norman \& Richard Hamilton. 2011.
+\newblock \emph{Doc{B}ook 5: {T}he {D}efinitive guide}.
+\newblock Sebastopol, CA: O'Reilly Press.
+\newblock \urlprefix\url{http://www.docbook.org/tdg5/en/html/docbook.html}.
+
+\bibitem[{Weber et~al.(1988)Weber, Black \& McConnel}]{WeberEtAl1988}
+Weber, David~J., H.~Andrew Black \& Stephen~R. McConnel. 1988.
+\newblock \emph{A{M}{P}{L}{E}: {A} {T}ool for exploring morphology}, vol.~12
+  Occasional Publications in Academic Computing.
+\newblock Dallas: Summer Institute of Linguistics.
+
+\bibitem[{Wiegers(2003)}]{Wiegers2003}
+Wiegers, Karl. 2003.
+\newblock \emph{Software requirements: practical techniques for gathering and
+  managing requirements throughout the product development cycle}.
+\newblock Redmond, WA.: Microsoft Press 2nd edn.
+
+\bibitem[{Wilbur(1973)}]{Wilbur1973}
+Wilbur, Ronnie. 1973.
+\newblock \emph{The {P}honology of {R}eduplication}.
+\newblock Bloomington, IN: Indiana University Linguistics Club.
+
+\end{thebibliography}

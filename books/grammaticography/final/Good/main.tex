@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % please use UTF8 encoding
+\usepackage[authoryear]{natbib} 
+% \usepackage{gb4e}
+
+\usepackage{times,amsmath,xspace,setspace,natbib,fancyhdr,pdfsync,url,lingmacros}
+\usepackage[pdftex]{graphics} 
+\usepackage[overload]{textcase}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+\newcommand{\pref}[1]{(\ref{#1})}
+\newcommand{\sref}[1]{section \ref{#1}}
+\newcommand{\tref}[1]{table \ref{#1}}
+\newcommand{\fref}[1]{figure \ref{#1}}
+\newcommand{\tv}[1]{\colorbox{yellow}{#1, this volume}}
+
+\newcommand\Hline{\hline}
+\newcommand\namecite{\citet}
+\newcommand\citeboth{\citealt}
+\newcommand{\quotecite}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+\newcommand{\chapterauthor}{}
+\renewcommand{\cite}{\citep}
+\bibpunct[:~]{(}{)}{;}{a}{}{;}
+
+\urlstyle{rm}
+           
+
+\newcommand{\imgpath}{./}
+\begin{document}
+\chapter{Deconstructing descriptive grammars}
+\include{good}
+\bibliographystyle{unified}
+\bibliography{good,tv}
+
+\end{document}

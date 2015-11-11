@@ -1,0 +1,158 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Atkins \& Ostler(1992)}]{AtkinsEtAl1992}
+Atkins, Jeremy~Clear, Sue \& Nicholas Ostler. 1992.
+\newblock Corpus design criteria.
+\newblock \emph{Literary and Linguistic Computing} 7(1).
+
+\bibitem[{Bender et~al.(this volume)Bender, Ghodke, Baldwin \&
+  Dridan}]{Bendertv}
+Bender, Emily~M., Sumukh Ghodke, Timothy Baldwin \& Rebecca Dridan. this
+  volume.
+\newblock From {D}atabase to {T}reebank: {O}n {E}nhancing {H}ypertext
+  {G}rammars with {G}rammar {E}ngineering and {T}reebank {S}earch.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  179--206. Manoa: University of Hawai'i Press.
+
+\bibitem[{Clancy(2010)}]{Clancy2010}
+Clancy, Brian. 2010.
+\newblock Building a corpus to represent a variety of language.
+\newblock In Anne O'Keeffe \& Michael McCarthy (eds.), \emph{The {R}outlege
+  {H}andbook of {C}orpus {L}inguistics}, 80--92. Abingdon: Routledge.
+
+\bibitem[{Friedl(2006)}]{Friedl2006}
+Friedl, Jeffrey E.~F. 2006.
+\newblock \emph{Mastering regular expressions}.
+\newblock Beijing: O'Reilly.
+
+\bibitem[{Hengeveld \& Rijkoff(2005)}]{HengeveldEtAl2005}
+Hengeveld, Kees \& Jan Rijkoff. 2005.
+\newblock Mundari as a flexible language.
+\newblock \emph{Linguistic Typology} 9. 406--431.
+
+\bibitem[{Hengeveld et~al.(2004)Hengeveld, Rijkoff \&
+  Siewierska}]{HengeveldEtAl2004}
+Hengeveld, Kees, Jan Rijkoff \& Anna Siewierska. 2004.
+\newblock Part-of-speech systems and word order.
+\newblock \emph{Journal of Linguistics} 40. 527--570.
+
+\bibitem[{McEnery \& Hardie(2012)}]{McEneryEtAl2012}
+McEnery, Tony \& Andrew Hardie. 2012.
+\newblock \emph{Corpus {L}inguistics}.
+\newblock Cambridge: CUP.
+
+\bibitem[{Mosel(1980)}]{Mosel1980}
+Mosel, Ulrike. 1980.
+\newblock \emph{Tolai and {T}ok {P}isin. {T}he influence of the substratum on
+  the development of {N}ew {G}uinea {P}idgin}, vol.~73 Pacific Linguistics B.
+\newblock Canberra: Australian National University Press.
+
+\bibitem[{Mosel(1984)}]{Mosel1984}
+Mosel, Ulrike. 1984.
+\newblock \emph{Tolai syntax and its historical development}, vol.~73 Pacific
+  Linguistics B.
+\newblock Canberra: A.N.U. Press.
+
+\bibitem[{Mosel(2006{\natexlab{a}})}]{Mosel2006a}
+Mosel, Ulrike. 2006{\natexlab{a}}.
+\newblock The art and craft of writing grammars.
+\newblock In Felix Ameka, Alan Dench \& Nicholas Evans (eds.), \emph{Catching
+  language -- {T}he standing challenge of grammar writing}, 41--68. Berlin, New
+  York: Mouton de Gruyter.
+
+\bibitem[{Mosel(2006{\natexlab{b}})}]{Mosel2006b}
+Mosel, Ulrike. 2006{\natexlab{b}}.
+\newblock Fieldwork and community language work.
+\newblock In Jost Gippert, Nikolaus Himmelmann \& Ulrike Mosel (eds.),
+  \emph{Essentials of language documentation}, 67--85. Berlin, New York: Mouton
+  de Gruyter.
+
+\bibitem[{Mosel(2007)}]{Mosel2007}
+Mosel, Ulrike. 2007.
+\newblock Teop sketch grammar.
+\newblock With Yvonne Thiesen.
+\newblock
+  \urlprefix\url{http://www.linguistik.uni-kiel.de/mosel\_publikationen.htm\#d%
+ownload}.
+
+\bibitem[{Mosel(forthcoming)}]{Moselforthcoming}
+Mosel, Ulrike. forthcoming.
+\newblock \emph{Corpus linguistic and documentary approaches in writing a
+  grammar of a previously undescribed language}.
+
+\bibitem[{Mosel(in prep.)}]{Moselinpreparation}
+Mosel, Ulrike. in prep.
+\newblock \emph{A corpus-based reference grammar of {T}eop}.
+
+\bibitem[{Mosel \& Hovdhaugen(1992)}]{MoselEtAl1992}
+Mosel, Ulrike \& Even Hovdhaugen. 1992.
+\newblock \emph{Samoan {R}eference {G}rammar}.
+\newblock Oslo: Scandinavian University Press.
+
+\bibitem[{Mosel et~al.(2007)Mosel, Magum, Magum, Maion, Maion, Reinig, Rigamu,
+  Sprigg \& Thiesen}]{MoselEtAl2007}
+Mosel, Ulrike, Enoch~Horai Magum, Shalom Magum, Joyce Maion, Naphtaly Maion,
+  Jessika Reinig, Ruth~Siimaa Rigamu, Ruth~Saovana Sprigg \& Yvonne Thiesen.
+  2007.
+\newblock The {T}eop {L}anguage {C}orpus.
+\newblock \urlprefix\url{http://www.mpi.nl/dobes/projects/teop}.
+
+\bibitem[{Noonan(2006)}]{Noonan2006}
+Noonan, Michael. 2006.
+\newblock Grammar writing for a grammar-reading audience.
+\newblock \emph{Studies in Language} 30(2). 351--365.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008}
+Nordhoff, Sebastian. 2008.
+\newblock Electronic reference grammars for typology: {C}hallenges and
+  solutions.
+\newblock \emph{Language Documentation and Conversation} 296--324.
+
+\bibitem[{Rice(2006)}]{Rice2006}
+Rice, Keren. 2006.
+\newblock A typology of good grammars.
+\newblock \emph{Studies in Language} 30(2). 385--415.
+
+\bibitem[{Sankoff(1993)}]{Sankoff1993}
+Sankoff, Gillian. 1993.
+\newblock Focus in {T}ok {P}isin.
+\newblock In Francis Byrne \& Donald Winford (eds.), \emph{Focus and
+  grammatical relations in {C}reole languages}, 117--140.
+  Amsterdam/Philadelphia: John Bejamins Publishing Company.
+
+\bibitem[{Schwartz et~al.(2007)Schwartz, Spriggs, Ulrike~Mosel, Maion \&
+  Vaabero}]{SchwartzEtAl2007}
+Schwartz, Marcia~L., Ruth~Saovana Spriggs, Ruth Siimaa~Rigamu Ulrike~Mosel,
+  Naphtaly Maion \& Jeremiah Vaabero. 2007.
+\newblock The {T}eop {L}exical {D}atabase.
+\newblock
+  \urlprefix\url{http://www.linguistik.uni-kiel.de/Teop\_Lexical\_Database\_Ma%
+y07.pdf}.
+
+\bibitem[{Stefanowitsch \& Gries(2009)}]{StefanowitschEtAl2009}
+Stefanowitsch, Anatol \& Stefan Gries. 2009.
+\newblock Corpora and grammar.
+\newblock In Anke L\"udeling \& Meja Kyt\"o (eds.), \emph{Corpus linguistics.
+  {A}n international {H}andbook}, vol. 29.2 HSK, 933--952. Berlin \& New York:
+  Walter de Gruyter.
+
+\bibitem[{Weber(2006)}]{Weber2006}
+Weber, David. 2006.
+\newblock Thoughts on growing a grammar.
+\newblock \emph{Studies in Language} 30(2). 417--444.
+
+\bibitem[{Whalen(2004)}]{Whalen2004}
+Whalen, Doug~H. 2004.
+\newblock How the study of endangered languages will revolutionize linguistics.
+\newblock In Piet van Sterkenburg (ed.), \emph{Linguistics today - facing a
+  greater challenge}, 321--342. Amsterdam/Philadelphia: John Benjamins
+  Publishing Company.
+
+\end{thebibliography}

@@ -1,0 +1,446 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Abney}{1996}]{Abney:96}
+Abney, Steven. 1996.
+\newblock Statistical methods and linguistics.
+\newblock In J.~L. Klavans and P.~Resnik (Eds.), {\em The Balancing Act:
+  Combining Symbolic and Statistical Approaches to Language}. Cambridge, MA:
+  MIT Press.
+
+\bibitem[\protect\citeauthoryear{Bagish}{1983}]{Bagish:83}
+Bagish, Henry. 1983.
+\newblock Confessions of a former cultural relativist.
+\newblock In E.~Angeloni (Ed.), {\em Anthropology Annual Editions 83/84},
+  87--112. Guilford, CT: Dushkin Publishing Group.
+
+\bibitem[\protect\citeauthoryear{Baldwin \bgroup et~al.\egroup
+  }{2005}]{Bal:Bea:Ben:Fli:Kim:Oep:05}
+Baldwin, Timothy, John Beavers, Emily~M. Bender, Dan Flickinger, Ara Kim, and
+  Stephan Oepen. 2005.
+\newblock Beauty and the beast: What running a broad-coverage precision grammar
+  over the {BNC} taught us about the grammar --- and the corpus.
+\newblock In S.~Kepser and M.~Reis (Eds.), {\em Linguistic Evidence: Empirical,
+  Theoretical, and Computational Perspectives}. Berlin, Germany: Mouton de
+  Gruyter.
+
+\bibitem[\protect\citeauthoryear{Beermann and Mihaylov}{2009}]{Bee:Mih:09}
+Beermann, Dorothee, and Pavel Mihaylov. 2009.
+\newblock {TypeCraft}: Linguistic data and knowledge sharing, open access and
+  linguistic methodology.
+\newblock Unpublished ms., Paper presented at the Workshop on Small Tools in
+  Cross-linguistic Research, University of Utrecht. The Netherlands.
+
+\bibitem[\protect\citeauthoryear{Beesley and Karttunen}{2003}]{Bee:Kar:03}
+Beesley, Kenneth~R., and Lauri Karttunen. 2003.
+\newblock {\em Finite State Morphology}.
+\newblock Stanford CA: CSLI Publications.
+
+\bibitem[\protect\citeauthoryear{Bender}{2008}a]{Bender:08a}
+Bender, Emily~M. 2008a.
+\newblock Evaluating a crosslinguistic grammar resource: A case study of
+  {W}ambaya.
+\newblock In {\em Proceedings of ACL08:HLT}, 977--985, Columbus, OH.
+
+\bibitem[\protect\citeauthoryear{Bender}{2008}b]{Bender:08}
+Bender, Emily~M. 2008b.
+\newblock Grammar engineering for linguistic hypothesis testing.
+\newblock In N.~Gaylord, A.~Palmer, and E.~Ponvert (Eds.), {\em Proceedings of
+  the Texas Linguistics Society X Conference: Computational Linguistics for
+  Less-Studied Languages}, 16--36, Stanford, CA. CSLI Publications.
+
+\bibitem[\protect\citeauthoryear{Bender}{2010}]{Bender:10}
+Bender, Emily~M.
+\newblock 2010.
+\newblock Reweaving a grammar for {W}ambaya: A case study in grammar
+  engineering for linguistic hypothesis testing.
+\newblock {\em Linguistic Issues in Language Technology} 3:1--34.
+
+\bibitem[\protect\citeauthoryear{Bender \bgroup et~al.\egroup
+  }{2010}]{Ben:Dre:Fok:Pou:Sal:10}
+Bender, Emily~M., Scott Drellishak, Antske Fokkens, Laurie Poulson, and
+  Safiyyah Saleem.
+\newblock 2010.
+\newblock Grammar customization.
+\newblock {\em Research on Language \& Computation} 8(1):1--50.
+
+\bibitem[\protect\citeauthoryear{Bender \bgroup et~al.\egroup
+  }{2004}]{Ben:Fli:Goo:Sag:04}
+Bender, Emily~M., Dan Flickinger, Jeff Good, and Ivan~A. Sag. 2004.
+\newblock Montage: Leveraging advances in grammar engineering, linguistic
+  ontologies, and mark-up for the documentation of underdescribed languages.
+\newblock In {\em Proceedings of the Workshop on First Steps for Language
+  Documentation of Minority Languages: Computational Linguistic Tools for
+  Morphology, Lexicon and Corpus Compilation, LREC 2004}, Lisbon, Portugal.
+
+\bibitem[\protect\citeauthoryear{Bender \bgroup et~al.\egroup
+  }{2002}]{Ben:Fli:Oep:02}
+Bender, Emily~M., Dan Flickinger, and Stephan Oepen. 2002.
+\newblock The {Grammar Matrix}: An open-source starter-kit for the rapid
+  development of cross-linguistically consistent broad-coverage precision
+  grammars.
+\newblock In {\em Proceedings of the Workshop on Grammar Engineering and
+  Evaluation at the 19th International Conference on Computational
+  Linguistics}, 8--14, Taipei, Taiwan.
+
+\bibitem[\protect\citeauthoryear{Bender \bgroup et~al.\egroup
+  }{2011}]{Ben:Fli:Oep:11}
+Bender, Emily~M., Dan Flickinger, and Stephan Oepen. 2011.
+\newblock Grammar engineering and linguistic hypothesis testing: Computational
+  support for complexity in syntactic analysis.
+\newblock In E.~M. Bender and J.~E. Arnold (Eds.), {\em Language from a
+  Cognitive Perspective: Grammar, Usage and Processing}, 5--29. Stanford, CA:
+  CSLI Publications.
+
+\bibitem[\protect\citeauthoryear{Bender and Good}{2005}]{Ben:Goo:05}
+Bender, Emily~M., and Jeff Good. 2005.
+\newblock Implementation for discovery: A bipartite lexicon to support
+  morphological and syntactic analysis.
+\newblock In {\em Proceedings from the Panels of the Forty-First Meeting of the
+  Chicago Linguistic Society: Volume 41-2.}
+
+\bibitem[\protect\citeauthoryear{Bierwisch}{1963}]{Bierwisch:63}
+Bierwisch, Manfred. 1963.
+\newblock {\em Grammatik des deutschen Verbs}.
+\newblock Vol.~II of {\em Studia Grammatica}.
+\newblock Akademie Verlag.
+
+\bibitem[\protect\citeauthoryear{Bird \bgroup et~al.\egroup
+  }{2006}]{Bir:Che:Sus:Lee:Zhe:06}
+Bird, Steven, Yi~Chen, Susan~B. Davidson, Haejoong Lee, and Yifeng Zheng. 2006.
+\newblock Designing and evaluating an {XP}ath dialect for linguistic queries.
+\newblock In {\em ICDE '06: {P}roceedings of the 22nd {I}nternational
+  {C}onference on {D}ata {E}ngineering}, 52--62, Washington, DC.
+
+\bibitem[\protect\citeauthoryear{Bird and Simons}{2003}]{Bir:Sim:03}
+Bird, Steven, and Gary Simons.
+\newblock 2003.
+\newblock Seven dimensions of portability for language documentation and
+  description.
+\newblock {\em Language} 79(3):557--582.
+
+\bibitem[\protect\citeauthoryear{Black and Simons}{2008}]{Bla:Sim:08}
+Black, H.~Andrew, and Gary~F. Simons. 2008.
+\newblock The {SIL} {FieldWorks} {Language} {Explorer} approach to
+  morphological parsing.
+\newblock In N.~Gaylord, A.~Palmer, and E.~Ponvert (Eds.), {\em Proceedings of
+  the Texas Linguistics Society X Conference: Computational Linguistics for
+  Less-Studied Languages}, 37--55, Stanford, CA. CSLI Publications.
+
+\bibitem[\protect\citeauthoryear{Carroll \bgroup et~al.\egroup
+  }{1999}]{Car:Cop:Fli:99}
+Carroll, John, Ann Copestake, Daniel Flickinger, and Victor Poznanski. 1999.
+\newblock An efficient chart generator for (se\mbox{mi-)}\-lexicalist grammars.
+\newblock In {\em Proceedings of the 7th {E}uropean {W}orkshop on {N}atural
+  {L}anguage {G}eneration}, 86--95, Toulouse, France.
+
+\bibitem[\protect\citeauthoryear{Carter}{1997}]{Carter:99}
+Carter, David. 1997.
+\newblock The treebanker: a tool for supervised training of parsed corpora.
+\newblock In {\em Proceedings of a Workshop on Computational Environments for
+  Grammar Development and Linguistic Engineering}, 9--15, Madrid, Spain.
+
+\bibitem[\protect\citeauthoryear{Copestake}{2000}]{Copestake:00}
+Copestake, Ann.
+\newblock 2000.
+\newblock Appendix: {D}efinitions of typed feature structures.
+\newblock {\em Natural Language Engineering} 6:109--112.
+
+\bibitem[\protect\citeauthoryear{Copestake}{2002}]{Copestake:02}
+Copestake, Ann. 2002.
+\newblock {\em Implementing Typed Feature Structure Grammars}.
+\newblock Stanford, CA: CSLI Publications.
+
+\bibitem[\protect\citeauthoryear{Copestake \bgroup et~al.\egroup
+  }{2005}]{Cop:Fli:Pol:Sag:05}
+Copestake, Ann, Dan Flickinger, Carl Pollard, and Ivan~A. Sag.
+\newblock 2005.
+\newblock Minimal recursion semantics: An introduction.
+\newblock {\em Research on Language \& Computation} 3(4):281--332.
+
+\bibitem[\protect\citeauthoryear{Cristofaro}{2006}]{Cristofaro:06}
+Cristofaro, Sonia. 2006.
+\newblock The organization of reference grammars: A typologist user's point of
+  view.
+\newblock In F.~Ameka, A.~Dench, and N.~Evans (Eds.), {\em Catching Language:
+  The Standing Challenge of Grammar Writing}, 137--170. Berlin, Germany: Mouton
+  de Gruyter.
+
+\bibitem[\protect\citeauthoryear{Crouch \bgroup et~al.\egroup }{2001}]{xle}
+Crouch, Dick, Mary Dalrymple, Ron Kaplan, Tracy King, John Maxwell, and Paula
+  Newman. 2001.
+\newblock {XLE} documentation.
+\newblock Unpublished ms., On-line documentation, Palo Alto Research Center
+  (PARC).
+
+\bibitem[\protect\citeauthoryear{Drellishak}{2009}]{Drellishak:09}
+Drellishak, Scott. 2009.
+\newblock {\em Widespread But Not Universal: Improving the Typological Coverage
+  of the {G}rammar {M}atrix}.
+\newblock PhD thesis, University of Washington.
+
+\bibitem[\protect\citeauthoryear{Dridan and
+  Baldwin}{2010}]{Dridan:Baldwin:2010}
+Dridan, Rebecca, and Timothy Baldwin. 2010.
+\newblock Unsupervised parse selection for {HPSG}.
+\newblock In {\em Proceedings of the 2010 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP 2010)}, 694--704, Boston, USA.
+
+\bibitem[\protect\citeauthoryear{Drude}{this volume}]{Drude:11}
+Drude, Sebastian. this volume.
+\newblock Digital grammars --- integrating the {Wiki/CMS} approach with
+  language archiving technology and {TEI}.
+\newblock In S.~Nordhoff (Ed.), {\em Electronic Grammaticography}. Honolulu:
+  University of Hawai`i Press.
+
+\bibitem[\protect\citeauthoryear{Farrar and Lewis}{2007}]{Farrar:Lewis:2007}
+Farrar, Scott, and William~D. Lewis.
+\newblock 2007.
+\newblock The {GOLD} community of practice: An infrastructure for linguistic
+  data on the web.
+\newblock {\em Language Resources and Evaluation} 41(1):45--60.
+
+\bibitem[\protect\citeauthoryear{Flickinger}{2011}]{Flickinger:11}
+Flickinger, Dan. 2011.
+\newblock Accuracy v.\ robustness in grammar engineering.
+\newblock In E.~M. Bender and J.~E. Arnold (Eds.), {\em Language from a
+  Cognitive Perspective: Grammar, Usage and Processing}, 31--50. Stanford, CA:
+  CSLI Publications.
+
+\bibitem[\protect\citeauthoryear{Fokkens}{2011}]{Fokkens:11}
+Fokkens, Antske. 2011.
+\newblock Metagrammar engineering: Towards systematic exploration of
+  implemented grammars.
+\newblock In {\em Proceedings of the 49th Annual Meeting of the Association for
+  Computational Linguistics: Human Language Technologies}, 1066--1076,
+  Portland, OR.
+
+\bibitem[\protect\citeauthoryear{Ghodke and Bird}{2010}]{Gho:Bir:10}
+Ghodke, Sumukh, and Steven Bird. 2010.
+\newblock Fast query for large treebanks.
+\newblock In {\em Human Language Technologies: The 2010 Annual Conference of
+  the North American Chapter of the Association for Computational Linguistics},
+  267--275, Los Angeles, CA.
+
+\bibitem[\protect\citeauthoryear{Good}{2004}]{Good:04}
+Good, Jeff. 2004.
+\newblock The descriptive grammar as a (meta)database.
+\newblock In {\em Proceedings of the E-MELD Workshop 2004: Linguistic Databases
+  and Best Practice}, Detroit, Michigan.
+
+\bibitem[\protect\citeauthoryear{Good}{this volume}]{Good:tv}
+Good, Jeff. this volume.
+\newblock Deconstructing descriptive grammars.
+\newblock In S.~Nordhoff (Ed.), {\em Electronic Grammaticography}. Honolulu:
+  University of Hawai`i Press.
+
+\bibitem[\protect\citeauthoryear{Hashimoto \bgroup et~al.\egroup
+  }{2007}]{Hashimoto+:2007}
+Hashimoto, Chikara, Francis Bond, Takaaki Tanaka, and Melanie Siegel.
+\newblock 2007.
+\newblock Semi-automatic documentation of an implemented linguistic grammar
+  augmented with a treebank.
+\newblock {\em Language Resources and Evaluation (Special Issue on Asian
+  Language Technology)} 42(2):117--126.
+
+\bibitem[\protect\citeauthoryear{Johnson \bgroup et~al.\egroup
+  }{1999}]{Joh:Gem:Can:Chi:Rie:99}
+Johnson, Mark, Stuart Geman, Stephen Canon, Zhiyi Chi, and Stefan Riezler.
+  1999.
+\newblock Estimators for stochastic ``unification-based'' grammars.
+\newblock In {\em Proceedings of the 37th Annual Meeting of the ACL}, 535--541,
+  College Park, MD.
+
+\bibitem[\protect\citeauthoryear{Kiefer \bgroup et~al.\egroup
+  }{1999}]{Kie:Kri:Car:Mal:99}
+Kiefer, Bernd, Hans-Ulrich Krieger, John Carroll, and Rob Malouf. 1999.
+\newblock A bag of useful techniques for efficient and robust parsing.
+\newblock In {\em Proceedings of the 37th Annual Meeting of the ACL}, 473--480,
+  College Park, MD.
+
+\bibitem[\protect\citeauthoryear{Lai and Bird}{2004}]{Lai:Bir:04}
+Lai, Catherine, and Steven Bird. 2004.
+\newblock Querying and updating treebanks: {A} critical survey and requirements
+  analysis.
+\newblock In {\em Proceedings of the {A}ustralasian {L}anguage {T}echnology
+  {W}orkshop}, 139--146, Sydney, Australia.
+
+\bibitem[\protect\citeauthoryear{Lewis and Xia}{2007}]{Lew:Xia:07}
+Lewis, William~D., and Fei Xia. 2007.
+\newblock Automatically identifying computationally relevant typological
+  features.
+\newblock In {\em Proceedings of the Third International Joint Conference on
+  Natural Language Processing}, 685--690, Hyderabad, India.
+
+\bibitem[\protect\citeauthoryear{Lezius and K{\"o}nig}{2000}]{Lez:Kon:00}
+Lezius, Wolfgang, and Esther K{\"o}nig. 2000.
+\newblock Towards a search engine for syntactically annotated corpora.
+\newblock In {\em KONVENS 2000 / Sprachkommunikation, Vortr{\"a}ge der
+  gemeinsamen Veranstaltung 5. Konferenz zur Verarbeitung nat{\"u}rlicher
+  Sprache (KONVENS), 6. ITG-Fachtagung ``Sprachkommunikation''}, 113--116,
+  Berlin, Germany.
+
+\bibitem[\protect\citeauthoryear{L{\o}nning \bgroup et~al.\egroup
+  }{2004}]{Lon:Oep:Ber:04}
+L{\o}nning, Jan~Tore, Stephan Oepen, Dorothee Beermann, Lars Hellan, John
+  Carroll, Helge Dyvik, Dan Flickinger, Janne~Bondi Johannessen, Paul Meurer,
+  Torbj{\o}rn Nordg{\aa}rd, Victoria Ros{\'e}n, and Erik Velldal. 2004.
+\newblock {LOGON}. {A} {N}orwegian {MT} effort.
+\newblock In {\em Proceedings of the {W}orkshop in {R}ecent {A}dvances in
+  {S}candinavian {M}achine {T}ranslation}, Uppsala, Sweden.
+
+\bibitem[\protect\citeauthoryear{MacKinlay \bgroup et~al.\egroup
+  }{2011}]{MacKinlay+:2011b}
+MacKinlay, Andrew, Timothy Baldwin, Dan Flickinger, and Rebecca Dridan. 2011.
+\newblock Using external treebanks to filter parse forests for parse selection
+  and treebanking.
+\newblock In {\em Proceedings of the 5th International Joint Conference on
+  Natural Language Processing (IJCNLP 2011)}, 246--254, Chiang Mai, Thailand.
+
+\bibitem[\protect\citeauthoryear{Marcus \bgroup et~al.\egroup
+  }{1993}]{Mar:San:Mar:93}
+Marcus, Mitchell~P., Beatrice Santorini, and Mary~Ann Marcinkiewicz.
+\newblock 1993.
+\newblock Building a large annotated corpus of {English}: The {Penn Treebank}.
+\newblock {\em Computational Linguistics} 19(2):313--330.
+
+\bibitem[\protect\citeauthoryear{Meurers \bgroup et~al.\egroup
+  }{2002}]{Meu:Pen:Ric:02}
+Meurers, W.~Detmar, Gerald Penn, and Frank Richter. 2002.
+\newblock A web-based instructional platform for constraint-based grammar
+  formalisms and parsing.
+\newblock In {\em Proceedings of the {ACL} 2002 workshop on {E}ffective {T}ools
+  and {M}ethodologies for {T}eaching {NLP} and {CL}}, 18--25, Philadelphia, PA.
+
+\bibitem[\protect\citeauthoryear{M{\"u}ller}{1999}]{Mueller:99}
+M{\"u}ller, Stefan. 1999.
+\newblock {\em Deutsche Syntax deklarativ: Head-Driven Phrase Structure Grammar
+  f{\"u}r das Deutsche}.
+\newblock T{\"u}bingen, Germany: Max Niemeyer Verlag.
+
+\bibitem[\protect\citeauthoryear{M{\"u}ller and
+  Kasper}{2000}]{mueller_s-kasper_w00}
+M{\"u}ller, Stefan, and Walter Kasper. 2000.
+\newblock {HPSG} analysis of {German}.
+\newblock In W.~Wahlster (Ed.), {\em Verbmobil: Foundations of Speech-to-Speech
+  Translation}, 238--253. Berlin, Germany: Springer.
+
+\bibitem[\protect\citeauthoryear{Noonan}{2006}]{Noonan:06}
+Noonan, Michael.
+\newblock 2006.
+\newblock Grammar writing for a grammar-reading audience.
+\newblock {\em Studies in Language} 30:351--365.
+
+\bibitem[\protect\citeauthoryear{Nordhoff}{2007}]{Nordhoff:07}
+Nordhoff, Sebastian. 2007.
+\newblock Growing a grammar with galoes.
+\newblock Unpublished ms., Paper presented at the DoBeS workshop.
+
+\bibitem[\protect\citeauthoryear{Nordhoff}{2008}]{Nordhoff:08}
+Nordhoff, Sebastian.
+\newblock 2008.
+\newblock Electronic reference grammars for typology: Challenges and solutions.
+\newblock {\em Language Documentation \& Conservation} 2:296–--324.
+
+\bibitem[\protect\citeauthoryear{Nordlinger}{1998}]{Nordlinger:98a}
+Nordlinger, Rachel. 1998.
+\newblock {\em A Grammar of {W}ambaya, {N}orthern {A}ustralia}.
+\newblock Canberra: Research School of Pacific and Asian Studies, The
+  Australian National University.
+
+\bibitem[\protect\citeauthoryear{Oepen \bgroup et~al.\egroup
+  }{2004}]{Oep:Fli:Tou:04}
+Oepen, Stephan, Daniel Flickinger, Kristina Toutanova, and Christopher~D.
+  Manning.
+\newblock 2004.
+\newblock {LinGO} {R}edwoods. {A} rich and dynamic treebank for {HPSG}.
+\newblock {\em Journal of Research on Language and Computation} 2(4):575--596.
+
+\bibitem[\protect\citeauthoryear{Oepen and Flickinger}{1998}]{Oep:Fli:98}
+Oepen, Stephan, and Daniel~P. Flickinger.
+\newblock 1998.
+\newblock Towards systematic grammar profiling. {T}est suite technology ten
+  years after.
+\newblock {\em Journal of Computer Speech and Language} 12 (4) (Special Issue
+  on Evaluation):411--436.
+
+\bibitem[\protect\citeauthoryear{Pollard and Sag}{1994}]{Pol:Sag:94}
+Pollard, Carl, and Ivan~A. Sag. 1994.
+\newblock {\em {H}ead-{D}riven {P}hrase {S}tructure {G}rammar}.
+\newblock Chicago, IL and Stanford, CA: The University of Chicago Press and
+  CSLI Publications.
+
+\bibitem[\protect\citeauthoryear{Resnik \bgroup et~al.\egroup
+  }{2005}]{Resnik+:2005}
+Resnik, Philip, Aaron Elkiss, Ellen Lau, and Heather Taylor. 2005.
+\newblock The web in theoretical linguistics research: Two case studies using
+  the linguist's search engine.
+\newblock In {\em 31st Meeting of the Berkeley Linguistics Society}, 265--276,
+  Berkeley, USA.
+
+\bibitem[\protect\citeauthoryear{Rice}{2006}]{Rice:06}
+Rice, Keren.
+\newblock 2006.
+\newblock A typology of good grammars.
+\newblock {\em Studies in Language} 30:385--415.
+
+\bibitem[\protect\citeauthoryear{Riezler \bgroup et~al.\egroup
+  }{2002}]{Rie:Kin:Cro:Max:Kap:02}
+Riezler, Stefan, Tracy~Holloway King, Richard~S. Crouch, John~T Maxwell, and
+  Ronald~M. Kaplan. 2002.
+\newblock Parsing the {Wall Street Journal} using a {Lexical-Functional
+  Grammar} and discriminative estimation techniques.
+\newblock In {\em Proceedings of the 40th Annual Meeting of the ACL and 3rd
+  Annual Meeting of the NAACL (ACL-02)}, 7--12, Philadelphia, PA.
+
+\bibitem[\protect\citeauthoryear{Rohde}{2005}]{Roh:05}
+Rohde, Douglas L.~T. 2005.
+\newblock {\em TGrep2 User Manual Version 1.15}.
+\newblock \url{http://tedlab.mit.edu/~dr/TGrep2/tgrep2.pdf}.
+
+\bibitem[\protect\citeauthoryear{Siegel and Bender}{2002}]{Sie:Ben:02}
+Siegel, Melanie, and Emily~M. Bender. 2002.
+\newblock Efficient deep processing of {J}apanese.
+\newblock In {\em Proceedings of the 3rd Workshop on Asian Language Resources
+  and International Standardization at the 19th International Conference on
+  Computational Linguistics}, Taipei, Taiwan.
+
+\bibitem[\protect\citeauthoryear{Tanaka \bgroup et~al.\egroup
+  }{2005}]{Tan:Bon:Oep:Fuj:05}
+Tanaka, Takaaki, Francis Bond, Stephan Oepen, and Sanae Fujita. 2005.
+\newblock High precision treebanking: blazing useful trees using {POS}
+  information.
+\newblock In {\em Proceedings of the 43rd Annual Meeting on Association for
+  Computational Linguistics}, 330--337, Ann Arbor, MI.
+
+\bibitem[\protect\citeauthoryear{Toutanova \bgroup et~al.\egroup
+  }{2005}]{Tou:Man:Fli:Oep:2005}
+Toutanova, Kristina, Chistopher~D. Manning, Dan Flickinger, and Stephan Oepen.
+\newblock 2005.
+\newblock Stochastic {HPSG} parse selection using the {Redwoods} corpus.
+\newblock {\em Journal of Research on Language and Computation} 3(1):83--105.
+
+\bibitem[\protect\citeauthoryear{Tukey}{1977}]{Tukey77}
+Tukey, John~W. 1977.
+\newblock {\em Exploratory Data Analysis}.
+\newblock Reading, MA: Addison-Wesley.
+
+\bibitem[\protect\citeauthoryear{Weber}{2006}]{Weber:06}
+Weber, David.
+\newblock 2006.
+\newblock Thoughts on growing a grammar.
+\newblock {\em Studies in Language} 30:417--444.
+
+\bibitem[\protect\citeauthoryear{Zaefferer}{1998}]{Zaefferer:98}
+Zaefferer, Dietmar. 1998.
+\newblock {Einleitung: Allgemeine Vergleichbarkeit als Herausforderung f{\"u}r
+  die Sprachbeschreibung}.
+\newblock In D.~Zaefferer (Ed.), {\em Deskriptive Grammatik und Allgemeiner
+  Sprachvergleich}, 1--5. T{\"u}bingen, Germany: Niemeyer.
+
+\bibitem[\protect\citeauthoryear{Zhang and Kordoni}{2010}]{Zha:Kor:10}
+Zhang, Yi, and Valia Kordoni. 2010.
+\newblock Discriminant ranking for efficient treebanking.
+\newblock In {\em Proceedings of the 23rd International Conference on
+  Computational Linguistics (COLING 2010)}, 1453--1461, Beijing, China.
+
+\end{thebibliography}

@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % please use UTF8 encoding
+\usepackage[T1]{fontenc}
+\usepackage[authoryear]{natbib}
+    
+\usepackage{multicol}%
+\usepackage{array}%
+\usepackage{supertabular}%
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{gb4n}
+\usepackage{rotating}
+\usepackage{lingsty}
+% 
+% \newcommand{\textsubscript}[1]{\ensuremath{{}_{\text{#1}}}}
+\newcommand\arraybslash{\let\\\@arraycr}
+\renewcommand{\textquotedbl}{``}
+\newcommand{\imgpath}{}
+\newcommand{\textquotesingle}{`}
+\newcommand{\tief}{\textsubscript}
+\newcommand{\textsubscript}[1]{$_{\rm #1}$}
+\newcommand{\todo}[1]{\textbf{TODO}\footnote{\textbf{#1}}}
+
+\newcommand{\U}{{\k{u}}}
+\newcommand{\A}{{\k{a}}}
+\newcommand{\OO}{$\emptyset$}
+\newcommand{\II}{{\k{i}}}
+\newcommand{\transcr}[2]{\em #1 \em `#2'}
+
+\begin{document}
+\include{bouda}
+
+\bibliographystyle{unified}
+\bibliography{bouda,tv}
+\end{document}

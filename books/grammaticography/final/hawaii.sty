@@ -1,0 +1,240 @@
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}  
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{times}
+\usepackage[pdftex]{graphicx} 
+\usepackage{tipa}
+\usepackage{semtrans}
+\usepackage{chapterbib}
+
+
+%%%%%%%%%% URLs & Hyperrefs %%%%%%%%%%%%%
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\hypersetup{pdftex, colorlinks=true, linkcolor=black, citecolor=black, filecolor=black, urlcolor=black, pdfsubject=, pdfkeywords=}
+
+\renewcommand{\UrlBreaks}{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0\do\/\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i%
+\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do%
+\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do%
+\X\do\Y\do\Z}
+\renewcommand{\UrlBigBreaks}{\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>\do\]\do\)\do\,\do\?\do\'\do+\do\=\do\#\do\ }
+
+\urlstyle{same}
+
+\mathchardef\UrlBreakPenalty=100
+\mathchardef\UrlBigBreakPenalty=10 
+
+% lockerere Umbrüche
+\sloppy
+
+% bibliography and references
+\usepackage{natbib} 
+%\renewcommand{\bibfont}{\small} 
+\renewcommand{\bibfont}{\small\interlinepenalty10000\relax}
+\renewcommand{\bibsep}{4pt} % space between entries
+\setcitestyle{comma,aysep={},notesep={:}} % comma between citations (for semicolon, type 'semicolon'); no comma between author and year; no space between citation and post-citation note
+\newcommand{\cites}[1]{\citeauthor{#1}’s (\citeyear{#1})} % XX's (1999) claim
+\bibliographystyle{unified.linguistic}
+
+% Autorname wird formatiert
+\providecommand{\by}[2]{\begin{center}\vspace{-8pt}{\fontsize{12bp}{14.4bp}\selectfont #1} \\[4pt] {\itshape\fontsize{10bp}{12bp}\selectfont #2}\vspace{.5cm}\end{center}}
+
+%changes title of reference section from Bibliography to References
+% \addto\captionsenglish{\renewcommand{\bibname}{References}} FIXME
+
+% so beginnen die References nicht auf einer neuen Seite:
+\renewcommand\bibsection{\vspace{2\baselineskip}\centering\fontsize{10bp}{12bp}\selectfont\textsc{\textbf{\refname}}} 
+
+% Abstract-Umgebung
+\newenvironment{abstract}{\begin{quote}\fontsize{9bp}{10.8bp}\selectfont}{\end{quote}}
+
+
+% % % % % % % %     H e a d e r s       % % % % % % % % %
+\providecommand{\chapname}{bla} %Dummybefehl für Kapitelnamen, wird in jedem Kapitel überschrieben
+
+\usepackage{scrpage2} % muss vielleicht nicht extra geladen werden
+% %\renewcommand{\headrulewidth}{0pt}
+
+%% % % %      Style:   Chapter,   Section,   etc      % % % % % %  % % % % % % %
+% macht, dass die Kapitelnumber nicht in Nummerierung der Sections (und darunter) auftaucht
+\renewcommand*\thesection{\arabic{section}}
+
+% macht, dass kein  Punkt hinter Nummern aller (sub)sections kommt
+\makeatletter
+\renewcommand\@seccntformat[1]{\csname the#1\endcsname\quad}
+\makeatother
+
+\makeatletter
+\renewcommand{\section}{\@startsection
+{section}%                   % the name
+{1}%                         % the level
+{0mm}%                       % the indent
+{\baselineskip}%            % the before skip
+{-\baselineskip}%          % the after skip
+{\bfseries\textsc}} % the style
+\makeatother
+
+\makeatletter
+\renewcommand{\subsection}{\@startsection
+{subsection}%                   % the name
+{2}%                         % the level
+{0mm}%                       % the indent
+{\baselineskip}%            % the before skip
+{-\baselineskip}%          % the after skip
+{\bfseries\textsc}} % the style
+\makeatother
+
+\makeatletter
+\renewcommand{\subsubsection}{\@startsection
+{subsubsection}%                   % the name
+{3}%                         % the level
+{0mm}%                       % the indent
+{\baselineskip}%            % the before skip
+{-\baselineskip}%          % the after skip
+{\bfseries\textsc}} % the style
+\makeatother
+
+
+%Macht, dass Punkte nach den Sectiontiteln kommen:
+\makeatletter
+\let\std@sect\@sect
+\def\@sect#1#2#3#4#5#6[#7]#8{\std@sect{#1}{#2}{#3}{#4}{#5}{#6}[#7]{#8}}
+\makeatother
+
+% macht richtige Schriftgröße für Kapitelüberschriften
+\addtokomafont{chapter}{\centering\fontsize{16bp}{19.2bp}\rmfamily}
+% macht mehr Platz über Kapitelüberschrift
+\renewcommand{\chapterheadstartvskip}{\vspace *{5\baselineskip }}
+
+%entfernt Kapitelnummer in Kapiteltitel
+\renewcommand*{\chapterformat}{}
+
+% % %  %     T y p e   a r e a    &    m a r g i n s      % % % % % % % % % % % % %
+% Breite, Höhe
+%\areaset{127.9mm}{191.4mm}
+\setlength{\textwidth}{127.9mm}
+\setlength{\textheight}{191.4mm}
+\setlength{\footskip}{1.3cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+
+% % % %   FIGURES   &   TABLES   % % % % % % % % % % % % % % % % % % % % % % %
+\usepackage{float} % for floatstyle and restylefloat commands.
+\floatstyle{komabelow} % tables: place caption below
+\restylefloat{table}
+\floatstyle{komabelow} % figures: place caption below
+\restylefloat{figure}
+\usepackage[labelfont=sc, %macht Label ("Figure" und "Table") in small caps
+belowskip=-8pt, aboveskip=0pt, %Platz drüber und drunter
+justification=centering %zentrierte Captions
+]{caption}
+
+% % % % % % %   FIGURES      % % % % % % % %
+\renewcommand{\thefigure}{\arabic{figure}} % Keine Kapitelnummer in Bildüberschrift
+\usepackage{subfigure} % für kleine figures nebeneinander %[hang,raggedright,nooneline,normalsize,FIGBOTCAP]
+
+% % % % % % %     TABLES       % % % % % % % %
+\renewcommand{\thetable}{\arabic{table}} % Keine Kapitelnummer in Tabellenüberschrift
+\usepackage{array} % für extra Spezifikationen
+\usepackage{rotating} % für um 90° gedrehte Tabellenzellen
+\usepackage{booktabs} % für hübsche Tabellen
+	\setlength{\doublerulesep}{0.5pt}	% Abstand zwischen zwei horizontalen Linien
+	\setlength{\heavyrulewidth}{\lightrulewidth} 	% Stärke der Linien ist gleich
+
+\usepackage{tabularx}
+	
+\usepackage{colortbl} % für grau hinterlegte Tabellenzellen
+\usepackage{multirow} % Tabellenzeilen zusammenfassen
+
+% Keine "Schusterjungen"
+\clubpenalty = 10000
+% Keine "Hurenkinder"
+\widowpenalty = 10000 \displaywidowpenalty = 10000
+
+
+%% % % % % % %       LISTEN       % % % % % % % % % % % % % % % % % % % % % %
+%%% Abstände (alle Listen) % (leider muss leftmargin immer neu berechnet werden)
+
+\usepackage{enumitem} % flexible Einstellungen für Nummerierungen / Aufzählungen
+	\setlist{topsep=1em, itemsep=1ex, parsep=0pt, listparindent=5mm, align=left,%
+		labelindent=1em, labelsep=0.5em,  leftmargin=1.5em}
+%	\setlist[2]{nolistsep, labelindent=0pt, leftmargin=\labelindent+\labelwidth+\labelsep}
+%	\setlist[3]{nolistsep, labelindent=0pt, leftmargin=\labelindent+\labelwidth+\labelsep}
+%% einzelne Listenumgebungen
+\newenvironment{ditemize}% 						Aufzählung mit - eins
+	{\begin{itemize}[label={\textbullet}, labelwidth=0.5em,%
+	leftmargin=1.5em]}	{\end{itemize}}
+%\newenvironment{denumerate-rm}% 				Nummerierung (i) (ii) (iii)
+%	{\begin{enumerate}[label={(\roman*)}, labelwidth=2em,%
+%	leftmargin=\labelindent+\labelwidth+\labelsepA}{\end{enumerate}}
+\newenvironment{denumerate-ar}%  				Nummerierung 1. 2. 3. 
+	{\begin{enumerate}[label={\arabic*.}, labelwidth=1em,%
+	leftmargin=1.5em]}{\end{enumerate}}
+%\newenvironment{denumerate-al}% 					Nummerierung mit (a) (b) (c)
+%	{\begin{enumerate}[label={(\alph*)}, labelwidth=1.5em,%
+%	leftmargin=1.5em]}{\end{enumerate}}
+\newenvironment{denumerate-al}%      Nummerierung mit (a) (b) (c)
+ {\begin{enumerate}[label={(\alph*)}, labelwidth=1.5em,%
+ leftmargin=2em]}{\end{enumerate}}
+
+
+
+%% gleichmäßiger Einzug bei Fußnoten
+\usepackage[hang, splitrule]{footmisc}
+	\addtolength{\footskip}{0.5cm}
+	\setlength{\footnotemargin}{0.3cm}
+	\setlength{\footnotesep}{0.32cm}
+
+
+%%%%%%%%%%% Front Matter TOC %%%%%%%%%
+
+\providecommand{\tocbier}[3]{%
+\noindent\begin{tabularx}{\textwidth}{p{1cm} >{\raggedright\arraybackslash}p{10cm} >{\raggedleft\arraybackslash}p{1cm}}
+#1. & #2 & \pageref{beginchap0#1}\\ & \textit{#3}\\
+\end{tabularx}
+\vspace{.2cm}%
+}
+
+
+
+%% Hack-Dummy für Makros für den Satzspiegel, zur besseren Auffindbarkeit.
+%% Statt \break oder \vspace{5pt} bitte immer \hack{\break} bzw. \hack{\vspace{5pt}} benutzen.
+\newcommand{\hack}[1]{#1}
+
+\newcounter{subfigurecounter}
+
+
+% % % %     (GLOSSED)   EXAMPLES       % % % % % % % % % % % % % % % % % % % % %
+% Kommando um die Glosse richtig einzurücken, wenn Zeile in Objektsprache mit ... anfängt
+\providecommand{\dts}{{\itshape\selectfont\phantom{\ldots}}}
+% \usepackage{gb4e} % gb4e muss ganz _zuletzt_ geladen werden!!!!!!!
+
+% \let\eachwordone=\it % macht die erste Zeile kursiv
+% \glossglue = 0.75em plus 2pt minus 1pt % Abstand zwischen den Wörtern
+% 
+% 
+% \makeatletter
+% \let\altexe=\exe
+% \let\endaltexe=\endexe
+% 
+% \def\exe{\vspace{0.6em}\noindent\altexe} %% Abstand vor exe (endgültig!)
+% \def\endexe{\endaltexe\vspace{0.6em}}%% Abstand nach exe (endgültig!)
+% 
+% %% by Alexis Dimitriadis: 
+% % Modifying \glt to keep translation on the same page as the text:
+% % redefine \gltoffset to set off translation from ex and gloss
+% \@ifundefined{gltoffset}{\def\gltoffset{0pt}}{}
+% \def\glt{\ifhmode\\*[\gltoffset]\else\nobreak\vskip\gltoffset\nobreak\fi}
+% 
+% %% Translation
+% \let\oldglt\glt
+% \def\glt{\vspace{-2\p@}\oldglt} % Abstand zwischen Glosse und Trans.
+% \let\trans\glt % damit auch \trans wieder korrekt funktioniert   
+% \makeatother
+  

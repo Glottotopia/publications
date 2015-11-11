@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % please use UTF8 encoding
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{color} 
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{colortbl}
+\definecolor{blau}{RGB}{200,200,255}
+\definecolor{gelb}{RGB}{255,255,100}
+
+\usepackage[authoryear]{natbib}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+\setlength{\bibsep}{0.05cm}
+
+\usepackage{gb4e}
+ 
+\newcommand{\tv}[1]{\colorbox{yellow}{see \textsc{#1}, this volume}}
+\newcommand{\chapterauthor}{}
+\newcommand{\barabybox}[1]{\fbox{\parbox{.9\textwidth}{#1}}}
+% \newcommand{\barabyboxone}[1]{\colorbox{yellow}{\fbox{\parbox{.9\textwidth}{#1}}}}
+\newcommand{\barabyboxonedef}[1]{\colorbox{blau}{\fbox{\parbox{.9\textwidth}{#1}}}}
+\newcommand{\barabyboxonerem}[1]{\colorbox{gelb}{\fbox{\parbox{.9\textwidth}{#1}}}}
+\newcommand{\barabyboxtwo}[1]{\fbox{\begin{tabular}{p{5pt}p{.8\textwidth}}
+                             \cellcolor{black} 
+			      &\parbox{.8\textwidth}{#1}
+                              \end{tabular}}
+}
+
+
+\author{Anne-Marie Baraby at Université du Québec à Montréal \at Université du Québec à Montréal}
+\title{Reference grammars for speakers of minority languages}
+
+\begin{document} 
+\include{baraby}
+
+\bibliographystyle{unified}
+\bibliography{baraby,tv}
+
+\end{document}

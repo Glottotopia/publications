@@ -1,0 +1,102 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Black(2009)}]{rXLingPaper}
+Black, H.~Andrew. 2009.
+\newblock Writing linguistic papers in the {T}hird {W}ave,
+  \urlprefix\url{http://www.sil.org/silepubs/abstract.asp?id = 52286}.
+
+\bibitem[{Hollenbach(1999)}]{rHollenbach}
+Hollenbach, Barbara~E. 1999.
+\newblock \emph{Elaboraci\'on de gram\'aticas populares de lenguas ind\'igenas:
+  una breve gu\'ia (con referencia especial a las lenguas otomangues).}
+\newblock Summer Institute of Linguistics.
+\newblock
+  \urlprefix\url{http://www.sil.org/americas/mexico/ling/E001-GramaticasPopula%
+res.pdf}.
+
+\bibitem[{{International Journal of American
+  Linguistics}(2011)}]{rIJALStyleSheet}
+{International Journal of American Linguistics}. 2011.
+\newblock \emph{Style sheet}.
+\newblock
+  \urlprefix\url{http://www.jstor.org/page/journal/intejamerling/style.html}.
+
+\bibitem[{{International Organization for Standardization}(2005)}]{rISOPDF1.4}
+{International Organization for Standardization}. 2005.
+\newblock \emph{I{S}{O} 19005-1:2005}.
+\newblock
+  \urlprefix\url{http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_d%
+etail.htm?csnumber = 38920}.
+
+\bibitem[{{Linguistic Society of America}(2011)}]{rLanguageStyleSheet}
+{Linguistic Society of America}. 2011.
+\newblock \emph{Language style sheet}.
+\newblock \urlprefix\url{http://www.lsadc.org/info/pubs-lang-style.cfm}.
+
+\bibitem[{McConnel(1995)}]{rMcConnel}
+McConnel, Stephen. 1995.
+\newblock \emph{P{C}-{P}{A}{T}{R} reference manual}.
+\newblock \urlprefix\url{http://www.sil.org/pcpatr/manual/pcpatr.html}.
+
+\bibitem[{Persons et~al.(2009)Persons, Black \& Persons}]{rPersonsBlack}
+Persons, David~A., Cheryl~A. Black \& Jan~A. Persons. 2009.
+\newblock \emph{Gram\'atica de zapoteco de {L}achix\'io}.
+\newblock Mexico City: Instituto Ling\"u\'istico de Verano.
+\newblock
+  \urlprefix\url{http://www.sil.org/mexico/zapoteca/lachixio/G040-LachixioGram%
+-zpl.htm}.
+
+\bibitem[{Pickett(1959)}]{rPickettDiss}
+Pickett, Velma~B. 1959.
+\newblock \emph{The grammatical hierarchy of {I}sthmus {Z}apotec}: University
+  of Michigan dissertation.
+
+\bibitem[{Pickett et~al.(1998)Pickett, Black \&
+  Cerqueda}]{rPickettBlackMarcial1st}
+Pickett, Velma~B., Cheryl Black \& Vicente~Marcial Cerqueda. 1998.
+\newblock \emph{Gram\'atica popular del zapoteco del {I}stmo}.
+\newblock Juchit\'an, Oaxaca and Tucson: Centro de Investigaci\'on y Desarrollo
+  Binniz\'a A.C. and Instituto Ling\"u\'istico de Verano A.C.
+
+\bibitem[{Pickett et~al.(2001)Pickett, Black \&
+  Cerqueda}]{rPickettBlackMarcial}
+Pickett, Velma~B., Cheryl Black \& Vicente~Marcial Cerqueda. 2001.
+\newblock \emph{Gram\'atica popular del zapoteco del {I}stmo}.
+\newblock Juchit\'an, Oaxaca and Tucson: Centro de Investigaci\'on y Desarrollo
+  Binniz\'a and Instituto Ling\"u\'istico de Verano 2nd edn.
+\newblock
+  \urlprefix\url{http://www.sil.org/mexico/zapoteca/istmo/G023a-GramaticaZapIs%
+tmo-zai.htm}.
+
+\bibitem[{Shieber(1986)}]{rShieber1986}
+Shieber, Stuart~M. 1986.
+\newblock \emph{An introduction to unification-based approaches to grammar},
+  vol.~4 CSLI Lecture Notes.
+\newblock Stanford, CA: Center for the Study of Language and Information.
+
+\bibitem[{Simons \& Black(2009)}]{rSimonsAndBlackSFLF}
+Simons, Gary~F. \& H.~Andrew Black. 2009.
+\newblock Third {W}ave writing and publishing. {S{I}{L} {F}orum for {L}anguage
+  {F}ieldwork }2009-005.
+\newblock \urlprefix\url{http://www.sil.org/silepubs/abstract.asp?id = 52287}.
+
+\bibitem[{{World Wide Web Consortium}(1998)}]{rW3CHTML}
+{World Wide Web Consortium}. 1998.
+\newblock \emph{H{T}{M}{L} 4.0 specification}.
+\newblock \urlprefix\url{http://www.w3.org/TR/1998/REC-html40-19980424/}.
+
+\bibitem[{{World Wide Web Consortium}(2008)}]{rW3CDTD}
+{World Wide Web Consortium}. 2008.
+\newblock \emph{Definition of the {X}{M}{L} document type declaration from
+  {E}xtensible {M}arkup {L}anguage ({X}{M}{L}) 1.0 ({F}ifth {E}dition) on
+  {W}3.org.}
+\newblock \urlprefix\url{http://www.w3.org/TR/REC-xml/#dt-doctype}.
+
+\end{thebibliography}

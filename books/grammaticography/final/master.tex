@@ -1,0 +1,303 @@
+%  for d in *; do if test -d $d; then cd $d; pdflatex main.tex;bibtex main.aux;cd /home/snordhoff/Dropbox/writing/books/grammaticography/final; fi ; done; pdflatex master.tex
+
+\documentclass[10pt,oneside,letterpaper]{scrbook}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hawaii}
+%priorized pkgs 
+\definecolor{blau}{RGB}{200,200,255}
+\definecolor{gelb}{RGB}{255,255,100}
+%normal pkgs  
+\usepackage{listings}
+\usepackage{gb4n,tipa,lingsty,ipashortcuts} 
+\usepackage{subfigure}
+% \setlength{\bibsep}{0.05cm}
+\usepackage{hhline} 
+\usepackage{url}   
+\usepackage{multicol}
+\usepackage{rotating}
+
+%commands  
+\newcommand{\saltillo}{{\bf\textquotesingle}}
+\newcommand{\pref}[1]{(\ref{#1})}
+\newcommand{\sref}[1]{section \ref{#1}}
+\newcommand{\tref}[1]{table \ref{#1}}
+\newcommand{\fref}[1]{figure \ref{#1}}
+\newcommand{\Hline}{\hline}
+\newcommand{\tdl}{\textsc{tdl}}
+\newcommand{\hpsg}{\textsc{hpsg}\xspace}
+\newcommand{\itsdb}{\mbox{\sf \lbrack incr tsdb()\rbrack}}
+\newcommand{\tief}{\textsubscript}
+\providecommand{\textsubscript}[1]{$_{\rm #1}$} 
+\newcommand\namecite{\citet}
+\newcommand\citeboth{\citealt}
+\newcommand{\quotecite}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+\newcommand{\todo}[1]{\footnote{\textbf{todo:} #1}}
+\newcommand{\imgpath}{} 
+\newcommand{\chapterauthor}[1]{\textit{\begin{center}#1\end{center}\bigskip}}
+\renewcommand{\tag}[1]{$\texttt{<#1>}$} 
+\renewcommand{\graphem}[1]{$\texttt{<#1>}$} 
+\newcommand{\regexB}{{\textbackslash}\tt b}
+
+\newcommand{\XMLmindXMLEditor}{XMLmind XML Editor}
+
+\newcommand{\barabybox}[1]{\fbox{\parbox{.9\textwidth}{#1}}}
+% \newcommand{\barabyboxone}[1]{\colorbox{yellow}{\fbox{\parbox{.9\textwidth}{#1}}}}
+\newcommand{\barabyboxonedef}[1]{\colorbox{blau}{\fbox{\parbox{.9\textwidth}{#1}}}}
+\newcommand{\barabyboxonerem}[1]{\colorbox{gelb}{\fbox{\parbox{.9\textwidth}{#1}}}}
+\newcommand{\barabyboxtwo}[1]{\fbox{\begin{tabular}{p{5pt}p{.8\textwidth}}
+                             \cellcolor{black} 
+			      &\parbox{.8\textwidth}{#1}
+                              \end{tabular}}
+}
+
+\newcommand{\transcr}[2]{\em #1 \em `#2'}
+
+\renewcommand{\U}{\k{u}}
+\newcommand{\A}{\k{a}}
+\newcommand{\OO}{{$\emptyset$}}
+\newcommand{\II}{\k{i}}
+
+\newcommand{\tv}[1]{\colorbox{yellow}{see \textsc{#1}, this volume}}
+\newcommand{\uhheader}[2]{{\scriptsize Language Documentation \& Conservation Special Publication No. 4 (October 2012)\\
+Electronic Grammaticography ed. by Sebastian Nordhoff pages #1\\
+\url{http://nflrc.hawaii.edu/ldc}\\
+\url{http://hdl.handle.net/10125/#2}\\
+\url{http://nflrc.hawaii.edu/ldc/sp04}\\
+}}
+\newcommand{\thischapteruuheader}{}
+% \newenvironment{abstract}{{\centering\bf Abstract}\begin{quote}}{\end{quote}}
+
+\glossSTDmode
+  
+\author{Sebastian Nordhoff}
+\title{Electronic Grammaticography}
+
+\setcounter{tocdepth}{0}
+
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{
+\put(0,0){	
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,
+ keepaspectratio]{hawaiititle.jpg}%
+\vfill
+}}}
+
+
+\ohead{\rm\fontsize{9bp}{19.8bp}\selectfont\thepage} % bei den Fontsizes nimmt man erst den Font, die zweite Zahl ist der Font x 1.2
+\ihead[
+  \parbox{1.5cm}{
+  \rm\fontsize{59bp}{70.8bp}\selectfont\thechapter\small
+  }
+  \parbox{11cm}{
+  \begin{flushright}  
+	{\thischapteruuheader}
+  \end{flushright}
+  }
+]{\fontsize{9bp}{10.8bp}\selectfont\chapname}
+
+\ihead[\rm\fontsize{59bp}{70.8bp}\selectfont\thechapter]{\fontsize{9bp}{10.8bp}\selectfont\chapname}
+\ofoot{\fontsize{9bp}{10.8bp}\selectfont \textsc{Electronic Grammaticography}}
+\ifoot[\rm\fontsize{6bp}{7.2bp}\selectfont Licensed under Creative Commons  Attribution License]{Electronic Grammaticography}
+
+
+\newcommand{\shortauthor}{noauthor}
+\newcommand{\longauthor}{noauthor}
+\newcommand{\longchapname}{nochapname}
+\newcommand{\mytoc}{\stepcounter{chapter}%
+% 		    \renewcommand{\chapname}{\longchapname}%
+		    \addcontentsline{toc}{chapter}{\longchapname \\ %
+						  {\it \shortauthor}%
+		    }%
+		   }
+
+
+
+
+\pagestyle{scrheadings}
+\clearscrheadings % löscht erstmal alles
+\clearscrheadfoot
+\clearscrplain
+\begin{document}  
+\AddToShipoutPicture*{\BackgroundPic} 
+~
+\newpage
+\clearscrheadings
+
+\frontmatter\ohead{\rm\fontsize{9bp}{19.8bp}\selectfont\thepage} % bei den Fontsizes nimmt man erst den Font, die zweite Zahl ist der Font x 1.2
+
+\renewcommand{\thischapteruuheader}{\uhheader{xx-xx}{4551}}
+ 
+% \ihead[
+%   \parbox{1.5cm}{
+%   \rm\fontsize{59bp}{70.8bp}\selectfont{~}\small
+%   }
+%   \parbox{11cm}{
+%   \begin{flushright}  
+% 	{\thischapteruuheader}
+%   \end{flushright}	
+%   }]{}
+\input{frontmatter}
+\newpage 
+% \renewcommand{\thischapteruuheader}{\uhheader{xx-xx}{4548}}
+\renewcommand{\thischapteruuheader}{}
+\tableofcontents 
+% % \input{intro/intro.tex}
+% % \input{intro/intro.bbl}
+
+% \renewcommand{\thischapteruuheader}{\uhheader{xx-xx}{4549}}
+\input{contributors}
+% \renewcommand{\thischapteruuheader}{\uhheader{xx-xx}{4550}}
+\input{acknowledgments}
+\mainmatter
+
+\clearscrheadings % löscht erstmal alles
+\clearscrheadfoot
+\clearscrplain 
+\part{Theory} 
+
+\setcounter{chapter}{0}
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Good} 
+
+\ohead{\rm\fontsize{9bp}{19.8bp}\selectfont\thepage} % bei den Fontsizes nimmt man erst den Font, die zweite Zahl ist der Font x 1.2
+\ihead[
+  \parbox{1.5cm}{
+  \rm\fontsize{59bp}{70.8bp}\selectfont\thechapter\small
+  }
+  \parbox{11cm}{
+  \begin{flushright}  
+	{\thischapteruuheader}
+  \end{flushright}
+  }
+]{\fontsize{9bp}{10.8bp}\selectfont\chapname}
+\ifoot[\rm\fontsize{6bp}{7.2bp}\selectfont Licensed under Creative Commons  Attribution License]{Electronic Grammaticography}
+
+\renewcommand{\thischapteruuheader}{\uhheader{2-32}{4528}}
+\input{Good/good.tex}
+\input{Good/main.bbl}
+
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Nordhoff}
+\renewcommand{\thischapteruuheader}{\uhheader{33-62}{4529}}
+\input{Nordhoff/nordhoff.tex}
+\input{Nordhoff/main.bbl}
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Thieberger}
+\renewcommand{\thischapteruuheader}{\uhheader{63-77}{4530}}
+\input{Thieberger/thieberger.tex}
+\input{Thieberger/main.bbl}
+
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Baraby}
+\renewcommand{\thischapteruuheader}{\uhheader{78-101}{4531}}
+\input{Baraby/baraby.tex}
+\input{Baraby/main.bbl}
+
+
+\clearscrheadings % löscht erstmal alles
+\clearscrheadfoot
+\clearscrplain 
+\part{Applications}
+
+\clearscrheadings % löscht erstmal alles
+\clearscrheadfoot
+\clearscrplain 
+\newpage
+\ohead{\rm\fontsize{9bp}{19.8bp}\selectfont\thepage} % bei den Fontsizes nimmt man erst den Font, die zweite Zahl ist der Font x 1.2
+\ihead[
+  \parbox{1.5cm}{
+  \rm\fontsize{59bp}{70.8bp}\selectfont\thechapter\small
+  }
+  \parbox{11cm}{
+  \begin{flushright}  
+	{\thischapteruuheader}
+  \end{flushright}
+  }
+]{\fontsize{9bp}{10.8bp}\selectfont\chapname}
+\ifoot[\rm\fontsize{6bp}{7.2bp}\selectfont Licensed under Creative Commons Attribution License]{Electronic Grammaticography}
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Black}
+\renewcommand{\thischapteruuheader}{\uhheader{103-128}{4532}}
+\input{Black/black.tex}
+\input{Black/main.bbl}
+
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{/Bouda/.}
+\newpage
+\renewcommand{\thischapteruuheader}{\uhheader{129-159}{4533}}
+\input{Bouda/bouda.tex}
+\input{Bouda/main.bbl}
+
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\thischapteruuheader}{\uhheader{160-178}{4534}}
+\renewcommand{\imgpath}{./Drude}
+\newpage
+\input{Drude/drude.tex}
+\newpage
+\input{Drude/main.bbl}
+
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Bender}
+\renewcommand{\thischapteruuheader}{\uhheader{179-206}{4535}}
+\input{Bender/bender.tex}
+\input{Bender/main.bbl}
+
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Maxwell}
+\renewcommand{\thischapteruuheader}{\uhheader{207-234}{4536}}
+\input{Maxwell/maxwell.tex}
+\input{Maxwell/main.bbl}
+
+
+\glossSTDmode
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./Mosel}
+\renewcommand{\thischapteruuheader}{\uhheader{235-250}{4537}}
+\input{Mosel/mosel.tex}
+\newpage
+\input{Mosel/main.bbl}
+
+
+  
+% % \makeindex
+\setcounter{exx}{0}\setcounter{footnote}{0}
+
+\backmatter
+\ihead[
+  \parbox{1.5cm}{
+%   \rm\fontsize{59bp}{70.8bp}\selectfont\thechapter\small
+  }
+  \parbox{11cm}{
+  \begin{flushright}  
+	{\thischapteruuheader}
+  \end{flushright}
+  }
+]{\fontsize{9bp}{10.8bp}\selectfont\chapname}
+
+
+\renewcommand{\thischapteruuheader}{\uhheader{251-253}{4546}}
+\input{Appendix/appendix}
+
+\end{document}

@@ -1,0 +1,151 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Baraby(2000)}]{Baraby2000}
+Baraby, Anne-Marie. 2000.
+\newblock Developing a standard orthography or an oral language : the {I}nnu
+  ({M}ontagnais) experiment.
+\newblock In In~Nicholas Ostler \& Blair Rudes (eds.), \emph{Endangered
+  languages and literacy. {P}roceedings of the {F}ourth {F}{E}{L}
+  {C}onference}, 78--84. Bath (UK): Foundation for Endangered Languages.
+
+\bibitem[{Baraby(2002)}]{Baraby2002}
+Baraby, Anne-Marie. 2002.
+\newblock The process of spelling standardization of {I}nnu-{A}imun
+  ({M}ontagnais).
+\newblock In In~Barbara Burnaby \& Jon~Allan Reyhner (eds.), \emph{Indigenous
+  languages across the community}, 197--212. Flagstaff: Northern Arizona
+  University Press.
+
+\bibitem[{Baraby(2004)}]{Baraby2004}
+Baraby, Anne-Marie. 2004.
+\newblock \emph{Guide de conjugaisons de la langue innue}.
+\newblock Sept-\^Iles (QC): Institut culturel et \'educatif montagnais 2nd edn.
+
+\bibitem[{Baraby(2011{\natexlab{a}})}]{Baraby2011a}
+Baraby, Anne{}-Marie. 2011{\natexlab{a}}.
+\newblock \emph{Grammaticographie des langues minoritaires. {L}e cas de
+  l'innu}: Universit\'e Laval dissertation.
+
+\bibitem[{Baraby(2011{\natexlab{b}})}]{Baraby2011b}
+Baraby, Anne-Marie. 2011{\natexlab{b}}.
+\newblock {L}'\'ecrit dans une langue de tradition orale: le cas de l'innu.
+\newblock In Lynn Drapeau (ed.), \emph{Les langues autochtones du {Q}u\'ebec:
+  {U}n patrimoine en danger}, 47--66. Quebec: Presses de l'Universit\'e du
+  Qu\'ebec.
+
+\bibitem[{Baraby \& Drapeau(Forthcoming)}]{BarabyEtAlfc}
+Baraby, Anne-Marie \& Lynn Drapeau. Forthcoming.
+\newblock \emph{Grammaire de r\'ef\'erence de l'innu}.
+
+\bibitem[{Dirven(1990)}]{Dirven1990}
+Dirven, Ren\'e. 1990.
+\newblock \emph{Pedagogical grammar}, vol.~23.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Dixon(1997)}]{Dixon1997}
+Dixon, Robert M.~W. 1997.
+\newblock \emph{The rise and fall of languages}.
+\newblock Cambridge (UK): Cambdrige University Press.
+
+\bibitem[{Dixon(2010)}]{Dixon2010}
+Dixon, Robert M.~W. 2010.
+\newblock \emph{Basic linguistic theory}, vol.~1.
+\newblock New York: Oxford University Press.
+
+\bibitem[{Drude(this volume)}]{Drudetv}
+Drude, Sebastian. this volume.
+\newblock Digital {G}rammars -- {I}ntegrating the {W}iki/{C}{M}{S} approach
+  with {L}anguage {A}rchiving {T}echnology and {T}{E}I.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  160--178. Manoa: University of Hawai'i Press.
+
+\bibitem[{Germain \& S\'eguin(1995)}]{GermainEtAl1995}
+Germain, Claude \& Hubert S\'eguin. 1995.
+\newblock \emph{Le point sur la grammaire en didactique des langues}.
+\newblock Anjou (QC): CEC.
+
+\bibitem[{Gippert et~al.(2006)Gippert, Himmelmann \& Mosel}]{GippertEtAlEd2006}
+Gippert, Jost, Nikolaus Himmelmann \& Ulrike Mosel (eds.). 2006.
+\newblock \emph{Essentials of language documentation}.
+\newblock Berlin: Mouton de Gruyter.
+
+\bibitem[{Goddard(1979)}]{Goddard1979}
+Goddard, Ives. 1979.
+\newblock Comparative {A}lgonquian.
+\newblock In Lyle Campbell \& Marianne Mithun (eds.), \emph{The languages of
+  native {A}merica}, 70--132. Austin: University of Texas Press.
+
+\bibitem[{Good(this volume)}]{Goodtv}
+Good, Jeff. this volume.
+\newblock Deconstructing descriptive grammars.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  2--32. Manoa: University of Hawai'i Press.
+
+\bibitem[{Lehmann(1989)}]{Lehmann1989}
+Lehmann, Christian. 1989.
+\newblock Language description and general comparative grammar.
+\newblock In Gottfried Graustein \& Gerhard Leitner (eds.), \emph{Reference
+  grammars and modern linguistic theory}, 133--162. T\"ubingen: Niemeyer.
+
+\bibitem[{Lemoine(1901)}]{Lemoine1901}
+Lemoine, Georges. 1901.
+\newblock \emph{Dictionnaire fran\c{c}ais-montagnais. {G}rammaire montagnaise}.
+\newblock Boston: W.B. \& P. Cabot.
+
+\bibitem[{Mithun(2006)}]{Mithun2006}
+Mithun, M. 2006.
+\newblock Grammars and the community.
+\newblock \emph{Studies in language} 30. 281--306.
+
+\bibitem[{Noonan(2006)}]{Noonan2006}
+Noonan, Michael. 2006.
+\newblock Grammar writing for a grammar-reading audience.
+\newblock \emph{Studies in language} 30. 351--365.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008}
+Nordhoff, Sebastian. 2008.
+\newblock Electronic reference grammars for typology: {C}hallenges and
+  solutions.
+\newblock \emph{Language Documentation \& Conservation} 2. 296--324.
+\newblock \urlprefix\url{http://hdl.handle.net/10125/4352}.
+
+\bibitem[{Pentland(1988)}]{Pentland1988}
+Pentland, David. 1988.
+\newblock More new modes in {O}ld {O}jibwa.
+\newblock \emph{Algonquian and Iroquoian Linguistics} 13. 47--51.
+
+\bibitem[{Rice(2006)}]{Rice2006}
+Rice, Keren. 2006.
+\newblock A typology of good grammars.
+\newblock \emph{Studies in language} 30. 385--415.
+
+\bibitem[{Sinclair(2004)}]{Sinclair2004}
+Sinclair, John (ed.). 2004.
+\newblock \emph{Collins {C}obuild {E}nglish {G}rammar}.
+\newblock Glasgow: Harper Collins Publishers.
+
+\bibitem[{Valentine(2001)}]{Valentine2001}
+Valentine, J.~Randolph. 2001.
+\newblock \emph{Nishnaabemwin reference grammar}.
+\newblock Toronto: University of Toronto Press.
+
+\bibitem[{Weber(2006)}]{Weber2006grow}
+Weber, David. 2006.
+\newblock Thoughts on growing a grammar.
+\newblock \emph{Studies in Language} 30(2). 417--444.
+
+\bibitem[{Weber(2000)}]{Weber2000}
+Weber, David~J. 2000.
+\newblock Reference~grammar for the computational age: {F}rom {G}leason files
+  to {S}ci-{F}i grammar -- {L}inguistic exploration. {N}ew methods for
+  creating, exploring and disseminating linguistic field data.
+\newblock \urlprefix\url{http://www.ldc.upenn.edu/exploration/LSA/weber}.
+
+\end{thebibliography}

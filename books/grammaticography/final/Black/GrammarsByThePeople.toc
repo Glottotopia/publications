@@ -1,0 +1,23 @@
+<toc>
+<tocline ref="rXLingPapContents" page="1"/>
+<tocline ref="rXLingPapAbstract" page="1"/>
+<tocline ref="sIntro" page="2"/>
+<tocline ref="sPractical" page="2"/>
+<tocline ref="sPracticalStructure" page="3"/>
+<tocline ref="sPracticalExperience" page="5"/>
+<tocline ref="sInterface" page="5"/>
+<tocline ref="sPages" page="6"/>
+<tocline ref="sGrammar" page="10"/>
+<tocline ref="sXLingPaper" page="13"/>
+<tocline ref="sXMLMind" page="14"/>
+<tocline ref="sComp" page="15"/>
+<tocline ref="sConfig" page="16"/>
+<tocline ref="sConfigCabhab" page="16"/>
+<tocline ref="sConfigWebPage" page="18"/>
+<tocline ref="sConfigWriterOutput" page="19"/>
+<tocline ref="sProcessProducingWriterOutput" page="21"/>
+<tocline ref="sOutputs" page="21"/>
+<tocline ref="sLocal" page="22"/>
+<tocline ref="sConc" page="22"/>
+<tocline ref="rXLingPapReferences" page="23"/>
+</toc>

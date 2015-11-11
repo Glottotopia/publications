@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % please use UTF8 encoding
+\usepackage[authoryear]{natbib}
+\usepackage{color}
+\newcommand{\tv}[1]{\colorbox{yellow}{see \textsc{#1}, this volume}}
+
+\newcommand{\sref}[1]{Section$\,$\ref{#1}}
+
+% \usepackage{times}
+% \usepackage{robbib}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{mygb4e}
+\newcommand{\glossSTDmode}{\let\eachwordone=\it \let\eachwordtwo=\rm} 
+\usepackage{url}
+\usepackage{multirow,xspace}
+
+\newcommand{\tdl}{\textsc{tdl}}
+\newcommand{\hpsg}{\textsc{hpsg}\xspace}
+\newcommand{\itsdb}{\mbox{\sf \lbrack incr tsdb()\rbrack}}
+ 
+
+
+\title{From Database to Treebank: On Enhancing Hypertext Grammars with Grammar Engineering and Treebank Search}
+
+\author{Emily M.\ Bender$^\spadesuit$, Sumukh Ghodke$^\heartsuit$,\\ Timothy Baldwin$^\heartsuit$ and Rebecca Dridan$^\clubsuit$\\
+\normalsize $^\spadesuit$University of Washington, $^\heartsuit$University of Melbourne, $^\clubsuit$University of Oslo}
+
+\date{}       
+
+%%add
+\newcommand\namecite{\citet}
+\newcommand\citeboth{\citealt}
+\newcommand{\quotecite}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+
+\newcommand{\imgpath}{./}
+\begin{document}
+\include{bender}
+
+\bibliographystyle{unified}
+\bibliography{bender,tv}
+ 
+
+\end{document}

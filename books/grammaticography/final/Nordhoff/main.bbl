@@ -1,0 +1,324 @@
+\begin{thebibliography}{56}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Ameka et~al.(2006)Ameka, Dench \& Evans}]{AmekaEtAl2006}
+Ameka, Felix~K., Alan Dench \& Nicholas Evans (eds.). 2006.
+\newblock \emph{Catching language -- {T}he {S}tanding {C}hallenge of {G}rammar
+  {W}riting}.
+\newblock Berlin, New York: Mouton de Gruyter.
+
+\bibitem[{Black \& Black(this volume)}]{Blacktv}
+Black, Cheryl~A. \& H.~Andrew Black. this volume.
+\newblock Grammars for the people, by the people, made easier using
+  {P}{A}{W}{S} and {X}{L}ing{P}aper.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  103--28. Manoa: University of Hawai'i Press.
+
+\bibitem[{Bloomfield(1962)}]{Bloomfield1962}
+Bloomfield, Leonard. 1962.
+\newblock \emph{The {M}enomini {L}anguage}.
+\newblock New Haven, London: Yale University Press.
+
+\bibitem[{Bouda \& Cysouw(this vol.)}]{BoudaEtAl2012ldl}
+Bouda, Peter \& Michael Cysouw. this vol.
+\newblock {T}reating {D}ictionaries as a {Linked-{D}ata} {C}orpus.
+\newblock In Christian Chiarcos, Sebastian Nordhoff \& Sebastian Hellmann
+  (eds.), \emph{Linked {D}ata in {L}inguistics. {R}epresenting {L}anguage
+  {D}ata and {M}etadata}, 15--23. Heidelberg: Springer.
+
+\bibitem[{Bow et~al.(2003)Bow, Hughes \& Bird}]{BowEtAl2003}
+Bow, Cathy, Baden Hughes \& Steven Bird. 2003.
+\newblock Towards a general model for interlinear text.
+\newblock \emph{Proceedings of the EMELD Language Digitization Project
+  Conference}
+  \urlprefix\url{http://www.linguistlist.org/emeld/workshop/2003/bowbadenBird-%
+paper.pdf}.
+
+\bibitem[{Buechel(1939)}]{Buechel1939}
+Buechel, Eugene. 1939.
+\newblock \emph{A {G}rammar of {L}akota}.
+\newblock Rosebud: Rosebud Educational Society.
+
+\bibitem[{Comrie(1998)}]{Comrie1998}
+Comrie, Bernard. 1998.
+\newblock Ein {S}trukturrahmen für deskriptive {G}rammatiken: {A}llgemeine
+  {B}emerkungen.
+\newblock In  \cite{Zaefferer1998ed} 7--16.
+
+\bibitem[{Cristofaro(2006)}]{Cristofaro2006}
+Cristofaro, Sonia. 2006.
+\newblock The organization of reference grammars: a typologist user's point of
+  view.
+\newblock In  \cite{AmekaEtAl2006} 137--170.
+
+\bibitem[{Croft(2001)}]{Croft2001rcg}
+Croft, William. 2001.
+\newblock \emph{Radical {C}onstruction {G}rammar}.
+\newblock Oxford: OUP.
+
+\bibitem[{Culicover \& Jackendoff(2005)}]{CulicoverEtAl2005}
+Culicover, Peter \& Ray Jackendoff. 2005.
+\newblock \emph{Simpler {S}yntax}.
+\newblock Oxford: OUP.
+
+\bibitem[{Drude(2002)}]{Drude2002}
+Drude, Sebastian. 2002.
+\newblock Advanced glossing -- {A} language documentation format and its
+  implementation with Shoebox.
+\newblock In Peter Austin, Helen Dry \& Peter Wittenburg (eds.),
+  \emph{Proceedings of the {I}nternational {L}{R}{E}{C} workshop on {R}esources
+  and {T}ools in field linguistics}, .
+
+\bibitem[{Epps(2008)}]{Epps2008}
+Epps, Patience. 2008.
+\newblock \emph{A {G}rammar of {H}up}.
+\newblock Berlin, New York: Mouton de Gruyter.
+
+\bibitem[{Evans \& Levinson(2009)}]{EvansEtAl2009BBS}
+Evans, Nick \& Stephen Levinson. 2009.
+\newblock The myth of language universals.
+\newblock \emph{Behavioral and Brain Sciences} 32. 429--492.
+
+\bibitem[{Farrar \& Langendoen(2003)}]{FarrarEtAl2003}
+Farrar, Scott \& Terry Langendoen. 2003.
+\newblock A linguistic ontology for the semantic web.
+\newblock \emph{GLOT International} 7. 200--203.
+
+\bibitem[{Fillmore \& Kay(1993)}]{FillmoreEtAl1993CxG}
+Fillmore, Charles~J. \& Paul Kay. 1993.
+\newblock \emph{Construction grammar coursebook : chapters 1 thru 11}.
+\newblock Berkeley: University of California.
+
+\bibitem[{Foley \& {Van Valin}(1984)}]{FoleyEtAl1984}
+Foley, William~A. \& Robert~D. {Van Valin}. 1984.
+\newblock \emph{Functional syntax and universal grammar}.
+\newblock Cambridge: CUP.
+
+\bibitem[{Frohnmeyer(1889)}]{Frohnmeyer1889}
+Frohnmeyer, L.~J. 1889.
+\newblock \emph{A progressive grammar of the {M}alayalam language}.
+
+\bibitem[{Goldberg(1995)}]{Goldberg1995CxG}
+Goldberg, Adele~E. 1995.
+\newblock \emph{Constructions : a construction grammar approach to argument
+  structure}.
+\newblock Chicago: The University of Chicago Press.
+
+\bibitem[{Good(2004)}]{Good2004}
+Good, Jeff. 2004.
+\newblock The descriptive grammar as a (meta)database.
+\newblock Paper presented at the EMELD Language Digitization Project Conference
+  2004. http://linguistlist.org/emeld/ workshop/2004/jcgood-paper.html.
+
+\bibitem[{Good(this volume)}]{Goodtv}
+Good, Jeff. this volume.
+\newblock Deconstructing descriptive grammars.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  2--32. Manoa: University of Hawai'i Press.
+
+\bibitem[{Grevisse \& Goosse(1995)}]{GrevisseEtAl1995}
+Grevisse, Maurice \& Andr\'e Goosse. 1995.
+\newblock \emph{Nouvelle {G}rammaire {F}ran\c aise}.
+\newblock Brussels: De Boeck \& Larcier 3rd edn.
+
+\bibitem[{Haspelmath(1993)}]{Haspelmath1993}
+Haspelmath, Martin. 1993.
+\newblock \emph{A {G}rammar of {L}ezgian}.
+\newblock Berlin, New York: Mouton de Gruyter.
+
+\bibitem[{Haspelmath(2007)}]{Haspelmath2007LT}
+Haspelmath, Martin. 2007.
+\newblock Pre-established categories don't exist: {C}onsequences for language
+  description and typology.
+\newblock \emph{Linguistic Typology} 11(1). 119--132.
+
+\bibitem[{Hengeveld(1989)}]{Hengeveld1989}
+Hengeveld, Kees. 1989.
+\newblock Layers and operators in {F}unctional {G}rammar.
+\newblock \emph{Journal of Linguistics} 25(1). 127--157.
+
+\bibitem[{Hengeveld \& Mackenzie(2008)}]{HengeveldEtAl2008fdg}
+Hengeveld, Kees \& Lachlan Mackenzie. 2008.
+\newblock \emph{Functional {D}iscourse {G}rammar}.
+\newblock Oxford: Oxford University Press.
+
+\bibitem[{Jespersen(1924)}]{Jespersen1924}
+Jespersen, Otto. 1924.
+\newblock \emph{The {P}hilosophy of {G}rammar}.
+\newblock London: Allen \& Unwin.
+
+\bibitem[{Lehmann(1980)}]{Lehmann1980}
+Lehmann, Christian. 1980.
+\newblock Aufbau einer {G}rammatik zwischen {S}prachtypologie und
+  {U}niversalienforschung.
+\newblock In Hansjakob Seiler, Gunter Brettschneider \& Christian Lehmann
+  (eds.), \emph{Wege zur {U}niversalienforschung}, 29--37. T\"ubingen: Narr.
+
+\bibitem[{Lehmann(1993)}]{Lehmann1993}
+Lehmann, Christian. 1993.
+\newblock \emph{On the system of semasiological grammar}, vol.~1
+  Allgemein-Vergleichende Grammatik.
+\newblock Bielefeld: Universität Bielefeld, Universität München.
+
+\bibitem[{Lehmann(1998)}]{Lehmann1998}
+Lehmann, Christian. 1998.
+\newblock Ein {S}trukturrahmen für deskriptive {G}rammatiken.
+\newblock In  \cite{Zaefferer1998ed} 39--52.
+
+\bibitem[{Lehmann(2002)}]{Lehmann2002}
+Lehmann, Christian. 2002.
+\newblock Structure of a comprehensive presentation of a language.
+\newblock In Tasaku Tsunoda (ed.), \emph{Basic materials in minority
+  languages}, 5--33. Osaka: Osaka Gakuin University.
+
+\bibitem[{Lehmann(2004{\natexlab{a}})}]{Lehmann2004docu}
+Lehmann, Christian. 2004{\natexlab{a}}.
+\newblock Documentation of grammar.
+\newblock In Osamu Sakiyama, Fubito Endo, Honore Watanabe \& Fumiko Sasama
+  (eds.), \emph{Lectures on endangered languages: 4. {F}rom {K}yoto
+  {C}onference 2001}, 61--74. Osaka: Osaka Gakuin University.
+
+\bibitem[{Lehmann(2004{\natexlab{b}})}]{Lehmann2004funkt}
+Lehmann, Christian. 2004{\natexlab{b}}.
+\newblock Funktionale {G}rammatikographie.
+\newblock In Waldfried Premper (ed.), \emph{Dimensionen und {K}ontinua.
+  {B}eiträge zu {H}ansjakob {S}eilers {U}niversalienforschung.}, 147--165.
+  Bochum: N. Brockmeyer.
+
+\bibitem[{Lehmann \& Maslova(2004)}]{LehmannEtAl2004}
+Lehmann, Christian \& Elena Maslova. 2004.
+\newblock Grammaticography.
+\newblock In Geert Booij, Christian Lehmann, Joachim Mugdan \& Stavros
+  Skopeteas (eds.), \emph{Morphologie. {E}in {H}andbuch zur {F}lexion und
+  {W}ortbildung}, vol.~2, Berlin, New York: de Gruyter.
+
+\bibitem[{Lewis(2006)}]{Lewis2006}
+Lewis, William~D. 2006.
+\newblock O{D}{I}{N}: {A} {M}odle for {A}dapting and {E}nriching {L}egacy
+  {I}nfrastructure.
+\newblock Paper presented at the e-Humanities workshop at e-Science 2006.
+
+\bibitem[{Li \& Thompson(1981)}]{LiEtAl1981}
+Li, Charles~N. \& Sandra~A. Thompson. 1981.
+\newblock \emph{Mandarin {C}hinese -- {A} functional reference grammar}.
+\newblock Berkeley: University of California Press.
+
+\bibitem[{Maxwell(this volume)}]{Maxwelltv}
+Maxwell, Mike. this volume.
+\newblock Electronic {G}rammars and {R}eproducible {R}esearch.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  207--234. Manoa: University of Hawai'i Press.
+
+\bibitem[{Mosel(2006)}]{Mosel2006craft}
+Mosel, Urlike. 2006.
+\newblock Grammaticography: {T}he art and craft of writing grammars.
+\newblock In  \cite{AmekaEtAl2006}.
+
+\bibitem[{Newman(2000)}]{Newman2000}
+Newman, Paul. 2000.
+\newblock \emph{The {H}ausa {L}anguage -- {A}n encyclopedic reference grammar}.
+\newblock New Haven, London: Yale University Press.
+
+\bibitem[{Noonan(2006)}]{Noonan2006}
+Noonan, Michael. 2006.
+\newblock Grammar writing for a grammar-reading audience.
+\newblock \emph{Studies in Language} 30(2). 351--365.
+
+\bibitem[{Nordhoff(2007{\natexlab{a}})}]{Nordhoff2007mpi}
+Nordhoff, Sebastian. 2007{\natexlab{a}}.
+\newblock The grammar authoring system {G}{A}{L}{O}{E}S.
+\newblock Paper presented at the workshop ``Wikifying research'' at the MPI
+  Leipzig.
+
+\bibitem[{Nordhoff(2007{\natexlab{b}})}]{Nordhoff2007alt}
+Nordhoff, Sebastian. 2007{\natexlab{b}}.
+\newblock Grammar writing in the {E}lectronic {A}ge.
+\newblock Paper presented at the ALT VII conference in Paris.
+
+\bibitem[{Nordhoff(2007{\natexlab{c}})}]{Nordhoff2007dobes}
+Nordhoff, Sebastian. 2007{\natexlab{c}}.
+\newblock Growing a grammar with {G}{A}{L}{O}{E}S.
+\newblock Paper presented at the Dobes workshop at the MPI Nijmegen.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008jldc}
+Nordhoff, Sebastian. 2008.
+\newblock Electronic reference grammars for typology -- challenges and
+  solutions.
+\newblock \emph{Journal for Language Documentation \& Conservation} 2(2).
+  296--324.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009phd}
+Nordhoff, Sebastian. 2009.
+\newblock \emph{A {G}rammar of {U}pcountry {S}ri {L}anka {M}alay}: University
+  of Amsterdam dissertation.
+
+\bibitem[{Payne(2006)}]{Payne2006}
+Payne, Thomas. 2006.
+\newblock A grammar as a communicative act or {W}hat does a grammatical
+  description really describe?
+\newblock \emph{Studies in Language} 30(2). 367--383.
+
+\bibitem[{Peterson(2002)}]{Peterson2002}
+Peterson, John. 2002.
+\newblock \emph{Cross-{L}inguistic {R}eference {G}rammar ({F}inal report)}.
+\newblock München: Centrum für Informations- und Sprachverarbeitung.
+
+\bibitem[{Rice(2006)}]{Rice2006}
+Rice, Keren. 2006.
+\newblock A typology of good grammars.
+\newblock \emph{Studies in Language} 30(2). 385--415.
+
+\bibitem[{Schultze-Berndt(1998)}]{SchultzeBerndt1998}
+Schultze-Berndt, Eva. 1998.
+\newblock Zur {I}nteraktion von semasiologischer und onomasiologischer
+  {G}rammatik: Der Verbkomplex im Jaminjung.
+\newblock In  \cite{Zaefferer1998ed} 149--176.
+
+\bibitem[{Seiler(1985)}]{Seiler1985}
+Seiler, Walter. 1985.
+\newblock \emph{Imonda, a {P}apuan language}.
+\newblock Canberra: Department of Linguistics.
+
+\bibitem[{{Van Valin} \& Lapolla(1997)}]{VanValinEtAl1997rrg}
+{Van Valin}, Robert~D. \& Randy Lapolla. 1997.
+\newblock \emph{Syntax -- {S}tructure, meaning and function}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{{von der Gabelentz}(1891)}]{Gabelentz1891}
+{von der Gabelentz}, Georg. 1891.
+\newblock Die {S}prachwissenschaft. {I}hre {A}ufgaben, {M}ethoden und
+  bisherigen {E}rgebnisse, Leipzig.
+
+\bibitem[{Weber(2006)}]{Weber2006grow}
+Weber, David. 2006.
+\newblock Thoughts on growing a grammar.
+\newblock \emph{Studies in Language} 30(2). 417--444.
+
+\bibitem[{Willett(1991)}]{Willett1991}
+Willett, Thomas~Leslie. 1991.
+\newblock \emph{Southeastern {T}epehuan}.
+\newblock Dallas: SIL.
+
+\bibitem[{Zaefferer(1998{\natexlab{a}})}]{Zaefferer1998ed}
+Zaefferer, Dietmar (ed.). 1998{\natexlab{a}}.
+\newblock \emph{Deskriptive {G}rammatik und allgemeiner {S}prachvergleich}.
+\newblock Tübingen: Niemeyer.
+
+\bibitem[{Zaefferer(1998{\natexlab{b}})}]{Zaefferer1998}
+Zaefferer, Dietmar. 1998{\natexlab{b}}.
+\newblock Ein {S}trukturrahmen für deskriptive {G}rammatiken: {D}ie
+  {B}eschreibung sprachlicher Funktionen.
+\newblock In  \cite{Zaefferer1998ed} 29--38.
+
+\bibitem[{Zaefferer(2006)}]{Zaefferer2006}
+Zaefferer, Dietmar. 2006.
+\newblock Realizing {H}umboldt's dream: {C}ross-linguistic grammaticography.
+\newblock In  \cite{AmekaEtAl2006} 113--136.
+
+\end{thebibliography}

@@ -1,0 +1,185 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Bender et~al.(2004)Bender, Flickinger, Good \& Sag}]{BenderEtAl2004}
+Bender, Emily~M., Dan Flickinger, Jeff Good \& Ivan~A. Sag. 2004.
+\newblock Montage:{ L}everaging advances in grammar engineering, linguistic
+  ontologies, and markup for the documentation of underdescribed languages.
+\newblock In \emph{Proceedings of the {W}orkshop on {F}irst {S}teps for
+  {L}anguage {D}ocumentation of {M}inority {L}anguages: {C}omputational
+  {L}inguistic {T}ools for {M}orphology, {L}exicon and {C}orpus {C}ompilation,
+  {L}{R}{E}{C} 2004}, Accessed at
+  http://faculty.washington.edu/ebender/papers/Montage\_LREC.pdf on 14/9/2008.
+
+\bibitem[{Blake(1985)}]{Blake1985}
+Blake, Barry~J. 1985.
+\newblock Review of {H}eath 1984.
+\newblock \emph{Australian Journal of Linguistics} 5. 304--310.
+
+\bibitem[{Boas(1917)}]{Boas1917}
+Boas, Franz. 1917.
+\newblock Introductory.
+\newblock \emph{International Journal of American Linguistics} 1. 1--8.
+
+\bibitem[{Bow et~al.(2003)Bow, B. \& Bird}]{BowEtAl2003}
+Bow, C., Hughes B. \& S~Bird. 2003.
+\newblock Towards a {G}eneral {M}odel of {I}nterlinear{ T}ext.
+\newblock In \emph{Proceedings of the {E}{M}{E}{L}{D} {L}anguage {D}igitisation
+  {P}roject {C}onference 2003: {W}orkshop on {D}igitizing and {A}nnotating
+  {T}exts and {F}ield {R}ecordings},
+  \urlprefix\url{http://emeld.org/workshop/2003/bowbadenbird-paper.html}.
+\newblock Retrieved September 23, 2009.
+
+\bibitem[{Evans et~al.(2006)Evans, Dench \& Ameka}]{EvansEtAl2006}
+Evans, Nicholas, Alan Dench \& Felix Ameka (eds.). 2006.
+\newblock \emph{Catching language: the standing challenge of grammar writing}.
+\newblock Berlin/New York: Mouton de Gruyter.
+
+\bibitem[{Good(2004)}]{Good2004}
+Good, Jeff. 2004.
+\newblock The {D}escriptive {G}rammar as a ({M}eta){D}atabase.
+\newblock In \emph{Proceedings of the {E}-{M}{E}{L}{D} {W}orkshop 2004:
+  {L}inguistic {D}atabases and {B}est {P}ractice, {J}uly 15--18, 2004,
+  {D}etroit, {M}ichigan},
+  \urlprefix\url{http://emeld.org/workshop/2004/jcgood-paper.html}.
+
+\bibitem[{Haiman(1986)}]{Haiman1986}
+Haiman, John. 1986.
+\newblock Review article on {H}eath 1980, 1982, 1984.
+\newblock \emph{Language} 62. 654--663.
+
+\bibitem[{Heath(1980)}]{Heath1980}
+Heath, Jeffrey. 1980.
+\newblock \emph{Nunggubuyu {M}yths and {E}thnographic {T}exts}.
+\newblock Canberra: Australian Institute of Aboriginal Studies.
+
+\bibitem[{Heath(1982)}]{Heath1982}
+Heath, Jeffrey. 1982.
+\newblock \emph{Nunggubuyu {D}ictionary}.
+\newblock Canberra: Australian Institute of Aboriginal Studies.
+
+\bibitem[{Heath(1984)}]{Heath1984}
+Heath, Jeffrey. 1984.
+\newblock \emph{Functional {G}rammar of {N}unggubuyu}.
+\newblock Canberra: Australian Institute of Aboriginal Studies.
+
+\bibitem[{Hellmuth et~al.(2006)Hellmuth, Myers \&
+  Nakhimovsky}]{HellmuthEtAl2006}
+Hellmuth, C., T.~Myers \& A~Nakhimovsky. 2006.
+\newblock The {L}inguist's {T}oolbox and {X}{M}{L} {T}echnologies.
+\newblock Paper presented at the EMELD meeting.
+\newblock Retrieved September 23, 2009 from
+  \url{http://emeld.org/workshop/2006/papers/hellmuth.html}.
+
+\bibitem[{Himmelmann(2012)}]{Himmelmann2012}
+Himmelmann, Nikolaus. 2012.
+\newblock Linguistic data types and the interface between language
+  documentation and description.
+\newblock \emph{Language Documentation \& Conservation} 6.
+
+\bibitem[{Hirzel(2001)}]{Hirzel2001}
+Hirzel, Hannes. 2001.
+\newblock How to optimize analysing an {A}frican language text corpus by
+  exploiting old and new features of the {S}hoebox 5.0 interlinearization
+  program: {A} demonstration from {A}kan and {S}wahili.
+
+\bibitem[{Hore(1978)}]{Hore1978}
+Hore, Michael~R. 1978.
+\newblock New versus old information in {N}unggubuyu.
+\newblock \emph{Oceanic Linguistics} 17. 11--26.
+
+\bibitem[{Hosken(2006)}]{Hosken2006}
+Hosken, Martin. 2006.
+\newblock Lexicon {I}nterchange {F}ormat. {A} description.
+\newblock \urlprefix\url{lift-standard.googlecode.com/files/lift\_10.pdf}.
+
+\bibitem[{Hughes et~al.(2003)Hughes, Bird \& Bow}]{HughesEtAl2003}
+Hughes, Baden, Steven Bird \& Catherine Bow. 2003.
+\newblock Encoding and presenting interlinear text using {X}{M}{L}
+  technologies.
+\newblock In Alistair Knott \& Dominique Estival (eds.), \emph{Proceedings
+  {A}ustralasian {L}anguage {T}echnology {W}orkshop}, 105--113. Melbourne.
+\newblock \urlprefix\url{Accessed at
+  http://eprints.unimelb.edu.au/archive/00000455}.
+
+\bibitem[{Jacobson(2006)}]{Jacobson2006}
+Jacobson, Michel. 2006.
+\newblock The {L}{A}{C}{I}{T}{O} {A}rchiving {P}roject.
+\newblock Ethnographic Eresearch Annotation Conference, University of
+  Melbourne, February 15-17, 2006.
+
+\bibitem[{Jacobson et~al.(2001)Jacobson, Michailovsky \&
+  Lowe}]{JacobsonEtAl2001}
+Jacobson, Michel, B.~Michailovsky \& J.B Lowe. 2001.
+\newblock Linguistic documents synchronizing sound and text.
+\newblock \emph{Speech Communication} 33. 79--96.
+
+\bibitem[{Maxwell(2008)}]{Maxwell2008}
+Maxwell, Michael. 2008.
+\newblock Standards for {L}exical and {M}orphological {I}nterchange.
+\newblock Tech. rep. University of Maryland.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008}
+Nordhoff, S. 2008.
+\newblock Electronic {R}eference {G}rammars for {T}ypology: {C}hallenges and
+  solutions.
+\newblock \emph{Language Documentation \& Conservation} 2. 296--324.
+
+\bibitem[{Nordhoff(this volume)}]{Nordhofftv}
+Nordhoff, Sebastian. this volume.
+\newblock The grammatical description as a collection of form-meaning-pairs.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  33--62. Manoa: University of Hawai'i Press.
+
+\bibitem[{Palmer \& Erk(2007)}]{PalmerEtAl2007}
+Palmer, Alexis \& Katrin Erk. 2007.
+\newblock I{G}{T}-{X}{M}{L}: an {X}{M}{L} format for interlinearized glossed
+  texts.
+\newblock In \emph{Proceedings of the {L}inguistic {A}nnotation {W}orkshop
+  ({L}{A}{W}-07), {A}{C}{L}07. {P}rague},
+  \urlprefix\url{http://whitepapers.zdnet.com/abstract.aspx?docid=889125}.
+
+\bibitem[{Payne \& Weber(2006)}]{PayneEtAl2006}
+Payne, Thomas \& David Weber (eds.). 2006.
+\newblock \emph{Perspectives on {G}rammar {W}riting}, vol.~30.
+\newblock Special issue of Studies in Language.
+
+\bibitem[{Schmidt(2003)}]{Schmidt2003}
+Schmidt, Thomas. 2003.
+\newblock \emph{Visualising {L}inguistic {A}nnotation as {I}nterlinear {T}ext}
+  Arbeiten zur Mehrsprachigkeit. Working papers in multilingualism. Series B.
+\newblock Hamburg: Universit\"at Hamburg.
+\newblock
+  \urlprefix\url{http://www1.uni-hamburg.de/exmaralda/Daten/4D-Litertur/Paper\%
+_LREC.pdf}.
+\newblock Viewed on September 23 2009.
+
+\bibitem[{Schroeter \& Thieberger(2006)}]{SchroeterEtAl2006}
+Schroeter, Ronald \& Nicholas Thieberger. 2006.
+\newblock E{O}{P}{A}{S}, the {E}thno{E}{R} online representation of interlinear
+  text.
+\newblock In Linda Barwick \& Nicholas Thieberger (eds.), \emph{Sustainable
+  {D}ata from {D}igital {F}ieldwork}, 99--124. Sydney: Sydney University Press.
+\newblock \urlprefix\url{http://repository.unimelb.edu.au/10187/2137}.
+
+\bibitem[{Thieberger(2009)}]{Thieberger2009}
+Thieberger, Nick. 2009.
+\newblock Steps toward a grammar embedded in data.
+\newblock In Patricia Epps \& Alexandre Arkhipov (eds.), \emph{New {C}hallenges
+  in {T}ypology: {T}ranscending the {B}orders and {R}efining the{
+  D}istinctions}, 389--408. New York: Mouton de Gruyter.
+
+\bibitem[{Woodbury(2011)}]{Woodbury2011}
+Woodbury, Anthony. 2011.
+\newblock Language documentation.
+\newblock In Peter~K. Austin \& Julia Sallabank (eds.), \emph{The {C}ambridge
+  {H}andbook of {E}ndangered{ L}anguages}, 159--186. Cambridge: Cambridge
+  University Press.
+
+\end{thebibliography}

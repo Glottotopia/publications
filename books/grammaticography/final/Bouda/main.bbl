@@ -1,0 +1,39 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Hartmann et~al.(2009ff)Hartmann, Helmbrecht, Lehmann \&
+  Marschke}]{HartmannEtAl2009hocank}
+Hartmann, Iren, Johannes Helmbrecht, Christian Lehmann \& Christian Marschke.
+  2009ff.
+\newblock \emph{{D}ocumentation of {H}ooc{\k{a}}k}.
+\newblock Nijmegen: Max Planck Institute for Psycholinguistics, DoBeS Archive.
+\newblock
+  \urlprefix\url{http://corpus1.mpi.nl/qfs1/media-archive/dobes_data/Hocank/Co%
+rpusstructure/1.imdi}.
+
+\bibitem[{Lehmann(2004)}]{LehmannEtAl2004}
+Lehmann, Christian \& Elena~Maslova. 2004.
+\newblock {G}rammaticography.
+\newblock In Christian Lehmann, Geert Booij, Joachim Mugdan \& Stavros
+  Skopeteas (eds.), \emph{Morphologie. {E}in internationales {H}andbuch zur
+  {F}lexion und {W}ortbildung}, vol. 17.2, 1857--1882. Berlin \& New York: W.
+  de Gruyter (Handb\"ucher zur Sprach- und Kommunikationswissenschaft).
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008}
+Nordhoff, Sebastian. 2008.
+\newblock {R}eference {G}rammars for {T}ypology - {C}hallenges and {S}olutions.
+\newblock \emph{Language Documentation \& Conservation} 2. 296--324.
+
+\bibitem[{White~Eagle(1988)}]{WhiteEagle1988}
+White~Eagle, Josephine. 1988.
+\newblock \emph{A {L}exical {S}tudy of {W}innebago}, vol.~26 Lexicon Project
+  Working Papers.
+\newblock Cambridge, MA: Center for Cognitive Science, MIT.
+
+\end{thebibliography}

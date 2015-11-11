@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % please use UTF8 encoding
+\usepackage[T1]{fontenc}
+\usepackage[authoryear]{natbib}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{lingsty}
+\usepackage{color}
+\usepackage{rotating}
+\makeindex            
+% \newcommand\textstyleInternetlink[1]{\textcolor{blue}{#1}}
+% \newcommand\textstyleHTMLCite[1]{\textit{#1}}
+\newcommand{\imgpath}{.}
+\title{Language description and hypertext: Nunggubuyu as a case study}
+\author{Simon Musgrave}
+ 
+\newcommand{\textlangle}{$\langle$}
+\newcommand{\textrangle}{$\rangle$}
+\newcommand{\tv}[1]{\colorbox{yellow}{see \textsc{#1}, this volume}}
+\newcommand{\tag}[1]{$\texttt{<#1>}$}
+\begin{document} 
+\include{thieberger}
+
+\bibliographystyle{unified}
+\bibliography{thieberger,tv}
+
+\end{document}

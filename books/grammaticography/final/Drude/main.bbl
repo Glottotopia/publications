@@ -1,0 +1,312 @@
+\begin{thebibliography}{48}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Ameka et~al.(2006)Ameka, Dench \& Evans}]{AmekaEtAlEd2006}
+Ameka, Felix~K., Alan Dench \& Nicholas R.~D. Evans (eds.). 2006.
+\newblock \emph{{C}atching language: {T}he standing challenge of grammar
+  writing}, vol. 167 Trends in linguistics Studies and monographs.
+\newblock Berlin: de Gruyter.
+
+\bibitem[{Bender et~al.(2010)Bender, Drellishak, Fokkens, Goodman, Mills,
+  Poulson \& Saleem}]{BenderEtAl2010lingo}
+Bender, Emily~M, Scott Drellishak, Antske Fokkens, Michael~W. Goodman,
+  Daniel~P. Mills, Laurie Poulson \& Safiyyah Saleem. 2010.
+\newblock Grammar {P}rototyping and {T}esting with the {L}in{G}{O} {G}rammar
+  {M}atrix {C}ustomization {S}ystem.
+\newblock In \emph{Proceedings of the {A}{C}{L} 2010 {S}ystem
+  {D}emonstrations}, 1--6. Uppsala, Sweden: Association for Computational
+  Linguistics.
+
+\bibitem[{Bender \& Langendoen(2010)}]{BenderEtAl2010clislt}
+Bender, Emily~M. \& D.~Terence Langendoen. 2010.
+\newblock Computational {L}inguistics in {S}upport of {L}inguistic {T}heory.
+\newblock \emph{Linguistic Issues in Language Technology} 3. 1--31.
+\newblock
+  \urlprefix\url{http://elanguage.net/journals/index.php/lilt/article/view/661%
+/522}.
+
+\bibitem[{Bird(2009)}]{Bird2009}
+Bird, Steven. 2009.
+\newblock Natural {L}anguage {P}rocessing and {L}inguistic {F}ieldwork.
+\newblock \emph{Computational Linguistics} 35. 469--474.
+
+\bibitem[{Bird \& Simons(2003)}]{BirdEtAl2003}
+Bird, Steven \& Gary Simons. 2003.
+\newblock Seven {D}imensions of {P}ortability for {L}anguage {D}ocumentation
+  and {D}escription.
+\newblock \emph{Language} 79. 557--582.
+
+\bibitem[{Black \& Black(this volume)}]{Blacktv}
+Black, Cheryl~A. \& H.~Andrew Black. this volume.
+\newblock Grammars for the people, by the people, made easier using
+  {P}{A}{W}{S} and {X}{L}ing{P}aper.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  103--28. Manoa: University of Hawai'i Press.
+
+\bibitem[{Black(2009)}]{Black2009}
+Black, H.~Andrew. 2009.
+\newblock Writing {L}inguistic {P}apers in the {T}hird {W}ave.
+\newblock In \emph{S{I}{L} {F}orum for {L}anguage {F}ieldwork 2009-004}, SIL
+  International.
+\newblock
+  \urlprefix\url{http://www.sil.org/silepubs/Pubs/52286/SILForum2009-004.pdf}.
+
+\bibitem[{Black(2010)}]{Black2010}
+Black, H.~Andrew. 2010.
+\newblock X{L}ing{P}aper with the {X}{M}{L}mind {X}{M}{L} {E}ditor.
+\newblock \urlprefix\url{http://www.sil.org/\~{}blacka/xlingpap/index.htm}.
+
+\bibitem[{Bow et~al.(2003{\natexlab{a}})Bow, Hughes \&
+  Bird}]{BowEtAl2003a4lmilt}
+Bow, Catherine, Baden Hughes \& Steven Bird. 2003{\natexlab{a}}.
+\newblock A {F}our-{L}evel {M}odel for {I}nterlinear {T}ext .
+
+\bibitem[{Bow et~al.(2003{\natexlab{b}})Bow, Hughes \&
+  Bird}]{BowEtAl2003tgmilt}
+Bow, Catherine, Baden Hughes \& Steven Bird. 2003{\natexlab{b}}.
+\newblock Towards a general model of interlinear text.
+\newblock In \emph{Proceedings of {E}{M}{E}{L}{D} {W}orkshop 2003: {D}igitizing
+  and {A}nnotating {T}exts and {F}ield {R}ecordings}, Lansing MI, USA.
+
+\bibitem[{Broeder(2011)}]{Broeder2011}
+Broeder, Daan. 2011.
+\newblock L{A}{M}{U}{S}~and {L}{A}{T} {A}rchiving software ({P}resentation).
+
+\bibitem[{Dixon(2010)}]{Dixon2010}
+Dixon, Robert M.~W. 2010.
+\newblock \emph{Basic linguistic theory}.
+\newblock Oxford: Oxford Univ. Press.
+
+\bibitem[{Farrar \& Langedoen(2003)}]{FarrarEtAl2003}
+Farrar, Scott \& D.~T. Langedoen. 2003.
+\newblock A linguistic ontology for the {S}emantic {W}eb.
+\newblock \emph{GLOT International} 7. 97--100.
+
+\bibitem[{Francopoulo et~al.(2007)Francopoulo, Bel, George, Calzolari,
+  Monachini, Pet \& Soria}]{FrancopouloEtAl2007}
+Francopoulo, Gil, Nuria Bel, Monte George, Nicoletta Calzolari, Monica
+  Monachini, Mandy Pet \& Claudia Soria. 2007.
+\newblock Lexical {M}arkup {F}ramework: {I}{S}{O} standard for semantic
+  information in {N}{L}{P} lexicons.
+\newblock
+  \urlprefix\url{http://www.tagmatica.fr/lmf/LMFPaperForTubingen17Feburary2007%
+.pdf}.
+
+\bibitem[{Gippert(2010)}]{Gippert2010}
+Gippert, Jost. 2010.
+\newblock Was kommt ans {L}icht, wenn {T}exte und {B}ilder digital analysiert
+  werden? ``{D}igital {H}umanities'' -- die empirische {W}ende in den
+  {G}eisteswissenschaften.
+\newblock \emph{Forschung Frankfurt} 3. 21--25.
+
+\bibitem[{Gippert et~al.(2006)Gippert, Himmelmann \& Mosel}]{GippertEtAlEd2006}
+Gippert, Jost, Nikolaus~P. Himmelmann \& Ulrike Mosel (eds.). 2006.
+\newblock \emph{{E}ssentials of {L}anguage {D}ocumentation}.
+\newblock Berlin, New York: de Gruyter Mouton.
+
+\bibitem[{Good(2004)}]{Good2004}
+Good, Jeff. 2004.
+\newblock The {D}escriptive {G}rammar as a ({M}eta){D}atabase.
+\newblock In \emph{Proceedings of the {E}-{M}{E}{L}{D} {W}orkshop 2004:
+  {L}inguistic {D}atabases and {B}est {P}ractice, {J}uly}, 15--18. Detroit,
+  Michigan.
+
+\bibitem[{Good et~al.(2010)Good, Myers \& Nakhimovski}]{GoodEtAl2010}
+Good, Jeff, Tom Myers \& Alexander Nakhimovski. 2010.
+\newblock Interoperability for {L}anguage {D}ocumentation: {T}he {R}ole of
+  {S}emantic {W}eb {T}ools.
+
+\bibitem[{Himmelmann(1998)}]{Himmelmann1998}
+Himmelmann, Nikolaus~P. 1998.
+\newblock Documentary and descriptive linguistics.
+\newblock \emph{Linguistics} 36. 161--195.
+
+\bibitem[{Hughes et~al.(2004)Hughes, Bow \& Bird}]{HughesEtAl2004}
+Hughes, Baden, Catherine Bow \& Steven Bird. 2004.
+\newblock Functional {R}equirements for an {I}nterlinear {T}ext {E}ditor.
+\newblock In \emph{Proceedings of the 4th {I}nternational {C}onference on
+  {L}anguage {R}esources and {E}valuation}, 771--775. Lisbon, Portugal.
+
+\bibitem[{II()}]{AMS-II}
+II, AMS. ????
+\newblock {A}ccess {M}anagement {S}ystem for language archive resources in
+  {I}{M}{D}{I}-corpora: {L}anguage {A}rchiving {T}echnology.
+\newblock \urlprefix\url{http://www.lat-mpi.eu/tools/ams/}.
+
+\bibitem[{Kemps-Snijders et~al.(2009)Kemps-Snijders, Windhouwer, Wittenburg \&
+  Wright}]{Kemps-SnijdersEtAl2009}
+Kemps-Snijders, Marc, Menzo Windhouwer, Peter Wittenburg \& Sue~E. Wright.
+  2009.
+\newblock I{S}{O}cat: remodelling metadata for language resources.
+\newblock \emph{International Journal of Metadata, Semantics and Ontologies} 4.
+  261.
+
+\bibitem[{Knuth(1992)}]{Knuth1992}
+Knuth, Donald~E. 1992.
+\newblock \emph{The {T}exbook}.
+\newblock Reading.
+
+\bibitem[{Lehmann(2004{\natexlab{a}})}]{Lehmann2004dog}
+Lehmann, Christian. 2004{\natexlab{a}}.
+\newblock Documentation of grammar.
+\newblock In Osamu Sakiyama (ed.), \emph{{K}yoto conference 2001 ({E}ndangered
+  languages of the {P}acific {R}im {C},004)}, vol.~4 Lectures on endangered
+  languages, 61--74. Kyoto: Nakanishi.
+
+\bibitem[{Lehmann(2004{\natexlab{b}})}]{Lehmann2004fg}
+Lehmann, Christian. 2004{\natexlab{b}}.
+\newblock Funktionale {G}rammatikographie.
+\newblock In Waldfried Premper (ed.), \emph{Dimensionen und {K}ontinua:
+  {B}eitr\"age zu {H}ansjakob {S}eilers {U}niversalienforschung}, vol.~4
+  Diversitas linguarum, 147--165. Bochum: Brockmeyer.
+
+\bibitem[{Newman(2008)}]{Newman2008}
+Newman, John. 2008.
+\newblock Spoken {C}orpora: {R}ationale and {A}pplication.
+\newblock \emph{Taiwan Journal of Linguistics} 6. 27--58.
+
+\bibitem[{Nordhoff(2007{\natexlab{a}})}]{Nordhoff2007tgasg}
+Nordhoff, Sebastian. 2007{\natexlab{a}}.
+\newblock The grammar authoring system {G}{A}{L}{O}{E}S.
+\newblock Paper presented at the workshop ``Wikifying research'' at the MPI
+  Leipzig.
+
+\bibitem[{Nordhoff(2007{\natexlab{b}})}]{Nordhoff2007gwea}
+Nordhoff, Sebastian. 2007{\natexlab{b}}.
+\newblock Grammar writing in the {E}lectronic {A}ge.
+\newblock Paper presented at the ALT VII conference in Paris.
+
+\bibitem[{Nordhoff(2007{\natexlab{c}})}]{Nordhoff2007ggwg}
+Nordhoff, Sebastian. 2007{\natexlab{c}}.
+\newblock Growing a grammar with {G}{A}{L}{O}{E}S.
+\newblock Paper presented at the Dobes workshop at the MPI Nijmegen.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008}
+Nordhoff, Sebastian. 2008.
+\newblock Electronic {R}eference {G}rammars for {T}ypology: {C}hallenges and
+  {S}olutions.
+
+\bibitem[{Palmer \& Erk(2007)}]{PalmerEtAl2007}
+Palmer, Alex \& Katrin Erk. 2007.
+\newblock I{G}{T}-{X}{M}{L}: an {X}{M}{L} format for interlinearized glossed
+  texts.
+\newblock In \emph{A{C}{L} {W}orkshops: {P}roceedings of the {L}inguistic
+  {A}nnotation {W}orkshop}, 176--183. Morristown, NJ, USA.
+
+\bibitem[{Payne \& Weber(2007)}]{PayneEtAlEd2007}
+Payne, Thomas~E. \& Davis~J. Weber (eds.). 2007.
+\newblock \emph{{P}erspectives on {G}rammar {W}riting}.
+\newblock John Benjamins Publishing Co.
+
+\bibitem[{Reed \& Sewell(2009)}]{ReedEtAl2009}
+Reed, Kenneth \& David Sewell. 2009.
+\newblock A {T}{E}{I}-based {P}ublishing {W}orkflow.
+\newblock In \emph{{T}{E}{I} {M}embers {M}eeting}, Ann Arbor.
+
+\bibitem[{Ringersma et~al.(2010)Ringersma, Drude \&
+  Kemps-Snijders}]{RingersmaEtAl2010}
+Ringersma, Jacquelijn, Sebastian Drude \& Marc Kemps-Snijders. 2010.
+\newblock Lexicon standards: {F}rom de facto standard {T}oolbox {M}{D}{F} to
+  {I}{S}{O} standard {L}{M}F.
+\newblock In \emph{{L}{R}{T} standards workshop {E}{L}{R}{A}; {S}eventh
+  conference on {I}nternational {L}anguage {R}esources and {E}valuation
+  ({L}{R}{E}{C} 2010)}, Valetta, Malta.
+
+\bibitem[{Ringersma \& Kemps-Snijders(2007)}]{RingersmaEtAl2007}
+Ringersma, Jacquelijn \& Marc Kemps-Snijders. 2007.
+\newblock Creating multimedia dictionaries of endangered languages using
+  {L}{E}{X}{U}S.
+\newblock In H.~van Hamme \& R.~van Son (eds.), \emph{Proceedings of
+  {I}nterspeech 2007}, 65--68. Baixas, France.
+\newblock
+  \urlprefix\url{http://pubman.mpdl.mpg.de/pubman/item/escidoc:58398:5/compone%
+nt/escidoc:58399/Ringersma_2007_creating.pdf}.
+
+\bibitem[{Schlitz(2010)}]{Schlitz2010}
+Schlitz, Stephanie. 2010.
+\newblock T{E}{I}-{X}{M}{L} and {D}rupal.
+\newblock Blog post 10 August.
+\newblock \urlprefix\url{http://stephanieschlitz.com/?p=22}.
+
+\bibitem[{Schreibman et~al.(2008)Schreibman, Siemens \&
+  Unsworth}]{SchreibmanEtAl2008}
+Schreibman, Susan, Ray Siemens \& John Unsworth (eds.). 2008.
+\newblock \emph{A {C}ompanion to {D}igital {H}umanities}.
+\newblock John Wiley and Sons Ltd.
+
+\bibitem[{Simons \& Black(2009)}]{SimonsEtAl2009}
+Simons, Gary~F. \& H.~Andrew Black. 2009.
+\newblock Third wave writing and publishing, SIL International.
+\newblock
+  \urlprefix\url{http://www.sil.org/silepubs/Pubs/52287/SILForum2009-005.pdf}.
+
+\bibitem[{Team(2003)}]{IMDITeam2003}
+Team, IMDI. 2003.
+\newblock I{M}{D}{I} {M}etadata {E}lements for {S}ession {D}escriptions,
+  {V}ersion 3.0.4.
+\newblock
+  \urlprefix\url{http://www.mpi.nl/IMDI/documents/Proposals/IMDI\_MetaData\_3.%
+0.4.pdf}.
+
+\bibitem[{{TEI Consortium}(2009)}]{TEIConsortium2009}
+{TEI Consortium}. 2009.
+\newblock T{E}{I} {P}5: {G}uidelines for {E}lectronic {T}ext {E}ncoding and
+  {I}nterchange.
+
+\bibitem[{{The World Wide Web Consortium}(2011)}]{W3C2011}
+{The World Wide Web Consortium}. 2011.
+\newblock Semantic {W}eb.
+\newblock \urlprefix\url{http://www.w3.org/standards/semanticweb/}.
+
+\bibitem[{Thieberger(2006)}]{Thieberger2006}
+Thieberger, Nicholas. 2006.
+\newblock \emph{A grammar of {S}outh {E}fate: {A}n oceanic language of
+  {V}anuatu}, vol.~33 Oceanic linguistics special publication.
+\newblock Honolulu: Univ. of Hawai'i Press.
+
+\bibitem[{Thieberger(2009)}]{Thieberger2009}
+Thieberger, Nicholas. 2009.
+\newblock Steps toward a grammar embedded in data.
+\newblock In Patricia Epps \& Alexandre Arkhipov (eds.), \emph{{N}ew
+  {C}hallenges in {T}ypology: {T}ranscending the {B}orders and {R}efining the
+  {D}istinctions}, 389--408. Berlin; New York, NY: Mouton de Gruyter.
+
+\bibitem[{Weber(2006)}]{Weber2006}
+Weber, Davis~J. 2006.
+\newblock Thoughts on growing a grammar.
+\newblock \emph{Studies in Language} 30. 417--444.
+
+\bibitem[{Whalen(2004)}]{Whalen2004}
+Whalen, Douglas. 2004.
+\newblock How the study of endangered languages will revolutionize linguistics
+  321--342.
+
+\bibitem[{Withers(2009)}]{Withers2009}
+Withers, Peter. 2009.
+\newblock Arbil {P}resentation.
+\newblock
+  \urlprefix\url{http://www.mpi.nl/tg/j2se/jnlp/linorg/ArbilPresentation200910%
+15.pdf}.
+
+\bibitem[{Wittenburg et~al.(2006)Wittenburg, Brugman, Russel, Klassmann \&
+  Sloetjes}]{WittenburgEtAl2006}
+Wittenburg, Peter, Hennie Brugman, Albert Russel, Alex Klassmann \& Han
+  Sloetjes. 2006.
+\newblock E{L}{A}{N}: {A} professional framework for multimodality research.
+\newblock
+  \urlprefix\url{http://www.lat-mpi.eu/papers/papers-2006/elan-paper-final.pdf%
+}.
+
+\bibitem[{Zaefferer(1998)}]{Zaefferer1998}
+Zaefferer, Dietmar. 1998.
+\newblock \emph{Deskriptive {G}rammatik und allgemeiner {S}prachvergleich},
+  vol. 383 Linguistische Arbeiten.
+\newblock T\"ubingen: Niemeyer.
+
+\end{thebibliography}

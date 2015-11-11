@@ -1,0 +1,816 @@
+\begin{thebibliography}{120}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abney \& Bird(2010)}]{AbneyBird:2010}
+Abney, Steven \& Steven Bird. 2010.
+\newblock The Human Language Project: {B}uilding a universal corpus of the
+  world's languages.
+\newblock In \emph{Proceedings of the 48th {A}nnual {M}eeting of the
+  {A}ssociation for {C}omputational {L}inguistics}, 88--97. Stroudsburg, Penn.:
+  Association for Computational Linguistics.
+
+\bibitem[{Ahmad \& Rogers(2001)}]{AhmadRogers:2001}
+Ahmad, Khurshid \& Margaret Rogers. 2001.
+\newblock Corpus linguistics and terminology extraction.
+\newblock In Sue~Ellen Wright \& Gerhardt Budin (eds.), \emph{{H}andbook of
+  terminology management, volume 2: {A}pplication-oriented terminology
+  management}, 725--760. Amsterdam: Benjamins.
+
+\bibitem[{Ameka et~al.(2006)Ameka, Dench \& Evans}]{AmekaDenchEvans:2006}
+Ameka, Felix, Alan Dench \& Nicholas Evans (eds.). 2006.
+\newblock \emph{Catching language: {T}he standing challenge of grammar
+  writing}.
+\newblock Berlin: Mouton de Gruyter.
+
+\bibitem[{Anderson(2003)}]{Anderson:EMELD:2003}
+Anderson, Deborah. 2003.
+\newblock Using the {U}nicode standard for linguistic data: {P}reliminary
+  guidelines.
+\newblock In \emph{{P}roceedings of {E-{M}{E}{L}D} 2003: {D}igitizing and
+  annotating texts and field recordings}, East Lansing, Michigan, July 11--13.
+\newblock
+  \urlprefix\url{http://www.e-meld.org/workshop/2003/anderson-paper.pdf}.
+
+\bibitem[{Austin \& Sallabank(2011)}]{AustinSallabank:2011}
+Austin, Peter~K. \& Julia Sallabank (eds.). 2011.
+\newblock \emph{The {C}ambridge handbook of endangered languages}.
+\newblock Cambridge: Cambridge University.
+
+\bibitem[{Baker(1996)}]{Baker:1996}
+Baker, Mark~C. 1996.
+\newblock \emph{The {P}olysynthesis {P}arameter}.
+\newblock Oxford: Oxford University.
+
+\bibitem[{Baldridge \& Palmer(2009)}]{BaldridgePalmer:2009}
+Baldridge, Jason \& Alexis Palmer. 2009.
+\newblock {H}ow well does active learning \emph{actually} work? {T}ime-based
+  evaluation of cost-reduction strategies for language documentation.
+\newblock In \emph{{P}roceedings of the 2009 {C}onference on {E}mpirical
+  {M}ethods in {N}atural {L}anguage {P}rocessing ({E{M}{N}{L}{P} '09})},
+  296--305. Stroudsburg, Penn.: Association for Computational Linguistics.
+\newblock \urlprefix\url{http://www.aclweb.org/anthology-new/D/D09/D09-1031}.
+
+\bibitem[{Beck et~al.(2007)Beck, Legg, Lowe \& Hardman}]{BeckEtAl:2007}
+Beck, Howard, Sue Legg, Elizabeth Lowe \& M.~J. Hardman. 2007.
+\newblock {A}ymara on the internet: {A} step toward interoperability and user
+  access.
+\newblock In Peter~K. Austin, Oliver Bond \& David Nathan (eds.),
+  \emph{{P}roceedings of {C}onference on {L}anguage {D}ocumentation and
+  {L}inguistic {T}heory}, 29--38. London: SOAS.
+
+\bibitem[{Bell \& Bird(2000)}]{BellBird:2000}
+Bell, John \& Steven Bird. 2000.
+\newblock A preliminary study of the structure of lexicon entries.
+\newblock In \emph{{P}roceedings from the {W}orkshop on {W}eb-{B}ased
+  {L}anguage {D}ocumentation and {D}escription}, Philadelphia, December 12--15,
+  2000.
+\newblock
+  \urlprefix\url{http://www.ldc.upenn.edu/exploration/expl2000/papers/bell/bel%
+l.html}.
+
+\bibitem[{Bender(2008{\natexlab{a}})}]{Bender:2008:Wambaya}
+Bender, Emily~M. 2008{\natexlab{a}}.
+\newblock Evaluating a crosslinguistic grammar resource: {A} case study of
+  {W}ambaya.
+\newblock In \emph{Proceedings of {A{C}{L}-08}: {H{L}T}}, 977--985.
+  Stroudsburg, Penn.: Association for Computational Linguistics.
+\newblock \urlprefix\url{http://www.aclweb.org/anthology/P/P08/P08-1111}.
+
+\bibitem[{Bender(2008{\natexlab{b}})}]{Bender:2008}
+Bender, Emily~M. 2008{\natexlab{b}}.
+\newblock Grammar engineering for linguistic hypothesis testing.
+\newblock In  \cite{TLSX} 16--36.
+
+\bibitem[{Bender(2010)}]{Bender:2010}
+Bender, Emily~M. 2010.
+\newblock {R}eweaving a grammar for {W}ambaya.
+\newblock \emph{Linguistic Issues in Language Technology} 3.
+\newblock
+  \urlprefix\url{http://elanguage.net/journals/index.php/lilt/article/view/662%
+}.
+
+\bibitem[{Bender et~al.(2010)Bender, Drellishak, Fokkens, Poulson \&
+  Saleem}]{BenderEtAl:2010}
+Bender, Emily~M., Scott Drellishak, Antske Fokkens, Laurie Poulson \& Safiyyah
+  Saleem. 2010.
+\newblock Grammar customization.
+\newblock \emph{Research on Language \& Computation} 8. 23--72.
+
+\bibitem[{Bender et~al.(this volume)Bender, Ghodke, Baldwin \&
+  Dridan}]{Bendertv}
+Bender, Emily~M., Sumukh Ghodke, Timothy Baldwin \& Rebecca Dridan. this
+  volume.
+\newblock From {D}atabase to {T}reebank: {O}n {E}nhancing {H}ypertext
+  {G}rammars with {G}rammar {E}ngineering and {T}reebank {S}earch.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  179--206. Manoa: University of Hawai'i Press.
+
+\bibitem[{Bender \& Good(2008)}]{BenderGood:2008}
+Bender, Emily~M. \& Jeff Good. 2008.
+\newblock {I}mplementation for discovery: {A} bipartite lexicon to support
+  morphological and syntactic analysis.
+\newblock In Rodney~L. Edwards, Patrick~J. Midtlyng, Colin~L. Sprague \&
+  Kjersti~K. Stensrud (eds.), \emph{{P}roceedings of the {C}hicago {L}inguistic
+  {S}ociety 41: {T}he panels}, 1--15. Chicago: Chicago Linguistic Society.
+
+\bibitem[{Bender \& Langendoen(2010)}]{BenderLangendoen:2010}
+Bender, Emily~M. \& D.~Terence Langendoen. 2010.
+\newblock Computational linguistics in support of linguistic theory.
+\newblock \emph{Linguistic Issues in Language Technology} 3.
+\newblock
+  \urlprefix\url{http://www.elanguage.net/journals/index.php/lilt/article/view%
+/661}.
+
+\bibitem[{Berez(2007)}]{Berez:2007}
+Berez, Andrea. 2007.
+\newblock {T}echnology review: {EUDICO Linguistic Annotator (ELAN)}.
+\newblock \emph{Language Documentation \& Conservation} 1. 283--289.
+\newblock \urlprefix\url{http://hdl.handle.net/10125/1718}.
+
+\bibitem[{Berge(2010)}]{Berge:2010}
+Berge, Anna. 2010.
+\newblock Adequacy in documentation.
+\newblock In  \cite{GrenobleFurbee:2010} 51--66.
+
+\bibitem[{Bickel et~al.(2008)Bickel, Comrie \& Haspelmath}]{LGR:2008}
+Bickel, Balthasar, Bernard Comrie \& Martin Haspelmath. 2008.
+\newblock The {L}eipzig {G}lossing {R}ules: {C}onventions for interlinear
+  morpheme by morpheme glosses.
+\newblock \urlprefix\url{http://www.eva.mpg.de/lingua/pdf/LGR08.02.05.pdf}.
+
+\bibitem[{Bickel \& Nichols(2002)}]{BickelNichols:2002}
+Bickel, Balthasar \& Johanna Nichols. 2002.
+\newblock Autotypologizing databases and their use in fieldwork.
+\newblock In \emph{{P}roceedings of the {I}nternational {W}orkshop on
+  {R}esources and {T}ools in {F}ield {L}inguistics, {L}as {P}almas, 26--27
+  {M}ay 2002}, Nijmegen: ISLE and DOBES.
+\newblock
+  \urlprefix\url{http://www.mpi.nl/lrec/2002/papers/lrec-pap-20-BickelNichols.%
+pdf}.
+
+\bibitem[{Bird(2010)}]{Bird:2010}
+Bird, Steven. 2010.
+\newblock A scalable method for preserving oral literature from small
+  languages.
+\newblock In Gobinda Chowdhury, Chris Khoo \& Jane Hunter (eds.), \emph{The
+  role of digital libraries in a time of global change: {12th} {I}nternational
+  {C}onference on {A}sia-{P}acific {D}igital {L}ibraries ({I{C}{A}{D}{L}
+  2010})}, 5--14. Berlin: Springer.
+
+\bibitem[{Bird(2011)}]{Bird:2011}
+Bird, Steven. 2011.
+\newblock Bootstrapping the language archive.
+\newblock \emph{Linguistic Issues in Language Technology} 6.
+\newblock
+  \urlprefix\url{http://elanguage.net/journals/index.php/lilt/article/view/258%
+0}.
+
+\bibitem[{Bird \& Simons(2003)}]{Bir:Sim:03}
+Bird, Steven \& Gary Simons. 2003.
+\newblock Seven dimensions of portability for language documention and
+  description.
+\newblock \emph{Language} 79. 557--582.
+
+\bibitem[{Bizer et~al.(2009)Bizer, Heath \& Berners-Lee}]{BizerEtAl:2009}
+Bizer, Christian, Tom Heath \& Tim Berners-Lee. 2009.
+\newblock {L}inked data---{T}he story so far.
+\newblock \emph{International Journal on Semantic Web and Information Systems}
+  5. 1--22.
+
+\bibitem[{Black \& Simons(2008)}]{BlackSimons:2008}
+Black, Andrew~H. \& Gary~F. Simons. 2008.
+\newblock {T}he {SIL} {F}ield{W}orks {L}anguage {E}xplorer approach to
+  morphological parsing.
+\newblock In  \cite{TLSX} 37--55.
+
+\bibitem[{Black \& Black(this volume)}]{Blacktv}
+Black, Cheryl~A. \& H.~Andrew Black. this volume.
+\newblock Grammars for the people, by the people, made easier using
+  {P}{A}{W}{S} and {X}{L}ing{P}aper.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  103--28. Manoa: University of Hawai'i Press.
+
+\bibitem[{Bouda \& Helmbrecht(this volume)}]{Boudatv}
+Bouda, Peter \& Johannes Helmbrecht. this volume.
+\newblock From corpus to grammar: how {D}{O}{B}{E}{S} corpora can be exploited
+  for descriptive linguistics.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  129--159. Manoa: University of Hawai'i Press.
+
+\bibitem[{Bow et~al.(2003)Bow, Hughes \& Bird}]{BBB:2003}
+Bow, Catherine, Baden Hughes \& Steven Bird. 2003.
+\newblock Towards a general model for interlinear text.
+\newblock In \emph{{P}roceedings of {E-{M}{E}{L}D} 2003: {D}igitizing and
+  annotating texts and field recordings}, East Lansing, Michigan, July 11--13.
+\newblock
+  \urlprefix\url{http://e-meld.org/workshop/2003/bowbadenbird-paper.html}.
+
+\bibitem[{Bowern(2011)}]{Bowern:2011}
+Bowern, Claire. 2011.
+\newblock Planning a language documentation project.
+\newblock In  \cite{AustinSallabank:2011} 459--482.
+
+\bibitem[{Boynton et~al.(2010)Boynton, Moran, Aristar-Dry \&
+  Aristar}]{BoyntonEtAl:2010}
+Boynton, Jessica, Steven Moran, Helen Aristar-Dry \& Anthony Aristar. 2010.
+\newblock Using the {E-MELD} {S}chool of {B}est {P}ractices to create lasting
+  digital documentation.
+\newblock In  \cite{GrenobleFurbee:2010} 133--146.
+
+\bibitem[{Broad(1981)}]{Broad:1981}
+Broad, William~J. 1981.
+\newblock {T}he Publishing Game: {G}etting More for Less.
+\newblock \emph{Science} 211. 1137--1139.
+
+\bibitem[{Broeder et~al.(2006)Broeder, van Veenendaal, Nathan \&
+  Str{\"o}mqvist}]{BroederEtAl:2006}
+Broeder, Daan, Remco van Veenendaal, David Nathan \& Sven Str{\"o}mqvist. 2006.
+\newblock A Grid of Language Resource Repositories.
+\newblock In \emph{{P}roceedings of the {S}econd {I{E}{E}{E} {I}nternational
+  {C}onference} on {e}-{S}cience and {G}rid {C}omputing ({e}-{S}cience'06)},
+  Los Alamitos, California: IEEE Computer Society.
+\newblock \doi{10.1109/E-SCIENCE.2006.261065}.
+
+\bibitem[{Butler \& van Volkinburg(2007)}]{ButlerVolkinburg:2007}
+Butler, Lynnika \& Heather van Volkinburg. 2007.
+\newblock Review of {F}ieldworks {L}anguage {E}xplorer ({FLE}x).
+\newblock \emph{Language Documentation \& Conservation} 1. 100--106.
+\newblock \urlprefix\url{http://hdl.handle.net/10125/1730}.
+
+\bibitem[{Cabr{\'e}(1999)}]{Cabre:1999}
+Cabr{\'e}, M.~Teresa. 1999.
+\newblock \emph{Terminology: {T}heory, methods, and applications}.
+\newblock Amsterdam: Benjamins.
+
+\bibitem[{Chiarcos et~al.(2012{\natexlab{a}})Chiarcos, Hellmann \&
+  Nordhoff}]{ChiarcosEtAlIntro:2012}
+Chiarcos, Christian, Sebastian Hellmann \& Sebastian Nordhoff.
+  2012{\natexlab{a}}.
+\newblock Introduction and overview.
+\newblock In  \cite{LDL:2012} 1--12.
+
+\bibitem[{Chiarcos et~al.(2012{\natexlab{b}})Chiarcos, Nordhoff \&
+  Hellmann}]{LDL:2012}
+Chiarcos, Christian, Sebastian Nordhoff \& Sebastian Hellmann (eds.).
+  2012{\natexlab{b}}.
+\newblock \emph{Linked data in linguistics: {R}epresenting and connecting
+  language data and language metadata}.
+\newblock Berlin: Springer.
+
+\bibitem[{Comrie(1976)}]{Comrie:1976}
+Comrie, Bernard. 1976.
+\newblock \emph{Aspect}.
+\newblock Cambridge: Cambridge University.
+
+\bibitem[{Comrie \& Smith(1977)}]{ComrieSmith:1977}
+Comrie, Bernard \& Norval Smith. 1977.
+\newblock Lingua descriptive studies: {Q}uestionnaire.
+\newblock \emph{Lingua} 42. 1--72.
+
+\bibitem[{Cristofaro(2006)}]{Cristofaro:2006}
+Cristofaro, Sonia. 2006.
+\newblock {T}he organization of reference grammars: {A} typologist user's point
+  of view.
+\newblock In  \cite{AmekaDenchEvans:2006} 137--170.
+
+\bibitem[{Cysouw(2007)}]{Cysouw:2007:Social}
+Cysouw, Michael. 2007.
+\newblock A social layer for typological databases.
+\newblock In Andrea Sans{\`o} (ed.), \emph{Language resources and linguistic
+  theory}, 59--66. Milano: FrancoAngeli.
+
+\bibitem[{Cysouw et~al.(2005)Cysouw, Good, Albu \& Bibiko}]{CysouwEtAl:2005}
+Cysouw, Michael, Jeff Good, Mihai Albu \& Hans-J{\"o}rg Bibiko. 2005.
+\newblock {C}an {GOLD} ``cope'' with {WALS}? {R}etrofitting an ontology onto
+  the {W}orld {A}tlas of {L}anguage {S}tructures.
+\newblock In \emph{{P}roceedings of {E-{M}{E}{L}D} 2005: {L}inguistic
+  ontologies and data categories for language resources}, Cambridge, Mass.,
+  July 1--3.
+\newblock \urlprefix\url{http://emeld.org/workshop/2005/papers/good-paper.pdf}.
+
+\bibitem[{Dingemanse(2008)}]{Dingemanse:2008}
+Dingemanse, Mark. 2008.
+\newblock Review of {P}honology {A}ssistant 3.0.1.
+\newblock \emph{Language Documentation \& Conservation} 2. 325--331.
+\newblock \urlprefix\url{http://hdl.handle.net/10125/4350}.
+
+\bibitem[{Dobrin et~al.(2009)Dobrin, Austin \& Nathan}]{DobrinEtAl:2009}
+Dobrin, Lise~M., Peter~K. Austin \& David Nathan. 2009.
+\newblock {D}ying to be counted: {T}he commodification of endangered languages
+  in documentary linguistics.
+\newblock In Peter~K. Austin (ed.), \emph{Language documentation and
+  description, volume 6}, 37--52. London: Hans Rausing Endangered Languages
+  Project.
+
+\bibitem[{Dobrin \& Berson(2011)}]{DobrinBerson:2011}
+Dobrin, Lise~M. \& Josh Berson. 2011.
+\newblock Speakers and language documentation.
+\newblock In  \cite{AustinSallabank:2011} 188--211.
+
+\bibitem[{Drude(this volume)}]{Drudetv}
+Drude, Sebastian. this volume.
+\newblock Digital {G}rammars -- {I}ntegrating the {W}iki/{C}{M}{S} approach
+  with {L}anguage {A}rchiving {T}echnology and {T}{E}I.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  160--178. Manoa: University of Hawai'i Press.
+
+\bibitem[{Dryer(2006)}]{Dryer:2006}
+Dryer, Matthew~S. 2006.
+\newblock Descriptive theories, explanatory theories, and basic linguistic
+  theory.
+\newblock In  \cite{AmekaDenchEvans:2006} 207--234.
+
+\bibitem[{Dryer \& Haspelmath(2011)}]{WALS:2011}
+Dryer, Matthew~S. \& Martin Haspelmath (eds.). 2011.
+\newblock \emph{The {W}orld {A}tlas of {L}anguage {S}tructures online}.
+\newblock Munich: Max Planck Digital Library.
+\newblock \urlprefix\url{http://wals.info/}.
+
+\bibitem[{Dwyer(2006)}]{Dwyer:2006}
+Dwyer, Arienne~M. 2006.
+\newblock Ethics and practicalities of cooperative fieldwork and analysis.
+\newblock In  \cite{EssentialsOfLD:2006} 31--66.
+
+\bibitem[{Evans(2008)}]{Evans:2008}
+Evans, Nicholas. 2008.
+\newblock Review of \emph{Essentials of language documentation} ed. by {J}ost
+  {G}ippert, {N}ikolaus {H}immelmann, and {U}lrike {M}osel.
+\newblock \emph{Language Documentation \& Conservation} 2. 340--350.
+
+\bibitem[{Evans \& Dench(2006)}]{EvansDench:2006}
+Evans, Nicholas \& Alan Dench. 2006.
+\newblock {I}ntroduction: {C}atching language.
+\newblock In  \cite{AmekaDenchEvans:2006} 1--39.
+
+\bibitem[{Farrar \& Langendoen(2003)}]{FarrarLangendoen:2003}
+Farrar, Scott \& D.~Terence Langendoen. 2003.
+\newblock A linguistic ontology for the semantic web.
+\newblock \emph{Glot International} 7. 97--100.
+
+\bibitem[{Farrar \& Langendoen(2009)}]{FarrarLangendoen:2009}
+Farrar, Scott \& D.~Terence Langendoen. 2009.
+\newblock An {OWL-DL} implementation of {GOLD}: {A}n ontology for the
+  {S}emantic {W}eb.
+\newblock In  \cite{WittMetzing:2009} 45--66.
+
+\bibitem[{Farrar \& Lewis(2007)}]{FarrarLewis:2007}
+Farrar, Scott \& William~D. Lewis. 2007.
+\newblock The {GOLD} {C}ommunity of {P}ractice: {A}n infrastructure for
+  linguistic data on the {W}eb.
+\newblock \emph{Language Resources and Evaluation} 41. 45--60.
+
+\bibitem[{Fort et~al.(2011)Fort, Adda \& Cohen}]{FortEtAl:2011}
+Fort, Kar\"{e}n, Gilles Adda \& K.~Bretonnel Cohen. 2011.
+\newblock Amazon {M}echanical {T}urk: {G}old mine or coal mine?
+\newblock \emph{Computational Linguistics} 37. 413--420.
+
+\bibitem[{Francopoulo et~al.(2009)Francopoulo, Bel, George, Calzolari,
+  Monachini, Pet \& Soria}]{Francopoulo:2009}
+Francopoulo, Gil, Nuria Bel, Monte George, Nicoletta Calzolari, Monica
+  Monachini, Mandy Pet \& Claudia Soria. 2009.
+\newblock Multilingual resources for {NLP} in the lexical markup framework
+  ({LMF}).
+\newblock \emph{Language Resources and Evaluation} 43. 57--70.
+
+\bibitem[{Gaylord et~al.(2008)Gaylord, Hilderbrand, Lyu, Palmer \&
+  Ponvert}]{TLSX}
+Gaylord, Nicholas, Stephen Hilderbrand, Heeyoung Lyu, Alexis Palmer \& Elias
+  Ponvert (eds.). 2008.
+\newblock \emph{{P}roceedings of the {T}exas {L}inguistics {S}ociety {X}
+  {C}onference: {C}omputational linguistics for less-studied languages}.
+\newblock Stanford: CSLI.
+
+\bibitem[{Gippert(2006)}]{Gippert:2006}
+Gippert, Jost. 2006.
+\newblock Linguistic documentation and the encoding of textual materials.
+\newblock In  \cite{EssentialsOfLD:2006} 337--361.
+
+\bibitem[{Gippert et~al.(2006)Gippert, Himmelmann \&
+  Mosel}]{EssentialsOfLD:2006}
+Gippert, Jost, Nikolaus Himmelmann \& Ulrike Mosel (eds.). 2006.
+\newblock \emph{Essentials of language documentation}.
+\newblock Berlin: Mouton de Gruyter.
+
+\bibitem[{Good(2004)}]{Good:2004Metadatabase}
+Good, Jeff. 2004.
+\newblock The descriptive grammar as a (meta)database.
+\newblock In \emph{{P}roceedings of {E-{M}{E}{L}D} 2004: {L}inguistic databases
+  and best practice}, Detroit, Michigan. July 15--18.
+\newblock Http://www.e-meld.org/workshop/2004/jcgood-paper.html.
+
+\bibitem[{Good(2007)}]{Good:ToolEcology}
+Good, Jeff. 2007.
+\newblock The ecology of documentary and descriptive linguistics.
+\newblock In Peter~K. Austin (ed.), \emph{Language documentation and
+  description, volume 4}, 38--57. London: Hans Rausing Endangered Languages
+  Project.
+
+\bibitem[{Good(2010)}]{Good:LDPV}
+Good, Jeff. 2010.
+\newblock {V}aluing technology: {F}inding the linguist's place in a new
+  technological universe.
+\newblock In  \cite{GrenobleFurbee:2010} 111--131.
+
+\bibitem[{Good(2011)}]{Good:CUPHEL}
+Good, Jeff. 2011.
+\newblock Data and language documentation.
+\newblock In  \cite{AustinSallabank:2011} 212--234.
+
+\bibitem[{Good \& Hendryx-Parker(2006)}]{GoodParker:2006}
+Good, Jeff \& Calvin Hendryx-Parker. 2006.
+\newblock Modeling contested categorization in linguistic databases.
+\newblock In \emph{{P}roceedings of {E-{M}{E}{L}D} {W}orkshop 2006: {T}ools and
+  standards: {T}he state of the art}, Lansing, Michigan. June 20--22.
+\newblock
+  \urlprefix\url{http://e-meld.org/workshop/2006/papers/GoodHendryxParker-Mode%
+lling.pdf}.
+
+\bibitem[{Grenoble(2010)}]{Grenoble:2010}
+Grenoble, Lenore~A. 2010.
+\newblock Language documentation and field linguistics: {T}he state of the
+  field.
+\newblock In  \cite{GrenobleFurbee:2010} 289--309.
+
+\bibitem[{Grenoble \& Furbee(2010)}]{GrenobleFurbee:2010}
+Grenoble, Lenore~A. \& {N}.~Louanna Furbee (eds.). 2010.
+\newblock \emph{Language documentation: {P}ractice and Values}.
+\newblock Amsterdam: Benjamins.
+
+\bibitem[{Haspelmath(1993)}]{Haspelmath:1993Lezgian}
+Haspelmath, Martin. 1993.
+\newblock \emph{A grammar of {L}ezgian}.
+\newblock Berlin: Mouton.
+
+\bibitem[{Haspelmath(2010)}]{Haspelmath:Comparative}
+Haspelmath, Martin. 2010.
+\newblock Comparative concepts and descriptive categories in cross-linguistic
+  studies.
+\newblock \emph{Language} 86. 663--687.
+
+\bibitem[{Haspelmath \& Tadmor(2009)}]{WOLD}
+Haspelmath, Martin \& Uri Tadmor (eds.). 2009.
+\newblock \emph{World Loanword Database}.
+\newblock Munich: Max Planck Digital Library.
+\newblock \urlprefix\url{http://wold.livingsources.org/}.
+
+\bibitem[{Himmelmann(1998)}]{Himmelmann:1998}
+Himmelmann, Nikolaus~P. 1998.
+\newblock Documentary and descriptive linguistics.
+\newblock \emph{Linguistics} 36. 161--195.
+
+\bibitem[{Himmelmann(2006)}]{Himmelmann:2006}
+Himmelmann, Nikolaus~P. 2006.
+\newblock Language documentation: {W}hat is it and what is it good for?
+\newblock In  \cite{EssentialsOfLD:2006} 1--30.
+
+\bibitem[{Huttar \& Huttar(1994)}]{HuttarHuttar:1994}
+Huttar, George~L. \& Mary~L. Huttar. 1994.
+\newblock \emph{Ndyuka}.
+\newblock London: Routledge.
+
+\bibitem[{Ide et~al.(2003)Ide, Lenci \& Calzolari}]{IdeEtAl:2003}
+Ide, Nancy, Alessandro Lenci \& Nicoletta Calzolari. 2003.
+\newblock {RDF} instantiation of {ISLE/MILE} lexical entries.
+\newblock In \emph{{Proceedings of the {A}{C}{L} 2003 {W}orkshop on
+  {L}inguistic {A}nnotation}: {G}etting the model right ({Ling{A}nnot '03})},
+  30--37. Stroudsburg, Penn.: Association for Computational Linguistics.
+\newblock \doi{10.3115/1119296.1119301}.
+\newblock
+  \urlprefix\url{http://www.aclweb.org/anthology-new/W/W03/W03-1905.pdf}.
+
+\bibitem[{Ide \& Suderman(2007)}]{IdeSuderman:2007}
+Ide, Nancy \& Keith Suderman. 2007.
+\newblock {GrAF}: {A} graph-based format for linguistic annotations.
+\newblock In \emph{Proceedings of the {L}inguistic {A}nnotation {W}orkshop
+  ({L{A}{W} '07})}, 1--8. Stroudsburg, Penn.: Association for Computational
+  Linguistics.
+\newblock
+  \urlprefix\url{http://portal.acm.org/citation.cfm?id=1642059.1642060}.
+
+\bibitem[{Kemps-Snijders et~al.(2008{\natexlab{a}})Kemps-Snijders, Windhouwer,
+  Wittenburg \& Wright}]{KempsSnijdersEtAl:2008:LREC}
+Kemps-Snijders, Marc, Menzo Windhouwer, Peter Wittenburg \& Sue~Ellen Wright.
+  2008{\natexlab{a}}.
+\newblock {ISOcat}: {C}orralling data categories in the wild.
+\newblock In \emph{{P}roceedings of the {S}ixth {I}nternational {L}anguage
+  {R}esources and {E}valuation ({L{R}{E}{C}'08})}, Paris: European Language
+  Resources Association.
+\newblock
+  \urlprefix\url{http://www.lrec-conf.org/proceedings/lrec2008/pdf/222_paper.p%
+df}.
+
+\bibitem[{Kemps-Snijders et~al.(2008{\natexlab{b}})Kemps-Snijders, Windhouwer
+  \& Wright}]{KempsSnijdersEtAl:2008:ehum}
+Kemps-Snijders, Marc, Menzo Windhouwer \& Sue~Ellen Wright. 2008{\natexlab{b}}.
+\newblock Putting data categories in their semantic context.
+\newblock In \emph{{P}roceedings of e-{H}umanities---an emerging discipline:
+  {W}orkshop in the 4th {I{E}{E}E} {I}nternational {C}onference on
+  e-{S}cience}, Indianapolis, Indiana, December 10.
+\newblock
+  \urlprefix\url{http://www.clarin.eu/system/files/e-Humanities-ISOcat-final.p%
+df}.
+
+\bibitem[{Levin et~al.(2007)Levin, Good, Alvarez \&
+  Frederking}]{LevinEtAl:2007}
+Levin, Lori, Jeff Good, Alison Alvarez \& Robert Frederking. 2007.
+\newblock Automatic learning of grammatical encoding.
+\newblock In Annie Zaenen, Jane Simpson, Tracy~Holloway King, Jane Grimshaw,
+  Joan Maling \& Chris Manning (eds.), \emph{{A}rchitectures, rules and
+  preferences: {A} {F}estschrift for {J}oan {B}resnan}, 253--275. Stanford:
+  CSLI.
+
+\bibitem[{Maxwell(this volume)}]{Maxwelltv}
+Maxwell, Mike. this volume.
+\newblock Electronic {G}rammars and {R}eproducible {R}esearch.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  207--234. Manoa: University of Hawai'i Press.
+
+\bibitem[{Moran(2012)}]{Moran:2012}
+Moran, Steven. 2012.
+\newblock Using linked data to create a typological knowledge base.
+\newblock In  \cite{LDL:2012} 129--138.
+
+\bibitem[{Mosel(this volume)}]{Moseltv}
+Mosel, Ulrike. this volume.
+\newblock Advances in the accountability of grammatical analysis and
+  description by using regular expressions.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  235--250. Manoa: University of Hawai'i Press.
+
+\bibitem[{Musgrave \& Thieberger(this volume)}]{Thiebergertv}
+Musgrave, Simon \& Nick Thieberger. this volume.
+\newblock Language description and hypertext: {N}unggubuyu as a case study.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  63--77. Manoa: University of Hawai'i Press.
+
+\bibitem[{Newman(1998)}]{Newman:1998}
+Newman, Paul. 1998.
+\newblock {W}e has seen the enemy and it is us: {T}he endangered languages
+  issue as a hopeless cause.
+\newblock \emph{Studies in the Linguistic Sciences} 28. 11--20.
+
+\bibitem[{Newman(2007)}]{Newman:2007}
+Newman, Paul. 2007.
+\newblock Copyright essentials for linguists.
+\newblock \emph{Language Documentation \& Conservation} 1. 28--43.
+
+\bibitem[{Neylon(2010)}]{Neylon:2010}
+Neylon, Cameron. 2010.
+\newblock What would scholarly communications look like if we invented it
+  today?
+\newblock
+  \urlprefix\url{http://cameronneylon.net/blog/what-would-scholarly-communicat%
+ions-look-like-if-we-invented-it-today/}.
+
+\bibitem[{Nichols(1992)}]{Nichols:1992}
+Nichols, Johanna. 1992.
+\newblock \emph{Linguistic diversity in space and time}.
+\newblock Chicago: University of Chicago.
+
+\bibitem[{Nichols(2005)}]{Nichols:2005}
+Nichols, Johanna. 2005.
+\newblock {E-MELD} {S}chool of {B}est {P}ractice: How many words do you need?
+\newblock
+  \urlprefix\url{http://e-meld.org/school/classroom/text/lexicon-size.html}.
+
+\bibitem[{Noonan(2006)}]{Noonan:2006}
+Noonan, Michael. 2006.
+\newblock Grammar writing for a grammar-reading audience.
+\newblock \emph{Studies in Language} 30. 351--365.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff:2009}
+Nordhoff, Sebastian. 2008.
+\newblock Electronic reference grammars for typology: Challenges and solutions.
+\newblock \emph{Language Documentation \& Conservation} 2. 296--324.
+
+\bibitem[{Nordhoff(2012)}]{Nordhoff:2012}
+Nordhoff, Sebastian. 2012.
+\newblock Linked data in linguistics: {R}epresenting and connecting language
+  data and language metadata.
+\newblock In  \cite{LDL:2012} 191--200.
+
+\bibitem[{Nordhoff(this volume)}]{Nordhofftv}
+Nordhoff, Sebastian. this volume.
+\newblock The grammatical description as a collection of form-meaning-pairs.
+\newblock In Sebastian Nordhoff (ed.), \emph{Electronic {G}rammaticography},
+  33--62. Manoa: University of Hawai'i Press.
+
+\bibitem[{Palmer(2009)}]{Palmer:2009}
+Palmer, Alexis. 2009.
+\newblock \emph{Semi-automated annotation and active learning for language
+  documentation}.
+\newblock Austin, Texas: University of Texas Ph.D. dissertation.
+
+\bibitem[{Palmer \& Erk(2007)}]{PalmerErk:2007}
+Palmer, Alexis \& Katrin Erk. 2007.
+\newblock {IGT-XML}: An {XML} Format for Interlinearized Glossed Text.
+\newblock In \emph{Proceedings of the {L}inguistic {A}nnotation {W}orkshop
+  ({L{A}{W} '07})}, 176--183. Stroudsburg, Penn.: Association for Computational
+  Linguistics.
+\newblock
+  \urlprefix\url{http://portal.acm.org/citation.cfm?id=1642059.1642087}.
+
+\bibitem[{Palmer et~al.(2009)Palmer, Moon \& Baldridge}]{PalmerEtAl:2009}
+Palmer, Alexis, Taesun Moon \& Jason Baldridge. 2009.
+\newblock Evaluating Automation Strategies in Language Documentation.
+\newblock In \emph{{P}roceedings of the {N{A}{A}{C}L} {H{L}T} 2009 {W}orkshop
+  on {A}ctive {L}earning for {N}atural {L}anguage {P}rocessing}, 36--44.
+  Stroudsburg, Penn.: Association for Computational Linguistics.
+\newblock \urlprefix\url{http://aclweb.org/anthology-new/W/W09/W09-1905.pdf}.
+
+\bibitem[{Palmer et~al.(2010)Palmer, Moon, Baldridge, Erk, Campbell \&
+  Can}]{PalmerEtAl:2010}
+Palmer, Alexis, Taesun Moon, Jason Baldridge, Katrin Erk, Eric Campbell \&
+  Telma Can. 2010.
+\newblock Computational strategies for reducing annotation effort in language
+  documentation.
+\newblock \emph{Linguistic Issues in Language Technology} 3.
+\newblock
+  \urlprefix\url{http://elanguage.net/journals/index.php/lilt/article/view/663%
+}.
+
+\bibitem[{Passant et~al.(2010)Passant, Breslin \& Decker}]{PassantEtAl:2010}
+Passant, Alexandre, John~G. Breslin \& Stefan Decker. 2010.
+\newblock {R}ethinking microblogging: {O}pen, distributed, semantic.
+\newblock In Florian Daniel \& Federico~Michele Facca (eds.), \emph{Proceedings
+  of the 10th {I}nternational {C}onference on {W}eb {E}ngineering ({I{C}{W}{E}
+  2010})}, 263--277. Berlin: Springer.
+
+\bibitem[{Penton et~al.(2004)Penton, Bow, Bird \& Hughes}]{PentonEtAl:2004}
+Penton, David, Catherine Bow, Steven Bird \& Baden Hughes. 2004.
+\newblock Towards a general model for linguistic paradigms.
+\newblock In \emph{{P}roceedings of {E-{M}{E}{L}D} 2004: {L}inguistic databases
+  and best practice}, Detroit, Michigan, July 15--18.
+\newblock \urlprefix\url{http://e-meld.org/workshop/2004/bird-paper.pdf}.
+
+\bibitem[{Poornima \& Good(2010)}]{PoornimaGood:2010}
+Poornima, Shakthi \& Jeff Good. 2010.
+\newblock {M}odeling and encoding traditional wordlists for machine
+  applications.
+\newblock In \emph{{P}roceedings of the 2010 {W}orkshop on {N{L}P} and
+  {L}inguistics: {F}inding the {C}ommon {G}round ({N{L}{P}{L}{I}{N}G} '10)},
+  1--9. Stroudsburg, Penn.: Association for Computational Linguistics.
+
+\bibitem[{Quirk et~al.(1985)Quirk, Greenbaum, Leech \&
+  Svartvik}]{QuirkEtAl:1985}
+Quirk, Randolph, Sydney Greenbaum, Geoffrey Leech \& Jan Svartvik. 1985.
+\newblock \emph{A comprehensive grammar of the {E}nglish language}.
+\newblock London: Longman.
+
+\bibitem[{Reiman(2010)}]{Reiman:2010}
+Reiman, D.~Will. 2010.
+\newblock Basic oral language documentation.
+\newblock \emph{Language Documentation \& Conservation} 4. 254--268.
+\newblock \urlprefix\url{http://hdl.handle.net/10125/4479}.
+
+\bibitem[{Resnik \& Lin(2010)}]{ResnikLin:2010}
+Resnik, Philip \& Jimmy Lin. 2010.
+\newblock Evaluation of {NLP} Systems.
+\newblock In Alexander Clark, Chris Fox \& Shalom Lappin (eds.), \emph{The
+  handbook of computational linguistics and natural language processing},
+  271--295. Oxford: Wiley-Blackwell.
+
+\bibitem[{Rice(2006{\natexlab{a}})}]{Rice:2006}
+Rice, Keren. 2006{\natexlab{a}}.
+\newblock Ethical Issues In Linguistic Fieldwork: {A}n Overview.
+\newblock \emph{Journal of Academic Ethics} 4. 123--155.
+
+\bibitem[{Rice(2006{\natexlab{b}})}]{Rice:2006:Grammars}
+Rice, Keren. 2006{\natexlab{b}}.
+\newblock A typology of good grammars.
+\newblock \emph{Studies in Language} 30. 385--415.
+
+\bibitem[{Rogers(2010)}]{Rogers:2010}
+Rogers, Chris. 2010.
+\newblock Review of {F}ieldworks {L}anguage {E}xplorer ({FLE}x) 3.0.
+\newblock \emph{Language Documentation \& Conservation} 4. 78--84.
+\newblock \urlprefix\url{http://hdl.handle.net/10125/4471}.
+
+\bibitem[{Sag et~al.(2003)Sag, Wasow \& Bender}]{SWB:2003}
+Sag, Ivan~A., Thomas Wasow \& Emily Bender. 2003.
+\newblock \emph{Syntactic Theory: A formal introduction (Second Edition)}.
+\newblock Stanford: CSLI.
+
+\bibitem[{Sapir(1921)}]{Sapir:1921}
+Sapir, Edward. 1921.
+\newblock \emph{Language: {A}n introduction to the study of speech}.
+\newblock New York: Harcourt, Brace, and Company.
+
+\bibitem[{Schroeter \& Thieberger(2006)}]{SchroeterThieberger:2006}
+Schroeter, Ronald \& Nicholas Thieberger. 2006.
+\newblock {EOPAS}, {t}he {EthnoER} online representation of interlinear text.
+\newblock In Linda Barwick \& Nicholas Thieberger (eds.), \emph{Sustainable
+  data from digital fieldwork}, 99--124. Sydney: The University of Sydney.
+
+\bibitem[{Schultze-Berndt(2006)}]{SchultzeBerndt:2006}
+Schultze-Berndt, Eva. 2006.
+\newblock Linguistic annotation.
+\newblock In  \cite{EssentialsOfLD:2006} 213--251.
+
+\bibitem[{Simons(2005)}]{Simons:2005}
+Simons, Gary~F. 2005.
+\newblock {B}eyond the brink: {R}ealizing interoperation through an {RDF}
+  database.
+\newblock In \emph{{P}roceedings of {E-{M}{E}{L}D} 2005: {L}inguistic
+  ontologies and data categories for language resources}, Cambridge, Mass.,
+  July 1--3.
+\newblock
+  \urlprefix\url{http://e-meld.org/workshop/2005/papers/simons-paper.pdf}.
+
+\bibitem[{Snow et~al.(2008)Snow, O'Connor, Jurafsky \& Ng}]{SnowEtAl:2008}
+Snow, Rion, Brendan O'Connor, Daniel Jurafsky \& Andrew~Y. Ng. 2008.
+\newblock Cheap and fast---but is it good? {E}valuating non-expert annotations
+  for natural language tasks.
+\newblock In \emph{{P}roceedings of the 2008 {C}onference on {E}mpirical
+  {M}ethods in {N}atural {L}anguage {P}rocessing ({E{M}{N}{L}{P} '08})},
+  254--263. Stroudsburg, Penn.: Association for Computational Linguistics.
+\newblock
+  \urlprefix\url{http://portal.acm.org/citation.cfm?id=1613715.1613751}.
+
+\bibitem[{Thieberger(2004)}]{Thieberger:2004}
+Thieberger, Nicholas. 2004.
+\newblock {D}ocumentation in practice: {D}eveloping a linked media corpus of
+  {S}outh {E}fate.
+\newblock In Peter~K. Austin (ed.), \emph{Language documentation and
+  description, volume 2}, 169--178. London: Hans Rausing Endangered Languages
+  Project.
+
+\bibitem[{Thieberger(2009)}]{Thieberger:2009}
+Thieberger, Nicholas. 2009.
+\newblock Steps toward a grammar embedded in data.
+\newblock In Patience Epps \& Alexandre Arkhipov (eds.), \emph{{N}ew challenges
+  in typology: {T}ranscending the borders and refining the distinctions},
+  389--407. Berlin: Mouton de Gruyter.
+
+\bibitem[{Trippel(2006)}]{Trippel:2006}
+Trippel, Thorsten. 2006.
+\newblock \emph{{T}he {L}exicon {G}raph {M}odel: {A} generic model for
+  multimodal lexicon development}.
+\newblock Saarbr{\"u}cken: AQ-Verlag.
+
+\bibitem[{Trippel(2009)}]{Trippel:2009}
+Trippel, Thorsten. 2009.
+\newblock Representation formats and models for lexicons.
+\newblock In  \cite{WittMetzing:2009} 165--184.
+
+\bibitem[{Weber(2006)}]{Weber:2006}
+Weber, David~J. 2006.
+\newblock Thoughts on growing a grammar.
+\newblock \emph{Studies in Language} 30. 417--444.
+
+\bibitem[{Windhouwer \& Wright(2012)}]{WindhouwerWright:2012}
+Windhouwer, Menzo \& Sue~Ellen Wright. 2012.
+\newblock Linking to linguistic data categories in {ISOcat}.
+\newblock In  \cite{LDL:2012} 99--107.
+
+\bibitem[{Witt \& Metzing(2009)}]{WittMetzing:2009}
+Witt, Andreas \& Dieter Metzing (eds.). 2009.
+\newblock \emph{{L}inguistic modeling of information and markup languages:
+  {C}ontributions to language technology}.
+\newblock Berlin: Springer.
+
+\bibitem[{Wittenburg et~al.(2002)Wittenburg, Peters \&
+  Drude}]{WittenburgEtAl:2002}
+Wittenburg, Peter, Wim Peters \& Sebastian Drude. 2002.
+\newblock Analysis of lexical structures from field linguistics and language
+  engineering.
+\newblock In Manuel~Gonz{\'a}lez Rodr{\'\i}guez \& Carmen Paz~Suarez Araujo
+  (eds.), \emph{{P}roceedings of {T}hird {I}nternational {C}onference on
+  {L}anguage {R}esources and {E}valuation ({L{R}{E}{C} 2002})}, 682--686.
+  Paris: European Language Resources Association.
+
+\bibitem[{Woodbury(2011)}]{Woodbury:2011}
+Woodbury, Anthony~C. 2011.
+\newblock Language documentation.
+\newblock In  \cite{AustinSallabank:2011} 159--186.
+
+\bibitem[{Wright \& Budin(1997)}]{WrightBudin:1997}
+Wright, Sue~Ellen \& Gerhardt Budin (eds.). 1997.
+\newblock \emph{{H}andbook of terminology management, volume 1: {B}asic aspects
+  of terminology management}.
+\newblock Amsterdam, Benjamins.
+
+\bibitem[{Wright et~al.(2010)Wright, Kemps-Snijders \&
+  Windhouwer}]{WrightEtAl:2010}
+Wright, Sue~Ellen, Marc Kemps-Snijders \& Menzo Windhouwer. 2010.
+\newblock {T}he {OWL} and the {ISOcat}: {M}odeling relations in and around the
+  {DCR}.
+\newblock In \emph{{P}roceedings of the {L}anguage {R}esource and {L}anguage
+  {T}echnology {S}tandards {W}orkshop ({L{R}{E}{C}10-{W}4})---{S}tate of the
+  art, emerging needs, and future developments},
+  \urlprefix\url{http://www.windhouwer.nl/menzo/professional/papers/Wright_OWL%
+_DCR.pdf}.
+
+\bibitem[{Zaefferer(2006)}]{Zaefferer:2006}
+Zaefferer, Dietmar. 2006.
+\newblock {R}ealizing {H}umboldt's dream: {C}ross-linguistic grammatography as
+  data-base creation.
+\newblock In  \cite{AmekaDenchEvans:2006} 113--135.
+
+\end{thebibliography}
