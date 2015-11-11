@@ -1,0 +1,828 @@
+\chapter{Information flow}\label{sec:Informationflow}
+Having discussed how to encode propositional content, we now turn to information flow.
+Information flow deals with the way in which the speaker structures the information she presents so that the hearer's knowledge about the world is modified in the way the speaker intended. For this end, it is important to track what the speaker is talking about: the referents. This is discussed in Section \funcref{sec:disc:Referentsandreference}. Furthermore, it is important to now which one of the referents is the topic of the message, and what portion is the comment on the topic. This is discussed in Section \funcref{sec:disc:Topic}. Next to identifying the aboutness of the message, it is also important to tell the presupposition from the assertion. Strategies for this are discussed in \funcref{sec:disc:Presuppositionandassertion}.
+Section \ref{sec:disc:Cancelingimplicatures} on page \pageref{sec:disc:Cancelingimplicatures}  discusses how to cancel implicatures. While these sections deal with how the speaker packages the information, the last section  \funcref{sec:disc:Parsing} is on parsing and deals with how the hearer can decode the message packaged by the speaker.
+
+\section{Referents and reference}\label{sec:disc:Referentsandreference}
+When several referents are established in discourse, it is important to make clear what is said about which referent. Four types of referents will be distinguished here.\footnote{This taxonomy is based on \citet{Prince1981, Chafe1987, Lambrecht1994, VanValinEtAl1997rrg}, but slightly simplified.}
+\begin{itemize}
+ \item \em Unidentifiable \em referents are those which have not been talked about before \funcref{sec:disc:Newreferents}.
+ \item \em Active \em referents are those which are currently topical \funcref{sec:disc:Activereferents}.
+ \item \em Accessible \em referents are those which are not topical right now, but are still retrievable \funcref{sec:disc:Accessiblereferents}.
+ \item \em Inactive \em referents are those that have already been introduced in discourse, but have been replaced by other referents in the focus of consciousness \xref{sec:disc:Unretrievablereferents}.
+\end{itemize}
+
+
+
+
+
+
+\subsection{Unidentifiable referents}\label{sec:disc:Newreferents}
+In order to comment on referents, one has  to introduce them first. New referents are referents which cannot be assumed to be identifiable by the addressee. In SLM, new referents are normally introduced with existential  \formref{sec:pred:Existentialpredicate} or locative predicates \formref{sec:pred:Locationalpredicate}.
+
+Example \xref{ex:func:infstr:refref:new:present} introduces a new referent \trs{hathu kiccil ruuma}{a small house}, on which the following sentences in the narrative will provide more information. The introduction of that house is done with an existential predicate with \em aada.\em
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:new:present}
+\gll Hathu muusing=ka ... \textbf{hathu} kiccil ruuma su-\textbf{aada} \\
+     \textsc{indef} time=\textsc{loc} ... \textsc{indef} small house \textsc{past}-exist  \\
+    `Once upon a time, there was a small house.'  (K07000wrt04)
+\z      
+}
+
+Very often, the indefinite article is used in presentationals. In following occurrences, the indefinite article is not used anymore. This can be seen  in \xref{ex:func:infstr:refref:new:present:prince}, where the prince is introduced with the indefinite article in the first line, but the second occurrence of \trs{aanak raaja}{prince} does not carry the indefiniteness marker \em hatthu\em.
+
+ 
+\xbox{14}{
+\ea\label{ex:func:infstr:refref:new:present:prince}
+\ea
+\gll Derang anà-baalek    sajja=jo,    sithu=ka     panthas   \textbf{hathu}  \textbf{Aanak} \textbf{raaja} su-aada! \\
+      \textsc{3pl} \textsc{past}-turn only=\textsc{emph} there=\textsc{loc} beautiful \textsc{indef} king child \textsc{past}-exist \\
+    `Just when they turned around, there was a beautiful prince.'
+\ex
+\gll Buruan=pe     kuulith incayang=pe      kaaki baava=ka     jaatho  su-aada! \\
+     bear=\textsc{poss} skin \textsc{3s.polite=poss} leg bottom=\textsc{loc} fall \textsc{past}-exist  \\
+    `The bear's hide had fallen to his feet.' 
+\z
+\ea
+\gll \textbf{Aanak} \textbf{raaja} su-biilang: ... \\
+     child king \textsc{past}-say  \\
+    `The prince said: ...' (K070000wrt04)
+\z
+\z
+}
+ 
+
+
+
+Another method is to introduce new referents as comment on an already existing topic. In this case, the indefinite article is also used. In example \xref{ex:func:infstr:refref:new:arg}, a new referent \trs{hatthu pohong}{a tree} is introduced, which will have some consequences for the further development of the story. This referent is introduced as part of the two-place predicate \trs{poothong}{cut}, and not as an existential as in \xref{ex:func:infstr:refref:new:present}.
+
+  
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:new:arg}
+\gll Itthu=kapang baapa  derang=pe     kubbong=ka  \textbf{hatthu} pohong nya-poothong. \\
+       \textsc{dist}=when father \textsc{3pl}=\textsc{poss} estate=\textsc{loc} \textsc{indef} tree \textsc{past}-cut\\
+    `The father then felled a tree in their estate.' (K051205nar05)
+\z
+}
+
+Next to arguments, new referents can also be introduced in adjuncts, as in \xref{ex:func:infstr:refref:new:adjct}, where a tree is introduced as a locative adjunct (supposing that a difference between arguments and adjuncts can indeed be established,  \formref{sec:argstr}).
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:new:adjct}
+\gll Andare \textbf{hathu} \textbf{pohong}=pe baava=ka kapang-duuduk ... \\
+     Andare \textsc{indef} tree=\textsc{poss} bottom=\textsc{loc} when-sit  \\
+    `When Andare sat down under a tree ...' ((K070000wrt03))
+\z
+}
+
+
+
+\subsection{Active referents}\label{sec:disc:Activereferents}
+Active referents are those which are in the current focus of consciousness. They are normally not overtly coded in SLM as they are inferable from context \citep{SmithEtAl2004}.\footnote{SLM thus obeys to the `Principle of Absent Information' as formulated by \citet[305]{Minegishi2004}:`Avoid repetition, overt or psychological, so as not to add unnecessary connotation or contrast.'}   Active referents may also be realized as pronouns for emphasis. Speaker and hearer are always active, which is why they are very often not overtly expressed.
+
+It is possible to drop the agent of the sentence, as in \xref{ex:func:infstr:refref:act:drop:ag}, but arguments with other roles can also be dropped, as in \xref{ex:func:infstr:refref:act:drop:pat1}\xref{ex:func:infstr:refref:act:drop:pat2}. Dropping several roles is also possible \xref{ex:func:infstr:refref:act:drop:double:extra1}\xref{ex:func:infstr:refref:act:drop:double}.\footnote{This liberal dropping of constituents is called ``Super pro drop'' in \citet{GairEtAl1989Sinhalaacquisition} for Sinhala.}
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:act:drop:ag}
+\gll Hindu arà-maakang kambing, \zero{}    samping thuma-maakang. \\ % bf
+ Hindu \textsc{non.past}-eat goat {} beef \textsc{neg.nonpast}-eat\\
+`Hindus eat goat, they do not eat beef.' (K060112nar01)
+\z
+}
+
+
+In example \xref{ex:func:infstr:refref:act:drop:ag}, the first clause contains an overt reference to \em Hindu(s)\em. This makes this referent active in discourse. The assertion \trs{aràmaakang kambing}{eat goat} is then applied to that referent. In the second clause, the assertion \trs{samping thumamaakang}{do not eat beef} is to be applied to \em Hindu\em. Since \em Hindu \em is the last active referent, overt expression/repetition is not required.
+ 
+Examples \xref{ex:func:infstr:refref:act:drop:pat1} and \xref{ex:func:infstr:refref:act:drop:pat2} show that  roles other than the agent/`subject' can be dropped.
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:act:drop:pat1}
+\gll Dee \zero{}$_{theme}$  athi-kaasi   miskin oorang pada=nang. \\ % bf
+      3 { } \textsc{irr}-give poor man \textsc{pl}=\textsc{dat} \\
+    `He would give (it=the money) to the poor.' (K051206nar02)
+\z
+}
+
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:act:drop:pat2}
+\gll Hathu thaaun  se=ppe umma-baapa  \zero{}$_{theme}$ se=ppe maama=pe ruuma=nang su-kiiring. \\ % bf
+      \textsc{indef} year \textsc{1s=poss} mother-father { } \textsc{1s=poss} uncle=\textsc{poss} house=\textsc{dat} \textsc{past}-send \\
+    `One year my parents sent (me) to my uncle's house.' (K051213nar02)
+\z
+}
+
+The following example shows that more than one referent can be dropped in a clause, in this case both agent and patient.
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:act:drop:double:extra1}
+\gll \zero$_{pat}$ mà-mathi-king=nang, \zero$_{ag}$ \zero$_{pat}$ siithu=jo anà-baapi. \\ % bf
+       { }  \textsc{inf}-dead-\textsc{caus}=\textsc{dat} { } { } there=\textsc{emph} \textsc{past}-bring \\
+    `It was there that (they) brought (him) to make (him) dead.'  (K051206nar02)
+\z      
+}
+
+The following stretch of discourse shows how overt marking and zero marking alternate, and how two arguments are dropped in the last clause.
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:act:drop:double}
+\ea 
+\gll Incayang=jo$_i$ asà-pii, \\ % bf
+ 3s.polite=\textsc{emph} \textsc{cp}-go\\
+ `He goes there and'
+ \ex
+ \gll \zero$_i${}  paasar=dang asà-pii, \\ % bf
+ { } shop=\textsc{dat} \textsc{cp}-go\\
+ `goes to the shop and'
+ \ex
+ \gll itthu samma$_j$ asà-baa, \\ % bf
+ \textsc{dist} all \textsc{cp}-bring \\
+ `brings everything and'
+ \ex
+  \gll \zero$_i${} \zero$_j${} arà-juuval. \\ % bf
+  {} {}  \textsc{non.past}-sell\\
+	`sells (it).' (B060115cvs07a)
+\z
+\z
+}
+
+The fourth and final clause of \xref{ex:func:infstr:refref:act:drop:double} consists of the predicate \em arà-juuval\em, which takes two arguments, one seller and one produce. The seller \trs{incayang}{he} is introduced in the first clause, and the produce \trs{itthu samma}{all that} (referring to vegetables mentioned earlier) is introduced in the third clause. Both seller and produce are in the focus of consciousness and can thus be dropped in the last sentence. The referents  need not be overtly realized because there is no risk of confusing  the participant roles of \trs{juuval}{sell}.  Selling requires a vendor and a good. Knowledge of the world tells us that vendors are normally people, and goods can be vegetables. We also know that vendors are normally not vegetables, and the entities sold are nowadays rarely people. This means that the two introduced referents do not compete for the semantic roles that \trs{juuval}{sell} licenses. As a consequence, there is no risk of confusion, and neither referent is overtly expressed/repeated. The role of the undergoer is instantiated with the active referent \trs{itthu samma}{all that} for semantic reasons. The predicate requires an additional role, for which no referent is provided in the clause. The hearer thus has to select one of the  referents in the focus of consciousness and check which one of them could possibly instantiate the role of actor. Luckily, a suitable accessible referent is available, \trs{incayang}{he}.
+
+The amount of inference required by the hearer can be quite high. Associating semantic roles and referents is very hard in the following example and requires a lot of work by the hearer.
+
+\xbox{16}{
+\ea\label{ex:disc:ref:access:ship}
+\ea
+\gll [Derang pada]$_{i}$ panggel=nang blaakang, \zero$_{i}$ [thàrà-dhaathang oorang pada]$_{j}$=nang nya-{\em force}-kang kiyang. \\ % bf
+  \textsc{3pl} \textsc{pl} call=\textsc{dat} after { } \textsc{neg.past}-come man \textsc{pl}=\textsc{dat} \textsc{past}-force-\textsc{caus} \textsc{evid}    \\
+    `After they had called (them), (they) apparently forced the people who had not come (to join),'   
+\ex
+   \gll blaakang \zero$_{j}$ thàrà-pii   kiyang. \\
+ after { }  \textsc{neg.past}-go \textsc{evid}\\   % bf
+`but still (they) did not go it seems' (K051206nar07)
+\z
+\z   
+}
+
+The context is that a ship came from Malaysia, and the sailors wanted to convince the Sri Lankan Malays to get on that ship. They called them and tried to force them, but the Sri Lankans would not follow. Two referents are retrievable in the first part, the foreigners, referred to by \trs{derang pada}{they}, who are agent of the predicates \trs{panggel}{call} and \trs{force-kang}{force}, and the Sri Lankan Malays, who are goal and patient of those two predicates, respectively. The final clause in this example contains a negated predicate, \trs{thàràpii}{did not go}, but the argument is dropped. The verb \trs{pii}{go} requires only one argument, an agent, and it is tempting to associate it with the foreigners, since they have been agents in the two preceding clauses, and seem to be more topical as well. Furthermore, in case of `subject' playing a role in SLM grammar, we would definitely expect that it is the foreigners who are associated with the role of agent that the verb \trs{pii}{go} assigns. Our knowledge of the world, however, makes clear that it must be the locals who did not go despite being forced. So the role of agent in the final clause is assigned not to the referent having been agent in the preceding clauses, but to the undergoer referent, which furthermore was less topical. There are no morphosyntactic clues for the resolution of the zero in the final clause. We have to rely on our knowledge of the world, which tells us that after an act of forcing, the persons most likely to take part in an  act of leaving are the forced ones, not the forcers. We are thus not interested in whether the foreigners left; what is interesting is whether the locals left. Only after all of  these inferences can the reference of the participant of the verbal predicate \trs{thàràpii}{did not go} be established.
+
+
+While dropping of arguments is common, realization of pronouns is not ruled out. Active referents may be coded by pronouns or by \zero{} as the following sequence shows, where new referents are introduced by nouns. The next reference to this freshly introduced referent is normally by the pronoun \em incayang\em, while references thereafter are commonly zero.
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:act:npronzero}
+\ea 
+\gll {\em Malay} thiiga aanak pada arà-duuduk. \\ % bf
+     Malay three child \textsc{pl} \textsc{non.past}-stay  \\
+    `There are three Malay children [in this house].' 
+\ex
+\gll \textbf{Ka-thaama}  \textbf{aanak}$_{new}$ dhaathampa klaaki. \\ % bf
+      \textsc{ord}-early child \textsc{copula} boy \\
+    `The first one is a boy.' 
+\ex
+\gll \textbf{Incayang}$_{active}$  skaarang=nang        {\em Colombo} {\em University}=ka   arà-blaajar. \\ % bf
+      3\textsc{s.polite} now=\textsc{dat} Colombo University=\textsc{loc} \textsc{non.past}-study \\
+    `He studies at Colombo University.' 
+\ex
+\gll \textbf{\zero}$_{active}$ blaajar=apa \\
+     { } study=after  \\ % bf
+    `Having finished his studies,' 
+\ex
+\gll mareng    dovulu \textbf{incayang}$_{active}$=nang      HSBC=ka   hatthu pukuran se-daapath. \\ % bf
+     yesterday earlier 3s.polite=\textsc{dat} HSBC=\textsc{loc} \textsc{indef} job \textsc{past}-get  \\
+    `he got a job a the HSBC bank the day before yesterday.' 
+\ex
+\gll \textbf{Ka-duuva}     \textbf{{\em Daughter}}$_{new}$ Swarnamali=ka blaajar=apa \\ % bf
+      \textsc{ord}-two daughter Swarnamali=\textsc{loc} study=after \\
+    `The second child, a daughter, studied at Swarnamali School' 
+\ex
+\gll \textbf{incayang}$_{active}$  {\em French} {\em lesson} kijja. \\ % bf
+      3\textsc{s.polite} French lesson make  \\
+    `and did French.' 
+\ex
+\gll \textbf{\zero}$_{active}$  Karang {\em Dialog} {\em GSM}=ka   {\em junior} {\em executive} hatthu. \\ % bf
+       { } now Dialog GSM=\textsc{loc} junior executive indef\\
+    `She is now junior executive at Dialog GSM [phone company].' 
+\ex
+\gll \textbf{Kanabisan}   \textbf{aanak}$_{new}$, incayang=nang Swarnamali=ka=jo      blaajar. \\ % bf
+      last child 3s.polite=\textsc{dat} Swarnamali=\textsc{loc}=\textsc{emph} learn \\
+    `The last child studies at Swarnamali school.' 
+\ex
+\gll \textbf{Incayang}$_{active}$  {\em 2007}=ka {\em A-level} {\em exam} kijja. \\ % bf
+       3s.\textsc{polite} 2007=\textsc{loc} A-level exam make\\
+    `She will pass the A-level exams in 2007.'  (G051222nar01)
+\z
+\z
+}
+
+
+
+
+In some languages, coordinated sentences require that elements dropped in later clauses have the same role/grammatical relation as in their last overt realization. An example is \em Mary came and hit John\em, which can only mean that Mary hit. If we want to say that Mary was hit, we have to specify the argument, as in \em Mary came and John hit \textbf{her}\em.  In SLM, this is not the case. Semantic roles of elements can be adjusted to the new predicate as necessary. An example of this is \xref{ex:func:infstr:refref:act:drop:coref:semrole}, where the person leaving work and the person getting pension are coreferential and both realized by zero, but  in the first clause, the person has the role of agent, and in the second, the role of recipient.
+
+\xbox{16}{
+\ea\label{ex:func:infstr:refref:act:drop:coref:semrole}
+\gll \zero{}$_{ag}$ Pukurjan=yang su-luppas-kang, karang \zero{}$_{rec}$ {\em pension} arà-daapath. \\ % bf
+      { } work=\textsc{acc} \textsc{past}-leave-\textsc{caus} now { }  pension \textsc{non.past}-get \\
+    `He quit work and now gets his pension.' (K051222nar06)
+\z
+}
+
+
+Another example is \xref{ex:cl:grel:reftrack1}: a respectable Malay is first given the position of High Commissioner before he is sent to Pakistan. The first clause refers to this person by \trs{incayang}{he}, which is zero-marked but has the semantic role of recipient. In the second clause, this referent is not overtly realized, but is the theme of the action of sending, which is not the same as recipient.
+
+\xbox{14}{
+\ea\label{ex:cl:grel:reftrack1}
+\ea
+\gll Itthu=nang      blaakang incayang=\zero{}  [Sri Lanka=pe {\em high}  {\em commissioner} {\em position}=yang   kaasi]=apa. \\ % bf
+     \textsc{dist}=\textsc{dat} after 3\textsc{s.polite} Sri Lanka=\textsc{poss} high commissioner position=\textsc{acc} give=after \\
+    `After that, they gave him the position of Sri Lankan High Commissioner and'
+\ex
+\gll \zero{} \zero{} Pakistan=nang   anà-kiiring. \\ % bf
+      { } { } Pakistan=\textsc{dat} \textsc{past}-send   \\
+    `they sent him to Pakistan.' (N061031nar01)
+\z
+\z
+}
+
+Similar things can be said about \xref{ex:cl:grel:reftrack2}, where the sister is agent in the subordinate clause, where the argument would normally be zero-marked, but possessor in the main clause, which would normally be marked by the dative.
+
+\xbox{14}{
+\ea\label{ex:cl:grel:reftrack2}
+\ea
+\gll [Hathyang dhaatha]$_{ag}$ asà-kaaving aada. \\ % bf
+     other elder.sister \textsc{cp}-marry exist  \\
+    `My other elder sister married.'
+\ex
+\gll \zero${_{poss}}$ thiiga aanak aada. \\ % bf
+      { } three child exist \\
+    `She has three children.' (K061019prs01)
+\z
+\z
+}
+
+An example with accusative marking is \xref{ex:cl:grel:reftrack2a}, where the speaker is the accusative-marked patient of birth, and the zero-marked theme of being black.
+
+
+\xbox{16}{
+\ea\label{ex:cl:grel:reftrack2a}
+\gll See=yang$_{patient}$ kapang-braanak, \zero$_{theme}$ bannyak iitham. \\
+     \textsc{1s}=\textsc{acc} when-bear { } much black  \\
+    `When I was born, I was very dark.' (K08114eli01)
+\z
+}
+
+%  In \xref{ex:cl:grel:reftrack3}, the speaker is the only argument in the first clause, one of two arguments in the second one, none of the arguments in the third one, and again one of two arguments in the fourth one. Note that the semantic role of the speaker changes as well, from  patient in the first clause to goal in the second clause and again back to patient in the fourth clause.
+% 
+% \xbox{14}{
+% \ea\label{ex:cl:grel:reftrack3}
+% \ea
+% \gll go$_{pat}$ asà-nii\u n\u ggal. \\ % bf
+%       \textsc{1s.familiar} \textsc{cp}-die  \\
+%     `When I  will have died'
+% \ex
+% \gll alla  go=nya$_{goal}$\footnotemark   \textbf{asà}-dhaathang. \\ % bf
+%        Allah \textsc{1s.familiar}=\textsc{dat} \textsc{cp}-come \\
+%     `and Allah will have come for me'
+% \ex
+% \gll kuburan      \textbf{asà}-gaali. \\ % bf
+%         grave \textsc{cp}-dig\\
+%     `and the grave will have been dug,'
+% \ex
+% \gll go=nya$_{acc}$   kubur-king. \\ % bf
+%       \textsc{1s.familiar}=\textsc{acc} bury-\textsc{caus}  \\
+%     `bury me.' (B060115nar05)
+% \z
+% \z
+% } \\
+% \footnote{The use of \em nya \em here cannot be explained as of now.}
+
+An example, with the postposition \em =apa \em instead of the conjunctive participle \em asà-, \em is \xref{ex:cl:grel:reftrack4}.\footnote{\em =apa \em and \em asà- \em are in an unclear relationship, see \formref{sec:morph:asa-} and  \formref{sec:morph:=apa}.} The first two clauses treat \trs{oorang pada}{people}, while the last sentence, the main clause, does not have an argument coreferential with the aforementioned \trs{oorang}{people}.
+
+\xbox{14}{
+\ea\label{ex:cl:grel:reftrack4}
+\gll oorang pada  thiikam=apa,  oorang pada=nang thee\u mbak=apa,  se=dang bannyak  creeveth pada su-aada. \\ % bf
+      man \textsc{pl} stab=after man \textsc{pl}=\textsc{dat} shoot=after \textsc{1s=dat} much trouble \textsc{pl} \textsc{past}-exist \\
+    `People were stabbed, people were shot, I had a lot of problems.' (K051213nar01)
+\z
+}
+
+
+
+
+\subsection{Accessible referents}\label{sec:disc:Accessiblereferents}
+Accessible referents are referents which are ``textually, situationally or inferentially available by means of [their] existence in the physical or linguistic context or [their] relation to something in the physical or linguistic context but [are] not yet the current focus of consciousness'' \citep[200]{VanValinEtAl1997rrg}.
+
+An example of an accessible referent is  \xref{ex:func:infstr:refref:new:accessible}, where the son   had not been talked about before. Still, he is ``inferentially available'' by being a referent naturally connected to a middle-aged woman. Accessible referents can then be coded as definite NPs in SLM, and can be topical, as seen in \xref{ex:func:infstr:refref:new:accessible}.
+
+\xbox{14}{
+\ea\label{ex:func:infstr:refref:new:accessible}
+\ea
+\gll Se=dang karang ruuma=nang masà-pii. \\
+      \textsc{1s=dat} now house=\textsc{dat} must-go \\
+    `I have to go home now.' 
+\ex
+\gll \textbf{Bìssar} \textbf{aanak} asà-dhaathang anthi-aada\\
+      big child \textsc{cp}-come \textsc{irr}-exist \\
+    `My big son will have come home.' (B060115cvs08)
+\z
+\z
+}
+
+
+
+
+
+\subsection{Inactive referents}\label{sec:disc:Unretrievablereferents}
+Inactive referents are those that have been talked about earlier but which have been superseded by other referents. They are in the hearer's long-term memory, but not in short-term memory. When new reference to these referents is made, the indefinite article \em atthu \em is not used (unlike for unidentifiable referents), but a noun is required to reestablish reference; a pronoun or zero would not be enough. In the following story, two girls find a dwarf and help him. The first reference to the dwarf is made when he is introduced as the argument of \trs{kuthumung}{see}, where this introduction is supported by the indefinite article \em hathu= ... =hatthu\em, present twice in the NP.  Later, they meet the dwarf again, but reference to him has become inactive in the meantime, so he has to be reintroduced with a full NP. This time, this happens without  the indefinite article. The absence of the indefinite article implies definiteness or retrievability in this case (there is no definite article in SLM).
+
+\xbox{16}{
+\ea
+\ea
+\gll Itthu    haari=ka=jo      aanak pompang duuva=nang     \el{} \textbf{hathu}  kiccil jillek \textbf{aajuth} \textbf{hatthu}=yang   su-kuthumung. \\
+     \textsc{dist} day=\textsc{loc}=\textsc{emph} child girl two=\textsc{dat}   { } \textsc{indef} small ugly dwarf \textsc{indef}=\textsc{acc} \textsc{past}-see  \\
+    `On that very day, the two girls saw a small ugly dwarf.'  
+\ex
+\gll Derang incayangyang    su-salba-king. \\ % bf
+     \textsc{3pl} 3s.polite=\textsc{acc} \textsc{past}-escape-\textsc{caus} \\
+    `They saved him.'  
+\ex  \el  
+\ex 
+\gll Hathyang aari=ka    Snow-white=le      Rose-red=le      \el{}  {\em berry} kapang-picca-kang,  bìssar hathu buurung derang=pe atthas=dering  su-thìrbang. \\ % bf
+     other day=\textsc{loc} Snow-white=\textsc{addit} Rose-red=\textsc{addit} { } berry when-broken-\textsc{caus} big \textsc{indef} bird \textsc{3pl}=\textsc{poss} top=\textsc{abl} \textsc{past}-fly  \\
+    `On another day, when Snow-white and Rose-red were picking berries, they saw a big bird flying over them.' 
+\ex \el 
+\ex
+\gll Derang su-kuthumung     [ithu     buurung=pe     kuuku=ka    \textbf{aajuth}  asà-sìrrath   kìnna   arà-duuduk]. \\
+     \textsc{3pl} \textsc{past}-see \textsc{dist} bird=\textsc{poss} claw=\textsc{loc} dwarf \textsc{cp}-stuck strike simult-exist.\textsc{anim}  \\
+    `They saw the dwarf being held in the claws of that bird.' (K070000wrt04)
+\z
+\z
+}
+
+\section{Topic}\label{sec:disc:Topic}
+Topic refers to the element about which the sentence says something \citep[118]{Lambrecht1994}. We can distinguish ongoing topics, which are treated above under \em active referents \em \funcref{sec:disc:Activereferents} and new topics. Furthermore, we can distinguish contrastive topics and non-contrastive topics.
+
+\subsection{New topic}\label{sec:disc:Newtopic}
+It is rare for discourse to start off with a new topic. It is more common to introduce a referent in one of the manner discussed in \funcref{sec:disc:Newreferents}. The referent so introduced can then be used as a topic in following sentences. The following stretch of discourse provides an example for this. The new information \em Irish nuns \em goes to the right in the first sentence. In the second sentence, it is old information, and is found in topical position at the beginning.
+
+
+\xbox{16}{
+\ea \label{ex:disc:top:new:tailhead}
+\ea 
+\gll Itthu muusing=ka kithang=nang anà-aajar [\textbf{\em Irish} \textbf{\em nuns} \textbf{pada}]$_{new inf}$. \\
+     \textsc{dist} time=\textsc{loc} \textsc{1pl}=\textsc{dat} \textsc{past}-teach Irish nuns \textsc{pl}  \\
+    `In former times the ones who taught us something were Irish nuns.'  
+\ex
+\gll [\textbf{\em Irish} \textbf{\em nuns}]$_{old inf}$, derang=pe {\em English} baaye, derang baaye=nang anà-aajar. \\
+      Irish nuns \textsc{3pl}=\textsc{poss} English good \textsc{3pl} good=\textsc{dat} \textsc{past}-teach  \\
+    `Irish nuns, their English is good, they taught well.' (K051222nar06)
+\z
+\z
+}
+
+In the example above, the nuns were first introduced, and became the active referent. As such, they could be used in topic position. If the topic of the sentence is not active in discourse, \trs{kalu}{as for} (also the conditional marker) can be used to signal this. In example \xref{ex:disc:top:new:kalu}, the new topic of the stay in the town of Galle is marked with \em kalu.\em
+
+
+\xbox{16}{
+\ea \label{ex:disc:top:new:kalu}
+\gll \textbf{Galle}=ka    \textbf{kalu}, se=ppe   {\em cousin} {\em brothers} pada=samma      see anà-jaalang skuul=nang. \\
+      Galle=\textsc{loc} if \textsc{1s=poss} cousin brothers \textsc{pl=comit} see \textsc{past}-walk school=\textsc{dat} \\
+    `As for when in Galle, I used to walked to school with my cousin brothers.' (K051201nar02)
+\z
+}
+
+New topics are commonly introduced by a linking adverbial \formref{sec:constr:Linkingadverbials}, indicating that the preceding topic has come to an end and that the speaker moves on to a new topic. In the following examples, the topics are
+
+\begin{enumerate}
+ \item the past (a,b), and a digression in (d,e), 
+ \item the present (c),
+ \item a conclusion (f,g,h), and 
+ \item  a result (i)
+\end{enumerate}
+
+The start of a new topic is indicated by the adverbials in all cases.
+\newpage
+
+\xbox{16}{
+\ea \label{ex:disc:top:new:link}
+\ea
+\gll  Kàthaama ikkang, oorang ikkang.\\
+first fish, man fish\\
+``The first were fish.. were fishermen.'
+\ex
+\gll Kà-duuwa=jo, slaves pada.\\
+ \textsc{ord}-two=\textsc{emph} slaves \textsc{pl}\\
+`As for the second, they were slaves.'
+
+---
+\ex
+\gll \textbf{Itthule} kithang=pe muusing=ka=jo anà-baa. \\
+      but \textsc{1pl}=\textsc{poss} time=\textsc{loc}=\textsc{emph} \textsc{past}-bring \\
+    `But it was in our time that they were brought.'
+\ex
+\gll Itthu kithang hathu vakthu=nang kithang=nang duppang dhaathang athi-aada. \\ % bf
+     \textsc{dist} \textsc{1pl} \textsc{indef} time=\textsc{dat} \textsc{1pl}=\textsc{dat} before come \textsc{irr}-exist  \\
+    `So they, em, at that time, they would have come before us.'
+\ex
+\gll {\em Exiles} pada=jo anà-baa. \\ % bf
+      exiles \textsc{pl}=\textsc{emph} \textsc{past}-bring \\
+    `Exiles were brought.'
+
+---
+\ex
+\gll \textbf{Itthu=nang=jo} see anà-biilang \\
+      \textsc{dist}=\textsc{dat}=\textsc{emph} \textsc{1s} \textsc{past}-say \\
+    `That's why I am saying'
+\ex
+\gll oorang soojor anà-baa katha. \\ % bf
+      man European \textsc{past}-bring \textsc{quot} \\
+    `that the Europeans brought them.'
+\ex
+\gll Iiya. \\ % bf
+      yes \\
+    `Yeah.'
+
+---
+\ex
+\gll \textbf{Suda} itthu oorang pada=le Seelong=ka arà-duuduk. \\
+     thus \textsc{dist} man \textsc{pl}=\textsc{addit} Ceylon=\textsc{loc} \textsc{non.past}-stay  \\
+    `So those people stay in Ceylon.' (K060108nar02)
+\z
+\z
+}
+
+\subsection{Non-contrastive topic}\label{sec:disc:Non-contrastivetopic}
+Topics are normally zero, or at the leftmost position (cf.\xref{ex:disc:top:new:tailhead}b). Since the order of terms before the verb is free, no special morphosyntactic operation (like passivization or extraction in English) is required to put an element into that position. In example \xref{ex:disc:top:noncontr}, the undergoer \trs{itthu baathuyang}{those stones} is found at the leftmost position, and not one of the other referents.
+
+
+\xbox{16}{
+\ea \label{ex:disc:top:noncontr}
+\gll [\textbf{Itthu}    \textbf{baathu=yang}]$_{top}$    incayang Seelong=dering        laayeng    nigiri=nang asà-baapi. \\ % bf
+ \textsc{dist} stone=\textsc{acc} 3\textsc{s.polite} Ceylon=\textsc{abl} other country=\textsc{dat} \textsc{cp}-bring\\
+`These stones, he brought them from Ceylon to other countries.' (K060103nar01)
+\z
+}
+
+In this case, the stones (\em itthu baathu=yang\em) could be put in any position before the verb, but since this sentence is `about' the stones, they are put in initial position to highlight their topical role.
+
+If the item chosen to be topic is an active referent, it need not be mentioned at all since it is inferable from context (see above).
+
+\subsection{Contrastive topic}\label{sec:disc:Contrastivetopic}
+Another kind of topic is the contrastive topic \em As for A ..., (but) as for B ... \em \citep[291]{Lambrecht1994}, where two different states-of-affairs hold for two different referents. This can be marked by \em =jo \em \formref{sec:morph:=jo} in Sri Lanka Malay, although this is optional.
+In a narrative about different waves of Malay immigration to Sri Lanka (K060108nar02), the introduction of the first and second wave as referents receives no special marking, while the third wave is marked as contrastive topic by \em =jo\em.
+
+\xbox{16}{
+\ea \label{ex:disc:top:contr1}
+\ea 
+\gll Ka-duuva     an-dhaathang    {\em slaves}  pada, \\ % bf
+     \textsc{ord}-two \textsc{past}-come slaves \textsc{pl}  \\
+    `The second to come were slaves,'  
+\ex
+\gll {\em soldier} pada        anà-baa      oorang pada. \\ % bf
+     soldier \textsc{pl} \textsc{past}-bring man \textsc{pl}  \\
+    `people brought by soldiers.'  
+\ex
+\gll Ka-thiiga=\textbf{jo}        rejiment. \\
+     \textsc{ord}-three=\textsc{emph} regiment  \\
+    `The third, then, were the regiment [Malays].'  (K060108nar02)
+
+\z
+\z
+}
+
+
+Another example is \xref{ex:disc:top:contr2}, where foreign countries and the native country are compared. The second item of the comparison \trs{nni nigirika}{in this country}{}  receives \em=jo\em-marking.
+
+\xbox{16}{
+\ea \label{ex:disc:top:contr2}
+\ea 
+\gll Luvar   nigiri  kithang=nang   mà-pii    thàrà-suuka. \\ % bf
+ outside country \textsc{1pl}=\textsc{dat} \textsc{inf}-go \textsc{neg}-like\\
+	`We do not want to go abroad.' 
+\ex
+\gll Nni      nigiri=ka=\textbf{jo}     kitham=pe     aanak buva pada=yang   asà-simpang. \\
+       \textsc{prox} country=\textsc{loc}=\textsc{emph} \textsc{1pl}=\textsc{poss} child fruit \textsc{pl}=\textsc{acc} \textsc{cp}-keep \\
+    `We have raised our children in this country'  (K051222nar04)
+\z
+\z
+}
+
+\section{Presupposition and assertion}\label{sec:disc:Presuppositionandassertion}
+A dichotomy related to topic and comment, yet subtly different, is the opposition between presupposition and assertion, and the notion of focus.
+Focus is the portion of the utterance which makes the difference between the presupposition and the assertion \citep{Lambrecht1994}. The elements which are in focus are said to be in the focus domain. If the focus domain includes the predicate, we speak of predicate focus. If the focus domain does not include the predicate, but rather an argument, we speak of argument focus. So \em John drank tea. \em has two different interpretations depending on the focus domain. \em John DRANK TEA \em has predicate focus. The presupposition was that John did something, the assertion is that John drank tea, and the focus, the difference between presupposition and assertion is DRANK TEA. We learn that John's activity consisted in the ingestion of a liquid rather than going out for a hike or some other activity.
+\em John drank TEA \em on the other hand has the presupposition that John drank something, the assertion that John drank tea, and the focus domain is TEA alone. We learn that the beverage John consumed is tea, rather than coffee. In the first case, the focus domain includes the predicate `drink'; in the second one it does not.
+There are two additional minor types of foci, namely sentence focus, where the focus domain covers the whole assertion (and the presupposition is void), and contrastive focus \citep[233,286]{Lambrecht1994}.
+
+In the following sections, I will discuss predicate focus \funcref{sec:disc:Predicatefocus}, argument focus \funcref{sec:disc:Argumentfocus}, sentence focus \funcref{sec:disc:Sentencefocus}, and contrastive focus \funcref{sec:disc:Contrastivefocus} are encoded in SLM.
+
+\subsection{Predicate focus}\label{sec:disc:Predicatefocus}
+Predicate focus is the default case. There is no special marking for it in SLM.
+
+\subsection{Argument focus}\label{sec:disc:Argumentfocus}
+An argument is put into focus by attaching the clitic \em=jo \em \formref{sec:morph:=jo}.
+
+\xbox{16}{
+\ea \label{ex:disc:foc:arg}
+\gll [Sri Lanka=ka]=\textbf{jo} kaaving. \\ % bf
+ Sri Lanka=\textsc{loc}=\textsc{emph} marry\\
+`Marry in Sri Lanka!' (B060115cvs03)
+\z
+}
+
+The focus domain of example \xref{ex:disc:foc:arg} is \em Sri Lanka\em, and does not include \trs{kaaving}{marry}. This is clear from the context of the utterance, a dialogue where marriage is discussed. The presupposition is that the addressee will marry, the question is only where. The presupposition is not what the addressee should do in general, marry in Sri Lanka, work in Dubai or drive fancy cars in Monaco.
+The focus domain restricted to the argument is marked by \em =jo \em in example \xref{ex:disc:foc:arg}.
+
+A similar example is \xref{ex:disc:foc:arg2}, where the focus domain does not include the act of saying, but only the content of Mahinda's utterance.
+
+\xbox{16}{
+\ea \label{ex:disc:foc:arg2}
+\gll [Itthu katha]=jo Mahindha arà-biilang. \\ % bf
+     \textsc{dist} \textsc{quot}=\textsc{emph} Mahindha \textsc{non.past}-say  \\
+    `That's what Mahinda [Rajapaksa, President of Sri Lanka] is saying.'  (K051206nar11)
+\z      
+}
+
+
+The focused element does not have to appear in initial position, as the following example shows.
+
+\xbox{16}{
+\ea \label{ex:disc:foc:medial}
+\gll Itthu    kumpulan=dang      \textbf{derang=jo}     bannyak arà-banthu. \\ % bf
+      \textsc{dist} association=\textsc{dat} \textsc{3pl}=\textsc{emph} much \textsc{non.past}-help\\
+    `It is they who help the association a lot.' (B060115cvs01)
+\z
+}
+
+The following example also clearly states the presupposition in the first part, but provides the surprising assertion in the second part.\footnote{For
+	focalization purposes, one speaker has a kind of pseudo-cleft construction involving the copula \em a(bbi)sdhaathang\em, which is shown in the following two examples. This construction seems to be idiolectal.
+
+
+	\xbox{16}{
+	\ea \label{ex:disc:foc:pseudocleft1}
+	\gll [See anà-{\em pass.out}] abbisdhaathang       {\em University} {\em of} {\em Peradeniya}=ka\\ % bf
+	\textsc{1s} \textsc{past}-graduate \textsc{copula} University of Peradeniya=\textsc{loc} \\
+	`Where I graduated was the University of Peradeniya.' (K061026prs01,K081104eli05)
+	\z
+	} \\
+
+
+
+	\xbox{16}{
+	\ea \label{ex:disc:foc:pseudocleft2}
+	\ea 
+	\gll [Itthu    arà-kirja] abbisdhaathang. \\ % bf
+	\textsc{dist} \textsc{non.past}-make \textsc{copula}  \\
+	`How you make it is'
+	\ex 
+	\gll thullor asà-ambel=apa       baaye=nang  asà-puukul=apa ...\\ % bf
+	egg \textsc{cp}-take=after good=\textsc{dat} \textsc{cp}-hit=after  \\
+	`you take eggs and beat them well and ...' (K061026rcp01)
+	\z
+	\z
+	} \\
+}
+
+\xbox{16}{
+\ea \label{ex:disc:foc:extra1}
+\gll Suda kanabisan=ka raaja Andare=yang mà-enco-king asà-pii, \textbf{raaja=jo} su-jaadi enco. \\ % bf
+      thus last=\textsc{loc} king Andare=\textsc{acc} \textsc{inf}-fool-\textsc{caus} \textsc{cp}-go king=\textsc{emph} \textsc{past}-become fool \\
+    `So finally the king had tried to make a fool out of Andare, but it was the king who turned out to be the fool.'  (K070000wrt02)
+\z      
+}
+
+
+A second possibility is extraposition of the focussed element to the right \formref{sec:cls:Declarativeclause}. This is given in \xref{ex:disc:foc:disloc}.
+
+\xbox{16}{
+\ea \label{ex:disc:foc:disloc}
+\gll Itthu=nang      blaakang su-dhaathang     [\textbf{Hambanthota} \textbf{mlaayu} \textbf{pada}]. \\
+      \textsc{dist}=\textsc{dat} after \textsc{past}-come Hambantota Malay \textsc{pl} \\
+    `After that came the Hambantota Malays.' (K051206nar14)
+\z
+}
+
+\subsection{Sentence focus}\label{sec:disc:Sentencefocus}
+Sentence focus, used for thetic statements, does not seem to be distinguished from predicate focus by segmental or intonational material in SLM. What does distinguish sentence focus from predicate focus sentences is that all relevant NPs must be realized, which is hardly ever the case for predicate focus sentences.
+
+\subsection{Contrastive focus}\label{sec:disc:Contrastivefocus}
+Contrastive focus indicates that a state-of-affairs contrasting with the presupposition holds, as in \em John is not a teacher, he is a doctor\em. In SLM, this is also indicated by \em =jo \em \formref{sec:morph:=jo}. In example \xref{ex:disc:foc:contrastive1}, two contrastive propositions about the size of Malay Associations in Sri Lanka are presented. The first one asserts that the idea that there are big associations is wrong, while the second one asserts that the opposite idea, small associations, is correct. This contrast is marked by \em =jo \em in the second proposition.
+
+\xbox{16}{
+\ea \label{ex:disc:foc:contrastive1}
+\ea 
+\gll \textbf{Bìssar} atthu  kumpulan    thraa. \\ % bf
+big \textsc{indef} association \textsc{neg}\\
+`There is not one big association.'
+
+\ex
+\gll \textbf{Kiccil} kumpulan    pada=\textbf{jo}. \\
+small association \textsc{pl}=\textsc{emph}\\
+`there are SMALL ASSOCIATIONS.' (N060113nar01)
+\z
+\z
+}
+
+A similar situation obtains in \xref{ex:disc:foc:contrastive2}, where two languages are compared.
+
+\xbox{16}{
+\ea \label{ex:disc:foc:contrastive2}
+\gll Itthu=ka \textbf{mlaayu} thraa, bannyak=nang \textbf{{\em English}=jo} aada. \\
+      \textsc{dist}=\textsc{loc} Malay \textsc{neg} much=\textsc{dat} English=\textsc{emph} exist \\
+    `There is no Malay. What there is, is a lot is English.'  (B060115prs15)
+\z      
+}
+
+
+% 
+% \xbox{16}{
+% \ea\label{ex:form:unreferenced}
+% \gll thapi dhlapan-blas uumur=jo {\em {\em dheram}}=pe kaaving uumur. \\
+%        \\
+%     `.'  (K061122nar01)
+% \z      
+% }\\ must go to inf struct
+
+
+ 
+\section{Canceling implicatures}\label{sec:disc:Cancelingimplicatures}
+The knowledge of the world leads the speakers to make inferences based on the communicative content and what it implies. If the speaker assumes that such inferences have incorrectly been made, he can signal this, like English \em  but \em as in \em He is a sports star, \textbf{but} he is not rich\em. In this case, the conventional implicature drawn from our knowledge of the world (that sports stars are normally wealthy) is overtly canceled by \em but\em.
+
+In SLM, adversative strategies like the one above are a lot less common than in English. If implicatures need to be canceled, this is normally done by using \em =le\em, which is also used for normal coordination \citep[cf.][]{Haspelmath2004intro}.
+
+The following examples show the use of \em itthule \em \formref{sec:wofo:itthule}.  The implicature of paying the ransom was that the speaker would be sent back as he is, but instead and unexpectedly, he is turned into a bear.
+ 
+\xbox{16}{
+\ea\label{ex:disc:implicatures:intro}
+\ea 
+\gll Se=ppe baapa incayang=nang ummas su-kaasi. \\ % bf
+     \textsc{1s=poss} father \textsc{3s.polite}-\textsc{dat} gold \textsc{past}-give \\
+    `My father gave him the gold.'   
+\ex
+\gll \textbf{Itthule} see=yang mà-kiiring=nang duppang incayang see=yang hathu Buruan mà-jaadi su-bale-king. \\
+     But \textsc{1s}=\textsc{acc} \textsc{inf}-send=\textsc{dat} before 3\textsc{s.polite} \textsc{1s}=\textsc{acc} \textsc{indef} bear \textsc{inf}-become \textsc{past}-turn-\textsc{caus}  \\
+    `But before he send me back, he turned me into a bear.'  (K070000wrt04)
+\z
+\z      
+}
+
+Another example of an implicature cancelled is \xref{ex:disc:implicatures:votes}, where despite the sizeable amount of votes obtained, the person was not elected.
+
+\xbox{16}{
+\ea\label{ex:disc:implicatures:votes}
+\ea 
+\gll Duva-pulu    ìnnam riibu    ùmpath  raathus lima-pulu    duuva {\em votes}  incayang=nang    anà-daapath. \\ % bf
+ two-ty six thousand four hundred five-ty two votes 3s.polite=\textsc{dat} \textsc{past}-get\\
+    `He got 26,452 votes.'
+\ex
+\gll \textbf{Itthu=nang=le} incayang=nang=le    inni thumpath thàrà-daapath. \\
+     \textsc{dist}=\textsc{dat}=\textsc{addit} 3s.polite=\textsc{dat}=\textsc{addit} \textsc{prox} place \textsc{neg.past}-get  \\
+    `In spite of that, he did not get the seat either.'  (N061031nar01)
+\z
+\z
+}
+
+% \xbox{16}{
+% \ea
+% \gll Itthu oorang kaaya bolle aada, itthule se=dang thussa. \\
+%        \\
+%     `.' (nosource)
+% \z
+% } \\
+
+
+Normally, \em itthu \em is used as an anaphora for the content whose implicature is to be cancelled. In rare cases, \em =le \em can be found without \em itthu \em in this function. An example where \em =le \em attaches to a noun is given in \xref{ex:disc:implicatures:np}.
+
+\xbox{16}{
+\ea\label{ex:disc:implicatures:np}
+\gll  Itthukapang, kumpul-an=nang=\textbf{le}, punnu mlaayu pada lai  Seelong=ka aada\\
+     then mix-\textsc{nmlzr}=\textsc{dat}=\textsc{addit} full Malay \textsc{pl} more Seelon=\textsc{addit} aada  \\
+    `Then, and in spite of all this mixing, there are still a good lot of  Malays in Sri Lanka.'  (K060108nar02)
+\z
+}
+
+
+An example  where \em =le \em attaches to the verb \trs{kaala}{lose} is  \xref{ex:disc:implicatures:predicate}.
+
+\xbox{16}{
+\ea\label{ex:disc:implicatures:predicate}
+\ea 
+\gll Sudaara TB Jayah inni {\em state} {\em council} {\em election} pada=nang   duuduk  aada. \\ % bf
+     Brother TB Jayah \textsc{prox} state council election \textsc{pl}=\textsc{dat} exist.\textsc{anim} exist  \\
+    `Brother TB Jayah was in that state council election.'   
+\ex
+\gll Thiga-pulu    ìnnam=ka  incayang  itthu=dering     su-kaala. \\ % bf
+     three-ty six=\textsc{loc} 3\textsc{s.polite} \textsc{dist}=\textsc{abl} \textsc{past}-lose  \\
+    `He lost  in the '36 elections.' 
+\ex
+\gll Kaala=\textbf{le}      thàrà=na=apa  incayang=nang    {\em appointed} {\em member}=pe     hathu  thumpath=yang  {\em government}=ka  anà-kaasi. \\
+      lose=\textsc{addit} \textsc{neg}=\textsc{dat}=after 3s.polite=\textsc{dat} appointed member=\textsc{poss} \textsc{indef} seat=\textsc{acc} government=\textsc{loc} \textsc{past}-give \\
+    `In spite of having lost, he was given a seat as appointed member in the government.' (N061031nar01)
+\z
+\z
+}
+
+If \em =le \em is used together with \trs{kala-}{if}, the meaning is irrealis `even if' instead of realis `although' \xref{ex:disc:implicatures:kala-le}.
+
+\xbox{16}{
+\ea\label{ex:disc:implicatures:kala-le}
+\gll Incayang pukuran kala-gijja=le, laile hatthu miskin. \\
+     3\textsc{s.polite} work if-make=\textsc{addit} still \textsc{indef} poor  \\
+    `Even if he works, he will still remain a pauper.' (K081104eli05)
+\z
+}
+
+It is also possible to combine \em =le \em in its adversative meaning with interrogative pronouns \xref{ex:disc:implicatures:dhraapa-le1}. Note the similarity to the \textsc{WH=clt}-construction discussed in \formref{sec:nppp:NPscontaininginterrogativepronounsusedforuniversalquantification}.
+
+\xbox{16}{
+\ea\label{ex:disc:implicatures:dhraapa-le1}
+\gll Incayang \textbf{dhraapa} pukuran gijja=\textbf{le}, laile hatthu miskin. \\
+      3\textsc{s.polite} how.much work make=\textsc{addit} still \textsc{indef} poor \\
+    `However much he might work, he will still remain a pauper.' (K081104eli05)
+\z
+}
+
+The arbitrariness of the degree can be reinforced by \trs{boole}{can} \xref{ex:disc:implicatures:dhraapa-le2}.
+
+\xbox{16}{
+\ea\label{ex:disc:implicatures:dhraapa-le2}
+\gll Itthu oorang dhraapa kaaya bole=jaadi=le, see dee=yang thama-kaaving. \\
+     \textsc{dist} man how.much rich can=become=\textsc{addit} \textsc{1s} 3\textsc{s.impolite}=\textsc{acc} \textsc{neg.irr}-marry  \\
+    `However rich that man might be, I will never marry that bastard.' (K081104eli05)
+\z
+}
+ 
+\section{Parsing}\label{sec:disc:Parsing}
+One important step in structuring information is to indicate what belongs together and what does not. The coherence of constituents can be marked by intonation, pausing, and positional information in SLM.
+
+\subsection[Phonological constituents]{Identifying phonological constituents}\label{sec:disc:Identifyingphonologicalconstituents}
+Intonational cues present in SLM are falling pitch for the end of a declarative sentence and rising pitch at the end of interrogative and subordinate sentences \formref{sec:phon:Intonation}. By paying attention to these cues, the hearer can segment the speech signal in a number of presuppositions and assertions.
+
+Identification of individual words is aided by the bimoraic foot structure with its consequences on vowel length and consonant gemination \formref{sec:phon:Analysisofwordstructure}. On hearing a long vowel or a geminated consonant, the hearer can immediately assume that he is dealing with the penultimate syllable of a lexeme (with the exception of the very limited number of monosyllables with a long vowel.) In this way, a word boundary after the final syllable can be retrieved.
+
+Given the positional restriction of a number of phonemes which cannot occur in final position, such as palatals or voiced stops, the hearer has negative evidence that a word boundary is not present at that place.  The negative cues for the beginning of a word are much weaker. Only \phonem{N}  cannot occur in this position and hence precludes a word boundary where it occurs.
+
+
+\subsection[Syntactic constituents]{Identifying syntactic constituents}\label{sec:disc:Identifyingsyntacticconstituents}
+The assertive contour \formref{sec:phon:Assertivecontour} can be used to identify the predicate phrase, while the presuppositional contour \formref{sec:phon:Presuppositivecontour} can be used to identify NPs and PPs. The further parsing of VPs can be done by identifying a verbal prefix. What follows the prefix must be part of the verb, but what precedes cannot. NPs and PPs can be chopped starting from the right by identifying first clitics and then postpositions. As soon as the segmental material can no longer be interpreted as a clitic or a postposition, the stem has been reached. Further cues are given by a long vowel or a geminate consonant, which indicate the penultimate syllable of a lexeme.
+
+
+\subsection[Syntactic constituency]{Identifying syntactic constituency}\label{sec:disc:Identifyingsyntacticconstituency}
+Syntactic constituency can be indicated in the languages of the world by head marking, dependent marking, and positional information \citep{Nichols1986hmdm}.
+SLM does not make use of head marking, but uses dependent marking extensively to indicate the relationship between two words. This is mostly done with postpositions, which indicate the semantic roles of the arguments of a predicate, as in \xref{ex:parse:constituency:postp:arg}.
+
+
+\xbox{16}{
+\ea \label{ex:parse:constituency:postp:arg}
+\gll Itthu    baathu=\textbf{yang}    incayang Seelong=\textbf{dering} laayeng nigiri=\textbf{nang} asà-baapi. \\
+ \textsc{dist} stone=\textsc{acc} 3\textsc{s.polite} Ceylon=\textsc{abl} other country=\textsc{dat} \textsc{cp}-bring\\
+`These stones, he brought them from Ceylon to other countries.' (K060103nar01)
+\z
+}
+
+A postposition on the dependent is also used to indicate possessors in the noun phrase: \em =pe\em. The following example contains five possessive relationships. In all of these, the dependent (possessor) is overtly marked, while the head is not. 
+
+\xbox{16}{
+\ea\label{ex:parse:constituency:postp:poss}
+\gll Itthu=kaapang [se=\textbf{ppe}      baapa]  [se=\textbf{ppe} kaake]      [[se=\textbf{ppe}      kaakee=\textbf{pe}]      baapa] kithang samma oorang [Seelon=\textbf{pe} oorang] pada. \\
+      \textsc{dist}=when \textsc{1s=poss} father \textsc{1s=poss} grandfather \textsc{1s=poss} grandfather=\textsc{poss} father, \textsc{1pl} all man Ceylon=\textsc{poss} man \textsc{pl}\\
+    `Then my father and my grandfather and my grandfather's father, all of us people became Ceylon people.'  (K060108nar02)
+\z      
+}
+
+Furthermore, a number of subordinate clauses indicate their dependent status on the verb. This is the case for clauses with \em asà- \em and \em mà- \em \xref{ex:parse:constituency:verb}.
+
+
+\xbox{16}{
+\ea\label{ex:parse:constituency:verb}
+\ea 
+\gll [Pohong=dering baava=nang \textbf{asà}-thuurung], \\
+       tree=\textsc{abl} down=\textsc{dat} \textsc{cp}-descend\\
+    `Tthe monkeys) climbed down from the tree and'
+\ex
+\gll [oorang anà-baava samma thoppi=pada \textbf{asà}-ambel], \\
+      man \textsc{past}-bring all hat=\textsc{pl} \textsc{cp}-take\\
+    `took all the hats the man had brought and'  
+\ex
+\gll [\textbf{mà}-maayeng]=nang su-mulain. \\
+      \textsc{inf}-play=\textsc{dat} \textsc{past}-start \\
+    `started to play.' (K070000wrt01)  
+\z
+\z      
+}
+
+However, not all subordinate clauses are overtly marked for their dependent status. \xref{ex:parse:constituency:verb:nomarking} consists of a main clause and an argument clause, but the embedded status of the argument clause is not signalled morphosyntactically.
+
+\xbox{16}{
+\ea\label{ex:parse:constituency:verb:nomarking}
+\gll Blaakang=jo incayang anà-kuthumung [moonyeth pada  pohong atthas=ka arà-maayeng]$_{arg}$. \\
+     after=\textsc{emph} 3\textsc{s.polite} \textsc{past}-see monkey \textsc{pl}  tree top=\textsc{loc} \textsc{simult}-play  \\
+    `Then only he saw that the monkeys  were playing in the top of the tree.'  (K070000wrt01)
+\z      
+}
+
+Besides segmental information of the dependent in clauses, NPs and clause combinations, positional information is also available. Dependents tend to precede their head in all areas of SLM grammar. Nominal modifiers precede nouns \formref{sec:nppp:Thefinalstructureofthenounphrase}, arguments precede verbs, subordinate clauses precede main clauses \formref{sec:cls:Mainclauses}.
+
+Within the phonological phrases identified by intonation contours, the morphosyntactic head is normally to the right, and modifiers are to the left. This means that the predicate (head) of a sentence can easily be identified. The arguments are then the remaining elements. Similar things can be said about NPs, where the rightmost element is normally the head noun. True, there are some cases where the head is not the rightmost element. This is not very often the case for clauses, but much more common for NPs. This entails that for the hearer, it is much more difficult to establish the constituency of the noun phrase as compared to the constituency of the clause. If one assumes that NPs have little constituency and are more appositional in nature \formref{sec:nppp:TheSLMNPasappositional}, this need not be a problem.
+

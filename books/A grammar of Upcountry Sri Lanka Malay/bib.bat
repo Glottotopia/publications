@@ -1,0 +1,1 @@
+H:\texmf\MiKTeX\bin\bibtex.exe phd

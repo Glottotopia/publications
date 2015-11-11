@@ -1,0 +1,189 @@
+\documentclass[12pt,a4paper,twoside,final]{book} % oneside=print only on one side
+%
+%-------------general packages-----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+\usepackage{anysize}
+\marginsize{2cm}{2cm}{2,5cm}{2,5cm}
+% \usepackage[british]{babel}
+%------------frontmatter packages---
+\usepackage[toc,lof,lot]{multitoc}
+\usepackage{tocbibind}
+
+%-----------mainmatter packages-----
+\usepackage{trfsigns}
+% \usepackage{stmaryrd}
+\usepackage{colortbl}
+\usepackage[TABBOTCAP]{subfigure}
+\usepackage{floatflt}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{tipa}
+% \usepackage{gb4e}
+\usepackage{gb4n}
+\usepackage{sinhala}
+\usepackage[indica]{tamil}
+\usepackage{ipashortcuts}
+\usepackage{lingsty}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{rotating}
+\usepackage{urls}
+\usepackage{lingsty}
+\usepackage{enumerate}
+\usepackage{qtree}
+\usepackage{pifont}
+% \usepackage[citebordercolor=0 0 0, linkbordercolor=0 0 0, urlbordercolor=0 0 0]{hyperref}
+\usepackage[colorlinks=true, breaklinks=true, linkcolor=black, menucolor=black, pagecolor=black, urlcolor=black, citecolor=black, pdfhighlight=/N, pdfauthor=Sebastian Nordhoff, pdftitle=A Grammar of Upcountry Sri Lanka Malay]{hyperref}
+\newcommand{\hand}{\ding{43}}
+% \newcommand{\slanted}{\changefont{cmr}{m}{sl}}
+\newcommand{\dreieck}{{\LARGE$\bigtriangleup$}}
+\newcommand{\kreis}{{\Huge$\circ$}}
+\newcommand{\pile}[4]{\mbox{\begin{tabular}{c}#2\\#3\\\footnotesize#4\end{tabular}}}
+\newcommand{\vln}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){\line(1,0){#3}}\end{picture}}
+\newcommand{\hln}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){\line(0,1){#3}}\end{picture}}
+\DeclareUnicodeCharacter{1EBD}{ẽ}
+%-----------backmatter packages-----------
+\usepackage[authoryear]{natbib}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+\setlength{\bibsep}{0.05cm}
+%-------------MyCommands-----------------
+\author{Sebastian Nordhoff}
+\title{A Grammar of Upcountry Sri Lanka Malay} 
+\hyphenation{in-ter-rog-a-tive follow-ing Ta-liph Jai-nu-deen}
+
+
+%-------------MyCommands-----------------
+
+
+%----------------------------------------------
+%----------------------Text--------------------
+%----------------------------------------------
+% for name in *tex; do echo -n $name:\ ;egrep abc\|kuckn\|draftnote $name|wc -l;done|grep -v \ 0 ;egrep abc\|kuckn\|draftnote *tex|wc -l
+\input{tamilmax} % needed for Tamilfonts
+\begin{document}
+
+\pagestyle{empty} 
+\begin{center}
+~
+\vspace{3cm}
+
+{\Huge \bf A Grammar of Upcountry Sri Lanka Malay}
+
+
+\vspace{3cm}
+
+{\large ACADEMISCH PROEFSCHRIFT}
+
+
+\vspace{1cm}
+
+ter verkrijging van de graad van doctor\\
+aan de Universiteit van Amsterdam\\
+op gezag van de Rector Magnificus\\
+prof. dr. D.C. van den Boom\\
+ten overstaan van een door het college voor promoties \\
+ingestelde commissie,\\
+in het openbaar te verdedigen in de  Agnietenkapel\\
+op vrijdag 27 november 2009, te 14:00 uur\\
+
+\vspace{1cm}
+
+door
+
+\vspace{1cm}
+
+{\large \bf Sebastian Nordhoff}
+
+\vspace{1cm}
+
+geboren te Erlangen, Bondsrepubliek Duitsland
+
+ 
+\end{center} 
+
+\newpage 
+\begin{tabular}{ll}
+Promotiecommissie\\
+\\
+\\
+Promotor: 		& Prof. Dr. P. C. Hengeveld\\
+\\
+Co-promotor:		& Dr. U. Ansaldo		\\
+\\
+Overige Leden: & Dr.  K. A. Adelaar\\
+& Prof. Dr. J. B. den Besten\\
+& Prof. Dr. J. W. Gair\\
+& Prof. Dr. N. Himmelmann\\
+& Dr. N. S. H. Smith\\
+\\
+\\
+\\
+\end{tabular}
+\\
+
+
+Faculteit der Geesteswetenschappen
+ 
+
+\frontmatter
+\pagestyle{headings} 
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+	\tableofcontents
+	\newpage
+	\listoftables
+	\listoffigures
+\input{abbrev}
+% \input{acknowledgements}
+% % % ------------------Hauptteil--------------------
+ \mainmatter
+\glossSTDmode
+ \part{Background}
+ 	\input{introduction}\setcounter{exx}{0}\setcounter{footnote}{0}
+     	\input{slmbg}\setcounter{exx}{0}\setcounter{footnote}{0}
+	\input{methodology}\setcounter{exx}{0}\setcounter{footnote}{0}
+  \part{Form}
+	\input{phonology}\setcounter{exx}{0}\setcounter{footnote}{0}
+     	\input{wordclasses}\setcounter{exx}{0}\setcounter{footnote}{0}
+        \input{morphemicon}\setcounter{exx}{0}\setcounter{footnote}{0}
+	\input{wordformation}\setcounter{exx}{0}\setcounter{footnote}{0}
+ 	\input{np-pp}\setcounter{exx}{0}\setcounter{footnote}{0}
+      \input{predicates}\setcounter{exx}{0}\setcounter{footnote}{0}
+	\input{argstr}\setcounter{exx}{0}\setcounter{footnote}{0}
+	\input{gramrel}\setcounter{exx}{0}\setcounter{footnote}{0}
+   	\input{clauses}\setcounter{exx}{0}\setcounter{footnote}{0}
+   	\input{constructions}\setcounter{exx}{0}\setcounter{footnote}{0}
+ \part{Function}
+   	\input{functions}\setcounter{exx}{0}\setcounter{footnote}{0}
+   	\input{discourse}\setcounter{exx}{0}\setcounter{footnote}{0}
+  	\input{pragmatics}\setcounter{exx}{0}\setcounter{footnote}{0}
+% % % % % % --------------------Anhang---------------------
+\newpage
+\backmatter
+\appendix
+\bibliographystyle{natuva}
+\bibliography{ansaldo,asw,creole,india,malay,sinhala,tamil,islam,sociolgstcs,lgctct,lgchg,lankahist,fieldwork,phon,wortarten,grammaticalization,activestative,grammars,nordhoff}
+\input{texts}
+\newpage\setcounter{exx}{0}\setcounter{footnote}{0}
+	\input{andaresugar}%done
+\newpage\setcounter{exx}{0}\setcounter{footnote}{0}
+ 	\input{binthan}
+\newpage\setcounter{exx}{0}\setcounter{footnote}{0}
+ 	\input{tony2}%done
+\newpage\setcounter{exx}{0}\setcounter{footnote}{0}
+ 	\input{saradiyel3}%done
+\newpage\setcounter{exx}{0}\setcounter{footnote}{0}
+ 	\input{SWRR}%done
+\input{VOT}
+\input{marriage}
+% \input{summary}
+% \input{samenvatting}
+
+
+
+% \nociteq{*}                       
+% \bibliographystyleq{natuva}       
+% \bibliographyq{slmquellen}
+\end{document}

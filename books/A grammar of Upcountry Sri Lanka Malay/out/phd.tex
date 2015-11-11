@@ -1,0 +1,131 @@
+\documentclass[12pt,a4paper,oneside,final]{book} % oneside=print only on one side
+%
+%-------------general packages-----------
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
+\newcommand{\changefont}[3]{
+\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+\marginsize{2cm}{2cm}{2,5cm}{2,5cm}
+%------------frontmatter packages---
+\usepackage[toc,lof,lot]{multitoc}
+\usepackage{tocbibind}
+
+%-----------mainmatter packages-----
+\usepackage{trfsigns}
+% \usepackage{stmaryrd}
+\usepackage{colortbl}
+\usepackage[TABBOTCAP]{subfigure}
+\usepackage{floatflt}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{tipa}
+\usepackage{gb4e}
+\usepackage{sinhala}
+\usepackage[indica]{tamil}
+\usepackage{ipashortcuts}
+\usepackage{lingsty}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{rotating}
+\usepackage{urls}
+\usepackage{lingsty}
+\usepackage{enumerate}
+\usepackage{qtree}
+\usepackage{pifont}
+\newcommand{\hand}{\ding{43}}
+\newcommand{\slanted}{\changefont{cmr}{m}{sl}}
+\newcommand{\dreieck}{{\LARGE$\bigtriangleup$}}
+\newcommand{\kreis}{{\Huge$\circ$}}
+\newcommand{\pile}[4]{\mbox{\begin{tabular}{c}#2\\#3\\\footnotesize#4\end{tabular}}}
+\newcommand{\vln}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){\line(1,0){#3}}\end{picture}}
+\newcommand{\hln}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){\line(0,1){#3}}\end{picture}}
+%-----------backmatter packages-----------
+\usepackage[authoryear]{natbib}     
+\bibpunct[:]{(}{)}{,}{a}{}{,}       
+\setlength{\bibsep}{0.05cm}
+%-------------MyCommands-----------------
+
+%----------------------------------------------
+%----------------------Text--------------------
+%----------------------------------------------
+\input{tamilmax} % needed for Tamilfonts
+\begin{document}
+\frontmatter
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+% \tableofcontents
+% \newpage
+% \listoftables
+% \listoffigures
+% \input{abbrev}
+%------------------Hauptteil--------------------
+\mainmatter
+% \input{kin}
+\part{Background}
+%  	\input{introduction}
+%      	\input{slmbg}
+% 	\input{methodology}
+  \part{Form}
+% 	\input{phonology}
+%      	\input{wordclasses}
+%       \input{morphemicon}
+% 	\input{wordformation}
+%  	\input{np-pp}
+%       \input{predicates}
+	\input{argstr}
+% 	\input{gramrel}
+%    	\input{clauses}
+%   	\input{constructions}
+% %  \part{Function}
+%    	\input{functions}
+%    	\input{discourse}
+%   	\input{pragmatics}
+%    	%\input{wvttk}
+%  \part{Contexts}
+%  	\input{contrastgramm}
+%  	\input{ctlgs}
+%  	\input{influences}
+%  	\input{implication}
+%  	\input{conclusion}
+%--------------------Anhang---------------------
+% \newpage
+\appendix
+\backmatter
+
+\bibliographystyle{natuva}
+\bibliography{ansaldo,asw,creole,india,malay,sinhala,tamil,islam,sociolgstcs,lgctct,lgchg,lankahist,fieldwork,phon,wortarten,grammaticalization,activestative,grammars,nordhoff}
+
+%  \input{perspectives}
+% \chapter{Texts}
+% \newpage
+% \setcounter{exx}{0}
+%  	\input{tony2}%done
+% \newpage
+% \setcounter{exx}{0}
+%  	\input{saradiyel3}%done
+% \newpage
+% \setcounter{exx}{0}
+%  	\input{binthan} % todo phonetic transcription
+% \newpage
+% \setcounter{exx}{0}
+% 	\input{andaresugar}%done
+% \newpage
+% \setcounter{exx}{0}
+%  	\input{SWRR}%done
+% \chapter{Voice onset time}
+% \input{VOT}
+% %  \chapter{Word List}
+% \input{Wordlist}
+% \chapter{Maps}
+% \begin{figure}
+%    \centering
+%        \includegraphics{pics/lankaFpifOrg.jpg}
+%    \label{fig:lankaFpifOrg}
+%    \caption{Map of Sri Lanka}
+% \end{figure}
+% 
+% \makeindex
+
+% \nociteq{*}                       
+% \bibliographystyleq{natuva}       
+% \bibliographyq{slmquellen}
+\end{document}

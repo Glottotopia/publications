@@ -1,0 +1,54 @@
+
+%
+% Created by Vasantha Saparamadu <vsaparam@ocs.mq.edu.au>
+% by modifying sinhc8.mf
+% 08 January 1996
+%
+
+%     Copyright (C) 1994, The Wellcome Trust, London.
+%
+%
+%     This program is free software; you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation; either version 2 of the License, or
+%     (at your option) any later version.
+%
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+%
+%     You should have received a copy of the GNU General Public License
+%     along with this program; if not, write to the Free Software
+%     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+%
+%     Contacts:
+%
+%     1/ The author:  Yannis Haralambous <Yannis.Haralambous@univ-lille1.fr>
+%
+%     2/ Commissioned by
+%        The Wellcome Institute for the History of Medicine,
+%        183 Euston Road,
+%        London NW1 2BE,
+%        England.
+%        Contact person: Dominik Wujastyk <D.Wujastyk@ucl.ac.uk>
+
+
+if unknown cmbase: input cmbase fi
+
+font_identifier:="SINBXC"; font_size 8pt#;
+
+input sinbx8.mf;
+
+input sinhalc.mf;
+
+end
+
+
+
+
+
+
+
+
+

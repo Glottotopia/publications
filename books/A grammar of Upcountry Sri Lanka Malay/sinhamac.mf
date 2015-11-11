@@ -1,0 +1,1321 @@
+%     Copyright (C) 1994, The Wellcome Trust, London.
+%
+%
+%     This program is free software; you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation; either version 2 of the License, or
+%     (at your option) any later version.
+%
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+%
+%     You should have received a copy of the GNU General Public License
+%     along with this program; if not, write to the Free Software
+%     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+%
+%     Contacts:
+%
+%     1/ The author:  Yannis Haralambous <Yannis.Haralambous@univ-lille1.fr>
+%
+%     2/ Commissioned by
+%        The Wellcome Institute for the History of Medicine,
+%        183 Euston Road,
+%        London NW1 2BE,
+%        England.
+%        Contact person: Dominik Wujastyk <D.Wujastyk@ucl.ac.uk>
+
+
+def do_expansion(text expansion_factor)=relax enddef; % prevents division by zero
+                                                      % in adjust_fit. DW 15/7/94
+
+def make_false(text t) =
+forsuffixes $=t: boolean $; $:=false; 
+endfor enddef;
+
+make_false(with_i, with_ii, with_u, with_uu, double, foll_by_r, prec_by_r,
+virama, letter_n, letter_bha, letter_s, with_hbar, fuji, handle, 
+letter_dot_s,right_bulb,left_small_arc, left_eye, pirogue, left_boa, 
+with_medium_arc, special_right_bulb,
+very_special_right_bulb, vowel, covered_labrador_ear,
+do_the_erasings, already_defined, with_a, with_aa, with_aaa, 
+with_r, with_rr, not_all_of_it, not_all_of_it_b,
+variant_letter_dot_s, testing_boxes, with_big_arc,tta_letter, without_tail);
+
+testing_boxes:=false;
+if testing_boxes:
+extra_endchar := extra_endchar & 
+   "pickup pencircle scaled 1; draw (l,0)--(r,0);" & 
+   "draw (l,-d)--(l,h)--(r,h)--(r,-d)--(l,-d);" &
+   "pickup nullpen; ";
+usual_left#:=0;
+usual_right#:=0;
+fi 
+
+pickup pencircle scaled shthin;
+shthin_pen := savepen;
+pickup nullpen;
+
+def push(expr p,pp,coef) =
+pair firstpt, firstcpt, secondcpt, secondpt; firstcpt =
+postcontrol 0 of p; secondcpt = precontrol 1 of p; firstpt = point 0 of p; 
+secondpt = point 1 of p; pair intersectpt, newfirstcpt, newsecondcpt;
+intersectpt - firstpt = whatever*(firstcpt-firstpt);
+intersectpt - secondpt = whatever*(secondcpt-secondpt);
+newfirstcpt=coef[firstcpt,intersectpt]; 
+newsecondcpt=coef[secondcpt,intersectpt]; 
+pp = (firstpt .. controls newfirstcpt and newsecondcpt .. secondpt);
+enddef;
+
+vardef movexy (expr vector) = def t_ = shifted vector enddef;
+enddef;
+
+vardef moveback = def t_ = relax enddef; enddef;
+
+def showme(suffix $) = 
+pickup pencircle; draw (-30FX,y$)--(30FX,y$); draw (x$,-30FY)--(x$,30FY); 
+pickup nullpen; enddef;
+
+def dshowme(suffix $) = 
+pickup pencircle; draw (-30FX,y$-1)--(30FX,y$-1); draw (x$-1,-30FY)--(x$-1,30FY); 
+draw (-30FX,y$+1)--(30FX,y$+1); draw (x$+1,-30FY)--(x$+1,30FY);
+pickup nullpen; enddef;
+
+def showpath(expr p) = pickup pencircle; draw p; pickup nullpen; enddef;
+
+def xbeginchar(expr xcode,xwidth,xheight,xdepth) =
+beginchar(xcode,xwidth,shheight#,shdepth#);
+enddef;
+
+def make_virama(suffix $) =
+x$.4=x$l; y$.4=19FY; pos$.3(shthin,56.5); z$.3r-z$.4=whatever*dir(-33.5);
+x$.3r=x$r; z$.1l=(x$r,14.3FY); z$.1r-z$.1l=z$.3l-z$.3r; y$.2=14.6FY;
+pos$.2(0.5shvar,-20); x$.2r=x$l+virama_width;
+penstroke z$.1e{dir(-33.5)}...z$.2e{up}...z$.3e{dir(146.5)};
+fill z$.3r--z$.4--z$l--z$r--cycle; enddef;
+
+def make_small_circle(suffix $) =
+z$.1-z$=z$-z$.2; x$.1=x$; y$.1-y$.2=4FY-shthin;
+pos$.1(shthin,-90); path small_circle; 
+small_circle = (z$.1{right}..z$.2{left}..z$.1{right});
+pickup shthin_pen; draw small_circle; 
+%pickup nullpen; 
+enddef;
+
+def make_u (expr start)(suffix $)(expr vofset) =
+pickup shthin_pen; rt z$.1=(x$,-6.3FY-vofset); z$.2=(start+2FX+.5shthin,y$.1); 
+z$.3=(x$.2,y$.2+4FY); path make_u_path; 
+make_u_path = z$.2{left}..z$.3{right}..z$.2{left};
+numeric make_u_time; make_u_time = directiontime dir(-70) of make_u_path;
+draw lft z$--z$.1--z$.2; draw subpath(0,make_u_time) of make_u_path;
+pickup nullpen;
+enddef;
+
+def make_uu (expr start)(suffix $)(expr vofset) =
+pickup shthin_pen; rt z$.1=(x$,-6.3FY-vofset); z$.2=(start+2FX+.5shthin,y$.1); 
+z$.3=(x$.2,y$.2+4FY); path make_u_path; 
+make_u_path = z$.2{left}..z$.3{right}..z$.2{left};
+numeric make_u_time; make_u_time = directiontime dir(-70) of make_u_path;
+z$.5=(2/3[x$.2,x$.1],2/3[y$.2,y$.3]);
+draw lft z$--z$.1 & z$.1..z$.5{left}..z$.2{left}; 
+draw subpath(0,make_u_time) of make_u_path;
+pickup nullpen;
+enddef;
+
+def pre_r(suffix $,$$) =
+make_small_circle($); z$.1'= directionpoint dir(-150) of small_circle;
+bot z$.3=z$-(1.9FX,2.2FY); lft z$.4= z$-(4.35FX,-.25FY); top z$.5=
+z$-(.4FX,-3.5FY); rt z$$=(x$+4.35FX,y$.4); numeric pre_r_minimum_y;
+pre_r_minimum_y=y$.3;
+draw z$.1'{dir-150}...z$.4{up}...z$.5...z$${down};
+path pre_r_path; pre_r_path = 
+z$.5{right}...z$${down}...(x$.5,y$$+y$$-y$.5){left};
+enddef;
+
+def almost_pre_r(suffix $,$$) =
+make_small_circle($); z$.1'= directionpoint dir(-150) of small_circle;
+bot z$.3=z$-(1.9FX,2.2FY); lft z$.4= z$-(4.35FX,-.25FY); top z$.5=
+z$-(.4FX,-3.5FY); rt z$$=(x$+4.35FX,y$.4); numeric pre_r_minimum_y;
+pre_r_minimum_y=y$.3;
+draw z$.1'{dir-150}...z$.4{up}...z$.5...z$${down};
+path pre_r_path; pre_r_path = 
+z$.5{right}...z$${down};
+enddef;
+
+def big_arc(suffix $) =
+if ((with_i) or (with_ii)):
+pos$.3(.1shvar,-80); y$.3l=18.9FY; x$.3=x$-7.25FX;
+pickup shthin_pen; top z$.1=(rt x$-8.3FX,14.5FY); z$.2=(rt x$-12.5FX,15.7FY);
+x$.4-x$.3=x$.3-x$.2; y$.4=y$.2; draw z${up}...z$.1{left}...z$.2{up};
+numeric px,px'; (px,px') =
+(z${up}...z$.1{left}) intersectiontimes (z$.4{down}..tension2..z$.2{up});
+z$.1'= point px of (z${up}...z$.1{left}); 
+z$.1''= direction px of (z${up}...z$.1{left});
+if (not with_ii): draw z$.4{down}...z$.1'; else:
+z$.3'=(z$.3{right}...z$.4{down}) intersectionpoint 
+((.5[x$.1',x$.4],0)--(.5[x$.1',x$.4],2h));
+draw z$.4{down}...z$.1'{z$.1''}...z$.3'{right}; fi
+pickup nullpen; pos$.2(shthin,0); 
+pos$.4(shthin,180); penstroke z$.2e{up}...z$.3e{right}...z$.4e{down};
+else:
+pickup shthin_pen; top z$.1=(rt x$-8.3FX,16.7FY); 
+path big_arc_path; 
+big_arc_path = z${up}...z$.1{left}...(x$.1-(x$-x$.1),y$){down};
+numeric px,px';
+(px,px') = big_arc_path intersectiontimes ((1FX,0)--(1FX,2h));
+draw subpath (0,px) of big_arc_path; 
+if (prec_by_r): z$.49=z$.1+(0,0); pre_r($.49,$.491); 
+numeric px,px'; (px,px') = pre_r_path
+intersectiontimes ((0,pre_r_minimum_y)--(30FX,pre_r_minimum_y));
+draw subpath(1,px) of pre_r_path; 
+fi pickup nullpen;
+fi
+if (fuji) or (pirogue): pos3.01(shthin,180); z3.01=z$; penstroke z3.01e{down}...z3'e{left}; fi
+enddef;
+
+def big_arc_kh(suffix $) =
+pickup shthin_pen; top z$.1=(rt x$-8.3FX,16.7FY); 
+path big_arc_path; 
+big_arc_path = z${up}...z$.1{left}...(x$.1-(x$-x$.1),y$){down};
+numeric px,px';
+(px,px') = big_arc_path intersectiontimes ((1FX,0)--(1FX,2h));
+draw subpath (0,px) of big_arc_path; z$.2 = point px of big_arc_path;
+z$.205=direction px of big_arc_path;
+pos$.21(.5shvar,angle((14.9FX,0)-z$.2)); z$.21l=z$.2; z$.22=z$.1+(.5FX,.5shvar);
+z$.23-z$.22=z$-z$.1; 
+path p; p = z$.22{right}...z$.23{down}; 
+numeric px,px'; (px,px') = p intersectiontimes ((x$-1FX,0)--(x$-1FX,2h));
+draw z$.2{z$.205}...z$.21r{-z$.205}..z$.22{right} & subpath(0,px) of p;
+pickup nullpen;
+if (fuji) or (pirogue): pos3.01(shthin,180); z3.01=z$; penstroke z3.01e{down}...z3'e{left}; fi
+enddef;
+
+def big_arc_virama(suffix $) =
+numeric phi; phi=30;
+pickup shthin_pen; z$.11=z$-(3.6FX,9FY); z$.31=z$-(8.7FX,.5FY); 
+z$.31-z$.32=z$-z$.31; path p; p = z$...z$.32...z$; 
+z$.4=directionpoint dir(180+phi) of p; z$.3=directionpoint dir180 of p;
+numeric px; px = directiontime dir(180+phi) of p;
+z$.2=z$-(13.1FX,-5.3FY); path pp; pp = z${up}...z$.2{dir(180+phi)};
+draw subpath(0,px) of p; draw pp; z$.5 = pp intersectionpoint (z$.4--z$.11);
+draw z$.4--z$.5;
+if (fuji) or (pirogue): pos3.01(shthin,180); z3.01=z$; penstroke z3.01e{down}...z3'e{left}; fi
+enddef;
+
+def medium_arc =
+if already_defined: already_defined:=false; else:
+numeric vofset,hofset; hofset=1FX; vofset= if with_i or fuji: 0FY 
+elseif with_ii or (not left_small_arc): 0FY else: 0FY fi;
+z140=(9.6FX-hofset,16.25FY-vofset); z140-z141=whatever*dir127; x141=13.6FX-hofset; 
+pos142(shthin,180); x142l=15FX-hofset; y142=6.4FY-vofset; 
+path pppp; pppp=z140...z141...z142{down};
+pos144(0.3shvar,angle(direction 0 of pppp)+173); 
+pos146(.5shvar,127-180); 
+pickup shthin_pen; 
+z144=if not prec_by_r: top rt fi z140; z146r=z141; pos145(shthin,180);
+z145=(8.75FX-hofset,12.8FY-vofset); fi
+draw pppp; 
+penstroke z142e{down}...z3'e{left}; 
+penstroke z144e...z145e{down}...z146e;
+pos147(shthin,0); z147l=whatever[z141,z140]; x147=x141; 
+if (virama): make_virama(147); fill z147r--z141--z147l--cycle; fi
+if prec_by_r: z148=(5.1FX-hofset,15.5FY-vofset); 
+make_small_circle(148); z148.1'= directionpoint dir(-150) of small_circle;
+bot z148.3=z148-(1.9FX,2.2FY); lft z148.4= z148-(4.35FX,-.25FY); top z148.5=
+z148-(.4FX,-3.5FY); pickup shthin_pen; draw z148.1'{dir(-150)}...z148.3...
+z148.4...z148.5...z140{direction 0 of pppp}; pickup nullpen; fi
+enddef;
+
+def letter_k (expr ofset) =
+movexy(ofset);
+%% grand arc
+z1'=(0.3FX,0); z1=(0.7FX,1.4FY); z2l=(12.9FX,12.3FY); z2'=(3.5FX,0);
+z3l=(19.1FX,5.5FY); z3'=z4l=(16FX,0);
+pos1(shthin,angle(z1-z1')-90); pos2(shfat,angle(z2'-z2l)); 
+pos3(0.33shvar,angle(z3'-z3l)); pos4(shthin,100); 
+z1''=z1+(17.5FX,0); pos1''(shthin,angle(z1-z1')+90); 
+pos5(shthin,50); z5=(14.9FX,if ((with_u) or (with_uu)):.9FY else: .6FY fi);
+z5'-z5l=whatever*(z4r-z5r); y5'=y4l; 
+path p,pppp;
+if not_all_of_it:
+pickup shthin_pen; top z202=z2l; z203=(13.7FX+hdecalage-shthin,vdecalage);
+if letter_n: pppp= z1{z1-z1'}...z202...z203; draw pppp; else:
+pppp= z1{z1-z1'}...z202{right}...z203; draw pppp; fi
+pickup nullpen;
+elseif not_all_of_it_b:
+pickup shthin_pen; top z202=z2l; top z203=(13.7FX+hdecalage-shthin,vdecalage);
+rt z230=(13.7FX+8.5FX-shthin,8FY); path ppp; ppp= z230{up}...z203{left};
+pppp= z1{z1-z1'}...z203{right}...z230{down}; draw pppp; lft z204=(0,9.8FY);
+if covered_labrador_ear: draw z204{down}...z1; fi
+pickup nullpen;
+else:
+penstroke z1e{z1-z1'}...z2e{right}...z3e{down}...z4e{dir190}...z5e; 
+pppp=z1{z1-z1'}...z2{right}...z3{down}...z4{dir190}...z5; fi
+p=z1{z1-z1'}...z2{right}...z3{down}...z4{dir190}...z5; 
+%% arc interieur
+z6= pppp intersectionpoint
+((3.2FX,0)--(3.2FX,12.3FY)); z6'=(7.2FX,0); pos6(shthin,angle(z6'-z6));
+pos7(shthin,-90); z7=(8FX,8.6FY); pos8(shthin,-180); z8l=(13.7FX,4.2FY);
+pos9(shfat,100); pos12(shfat,100); z9l=(11FX,0); z12l=(5FX,0);
+z11=(x7-0.5FX,5FY); pos11(shthin,180); path pp; pp=(z11{down}...z12{left});
+z10r= pp intersectionpoint ((0,4.3FY)--(19.1FX,4.3FY)); 
+pos10(.388shvar,angle(z10r-(6.1FX,0))); numeric px,px';
+(px,px') = p intersectiontimes ((-19.1FX,y1+0.66shfat)--(19.1FX,y1+0.66shfat));
+numeric phi; phi= angle direction px of p; z13=point px of p;
+pos13(.5shvar,phi); 
+%% for letter n
+pos67(shthin,-90); z67=(7FX,8.6FY); pos68(shthin,-180); 
+z68l=(11.15FX,4.7FY);
+pos69(shfat,60); z69l=(4.7FX,0); 
+pos70(shfat,60); z70l=z1l; pos70'(shthin,60);
+z70'l=(-1.1FX,2.8FY); 
+if (not letter_n):
+penstroke z6e...z7e{right}...z8e{down}...z9e{left}...z10e;
+penstroke z11e{down}...z12e{left}...z13e; pickup shthin_pen; drawdot z11; pickup nullpen;
+else:
+penstroke z6e...z67e{right}...z68e{down}...z69e{left};
+fill z69l{left}...z70'l & z70'l--z70'r & z70'r{z70-z70'}...z70r & z70r...
+z69r{right} & z69r--cycle;
+fi
+%% nez
+path ppp; ppp = (z12l{left}...z13l); numeric px,px'; 
+(px,px')= ppp  intersectiontimes ((x1+1FX,-h)--(x1+1FX,h)); numeric phi;
+phi = angle direction px of ppp; z13'= point px of ppp; 
+if (not letter_n): fill z13'{dir(phi)}..z1l{z1-z1'} & z1l--z13--z13' & cycle; fi
+%% oreille de labrador
+numeric px,px'; (px,px') = pppp intersectiontimes 
+if letter_n and not_all_of_it: ((5.6FX,0)--(5.6FX,2h)) else: ((6.1FX,0)--(6.1FX,2h)) fi;
+z14=point px of pppp; numeric phi; phi=angle direction px of pppp; pos14(shthin,phi);
+z15r=(2.6FX,12.3FY); pos15(.277shvar,angle(z15r-z4l)); z16=(0,9.8FY); 
+z17=z16+(.777shvar,-(.555shvar)); 
+penstroke z14e{z14-z10r}...z15e{left};
+fill z15r{left}...z16{down}...z17{right}..z15l{right} & z15l--cycle; 
+%% rucksack (if letter is ki)
+z18'=(5.8FX,0); z18= p intersectionpoint 
+((7FX,0)--(7FX,2h)); z20'=(19.1FX,12.8FY);
+pos18(shthin,0); pos19(shfat,-100); z20= p intersectionpoint (z18'--z20');
+z19l=(13.7FX,18.9FY); pos20(shthin,angle(z18'-z20)-90);
+if (with_i): penstroke z18e{z18-z18'}...z19e{right}...z20e{z18'-z20}; fi
+z31r-z31l=z20r-z20l=z33l-z33r; z31r-z31=z31-z31l; z33r-z33=z33-z33l;
+z31=(17FX,12.5FY); z33=(14.5FX,14.5FY); z32'-.5[z31,z33]=whatever*(z18'-z20);
+y32'=0; path pp; pp = (z1l{z1-z1'}...z2l{right}...z3l{down});
+numeric px,px'; (px,px') = pp intersectiontimes (z32'--.5[z31,z33]);
+z32r=point px of pp; numeric phi; phi = (angle direction px of pp) -180;
+pos32(shthin,angle(z20-z18')); pos34(shthin,angle(z20-z18')+180); 
+z34-.5[z31,z33]=.5[z31,z33]-z32;
+if (with_ii): penstroke z18e{z18-z18'}...z19e{right}...
+z31e{z18'-z20}...z32e{z33-z31}
+...z33e{z20-z18'}...z34e{z31-z33}...z31e{z18'-z20}; fi 
+%% grande queue par dessous (if letter is ??) 
+z21l=(9.25FX,-6.35FY);
+pos21(shfat,angle(z2l-z2r)); z22=(1.5FX,-1.4FY); pos22(shthin,30); if
+(foll_by_r): penstroke z3e{down}...z21e...z22e; fi 
+%% virama
+if (virama): pos40(shthin,0); 
+z40=p intersectionpoint ((19.1FX-virama_width,0)--(19.1FX-virama_width,2h)); 
+make_virama(40); fi
+%% ugly loop
+pos5''(shthin,90); z5''r=z5r;
+pos25(shthin,180); pos26(0.2shvar,-90); pos27(shthin,0);
+if (with_u): z25=(12.75FX,-1.7FY); z26r=(15.7FX,-5FY); z27=(x3l,-1.4FY);
+path p; p=z3{down}...z25{down}; z26'l=(0.5[x3,x25],0); numeric phi; 
+phi=angle direction 0.75 of p; pos26'(shthin,110);
+penstroke z5''e...z25e{down}...z26e{right}...z27e{up}; fi 
+if (with_uu): z25=(12.75FX,-3.2FY); z26r=(15.7FX,-6.5FY); z27=(x3l,-2.9FY);
+pos6''(shthin,90); z6''r=z5r+(0,-2.5FY);
+path p; p=z3{down}...z25{down}; z26'l=(0.5[x3,x25],0); numeric phi; 
+phi=angle direction 0.75 of p; pos26'(shthin,110);
+penstroke z6''e{left}...z25e{down}...z26e{right}...z27e{up}; 
+pos6'''(shthin,-90); z6'''=z6'';
+penstroke z5''e...z6'''e{right}; fi 
+moveback;
+enddef;
+
+def letter_t (expr ofset) =
+movexy(ofset);
+%% grand arc
+z1'=(0.3FX,0); z1=(0.7FX,1.4FY); z2l=(10.7FX,12.3FY); z2'=(1.3FX,0);
+z3l=(16.4FX,5.5FY); z3'=z4l=(13.5FX,0);
+pos1(shthin,angle(z1-z1')-90); pos2(shfat,angle(z2'-z2l)); 
+pos3(0.33shvar,angle(z3'-z3l)); pos4(shthin,100); 
+z1''=z1+(17.5FX,0); pos1''(shthin,angle(z1-z1')+90); 
+pos5(shthin,50); z5=(12FX,if ((with_u) or (with_uu)):.9FY else: .6FY fi);
+z5'-z5l=whatever*(z4r-z5r); y5'=y4l; 
+if not_all_of_it:
+pickup shthin_pen; top z202=z2l; z203=(13.7FX+hdecalage-shthin,vdecalage);
+if letter_n: draw z1{z1-z1'}...z202...z203; else:
+draw z1{z1-z1'}...z202{right}...z203; fi
+pickup nullpen;
+elseif not_all_of_it_b:
+pickup shthin_pen; top z202=z2l; top z203=(13.7FX+hdecalage-shthin,vdecalage);
+rt z230=(13.7FX+8.5FX-shthin,8FY); path ppp; ppp= z230{up}...z203{left};
+draw z1{z1-z1'}...z203{right}...z230{down}; lft z204=(0,9.8FY);
+if covered_labrador_ear: draw z204{down}...z1; fi
+pickup nullpen;
+else:
+penstroke z1e{z1-z1'}...z2e{right}...z3e{down}...z4e{dir190}...z5e; fi
+%fi;
+%% arc interieur
+path p; p = (z1{z1-z1'}...z2{right}...z3{down}); z6= p intersectionpoint
+((3.2FX,0)--(3.2FX,h)); z6'=(7.2FX,0); pos6(shthin,angle(z6'-z6));
+pos7(shthin,-90); z7=(6.9FX,8.6FY); pos8(shthin,-180); z8l=(11.5FX,4.5FY);
+pos9(shfat,100); pos12(shfat,100); z9l=(11FX,0); z12l=(6.6FX,0);
+z11=(x7-0.5FX,5FY); pos11(shthin,180); path pp; pp=(z11{down}...z12{left});
+z10r= pp intersectionpoint ((0,4.3FY)--(19.1FX,4.3FY)); 
+pos10(.388shvar,angle(z10r-(6.1FX,0))); numeric px,px';
+(px,px') = p intersectiontimes ((-19.1FX,y1+0.66shfat)--(19.1FX,y1+0.66shfat));
+numeric phi; phi= angle direction px of p; z13=point px of p;
+pos13(.5shvar,phi); 
+penstroke z6e...z7e{right}...z8e{down}...z12e{left}...z13e;
+%% nez
+path ppp; ppp = (z12l{left}...z13l); numeric px,px'; 
+(px,px')= ppp  intersectiontimes ((x1+1FX,-h)--(x1+1FX,h)); numeric phi;
+phi = angle direction px of ppp; z13'= point px of ppp; 
+fill z13'{dir(phi)}..z1l{z1-z1'} & z1l--z13--z13' & cycle;
+%% oreille de labrador
+numeric px,px'; (px,px') = p intersectiontimes ((4.8FX,0)--(4.8FX,2h));
+z14=point px of p; numeric phi; phi=angle direction px of p; pos14(shthin,phi);
+z15r=(2.1FX,h); pos15(.277shvar,angle(z15r-z4l)); z16=(0,9.8FY); 
+z17=z16+(.777shvar,-(.555shvar)); penstroke z14e{z14-z10r}...z15e{left};
+fill z15r{left}...z16{down}...z17{right}..z15l{right} & z15l--cycle; 
+%% rucksack (if letter is ki)
+z18'=(5.8FX,0); z18= p intersectionpoint ((6FX,0)--(6FX,2h));
+z20'=(16.4FX,12.8FY); pos18(shthin,0); pos19(shfat,-100); z20= p
+intersectionpoint (z18'--z20'); z19l=(11.5FX,18.9FY);
+pos20(shthin,angle(z18'-z20)-90); if (with_i): penstroke
+z18e{z18-z18'}...z19e{right}...z20e{z18'-z20}; fi z31r-z31l=z20r-z20l=z33l-z33r;
+z31r-z31=z31-z31l; z33r-z33=z33-z33l; z31=(14.8FX,12.5FY); z33=(12.5FX,14.5FY);
+z32'-.5[z31,z33]=whatever*(z18'-z20); y32'=0; path pp; pp =
+(z1l{z1-z1'}...z2l{right}...z3l{down}); numeric px,px'; (px,px') = pp
+intersectiontimes (z32'--.5[z31,z33]); z32r=point px of pp; numeric phi; phi =
+(angle direction px of pp) -180; pos32(shthin,angle(z20-z18'));
+pos34(shthin,angle(z20-z18')+180);  z34-.5[z31,z33]=.5[z31,z33]-z32;
+if (with_ii): penstroke z18e{z18-z18'}...z19e{right}...
+z31e{z18'-z20}...z32e{z33-z31}
+...z33e{z20-z18'}...z34e{z31-z33}...z31e{z18'-z20}; fi 
+%% grande queue par dessous (if letter is ??) 
+z21l=(7.25FX,-6.35FY);
+pos21(shfat,angle(z2l-z2r)); z22=(1.5FX,-1.4FY); pos22(shthin,30); if
+(foll_by_r): penstroke z3e{down}...z21e...z22e; fi 
+%% virama
+if (virama): pos40(shthin,0); 
+z40=p intersectionpoint ((16.4FX-virama_width,0)--(16.4FX-virama_width,2h)); 
+make_virama(40); fi
+%% ugly loop
+pos5''(shthin,90); z5''r=z5r;
+pos25(shthin,180); pos26(0.2shvar,-90); pos27(shthin,0);
+if (with_u): z25=(10FX,-1.7FY); z26r=(13FX,-5FY); z27=(x3l,-1.4FY);
+path p; p=z3{down}...z25{down}; z26'l=(0.5[x3,x25],0); numeric phi; 
+phi=angle direction 0.75 of p; pos26'(shthin,110);
+penstroke z5''e...z25e{down}...z26e{right}...z27e{up}; fi 
+if (with_uu): z25=(10FX,-3.2FY); z26r=(13FX,-6.5FY); z27=(x3l,-2.9FY);
+pos6''(shthin,90); z6''r=z5r+(0,-2.5FY);
+path p; p=z3{down}...z25{down}; z26'l=(0.5[x3,x25],0); numeric phi; 
+phi=angle direction 0.75 of p; pos26'(shthin,110);
+penstroke z6''e{left}...z25e{down}...z26e{right}...z27e{up}; 
+pos6'''(shthin,-90); z6'''=z6'';
+penstroke z5''e...z6'''e{right}; fi 
+moveback;
+enddef;
+
+def letter_ba =
+pickup shthin_pen; bot z2=(3.4FX,0); z1=z2+(0,2.9FY); draw z1..z2..z1;
+pickup nullpen; pos3(shthin,0); pos4(shfat,-90); pos5(shthin,180);
+pos2(shthin,90); z3l=(0,4.9FY); z4=(5.3FX,9.35FY); z5=(x4+(x4-x3),4.9FY);
+penstroke z2e{left}...z3e{up}...z4e{right}...z5e{down};
+%% specific to ba
+z6=(8.3FX,.25[y7,y5]); z7=(7.5FX,2FY); pos7(shthin,180); pickup shthin_pen; 
+draw z5{down}...z6{.25[z2,z1]-z6}...z7{down}; 
+pickup nullpen;
+pos8(1/3shvar,-60); z8r=(9.5FX,0); pos10(shthin,0); z10r=(14.9FX,
+if ((with_i) or (with_ii)): 8FY else: if prec_by_r: 7FY else: 9FY fi fi);
+path p,pp; p = z8r{right}...z10r{up}; pp = z10l{down}...z8l{left};
+path p',pp'; push(p,p',0); push(pp,pp',0); 
+fill p' & z10r--z10l & pp' & z8l--cycle;
+penstroke z7e{down}...z8e{right}; 
+enddef;
+
+def letter_kha =
+pickup shthin_pen; bot z2=(3.4FX,0); z1=z2+(0,2.9FY); draw z1..z2..z1;
+pickup nullpen; pos3(shthin,0); pos4(shfat,-90); pos5(shthin,180);
+pos2(shthin,90); z3l=(0,4.9FY); z4=(5.3FX,9.35FY); z5=(x4+(x4-x3),4.9FY);
+penstroke z2e{left}...z3e{up}...z4e{right}...z5e{down};
+%% specific to ba
+z6=(8.3FX,.25[y7,y5]); z7=(7.5FX,2FY); pos7(shthin,180); pickup shthin_pen; 
+%draw z5{down}...z6{.25[z2,z1]-z6}...z7{down}; 
+pickup nullpen;
+pos8(1/3shvar,-60); z8r=(9.5FX,0); pos10(shthin,0); z10r=(14.9FX,
+if ((with_i) or (with_ii)): 8FY else: if prec_by_r: 7FY else: 9FY fi fi);
+path p,pp; p = z8r{right}...z10r{up}; pp = z10l{down}...z8l{left};
+path p',pp'; push(p,p',0); push(pp,pp',0); 
+%fill p' & z10r--z10l & pp' & z8l--cycle;
+%penstroke z7e{down}...z8e{right}; 
+%% specific to kha
+pos11(.444shvar,180); pos12(shthin,150); pos13(shfat,-45);
+z11=(7.75FX,1.4FY); z12r=(6.3FX,0); path p; p= z5{down}...z11...z12{dir-120};
+z13'=(12.4FX,0); z13'-z13''=whatever*dir(-33); x13''=0; 
+%13l= p intersectionpoint (z13'--z13'');
+z13r=(10.2FX,0);
+penstroke z5e{down}...z11e...z12e{dir-120}; 
+penstroke z13e{right}...z10e{up}; fill z12l{dir60}...
+z13r{dir-30} & z13r--z13l--z12--cycle;
+enddef;
+
+def common_ga_ha =
+pos1(shthin,90); pos2(shthin,180); pos3(shfat,-100);
+pos4(shthin,0); z5'=(3.4FX,0); z5=(5.3FX,6.45FY); pos5(.444shvar,angle(z5-z5'));
+pos6(shthin,angle(z5-z5')-90); pos7(shfat,-100); pos8(shthin,180);
+pos9(shthin,90); pos10(shthin,60);
+z1r=(x5,12.3FY); z2r=(0,6.3FY); x3l=x5-drawback if covered_labrador_ear:-1FX fi; 
+y3r=0; z4=(8.1FX,4.3FY); 
+z6l=z5; z7l=(14.9FX-x3r-drawback,12.3FY); z8l=(14.9FX,12.3FY-y2); z9l=(14.9FX-x1,0);
+penstroke z3e{right}...z4e{up}...z5e;
+if not not_all_of_it:
+penstroke z6e{z5-z5'}...z7e{right}...z8e{down} if not letter_s: ...z9e{left} fi;
+pickup shthin_pen; 
+if letter_s:
+bot z50=(11.7FX,0); z51=(9.9FX,2.2FY); z52=(12.4FX,4.5FY);
+z53 = (z8{down}...z50{left}) intersectionpoint ((0,3.5FY)--(20FX,3.5FY));
+draw z8{down}...z50{left}...z51{up}...z52{right}...z53;
+pos50(shthin,90);
+else: drawdot z9; fi
+if ((with_i) or (with_ii)):
+pos11(shthin,90); pos12(.611shvar,-32.5); pos13(.111shvar,-90); pos14(.611shvar,
+-180+32.5); z11r=z7l if covered_labrador_ear: +(-1FX,0) fi; 
+z12l=(x11-(14.9FX-x11),y11+3.3FY);
+z13l=(x11,18.9FY); z14l=(x11+x11-x12l,y12l);
+penstroke z11e{left}...z12e{up}...z13e{right}...z14e{down}...z11e{left};
+if with_ii:
+path p, pp; p = z13{right}...z14{down}; pp = z14{down}...z11{left}; 
+numeric px,px',py,py';
+(px,px') = pp  intersectiontimes ((13.5FX,0)--(13.5FX,2h)); 
+(py,py') = p  intersectiontimes ((x14r,0)--(x14r,2h)); 
+z15'=(10.7FX,14.8FY);
+pickup shthin_pen; draw point px of pp{direction px of pp}...z15'{up}...
+point py of p{direction py of p}; pickup nullpen;
+fi fi
+if virama:
+path p; p = z7{right}...z8{down}; z20= p intersectionpoint 
+((13.5FX,0)--(13.5FX,2h));
+pos20(shthin,0); make_virama(20);
+fi
+%% ugly loop
+pos5''(shthin,90); z5''r=z9r;
+pos25(shthin,180); pos26(0.2shvar,-90); pos27(shthin,0);
+if (with_u): z25=(8.5FX,-1.7FY); z26r=(11.7FX,-5FY); z27=(14.9FX,-1.4FY);
+path p; p=z3{down}...z25{down}; z26'l=(0.5[x27,x25],0); numeric phi; 
+phi=angle direction 0.75 of p; pos26'(shthin,110);
+penstroke  if (letter_s): z50e{left}... else:
+z5''e... fi z25e{down}...z26e{right}...z27e{up}; fi 
+if (with_uu): z25=(8.5FX,-3.2FY); z26r=(11.7FX,-6.5FY); z27=(14.9FX,-2.9FY);
+pos6''(shthin,90); z6''r=z9r+(1FX,-2FY);
+path p; p=z3{down}...z25{down}; z26'l=(0.5[14.9FX,x25],0); numeric phi; 
+phi=angle direction 0.75 of p; pos26'(shthin,110);
+penstroke z6''e{left}...z25e{down}...z26e{right}...z27e{up}; 
+pos6'''(shthin,-90); z6'''=z6'';
+penstroke if (letter_s): z50e else: z5''e fi {left}...z6'''e{right}; fi 
+moveback;
+else:
+pickup shthin_pen; top z100=(8.1FX+.5shthin+hdecalage,12.3FY); draw z6{z5-z5'}...z100{right}; fi
+enddef;
+
+def letter_ga =
+numeric drawback; drawback=0; 
+common_ga_ha; penstroke z1e{left}...z2e{down}...z3e{right}; drawdot z1; 
+enddef;
+
+def letter_ha =
+numeric drawback; drawback=1.7FX; common_ga_ha;
+pos125(shthin,90); z125r=(5FX-drawback,hor_bar_height); 
+z122r=(2.1FX-drawback,12.3FY); pos122(.278shvar,angle(z122r-z125));
+z123=(-drawback,9.8FY if letter_bha: + .3FY fi); 
+z124=z123+(.777shvar,-(.555shvar) if letter_bha: + .3FY fi); 
+pos121(shthin,0); z121r=z125l; z126r=(.4FX-drawback if covered_labrador_ear:-1.5FX fi,4FY); 
+pos126(whatever,angle(z126r-z125));
+x126l-x126r=shthin; penstroke z121e{up}...z122e{left};  
+fill z122r{left}...z123{down}...z124{right}..z122l{right} & z122l--cycle;
+%x3:=x3-2/3drawback; x3r:=x3r-2/3drawback; x3l:=x3l-2/3drawback;
+penstroke z125e{left}...z126e{down}...z3e{right}; pickup shthin_pen; 
+rt z125'=z125; draw z125'{left}...
+z126{down}...z3{right}; pickup nullpen;
+if covered_labrador_ear: pickup shthin_pen; top z122'=z122r; 
+lft z122''=z126r; draw z122'{left}...z122''{down}; pickup nullpen; fi
+if letter_bha: pickup shthin_pen; bot z40=z121;
+lft z41=(-drawback,y40); draw z40--z41; pickup nullpen; fi
+enddef;
+
+def generic_letter =
+% wings
+numeric drawback; drawback:= if (fuji or handle): 0 else: 1FX fi;
+pos1(shthin,90); pos1'(shthin,-90); z200=(6.5FX,8.35FY);
+z2r=(0,4.7FY); pos2(whatever,angle(z2r-z200)); x2l-x2r=shthin; %.86shvar;
+z2'l=(15FX-x2r-drawback,y2r); z2'r=(15FX-x2l-drawback,y2l); z2'=.5[z2'l,z2'r];
+if (fuji or handle): pos3(shfat,-80) else: pos3(shfat*sind(80),-90) fi; 
+if (fuji or handle): pos3'(shfat,80) else: pos3'(shfat*sind(80),90) fi; 
+z1r=(4FX,hor_bar_height); z1'=(15FX-x1-drawback,y1);
+if (fuji or handle): z3r=(4.1FX,0); z3'l=(15FX-x3r,y3r);
+else: x3=x3'=round(7.5FX-.5drawback); y3r=y3'l=0; fi
+if not (left_small_arc) and not (left_boa): 
+penstroke z1e{left}...z2e{down}...z3e{right}; 
+pickup shthin_pen; draw z1{left}...z2{down}...z3{right}; pickup nullpen;
+fi
+if right_bulb or special_right_bulb or very_special_right_bulb: 
+penstroke if not variant_letter_dot_s:
+z1'e{right}... fi z2'e{down}...z3'e{left}; fi
+% fuji
+pos0(shthin,0); z0=(round(7.5FX-.5drawback),5FY); if fuji: 
+penstroke z3e{right}...z0e{up}; penstroke z3'e{left}...z0e{up};
+fill z0l..z0r..cycle; fi
+%
+pos132(shthin,180); z132r=(0,if fuji: 5.8FY else: 6.8FY fi); if (left_boa): 
+penstroke z132e{down}...z3e{right}; fi
+pickup shthin_pen; z133=(3FX,11FY);
+z136=(.5w,11.5FY); z137=(x136,y136-3FY); z134=(x136-.5FX,max(6.5FY,.5[bot y137,y0])); 
+if (left_boa): draw z132{up}...z133 if not fuji: {right} fi & z133{down}...
+z134{right}...z136{left}...
+z137{right}...z136{left}; fi pickup nullpen;
+% handle
+if handle: z0'=(x0,-1.5FY); z0.1=(x0-3.5FX,6FY); z0.1'=(x0+3.5FX,6FY);
+cullit; unfill z0'--z0.1--z0.1'--cycle; cullit;
+z0.3=(z2l{down}...z3l{right}...z0l{up}) intersectionpoint (z0'--z0.1);
+z0.3'=(z2'r{down}...z3'r{left}...z0r{up}) intersectionpoint (z0'--z0.1');
+z0.4=(z2r{down}...z3r{right}...z0r{up}) intersectionpoint (z0'--z0.1);
+z0.4'=(z2'l{down}...z3'l{left}...z0l{up}) intersectionpoint (z0'--z0.1');
+pickup shthin_pen; x0.2=x0.3; x0.2'=x0.3'; y0.2=y0.4=y0.2'; 
+draw z0.2---z0.3...z0.3'---z0.2'; pickup nullpen; fi
+% tight bottleneck
+pos10(shthin,90); pos10'(shthin,-90); z10=(6.4FX,y1); 
+z10'=(15FX-6.4FX-drawback,y1);
+if not ((left_small_arc) or (left_eye) or (left_boa)): penstroke z10e--z1e; fi
+if (right_bulb or special_right_bulb or very_special_right_bulb) and
+(not variant_letter_dot_s): penstroke z10'e--z1'e; fi
+% right bulb
+z21r=(11.8FX-drawback,12.3FY); z22=(13.5FX-drawback,9.3FY); 
+if right_bulb:
+pos22(shthin,0); pos21(0.2shvar,80); pos20(shthin,180); pos20'(shthin,180); 
+z20r=z10'r; z20'r=z10'l;  
+if variant_letter_dot_s:
+pickup shthin_pen; z303=(x21-1FX,y1'); top z304=z21r; bot z306=z3'r+(0,2/3FY); 
+z300=z306+(0,2FY-.5shthin);
+z302=z2'; z305=z300-(2FX-.5shthin,0); draw z302{up}...z303...z304{right}...z303..z305{down};
+make_small_circle(300); pickup nullpen;
+else:
+penstroke z1'e{right}...z22e{up}...z21e{left}...z20'e---z20e; fi
+fi
+% special right bulb
+if special_right_bulb:
+pickup shthin_pen; top z20.1=(11.8FX-drawback,12.3FY); z20.2=(x20.1,y1');
+bot lft z20=z10'r; z20.5=.5[z20,z20.1]+(-.33FX,0); 
+draw z20{up}...z20.1{right}...z20.2{left}...z20.5{up}; pickup nullpen; pos20(shthin,0);
+pos20.4(.3shvar,-60); z20.4=(x2'l,if virama: 15FY else: 16FY fi); 
+pos20.5(shthin,0); penstroke z20.5e{up}...z20.4e;
+path ppp; ppp=z20.5{up}...z20.4; path pppp; pppp=z20.5l{up}...z20.4l;
+fi
+% very special right bulb
+if very_special_right_bulb:
+pickup shthin_pen; top z20.1=(11.8FX-drawback,11.3FY); 
+z20.2=(x20.1-2FX,y1'-y20.1+y1'); z20.15=(.5[x20.1,x20.2]+2FX,.5[y20.1,y20.2]); 
+bot lft z20=z10'r; z20.5=.5[z20,z20.1]+(-.33FX,0); 
+draw z20{z20.1-z20.2}...z20.1{right}...z20.15...z20.2{left}...z20{z20.1-z20.2}; 
+pickup nullpen; 
+pos20.4(.3shvar,-60); z20.4=(x2'l,16FY); pos20(shthin,0); penstroke z20e{z20.1-z20.2}...z20.4e;
+path ppp; ppp=z20{z20.1-z20.2}...z20.4; path pppp; pppp=z20l{z20.1-z20.2}...z20.4l;
+fi
+% left labrador ear
+pos30(shthin,0); z30r=z10l; z31r=(3FX,12.3FY); 
+pos31(.277shvar,angle(z31r-(11FX,.5shfat*sind(80))));
+z32=(1.2FX,10.35FY); z33=(x32+.777shvar,
+max(y32-(.555shvar),hor_bar_height+shthin)); 
+if not ((left_small_arc) or (left_eye) or (left_boa)):
+penstroke z30e{up}...z31e{left}; fill z31r{left}...z32{down}...z33{right}..
+z31l{right} & z31l--cycle; 
+if covered_labrador_ear: pickup shthin_pen; top z232=z31r; lft z233=z2r;
+draw z232{left}...z233{down}; fi
+fi
+% horizontal bar
+if with_hbar: pickup shthin_pen; rt z40=z10; 
+lft z41=(0,y40); draw z40--z41; pickup nullpen; fi
+% with_i
+if ((with_i) and (not fuji) and (not pirogue) and (not special_right_bulb) and
+(not very_special_right_bulb) and (not with_medium_arc)) or
+((with_i) and (right_bulb) and (not pirogue) and (not left_small_arc)): 
+pos50(shthin,60); pos51(whatever,angle(z31r-z31l)); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; pos54(shthin,120);
+z50r=z31r; z54r=z21r; z51l=(.7FX,15.2FY); z52l=(x0,18.9FY); z53=.5[z53l,z53r];
+penstroke z50e{dir150}...z51e{up}...
+z52e{right}...z53e{down}...z54e{dir210}; 
+fi
+if (with_i) and (left_small_arc) and (not with_medium_arc) and (not with_big_arc):  
+pos50(shthin,60); pos50'(shthin,60); pos51(whatever,angle(z31r-z31l)); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90); z50'r=z54r+(-5FX,+1FY);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r-1FY=y53r; y51l-1FY=y53l; pos54(shthin,120);
+z50r=z31r; z54r=z21r; z51l=(.7FX,16.2FY); z52l=(x0,18.9FY);
+penstroke z50'e{left}...z51e{up}...
+z52e{right}...z53e{down}...z54e{dir210}; pickup shthin_pen; 
+draw z22{up}...z50'{left}...z51{up}; pickup nullpen;
+fi
+if with_i and with_medium_arc:
+numeric another_vofset; another_vofset=1FY;
+z1040=(9.6FX,16.25FY-1FY); z1040-z1041=whatever*dir127; x1041=13.6FX; 
+z1045=(8.75FX,12.8FY-1FY); 
+pos50(shthin,90); pos51(whatever,angle(z31r-z31l)+10); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; 
+z50=(x52,.5[y1041,y1040]+another_vofset); z51l=(.7FX,15.7FY+another_vofset); 
+z52l=(x0,18.9FY+another_vofset);
+penstroke z50e{left}...z51e{up}...
+z52e{right}...z53e{down}...z50e{left};  
+z53=.5[z53r,z53l]; pickup shthin_pen; draw z53{down}...z50{left}...z51{up}; 
+pickup nullpen; do_the_erasings:=true;
+fi
+if with_i and (special_right_bulb or very_special_right_bulb):
+pos151(shthin,60); z151=ppp intersectionpoint ((0,10.3FY)--(20FX,10.3FY));
+pos153(shthin,-150); z153=ppp intersectionpoint ((13FX,0)--(13FX,30FY));
+z152=(6.75FX,16.4FY); 
+path pp; pp = z151{z151-z2'l}...z152...z153{z2'l+(2FX,0)-z153};
+numeric theta; theta = angle(direction 1 of pp); pos152(.2shvar,theta-90); 
+penstroke z151e{z151-z2'l}...z152e...z153e{z2'l+(2FX,0)-z153};
+fi
+% with_ii
+if ((with_ii) and (not (fuji)) and (not pirogue) and (not special_right_bulb) and
+(not very_special_right_bulb) and not with_medium_arc) or
+((with_ii) and (right_bulb) and (not pirogue) and (not left_small_arc)): 
+pos50(shthin,60); 
+pos51(whatever,angle(z31r-z31l)); x51r-x51l=.722shvar; 
+pos52(shfat,-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; pos54(shthin,90);
+z50r=z31r; z54=z21r; z51l=(.7FX,15.2FY); z52l=(x0,18.9FY);
+penstroke z50e{dir150}...z51e{up}...z52e{right}...z53e{down}...z54e{left};
+path p; p = (z52{right}... .5[z53r,z53l]{down}...z54{left});
+numeric px,px'; (px,px') = p intersectiontimes ((x0,14.5FY)--(25FX,14.5FY));
+z55=(10FX-drawback,14FY); pickup shthin_pen; draw z54{left}...z55{up}...
+point px of p{direction px of p}; pickup nullpen; fi
+if (with_ii) and (left_small_arc) and (not with_medium_arc) and (not with_big_arc) 
+and (not special_right_bulb) and (not very_special_right_bulb):  
+pos50(shthin,60); pos50'(shthin,60); z50'r=z54r+(-5FX,+.5FY);
+pos51(whatever,angle(z31r-z31l)); x51r-x51l=.722shvar; 
+pos52(shfat,-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r-1FY=y53r; y51l-1FY=y53l; pos54(shthin,90);
+z50r=z31r; z54=z21r; z51l=(.7FX,16.2FY); z52l=(x0,18.9FY);
+penstroke z50'e{left}...z51e{up}...z52e{right}...z53e{down}...z54e{left};
+path p; p = (z52{right}... .5[z53r,z53l]{down}...z54{left});
+numeric px,px'; (px,px') = p intersectiontimes ((x0,14.5FY)--(25FX,14.5FY));
+z55=(10FX-drawback,14FY); pickup shthin_pen; draw z54{left}...z55{up}...
+point px of p{direction px of p}; draw z22{up}...z50'{left}...z51{up}; pickup nullpen; 
+fi
+if with_ii and with_medium_arc:
+numeric another_vofset; another_vofset=1FY;
+z1040=(9.6FX,16.25FY-1.5FY); z1040-z1041=whatever*dir127; x1041=13.6FX; 
+z1045=(8.75FX,12.8FY-1.5FY); 
+pos50(shthin,90); 
+pos51(whatever,angle(z31r-z31l)+10); x51r-x51l=.722shvar; 
+pos52(shfat*sind(80),-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; pos54(shthin,90);
+z50=(x52,.6[y1041,y1040]+another_vofset); z54=z21r; z51l=(.7FX,15.7FY+another_vofset); 
+z52l=(x0,18.9FY+another_vofset);
+penstroke z50e{left}...z51e{up}...z52e{right}...z53e{down}...z50e{left}; z53=.5[z53l,z53r];
+pickup shthin_pen; draw z53{down}...z50{left}...z51{up}; 
+z1046=whatever[z1041+(1FX-shthin,0),z1040+(1FX-shthin,0)]; y1046=.5[y50,y51]; 
+draw z53{down}...z1046{z1040-z1041}...z53{down};
+pickup nullpen;
+do_the_erasings:=true;
+fi
+if with_ii and (special_right_bulb or very_special_right_bulb):
+pos151(shthin,60); z151=ppp intersectionpoint ((0,10.3FY)--(20FX,10.3FY));
+pos153(shthin,-150); z153=ppp intersectionpoint ((13FX,0)--(13FX,30FY));
+z152=(6.75FX,16.4FY); 
+path pp; pp = z151{z151-z2'l}...z152...z153{z2'l+(2FX,0)-z153};
+numeric theta; theta = angle(direction 1 of pp); pos152(.2shvar,theta-90); 
+numeric tt,tt'; (tt,tt')=pppp intersectiontimes ((12FX,0)--(12FX,30FY));
+theta := angle(direction tt of pppp); z154 = point tt of pppp;
+pos154(3.2FX,theta-90); z155=z154l; pos155(2.8FX,theta); z156=z155r;
+pos156(shthin,theta-180);
+penstroke z151e{z151-z2'l}...z152e...z156e{dir(theta-90)};
+pickup shthin_pen; draw z156{dir(theta-90)}...z154{dir(theta+180)}...
+z155l{dir(theta+90)}...z156{dir(theta-90)}; pickup nullpen;
+fi
+% with virama
+if (virama) and not (with_medium_arc) and not (special_right_bulb or 
+very_special_right_bulb): pos60(shthin,0); 
+z60=if variant_letter_dot_s: z304 else: (x21r,y21) fi; make_virama(60); 
+elseif (virama) and (special_right_bulb or very_special_right_bulb): 
+pos60(shthin,0); z60=(x20r,y20); virama_width:=.8virama_width; make_virama(20); 
+virama_width:=(1/.8)*virama_width; fi
+% precede de r
+if (prec_by_r) and ((right_bulb) or (special_right_bulb) or 
+(very_special_right_bulb)): z60=(x0,14.6FY); 
+if (special_right_bulb) or (very_special_right_bulb): almost_pre_r(60,62) 
+else: pre_r(60,62); fi numeric px,px'; (px,px') = pre_r_path
+intersectiontimes ((0,pre_r_minimum_y)--(30FX,pre_r_minimum_y));
+pickup shthin_pen; draw subpath(1,px) of pre_r_path; pickup nullpen; fi
+% suivi de r
+if (foll_by_r):  z121l=(10FX,-6.35FY); 
+pos121(shfat,80); y122=-1.4FY; x122l=0; 
+pos122(shthin,30); penstroke z2'e{down}...z121e...z122e; fi
+% boucle interne (.s)
+if (letter_dot_s):
+pickup shthin_pen; z70=(x0,.75[y3'r,y1'r]); z72=(x0,.25[y3'r,y1'r]); 
+z73=(x0-3.3FX,.5[y3'r,y1'r]); z71=(x0+3.3FX,.5[y3'r,y1'r]); 
+path p; p = z70{right}...z71{down}...z72{left}...z73{up}...z70{right}; 
+draw p; z75=z1'; z74=point .5 of p; draw z75{dir-60}...z74; 
+pickup nullpen; fi
+pos80(shthin,0); z80r=(if (pirogue): 15FX else: 15.5FX fi,
+if (with_medium_arc): 7.4FY else:
+if ((with_i) or (with_ii)): 8FY else: 8.35FY fi fi);
+% with_u
+if (with_u): pos60(shthin,0); z60= if ((fuji) or (pirogue)) and not right_bulb: 
+if with_medium_arc: (14FX,6.4FY) else: z80r fi else: z2'l fi; make_u(0,60,0); fi
+% with_uu
+if (with_uu): pos60(shthin,0); z60= if ((fuji) or (pirogue)) and not right_bulb: 
+if with_medium_arc: (14FX,6.4FY) else: z80r fi else: z2'l fi; make_uu(0,60,0); fi
+% left small arc
+if (left_small_arc): 
+%z101=(5FX,10.55FY if (pirogue) and (not (with_i)) and (not (with_ii)): + 1FY fi); 
+z101=(5FX,10.55FY if (pirogue): + 1FY fi); 
+z101'=(x101+4.5FX,.5[y101,y102]);
+pos102(shthin,180); 
+%z102r=(0,5.6FY if (pirogue) and (not (with_i)) and (not (with_ii)): + 1FY fi);
+z102r=(0,5.6FY if (pirogue): + 1FY fi);
+pickup shthin_pen; draw if tta_letter: z101'... fi z101{left}...z102{down}; pickup nullpen;
+penstroke z102e{down}...z3e{right}; fi
+% with \d n kind left eye
+pos111(shthin,90); z111=(7.3FX,y1); if (left_eye): penstroke z111e--z1e; fi
+pickup shthin_pen; rt z112=z111; z113=(3FX,y111+3.4FY); lft z114=(0,9.75FY);
+z115=(2.5FX+shthin,y114); if (left_eye): draw z114{down}...
+z115{up}...z114{down}; fi pickup nullpen; 
+pos112(shthin,0); pos113(1shvar,80); % 1shvar was .3shvar
+pos114(shthin,180);
+if (left_eye): penstroke z112e{up}...z113e{left}...z114e{down}; fi
+% do the erasings
+if do_the_erasings:
+numeric vofset,hofset; hofset=1FX; vofset= if with_i or fuji: 0FY 
+elseif with_ii or (not left_small_arc): 0FY else: 0 fi;
+z140=(9.6FX-hofset,16.25FY-vofset); z140-z141=whatever*dir127; x141=13.6FX-hofset; 
+pos142(shthin,180); x142l=15FX-hofset; y142=6.4FY-vofset; 
+path pppp; pppp=z140...z141...z142{down};
+pos144(0.3shvar,angle(direction 0 of pppp)+175); 
+pos146(.5shvar,127-180); 
+pickup shthin_pen; 
+z144=top rt z140; z146r=z141; pos145(shthin,180);
+z145=(8.75FX-hofset,12.8FY-vofset); 
+cullit; undraw pppp; 
+unfill z144r...z145r{down}...z146r & z146r--z142 & z142{up}...z141...z140 & z140--cycle; 
+do_the_erasings:=false; cullit; already_defined:=true;
+fi
+enddef;
+
+def na_letter =
+pos1(shthin,35-90); pos2(.2shvar,20-90); z1l=(0,4.8FY); (24.85FX,15.5FY)-z2=
+whatever*dir20; x2=23FX; penstroke z1e{dir35}...z2e;
+path p; p=z1r{dir35}...z2r; path p'; p'=z1l{dir35}...z2l; numeric tt,tt';
+(tt,tt') = p intersectiontimes ((8FX,0)--(8FX,30FY)); z3'=direction tt of p;
+z3=point tt of p; pos3(2*2.6FX,angle(z3')-90); z4=z3r; z5=(7.4FX,5FY);
+z6=(x3+FX,12.5FY); z7=(14.9FX,6.8FY); pickup shthin_pen;
+draw z3{z3'}...z4{-z3'}...z3{z3'}...z5{left}...z6{right}...z7{down}; 
+pickup nullpen; pos7(shthin,0); pos8(shfat,-100); z8r=(8.75FX,0);
+%z9-z1=whatever*dir35; x9=2.5FX; pos9(1shvar,35); 
+penstroke z1e{dir35}..z8e{right}...z7e{up}; pickup shthin_pen;
+draw z1{dir35}..z8{right}; pickup nullpen;
+% middle loopy
+z0=(0,6.7FY); z0'=(24.85FX,3.9FY); % secondary axis of the letter
+pos10(shthin,0); pos11(.8shvar,-100); pos12(shthin,180); pos13(.8shvar,100);
+x10=x7; x12=19.3FX; z10=whatever[z0,z0']; z12=whatever[z0,z0']; 
+x11=x13=.5[x10,x12]; y11-.5[y10,y12]=.5[y10,y12]-y13=2.85FY;
+%penstroke z10e{up}...z11e{right}...z12e{down}...z13e{left}...z10e{up};
+pickup shthin_pen; draw z10{up}...z11{right}...z12{down}...z13{left}...z10{up};
+% right loopy
+pos14(.5shvar,-72); z14r=(22FX,0); z15r=z0'; pos15(.2shvar,angle(z0'-z0));
+x16=x14; pos16(1shvar/sind(72),72); y16r-.5[y12,y15]=.5[y12,y15]-y14r;
+penstroke z14e{right}...z15e{up}...z16e{left}...z12e{down}...z14e{right};
+if with_i or with_ii: 
+pos51(whatever,-56); x51r-x51l=.722shvar; 
+pos52(shfat,-90);
+x53l-15FX=15FX-x51l; x53r-15FX=15FX-x51r; x53r:=min(x53r+shthin,x53l-shthin);
+y51r+1.5FY=y53r; y51l=y53l; 
+pos54(shthin,120); 
+path pp; pp =z6{right}...z7{down}; pos50(shthin,20);
+z20=p intersectionpoint pp; z21=p' intersectionpoint ((x12,0)--(x12,30FY));
+z50=z20; z54r=z21; z51l=(10.1FX,15.2FY); z52l=(15FX,18.9FY);
+penstroke z50e{dir160}...z51e{up}...z52e{right}...z53e{down}...z54e;
+if with_ii:
+path pp; pp=z52{right}... 1/2[z53r,z53l]{down}...z54; numeric tt,tt';
+(tt,tt') = pp intersectiontimes ((0,.33[y52r,y54r])--(30FX,.33[y52r,y54r])); 
+z30=point tt of pp;
+z30'=direction tt of pp; pos32(3FX,20); z32r=z30; 
+pickup shthin_pen; 
+top z31=p' intersectionpoint ((x32+4FX,0FY)--(x32-4FX,30FY)); pickup nullpen; z33-z32=z32-z31;
+pickup shthin_pen; 
+draw z33{dir20}...z30...z31{dir200}...z32l...z33{dir20};
+pickup nullpen;
+fi fi
+if (with_u): pos60(shthin,0); z60= z15r; make_u(x5,60,0); fi
+if (with_uu): pos60(shthin,0); z60= z15r; make_uu(x5,60,0); fi
+if (virama): path pp; pp=z15{up}...z16{left}; 
+z61l=pp intersectionpoint ((x2,0FY)--(x2,30FY)); pos61(shthin,0); 
+make_virama(61); if (x2l<x61l): z62-z2l=whatever*dir20; x62=x61l; 
+fill z2l--z62--z2--cycle; fi fi
+if prec_by_r: x100=x12; y100=.5[y16,y2]; 
+make_small_circle(100); z100.1'= directionpoint dir(-150) of small_circle;
+bot z100.3=z100-(1.9FX,2.2FY); lft z100.4= z100-(3.85FX,-.25FY); top z100.5=
+z100+(.4FX,4.5FY); rt z101=(x100+4.35FX,y100.4); numeric pre_r_minimum_y;
+pre_r_minimum_y=y100.3;
+draw z100.1'{dir-150}...z100.5{right}...z101{down}..z16; fi
+enddef;
+
+def ra_letter = 
+pos1(shthin,205-90); pos2(shthin,180); pos3(.2shvar/sind(60),-60); 
+pos4(.5shvar,-20); z1=(3.2FX,10.6FY); z2r=(0,6.15FY); z3r=(5.6FX,0);
+z4r=(12.3FX,6.6FY);
+penstroke z1e{dir205}...z3e{right}...z4e{up}...z1e{dir205};
+path p; p=z1{dir205}...z2{down}; y0=y2; z1-z0=whatever*dir115;
+z0'-z0=whatever*dir138; x0'=0; z5=p intersectionpoint (z0--z0');
+pos5(shthin,138-180);
+if not vowel:
+pos6(.5shvar,-47); z6=(12.5FX,16.55FY); penstroke z5e{dir(138-90)}..z6e{dir47};
+pos7(shthin/cosd(20),-20); z7r=z4r+(0,-FY); pos8(shfat,100); z8l=(14.6FX,0); pos9(shthin,180);
+z9l=(16.2FX,y8r+1.3FY); pos6'(shthin/cosd(47),-47); z6'r=z6r; fi
+if with_i: penstroke z9e{down}...z8e{left}...z7e{up}..z6'e; 
+pickup shthin_pen; drawdot z9; pickup nullpen; fi
+if with_ii:
+path pp; pp=z6..z7...z8{right}; numeric tt,tt'; 
+(tt,tt')= pp intersectiontimes ((0,12.8FY)--(30FX,12.8FY));
+z10'=direction tt of pp; z10=point tt of pp; pos10(shthin,angle(z10')+90);
+penstroke z10e-(1FX,0){-z10'}..z6'e; pickup shthin_pen; drawdot z9; pickup nullpen;
+penstroke z9e{down}...z8e{left}...z7e{up};
+pickup shthin_pen; z11=(14FX,y10); draw z7{up}..z11 & z11--z10-(1FX,0);
+fi
+%
+if vowel: pos6(.5shvar,-15); z6=(9.1FX,18.8FY); fi
+path ppp; ppp=z5l{dir(138-90)}..z6l{dir47}; 
+%
+if with_u or with_uu:
+pos50(shthin,60); pos51(whatever,-55); 
+x51r-x51l=.822shvar; pos52(.1shvar*sind(80),-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r+1FY=y53r; y51l+1FY=y53l; pos54(shthin,120);
+z50r=z31r; z54r=z21r; z51l=(0,15.2FY); z52l=(x0,18.9FY);
+numeric tt,tt';
+(tt,tt') = ppp intersectiontimes ((x0,0)--(x0,30FY)); z20'=direction tt of ppp;
+pos20(shthin,angle(-z20')-90); z20r=point tt of ppp;
+penstroke z20e{-z20'}...z51e{up}...
+z52e{right}...z53e{down}; pickup shthin_pen; draw z20{-z20'}...z51{up}; pickup
+nullpen; 
+numeric tt, tt'; (tt,tt') = ppp intersectiontimes ((9.3FX,0)--(9.3FX,30FY)); 
+z21'=direction tt of ppp;
+pos21(shthin,angle(-z21')-90); z21r=point tt of ppp;
+penstroke z53e{down}...z21e{-z21'}; z53=.5[z53l,z53r];
+%
+if with_uu:
+z22=(z52r{right}... z53r{down}) intersectionpoint ((x21-2FX,y21)--(x21-2FX,30FY));
+pickup shthin_pen; draw z21{-z21'}...z22{z21'}...z53; pickup nullpen; fi
+fi
+if virama: pos23(shthin,0); z23=z5; make_virama(23); fi
+if prec_by_r: z23=(4.35FX,15.2FY); pre_r(23,24);
+numeric tt,tt'; (tt,tt') = ppp intersectiontimes ((7.5FX,0)--(7.5FX,30FY)); 
+z200'=direction tt of ppp;
+pickup shthin_pen; top z200=point tt of ppp; draw z200{z200'}...z24{up};
+fi
+enddef;
+
+def lla_letter = 
+pos1(shthin,180); pos2(.6shvar,45); pos3(shfat,30); pos4(shthin,-90);
+pos5(shthin,-90);
+z1l=(16.5FX,.4FY); z2l=(7.9FX,-5.8FY); z3l=(0,.55FY); z4=(5.4FX,6.7FY);
+z5=(15FX,y4); penstroke z1e{down}...z2e{left}...z3e{up}...z4e---z5e;
+pickup shthin_pen; drawdot z1; 
+bot rt z5'=z5r; top z6=(12FX,10.7FY); z8=(6.2FX,y6); bot z7=(.5[x8,x6],8FY);
+x9-x8=x6-x5; y9=y5; draw z5'{up}...z6{left}...z7 & z7...z8{left}...z9{down};
+pickup nullpen; pos9(shthin,180); 
+pos10(.6shvar,-75); z10r=(9FX,0); z11=(13.2FX,2.8FY); pos11(shthin,-40);
+penstroke z9e{down}...z10e{right}...z11e{dir60}; pickup shthin_pen; drawdot z11;
+pickup nullpen;
+if with_i or with_ii:
+pos50(shthin,60); pos51(whatever,-55); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90);
+x53l-x7=x7-x51l; x53r-x7=x7-x51r; y51r=y53r; y51l=y53l; pos54(shthin,120);
+z50=z8; z54=z6; z51l=(3.2FX,13.7FY); z52l=(x7,16.9FY); z53=.5[z53l,z53r];
+penstroke z50e{dir150}...z51e{up}...
+z52e{right}...z53e{down}...z54e{left};%{dir210}; 
+path p; p=z52r{right}...z53r{down}...z54r{dir210};
+z55=p intersectionpoint ((x6+.5FX,y6)--(x6+2FX,30FY)); pickup shthin_pen; 
+x56-x6=x6-x53+1.5FX; y56=y53; 
+if with_ii: draw z6{left}...z56...z55{right}..z53; fi
+fi
+if virama: z20=(z5'{up}...z6{left}) intersectionpoint 
+((.5[x5',x6],0)--(.5[x5',x6],30FY)); pos20(shthin,0); make_virama(20); fi
+if prec_by_r: z100=(x7,14FY); pre_r(100,101); 
+numeric px,px'; (px,px') = pre_r_path
+intersectiontimes ((0,pre_r_minimum_y)--(30FX,pre_r_minimum_y));
+draw subpath(1,px) of pre_r_path; fi 
+enddef;
+
+def la_letter =
+pos1(shthin,180); pos2(.6shvar,45); pos3(shfat,30); pos4(shthin,-90);
+pos20(shthin,-90);
+z1l=(16.5FX,.4FY); z2l=(7.9FX,-5.8FY); z4=(6.5FX,6.7FY);
+z20=(10.8FX,y4); pos21(.5shvar,-116); z21l=(14FX,y20l);
+pos30(.6shvar,-45); z30l=(x2l+1FX,10.7FY); z3l=(0,.5[y2,y30]); 
+pos31(shthin,180); z31l=(15.1FX,6.8FY); 
+penstroke z1e{down}...z2e{left}...z3e{up}...z30e{right}...z31e{down};
+pos21'(.5shvar,-116+180); z21'=z21; 
+pickup shthin_pen; drawdot z1; z33=(x31-4.8FX,y31); z32=(.5[x31,x33],y31-2.6FY); 
+z35=z33+(3FX,0); z34=z33-(3FX,0); draw z31{down}...z32...z33{up};
+draw z34--z35; path p; p = z3l{up}...z30l{right}...z31l{down};
+if with_i or with_ii:
+pos40(shthin,90); pos41(shthin,90);
+z40r = p intersectionpoint ((x30-2.8FX,0)--(x30-2.8FX,30FY));
+z41r = p intersectionpoint ((x30+2.8FX,0)--(x30+2.8FX,30FY));
+x0=x30; pos50(shthin,60); pos51(whatever,-55); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; pos54(shthin,120);
+z50r=z31r; z54r=z21r; z51l=(3.2FX,y30+3FY); z52l=(x0,y30+6.9FY); z53=.5[z53l,z53r];
+penstroke z40e{left}...z51e{up}...
+z52e{right}...z53e{down}...z41e{left}; pickup shthin_pen; draw z40{left}...z51{up};
+draw z53{down}...z41{left}; 
+if with_ii: z42=z41+(-1FX,+2.5FY); z43=(z52{right}...z53{down})
+intersectionpoint ((.8[x41,x53],0FY)--(.8[x41,x53],30FY)); 
+draw z41{left}...z42...z43{right};fi pickup nullpen;
+fi
+if with_u: pos50(shthin,0); z50l=z1; make_u(0,50,3FY); fi
+if with_uu: pos50(shthin,0); z50l=z1; make_uu(0,50,3FY); fi
+if virama: path p; p=z30{right}...z31{down}; pos40(shthin,0); z40=p
+intersectionpoint (z35--(x35,30FY)); make_virama(40); fi
+if prec_by_r: z100=z30l+(0,3.5FY); pre_r(100,101); pickup shthin_pen;
+top z102 = z30l; draw z101{down}...z102{left}; pickup nullpen; fi
+enddef;
+
+def da_letter = h:=12.3FY;
+pos1(shthin,110); pos3(shfat,10); pos4(shthin,-110); 
+z1l=(if vowel: 12.7FX else: 9FX fi,1.7FY);
+z3l=(0,4.4FY); z4l=(if vowel: 9FX else: 8.5FX fi,8FY); 
+pos2(.6shvar,65); z2l=(if vowel: 6.4FX else: 4.65FX fi,0);
+pos5(.6shvar,-65); z5l=(4FX,8.8FY); pair here_was_z_one; here_was_z_one = z1;
+penstroke z1e...z2e{left}...z3e{up}...z5e...z4e;
+pos30(shthin,0); z30r=z4l; z31r=(5FX,12.3FY); 
+pos31(.277shvar,125);
+z32=(2.8FX,10.7FY); z33=(x32+.777shvar,y32-FY); 
+penstroke z30e{up}...z31e{left}; fill z31r{left}...z32{down}...z33{right}..
+z31l{right} & z31l--cycle; 
+if covered_labrador_ear: pickup shthin_pen; top z232=z31r; lft z233=z3l;
+draw z232{left}...z233{down}; fi
+% tail
+if (not with_a) and (not with_aa) and (not with_aaa) and (not without_tail)
+and (not with_r) and (not with_rr) and (not with_u) and (not with_uu) and (not vowel): 
+pos10(.5shvar,-150); pos12(.5shvar,-150); pos11(.75shvar,-150); x11l=9FX; y11r=-6.3FY; 
+z10=(6.2FX,-3.5FY);z12=(7.2FX,-5.3FY); 
+z101=direction 0 of (z1...z2{left}...z3{up});
+penstroke z1e{z101}...z10e{down}; fill z10r{down}...z11r{right}...z11l{up}..z12l...
+z10l{up} & z10l--cycle;
+elseif (with_aa): 
+pos10(.6shvar,-150); pos12(.5shvar,-150); pos11(.75shvar,-150); x11l=9FX; y11r=-6.3FY; 
+z10=(6.7FX,-3.5FY);z12=(7.5FX,-5.3FY); 
+z101=direction 0 of (z1...z2{left}...z3{up});
+penstroke z1e{z101}...z10e{down}; fill z10r{down}...z11r{right}...z11l{up}..z12l...
+z10l{up} & z10l--cycle;
+numeric hofset; hofset=3FX;
+pos10'(.5shvar,-150); pos12'(.5shvar,-150); pos11'(.75shvar,-150); 
+x11'l=9FX-hofset; y11'r=-6.3FY; 
+z10'=(7.2FX-hofset+.2FX,-3.5FY);z12'=(7.7FX-hofset+.2FX,-5.3FY); 
+penstroke z1e{z101}...z10'e{down}; fill z10'r{down}...z11'r{right}...z11'l{up}..z12'l...
+z10'l{up} & z10'l--cycle;
+elseif (with_aaa):
+pos10(.6shvar,-150); pos12(.5shvar,-150); pos11(.75shvar,-150); x11l=9FX; y11r=-6.3FY; 
+z10=(6.7FX,-3.5FY);z12=(7.5FX,-5.3FY); 
+z101=direction 0 of (z1...z2{left}...z3{up});
+path pr,pl; pr=z1r{z101}...z10r{down}; pl=z10l{up}...z1l{-z101};
+numeric tt,tt',ttt,ttt';
+(tt,tt')  = pr intersectiontimes ((0,-1.4FY)--(30FX,-1.4FY));
+(ttt,ttt')= pl intersectiontimes ((0,-1.4FY)--(30FX,-1.4FY));
+fill subpath(0,tt) of pr & point tt of pr -- point ttt of pl & subpath(ttt,1) of pl
+& z1l--cycle;
+movexy((2FX,0)); numeric hofset; hofset=1FX;
+fill point tt of pr... z10r-(hofset,0){down}...z11r-(hofset,0){right}...
+z11l-(hofset,0){up}..z12l-(hofset,0)...
+z10l-(hofset,0){up}...point ttt of pl & point ttt of pl--cycle;
+moveback;
+pickup shthin_pen; lft z102'=point tt of pr; rt z103'=point ttt of pl + (2FX,0);
+draw z102'--z103'; pickup nullpen;
+numeric hofset; hofset=2.5FX;
+pos10'(.5shvar,-150); pos12'(.5shvar,-150); pos11'(.75shvar,-150); 
+x11'l=9FX-hofset; y11'r=-6.3FY; 
+z10'=(7.2FX-hofset+.2FX,-3.5FY);z12'=(7.7FX-hofset+.2FX,-5.3FY); 
+penstroke z1e{z101}...z10'e{down}; fill z10'r{down}...z11'r{right}...z11'l{up}..z12'l...
+z10'l{up} & z10'l--cycle;
+elseif with_a:
+clearxy;
+movexy((9FX-3.15FX,-6.65FY+shthin)); 
+here_was_z_one := here_was_z_one shifted -(9FX-3.15FX+2FX,-6.65FY+shthin);
+oldFX:=FX; oldFY:=FY; oldh:=h; oldshfat:=shfat;
+FX:=0.6FX; FY:=0.6FY; h:=0.6h; shfat:=.6shfat; 
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); penstroke
+z1e{up}...z2e{right}...z3e{down}...z4e{left}...z5e{up}; 
+if virama:
+FX:=.8oldFX; FY:=.7oldFY; h:=.8oldh; 
+virama_width:=.8virama_width; pos30(shthin,0); z30r=z3l; make_virama(30);
+virama_width:=10/8virama_width; 
+pickup shthin_pen; draw bot lft here_was_z_one{down}..z1{down}; pickup nullpen;
+fi
+moveback;
+FX:=oldFX; FY:=oldFY; h:=oldh; shfat:=oldshfat; 
+elseif with_r:
+clearxy;
+movexy((9FX-3.15FX,-6.65FY+shthin)); 
+FX:=0.6FX; FY:=0.6FY; h:=0.6h; shfat:=.6shfat; 
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); pos6(.277shvar,180); z6l=(x3l,y4l); pos7(1shvar,90);
+z7l=z6l; z8l=(2.8FX,y7l); z9l=(0,y8l+2FY); 
+pos8(whatever,angle(z3-z8l)); pos9(.5833shvar,angle(z3-z9l));
+y8r=y7r; pos10(shthin,-90); z10=z3;  penstroke
+z1e{up}...z2e{right}...z3e---z6e; penstroke
+z7e---z8e...z9e{up}...z10e{right}; 
+moveback;
+FX:=10/6FX; FY:=10/6FY; h:=10/6h; shfat:=10/6shfat; 
+elseif with_rr:
+clearxy;
+movexy((9FX-3.15FX,-6.65FY+shthin)); 
+FX:=0.6FX; FY:=0.6FY; h:=0.6h; shfat:=.6shfat; 
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); pos6(.277shvar,180); z6l=(x3l,y4l); pos7(1shvar,90);
+z7l=z6l; z8l=(2.8FX,y7l); z9l=(0,y8l+2FY); 
+pos8(whatever,angle(z3-z8l)); pos9(.5833shvar,angle(z3-z9l));
+y8r=y7r; pos10(shthin,-90); z10=z3;  penstroke
+z1e{up}...z2e{right}...z3e---z6e; penstroke
+z7e---z8e...z9e{up}...z10e{right}; 
+clearxy;
+FX:=10/6FX; FY:=10/6FY; h:=10/6h; shfat:=10/6shfat; 
+movexy((9FX-3.15FX+.6*7.3FX-shthin,-6.65FY+shthin)); 
+FX:=0.6FX; FY:=0.6FY; h:=0.6h; shfat:=.6shfat; 
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); pos6(.277shvar,180); z6l=(x3l,y4l); pos7(1shvar,90);
+z7l=z6l; z8l=(2.8FX,y7l); z9l=(0,y8l+2FY); 
+pos8(whatever,angle(z3-z8l)); pos9(.5833shvar,angle(z3-z9l));
+y8r=y7r; pos10(shthin,-90); z10=z3;  penstroke
+z1e{up}...z2e{right}...z3e---z6e; penstroke
+z7e---z8e...z9e{up}...z10e{right}; 
+moveback;
+FX:=10/6FX; FY:=10/6FY; h:=10/6h; shfat:=10/6shfat; 
+fi
+if with_i or with_ii:
+pos50(shthin,90); pos51(whatever,-55); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90); x0=4.5FX;
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; pos54(shthin,90);
+z50r=z31r; z54r=z31r; z51l=(0,15.6FY); z52l=(x0,18.9FY); z53=.5[z53l,z53r];
+penstroke z50e{left}...z51e{up}...
+z52e{right}...z53e{down}...z54e{left}; pickup shthin_pen; draw z53{down}...
+z54{left}...z51{up}; z60-(9FX,12.3FY)=whatever*dir135; x60=0;
+if with_ii: numeric tt,tt'; (tt,tt') = (z53{down}...z54{left})
+intersectiontimes (z60--(9FX,12.3FY)); 
+z70=point tt of (z53{down}...z54{left});
+z70'=direction tt of (z53{down}...z54{left}); pos72(3FX,angle(z70')+90);
+z72r=z70; pos71(3.5FX,angle(z70')+180); z71=z72; draw z70{z70'}...z71l...
+z72l{-z70'}...z71r...z70{z70'};
+pickup nullpen; fi
+fi
+if with_u: pos80(shthin,0); z80=z1l; make_u(0,80,0); fi
+if with_uu: pos80(shthin,0); z80=z1l; make_uu(0,80,0); fi
+if virama and (not with_a): z90=(z30{up}...z31{left}) 
+intersectionpoint ((w-2FX,0)--(w-2FX,30FY));
+pos90(shthin,0); make_virama(90); fi
+if prec_by_r: z200=(4.5FX,y31r+3.5FY); pre_r(200,201); pickup shthin_pen;
+top z202 = z31r; draw z201{down}...z202{left}; pickup nullpen;
+fi
+if vowel: z150=(9FX,-6.7FY); z151=(x150,9.4FY); z152=(10.25FX,12.3FY);
+pickup shthin_pen; draw z150---z151---z152; 
+pos153(shthin,angle(z151-z152)); z153l=rt z152; pickup nullpen; 
+pos154(.85shvar,180); pos155(.66shvar,90); z154l=(12.8FX,y5l); z155=(x150,6.6FY);
+penstroke z153e{.5[z155,z154]-z153}..z154e{down}...z155e{left};
+pickup shthin_pen; draw z152{.5[z155,z154]-z153}..z154{down}; pickup nullpen;
+fi
+enddef;
+
+def letter_fa =
+pos2(shthin,0); pos2'(shthin,0); pos3'(shfat,100); pos3(shfat,-100);
+pos0(shthin,180);
+z2l=(0,6.4FY); z2'r=(14FX,y2l); y3l=y3'r=12.3FY; x3l=4FX; x0=7FX;
+x3'r-x0=x0-x3l; y0=7.2FY; penstroke z2e{up}...z3e{right}...z0e{down};
+penstroke z2'e{up}...z3'e{left}...z0e{down};
+pickup shthin_pen; drawdot z0; bot z1=(5FX,0); z1'=(14FX-x1,y1);
+draw z2{down}...z1{right}; draw z2'{down}...z1'{left}; draw z0--z0-(0,2FY);
+if with_i or with_ii:
+pos50(shthin,60); pos51(whatever,-55); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90);
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; pos54(shthin,120);
+z50r=z3l; z54r=z3'r; z51l=(.7FX,15.2FY); z52l=(x0,18.9FY); z53=.5[z53l,z53r];
+penstroke z50e{left}...z51e{up}...
+z52e{right}...z53e{down}...z54e{left}; pickup shthin_pen; draw z53{down}...z54{left};
+draw z50{left}...z51{up}; pickup nullpen;
+if with_ii:
+path p; p = (z52r{right}... z53r{down}...z54r{left});
+numeric px,px'; (px,px') = p intersectiontimes ((x0,14.5FY)--(25FX,14.5FY));
+z55=(.5[x0,x3'r],14FY); pickup shthin_pen; lft z56=point px of p;
+draw z54{left}...z55{up}...
+z56{direction px of p}; pickup nullpen; fi
+fi
+if with_u: pos57(shthin,0); z57=z2'r; make_u(0,57,0); fi
+if with_uu: pos57(shthin,0); z57=z2'r; make_uu(0,57,0); fi
+if virama: z57=(z2'{up}...z3'{left}) intersectionpoint ((14FX-2FX,0)--(14FX-2FX,
+30FY)); pos57(shthin,0); make_virama(57); fi
+if prec_by_r:  z100=(x0,15.2FY); pre_r(100,101); 
+numeric px,px'; (px,px') = pre_r_path
+intersectiontimes ((0,pre_r_minimum_y)--(30FX,pre_r_minimum_y));
+draw subpath(1,px) of pre_r_path; fi
+enddef;
+
+def ya_stroke =
+right_bulb:=true;
+numeric drawback; drawback:= if (fuji or handle): 0 else: 1FX fi;
+pos1(shthin,90); pos1'(shthin,-90); z200=(6.5FX,8.35FY);
+z2r=(0,4.7FY); pos2(whatever,angle(z2r-z200)); x2l-x2r=shthin; %.86shvar;
+z2'l=(15FX-x2r-drawback,y2r); z2'r=(15FX-x2l-drawback,y2l); 
+if (fuji or handle): pos3(shfat,-80) else: pos3(shfat*sind(80),-90) fi; 
+if (fuji or handle): pos3'(shfat,80) else: pos3'(shfat*sind(80),90) fi; 
+z1r=(4FX,hor_bar_height); z1'=(15FX-x1-drawback,y1);
+if (fuji or handle): z3r=(4.1FX,0); z3'l=(15FX-x3r,y3r);
+else: x3=x3'=round(7.5FX-.5drawback); y3r=y3'l=0; fi
+if not (left_small_arc) and not (left_boa): 
+penstroke z2e{down}...z3e{right}; fi
+if right_bulb or special_right_bulb or very_special_right_bulb: 
+penstroke z1'e{right}...z2'e{down}...z3'e{left}; fi
+z21r=(11.8FX-drawback,12.3FY); 
+pos10(shthin,90); pos10'(shthin,-90); z10=(6.4FX,y1); 
+z10'=(15FX-6.4FX-drawback,y1);
+if right_bulb or special_right_bulb or very_special_right_bulb: penstroke z10'e--z1'e; fi
+if right_bulb:
+pos22(shthin,0); pos21(0.5shvar,80); pos20(shthin,180); pos20'(shthin,180); 
+z20r=z10'r; z20'r=z10'l;  
+z22=(13.5FX-drawback,9.3FY); 
+penstroke z22e{up}...z21e{left}...z20'e---z20e; 
+fi
+pickup shthin_pen; bot z100=(4FX,12.3FY); top z102=(x100,0); 
+z101=(x100+2FX,.5[y100,y102]); 
+cullit; unfill (0,y102)--z102 & z102...z101{up}...z100 & z100--(0,y100)--cycle;
+cullit;
+draw z102...z101{up}...z100; drawdot z22; pickup nullpen;
+if with_u:  pos30(shthin,0); z30=z2'l; make_u(4FX,30,0); fi
+if with_uu:  pos30(shthin,0); z30=z2'l; make_uu(4FX,30,0); fi
+if prec_by_r:  z1000=(.5[x100,x2'l],15.2FY); pre_r(1000,1001); 
+pickup shthin_pen; top z1002=z21r; draw z1001{down}...z1002; pickup nullpen;
+fi
+if with_i or with_ii:
+z0=(.5[x102,x2'l],5FY); 
+pos50(shthin,90); pos50'(shthin,90); pos51(whatever,-55); 
+x51r-x51l=.722shvar; pos52(shfat*sind(80),-90); z50'r=z21r;
+x53l-x0=x0-x51l; x53r-x0=x0-x51r; y51r=y53r; y51l=y53l; pos54(shthin,120);
+z50r=z31r; z54r=z21r; z51l=(x102,15.7FY); z52l=(x0,18.9FY); z53=.5[z53r,z53l];
+penstroke z50'e{dir150}..z51e{up}...
+z52e{right}...z53e{down}...z50'e{left}; cullit; pickup shthin_pen; 
+draw z53{down}...z50'{left} & z50'{dir150}..z51{up}; 
+if with_ii:
+path p; p=z52r{right}...z53r{down}...z54r{dir210};
+z55=p intersectionpoint ((x50'+.5FX,y50')--(x50'+2FX,30FY)); pickup shthin_pen; 
+x56-x50'=x50'-x53+2FX; y56=y53; draw z50'{dir150}...z56...z55{right}..z53;
+fi 
+pickup nullpen;
+fi
+if virama: pos30(shthin,0); z30=(x21r,y21); make_virama(30); fi
+enddef;
+
+def da_ya_stroke =
+movexy((9FX-3.15FX,-5.25FY+shthin)); 
+FX:=0.6FX; FY:=0.6FY; h:=0.6h; shfat:=.6shfat; 
+right_bulb:=true; numeric drawback; drawback:= 0;
+pos1(shthin,90); pos1'(shthin,-90); z200=(6.5FX,8.35FY);
+z2r=(0,4.7FY); pos2(whatever,angle(z2r-z200)); x2l-x2r=shthin; %.86shvar;
+z2'l=(15FX-x2r-drawback,y2r); z2'r=(15FX-x2l-drawback,y2l); 
+if (fuji or handle): pos3(shfat,-80) else: pos3(shfat*sind(80),-90) fi; 
+if (fuji or handle): pos3'(shfat,80) else: pos3'(shfat*sind(80),90) fi; 
+z1r=(4FX,.6hor_bar_height); z1'=(15FX-x1-drawback,y1);
+if (fuji or handle): z3r=(4.1FX,0); z3'l=(15FX-x3r,y3r);
+else: x3=x3'=round(7.5FX-.5drawback); y3r=y3'l=0; fi
+if not (left_small_arc) and not (left_boa): 
+penstroke z2e{down}...z3e{right}; fi
+if right_bulb or special_right_bulb or very_special_right_bulb: 
+penstroke z1'e{right}...z2'e{down}...z3'e{left}; fi
+z21r=(11.8FX-drawback,12.3FY); 
+pos10(shthin,90); pos10'(shthin,-90); z10=(6.4FX,y1); 
+z10'=(15FX-6.4FX-drawback,y1);
+if right_bulb or special_right_bulb or very_special_right_bulb: penstroke z10'e--z1'e; fi
+if right_bulb:
+pos22(shthin,0); pos21(0.5shvar,80); pos20(shthin,180); pos20'(shthin,180); 
+z20r=z10'r; z20'r=z10'l;  
+z22=(13.5FX-drawback,9.3FY); 
+penstroke z22e{up}...z21e{left}...z20'e---z20e; 
+fi
+pickup shthin_pen; bot z100=(4FX,12.3FY); top z102=(x100,0); 
+z101=(x100+2FX,.5[y100,y102]); 
+cullit; unfill (0,y102)--z102 & z102...z101{up}...z100 & z100--(0,y100)--cycle;
+cullit;
+draw z102...z101{up}...z100; drawdot z22; pickup nullpen;
+moveback;
+FX:=10/6FX; FY:=10/6FY; h:=10/6h; shfat:=10/6shfat; 
+clearxy;
+enddef;
+
+def xwith_r (expr left_edge)(expr starting_point) =
+clearxy; 
+z21l=(.52[left_edge,xpart(starting_point)],-6.35FY);
+pos21(shfat,60); z22=(left_edge,-1.4FY); pos22(shthin,30); pos23(shthin,180);
+z23l=starting_point;
+penstroke z23e{down}...z21e...z22e; 
+enddef;
+
+def make_r_stroke(expr position)(expr letter_width)(expr left_edge)(expr starting_point) =
+xbeginchar(position,0FX#,0FY#,-6.35FY#); 
+adjust_fit(0,0); % added 15/7/94
+movexy((-letter_width-usual_left,0));
+z21l=(.52[left_edge,xpart(starting_point)],-6.35FY);
+pos21(shfat,60); z22=(left_edge,-1.4FY); pos22(shthin,30); pos23(shthin,180);
+z23l=starting_point;
+penstroke z23e{down}...z21e...z22e; moveback;
+endchar;
+enddef;
+
+def make_regular_ligatures(expr vir) =
+ligtable vir: "a" =: vir - 5, "i" =: vir - 4, "u" =: vir - 2, "r" |=: vir + 2;
+ligtable vir - 5: "r" |=: vir + 2;
+ligtable vir - 4: "i" =: vir - 3, "r" |=: vir + 2;
+ligtable vir - 2: "u" =: vir - 1;
+ligtable vir - 3: "r" |=: vir + 2;
+enddef;
+
+def make_specific_ligatures(expr vira)(expr viri)(expr virii)(expr viru)(expr viruu)(expr vir)(expr rvir)(expr virr) =
+ligtable vir: "a" =: vira, "i" =: viri, "u" =: viru, "r" |=: virr;
+ligtable vira: "r" |=: virr;
+ligtable viri: "i" =: virii, "r" |=: virr;
+ligtable viru: "u" =: viruu;
+ligtable virii: "r" |=: virr;
+enddef;
+
+def make_da_like_ligatures(expr vir) =
+ligtable vir: "a" =: vir - 11, "i" =: vir - 7, "u" =: vir - 5, "r" =: vir + 5,
+"y" =: vir + 6, "o" =: vir - 1;
+ligtable vir - 11: "a" =: vir - 10, "r" =: vir + 2;
+ligtable vir - 10: "a" =: vir - 9;
+ligtable vir - 9: "a" =: vir - 8;
+ligtable vir - 7: "i" =: vir - 6, "r" =: vir + 3;
+ligtable vir - 6: "r" =: vir + 4;
+ligtable vir - 5: "u" =: vir - 4;
+ligtable vir + 5:  "r" =: vir - 3;
+ligtable vir - 3:  "r" =: vir - 2;
+enddef;
+
+def make_fake_character(expr position) =
+beginchar(position,0,0,0);
+endchar;
+enddef;
+
+endinput;

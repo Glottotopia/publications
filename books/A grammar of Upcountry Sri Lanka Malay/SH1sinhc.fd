@@ -1,0 +1,55 @@
+% Copyright (C) 1994 Dominik Wujastyk
+%This file contains the font definitions for the sinhc family in the
+%SH1 encoding. It is used by the LaTeX New Font Selection Scheme.
+
+%
+% Modified by Vasantha Saparamadu <vsaparam@ocs.mq.edu.au>
+% 08 January 1996
+%
+
+\DeclareFontFamily{SH1}{sinhc}{}
+
+\DeclareFontShape{SH1}{sinhc}{m}{n}{
+   <->sinhc10
+}{}
+\DeclareFontShape{SH1}{sinhc}{m}{sc}{
+      <5><6><7>sinhc8%
+      <8> <9> gen * sinhc
+      <10><10.95>sinhc10%
+      <12><14.4><17.28><20.74><24.88->sinhc12%
+}{}
+\DeclareFontShape{SH1}{sinhc}{m}{it}{
+   <-> ssub * sinhc/m/n
+}{}
+\DeclareFontShape{SH1}{sinhc}{m}{itsc}{
+   <-> ssub * sinhc/m/n
+}{}
+\DeclareFontShape{SH1}{sinhc}{m}{sl}{
+   <-> ssub * sinhc/m/n
+}{}
+\DeclareFontShape{SH1}{sinhc}{m}{slsc}{
+   <-> ssub * sinhc/m/n
+}{}
+\DeclareFontShape{SH1}{sinhc}{bx}{n}{
+   <->sinbxc10
+}{}
+\DeclareFontShape{SH1}{sinhc}{bx}{sc}{
+      <5><6><7>sinbxc8%
+      <8> <9> gen * sinbxc
+      <10><10.95>sinbxc10%
+      <12><14.4><17.28><20.74><24.88->sinbxc12%
+}{}
+\DeclareFontShape{SH1}{sinhc}{bx}{it}{
+   <-> ssub * sinhc/bx/n
+}{}
+\DeclareFontShape{SH1}{sinhc}{bx}{itsc}{
+   <-> ssub * sinhc/bx/n
+}{}
+\DeclareFontShape{SH1}{sinhc}{bx}{sl}{
+   <-> ssub * sinhc/bx/n
+}{}
+\DeclareFontShape{SH1}{sinhc}{bx}{slsc}{
+   <-> ssub * sinhc/bx/n
+}{}
+
+\endinput

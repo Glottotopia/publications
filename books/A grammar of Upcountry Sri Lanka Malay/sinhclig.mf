@@ -1,0 +1,89 @@
+%     Copyright (C) 1994, The Wellcome Trust, London.
+%
+%
+%     This program is free software; you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation; either version 2 of the License, or
+%     (at your option) any later version.
+%
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+%
+%     You should have received a copy of the GNU General Public License
+%     along with this program; if not, write to the Free Software
+%     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+%
+%     Contacts:
+%
+%     1/ The author:  Yannis Haralambous <Yannis.Haralambous@univ-lille1.fr>
+%
+%     2/ Commissioned by
+%        The Wellcome Institute for the History of Medicine,
+%        183 Euston Road,
+%        London NW1 2BE,
+%        England.
+%        Contact person: Dominik Wujastyk <D.Wujastyk@ucl.ac.uk>
+
+
+% This file defines characters common to roman and italic text fonts
+% that appear only when |ligs>0|.
+
+
+ligtable "`": "`"=:oct"040";
+ligtable "'": "'"=:oct"042";
+
+ligtable "-": "-"=:oct"074";
+ligtable oct"074": "-"=:oct"076";
+
+cmchar "Closing quotes";
+beginchar(oct"042",7u#+max(2u#,dot_size#),asc_height#,0);
+italcorr asc_height#*slant+dot_size#-4.1u#;
+adjust_fit(0,0);
+x1-.5dot_size=hround .6u; y2+.5dot_size=h;
+x2-x1=hround(1.5u+max(2u,dot_size)); y2=y1;
+comma(1,a,dot_size,.25u,comma_depth); % left dot and tail
+comma(2,b,dot_size,.25u,comma_depth); % right dot and tail
+penlabels(1,2); endchar;
+
+cmchar "Hyphen";
+beginchar("-",6u#,x_height#,0);
+italcorr .5x_height#*slant-.5u#;
+adjust_fit(0,0);
+numeric thickness; thickness=if hefty:bar else:.75[hair,stem] fi;
+pickup crisp.nib; pos1(thickness,90); pos2(thickness,90);
+top y1r=top y2r=vround(.5h+.5thickness); rt x2=hround(w-u)+eps;
+if monospace: x2=w-x1 else: lft x1=hround .2u-eps fi;
+filldraw stroke z1e--z2e;  % bar
+penlabels(1,2); endchar;
+
+cmchar "Opening quotes";
+beginchar(oct"040",7u#+max(2u#,dot_size#),asc_height#,0);
+italcorr asc_height#*slant-.1u#;
+adjust_fit(0,0);
+x2+.5dot_size=hround(w-.6u); y1+.5dot_size=h-comma_depth;
+x2-x1=hround(1.5u+max(2u,dot_size)); y2=y1;
+ammoc(1,a,dot_size,.25u,comma_depth); % left dot and tail
+ammoc(2,b,dot_size,.25u,comma_depth); % right dot and tail
+penlabels(1,2); endchar;
+
+cmchar "En dash";
+beginchar(oct"074",9u#,x_height#,0);
+italcorr .61803x_height#*slant+.5u#;
+adjust_fit(0,0);
+pickup crisp.nib; pos1(vair,90); pos2(vair,90);
+top y1r=top y2r=vround(.61803h+.5vair); lft x1=-eps; rt x2=w+eps;
+filldraw stroke z1e--z2e;  % bar
+penlabels(1,2); endchar;
+
+cmchar "Em dash";
+beginchar(oct"076",18u#,x_height#,0);
+italcorr .61803x_height#*slant+.5u#;
+adjust_fit(letter_fit#,letter_fit#);
+pickup crisp.nib; pos1(vair,90); pos2(vair,90);
+top y1r=top y2r=vround(.61803h+.5vair); lft x1=-eps; rt x2=w+eps;
+filldraw stroke z1e--z2e;  % bar
+penlabels(1,2); endchar;
+
+endinput;

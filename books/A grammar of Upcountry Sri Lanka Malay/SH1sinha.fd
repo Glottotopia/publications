@@ -1,0 +1,55 @@
+% Copyright (C) 1994 Dominik Wujastyk
+%This file contains the font definitions for the sinha family in the
+%SH1 encoding. It is used by the LaTeX New Font Selection Scheme.
+
+%
+% Modified by Vasantha Saparamadu <vsaparam@ocs.mq.edu.au>
+% 08 January 1996
+%
+
+\DeclareFontFamily{SH1}{sinha}{}
+
+\DeclareFontShape{SH1}{sinha}{m}{n}{
+      <5><6><7>sinha8%
+      <8> <9> gen * sinha
+      <10><10.95>sinha10%
+      <12><14.4><17.28><20.74><24.88->sinha12%
+}{}
+\DeclareFontShape{SH1}{sinha}{m}{sc}{
+   <-> ssub * sinha/m/n
+}{}
+\DeclareFontShape{SH1}{sinha}{m}{it}{
+   <-> ssub * sinha/m/n
+}{}
+\DeclareFontShape{SH1}{sinha}{m}{itsc}{
+   <-> ssub * sinha/m/n
+}{}
+\DeclareFontShape{SH1}{sinha}{m}{sl}{
+   <-> ssub * sinha/m/n
+}{}
+\DeclareFontShape{SH1}{sinha}{m}{slsc}{
+   <-> ssub * sinha/m/n
+}{}
+\DeclareFontShape{SH1}{sinha}{bx}{n}{
+      <5><6><7>sinbxa8%
+      <8> <9> gen * sinbxa
+      <10><10.95>sinbxa10%
+      <12><14.4><17.28><20.74><24.88->sinbxa12%
+}{}
+\DeclareFontShape{SH1}{sinha}{bx}{sc}{
+   <-> ssub * sinha/bx/n
+}{}
+\DeclareFontShape{SH1}{sinha}{bx}{it}{
+   <-> ssub * sinha/bx/n
+}{}
+\DeclareFontShape{SH1}{sinha}{bx}{itsc}{
+   <-> ssub * sinha/bx/n
+}{}
+\DeclareFontShape{SH1}{sinha}{bx}{sl}{
+   <-> ssub * sinha/bx/n
+}{}
+\DeclareFontShape{SH1}{sinha}{bx}{slsc}{
+   <-> ssub * sinha/bx/n
+}{}
+
+\endinput

@@ -1,0 +1,55 @@
+% Copyright (C) 1994 Dominik Wujastyk
+%This file contains the font definitions for the sinhb family in the
+%SH1 encoding. It is used by the LaTeX New Font Selection Scheme.
+
+%
+% Modified by Vasantha Saparamadu <vsaparam@ocs.mq.edu.au>
+% 08 January 1996
+%
+
+\DeclareFontFamily{SH1}{sinhb}{}
+
+\DeclareFontShape{SH1}{sinhb}{m}{n}{
+      <5><6><7>sinhb8%
+      <8> <9> gen * sinhb
+      <10><10.95>sinhb10%
+      <12><14.4><17.28><20.74><24.88->sinhb12%
+}{}
+\DeclareFontShape{SH1}{sinhb}{m}{sc}{
+   <-> ssub * sinhb/m/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{m}{it}{
+   <-> ssub * sinhb/m/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{m}{itsc}{
+   <-> ssub * sinhb/m/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{m}{sl}{
+   <-> ssub * sinhb/m/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{m}{slsc}{
+   <-> ssub * sinhb/m/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{bx}{n}{
+      <5><6><7>sinbxb8%
+      <8> <9> gen * sinbxb
+      <10><10.95>sinbxb10%
+      <12><14.4><17.28><20.74><24.88->sinbxb12%
+}{}
+\DeclareFontShape{SH1}{sinhb}{bx}{sc}{
+   <-> ssub * sinhb/bx/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{bx}{it}{
+   <-> ssub * sinhb/bx/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{bx}{itsc}{
+   <-> ssub * sinhb/bx/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{bx}{sl}{
+   <-> ssub * sinhb/bx/n
+}{}
+\DeclareFontShape{SH1}{sinhb}{bx}{slsc}{
+   <-> ssub * sinhb/bx/n
+}{}
+
+\endinput

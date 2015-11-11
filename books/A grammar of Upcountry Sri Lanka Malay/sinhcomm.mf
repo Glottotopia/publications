@@ -1,0 +1,172 @@
+%     Copyright (C) 1994, The Wellcome Trust, London.
+%
+%
+%     This program is free software; you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation; either version 2 of the License, or
+%     (at your option) any later version.
+%
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+%
+%     You should have received a copy of the GNU General Public License
+%     along with this program; if not, write to the Free Software
+%     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+%
+%     Contacts:
+%
+%     1/ The author:  Yannis Haralambous <Yannis.Haralambous@univ-lille1.fr>
+%
+%     2/ Commissioned by
+%        The Wellcome Institute for the History of Medicine,
+%        183 Euston Road,
+%        London NW1 2BE,
+%        England.
+%        Contact person: Dominik Wujastyk <D.Wujastyk@ucl.ac.uk>
+
+
+beginchar(oct"000",6.3FX#,18.9FY#,0); "aa (mirrored Latin c)";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); penstroke
+z1e{up}...z2e{right}...z3e{down}...z4e{left}...z5e{up}; 
+endchar;
+
+beginchar(oct"001",6.3FX#,18.9FY#,0); ".r (like Latin a)"; 
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); pos6(.277shvar,180); z6l=(x3l,y4l); pos7(1shvar,90);
+z7l=z6l; z8l=(2.8FX,y7l); z9l=(0,y8l+2FY); 
+pos8(whatever,angle(z3-z8l)); pos9(.5833shvar,angle(z3-z9l));
+y8r=y7r; pos10(shthin,-90); z10=z3;  penstroke
+z1e{up}...z2e{right}...z3e---z6e; penstroke
+z7e---z8e...z9e{up}...z10e{right}; 
+endchar;
+
+beginchar(oct"002",14.1FX#,18.9FY#,0); "double .r (like Latin aa)";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); pos6(.277shvar,180); z6l=(x3l,y4l); pos7(1shvar,90);
+z7l=z6l; z8l=(2.8FX,y7l); z9l=(0,y8l+2FY); 
+pos8(whatever,angle(z3-z8l)); pos9(.5833shvar,angle(z3-z9l));
+y8r=y7r; pos10(shthin,-90); z10=z3;  penstroke
+z1e{up}...z2e{right}...z3e---z6e; penstroke
+z7e---z8e...z9e{up}...z10e{right}; addto currentpicture also
+currentpicture shifted (6.3FX+1.5FX,0); 
+endchar;
+
+beginchar(oct"003",6.3FX#,18.9FY#,0); ".l (mirrored Latin c)";
+adjust_fit(usual_left#+3.1FX#,usual_right#); h:=12.3FY;
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); penstroke
+z1e{up}...z2e{right}...z3e{down}...z4e{left}...z5e{up};
+pos11(shthin,-60); z11l=z1l; pos13(.5833shvar,angle(z4r-z4l));
+y13=y3; x13=0; pos13'(shthin,0); z13'l=(-3.1FX,y1);  path p; p =
+z13'{up}...z1+(z1-z13'){down}; z14'-z1=whatever*dir140; x14'=-3.1FX;
+z14= p  intersectionpoint (z1--z14'); pos14(shthin,angle(z1-z14));
+penstroke z11e{dir30}...z13e{left}...z13'e{up}...z14e; 
+endchar;
+
+beginchar(oct"004",6.3FX#,18.9FY#,0); ".ll (mirrored Latin c)";
+adjust_fit(usual_left#+3.1FX#,usual_right#); h:=12.3FY;
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); penstroke
+z1e{up}...z2e{right}...z3e{down}...z4e{left}...z5e{up};
+pos11(shthin,-60); z11l=z1l; pos13(.5833shvar,angle(z4r-z4l));
+y13=y3; x13=0; pos13'(shthin,0); z13'l=(-3.1FX,y1);  path p; p =
+z13'{up}...z1+(z1-z13'){down}; z14'-z1=whatever*dir140; x14'=-3.1FX;
+z14= p  intersectionpoint (z1--z14'); pos14(shthin,angle(z1-z14));
+penstroke z11e{dir30}...z13e{left}...z13'e{up}...z14e; pickup
+shthin_pen; draw z5{up}..z3{dir50}; 
+endchar;
+
+beginchar(oct"005",14.8FX#,18.9FY#,0); "e";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+z0=(6.5FX,6.7FY); pos4(shfat,100); z4l=(6.2FX,0); 
+make_small_circle(0); z3l=(12.7FX,5FY); 
+pos3(whatever,angle(z0-z3l)); x3r-x3l=-shthin; z1'= directionpoint
+dir(30) of small_circle; draw z1'{dir30}...z3{down}; pickup nullpen;
+z5l=(0,5.7FY); x5r-x5l=shthin; pos5(whatever,angle((x0,10FY)-z5l));
+pos6(shthin,-90); z6l=(x0+FX,h); pickup shthin_pen; rt x7=14.8FX;
+y7=y0+FX; path pp; pp= z6{right}...z7; draw pp;  pickup nullpen;
+penstroke z3e{down}...z4e{left}...z5e{up}...z6e{right}; 
+endchar;
+
+beginchar(oct"006",31.1FX#,18.9FY#,0); "double e";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+z0=(6.5FX,6.7FY); pos4(shfat,100); z4l=(6.2FX,0); 
+make_small_circle(0); z3l=(12.7FX,5FY); 
+pos3(whatever,angle(z0-z3l)); x3r-x3l=-shthin; z1'= directionpoint
+dir(30) of small_circle; draw z1'{dir30}...z3{down}; pickup nullpen;
+z5l=(0,5.7FY); x5r-x5l=shthin; pos5(whatever,angle((x0,10FY)-z5l));
+pos6(shthin,-90); z6l=(x0+FX,h); pickup shthin_pen; rt x7=14.8FX;
+y7=y0+FX; path pp; pp= z6{right}...z7; draw pp;  pickup nullpen;
+penstroke z3e{down}...z4e{left}...z5e{up}...z6e{right}; addto
+currentpicture also currentpicture shifted ((16.3FX,0)); 
+endchar;
+
+beginchar(oct"007",6.3FX#,18.9FY#,0); "aa with virama (mirrored Latin c)";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pos1(shthin,0); z2l=(2.8FX,11.3FY);
+pos2(.5833shvar,angle((0,0.5h)-z2l)); pos3(.277shvar,180);
+z3l=(6.3FX,round(.5h)); z1l=(0,8.9FY);  pos5(shthin,0);
+z4l=(2.8FX,h-y2l); pos4(.5833shvar,angle((0,0.5h)-z4l));
+z5l=(x1l,h-y1); penstroke
+z1e{up}...z2e{right}...z3e{down}...z4e{left}...z5e{up}; 
+pos30(shthin,0); z30l=z3r; make_virama(30);
+endchar;
+
+beginchar(oct"010",7FX#,18.9FY#,3.9FY#); "<umlaut-a>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pos1(shthin,-90); pos2(shthin,-90); y1l=y2l=hor_bar_height; x1=0;
+x2=4.2FX; z3r=.75[z2l,z2r]; pos3(shthin,angle((0,0)-z3r)-90);
+pos4(1/6shvar,-155); pos5(1/6shvar,-130); z4r=(1.2FX,0);
+z5r=(4.5FX,-3.9FY); pos6(1shvar,-60); y6l=-2.2FY; x6r=7FX; penstroke
+z1e--z2e;  penstroke z3e{-z3r}...z4e{down}...z5e{right}...z6e;  fill
+z2l{right}...z3l{-z3r} & z3l--z2r--cycle; 
+endchar;
+
+beginchar(oct"011",7FX#,18.9FY#,3.9FY#); "<umlaut-A>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pos1'(shthin,-90); pos2'(shthin,-90); y1'l=y2'l=hor_bar_height;
+x1'=0; x2'=3.5FX; pos1(shthin,-90); pos2(shthin,-90);
+y1l=y2l=hor_bar_height-2.5FY; x1=2FX; x2=5FX; z3r=.75[z2l,z2r];
+pos3(shthin,angle((0,0)-z3r)-90); pos4(1/6shvar,-155);
+pos5(1/6shvar,-130); z4r=(1.2FX,-0.5FY); z5r=(4.5FX,-3.9FY);
+pos6(1shvar,-60); y6l=-2.2FY; x6r=7FX; penstroke z1e--z2e; penstroke
+z1'e--z2'e;  penstroke z3e{-z3r}...z4e{down}...z5e{right}...z6e; 
+fill z2l{right}...z3l{-z3r} & z3l--z2r--cycle;
+pos10(2/3shvar,-26.5); pos11(2/3shvar,-26.5); y11l=y1'l; y10r=y1r;
+x10l=x1; z11r-z10r=z11l-z10l; z11-z10=whatever*dir(65);  fill
+z11l{right}...z11r---z10r & z10r---z1r...z10l---z11l & cycle;
+endchar;
+
+beginchar(oct"012",4FX#,18.9FY#,0); ".h";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+top z0=(.5w,.5h+3FY); make_small_circle(0);
+bot z0'=(.5w,.5h-3FY); make_small_circle(0');
+endchar;
+
+beginchar(oct"013",4FX#,18.9FY#,0); ".m";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+z0=(.5w,.5h); make_small_circle(0);
+endchar;
+
+endinput;

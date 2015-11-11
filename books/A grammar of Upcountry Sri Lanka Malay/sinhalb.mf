@@ -1,0 +1,1814 @@
+%     Copyright (C) 1994, The Wellcome Trust, London.
+%
+%
+%     This program is free software; you can redistribute it and/or modify
+%     it under the terms of the GNU General Public License as published by
+%     the Free Software Foundation; either version 2 of the License, or
+%     (at your option) any later version.
+%
+%     This program is distributed in the hope that it will be useful,
+%     but WITHOUT ANY WARRANTY; without even the implied warranty of
+%     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%     GNU General Public License for more details.
+%
+%     You should have received a copy of the GNU General Public License
+%     along with this program; if not, write to the Free Software
+%     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+%
+%     Contacts:
+%
+%     1/ The author:  Yannis Haralambous <Yannis.Haralambous@univ-lille1.fr>
+%
+%     2/ Commissioned by
+%        The Wellcome Institute for the History of Medicine,
+%        183 Euston Road,
+%        London NW1 2BE,
+%        England.
+%        Contact person: Dominik Wujastyk <D.Wujastyk@ucl.ac.uk>
+
+%
+% Modified by Vasantha Saparamadu <vsaparam@ocs.mq.edu.au>
+% 08 January 1996
+%
+
+
+input sinhamac.mf;
+
+input sinhcomm.mf;
+
+xbeginchar(oct"020",15FX#,18.9FY#,0); "ya";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_small_arc:=true; 
+       right_bulb:=true;
+           generic_letter; 
+       right_bulb:=false;
+   left_small_arc:=false; 
+fuji:=false; 
+endchar;
+
+xbeginchar(oct"021",15FX#,18.9FY#,0); "yi";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   fuji:=true; 
+      left_small_arc:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      left_small_arc:=false; 
+   fuji:=false; 
+with_i:=false;
+endchar;
+
+xbeginchar(oct"022",15FX#,18.9FY#,0); "yii";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   fuji:=true; 
+      left_small_arc:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      left_small_arc:=false; 
+   fuji:=false; 
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"023",15FX#,18.9FY#,0); "yu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true; 
+   fuji:=true; 
+      left_small_arc:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      left_small_arc:=false; 
+   fuji:=false; 
+with_u:=false;
+endchar;
+
+xbeginchar(oct"024",15FX#,18.9FY#,0); "yuu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true; 
+   fuji:=true; 
+      left_small_arc:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      left_small_arc:=false; 
+   fuji:=false; 
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"025",15FX#,18.9FY#,0); "y";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true; 
+   fuji:=true; 
+      left_small_arc:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      left_small_arc:=false; 
+   fuji:=false; 
+virama:=false;
+endchar;
+
+xbeginchar(oct"026",15FX#,18.9FY#,0); "rya";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true; 
+   fuji:=true; 
+      left_small_arc:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      left_small_arc:=false; 
+   fuji:=false; 
+prec_by_r:=false;
+endchar;
+
+make_r_stroke(oct"027",15FX,.5shthin,(15FX,4.7FY)); %gha-like, ya, sa
+
+xbeginchar(oct"030",12.3FX#,18.9FY#,0); "ra";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+ra_letter;
+endchar;
+
+xbeginchar(oct"031",12.3FX#,18.9FY#,0); "ri";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true;
+   ra_letter;
+with_u:=false; 
+endchar;
+
+xbeginchar(oct"032",12.3FX#,18.9FY#,0); "r\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true;
+   ra_letter;
+with_uu:=false; 
+endchar;
+
+xbeginchar(oct"033",16.2FX#,18.9FY#,0); "r<a-umlaut>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true;
+   ra_letter;
+with_i:=false; 
+endchar;
+
+xbeginchar(oct"034",16.2FX#,18.9FY#,0); "r\=<a-umlaut>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   ra_letter;
+with_ii:=false; 
+endchar;
+
+xbeginchar(oct"035",12.3FX#,18.9FY#,0); "r";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true;
+   ra_letter;
+virama:=false; 
+endchar;
+
+xbeginchar(oct"036",12.3FX#,18.9FY#,0); "rra";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true;
+   ra_letter;
+prec_by_r:=false; 
+endchar;
+
+%pas de r-stroke pour r (oct"037")
+
+xbeginchar(oct"040",16.5FX#,18.9FY#,5.8FY#); "la";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+la_letter;
+endchar;
+
+xbeginchar(oct"041",16.5FX#,18.9FY#,5.8FY#); "li";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true;
+   la_letter;
+with_i:=false; 
+endchar;
+
+xbeginchar(oct"042",16.5FX#,18.9FY#,5.8FY#); "l\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   la_letter;
+with_ii:=false; 
+endchar;
+
+xbeginchar(oct"043",16.5FX#,18.9FY#,5.8FY#); "lu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true;
+   la_letter;
+with_u:=false; 
+endchar;
+
+xbeginchar(oct"044",16.5FX#,18.9FY#,5.8FY#); "l\=u";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true;
+   la_letter;
+with_uu:=false; 
+endchar;
+
+xbeginchar(oct"045",16.5FX#,18.9FY#,5.8FY#); "l";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true;
+   la_letter;
+virama:=false; 
+endchar;
+
+xbeginchar(oct"046",16.5FX#,18.9FY#,5.8FY#); "rla";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true;
+   la_letter;
+prec_by_r:=false; 
+endchar;
+
+%pas de r-stroke pour l (oct"047")
+
+xbeginchar(oct"050",15FX#,18.9FY#,0); "va";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   handle:=false; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc(80);
+         right_bulb:=false;
+      with_hbar:=false;
+   handle:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"051",15FX#,18.9FY#,0); "vi";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   handle:=false; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_i := true;
+               generic_letter; big_arc(80);
+            with_i := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   handle:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"052",15FX#,18.9FY#,0); "v\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   handle:=false; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_ii := true;
+               generic_letter; big_arc(80);
+            with_ii := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   handle:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"053",15FX#,18.9FY#,0); "vu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   handle:=false; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_u := true;
+               generic_letter; big_arc(80);
+            with_u := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   handle:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"054",15FX#,18.9FY#,0); "v\=u";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   handle:=false; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_uu := true;
+               generic_letter; big_arc(80);
+            with_uu := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   handle:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"016",15FX#,18.9FY#,0); "v";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   handle:=false; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc_virama(80);
+         right_bulb:=false;
+      with_hbar:=false;
+   handle:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"056",15FX#,18.9FY#,0); "rva";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   handle:=false; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            prec_by_r:=true;
+               generic_letter; big_arc(80);
+            prec_by_r:=false;
+         right_bulb:=false;
+      with_hbar:=false;
+   handle:=false;
+pirogue:=false;   
+endchar;
+
+make_r_stroke(oct"057",15FX,.5shthin,(15FX,8.35FY)); %ca-like, \.ta, ma, va
+
+xbeginchar(oct"060",14.9FX#,18.9FY#,0); "\'sa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+letter_s:=true; 
+   letter_ga;
+letter_s:=false;
+endchar;
+
+xbeginchar(oct"061",14.9FX#,18.9FY#,0); "\'si";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   letter_s:=true; 
+      letter_ga; 
+   letter_s:=false;
+with_i:=false;
+endchar;
+
+xbeginchar(oct"062",14.9FX#,18.9FY#,0); "\'sii";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   letter_s:=true; 
+      letter_ga; 
+   letter_s:=false;
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"063",14.9FX#,18.9FY#,0); "\'su";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true; 
+   letter_s:=true; 
+      letter_ga; 
+   letter_s:=false;
+with_u:=false;
+endchar;
+
+xbeginchar(oct"064",14.9FX#,18.9FY#,0); "\'suu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true; 
+   letter_s:=true; 
+      letter_ga; 
+   letter_s:=false;
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"065",14.9FX#,18.9FY#,0); "\'s";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true; 
+   letter_s:=true; 
+      letter_ga; 
+   letter_s:=false;
+virama:=false;
+endchar;
+
+xbeginchar(oct"066",14.9FX#,18.9FY#,0); "r\'sa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+letter_s:=true; 
+   letter_ga; z149=(x4-.5FX,y7r+4FY); pre_r(149,152);
+   pickup shthin_pen; draw z152{down}...z7+(-.5FX,0){left};
+letter_s:=false;
+endchar;
+
+make_r_stroke(oct"067",14.9FX,.5shthin,(14.9FX,6FY)); %ga-like, bha, \'sa, ha
+
+xbeginchar(oct"070",14FX#,18.9FY#,0); ".sa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+letter_dot_s:=true;
+   right_bulb:=true;
+      generic_letter; 
+   right_bulb:=false;
+letter_dot_s:=false;
+endchar;
+
+xbeginchar(oct"071",14FX#,18.9FY#,0); ".si";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   letter_dot_s:=false;
+with_i:=false;
+endchar;
+
+xbeginchar(oct"072",14FX#,18.9FY#,0); ".sii";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   letter_dot_s:=false;
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"073",14FX#,18.9FY#,0); ".su";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true; 
+   letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   letter_dot_s:=false;
+with_u:=false;
+endchar;
+
+xbeginchar(oct"074",14FX#,18.9FY#,0); ".suu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true; 
+   letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   letter_dot_s:=false;
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"075",14FX#,18.9FY#,0); ".s";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true; 
+   letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   letter_dot_s:=false;
+virama:=false;
+endchar;
+
+xbeginchar(oct"076",14FX#,18.9FY#,0); "r.sa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true; 
+   letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   letter_dot_s:=false;
+prec_by_r:=false;
+endchar;
+
+make_r_stroke(oct"077",14FX,.5shthin,(14FX,4.7FY)); %cha-like, ja-like, pa, \.sa
+
+xbeginchar(oct"100",15FX#,18.9FY#,0); "sa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   with_hbar:=true; 
+       right_bulb:=true;
+           generic_letter; 
+       right_bulb:=false;
+   with_hbar:=false; 
+fuji:=false; 
+endchar;
+
+xbeginchar(oct"101",15FX#,18.9FY#,0); "si";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   fuji:=true; 
+      with_hbar:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      with_hbar:=false; 
+   fuji:=false; 
+with_i:=false;
+endchar;
+
+xbeginchar(oct"102",15FX#,18.9FY#,0); "sii";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   fuji:=true; 
+      with_hbar:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      with_hbar:=false; 
+   fuji:=false; 
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"103",15FX#,18.9FY#,0); "su";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true; 
+   fuji:=true; 
+      with_hbar:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      with_hbar:=false; 
+   fuji:=false; 
+with_u:=false;
+endchar;
+
+xbeginchar(oct"104",15FX#,18.9FY#,0); "suu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true; 
+   fuji:=true; 
+      with_hbar:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      with_hbar:=false; 
+   fuji:=false; 
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"105",15FX#,18.9FY#,0); "s";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true; 
+   fuji:=true; 
+      with_hbar:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      with_hbar:=false; 
+   fuji:=false; 
+virama:=false;
+endchar;
+
+xbeginchar(oct"106",15FX#,18.9FY#,0); "rsa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true; 
+   fuji:=true; 
+      with_hbar:=true; 
+         right_bulb:=true;
+            generic_letter; 
+         right_bulb:=false;
+      with_hbar:=false; 
+   fuji:=false; 
+prec_by_r:=false;
+endchar;
+
+make_r_stroke(oct"107",15FX,.5shthin,(15FX,4.7FY)); %gha-like, ya, sa
+
+xbeginchar(oct"110",14.9FX#,18.9FY#,0); "ha";
+adjust_fit(usual_left#+1.7FX#,usual_right#); h:=12.3FY;
+letter_ha;
+endchar;
+
+xbeginchar(oct"111",14.9FX#,18.9FY#,0); "hi";
+adjust_fit(usual_left#+1.7FX#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   letter_ha; 
+with_i:=false;
+endchar;
+
+xbeginchar(oct"112",14.9FX#,18.9FY#,0); "hii";
+adjust_fit(usual_left#+1.7FX#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   letter_ha; 
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"113",14.9FX#,18.9FY#,0); "hu";
+adjust_fit(usual_left#+1.7FX#,usual_right#); h:=12.3FY;
+letter_ha; pos130(shthin,0); z130=z8l; make_u(.4FX-drawback,130,0);
+endchar;
+
+xbeginchar(oct"114",14.9FX#,18.9FY#,0); "huu";
+adjust_fit(usual_left#+1.7FX#,usual_right#); h:=12.3FY;
+letter_ha; pos130(shthin,0); z130=z8l; make_uu(.4FX-drawback,130,0);
+endchar;
+
+xbeginchar(oct"115",14.9FX#,18.9FY#,0); "h";
+adjust_fit(usual_left#+1.7FX#,usual_right#); h:=12.3FY;
+virama:=true; 
+   letter_ha; 
+virama:=false;
+endchar;
+
+xbeginchar(oct"116",14.9FX#,18.9FY#,0); "rha";
+adjust_fit(usual_left#+1.7FX#,usual_right#); h:=12.3FY;
+letter_ha; z49=(x4-.5FX,y7r+4FY); pre_r(49,52);
+pickup shthin_pen; draw z52{down}...z7+(-.5FX,0){left};
+endchar;
+
+make_r_stroke(oct"117",14.9FX,.5shthin,(14.9FX,6FY)); %ga-like, bha, \'sa, ha
+
+xbeginchar(oct"120",16.5FX#,18.9FY#,5.8FY#); "\.la";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+lla_letter;
+endchar;
+
+xbeginchar(oct"121",16.5FX#,18.9FY#,5.8FY#); "\.li";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true;
+   lla_letter;
+with_i:=false; 
+endchar;
+
+xbeginchar(oct"122",16.5FX#,18.9FY#,5.8FY#); "\.l\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   lla_letter;
+with_ii:=false; 
+endchar;
+
+xbeginchar(oct"123",15FX#-1FX#,18.9FY#,0); "\.lu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   left_small_arc:=false;
+      with_hbar:=false; 
+ 			     right_bulb:=false; 
+            covered_labrador_ear:=true;
+               generic_letter; medium_arc;
+            covered_labrador_ear:=false;
+         right_bulb:=false;
+      with_hbar:=false;
+   left_small_arc:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"124",15FX#-1FX#+7FX#+.8usual_right#+.8usual_left#,18.9FY#,0); "\.luu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   left_small_arc:=false;
+      with_hbar:=false; 
+ 			     right_bulb:=false; 
+            covered_labrador_ear:=true;
+               generic_letter; medium_arc;
+            covered_labrador_ear:=false;
+         right_bulb:=false;
+      with_hbar:=false;
+   left_small_arc:=false;
+pirogue:=false;  
+clearxy; movexy((15FX-1FX+.8usual_right+.8usual_left,0));
+h:=12.3FY;
+pos1'(shthin,-90); pos2'(shthin,-90); y1'l=y2'l=hor_bar_height;
+x1'=0; x2'=3.5FX; pos1(shthin,-90); pos2(shthin,-90);
+y1l=y2l=hor_bar_height-2.5FY; x1=2FX; x2=5FX; z3r=.75[z2l,z2r];
+pos3(shthin,angle((0,0)-z3r)-90); pos4(1/6shvar,-155);
+pos5(1/6shvar,-130); z4r=(1.2FX,-0.5FY); z5r=(4.5FX,-3.9FY);
+pos6(1shvar,-60); y6l=-2.2FY; x6r=7FX; penstroke z1e--z2e; penstroke
+z1'e--z2'e;  penstroke z3e{-z3r}...z4e{down}...z5e{right}...z6e; 
+fill z2l{right}...z3l{-z3r} & z3l--z2r--cycle;
+pos10(2/3shvar,-26.5); pos11(2/3shvar,-26.5); y11l=y1'l; y10r=y1r;
+x10l=x1; z11r-z10r=z11l-z10l; z11-z10=whatever*dir(65);  fill
+z11l{right}...z11r---z10r & z10r---z1r...z10l---z11l & cycle; moveback;
+endchar;
+
+xbeginchar(oct"125",16.5FX#,18.9FY#,5.8FY#); "\.l";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true;
+   lla_letter;
+virama:=false; 
+endchar;
+
+xbeginchar(oct"126",16.5FX#,18.9FY#,5.8FY#); "r\.la";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true;
+   lla_letter;
+prec_by_r:=false; 
+endchar;
+
+%pas de r-stroke pour .l (oct"127")
+
+xbeginchar(oct"130",14.9FX#,18.9FY#,0); "\u nga";
+adjust_fit(usual_left#+1.7FX#+1.1FX#,usual_right#); h:=12.3FY;
+covered_labrador_ear:=true; 
+   letter_ha;
+covered_labrador_ear:=false; 
+endchar;
+
+xbeginchar(oct"131",14.9FX#,18.9FY#,0); "\u ngi";
+adjust_fit(usual_left#+1.7FX#+1.1FX#,usual_right#); h:=12.3FY;
+covered_labrador_ear:=true; 
+   with_i:=true; 
+      letter_ha; 
+   with_i:=false;
+covered_labrador_ear:=false; 
+endchar;
+
+xbeginchar(oct"132",14.9FX#,18.9FY#,0); "\u ngii";
+adjust_fit(usual_left#+1.7FX#+1.1FX#,usual_right#); h:=12.3FY;
+covered_labrador_ear:=true; 
+   with_ii:=true; 
+      letter_ha; 
+   with_ii:=false;
+covered_labrador_ear:=false; 
+endchar;
+
+xbeginchar(oct"133",14.9FX#,18.9FY#,0); "\u ngu";
+adjust_fit(usual_left#+1.7FX#+1.1FX#,usual_right#); h:=12.3FY;
+covered_labrador_ear:=true; 
+   with_u:=true; 
+      letter_ha; 
+   with_u:=false;
+covered_labrador_ear:=false; 
+endchar;
+
+xbeginchar(oct"134",14.9FX#,18.9FY#,0); "\u nguu";
+adjust_fit(usual_left#+1.7FX#+1.1FX#,usual_right#); h:=12.3FY;
+covered_labrador_ear:=true; 
+   with_uu:=true; 
+      letter_ha; 
+   with_uu:=false;
+covered_labrador_ear:=false; 
+endchar;
+
+xbeginchar(oct"135",14.9FX#,18.9FY#,0); "\u ng";
+adjust_fit(usual_left#+1.7FX#+1.1FX#,usual_right#); h:=12.3FY;
+covered_labrador_ear:=true; 
+   virama:=true; 
+      letter_ha; 
+   virama:=false;
+covered_labrador_ear:=false; 
+endchar;
+
+xbeginchar(oct"136",14.9FX#,18.9FY#,0); "r\u nga";
+adjust_fit(usual_left#+1.7FX#+1.1FX#,usual_right#);
+covered_labrador_ear:=true; 
+   letter_ha; z49=(x4-.5FX,y7r+4FY); pre_r(49,52);
+   pickup shthin_pen; draw z52{down}...z7+(-.5FX,0){left};
+covered_labrador_ear:=false; 
+endchar;
+
+make_r_stroke(oct"137",14.9FX,.5shthin,(14.9FX,6FY)); %ga-like, bha, \'sa, ha
+
+xbeginchar(oct"140",15FX#,18.9FY#,0); "dva";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   covered_labrador_ear:=true; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc(80);
+         right_bulb:=false;
+      with_hbar:=false;
+   covered_labrador_ear:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"141",15FX#,18.9FY#,0); "dvi";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   covered_labrador_ear:=true; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_i := true;
+               generic_letter; big_arc(80);
+            with_i := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   covered_labrador_ear:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"142",15FX#,18.9FY#,0); "dv\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   covered_labrador_ear:=true; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_ii := true;
+               generic_letter; big_arc(80);
+            with_ii := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   covered_labrador_ear:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"143",15FX#,18.9FY#,0); "dvu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   covered_labrador_ear:=true; 
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_u := true;
+               generic_letter; big_arc(80);
+            with_u := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   covered_labrador_ear:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"144",15FX#,18.9FY#,0); "dv\=u";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   covered_labrador_ear:=true;
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            with_uu := true;
+               generic_letter; big_arc(80);
+            with_uu := false;
+         right_bulb:=false;
+      with_hbar:=false;
+   covered_labrador_ear:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"145",15FX#,18.9FY#,0); "dv";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   covered_labrador_ear:=true;
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc_virama(80);
+         right_bulb:=false;
+      with_hbar:=false;
+   covered_labrador_ear:=false;
+pirogue:=false;   
+endchar;
+
+xbeginchar(oct"146",15FX#,18.9FY#,0); "rdva";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+pirogue:=true; 
+   covered_labrador_ear:=true;
+      with_hbar:=false; 
+ 			     right_bulb:=false;
+            prec_by_r:=true;
+               generic_letter; big_arc(80);
+            prec_by_r:=false;
+         right_bulb:=false;
+      with_hbar:=false;
+   covered_labrador_ear:=false;
+pirogue:=false;   
+endchar;
+
+make_r_stroke(oct"147",15FX,.5shthin,(15FX,8.35FY)); %ca-like, \.ta, ma, va
+
+xbeginchar(oct"150",15FX#+shthin#,18.9FY#,0); "\u n\.da";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   handle:=false; 
+      with_hbar:=true;
+      covered_labrador_ear:=true; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc(80);
+         right_bulb:=false;
+      covered_labrador_ear:=false;
+      with_hbar:=false;
+   handle:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"151",15FX#+shthin#,18.9FY#,0); "\u n\.di";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   handle:=false; 
+      with_hbar:=true;
+      covered_labrador_ear:=true; 
+ 			     right_bulb:=false;
+            with_i := true;
+               generic_letter; big_arc(80);
+            with_i := false;
+         right_bulb:=false;
+      covered_labrador_ear:=false;
+      with_hbar:=false;
+   handle:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"152",15FX#+shthin#,18.9FY#,0); "\u n\.d\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   handle:=false; 
+      with_hbar:=true;
+      covered_labrador_ear:=true; 
+ 			     right_bulb:=false;
+            with_ii := true;
+               generic_letter; big_arc(80);
+            with_ii := false;
+         right_bulb:=false;
+      covered_labrador_ear:=false;
+      with_hbar:=false;
+   handle:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"153",15FX#+shthin#,18.9FY#,0); "\u n\.du";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   handle:=false; 
+      with_hbar:=true;
+      covered_labrador_ear:=true; 
+ 			     right_bulb:=false;
+            with_u := true;
+               generic_letter; big_arc(80);
+            with_u := false;
+         right_bulb:=false;
+      covered_labrador_ear:=false;
+      with_hbar:=false;
+   handle:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"154",15FX#+shthin#,18.9FY#,0); "\u n\.d\=u";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   handle:=false; 
+      with_hbar:=true;
+      covered_labrador_ear:=true; 
+ 			     right_bulb:=false;
+            with_uu := true;
+               generic_letter; big_arc(80);
+            with_uu := false;
+         right_bulb:=false;
+      covered_labrador_ear:=false;
+      with_hbar:=false;
+   handle:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"155",15FX#+shthin#,18.9FY#,0); "\u n\.d";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   handle:=false; 
+      with_hbar:=true;
+      covered_labrador_ear:=true; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc_virama(80);
+         right_bulb:=false;
+      covered_labrador_ear:=false;
+      with_hbar:=false;
+   handle:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"156",15FX#+shthin#,18.9FY#,0); "r\u n\.da";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   handle:=false; 
+      with_hbar:=true;
+      covered_labrador_ear:=true; 
+ 			     right_bulb:=false;
+            prec_by_r:=true;
+               generic_letter; big_arc(80);
+            prec_by_r:=false;
+         right_bulb:=false;
+      covered_labrador_ear:=false;
+      with_hbar:=false;
+   handle:=false;
+fuji:=false;   
+endchar;
+
+make_r_stroke(oct"157",15FX+shthin,.5shthin,(15FX+shthin,8.35FY)); %\.na-like,jha,\.da, dha
+
+xbeginchar(oct"160",15FX#,18.9FY#,0); "\u mba";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_boa:=true;
+      handle:=true; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc(80);
+         right_bulb:=false;
+      handle:=false;
+   left_boa:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"161",15FX#,18.9FY#,0); "\u mbi";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_boa:=true;
+      handle:=true; 
+ 			     right_bulb:=false;
+            with_i := true;
+               generic_letter; big_arc(80);
+            with_i := false;
+         right_bulb:=false;
+      handle:=false;
+   left_boa:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"017",15FX#,18.9FY#,0); "\u mb\=\i"; % --> r
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_boa:=true;
+      handle:=true; 
+ 			     right_bulb:=false;
+            with_ii := true;
+               generic_letter; big_arc(80);
+            with_ii := false;
+         right_bulb:=false;
+      handle:=false;
+   left_boa:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"163",15FX#,18.9FY#,0); "\u mbu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_boa:=true;
+      handle:=true; 
+ 			     right_bulb:=false;
+            with_u := true;
+               generic_letter; big_arc(80);
+            with_u := false;
+         right_bulb:=false;
+      handle:=false;
+   left_boa:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"164",15FX#,18.9FY#,0); "\u mb\=u";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_boa:=true;
+      handle:=true; 
+ 			     right_bulb:=false;
+            with_uu := true;
+               generic_letter; big_arc(80);
+            with_uu := false;
+         right_bulb:=false;
+      handle:=false;
+   left_boa:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"165",15FX#,18.9FY#,0); "\u mb";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_boa:=true;
+      handle:=true; 
+ 			     right_bulb:=false;
+            generic_letter; big_arc_virama(80);
+         right_bulb:=false;
+      handle:=false;
+   left_boa:=false;
+fuji:=false;   
+endchar;
+
+xbeginchar(oct"166",15FX#,18.9FY#,0); "r\u mba";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+fuji:=true; 
+   left_boa:=true;
+      handle:=true; 
+ 			     right_bulb:=false;
+            prec_by_r:=true;
+               generic_letter; big_arc(80);
+            prec_by_r:=false;
+         right_bulb:=false;
+      handle:=false;
+   left_boa:=false;
+fuji:=false;   
+endchar;
+
+make_r_stroke(oct"167",15FX,.5shthin,(15FX,8.35FY)); %ca-like, \.ta, ma, va
+
+xbeginchar(oct"170",14FX#,18.9FY#,0); "\u nja";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+special_right_bulb:=true;
+   covered_labrador_ear:=true;
+      generic_letter; 
+   covered_labrador_ear:=false;
+special_right_bulb:=false;
+endchar;
+
+xbeginchar(oct"171",14FX#,18.9FY#,0); "\u nji";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   special_right_bulb:=true;
+      covered_labrador_ear:=true;
+         generic_letter; 
+      covered_labrador_ear:=false;
+   special_right_bulb:=false;
+with_i:=false;
+endchar;
+
+xbeginchar(oct"172",14FX#,18.9FY#,0); "\u njii";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   special_right_bulb:=true;
+      covered_labrador_ear:=true;
+         generic_letter; 
+      covered_labrador_ear:=false;
+   special_right_bulb:=false;
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"173",14FX#,18.9FY#,0); "\u nju";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true; 
+   special_right_bulb:=true;
+      covered_labrador_ear:=true;
+         generic_letter; 
+      covered_labrador_ear:=false;
+   special_right_bulb:=false;
+with_u:=false;
+endchar;
+
+xbeginchar(oct"174",14FX#,18.9FY#,0); "\u njuu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true; 
+   special_right_bulb:=true;
+      covered_labrador_ear:=true;
+         generic_letter; 
+      covered_labrador_ear:=false;
+   special_right_bulb:=false;
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"175",14FX#,18.9FY#,0); "\u nj";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true; 
+   special_right_bulb:=true;
+      covered_labrador_ear:=true;
+         generic_letter; 
+      covered_labrador_ear:=false;
+   special_right_bulb:=false;
+virama:=false;
+endchar;
+
+xbeginchar(oct"176",14FX#,18.9FY#,0); "r\u nja";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true; 
+   special_right_bulb:=true;
+      covered_labrador_ear:=true;
+         generic_letter; 
+      covered_labrador_ear:=false;
+   special_right_bulb:=false;
+prec_by_r:=false;
+endchar;
+
+make_r_stroke(oct"177",14FX,.5shthin,(14FX,4.7FY)); %cha-like, ja-like, pa, \.sa
+
+xbeginchar(oct"200",19.1FX#,18.9FY#,0); "ka";
+adjust_fit(usual_left#,usual_right#);
+not_all_of_it_b:=true; hdecalage:=5FX; vdecalage:=12.3FY;
+   covered_labrador_ear:=true;
+      letter_k((0,0)); temp_shape:=currentpicture;
+   covered_labrador_ear:=false;
+not_all_of_it:=false;
+endchar;
+%%%%%%%NOT TO BE SEPARATED%%%%%%%
+xbeginchar(oct"200",9FX#,18.9FY#,6.3FY#); "\~na";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+da_letter;
+addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+endchar;
+
+xbeginchar(oct"201",9FX#,18.9FY#,6.3FY#); "\~n\=a";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_a:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_a:=false;
+endchar;
+
+xbeginchar(oct"202",9FX#,18.9FY#,6.3FY#); "\~n<a-umlaut>";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_aa:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_aa:=false;
+endchar;
+
+xbeginchar(oct"203",9FX#,18.9FY#,6.3FY#); "\~n\=<a-umlaut>";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_aaa:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_aaa:=false;
+endchar;
+
+xbeginchar(oct"204",9FX#,18.9FY#,6.3FY#); "\~ni";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_i:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_i:=false;
+endchar;
+
+xbeginchar(oct"205",9FX#,18.9FY#,6.3FY#); "\~n\=\i";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"206",9FX#,18.9FY#,6.3FY#); "\~nu";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_u:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_u:=false;
+endchar;
+
+xbeginchar(oct"207",9FX#,18.9FY#,6.3FY#); "\~n\=u";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_uu:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"210",9FX#,18.9FY#,6.3FY#); "\~n\.r";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_r:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_r:=false;
+endchar;
+
+xbeginchar(oct"211",9FX#+4.15FX#,18.9FY#,6.3FY#); "\~n\=\.r";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_rr:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+with_rr:=false;
+endchar;
+
+xbeginchar(oct"212",9FX#,18.9FY#,6.3FY#); "\~n\=o";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#+.7virama_width#-shthin#); h:=12.3FY;
+with_a:=true;
+   virama:=true;
+      da_letter;
+      addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+   virama:=false;
+with_a:=false;
+endchar;
+
+xbeginchar(oct"213",9FX#,18.9FY#,6.3FY#); "\~n";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+virama:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+virama:=false;
+endchar;
+
+xbeginchar(oct"214",9FX#,18.9FY#,6.3FY#); "r\~na";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+prec_by_r:=true;
+   da_letter;
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+prec_by_r:=false;
+endchar;
+
+xbeginchar(oct"215",9FX#,18.9FY#,6.3FY#); "\~nra";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"216",9FX#,18.9FY#,6.3FY#); "\~nri";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_i:=true;
+   without_tail:=true; 
+      da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+      addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+   without_tail:=false; 
+with_i:=false;
+endchar;
+
+xbeginchar(oct"217",9FX#,18.9FY#,6.3FY#); "\~nr\=\i";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   without_tail:=true; 
+      da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+      addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+   without_tail:=false; 
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"220",9FX#,18.9FY#,6.3FY#); "\~nr";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#); h:=12.3FY;
+virama:=true;
+   without_tail:=true; 
+      da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+      addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+   without_tail:=false; 
+virama:=false;
+endchar;
+
+xbeginchar(oct"221",9FX#,18.9FY#,6.3FY#); "\~na + ya stroke";
+adjust_fit(usual_left#+13.7FX#-shthin#,usual_right#+5.8FX#); h:=12.3FY;
+da_ya_stroke; 
+without_tail := true; 
+   da_letter; 
+   addto currentpicture also temp_shape shifted (-13.7FX+shthin,0);
+without_tail := false;
+endchar;
+
+xbeginchar(oct"230",9FX#,18.9FY#,6.3FY#); "da";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+da_letter;
+endchar;
+
+xbeginchar(oct"231",9FX#,18.9FY#,6.3FY#); "d\=a";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_a:=true;
+   da_letter;
+with_a:=false;
+endchar;
+
+xbeginchar(oct"232",9FX#,18.9FY#,6.3FY#); "d<a-umlaut>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_aa:=true;
+   da_letter;
+with_aa:=false;
+endchar;
+
+xbeginchar(oct"233",9FX#,18.9FY#,6.3FY#); "d\=<a-umlaut>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_aaa:=true;
+   da_letter;
+with_aaa:=false;
+endchar;
+
+xbeginchar(oct"234",9FX#,18.9FY#,6.3FY#); "di";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true;
+   da_letter;
+with_i:=false;
+endchar;
+
+xbeginchar(oct"235",9FX#,18.9FY#,6.3FY#); "d\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   da_letter;
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"236",9FX#,18.9FY#,6.3FY#); "du";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true;
+   da_letter;
+with_u:=false;
+endchar;
+
+xbeginchar(oct"237",9FX#,18.9FY#,6.3FY#); "d\=u";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true;
+   da_letter;
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"240",9FX#,18.9FY#,6.3FY#); "d\.r";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_r:=true;
+   da_letter;
+with_r:=false;
+endchar;
+
+xbeginchar(oct"241",9FX#+4.15FX#,18.9FY#,6.3FY#); "d\=\.r";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_rr:=true;
+   da_letter;
+with_rr:=false;
+endchar;
+
+xbeginchar(oct"242",9FX#,18.9FY#,6.3FY#); "d\=o";
+adjust_fit(usual_left#,usual_right#+.5virama_width#-shthin#); h:=12.3FY;
+with_a:=true;
+   virama:=true;
+      da_letter;
+   virama:=false;
+with_a:=false;
+endchar;
+
+xbeginchar(oct"243",9FX#,18.9FY#,6.3FY#); "d";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true;
+   da_letter;
+virama:=false;
+endchar;
+
+xbeginchar(oct"244",9FX#,18.9FY#,6.3FY#); "rda";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true;
+   da_letter;
+prec_by_r:=false;
+endchar;
+
+xbeginchar(oct"245",9FX#,18.9FY#,6.3FY#); "dra";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"246",9FX#,18.9FY#,6.3FY#); "dri";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   with_i:=true;
+      da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+   with_i:=false;
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"247",9FX#,18.9FY#,6.3FY#); "dr\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   with_ii:=true;
+      da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+   with_ii:=false;
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"250",9FX#,18.9FY#,6.3FY#); "dr";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   virama:=true;
+      da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+   virama:=false;
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"251",9FX#,18.9FY#,6.3FY#); "da + ya stroke";
+adjust_fit(usual_left#,usual_right#+5.8FX#); h:=12.3FY;
+da_ya_stroke; 
+without_tail := true; 
+   da_letter; 
+without_tail := false;
+endchar;
+
+xbeginchar(oct"260",9FX#,18.9FY#,6.3FY#); "\u nda";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+covered_labrador_ear:=true; 
+   da_letter;
+covered_labrador_ear:=false; 
+endchar;
+
+xbeginchar(oct"261",9FX#,18.9FY#,6.3FY#); "\u nd\=a";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_a:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_a:=false;
+endchar;
+
+xbeginchar(oct"262",9FX#,18.9FY#,6.3FY#); "\u nd<a-umlaut>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_aa:=true;
+   da_letter;
+with_aa:=false;
+endchar;
+
+xbeginchar(oct"263",9FX#,18.9FY#,6.3FY#); "\u nd\=<a-umlaut>";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_aaa:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_aaa:=false;
+endchar;
+
+xbeginchar(oct"264",9FX#,18.9FY#,6.3FY#); "\u ndi";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_i:=false;
+endchar;
+
+xbeginchar(oct"265",9FX#,18.9FY#,6.3FY#); "\u nd\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"266",9FX#,18.9FY#,6.3FY#); "\u ndu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_u:=false;
+endchar;
+
+xbeginchar(oct"267",9FX#,18.9FY#,6.3FY#); "\u nd\=u";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"270",9FX#,18.9FY#,6.3FY#); "\u nd\.r";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_r:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_r:=false;
+endchar;
+
+xbeginchar(oct"271",9FX#+4.15FX#,18.9FY#,6.3FY#); "\u nd\=\.r";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_rr:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+with_rr:=false;
+endchar;
+
+xbeginchar(oct"272",9FX#,18.9FY#,6.3FY#); "\u nd\=o";
+adjust_fit(usual_left#,usual_right#+.7virama_width#-shthin#); h:=12.3FY;
+with_a:=true;
+   virama:=true;
+      covered_labrador_ear:=true; 
+         da_letter;
+      covered_labrador_ear:=false; 
+   virama:=false;
+with_a:=false;
+endchar;
+
+xbeginchar(oct"273",9FX#,18.9FY#,6.3FY#); "\u nd";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+virama:=false;
+endchar;
+
+xbeginchar(oct"274",9FX#,18.9FY#,6.3FY#); "r\u nda";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true;
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+prec_by_r:=false;
+endchar;
+
+xbeginchar(oct"275",9FX#,18.9FY#,6.3FY#); "\u ndra";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   covered_labrador_ear:=true; 
+      da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+   covered_labrador_ear:=false; 
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"276",9FX#,18.9FY#,6.3FY#); "\u ndri";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   with_i:=true;
+      covered_labrador_ear:=true; 
+         da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+      covered_labrador_ear:=false; 
+   with_i:=false;
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"277",9FX#,18.9FY#,6.3FY#); "\u ndr\=\i";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   with_ii:=true;
+      covered_labrador_ear:=true; 
+         da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+      covered_labrador_ear:=false; 
+   with_ii:=false;
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"300",9FX#,18.9FY#,6.3FY#); "\u ndr";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+without_tail:=true; 
+   virama:=true;
+      covered_labrador_ear:=true; 
+         da_letter; xwith_r(.5shthin,(9FX,1.7FY));
+      covered_labrador_ear:=false; 
+   virama:=false;
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"301",9FX#,18.9FY#,6.3FY#); "\u nda + ya stroke";
+adjust_fit(usual_left#,usual_right#+5.8FX#); h:=12.3FY;
+da_ya_stroke; 
+without_tail:=true; 
+   covered_labrador_ear:=true; 
+      da_letter;
+   covered_labrador_ear:=false; 
+without_tail:=false; 
+endchar;
+
+xbeginchar(oct"310",14FX#,18.9FY#,0); "ya stroke";
+adjust_fit(usual_left#-4FX#,usual_right#); h:=12.3FY;
+ya_stroke;
+endchar;
+
+xbeginchar(oct"311",14FX#,18.9FY#,0); "ya stroke+i";
+adjust_fit(usual_left#-4FX#,usual_right#); h:=12.3FY;
+with_i:=true;
+   ya_stroke;
+with_i:=false;
+endchar;
+
+xbeginchar(oct"312",14FX#,18.9FY#,0); "ya stroke+ii";
+adjust_fit(usual_left#-4FX#,usual_right#); h:=12.3FY;
+with_ii:=true;
+   ya_stroke;
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"313",14FX#,18.9FY#,0); "ya stroke+u";
+adjust_fit(usual_left#-4FX#,usual_right#); h:=12.3FY;
+with_u:=true;
+   ya_stroke;
+with_u:=false;
+endchar;
+
+xbeginchar(oct"314",14FX#,18.9FY#,0); "ya stroke+uu";
+adjust_fit(usual_left#-4FX#,usual_right#); h:=12.3FY;
+with_uu:=true;
+   ya_stroke;
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"315",14FX#,18.9FY#,0); "ya stroke+virama";
+adjust_fit(usual_left#-4FX#,usual_right#); h:=12.3FY;
+virama:=true;
+   ya_stroke;
+virama:=false;
+endchar;
+
+xbeginchar(oct"316",14FX#,18.9FY#,0); "r+ya stroke";
+adjust_fit(usual_left#-4FX#,usual_right#); h:=12.3FY;
+prec_by_r:=true;
+   ya_stroke;
+prec_by_r:=false;
+endchar;
+
+make_r_stroke(oct"317",14FX,.5shthin+4FX,(14FX,4.7FY)); %ya-stroke
+
+xbeginchar(oct"320",14FX#,18.9FY#,0); "fa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+letter_fa;
+endchar;
+
+xbeginchar(oct"321",14FX#,18.9FY#,0); "fi";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   letter_fa; 
+with_i:=false;
+endchar;
+
+xbeginchar(oct"322",14FX#,18.9FY#,0); "fii";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   letter_fa; 
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"323",14FX#,18.9FY#,0); "fu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true; 
+   letter_fa; 
+with_u:=false;
+endchar;
+
+xbeginchar(oct"324",14FX#,18.9FY#,0); "fuu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true; 
+   letter_fa; 
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"325",14FX#,18.9FY#,0); "f";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true; 
+   letter_fa; 
+virama:=false;
+endchar;
+
+xbeginchar(oct"326",14FX#,18.9FY#,0); "rfa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true; 
+   letter_fa; 
+prec_by_r:=false;
+endchar;
+
+make_r_stroke(oct"327",14FX,.5shthin,(14FX,6.4FY)); %fa
+
+xbeginchar(oct"330",14FX#,18.9FY#,0); "variant .sa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+variant_letter_dot_s:=true;
+   right_bulb:=true;
+      generic_letter; 
+   right_bulb:=false;
+variant_letter_dot_s:=false;
+endchar;
+
+xbeginchar(oct"331",14FX#,18.9FY#,0); "variant .si";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_i:=true; 
+   variant_letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   variant_letter_dot_s:=false;
+with_i:=false;
+endchar;
+
+xbeginchar(oct"332",14FX#,18.9FY#,0); "variant .sii";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_ii:=true; 
+   variant_letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   variant_letter_dot_s:=false;
+with_ii:=false;
+endchar;
+
+xbeginchar(oct"333",14FX#,18.9FY#,0); "variant .su";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_u:=true; 
+   variant_letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   variant_letter_dot_s:=false;
+with_u:=false;
+endchar;
+
+xbeginchar(oct"334",14FX#,18.9FY#,0); "variant .suu";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+with_uu:=true; 
+   variant_letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   variant_letter_dot_s:=false;
+with_uu:=false;
+endchar;
+
+xbeginchar(oct"335",14FX#,18.9FY#,0); "variant .s";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+virama:=true; 
+   variant_letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   variant_letter_dot_s:=false;
+virama:=false;
+endchar;
+
+xbeginchar(oct"336",14FX#,18.9FY#,0); "variant r.sa";
+adjust_fit(usual_left#,usual_right#); h:=12.3FY;
+prec_by_r:=true; 
+   variant_letter_dot_s:=true;
+      right_bulb:=true;
+         generic_letter; 
+      right_bulb:=false;
+   variant_letter_dot_s:=false;
+prec_by_r:=false;
+endchar;
+
+make_r_stroke(oct"337",14FX,.5shthin,(14FX,4.7FY)); %cha-like, ja-like, pa, \.sa
+
+make_fake_character(31);
+make_fake_character(39);
+make_fake_character(45);
+make_fake_character(87);
+make_fake_character(114);
+
+make_regular_ligatures(21);
+make_regular_ligatures(29);
+make_regular_ligatures(37);
+make_specific_ligatures(40,41,42,43,44,14,46,47);
+make_regular_ligatures(53);
+make_regular_ligatures(61);
+make_regular_ligatures(69);
+make_regular_ligatures(77);
+make_regular_ligatures(85);
+make_regular_ligatures(93);
+make_regular_ligatures(101);
+make_regular_ligatures(109);
+make_specific_ligatures(112,113,15,115,116,117,118,119);
+make_regular_ligatures(125);
+make_regular_ligatures(205);
+make_regular_ligatures(213);
+make_regular_ligatures(221);
+make_da_like_ligatures(139);
+make_da_like_ligatures(163);
+make_da_like_ligatures(187);
+
+ligtable "r": 21 =: 22, 29 =: 30, 37 =: 38, 14 =: 46, 53 =: 54, 61 =: 62,
+69 =: 70, 77 =: 78, 85 =: 86, 93 =: 94, 101 =: 102, 109 =: 110, 117 =: 118,
+125 =: 126, 133 =: 134, 139 =: 140, 163 =: 164, 187 =: 188, 205 =: 206,
+213 =: 214, 221 =: 222;
+
+
+
+endinput;
