@@ -1,0 +1,162 @@
+\begin{thebibliography}{26}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Ansaldo(2011{\natexlab{\emph{a}}})}]{Ansaldo2011a}
+Ansaldo, U., 2011{\natexlab{\emph{a}}}.
+\newblock \enquote{Sri Lanka Malay and its Lankan adstrates.}
+\newblock In \emph{Creoles, their Substrates, and Language Typology}, edited by
+  C.~Lefebvre. Amsterdam: John Benjamins, 367--382.
+
+\bibitem[{Ansaldo \& Nordhoff.(2009)}]{AnsaldoEtAl2009}
+Ansaldo, U. \& Nordhoff., S., 2009.
+\newblock \enquote{Complexity and the Age of Languages.}
+\newblock In \emph{Complex Processes in New Languages}, edited by E.~Aboh \&
+  N.~Smith. Amsterdam: John Benjamins Publishers, 345--363.
+
+\bibitem[{Ansaldo(2005)}]{Ansaldo2005ms}
+Ansaldo, Umberto, 2005.
+\newblock \enquote{Typological admixture in Sri Lanka Malay. The case of
+  Kirinda Java.}
+\newblock Unpublished manuscript.
+
+\bibitem[{Ansaldo(2008)}]{Ansaldo2008genesis}
+Ansaldo, Umberto, 2008.
+\newblock \enquote{Sri Lanka Malay revisited: Genesis and classification.}
+\newblock In \emph{A world of many voices: Lessons from documented endangered
+  languages}, edited by Arienne Dwyer, D.~Harrison, \& David Rood. Amsterdam,
+  Philadelphia: John Benjamins., 13--42.
+
+\bibitem[{Ansaldo(2011{\natexlab{\emph{b}}})}]{Ansaldo2011b}
+Ansaldo, Umberto, 2011{\natexlab{\emph{b}}}.
+\newblock \enquote{Metatypy in Sri Lanka Malay.}
+\newblock In \emph{Annual Review of South Asian Languages and Linguistics},
+  edited by Rajendra Singh \& Ghanshyam Sharma. Berlin: Mouton De Gruyter,
+  3--15.
+
+\bibitem[{Deumert \& Durrleman(2006)}]{DeumertEtAlEd2006}
+Deumert, Ana \& Durrleman, Stephanie (eds.), 2006.
+\newblock \emph{Structure and Variation in Language Contact}.
+\newblock Amsterdam: John Benjamins.
+
+\bibitem[{Hussainmiya(1987)}]{Hussainmiya1987}
+Hussainmiya, B.~A., 1987.
+\newblock \emph{Lost cousins: The Malays of Sri Lanka}.
+\newblock Bangi: Institut Bahasa, Kesusasteraan dan Kebudayaan Melayu.
+
+\bibitem[{Hussainmiya(1990)}]{Hussainmiya1990}
+Hussainmiya, B.~A., 1990.
+\newblock \emph{Orang Rejimen: The Malays of Sri Lanka}.
+\newblock Bangi: Universiti Kebangsaan Malaysia, 1st edition.
+
+\bibitem[{Hussainmiya(2008)}]{Hussainmiya2008}
+Hussainmiya, B.~A., 2008.
+\newblock \emph{Orang Rejimen: The Malays of Sri Lanka}.
+\newblock Bangi: Universiti Kebangsaan Malaysia, 2nd edition.
+
+\bibitem[{Lim \& Ansaldo(2006)}]{LimEtAl2006}
+Lim, Lisa \& Ansaldo, Umberto, 2006.
+\newblock \enquote{Keeping Kirinda vital: The endangerment-empowerment dilemma
+  in the documentation of Sri Lanka Malay.}
+\newblock \emph{Amsterdam Centre for Language \& Cognition Working Papers}
+  \emph{1}:51--66.
+
+\bibitem[{Lim \& Ansaldo(2007)}]{LimEtAl2007}
+Lim, Lisa \& Ansaldo, Umberto, 2007.
+\newblock \enquote{Identity alignment in the multilingual space: The Malays of
+  Sri Lanka.}
+\newblock In \emph{Linguistic identity in multilingual postcolonial spaces},
+  edited by E.~Anchimbe. Cambridge: Cambridge Scholars Press, 218--243.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009}
+Nordhoff, Sebastian, 2009.
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam, Utrecht.
+\newline\urlprefix\url{http://www.lotpublications.nl/publish/articles/003744/b%
+ookpart.pdf}
+
+\bibitem[{Percival(1803)}]{Percival1803}
+Percival, Robert, 1803.
+\newblock \emph{An account of the island of Ceylon}.
+\newblock London.
+
+\bibitem[{Rassool(this volume)}]{Rassooltv}
+Rassool, Romola, this volume.
+\newblock \enquote{Issues of power and privilege in the maintenance of Sri
+  Lanka Malay: A sociolinguistic analysis.}
+
+\bibitem[{Ricci(2006)}]{Ricci2006}
+Ricci, R., 2006.
+\newblock \emph{Translating Conversion in South and Southeast Asia: The Islamic
+  Book of one thousand questions in Javanese, Tamil and Malay}.
+\newblock Ph.D. thesis, University of Michigan.
+
+\bibitem[{Schweitzer(1931[1680])}]{Schweitzer1680}
+Schweitzer, C, 1931[1680].
+\newblock \emph{Reise nach Java und Ceylon}.
+\newblock The Hague: Nijhoff.
+
+\bibitem[{Shu'ayb~Alim(1993)}]{Shuayb1993}
+Shu'ayb~Alim, T., 1993.
+\newblock \emph{Arabic, Arwi and Persian in Sarandib and Tamil Nadu}.
+\newblock Chennai: Imamul Arus Trust.
+
+\bibitem[{Slomanson(2009)}]{Slomanson2009}
+Slomanson, P., 2009.
+\newblock \enquote{Morphological finiteness as increased complexity in negation
+  systems.}
+\newblock In \emph{Complex Processes in New Languages}, edited by E.~Aboh \&
+  N.~Smith. Amsterdam: John Benjamins Publishers.
+
+\bibitem[{Slomanson(2011)}]{Slomanson2011}
+Slomanson, P., 2011.
+\newblock \enquote{Dravidian features in the Sri Lankan Malay verb.}
+\newblock In \emph{Creoles, their Substrates, and Language Typology}, edited by
+  C.~Lefebvre. Amsterdam: John Benjamins.
+
+\bibitem[{Slomanson(2006)}]{Slomanson2006cll}
+Slomanson, Peter, 2006.
+\newblock \enquote{Sri Lankan Malay morphosyntax: Lankan or Malay?}
+\newblock In  \cite{DeumertEtAlEd2006}, 135--158.
+
+\bibitem[{Slomanson(2007)}]{Slomanson2007}
+Slomanson, Peter, 2007.
+\newblock \enquote{On the Areal Character of Sri Lankan Malay Negation.}
+\newblock Paper presented at the summer meeting of the Society for Pidgin and
+  Creole Linguistics. University of Amsterdam.
+
+\bibitem[{Slomanson(2008)}]{Slomanson2008lingua}
+Slomanson, Peter, 2008.
+\newblock \enquote{The perfect construction and complexity drift in Sri Lankan
+  Malay.}
+\newblock \emph{Lingua} \emph{118}(10):1640--1655.
+
+\bibitem[{Smith(2003)}]{Smith2003timing}
+Smith, Ian~R., 2003.
+\newblock \enquote{The provenance and timing of substrate influence in Sri
+  Lankan Malay; Definiteness, animacy and accusative case marking.}
+\newblock Paper presented at the South Asian Language Analysis Roundtable
+  XXIII, Austin, Texas.
+
+\bibitem[{Smith \& Paauw(2006)}]{SmithEtAl2006cll}
+Smith, Ian~R. \& Paauw, S., 2006.
+\newblock \enquote{Sri Lanka Malay: Creole or convert.}
+\newblock In  \cite{DeumertEtAlEd2006}, 159--182.
+
+\bibitem[{Smith et~al.(2004)Smith, Paauw, \& Hussainmiya}]{SmithEtAl2004}
+Smith, Ian~R., Paauw, S., \& Hussainmiya, B.~A., 2004.
+\newblock \enquote{Sri Lanka Malay: the state of the art.}
+\newblock \emph{Yearbook of South Asian Languages} \emph{2004}:197--215.
+
+\bibitem[{Ward(2009)}]{Ward2009}
+Ward, K., 2009.
+\newblock \enquote{Networks of Empire: Forced Migration in the Dutch East India
+  Company.}
+
+\end{thebibliography}

@@ -1,0 +1,126 @@
+\documentclass[a4paper]{book}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%priorized pkgs
+\usepackage{supertabular}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+%normal pkgs
+
+\usepackage{subfigure}
+\usepackage{soul}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{gb4n,tipa,lingsty,ipashortcuts}
+\usepackage{rotating}
+\usepackage[authoryear]{natbib}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+\setlength{\bibsep}{0.05cm}
+\usepackage{hhline}
+\usepackage{hyperref}
+\usepackage{url} 
+\usepackage{multirow,multicol} 
+\usepackage{lingsty,ipashortcuts}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{rotating}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue}
+
+
+\newcommand\textsubscript[1]{\ensuremath{{}_{\rm{#1}}}} 
+\newcommand{\phonemtrs}[2]{/\textipa{#1}/ `#2'}
+\newcommand{\imgpath}{} 
+\newenvironment{abstract}{{\centering\bf Abstract}\begin{quote}}{\end{quote}}
+\newcommand{\setmin}{\ensuremath{\backslash}}
+\setcounter{tocdepth}{0}
+
+\newcommand{\chapterauthor}[2]{\begin{center}#1\end{center} \begin{center} \textit{#2}\end{center}}
+\providecommand{\BIBand}{\&}
+% \newcommand{\chapterauthor}[1]{}
+% \newcommand{\todo}[1]{{\Huge\bf !!! #1 !!!}}
+\newcommand{\todo}[1]{} 
+     
+\author{ed. Sebastian Nordhoff}
+\title{The genesis of Sri Lanka Malay}
+
+
+
+
+\begin{document}
+\glossSTDmode
+\maketitle
+\frontmatter
+\newpage
+\input{toc.tex}
+\newpage
+\input{listoftables.tex} 
+\newpage
+\input{listoffigures.tex} 
+\newpage
+\input{biosketches.tex}
+\newpage
+\input{acknowledgments.tex}
+
+% \section*{Abbreviations}
+\input{abbreviations.tex}
+
+\mainmatter
+\part{Overview}
+
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./introduction/} 
+\input{introduction/introduction.tex}
+\input{introduction/main.bbl}
+
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./nordhoffgrammar/} 
+\input{nordhoffgrammar/nordhoffgrammar.tex}
+\input{nordhoffgrammar/main.bbl}
+
+\part{Sociology, history, and demography} 
+\renewcommand{\imgpath}{./bakker/} 
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\input{bakker/bakker.tex}
+\input{bakker/main.bbl}
+
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./slomanson/}
+\input{slomanson/slomanson.tex}
+\input{slomanson/main.bbl}
+
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\input{rassool/rassool.tex}
+\input{rassool/main.bbl}
+
+\part{Language contact}
+  
+\input{paauw/paauw.tex}
+\input{paauw/main.bbl}
+ 
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\input{gair/gair.tex}
+\input{gair/main.bbl}
+ 
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\renewcommand{\imgpath}{./smith/}
+\input{smith/smith.tex}
+\input{smith/main.bbl}
+ 
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\input{jaffar/jaffar.tex}
+\input{jaffar/main.bbl}
+ 
+\setcounter{exx}{0}\setcounter{footnote}{0}
+\input{nordhoffmultilayer/nordhoffmultilayer.tex}
+\input{nordhoffmultilayer/main.bbl}
+
+\backmatter
+
+\input{listofcontributors.tex}
+% index
+
+% \makeindex
+\end{document}
+% \makeindex
+\end{document}

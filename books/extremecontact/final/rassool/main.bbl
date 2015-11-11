@@ -1,0 +1,448 @@
+\begin{thebibliography}{75}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abley(2003)}]{Abley2003}
+Abley, M., 2003.
+\newblock \emph{Spoken here. Travels among threatened languages}.
+\newblock Toronto: Random House of Canada.
+
+\bibitem[{Adelaar(1991)}]{Adelaar1991}
+Adelaar, K.~A., 1991.
+\newblock \enquote{Some Notes on the Origin of Sri Lanka Malay.}
+\newblock In \emph{Papers in Austronesian Linguistics}, edited by
+  H.~Steinhauer. Canberra: Australian National University, 23--37.
+
+\bibitem[{Adelaar \& Prentice(1996)}]{AdelaarEtAl1996}
+Adelaar, K.~A. \& Prentice, D.~J., 1996.
+\newblock \enquote{Malay: its History, Role and Spread.}
+\newblock In \emph{Atlas of Languages of Intercultural Communication in the
+  Pacific, Asia and the Americas}, edited by Stephen~A. Wurm, M\"uhlh\"ausler
+  Peter, \& Darrell~T. Tryon. Berlin: Mouton de Gruyter, 673--693.
+
+\bibitem[{Ansaldo(2006)}]{AnsaldoEtAl2006}
+Ansaldo, L., U.and~Lim, 2006.
+\newblock \enquote{Globalization, empowerment and the periphery: the Malays of
+  Sri Lanka.}
+
+\bibitem[{Ansaldo(2008)}]{Ansaldo2008genesis}
+Ansaldo, Umberto, 2008.
+\newblock \enquote{Sri Lanka Malay revisited: Genesis and classification.}
+\newblock In \emph{A world of many voices: Lessons from documented endangered
+  languages}, edited by Arienne Dwyer, D.~Harrison, \& David Rood. Amsterdam,
+  Philadelphia: John Benjamins., 13--42.
+
+\bibitem[{Ansaldo(2009)}]{Ansaldo2009book}
+Ansaldo, Umberto, 2009.
+\newblock \emph{Contact languages, Ecology and Evolution in Asia}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Barth(1969)}]{Barth1969}
+Barth, F., 1969.
+\newblock \enquote{Introduction.}
+\newblock In \emph{The Social Organisation of Culture Difference}. Boston,MA:
+  Little Brown \& Co., 9--38.
+
+\bibitem[{Bichsel-Stettler(1989)}]{Bichsel1989}
+Bichsel-Stettler, Anne, 1989.
+\newblock \emph{Aspects of the Sri Lanka Malay Community and their Language}.
+\newblock Master's thesis, University of Bern.
+
+\bibitem[{Blackledge \& Pavlenko(2004)}]{BlackledgeEtAl2004}
+Blackledge, A. \& Pavlenko, A. (eds.), 2004.
+\newblock \emph{Negotiation of identities in multlingual contexts}.
+\newblock Clevedon; Buffalo: Multilingual Matters.
+
+\bibitem[{Bourdieu(1977)}]{Bourdieu1977}
+Bourdieu, P., 1977.
+\newblock \enquote{Outline of a theory of practice.}
+
+\bibitem[{Bourdieu(1982)}]{Bourdieu1982}
+Bourdieu, P., 1982.
+\newblock \emph{Ce que parler veut dire : l'\'economie des \'echanges
+  linguistiques}.
+\newblock Paris: Fayard.
+
+\bibitem[{Bourdieu(1991)}]{Bourdieu1991}
+Bourdieu, P., 1991.
+\newblock \emph{Language and symbolic power}.
+\newblock Cambridge: Polity Press in association with Basil Blackwell.
+
+\bibitem[{Bucholtz \& Hall(2004)}]{BucholtzEtAl2004}
+Bucholtz, M. \& Hall, K., 2004.
+\newblock \enquote{Language and Identity.}
+\newblock In \emph{A Companion to Linguistic Anthropology}, edited by
+  A.~Duranti. Maddem, MA;Oxford,UK: Basil Blackwell, 369--394.
+
+\bibitem[{Crystal(2000)}]{Crystal2000}
+Crystal, D., 2000.
+\newblock \emph{Language death}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Dalby(2003)}]{Dalby2003}
+Dalby, A., 2003.
+\newblock \emph{Language in danger. How language loss threatens our future}.
+\newblock Harmondsworth: Penguin.
+
+\bibitem[{Deumert \& Durrleman(2006)}]{DeumertEtAlEd2006}
+Deumert, Ana \& Durrleman, Stephanie (eds.), 2006.
+\newblock \emph{Structure and Variation in Language Contact}.
+\newblock Amsterdam: John Benjamins.
+
+\bibitem[{Dharmadasa(2007)}]{Dharmadasa2007}
+Dharmadasa, K. N.~O., 2007.
+\newblock \enquote{Sri Lanka.}
+\newblock In \emph{Language and National Identity in Asia}, edited by
+  A.~Simpson. Oxford, New York: Oxford University Press, 116--138.
+
+\bibitem[{Eastman(1984)}]{Eastman1984}
+Eastman, C., 1984.
+\newblock \enquote{Language, Ethnic Identity and Change.}
+\newblock In \emph{Linguistic Minorities, Policies and Pluralism}, edited by
+  J.~Edwards. London: Academic Press, 259--276.
+
+\bibitem[{Edwards(1985)}]{Edwards1985}
+Edwards, J., 1985.
+\newblock \emph{Language, Society and Identity}.
+\newblock Oxford: Basil Blackwell.
+
+\bibitem[{Edwards(2001)}]{Edwards2001}
+Edwards, J., 2001.
+\newblock \enquote{The Ecology of Language Revival.}
+\newblock \emph{Current Issues in Language Planning} \emph{2}:231--241.
+
+\bibitem[{Edwards(1994)}]{Edwards1994}
+Edwards, John, 1994.
+\newblock \emph{Multilingualism}.
+\newblock London and New York: Routledge.
+
+\bibitem[{Fairclough(1989)}]{Fairclough1989}
+Fairclough, Norman, 1989.
+\newblock \emph{Language and Power}.
+\newblock London: Longman.
+
+\bibitem[{Fasold(1984)}]{Fasold1984}
+Fasold, R., 1984.
+\newblock \emph{The sociolinguistics of society}.
+\newblock Oxford, New York: Blackwell.
+
+\bibitem[{Fishman(1991)}]{Fishman1991}
+Fishman, J., 1991.
+\newblock \emph{Reversing language shift}.
+\newblock Celevdon, Avon: Multilingual Matters.
+
+\bibitem[{Florey(2005)}]{Florey2005}
+Florey, M., 2005.
+\newblock \enquote{Language shift and endangerment.}
+\newblock In \emph{The Austronesian Languages of Asia and Madagascar}, edited
+  by K.~Alexander Adelaar \& Nikolaus~P. Himmelmann. London, New York:
+  Routledge, 43--64.
+
+\bibitem[{Freeland \& Patrick(2004)}]{FreelandEtAl2004}
+Freeland, J. \& Patrick, D., 2004.
+\newblock \enquote{Language Rights and Language Survival: Sociolinguistic and
+  sociocultural perspectives.}
+\newblock In \emph{Language Rights and Language Survival}, edited by
+  J.~Freeland \& D.~Patrick. Manchester; Northampton: St. Jerome Publishing,
+  1--33.
+
+\bibitem[{Heller(1982)}]{Heller1982}
+Heller, M., 1982.
+\newblock \enquote{Negotiations of language choice in Montreal.}
+\newblock In \emph{Language and social identity}, edited by J.~Gumperz.
+  Cambridge, New York: Cambridge University Press, 108--118.
+
+\bibitem[{Heller(1995)}]{Heller1995}
+Heller, M., 1995.
+\newblock \enquote{Choice, Social Institutions and Symbolic Domination.}
+\newblock \emph{Language in Society} \emph{24}:373--405.
+
+\bibitem[{Heller(1999)}]{Heller1999}
+Heller, M., 1999.
+\newblock \emph{Linguistic Minorities and Modernity: A Sociolinguistic
+  Ethnography}.
+\newblock London, New York: Longman.
+
+\bibitem[{Hill \& Mannheim(1992)}]{HillEtAl1992}
+Hill, J.~H. \& Mannheim, B., 1992.
+\newblock \enquote{Language and World View.}
+\newblock \emph{Annual Review of Anthropology} \emph{21}:381--406.
+
+\bibitem[{Himmelmann(2005)}]{Himmelmann2005endangered}
+Himmelmann, N.~P., 2005.
+\newblock \enquote{Language endangerment scenarios: A case study from Northern
+  Central Sulawesi.}
+\newblock In \emph{Endangered languages of Austronesia}, edited by Margret
+  Florey. Oxford: OUP, 45--72.
+
+\bibitem[{Hisao(2010)}]{Hisao2010}
+Hisao, T., 2010.
+\newblock \enquote{Old and new aspects of of Malayness in the contemporary
+  Dunia Melayu movement.}
+\newblock In \emph{Tinta di Dada Naskhah}, edited by H.~Ismail. Kuala Lumpur:
+  Universiti Melaya, 29--44.
+
+\bibitem[{Hornberger(1998)}]{Hornberger1998}
+Hornberger, N.~H., 1998.
+\newblock \enquote{Language policy, language education, language rights:
+  Indigenous, immigrant and international perspectives.}
+\newblock \emph{Language in Society} \emph{27}:439--458.
+
+\bibitem[{Hussainmiya(1987)}]{Hussainmiya1987}
+Hussainmiya, B.~A., 1987.
+\newblock \emph{Lost cousins: The Malays of Sri Lanka}.
+\newblock Bangi: Institut Bahasa, Kesusasteraan dan Kebudayaan Melayu.
+
+\bibitem[{Hussainmiya(1990)}]{Hussainmiya1990}
+Hussainmiya, B.~A., 1990.
+\newblock \emph{Orang Rejimen: The Malays of Sri Lanka}.
+\newblock Bangi: Universiti Kebangsaan Malaysia, 1st edition.
+
+\bibitem[{Hussainmiya(2008)}]{Hussainmiya2008}
+Hussainmiya, B.~A., 2008.
+\newblock \emph{Orang Rejimen: The Malays of Sri Lanka}.
+\newblock Bangi: Universiti Kebangsaan Malaysia, 2nd edition.
+
+\bibitem[{Irvine \& Gal(2000)}]{IrvineEtAl2000}
+Irvine, J.~T. \& Gal, S., 2000.
+\newblock \enquote{Language ideology and linguistic differentiation.}
+\newblock In \emph{Regimes of Language}, edited by P.~V. Kroskrity. Santa Fe,
+  NM: School of American Research Press, 35--83.
+
+\bibitem[{Ismail(2009)}]{Ismail2009}
+Ismail, Q., 2009.
+\newblock \enquote{Critiquing the President's Victory Speech.}
+\newblock Retrieved November 24, 2009.
+\newline\urlprefix\url{http://groundviews.org/2009/08/20/critiquing-the-presid%
+ents-victory-speech-evidence-of-an-majoritarian-mindset/}
+
+\bibitem[{Joseph(2004)}]{Joseph2004}
+Joseph, J.~E., 2004.
+\newblock \emph{Language and identity: national, ethnic, religious}.
+\newblock New York, NY: Palgrave Macmillan.
+
+\bibitem[{Kekulawala(1979)}]{Kekulawala1979}
+Kekulawala, S.~L., 1979.
+\newblock \enquote{Kinship terminology in Sri Lankan Malay - a contribution to
+  the study of language universals.}
+\newblock \emph{Kalyani} \emph{1}:207 -- 224.
+
+\bibitem[{Kinkade(1991)}]{Kinkade1991}
+Kinkade, M.~D., 1991.
+\newblock \enquote{The decline of native languages in Canada.}
+\newblock In \emph{Endangered Languages}, edited by R.~H. Robins \& E.~M.
+  Uhlenbeck. London: Berg Publishers Ltd., 157--176.
+
+\bibitem[{Kloss \& McConnell(1978)}]{KlossEtAl1978}
+Kloss, H. \& McConnell, G.~D., 1978.
+\newblock \emph{The written languages of the world: A survey of the degree and
+  modes of use - 1: The Americas; Les langues ecrites du monde: Relev\'e du
+  degr\'e et des modes d'utilisation}.
+\newblock Quebec: Les Presses de l'Universit\'e Laval.
+
+\bibitem[{Krauss(1992)}]{Krauss1992}
+Krauss, M., 1992.
+\newblock \enquote{The world's languages in crisis.}
+\newblock \emph{Language} \emph{68}:4--10.
+
+\bibitem[{Kroskrity(2000)}]{Kroskrity2000}
+Kroskrity, P.~V., 2000.
+\newblock \enquote{Introduction: Regimenting Languages: Language Ideological
+  Perspectives.}
+\newblock In \emph{Regimes of Languguage: Ideologies, Polities and Identities},
+  edited by P.~V. Kroskrity. Santa Fe, NM: School of American Research Press,
+  1--34.
+
+\bibitem[{Lim \& Ansaldo(2006)}]{LimEtAl2006}
+Lim, Lisa \& Ansaldo, Umberto, 2006.
+\newblock \enquote{Keeping Kirinda vital: The endangerment-empowerment dilemma
+  in the documentation of Sri Lanka Malay.}
+\newblock \emph{Amsterdam Centre for Language \& Cognition Working Papers}
+  \emph{1}:51--66.
+
+\bibitem[{Lim \& Ansaldo(2007)}]{LimEtAl2007}
+Lim, Lisa \& Ansaldo, Umberto, 2007.
+\newblock \enquote{Identity alignment in the multilingual space: The Malays of
+  Sri Lanka.}
+\newblock In \emph{Linguistic identity in multilingual postcolonial spaces},
+  edited by E.~Anchimbe. Cambridge: Cambridge Scholars Press, 218--243.
+
+\bibitem[{May(2004)}]{May2004}
+May, S., 2004.
+\newblock \enquote{Rethinking Linguistic Human Rights: Answering questions of
+  identity, essentialism and mobility.}
+\newblock In \emph{Language Rights and Language Survival}, edited by
+  J.~Freeland \& D.~Patrick. Manchester;Northampton: St. Jerome Publishing,
+  35--53.
+
+\bibitem[{Nettle \& Romaine(2000)}]{NettleEtAl2000}
+Nettle, D. \& Romaine, S., 2000.
+\newblock \emph{Vanishing voices. The extinction of the world's languages}.
+\newblock Oxford: Oxford University Press.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009}
+Nordhoff, Sebastian, 2009.
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam, Utrecht.
+\newline\urlprefix\url{http://www.lotpublications.nl/publish/articles/003744/b%
+ookpart.pdf}
+
+\bibitem[{Paulston(1994)}]{Paulston1994}
+Paulston, C.~B., 1994.
+\newblock \emph{Linguistic minorities in multilingual settings: implications
+  for language policies}.
+\newblock Amsterdam, Philadelphia: J. Benjamins Pub. Co.
+
+\bibitem[{Pozzetta(1991)}]{Pozzetta1991}
+Pozzetta, G.~E., 1991.
+\newblock \emph{Ethnicity, ethnic identity and language maintenance}.
+\newblock New York,NY: Garland Publishers.
+
+\bibitem[{Rajapakse(2009)}]{Rajapakse2009}
+Rajapakse, M., 2009.
+\newblock \enquote{Address by HE President Mahinda Rajapakse at the ceremonial
+  opening of Parliament.}
+\newblock Retrieved March 03, 2011.
+\newline\urlprefix\url{http://www.president.gov.lk/speech_New.php?Id=74}
+
+\bibitem[{Robins \& Uhlenbeck(1991)}]{RobinsEtAl1991}
+Robins, R.~H. \& Uhlenbeck, E.~M., 1991.
+\newblock \emph{Endangered languages}.
+\newblock Oxford: Berg.
+
+\bibitem[{Robuchon(2003)}]{Robuchon2003}
+Robuchon, G\'erard, 2003.
+\newblock \enquote{Malayo Language in Sri Lanka.}
+\newblock Paper presented at the 7th International Symposium on the
+  Malay/Indonesian Linguistics in Berg en Dal.
+
+\bibitem[{Romaine(2006)}]{Romaine2006}
+Romaine, S., 2006.
+\newblock \enquote{Planning for the Survival of Linguistic Diversity.}
+\newblock \emph{Language Policy} \emph{5}:441--473.
+
+\bibitem[{Saldin(2000)}]{Saldin2000}
+Saldin, B. D.~K., 2000.
+\newblock \emph{A guide to Malay}.
+\newblock Colombo: Nihon Printers.
+
+\bibitem[{Saldin(2001)}]{Saldin2001}
+Saldin, BDK, 2001.
+\newblock \emph{The Sri Lankan Malays and Their Language}.
+\newblock Kurunegala: Nihon, 2nd edition.
+
+\bibitem[{Saldin(2007{\natexlab{\emph{a}}})}]{Saldin2007}
+Saldin, BDK, 2007{\natexlab{\emph{a}}}.
+\newblock \emph{A Concise Sri Lankan Malay Dictionary}.
+\newblock Kurunegala: Nihon Printers.
+
+\bibitem[{Saldin(2007{\natexlab{\emph{b}}})}]{Saldin2007dico}
+Saldin, BDK, 2007{\natexlab{\emph{b}}}.
+\newblock \emph{A concise Sri Lankan Malay Dictionary -- Kamus ringkas bahasa
+  melayu Sri Lanka}.
+\newblock Kurunegala: Nihon.
+
+\bibitem[{Skutnabb-Kangas(1998)}]{Skutnabb-Kangas1998}
+Skutnabb-Kangas, T., 1998.
+\newblock \enquote{Human Rights and Language Wrongs - A future for diversity?}
+\newblock \emph{Language Sciences} \emph{20}:401--426.
+
+\bibitem[{Skutnabb-Kangas \& Cummins(1998)}]{Skutnabb-KangasEtAl1998}
+Skutnabb-Kangas, T. \& Cummins, J., 1998.
+\newblock \emph{Minority education: from shame to struggle}.
+\newblock Clevedon, Avon, England ; Philadelphia, PA: USA Multilingual matters.
+
+\bibitem[{Slomanson(2003)}]{Slomanson2003}
+Slomanson, Peter, 2003.
+\newblock \enquote{Sri Lankan Malay Grammars: Lankan or Malay?}
+\newblock Revised Version of a paper presented at The 7th International
+  Symposium on Malay/Indonesian Linguistics, Nijmegen June 2003 and the SPCL
+  Summer meeting 2003 University of Hawaii, August 2003.
+
+\bibitem[{Slomanson(2008)}]{Slomanson2008lingua}
+Slomanson, Peter, 2008.
+\newblock \enquote{The perfect construction and complexity drift in Sri Lankan
+  Malay.}
+\newblock \emph{Lingua} \emph{118}(10):1640--1655.
+
+\bibitem[{Smith(2003)}]{Smith2003timing}
+Smith, Ian~R., 2003.
+\newblock \enquote{The provenance and timing of substrate influence in Sri
+  Lankan Malay; Definiteness, animacy and accusative case marking.}
+\newblock Paper presented at the South Asian Language Analysis Roundtable
+  XXIII, Austin, Texas.
+
+\bibitem[{Smith \& Paauw(2006)}]{SmithEtAl2006cll}
+Smith, Ian~R. \& Paauw, S., 2006.
+\newblock \enquote{Sri Lanka Malay: Creole or convert.}
+\newblock In  \cite{DeumertEtAlEd2006}, 159--182.
+
+\bibitem[{Smith et~al.(2004)Smith, Paauw, \& Hussainmiya}]{SmithEtAl2004}
+Smith, Ian~R., Paauw, S., \& Hussainmiya, B.~A., 2004.
+\newblock \enquote{Sri Lanka Malay: the state of the art.}
+\newblock \emph{Yearbook of South Asian Languages} \emph{2004}:197--215.
+
+\bibitem[{Stroud \& Heugh(2004)}]{StroudEtAl2004}
+Stroud, C. \& Heugh, K., 2004.
+\newblock \enquote{Language Rights and Linguistic Citizenship.}
+\newblock In \emph{Language Rights and Language Survival: Sociolinguistic and
+  Sociocultural Perspectives}, edited by J.~Freeland \& D.~Patrick.
+  Manchester;Northampton: St. Jerome Publishing, 191--218.
+
+\bibitem[{Tapovanaye(1986)}]{Tapovanaye1986}
+Tapovanaye, Suthadara, 1986.
+\newblock \emph{Analysis of the segmental phonemes of the Sri Lanka Malay
+  language}.
+\newblock Master's thesis, Univeristy of Kelaniya.
+\newblock Written in Sinhala.
+
+\bibitem[{Tapovanaye(1995)}]{Tapovanaye1995}
+Tapovanaye, Suthadara, 1995.
+\newblock \emph{Vowel Length in Sri Lankan Malay}.
+\newblock Master's thesis, University of Hawaii.
+
+\bibitem[{Thaliph(1998)}]{Thaliph1998}
+Thaliph, F., 1998.
+\newblock \enquote{Experience in documenting Malay society and culture in Sri
+  Lanka - Terang Newsletter.}
+\newblock Paper presented at the International Symposium on Malayo-Polynesians
+  in the Commonwealth, Kuala Lumpur, Malaysia.
+
+\bibitem[{Thaliph(2005)}]{Thaliph2005}
+Thaliph, M~Farook, 2005.
+\newblock \emph{Book on Malay Grammar (Nahu) -- A guide to write and speak
+  grammatical Malay}.
+\newblock Wattala: Terang.
+
+\bibitem[{Tirtosudarmo(2004)}]{Tirtosudarmo2004}
+Tirtosudarmo, R., 2004.
+\newblock \enquote{The lands below the winds that is called the Malay world:
+  Notes on some crossing points and beyond.}
+\newblock Paper presented at the Thinking Malayness, Fuchu, Tokyo.
+
+\bibitem[{Vijaycharya(2004)}]{Vijaycharya2004}
+Vijaycharya, S., 2004.
+\newblock \enquote{Ethnic consciousness of the Malays of Sri Lanka: some
+  observations.}
+\newblock Paper presented at the Symposium on “Thinking Malayness”, Tokyo
+  University of Foreign Studies.
+
+\bibitem[{Woolard(1998)}]{Woolard1998}
+Woolard, K.~A., 1998.
+\newblock \enquote{Language Ideologies as a Field of Inquiry.}
+\newblock In \emph{Language Ideologies: Practice and Theory}, edited by
+  In~K.~A. Woolard, B.~B. Schieffelin, \& P.~V. Kroskrity. Oxford, New York:
+  Oxford University Press, 3--47.
+
+\bibitem[{Wurm(1996)}]{Wurm1996unesco}
+Wurm, S.~A., 1996.
+\newblock \emph{Atlas of the world's languages in danger of disappearing}.
+\newblock Paris: Unesco Pub./Pacific Linguistics.
+
+\end{thebibliography}

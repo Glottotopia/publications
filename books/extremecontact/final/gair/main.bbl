@@ -1,0 +1,208 @@
+\begin{thebibliography}{33}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Bakker(2006)}]{Bakker2006}
+Bakker, Peter, 2006.
+\newblock \enquote{The Sri Lanka \em Sprachbund\em: The newcomers Portuguese
+  and Malay.}
+\newblock In \emph{Linguistic Areas -- Convergence in Historical and
+  Typological Perspective}, edited by Yaron Matras, April McMahon, \& Nigel
+  Vincent. Houndmills, New York: Palgrave Macmillan, 135--159.
+
+\bibitem[{Bashir(2006)}]{Bashir2006}
+Bashir, Elena, 2006.
+\newblock \enquote{Evidentiality in South Asian Languages.}
+\newblock In \emph{Proceedings of the LFG06 Conference, Workshop on South Asian
+  Languages Konstanz Universit\"at}. Stanford, 30--50.
+
+\bibitem[{Bayer(2001)}]{Bayer2001}
+Bayer, J., 2001.
+\newblock \enquote{Two Grammars in One: Sentential Complements and
+  Complementizers in Bengali and Other South Asian Languages.}
+\newblock In \emph{The Yearbook of South Asian Languages: Tokyo Symposium on
+  South Asian Languages - Contact, Convergence and Typology}, edited by
+  P.~Bhaskararao \& K.~V. Subbarao. New Delhi: Sage Publications, 11--36.
+
+\bibitem[{Cain \& Gair(2000)}]{CainEtAl2000}
+Cain, Bruce~D \& Gair, James~W., 2000.
+\newblock \emph{Dhivehi (Maldivian)}.
+\newblock M\"unchen: Lincom Europa.
+
+\bibitem[{DeAbrew(1981)}]{DeAbrew1981}
+DeAbrew, K.~Kamal, 1981.
+\newblock \emph{The Syntax and Semantics of Negation in Sinhala}.
+\newblock Ph.D. thesis, Cornell University.
+
+\bibitem[{Deumert \& Durrleman(2006)}]{DeumertEtAlEd2006}
+Deumert, Ana \& Durrleman, Stephanie (eds.), 2006.
+\newblock \emph{Structure and Variation in Language Contact}.
+\newblock Amsterdam: John Benjamins.
+
+\bibitem[{Emeneau(1956)}]{Emeneau1956}
+Emeneau, Murray~B., 1956.
+\newblock \enquote{India as a linguistic area.}
+\newblock \emph{Language} \emph{32}:3--16.
+
+\bibitem[{Foley \& Gair(1993)}]{FoleyEtAl1993}
+Foley, Claire \& Gair, James~W., 1993.
+\newblock \enquote{The Distribution of \em no- \em in Sinhala.}
+\newblock Paper given at SALA, Iowa.
+
+\bibitem[{Fritz(2002)}]{Fritz2002}
+Fritz, Sonia, 2002.
+\newblock \emph{The Dhivehi Language: A Descriptive and Historical Grammar of
+  Dhivehi and its Dialects}.
+\newblock W\"urzburg: Ergon Verlag.
+
+\bibitem[{Gair(1970[1998])}]{Gair1970}
+Gair, James~W., 1970[1998].
+\newblock \enquote{About Colloquial Sinhalese Clause Structures.}
+\newblock In \emph{Studies in South Asian linguistics; Sinhala and other South
+  Asian Languages}, edited by Barbara~C. Lust. New York; Oxford: Oxford
+  University Press.
+
+\bibitem[{Gair(1985)}]{Gair1985calque}
+Gair, James~W., 1985.
+\newblock \enquote{Sinhala Focused Sentences: Naturalization of a Calque.}
+\newblock In \emph{South Asian Languages: Structure, Convergence and
+  Diglossia}, edited by Bh. Krishnamurti, Colin~P. Masica, \& Anjani Sinha.
+  Delhi: Motilal Banarsidass, 147--164.
+\newblock Reprinted in Gair (1998), pp. 153--169.
+
+\bibitem[{Gair(1986)}]{Gair1986}
+Gair, James~W., 1986.
+\newblock \enquote{Sinhala Focused Sentences: Naturalization of a Calque.}
+\newblock In \emph{South Asian languages: Structure, Convergence and
+  Diglossia}, edited by Bh. Krishnamurti, Colin~P. Masica, \& Anjani~K. Sinha.
+  Delhi: Motilal Banarsidass, 147--164.
+\newblock Reprinted, with additions, in Gair (1998), pp. 153-169, 323-327.
+
+\bibitem[{Gair(1994)}]{Gair1994}
+Gair, James~W., 1994.
+\newblock \enquote{Universals and The South-South Asian Language Area.}
+\newblock Keynote Address SALA (South Asia Language Analysis). University of
+  Pennsylvania, May 20 1994.
+
+\bibitem[{Gair(1997)}]{Gair1997}
+Gair, James~W., 1997.
+\newblock \enquote{La Focalisation en Singhalais.}
+\newblock In \emph{Faits de Langues, Revue de Linguistique: Les Langues
+  d’Asie du Sud}, edited by Annie Montaut. Paris: Orphys, 155--162.
+
+\bibitem[{Gair(2005)}]{Gair2005}
+Gair, James~W., 2005.
+\newblock \enquote{Some Aspects of Finiteness and Control in Sinhala.}
+\newblock In \emph{The Yearbook of South Asian Languages and Linguistics},
+  edited by Rajendra Singh \& Tanmoy Bhattacharya. Berlin and New York:
+  Mouton-De Gruyter, 116--143.
+
+\bibitem[{Gair(2009)}]{Gair2009}
+Gair, James~W., 2009.
+\newblock \enquote{Focus, Clefts and Interrogatives in South-South Asia and
+  Southern Island Indo- Aryan.}
+\newblock Paper presented at the \'Ecole d\'et\'e (INALCO) Agay, June 8.
+
+\bibitem[{Gair et~al.(1978)Gair, Suseendirarajah, \&
+  Karunatilaka}]{GairEtAl1978}
+Gair, James~W., Suseendirarajah, S., \& Karunatilaka, W.~S., 1978.
+\newblock \emph{An Introduction to Spoken [Sri Lankan] Tamil}.
+\newblock External Services Agency, University of Sri Lanka.
+\newblock Reprinted 2005, S. Godage and Brothers, Colombo.
+
+\bibitem[{Kachru et~al.(2008)Kachru, Kachru, \& Sridhar}]{KachruEtAl2008}
+Kachru, Braj~B., Kachru, Yamuna, \& Sridhar, S.~N., 2008.
+\newblock \emph{Language in South Asia}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Klaiman(1977)}]{Klaiman1977}
+Klaiman, M.~H., 1977.
+\newblock \enquote{Bengali Syntax: Possible Dravidian Influence.}
+\newblock \emph{IJDL} \emph{3}:135--153.
+
+\bibitem[{Masica(1976)}]{Masica1976}
+Masica, Colin~P., 1976.
+\newblock \emph{Defining a Linguistic Area: South Asia}.
+\newblock Chicago: University of Chicago Press.
+
+\bibitem[{McFadden \& Sundaresan(2010)}]{McFaddenEtAl2010}
+McFadden, Thomas \& Sundaresan, Sandya, 2010.
+\newblock \enquote{DP Distribution and Finiteness in Tamil and Other Languages:
+  Selection vs. Case.}
+\newblock \emph{JSAL} \emph{4}:1--25.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009}
+Nordhoff, Sebastian, 2009.
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam, Utrecht.
+\newline\urlprefix\url{http://www.lotpublications.nl/publish/articles/003744/b%
+ookpart.pdf}
+
+\bibitem[{Nordhoff(this volume)}]{Nordhoffgrammartv}
+Nordhoff, Sebastian, this volume.
+\newblock \enquote{Synchronic grammar of Sri Lanka Malay.}
+
+\bibitem[{Schiffman(1999)}]{Schiffman1999}
+Schiffman, Harold~F., 1999.
+\newblock \emph{A Reference Grammar of Spoken Tamil}.
+\newblock Cambridge: CUP.
+
+\bibitem[{Slomanson(2006)}]{Slomanson2006cll}
+Slomanson, Peter, 2006.
+\newblock \enquote{Sri Lankan Malay morphosyntax: Lankan or Malay?}
+\newblock In  \cite{DeumertEtAlEd2006}, 135--158.
+
+\bibitem[{Slomanson(this volume)}]{Slomansontv}
+Slomanson, Peter, this volume.
+\newblock \enquote{Known, inferable, and discoverable in Sri Lankan Malay
+  research.}
+
+\bibitem[{Smith(2001)}]{Smith2001}
+Smith, Ian, 2001.
+\newblock \enquote{Creolization and Convergence in Morphosyntax: Sri Lanka
+  Portuguese and Sourashtra Nominal Marking Typology.}
+\newblock In \emph{The Yearbook of South Asian Languages and Linguistics},
+  edited by Rajendra Singh, Peri Bhaskararao, \& K.~V. Subbarao. New Delhi,
+  Thousand Oaks, and London: Sage Publications, 391--409.
+
+\bibitem[{Smith(this volume)}]{Smithtv}
+Smith, Ian, this volume.
+\newblock \enquote{Hijacked constructions in Second Language Acquisition:
+  Implications for Sri Lanka Malay.}
+
+\bibitem[{Smith \& Paauw(2006)}]{SmithEtAl2006cll}
+Smith, Ian~R. \& Paauw, S., 2006.
+\newblock \enquote{Sri Lanka Malay: Creole or convert.}
+\newblock In  \cite{DeumertEtAlEd2006}, 159--182.
+
+\bibitem[{Somashekar(1999)}]{Somashekar1999}
+Somashekar, Shamitha, 1999.
+\newblock \emph{Developmental Trends in the Acquisition of Relative Clauses:
+  Cross-Linguistic Experimental Study of Tulu}.
+\newblock Ph.D. thesis, Cornell University.
+
+\bibitem[{Subbarao(in press)}]{Subbaraoinpress}
+Subbarao, K.~V., in press.
+\newblock \emph{South Asian Languages: a Syntactic Typology}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Suseendirarajah(1993)}]{Suseendirarajah1993}
+Suseendirarajah, S., 1993.
+\newblock \emph{Jaffna Tamil: Phonology and Morphology}.
+\newblock Thirunelvely, Sri Lanka: University of Jaffna Publication.
+
+\bibitem[{Suseendirarajah(2008)}]{Suseendirarajah2008}
+Suseendirarajah, S., 2008.
+\newblock \enquote{Tamil Language in Sri Lanka and Some of its Archaisms and
+  Peculiarities.}
+\newblock In \emph{Dakkhina: Papers on Buddhist thought, Linguistics, and Sri
+  Lankan Culture (James Wells Gair Felicitation Volume)}. Colombo: Godage
+  International publishers, LTD, 67--85.
+
+\end{thebibliography}

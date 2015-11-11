@@ -1,0 +1,30 @@
+\documentclass{book}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%priorized pkgs
+\usepackage{supertabular}
+%normal pkgs
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{gb4n,tipa,lingsty,ipashortcuts}
+
+\usepackage[authoryear]{natbib}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+
+\newcommand\textsubscript[1]{\ensuremath{{}_{\rm{#1}}}} 
+\newcommand{\imgpath}{.}
+\newcommand{\chapterauthor}{}
+\title{}
+\author{Peter Bakker} 
+\glossSTDmode
+\renewcommand{\imgpath}{./} 
+
+\begin{document} 
+\include{bakker}
+
+\bibliographystyle{brill}
+\bibliography{extremecontact}
+
+
+\end{document}

@@ -1,0 +1,82 @@
+3c3
+< \chapterauthor{Scott Paauw}{University of Rochester}
+---
+> \chapterauthor{Scott Paauw, University of Rochester}
+6c6
+<  paper is based on research funded in part by a grant from the United States National Science Foundation (NSF). I would like to thank the students who worked with me under this grant, Cihangir Okuyan and Christine Wingrove, as well as colleagues who have advised me on matters relating to Sri Lanka Malay: Ian Smith, Peter Slomanson, Sebastian Nordhoff, Peter Bakker, and David Gil. I am especially grateful to the two linguists from the SLM community, Mohamed Jaffar and Romola Rasool, who have generously shared their knowledge.
+---
+>  paper is based on research funded in part by a grant from the United States National Science Foundation (NSF). I would like to thank the students who worked with me under this grant, Cihangir Okuyan and Christine Wingrove, as well as colleagues who have advised me on matters relating to Sri Lanka Malay: Ian Smith, Peter Slomanson, Sebastian Nordhoff, Peter Bakker, B.A. Hussainmiya, and David Gil. I am especially grateful to the two linguists from the SLM community, Mohamed Jaffar and Romola Rasool, who have generously shared their knowledge.
+16c16
+< A brief summary of the socio-historical setting in which Sri Lanka Malay developed is helpful to give a background to the analysis presented in this paper. Most of what we know of the history of the Sri Lanka Malay community comes from the work of the historian (and community member) B.A. Hussainmiya. The following summary is based largely on Hussainmiya's work, and in particular \citet{Hussainmiya1987}. The Dutch colonial administration began bringing Indonesians to Sri Lanka in 1656, following the expulsion of the Portuguese. These immigrants consisted of political exiles, criminal deportees, soldiers and slaves. Political exiles consisted chiefly of Javanese aristocrats, but also included members of the elite from Sumatra, Maluku (the Moluccas), Makassar, and Timor. Soldiers made up a much larger contingent of immigrants, and came from Ambon, Banda, Bali, Java, Madura and from the Buginese and Malay areas \citep[24]{Adelaar1991}. A form of Vehicular Malay became the lingua franca of the community, and led to the community identifying itself as `Malay' despite its diverse origins. This identity was reinforced by later waves of immigration under the British administration beginning in 1796, which were recruited mainly from the Malay Peninsula.
+---
+> A brief summary of the socio-historical setting in which Sri Lanka Malay developed is helpful to give a background to the analysis presented in this paper. Most of what we know of the history of the Sri Lanka Malay community comes from the work of the historian (and community member) B.A. Hussainmiya. The following summary is based largely on Hussainmiya's work, and in particular \citet{Hussainmiya1987 and 2008}. The Dutch colonial administration began bringing Indonesians to Sri Lanka in 1656, following the expulsion of the Portuguese. These immigrants consisted of political exiles, criminal deportees, soldiers and slaves. Political exiles consisted chiefly of Javanese aristocrats, but also included members of the elite from Sumatra, Maluku (the Moluccas), Makassar, and Timor. Soldiers made up a much larger contingent of immigrants, and came from Ambon, Banda, Bali, Java, Madura and from the Buginese and Malay areas \citep[24]{Adelaar1991}. A form of Vehicular Malay became the lingua franca of the community, and led to the community identifying itself as `Malay' despite its diverse origins. This identity was reinforced by later waves of immigration under the British administration beginning in 1796, which were recruited mainly from the Malay Peninsula.
+83c83
+< \caption{Malay(ic) Varieties.}
+---
+> \caption{Malay(ic) Varieties}
+91c91
+< Apart from the shared features of EITM described in \citet{Paauw2008}, there has been little information available on the three major dialect regions of Malay. Happily, that situation is improving. For the past 17 years, David Gil has been working on the Malay/Indonesian Dialect Mapping Project, cataloguing 300 linguistic features (lexical, phonological, and grammatical) in locations throughout the Malay world. He has given names to the three varieties, and his terms will be used here for these varieties. The ``Group I'' languages are referred to as ``Malaka'', after the trading entrep\^ot in the region where those language varieties are spoken, which had significant historical importance. The ``Group II'' languages are ``Java'', representing the cultural and political center of those language varieties, while the varieties descended from EITM are known as ``Maluku'', for the spice islands which were the center of the Eastern Indonesia trade.
+---
+> Apart from the shared features of EITM described in \citet{Paauw2008}, there has been little information available on the three major dialect regions of Malay. Happily, that situation is improving. For the past 17 years, David Gil has been working on the Malay/Indonesian Dialect Mapping Project, cataloguing 300 linguistic features (lexical, phonological, and grammatical) used in the colloquial varieties of the national language in locations throughout the Malay world. He has given names to the three varieties, and his terms will be used here for these varieties. The ``Group I'' languages are referred to as ``Malaka'', after the trading entrep\^ot in the region where those language varieties are spoken, which had significant historical importance. The ``Group II'' languages are ``Java'', representing the cultural and political center of those language varieties, while the varieties descended from EITM are known as ``Maluku'', for the spice islands which were the center of the Eastern Indonesia trade.
+98c98
+<  does not distinguish between the dialects of Malay in his analysis, and his use of the term ``Standard Malay''refers to a variety with features largely shared between the Malaka and Java dialects (although not necessarily with the Maluku dialect), roughly comparable to the national language varieties of Indonesia and Malaysia. 
+---
+>  does not distinguish between the dialects of Malay in his analysis, and his use of the term ``Standard Malay''refers to a variety with features largely shared between the Malaka and Java dialects (although not necessarily with the Maluku dialect), roughly comparable to the national language varieties of Indonesia and Malaysia.[add footnote here; it should be noted that Gil does not refer to these regions as "dialects", and his data is only drawn from colloquial varieties of the standard language (and not "inherited" varieties of Malay] 
+166c166
+< \caption{Features collected by \citet{Adelaar1991}}
+---
+> \caption{Features collectef by \citet{Adelaar1991}}
+188c188
+< kakarlath &
+---
+> kakarlath & [ADD FOOTNOTE: The Maluku and SLM forms are a loan word from Dutch. The Java form is kecoa while the Malaka form is lipas.[PLEASE PUT THE WORDS kecoa AND lipas IN ITALICS]
+215c215
+< \caption{Gil's feature sets for strong correlations for SLM with Maluku.}
+---
+> \caption{Gil's feature sets for strong correlations for SLM with Maluku}
+234c234
+< \caption{Gil's feature sets for strong correlations for SLM with Java.}
+---
+> \caption{Gil's feature sets for strong correlations for SLM with Java}
+319c319
+< \caption{Origin of SLM lexemes in two studies.}
+---
+> \caption{Origin of SLM lexemes in two studies}
+355c355
+< \caption{Importance of the three possible regions of origin for the lexicon.}
+---
+> \caption{Importance of the three possible regions of origin for the lexicon}
+364c364
+< David Gil's Malay/Indonesian Dialect Mapping Project referred to earlier includes a number of lexical items which can be associated with the patterns of the three dialects of Malay. Although \citet{Gil2010} does not address many of these in relation to Sri Lanka Malay, presumably because most items show a convergence with two varieties while Gil was concerned with items converging with a single variety, it is worthwhile to examine these lexical items and how SLM fits into the picture. This is particularly illuminating because these are lexical items selected specifically because they are associated with particular varieties and thus can provide information about the origins of SLM. The chart below presents these items.
+---
+> David Gil's Malay/Indonesian Dialect Mapping Project referred to earlier includes a number of lexical items which can be associated with the patterns of the three regions of Malay. Although \citet{Gil2010} does not address many of these in relation to Sri Lanka Malay, presumably because most items show a convergence with two varieties while Gil was concerned with items converging with a single variety, it is worthwhile to examine these lexical items and how SLM fits into the picture. This is particularly illuminating because these are lexical items selected specifically because they are associated with particular varieties and thus can provide information about the origins of SLM. The chart below presents these items.
+519c519
+< \caption{Comparison of the vocabulary of the different varieties.}
+---
+> \caption{Comparison of the vocabulary of the different varieties}
+552c552
+< \caption{1st and 2nd person pronouns in a number of varieties.}
+---
+> \caption{1st and 2nd person pronouns in a number of varieties}
+616c616
+< \caption{Comparison of pronouns  between SLM, Java, and Maluku.}
+---
+> \caption{Comparison of pronouns  between SLM, Java, and Maluku}
+648c648
+< \caption{Loan words from Sri Lankan languages in SLM.}
+---
+> \caption{Loan words from Sri Lankan languages in SLM}
+684c684
+< \caption{Loanwords from other languages in SLM.}
+---
+> \caption{Loanwords from other languages in SLM}
+688,691d687
+< All three English words listed are suspect, as English influence on Malay did not begin until after the SLM community was established, and these words (\textit{bangkrot} `bankrupt', \textit{bistek} `steak', and \textit{pensil} `pencil') were probably borrowed separately into SLM and Malay proper, and owe their common forms to coincidence.
+< 
+< One word, however, is very surprising, and that is the Dutch loan \textit{baiskop} `cinema' (\textit{bioskop} in Indonesian varieties of Malay, from Dutch \textit{bioskoop}). Its entry into SLM would seem to postdate by over a century any Dutch influence on the language.
+< 
+696c692
+< A much more reasoned approach, and one which is supported by the historical record, is that both the Java and Maluku dialects had an important role in the formation of SLM. 
+---
+> A much more reasoned approach, and one which is supported by the historical record, is that both the Java and Maluku dialects had an important role in the formation of SLM. 
+\ No newline at end of file

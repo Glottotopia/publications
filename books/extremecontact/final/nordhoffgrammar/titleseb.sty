@@ -1,0 +1,65 @@
+\usepackage{titlesec}
+\renewcommand{\thechapter}{\arabic{chapter}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleclass{\subtwosection}{straight}[\subsection]
+\newcounter{subtwosection}[subsection]
+\renewcommand{\thesubtwosection}{\arabic{subtwosection}}
+\titleclass{\subthreesection}{straight}[\subtwosection]
+\newcounter{subthreesection}[subtwosection]
+\renewcommand{\thesubthreesection}{\arabic{subthreesection}}
+\titleclass{\subfoursection}{straight}[\subthreesection]
+\newcounter{subfoursection}[subthreesection]
+\renewcommand{\thesubfoursection}{\arabic{subfoursection}}
+\titleformat{\chapter}
+	{\bfseries\Large}
+	{Chapter \thechapter}
+	{1pc}
+	{}
+\titleformat{\section}
+	{\bfseries\Large}
+	{\thesection}
+	{1pc}
+	{}
+\titleformat{\subsection}
+	{\bfseries\Large}
+	{\thesubsection}
+	{1pc}
+	{}
+\titleformat{\subtwosection}
+	{\bfseries\Large}
+	{\thesubtwosection}
+	{1pc}
+	{\large}
+\titleformat{\subthreesection}
+	{\bfseries\Large}
+	{\thesubthreesection}
+	{1pc}
+	{\large}
+\titleformat{\subfoursection}
+	{\bfseries\Large}
+	{\thesubfoursection}
+	{1pc}
+	{\large}
+	
+\titlespacing*{\subtwosection}{0pt}{0pt}{0pt}
+\titlespacing*{\subthreesection}{0pt}{0pt}{0pt}
+\titlespacing*{\subfoursection}{0pt}{0pt}{0pt}
+\setcounter{secnumdepth}{7}
+\setcounter{tocdepth}{7}
+%
+\usepackage{titletoc}
+\contentsmargin{2.55em}
+\dottedcontents{chapter}[2,5em]{}{2,3em}{1pc}
+\dottedcontents{section}[3,5em]{}{2,3em}{1pc}
+\dottedcontents{subsection}[4,5em]{}{2,3em}{1pc}
+\dottedcontents{subtwosection}[5,5em]{}{2,3em}{1pc}
+\dottedcontents{subthreesection}[6,5em]{}{2,3em}{1pc}
+\dottedcontents{subfoursection}[7,5em]{}{2,3em}{1pc}
+
+\titlecontents{chapter}[0pt]{\Large\bfseries}{\thecontentslabel\ }{}{\titlerule*[1pc]{.}\thecontentspage}
+\titlecontents{section}[5pt]{\large\bfseries}{\thecontentslabel\ }{}{\titlerule*[1pc]{.}\thecontentspage}
+\titlecontents{subsection}[10pt]{\bfseries}{\thecontentslabel\ }{}{\titlerule*[1pc]{.}\thecontentspage}
+\titlecontents{subtwosection}[15pt]{}{\thecontentslabel\ }{}{\titlerule*[1pc]{.}\thecontentspage}
+\titlecontents{subthreesection}[20pt]{}{\thecontentslabel\ }{}{\titlerule*[1pc]{.}\thecontentspage}
+\titlecontents{subfoursection}[25pt]{\small}{\thecontentslabel\ }{}{\titlerule*[1pc]{.}\thecontentspage}

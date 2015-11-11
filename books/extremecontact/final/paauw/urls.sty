@@ -1,0 +1,87 @@
+%-------------------------------------------------------------------------
+% urls.sty -- URL Simplifier.
+%
+% This style file (by Michael Frank <mpf@ai.mit.edu>) is intended to make
+% it easier to include literal URLs and other similar strings in TeX/LaTeX
+% files.
+%-------------------------------------------------------------------------
+
+% \rh -- Roman discretionary Hyphen.
+% Use this inside \tt style literal strings so that the
+% discretionary line-break hyphen will be in roman
+% font, making it clear it's not part of the literal.
+\def\rh{{\rm \discretionary{-}{}{}}}
+
+%
+% \db -- Discretionary Break.
+%
+% Use this wherever you want an extra opportunity for line
+% breaking, whether in a URL or some other long literal
+% string.  Warning: doesn't hyphenate the breaks!  For
+% that, use \-.
+%
+\def\db{\discretionary{}{}{}}
+
+% 
+% I don't know why something like the following macro wasn't built
+% into TeX from the beginning.  Use this for standalone tildes, e.g.,
+% in URLs or UNIX filenames.
+% 
+\def\tild{\char126}
+
+% \us -- UnderScore
+% Typewriter-font underscore (use \_ for a text font underscore).
+%
+\def\us{{\tt\char95}}
+
+% 
+% \url -- Universal Resource Locator
+%
+% The following hack (original version by Carl Witty) defines a \url macro,
+% so that if you write a long URL like
+%
+%   {\url http://foo.bar.baz.bot/~bim/bom/bam/buzz_biff.html}
+%
+% TeX will print the URL in typewriter font, and will know that it is
+% allowed to break a line after any colon (:), slash (/), dot (.), hyphen
+% (-), underscore (_), or at-sign (@) in the URL.  Also, tildes and
+% underscores will be printed properly.  Any line-breaks following a dot
+% (.)  will use a roman-style discretionary hyphen, to avoid the appearance
+% of an end-of-sentence.  Also you can use \- to indicate other
+% line-breaking opportunities (such as in the middle of words) where a
+% roman-style discretionary hyphen should be used.
+% 
+% Without this macro, TeX will break lines containing URLs really poorly,
+% any tildes will be interpreted as non-breaking spaces, and any
+% underscores will appear in roman font.
+% 
+% Remember to use \url only within braces, because otherwise your whole
+% document will be interpreted as a URL.  I couldn't figure out how to get
+% it to work properly in the form \url{...}.
+%
+% Bug: this macro doesn't seem to allow line breaks when it's used within
+% footnotes; I don't know why.
+%
+
+{\catcode`\/=\active
+\catcode`\:=\active
+\catcode`\.=\active
+\catcode`\-=\active
+\catcode`\@=\active
+\catcode`\_=\active
+\gdef\url{\tt
+\catcode`\/=\active
+\catcode`\:=\active
+\catcode`\.=\active
+\catcode`\-=\active
+\catcode`\@=\active
+\catcode`\_=\active
+\def:{\char`\:\db}%
+\def/{\char`\/\db}%
+\def.{\char`\.\rh}%
+\def-{\char`\-\db}%
+\def@{\char`\@\db}%
+\def_{\us\db}%
+\def~{\tild}%
+\def\-{\rh}}}
+

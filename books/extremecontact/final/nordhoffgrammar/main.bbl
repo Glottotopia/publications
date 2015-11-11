@@ -1,0 +1,186 @@
+\begin{thebibliography}{30}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Adelaar(1991)}]{Adelaar1991}
+Adelaar, K.~A., 1991.
+\newblock \enquote{Some Notes on the Origin of Sri Lanka Malay.}
+\newblock In \emph{Papers in Austronesian Linguistics}, edited by
+  H.~Steinhauer. Canberra: Australian National University, 23--37.
+
+\bibitem[{Adelaar(2005)}]{Adelaar2005struct}
+Adelaar, K.~A., 2005.
+\newblock \enquote{Structural diversity in the Malayic subgroup.}
+\newblock In \emph{The Austronesian Languages of Asia and Madagascar}, edited
+  by K.~Alexander Adelaar \& Nikolaus~P. Himmelmann. London, New York:
+  Routledge, 202--226.
+
+\bibitem[{Adelaar \& Prentice(1996)}]{AdelaarEtAl1996}
+Adelaar, K.~A. \& Prentice, D.~J., 1996.
+\newblock \enquote{Malay: its History, Role and Spread.}
+\newblock In \emph{Atlas of Languages of Intercultural Communication in the
+  Pacific, Asia and the Americas}, edited by Stephen~A. Wurm, M\"uhlh\"ausler
+  Peter, \& Darrell~T. Tryon. Berlin: Mouton de Gruyter, 673--693.
+
+\bibitem[{Adelaar(1985)}]{Adelaar1985}
+Adelaar, K.~Alexander, 1985.
+\newblock \emph{Proto-Malayic; The reconstruction of its phonology and parts of
+  its morphology and lexicon}.
+\newblock Ph.D. thesis, Leiden University.
+
+\bibitem[{Ansaldo(2005)}]{Ansaldo2005ms}
+Ansaldo, Umberto, 2005.
+\newblock \enquote{Typological admixture in Sri Lanka Malay. The case of
+  Kirinda Java.}
+\newblock Unpublished manuscript.
+
+\bibitem[{Apoussidou \& Nordhoff(2009)}]{ApoussidouEtAl2009}
+Apoussidou, Diana \& Nordhoff, Sebastian, 2009.
+\newblock \enquote{Feet in Sri Lanka Malay -- no stress please.}
+\newblock Manuscript University of Amsterdam.
+
+\bibitem[{Bichsel-Stettler(1989)}]{Bichsel1989}
+Bichsel-Stettler, Anne, 1989.
+\newblock \emph{Aspects of the Sri Lanka Malay Community and their Language}.
+\newblock Master's thesis, University of Bern.
+
+\bibitem[{Dryer(1989)}]{Dryer1989plural}
+Dryer, Matthew, 1989.
+\newblock \enquote{Plural Words.}
+\newblock \emph{Linguistics} \emph{27}:865--895.
+
+\bibitem[{Gair(1976)}]{Gair1976sinhalasubject}
+Gair, James~W., 1976.
+\newblock \enquote{Is Sinhala a Subject Language?}
+\newblock In \emph{The Subject in South Asian Languages}, edited by Manindra
+  Verma. Madison: University of Wisconsin South Asia Program, 39--63.
+
+\bibitem[{Gair(1991)}]{Gair1991infl}
+Gair, James~W., 1991.
+\newblock \enquote{Subjects, Case and INFL in Sinhala.}
+\newblock In \emph{Experiencer Subjects in South Asian Languages}, edited by
+  M.~Verma \& K.~P. Mohanan. Palo Alto: Center for the Study of Language and
+  Information, 13--41.
+\newblock Reprinted in Gair (1998), pp. 65--86.
+
+\bibitem[{Gair(1998)}]{Gair1998}
+Gair, James~W., 1998.
+\newblock \emph{Studies in South Asian linguistics; Sinhala and other South
+  Asian Languages}.
+\newblock New York; Oxford: Oxford University Press.
+
+\bibitem[{Greenberg(1963)}]{Greenberg1963}
+Greenberg, Joseph~Harold, 1963.
+\newblock \enquote{Some universals of grammar with particular reference to the
+  order of meaningful elements.}
+\newblock In \emph{Universals of language : report of a conference held at
+  Dobbs Ferry, New York, April 13-15, 1961}, edited by Joseph~H. Greenberg.
+  Cambridge, MA: The M.I.T. Press, 73--113.
+
+\bibitem[{Hawkins(1994)}]{Hawkins1994}
+Hawkins, John~A., 1994.
+\newblock \emph{A performance theory of order and consituency}.
+\newblock Cambridge: CUP.
+
+\bibitem[{Henadeerage(2002)}]{Henadeerage2002}
+Henadeerage, Kumara, 2002.
+\newblock \emph{Topics in Sinhala Syntax}.
+\newblock Ph.D. thesis, Australian National University.
+
+\bibitem[{Hussainmiya(1987)}]{Hussainmiya1987}
+Hussainmiya, B.~A., 1987.
+\newblock \emph{Lost cousins: The Malays of Sri Lanka}.
+\newblock Bangi: Institut Bahasa, Kesusasteraan dan Kebudayaan Melayu.
+
+\bibitem[{Jaffar(this volume)}]{Jaffartv}
+Jaffar, Mohamed, this volume.
+\newblock \enquote{The Semantics of Serial Verb Constructions in Sri Lanka
+  Malay.}
+
+\bibitem[{Masica(1976)}]{Masica1976}
+Masica, Colin~P., 1976.
+\newblock \emph{Defining a Linguistic Area: South Asia}.
+\newblock Chicago: University of Chicago Press.
+
+\bibitem[{Nitz \& Nordhoff(2010)}]{NitzEtAl2010}
+Nitz, Eike \& Nordhoff, Sebastian, 2010.
+\newblock \enquote{Subtractive Plural Morphology in Sinhala.}
+\newblock In \emph{Rara \& Rarissima. Collecting and interpreting unusual
+  characteristics of human languages}, edited by Jan Wohlgemuth \& Michael
+  Cysouw. Berlin: Mouton de Gruyter, 247--266.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009}
+Nordhoff, Sebastian, 2009.
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam, Utrecht.
+\newline\urlprefix\url{http://www.lotpublications.nl/publish/articles/003744/b%
+ookpart.pdf}
+
+\bibitem[{Nordhoff(2011)}]{Nordhoff2011copula}
+Nordhoff, Sebastian, 2011.
+\newblock \enquote{Having come to be a copula in Sri Lanka Malay -- an unusual
+  grammaticalization path.}
+\newblock \emph{Folia Linguistica} \emph{45}(1):103--126.
+
+\bibitem[{Nordhoff(forthcoming{\natexlab{\emph{a}}})}]{Nordhofffcjoat}
+Nordhoff, Sebastian, forthcoming{\natexlab{\emph{a}}}.
+\newblock \enquote{Jack-of-all-trades: The Sri Lankan Malay property word.}
+\newblock In \emph{Flexible word classes: a typological study of underspecified
+  parts-of-speech}, edited by Eva van Lier \& Jan Rijkhoff. Oxford: OUP.
+
+\bibitem[{Nordhoff(forthcoming{\natexlab{\emph{b}}})}]{Nordhofffcsvc}
+Nordhoff, Sebastian, forthcoming{\natexlab{\emph{b}}}.
+\newblock \enquote{Multi-verb constructions in Sri Lanka Malay.}
+\newblock \emph{Journal of Pidgin and Creole Languages} .
+
+\bibitem[{Rijkhoff(2002)}]{Rijkhoff2002}
+Rijkhoff, Johannes Nicolaas~Maria, 2002.
+\newblock \emph{The Noun Phrase}.
+\newblock Oxford: OUP.
+
+\bibitem[{Schroeder(1999)}]{Schroeder1999}
+Schroeder, Christoph, 1999.
+\newblock \emph{The Turkish Noun Phrase in Spoken Discourse}.
+\newblock Wiesbaden: Harrassowitz.
+
+\bibitem[{Slomanson(2006)}]{Slomanson2006cll}
+Slomanson, Peter, 2006.
+\newblock \enquote{Sri Lankan Malay morphosyntax: Lankan or Malay?}
+\newblock In \emph{Structure and Variation in Language Contact}, edited by Ana
+  Deumert \& Stephanie Durrleman. Amsterdam: John Benjamins, 135--158.
+
+\bibitem[{Slomanson(2008)}]{Slomanson2008ismil}
+Slomanson, Peter, 2008.
+\newblock \enquote{Progressive Aspect in Sri Lankan Malay and the Syntactic
+  Status of \em ambe(l)\em.}
+\newblock Paper presented at ISMIL 12, 26-27 June 2008 University of Leiden.
+
+\bibitem[{Smith et~al.(2004)Smith, Paauw, \& Hussainmiya}]{SmithEtAl2004}
+Smith, Ian~R., Paauw, S., \& Hussainmiya, B.~A., 2004.
+\newblock \enquote{Sri Lanka Malay: the state of the art.}
+\newblock \emph{Yearbook of South Asian Languages} \emph{2004}:197--215.
+
+\bibitem[{Tapovanaye(1986)}]{Tapovanaye1986}
+Tapovanaye, Suthadara, 1986.
+\newblock \emph{Analysis of the segmental phonemes of the Sri Lanka Malay
+  language}.
+\newblock Master's thesis, Univeristy of Kelaniya.
+\newblock Written in Sinhala.
+
+\bibitem[{Tapovanaye(1995)}]{Tapovanaye1995}
+Tapovanaye, Suthadara, 1995.
+\newblock \emph{Vowel Length in Sri Lankan Malay}.
+\newblock Master's thesis, University of Hawaii.
+
+\bibitem[{Wetzels \& Wezer(1986)}]{WetzelsEtAl1986}
+Wetzels, Leo \& Wezer, E. (eds.), 1986.
+\newblock \emph{Studies in Compensatory Lengthening}.
+\newblock Dordrecht: Foris.
+
+\end{thebibliography}

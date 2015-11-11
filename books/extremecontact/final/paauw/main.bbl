@@ -1,0 +1,83 @@
+\begin{thebibliography}{12}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Adelaar(1991)}]{Adelaar1991}
+Adelaar, K.~A., 1991.
+\newblock \enquote{Some Notes on the Origin of Sri Lanka Malay.}
+\newblock In \emph{Papers in Austronesian Linguistics}, edited by
+  H.~Steinhauer. Canberra: Australian National University, 23--37.
+
+\bibitem[{Adelaar \& Prentice(1996)}]{AdelaarEtAl1996}
+Adelaar, K.~A. \& Prentice, D.~J., 1996.
+\newblock \enquote{Malay: its History, Role and Spread.}
+\newblock In \emph{Atlas of Languages of Intercultural Communication in the
+  Pacific, Asia and the Americas}, edited by Stephen~A. Wurm, M\"uhlh\"ausler
+  Peter, \& Darrell~T. Tryon. Berlin: Mouton de Gruyter, 673--693.
+
+\bibitem[{Bichsel-Stettler(1989)}]{Bichsel1989}
+Bichsel-Stettler, Anne, 1989.
+\newblock \emph{Aspects of the Sri Lanka Malay Community and their Language}.
+\newblock Master's thesis, University of Bern.
+
+\bibitem[{Blust(1988)}]{Blust1988}
+Blust, Robert, 1988.
+\newblock \enquote{Malay historical linguistics: A progress report.}
+\newblock In \emph{Rekonstruksi dan Cabang-Cabang Bahasa Melayu Induk
+  [Reconstruction and the branches of Malay]}, edited by Mohd.~Thani Ahmad \&
+  Zaini~Mohamed Zain. Kuala Lumpur: Dewan Bahasa dan Pustaka, 1--33.
+
+\bibitem[{Coope(1976)}]{Coope1976}
+Coope, A.~E., 1976.
+\newblock \emph{A Malay-English Dictionary}.
+\newblock London: Macmillan.
+
+\bibitem[{Gil(2010)}]{Gil2010}
+Gil, David, 2010.
+\newblock \enquote{Malay/Indonesian Dialect Geography and the Sources of Sri
+  Lankan Malay.}
+\newblock Presentation at The Workshop on Sri Lanka Malay, Max Planck Institute
+  for Evolutionary Anthropology, Leipzig, Germany.
+
+\bibitem[{Hussainmiya(1987)}]{Hussainmiya1987}
+Hussainmiya, B.~A., 1987.
+\newblock \emph{Lost cousins: The Malays of Sri Lanka}.
+\newblock Bangi: Institut Bahasa, Kesusasteraan dan Kebudayaan Melayu.
+
+\bibitem[{Hussainmiya(2008)}]{Hussainmiya2008}
+Hussainmiya, B.~A., 2008.
+\newblock \emph{Orang Rejimen: The Malays of Sri Lanka}.
+\newblock Bangi: Universiti Kebangsaan Malaysia, 2nd edition.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009}
+Nordhoff, Sebastian, 2009.
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam, Utrecht.
+\newline\urlprefix\url{http://www.lotpublications.nl/publish/articles/003744/b%
+ookpart.pdf}
+
+\bibitem[{Paauw(2004)}]{Paauw2004}
+Paauw, Scott, 2004.
+\newblock \emph{A Historical Analysis of the Lexicon of Sri Lanka Malay}.
+\newblock Master's thesis, York University (Toronto).
+\newblock Presented as a paper at the meeting of the Linguistic Society of
+  America/Society for Pidgin and Creole Linguistics, Oakland, CA, January 2005.
+
+\bibitem[{Paauw(2008)}]{Paauw2008}
+Paauw, Scott, 2008.
+\newblock \emph{The Malay Contact Varieties of Eastern Indonesia: A Typological
+  Comparison}.
+\newblock Ph.D. thesis, University at Buffalo.
+
+\bibitem[{Saldin(2007)}]{Saldin2007}
+Saldin, BDK, 2007.
+\newblock \emph{A Concise Sri Lankan Malay Dictionary}.
+\newblock Kurunegala: Nihon Printers.
+
+\end{thebibliography}

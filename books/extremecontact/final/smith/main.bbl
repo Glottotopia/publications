@@ -1,0 +1,262 @@
+\begin{thebibliography}{43}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Andersen(1973)}]{Andersen1973}
+Andersen, Henning, 1973.
+\newblock \enquote{Abductive and deductive change.}
+\newblock \emph{Language} \emph{49}:765--793.
+
+\bibitem[{Ansaldo(2008)}]{Ansaldo2008genesis}
+Ansaldo, Umberto, 2008.
+\newblock \enquote{Sri Lanka Malay revisited: Genesis and classification.}
+\newblock In \emph{A world of many voices: Lessons from documented endangered
+  languages}, edited by Arienne Dwyer, D.~Harrison, \& David Rood. Amsterdam,
+  Philadelphia: John Benjamins., 13--42.
+
+\bibitem[{Arends(1993)}]{Arends1993}
+Arends, J., 1993.
+\newblock \enquote{Towards a gradualist model of creolization.}
+\newblock In \emph{Atlantic meets Pacific}, edited by F.~Byrne \& John Holm.
+  Amsterdam: John Benjamins, 371--380.
+
+\bibitem[{Bickerton(1984)}]{Bickerton1984}
+Bickerton, Derek, 1984.
+\newblock \enquote{The language bioprogram hypothesis.}
+\newblock \emph{Behavioral and Brain Sciences} \emph{7}:173--203.
+
+\bibitem[{Bourdin \& Jaffar(2010)}]{BourdinEtAl2010}
+Bourdin, Philippe \& Jaffar, Mohamed, 2010.
+\newblock \enquote{SLM \em yang\em: the vanishing relativizer?}
+\newblock Paper presented at ISMIL XIV, University of Minnesota, May 2010.
+
+\bibitem[{Cardona(1965)}]{Cardona1965}
+Cardona, George, 1965.
+\newblock \emph{A Gujarati reference grammar}.
+\newblock Philadelphia: University of Pennsylvania Press.
+
+\bibitem[{Clements(1991)}]{Clements1991}
+Clements, J.~C., 1991.
+\newblock \enquote{Two Indo-Portuguese creoles: Languages in transition.}
+\newblock \emph{Hispania} \emph{74}:637--646.
+
+\bibitem[{Clements(2009)}]{Clements2009}
+Clements, J.~C., 2009.
+\newblock \enquote{Accounting for some similarities and differences among the
+  Indo-Portuguese creoles.}
+\newblock \emph{Journal of Portuguese Linguistics} \emph{8}:23--47.
+
+\bibitem[{De~Silva~Jayasuriya(1999)}]{Jayasuriya1999substratum}
+De~Silva~Jayasuriya, Shihan, 1999.
+\newblock \enquote{Portuguese in Sri Lanka: Influence of substratum languages.}
+\newblock \emph{Journal of the Royal Asiatic Society} \emph{3}(9):251--270.
+
+\bibitem[{Englebretson(2008)}]{Englebretson2008}
+Englebretson, Robert, 2008.
+\newblock \enquote{From subordinate clause to noun-phrase: Yang constructions
+  in colloquial Indonesian.}
+\newblock In \emph{Crosslinguistic studies of clause combining: The
+  multifunctionality of conjunctions}, edited by Ritva Laury. Amsterdam: John
+  Benjamins, 1--33.
+
+\bibitem[{Gair(1976)}]{Gair1976verbsinhala}
+Gair, James~W., 1976.
+\newblock \enquote{The verb in Sinhala, with some preliminary remarks on
+  Dravidianization.}
+\newblock \emph{International Journal of Dravidian Linguistics}
+  \emph{5}:259--272.
+\newblock Selections reprinted in Gair 1998, 200-209, to which page reference
+  is made.
+
+\bibitem[{Gair(1986)}]{Gair1986}
+Gair, James~W., 1986.
+\newblock \enquote{Sinhala Focused Sentences: Naturalization of a Calque.}
+\newblock In \emph{South Asian languages: Structure, Convergence and
+  Diglossia}, edited by Bh. Krishnamurti, Colin~P. Masica, \& Anjani~K. Sinha.
+  Delhi: Motilal Banarsidass, 147--164.
+\newblock Reprinted, with additions, in Gair (1998), pp. 153-169, 323-327.
+
+\bibitem[{Geiger(1938)}]{Geiger1938}
+Geiger, Wilhelm, 1938.
+\newblock \emph{A grammar of the Sinhalese language}.
+\newblock Colombo: Royal Asiatic Society.
+\newblock Reprinted 1995; New Delhi, Madras: Asian Educational Services.
+
+\bibitem[{Holm(2000)}]{Holm2000}
+Holm, John, 2000.
+\newblock \emph{An introduction to pidgins and creoles}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Hussainmiya(1987)}]{Hussainmiya1987}
+Hussainmiya, B.~A., 1987.
+\newblock \emph{Lost cousins: The Malays of Sri Lanka}.
+\newblock Bangi: Institut Bahasa, Kesusasteraan dan Kebudayaan Melayu.
+
+\bibitem[{Krishnamurti(2003)}]{Krishnamurti2003}
+Krishnamurti, Bh., 2003.
+\newblock \emph{The Dravidian languages}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{Lefebvre \& Lumsden(1994)}]{LefebvreEtAl1994}
+Lefebvre, Claire \& Lumsden, John~S., 1994.
+\newblock \enquote{Le r\^ole central de la relexification dans la gen\`ese des
+  langues cr\'eoles.}
+\newblock \emph{Plurilinguismes} \emph{8}:47--93.
+
+\bibitem[{Masica(1991)}]{Masica1991}
+Masica, Colin~P., 1991.
+\newblock \emph{The Indo-Aryan Languages}.
+\newblock Cambridge: CUP.
+
+\bibitem[{McWhorter(2001)}]{McWhorter2001}
+McWhorter, John~H., 2001.
+\newblock \enquote{The world's simplest grammars are creole grammars.}
+\newblock \emph{Linguistic Typology} \emph{5}:125--166.
+
+\bibitem[{Meakins(to appear)}]{Meakinstoappear}
+Meakins, Felicity, to appear.
+\newblock \enquote{Mixed languages.}
+\newblock In \emph{Contact languages}, edited by Yaron Matras \& Peter Bakker.
+  Berlin: Mouton de Gruyer.
+
+\bibitem[{Munkwitz-Smith(1995)}]{Munkwitz1995}
+Munkwitz-Smith, Jeffry Clark~von, 1995.
+\newblock \emph{Substratum influence on Indo-Aryan grammar}.
+\newblock Ph.D. thesis, University of Minnesota.
+
+\bibitem[{Murugaiyan(2009)}]{Murugaiyan2009}
+Murugaiyan, Appasamy, 2009.
+\newblock \enquote{Focus constructions in modern Tamil.}
+\newblock \emph{International Journal of Dravidian Linguistics}
+  \emph{38}:43--69.
+
+\bibitem[{Nadkarni(1975)}]{Nadkarni1975}
+Nadkarni, Mangesh~V., 1975.
+\newblock \enquote{Bilingualism and syntactic change in Konkani.}
+\newblock \emph{Language} \emph{51}:672--83.
+
+\bibitem[{Nordhoff(forthcoming)}]{Nordhofffcslp}
+Nordhoff, Sebastian, forthcoming.
+\newblock \enquote{The current state of Sri Lanka Portuguese.}
+\newblock \emph{Journal of Pidgin and Creole Languages.} .
+
+\bibitem[{Pandit(1972)}]{Pandit1972}
+Pandit, Parodh~B., 1972.
+\newblock \enquote{Bilingual's grammar: Tamil-Saurashtri grammatical
+  convergence.}
+\newblock In \emph{India as a sociolinguistic area}, edited by Parodh~B.
+  Pandit. Poona: University of Poona, 1--25.
+
+\bibitem[{Rhys-Davids \& Stede(1921-1925/1966)}]{RhysEtAl1921}
+Rhys-Davids, T.~W. \& Stede, William, 1921-1925/1966.
+\newblock \emph{The Pali Text Society’s Pali-English Dictionary}.
+\newblock London: Luzac, 5th edition.
+
+\bibitem[{Rosch(1975)}]{Rosch1975}
+Rosch, Eleanor, 1975.
+\newblock \enquote{Cognitive representations of semantic categories.}
+\newblock \emph{Journal of Experimental Psychology: General}
+  \emph{104}:192--233.
+
+\bibitem[{Rosch(1978)}]{Rosch1978}
+Rosch, Eleanor, 1978.
+\newblock \enquote{Principles of categorization.}
+\newblock In \emph{Cognition and Categorization}, edited by E.~Rosch \& B.~B.
+  Lloyd. Hillsdale, NJ: Lawrence Erlbaum, 27--48.
+
+\bibitem[{Schiffman(1999)}]{Schiffman1999}
+Schiffman, Harold~F., 1999.
+\newblock \emph{A Reference Grammar of Spoken Tamil}.
+\newblock Cambridge: CUP.
+
+\bibitem[{Selinker(1972)}]{Selinker1972}
+Selinker, Larry, 1972.
+\newblock \enquote{Interlanguage.}
+\newblock \emph{International Review of Applied Linguistics}
+  \emph{10}:209--241.
+
+\bibitem[{Smith(1979)}]{Smith1979convergence}
+Smith, Ian, 1979.
+\newblock \enquote{Convergence in Sri Lanka: A Creole Example.}
+\newblock \emph{Lingua} \emph{48}:193--222.
+
+\bibitem[{Smith(1985{\natexlab{\emph{a}}})}]{Smith1985dev}
+Smith, Ian~R., 1985{\natexlab{\emph{a}}}.
+\newblock \enquote{The development of morphosyntax in Sri Lanka Portuguese.}
+\newblock \emph{York [UK] Papers in Linguistics} \emph{11}:291--301.
+
+\bibitem[{Smith(1985{\natexlab{\emph{b}}})}]{Smith1985multi}
+Smith, Ian~R., 1985{\natexlab{\emph{b}}}.
+\newblock \enquote{Multilingualism and diffusion: A case study from Singapore
+  English.}
+\newblock \emph{Indian Journal of Applied Linguistics} \emph{11}:105--126.
+
+\bibitem[{Smith(2005{\natexlab{\emph{a}}})}]{Smith2005missionnaires}
+Smith, Ian~R., 2005{\natexlab{\emph{a}}}.
+\newblock \enquote{Les missionnaires wesleyens et la conversion du cr\'eole
+  portugais de Sri Lanka.}
+\newblock Paper read at the annual meeting of Associa\c{c}\~ao de Crioulos de
+  Base Lexical Portuguesa e Espanhola. Orl\'eans, June.
+
+\bibitem[{Smith(2005{\natexlab{\emph{b}}})}]{Smith2005prototype}
+Smith, Ian~R., 2005{\natexlab{\emph{b}}}.
+\newblock \enquote{(Re)conceptualizing the Creole (and Pidgin) Prototype.}
+\newblock Paper read at the annual meeting of the Society for Pidgin and Creole
+  Linguistics, San Francisco, January.
+
+\bibitem[{Smith(forthcoming)}]{Smithfc}
+Smith, Ian~R., forthcoming.
+\newblock \enquote{Measuring substrate influence: Word order features in
+  Ibero-Asian creoles.}
+\newblock In \emph{Ibero-Asian Creoles: Comparative Perspectives}, edited by
+  Alan~N. Baxter, Hugo Cardoso, \& Mário~Pinharanda Nunes. Amsterdam: John
+  Benjamins.
+
+\bibitem[{Smith \& Paauw(2006)}]{SmithEtAl2006cll}
+Smith, Ian~R. \& Paauw, S., 2006.
+\newblock \enquote{Sri Lanka Malay: Creole or convert.}
+\newblock In \emph{Structure and Variation in Language Contact}, edited by Ana
+  Deumert \& Stephanie Durrleman. Amsterdam: John Benjamins, 159--182.
+
+\bibitem[{Steinhauer(1992)}]{Steinhauer1992}
+Steinhauer, Hein, 1992.
+\newblock \enquote{On the meaning of \em yang \em in Indonesian.}
+\newblock In \emph{The Language Game: Papers in Memory of Donald C. Laycock},
+  edited by Tom Dutton, Malcolm Ross, \& Darell Tryon. Canberra: Research
+  School of Pacific Studies, 427--439.
+
+\bibitem[{Thomason(1997)}]{Thomason1997}
+Thomason, Sarah~G, 1997.
+\newblock \enquote{A typology of contact languages.}
+\newblock In \emph{Pidgins and creoles: structure and status including selected
+  papers from the meetings of the Society for Pidgin and Creole Linguistics},
+  edited by Arthur~K. Spears \& Donald Winford. Amsterdam; Philadelphia: John
+  Benjamins, 71--88.
+
+\bibitem[{Thomason(2001)}]{Thomason2001}
+Thomason, Sarah~G., 2001.
+\newblock \emph{Language Contact: An Introduction}.
+\newblock Washington DC: Georgetown University Press.
+
+\bibitem[{Toer(1982)}]{Toer1982}
+Toer, Pramoedya~Ananta (ed.), 1982.
+\newblock \emph{Tempo doeloe. Antologi sastra pra-Indonesia.}
+\newblock Jakarta: Hasta Mitra.
+
+\bibitem[{U\v{c}ida(1979)}]{Ucida1979}
+U\v{c}ida, Norihiko, 1979.
+\newblock \emph{Oral Literature of the Saurashtrans}.
+\newblock 6. Hirakata; Calcutta: KUFS; Simant.
+
+\bibitem[{van Minde(2008)}]{vanMinde2008}
+van Minde, D., 2008.
+\newblock \enquote{The pragmatic function of Malay {\em yang}.}
+\newblock \emph{Journal of Pragmatics} \emph{40}:1982--2001.
+
+\end{thebibliography}

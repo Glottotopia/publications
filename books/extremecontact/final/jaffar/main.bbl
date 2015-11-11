@@ -1,0 +1,59 @@
+\begin{thebibliography}{9}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Aikhenvald(2006)}]{Aikhenvald2006}
+Aikhenvald, Alexandra, 2006.
+\newblock \enquote{Serial Verb Constructions in Typological Perspective.}
+\newblock In \emph{Serial Verb Constructions: A Crosslinguistic Typology},
+  edited by A.~Aikhenvald \& RMW Dixon. Oxford: Oxford University Press, 1--60.
+
+\bibitem[{Arden(1962[1891])}]{Arden1891}
+Arden, A.~H., 1962[1891].
+\newblock \emph{A Progressive Grammar of the Tamil Language}.
+\newblock Madras: Christian Literature Society.
+
+\bibitem[{Bourdin \& Jaffar(2010)}]{BourdinEtAl2010}
+Bourdin, Philippe \& Jaffar, Mohamed, 2010.
+\newblock \enquote{SLM \em yang\em: the vanishing relativizer?}
+\newblock Paper presented at ISMIL XIV, University of Minnesota, May 2010.
+
+\bibitem[{Gair \& Paolillo(1997)}]{GairEtAl1997}
+Gair, James~W. \& Paolillo, John~C, 1997.
+\newblock \emph{Sinhala}.
+\newblock M\"unchen: Lincom Europa.
+
+\bibitem[{Hopper \& Thompson(1980)}]{HopperEtAl1980}
+Hopper, Paul \& Thompson, Sandra~A., 1980.
+\newblock \enquote{Transitivity in Grammar and Discourse.}
+\newblock \emph{Language} \emph{56}:251--299.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009}
+Nordhoff, Sebastian, 2009.
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam, Utrecht.
+\newline\urlprefix\url{http://www.lotpublications.nl/publish/articles/003744/b%
+ookpart.pdf}
+
+\bibitem[{Nordhoff(forthcoming)}]{Nordhoff2012jpcl}
+Nordhoff, Sebastian, forthcoming.
+\newblock \enquote{Multi-verb constructions in Sri Lanka Malay.}
+\newblock \emph{Journal of Pidgin and Creole Languages} \emph{27}(2).
+
+\bibitem[{Stevens \& Schmidgall-Tellings(2004)}]{StevensEtAl2004}
+Stevens, Alan~M. \& Schmidgall-Tellings, A.~Ed. (eds.), 2004.
+\newblock \emph{A Comprehensive Indonesian-English Dictionary}.
+\newblock Athens, Ohio: Ohio University Press.
+
+\bibitem[{{Tapovanaye Sutadhara}(1995)}]{Sutadhara1995}
+{Tapovanaye Sutadhara}, 1995.
+\newblock \emph{Vowel Length in Sri Lankan Malay}.
+\newblock Master's thesis, University of Hawaii.
+
+\end{thebibliography}
