@@ -1,0 +1,458 @@
+Catch me if you can: Pathways of Dravidian
+influence in the linguistic ecology of Sri Lanka
+Sebastian Nordhoff
+June 25, 2013
+Abstract
+
+1
+
+Introduction
+
+2
+
+Convergence
+
+Convergence is generally seen as two languages becoming more like another. ?, however, holds that in many cases, it is better to speak of ‘advergence’, as there is usually
+one language which changes a lot in the direction of the other, while the other changes
+hardly at all.
+A clear case of advergence would be Pennsylvania Dutch, which becomes more
+like English, whereas the surrounding varieties of English are hardly influenced by
+Pennsylvania Dutch. A clear case of convergence would be Kupwar (?), where all
+three languages (Urdu, Kannada, Marathi) underwent change in the direction of the
+others.
+In this paper, I want to discuss language change processes in Sri Lanka and show
+that, depending on the subvarieties, there are multiple advergence processes going on
+in conflicting directions. This network of changes makes it difficult to exactly locate
+the origin of a change. For instance, Sinhala, at a broad level, converges towards Tamil.
+Certain (Muslim) Tamil dialects, however, converge towards Sinhala. Sri Lanka Malay,
+finally, converges towards these Muslim Tamil dialects. If we find a feature X in Sri
+Lanka Malay, how can we say whether it comes directly from Tamil, whether it comes
+from Tamil via Sinhala, or whether it comes from Sinhala via Muslim Tamil?
+This paper is structured as follows: I will first give an overview of the Sri Lankan
+linguistic ecology, sketching the sociolinguistic, geographic and demographic setup
+of the relevant languages and giving some historical background. I will then discuss
+received wisdom about the contact situation. After taking a look at the dialectology of
+the respective languages, I will reassess the contact situation, showing that the language
+change processes are more complex than assumed.
+
+1
+
+Figure 1: The current distribution of linguistic groups in Sri Lanka
+
+3
+
+The Sri Lankan linguistic ecology
+
+The first language spoken in Sri Lanka that we know of is the Vedda language ??.
+Various proposals have been made as to its origins, but as a matter of fact, language
+attrition has proceeded to a point where little of any substance can be said about the
+affiliation of this language. Genetic studies suggest that the Vedda people are related
+to populations of Andaman and Nicobar. Vedda as spoken today can be considered a
+variety of Sinhala with some lexical and morphological peculiarities (?). Due to the
+lack of material, Vedda will not be considered further in this paper.
+Sinhala (Indo-Aryan) and Tamil (Dravidian) both arrived on the island about three
+millennia ago, although the respective order of arrival is a matter of heated debate.
+Sinhala has been shown to share some features with Western Indo-Aryan languages like
+Gujarati and others with Eastern Indo-Aryan languages like Bengali (?). This suggests
+two waves of immigration, but again the chronological order is unsure (Figure 2).
+Sinhala is separated from its Northern cousins by the Dravidian languages of South
+India and is isolated within the family (disregarding Dhivehi (Maldivian), which is
+an offshoot of Sinhala). Due to prolonged contact with Dravidian languages, Sinhala
+became much more Dravidianized than any other Indo-Aryan language. In fact, the
+Indo-Aryan nature of Sinhala is so well concealed that in the 19th century, (?) classified
+Sinhala as a Dravidian language.
+?? adds Sinhala to the South-South Asian Sprachbund, which comprises Southern
+India, Sri Lanka, and the Maldives. Features which set off Sinhala from the Northern
+¯ and o
+¯ , conjunctive participles
+Indo-Aryan languages are absence of aspirates, long e
+2
+
+Figure 2: Migrations from India to Sri Lanka.
+
+3
+
+without a same-subject requirement, evidentials, quotatives, and a very thorough leftbranching structure. These features are shared with Tamil.
+Sinhala is today the majority language of Sri Lanka with about 74% of the population speaking it as first language. Sinhala speakers are Buddhists or Christians. They
+mainly live in the West, Center, and South of the island, but can be found elsewhere
+as well. After the end of the Sri Lankan Civil War, there are ideas of settling Sinhala
+speakers in the Northern regions as well, which are predominantly Tamil.
+Sri Lankan Tamil prides itself as a very old and pure form of this language. Tamil
+is spoken by the Sri Lankan Tamils (Hindu or Christian) mainly in the North, the Moors
+(Muslim) in the West and in cities, and the Indian Tamils (Hindu or Christian) in the
+central tea estates. These varieties differ considerably. Altogether, about 25% of the
+Sri Lankan population speak one variety or another of Tamil as their mother tongue.
+Sri Lankan Tamil uses the same script and orthography as Indian Tamil, but spoken
+Sri Lankan Tamil is not intelligible to speakers from India. The differences are so
+important that speakers from India frequently think that their interlocutor does not
+speak a variety of Tamil at all, but rather Malayalam. It should also be noted that
+Tamil is a diglossic language, and that written Tamil differs considerably from any
+variety of spoken Tamil.
+Jaffna Tamil is the most prestigious variety of Tamil on the island. Its main features
+are archaic phonology and morphology, a threefold deictic contrast, and a more differentiated negation system than Indian Tamil. The other varieties of Tamil on the island
+tend to be eclipsed by Jaffna Tamil in scholarly domains. We will return to this below.
+Sri Lanka Portuguese arrived on the island during the Portuguese period (15031656) as a Creole. Due to intermarriage with the local population, the language became
+thoroughly Lankanized and is now the only Creole with a European lexifier to have
+SOV word order or postpositions. The Dutch (1656-1798) continued to use Sri Lanka
+Portuguese as a lingua franca, a practice which continued into the early days of British
+rule (1798-1948). As a lingua franca, Sri Lanka Portuguese was also acquired by
+populations which otherwise had no connections to the colonial administration. Today,
+Sri Lanka Portuguese is spoken on the East Coast (Tamil-dominated) by about 4000
+Portuguese Burghers, and by a very small number of Sri Lankan Kaffirs (descendants
+of slaves) on the West Coast. ? shows that the Burghers’ Sri Lanka Portuguese is
+thoroughly influenced by Tamil.
+Sri Lanka Malay is the language of the descendants of immigrants brought during
+the Dutch and British period. It was mainly spoken in the centers of colonial administration, i.e. cities and towns in the center and in the South. Towards the end of the 19th
+century (?), Sri Lanka Malays were also employed as overseers on the emerging tea
+estates in the central Hill Country. Sri Lanka Malay has been argued to show influence
+from Muslim Tamil (?) and/or from Sinhala (?).
+Sri Lanka Malay is relatively homogeneous. There is a small pocket of Sri Lanka
+Malay speakers on the South coast (Kirinda and Hambantota), which has some dialectal
+differences, but overall mutual intelligibility is good.
+
+4
+
+4
+
+Who goes where, 1st iteration
+
+The standard view about language contact in Sri Lanka is that all languages that get
+there converge towards Tamil. This assumption is based on the observation that Sri
+Lankan Tamil is an archaic variety (?), which suggests that it has not changed a lot.
+Given that Sri Lanka is a sprachbund (?), potentially within a larger South-South-Asian
+Sprachbund (?), the logical conclusion is that all other members have converged to the
+most conservative language, Tamil in this case. This is received wisdom for Sinhala
+(??), Sri Lanka Portuguese (?) and Sri Lanka Malay (???).
+
+5
+
+A closer look at the contact situations
+
+While at first sight, it appears that Tamil provides the typological sink all languages of
+the island move towards to, closer look at the actual varieties in question casts doubt
+on this scenario. I will now delve deeper into the internal diversity of the languages
+of the island and show, that at a closer look, the language change processes a far more
+complex than presented beforehand.
+
+5.1 Sinhala
+Tamil influence on Sinhala syntax is clear and widely accepted. The phonological features of long mid vowels and lack of aspiration also distinguish Sinhala from Northern
+Indo-Aryan languages, and make it appear closer to Tamil. This led ? to argue for an
+extensive phonological influence from Tamil on Sinhala.1
+In a very detailed study, however, ?, drawing on material by ?, shows that all the
+mentioned changes towards Tamil are either empirically problematic or were accompanied by changes away from Tamil in the very same periods. For instance, long /e/ and
+/o/ in Sinhala developed after the eighth century BC. This looks like Tamil influence,
+since Tamil has this distinction as well. However, before the eighth century, Sinhala
+had lost all vowel length distinctions altogether. This is a most un-Tamil development.
+A movement away from Tamil would then be immediately followed by a movement
+towards Tamil. It is of course possible that the sociodemographic setting changes a
+lot in short time, and that patterns of language change follow. However, Gair shows
+that the phonological history of Sinhala is such that movements towards Tamil are usually quickly followed by movements away from Tamil. This would entail a flickering
+sociodemographic setting, where Tamil influence is turned on and off in very short
+intervals, an unlikely explanation.
+As for the lexicon, Tamil influence is beyond doubt. The same is true for syntax.
+? lists the following features which point to clear Tamil influence in Sinhala. It is not
+clear how this influence in morphosyntax could be reconciled with the claimed absence
+of influence in phonology.
+1 Elizarenkova
+
+gives more features which argue for Tamil influence, but they are all empirically problem-
+
+atic.
+
+5
+
+• Question marker appears at the end of sentence (postverbal) as the unmarked location, but may also occur on questioned sentence-internal constituents)
+• Subordinate Clauses marked at the end, by a verbal affix or a conjunctive form
+of some kind, rather than by initial conjunctions (which are rare or missing altogether except for sentence adverbs)
+• Preposed Relative Clauses (Adjectival Sentences) as the only or main alternative.
+• Correlatives use a WH rather than a correlative form of the Indo-Aryan type and
+are generally restricted to indefinite or conditional contexts and commonly employ a sentence particle (dubitative or question) on the subordinate clause.
+• Sentence-Final quotative from ‘say’
+• Sentences may be nominalized without genitivization (or deletion) of subject, by
+employing a sentence-final form or verbal affix.
+• Focused (Nominal Cleft) Sentences, including those with rightward focus.
+• Negatives:
+– Negative varies with type of main clause (Verbal, Equational, Existential).
+– Negative verbs in subordinate clauses.
+– Cleft sentences negated like nominal equational ones.
+• Conjunctive participles may occur with overt lexical subjects, not co-indexed
+with main subject (or agent). [Extent yet to be determined]
+• A sentence-final reportative or hearsay particle.
+
+5.2 Tamil
+The internal diversity of Tamil is very high. The first division to be made is between
+written Tamil and spoken Tamil. In the context of this paper, written Tamil is not
+relevant. Spoken Tamil can be divided into Indian Tamil (with further subdivisions) and
+6
+
+✟✟
+Written
+Tamil
+
+Tamil
+✟❍
+✟
+❍
+
+❍❍
+Spoken
+Tamil
+✟✟❍❍❍
+✟✟
+❍
+
+✟
+❍❍
+✟✟
+❍
+✟
+❍❍
+✟
+Sri Lankan
+Indian
+Tamil
+Tamil
+✟❍
+✟❍
+✟
+❍
+✟
+❍❍
+✟
+❍
+✟
+✟
+❍
+✟
+❍❍
+Continental
+Sri Lankan
+✟✟
+❍
+✟
+❍❍
+Indian Tamil
+Estate
+✟
+Muslim
+Indian Tamil Hindu/Christian
+Tamil
+Tamil
+✏
+✟❍
+
+✏
+✟
+❍❍
+✏
+ 
+❅
+✟
+
+✏✏  
+
+❅
+✏
+SE
+NW
+
+✏
+ 
+❅
+
+✏✏
+Muslim Muslim
+Negombo
+Jaffna
+Trincomalee Batticaloa
+Tamil
+Tamil
+Figure 3: Dialectology of Tamil with special focus on Sri Lanka
+Sri Lankan Tamil (See ??). Sri Lankan Tamil is generally not intelligible to Indians.
+The reverse is not true, due to the exposure to Tamil media and television.
+Within Sri Lanka, the most prestigious variety is Jaffna Tamil, spoken by Hindus
+and Christians. Next to Jaffna Tamil, the varieties of Trincomalee and Batticaloa also
+deserve mention. These varieties can clearly be distinguished. Tamil as spoken by
+Muslims differs from the variety used by the Hindus and Christians. Muslim Tamil
+itself is divided into a North-Eastern variety, close to Batticaloa Tamil, and a SouthWestern variety, which is heavily Sinhalized.
+Another Sinhalized variety is Negombo fishermen’s Tamil (?), which, like SouthWestern Muslim Tamil has lost verbal agreement.
+Things are further complicated by Indian migrant workers in the central tea estates
+and the Northern provinces, who arrived in the late 19th century. They spoke Indian
+dialects of Tamil (and other Dravidian languages), and their speech today is still closer
+to Indian Tamil than to Sri Lankan Tamil. Among these dialects, processes of dialect
+levelling probably took place ?, but this is in need of further research.
+As far as language change is concerned, the varieties of Jaffna, Trincomalee and
+Batticaloa are generally seen as archaic, with little or nor change towards Sinhala having taken place. All varieties of Muslim Tamil show Arabic influence in the lexicon,
+and South-Western Muslim Tamil and Negombo fishermen’s Tamil (non-Muslim) show
+syntactic and phonological influence from Sinhala. ? reports that the following features
+point towards Sinhala influence in Negombo Fishermen’s Tamil.
+• loss of verb agreement†
+7
+
+• first person present tense denotes strong intention
+• changes in the semantics of the morphological future
+• existential used for possibilitative
+• reduplication denotes progressive†
+• changes in negatives
+• (re)development of a three way deictic system†
+• calque of an emphatic construction
+• ‘at night’ formed with the dative †
+• infinitive + existential for debitive†
+The features marked with a dagger † are also found in Sri Lanka Malay. Depending
+on the variety we look at, Tamil influence in Sri Lanka Malay therefore would vary
+greatly. The Negombo fishermen dialect is described quite extensively in the relevant
+domains, and shows to what extent non-standard varieties of Tamil can be Sinhalized. It
+is clear from the socio-demographic setting (professional occupation, region, religion)
+that Negombo fishermen’s Tamil did not exert influence on Sri Lanka Malay. Still, it
+can provide some insights on the extent of possible Sinhalization of other dialects of
+Tamil. A case in point is South-Western Muslim Tamil. There is consensus that this
+variety is a highly relevant contact language for Sri Lanka Malay, but it is described
+in less detail than Negombo fishermen’s Tamil. A number of interesting parallels,
+however, emerge from the literature. ?, 72-79 notes:
+• differences in kin terms
+• lexical differences in religious vocabulary
+• frequent initial voiced plosives (S,†)
+• geminate voiced plosives (S,†)
+• absence of retroflex liquids (S,†)
+• clearer articulation of vowels (S,†)
+• lack of agreement (S,†). See Table 1
+• different causative marker; different simultaneity marker
+• of 55 kin terms, 25 are shared an d 30 are different between the NE and the S
+variety
+• Sinhala lexical borrowings (S)
+
+8
+
+1s
+2s
+3sm
+3sf
+1p
+2p
+3p
+
+NE Muslim Tamil S Muslim Tamil
+naan poonan
+naan poona
+nii poonaay
+nii poona
+avan ponaan
+avan poona
+avaí poonaí
+aval poona
+naanka poonam
+naanka poona
+niinka pooninka
+niinka poona
+not given in source
+
+Sinhala
+mama giyaa
+oba giyaa
+
+SLM
+see supii
+lorang supii
+
+eyaa giyaa
+
+incayang supii
+
+api giyaa
+oyalaa giyaa
+
+kithang supii
+lorampada supii
+
+Table 1: Comparison of NE Muslim Tamil and Souther Muslim Tamil forms from ?,
+76. Sinhala and SLM added for comparison.
+An (S) in this enumeration points to features where an explanation involving Sinhala is possible. The dagger denotes, as above, that a feature of Sri Lanka Malay, whose
+existence could not be explained by recurrence to a more standard form of Tamil, can
+very well be explained by taking into consideration a dialect of Tamil.
+Nuhman has focused more on phonology, while Bonta was more interested in morphosyntax. Taken together, however, we get a more complete picture about the influences Sinhala has exerted on Tamil.
+While at first glance, it appeared that Sinhala was moving towards Tamil, which
+remained inert, closer inspection reveals that there are some varieties of Tamil which
+are moving towards Sinhala, similar to moving against the direction of a moving train.
+
+5.3 Sri Lanka Malay
+Sri Lanka Malay shows quite a great deal of internal variation, but this variation does
+not pattern geographically. Serious differences in phonology, morphology or syntax
+can be found within the same town. The only clear regional differences observed up to
+know is a much more contracted speech in Hambantota and Kirinda on the South coast
+as compared to the other varieties and a different unmarked first person pronoun in the
+North (see) as compared to the south (goo).
+Sri Lanka Malay shows some very peculiar structures which are clearly of Lankan
+origin. We can mention SOV word order, postpositions, retroflex consonants, quantity
+distinctions in vowels and consonants, clause chaining, and conjunctive participles.
+These features are almost all absent from other varieties of Malay (???). It is clear that
+Sri Lanka Malay acquired them after arriving on the island. But did it acquire them
+from Sinhala (the majority language), or from Tamil. And if it acquired them from
+Tamil, which variety of Tamil are we talking about?
+For instance, the subphonemic contrast between dental and alveolar stops in traditional varieties of Malay phonemicized in Sri Lanka (???). We now have a distinction
+between /t
+”;ã/ and /t
+”;ú/. This could be due to either Sinhala or Tamil, which both have
+an opposition between dental and retroflex place of articulation. At the same time,
+Sri Lanka Malay did not acquire the Tamil distinction between alveolar and retroflex in
+laterals and nasals. This could be interpreted as making Tamil influence less likely. But
+
+9
+
+if we look deeper into Tamil dialectology, we find that South-Western Muslim Tamil,
+the most likely contact variety for the Malays because of the shared religion, does not
+have retroflex nasals or liquids either (?). This variety of Tamil has already changed
+its phonology towards Sinhala to an extent which makes the distinction between Sinhala influence on phonology and Tamil influence on phonology harder than initially
+assumed.
+The same is true for syntax. Sri Lanka Malay has acquired a number of morphological categories through language contact. We can mention infinitives, conjunctive
+particples, tense affixes. Those could all stem from either Sinhala or Tamil. What we
+do not find are agreement markers, which Tamil has but Sinhala lacks. This can again
+be interpreted as making Tamil influence less likely. But, as with phonology, a closer
+inspection of Tamil dialectology allows us to refute this argument: South Western Muslim Tamil has lost verb agreement under the influence from Sinhala. Sri Lanka Malay’s
+lack of developing agreement can therefore not establish lack of Tamil influence in this
+domain. Again, South Western Muslim Tamil is on its way towards Sinhala, making
+ascertaining the respective influences from Sinhala and Tamil on Sri Lanka Malay the
+more difficult.
+
+5.4 Sri Lanka Portuguese
+Sri Lanka Portuguese dialectology has not been studied extensively. The major division
+is between the Eastern variety of the Portuguese Burghers and the Western variety
+of the Ceylon Kaffirs. The latter variety is likely to have undergone more influence
+from Sinhala, but it is moribund, so the extent of this influence is difficult to ascertain.
+Within the Burgher variety, the varieties of Trincomalee and Batticaloa are very close,
+but some morphological differences set them apart, e.g. the imperative marker (?). In
+all varieties, there is lexical influence from Tamil, and to a lesser extent, from Sinhala.
+
+6
+
+Who goes where, 2nd iteration
+
+Wrapping up what has been said in the previous section, we can state the following:
+1. Vedda changed towards Sinhala
+2. Sri Lanka Malay changes towards South-Western Muslim Tamil
+3. South-Western Muslim Tamil changes towards Sinhala
+4. Negombo Tamil changes towards Sinhala.
+5. Sinhala changes towards Tamil
+6. Sri Lanka Portuguese changes towards Tamil in the East and West, and probably
+changed towards Sinhala in the West.
+If we take point 2, we can say that Sri Lanka Malay changes towards (a variety of)
+Tamil, which is received wisdom. If we add point 3, it suddenly appears that Sri Lanka
+
+10
+
+Malay changes towards Sinhala, via South-Western Muslim Tamil. But if we finally
+add point 5, it appears that the ultimate target is Tamil again. It is thus very difficult to
+catch the exact language change target of Sri Lanka Malay, as the target is ever-moving,
+and none of the relevant varieties are static enough to allow firm conclusions.
+
+7
+
+Conclusion
+
+Convergence is an idealization Languages change, so the target changes as well The
+Sri Lankan situation is especially complex The multiple convergence processes are
+very hard to disentangle and often make it impossible to trace a borrowed structure to
+exactly one language Addendum SLE
+
+11
+
+

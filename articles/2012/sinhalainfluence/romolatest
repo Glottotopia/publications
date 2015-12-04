@@ -1,0 +1,159 @@
+   \gll kudu : ku\D{}u   \textsc{Sinhala} \\
+        bent { } powder    \\ 
+  \ex
+   \gll kate : ka\T{}e  \textsc{Tamil} \\
+         story { } shop     \\  
+  \z 
+--
+\gll kalisang dekak=uyi ś\E\T{} ekak=uyi madi-nna de-nna tiyenavaa   \textsc{Sinhala} \\
+     trousers two=\textsc{addit} shirt one=\textsc{addit} iron-\textsc{inf} give-\textsc{inf} have \\
+`I have two give two trousers and one shirt to be ironed (to give to iron)' \citep[62]{Karunatillake2004}
+\ex
+\gll Kumaar [amerikkaa$\cdot$v-ukku$\cdot$p poo$\cdot$g-a virumbu-ki\R{}-aa\NN{} \textsc{Tamil} \\
+    Kumar  America=\textsc{dat}             go-\textsc{inf} want-\textsc{pres}-\textsc{3sm}  \\
+--
+\glll  Kumaar meten\T{}a ävillaa,~ ma\T{}a kataa.keruvaa. \textsc{Sinhala} \\
+       Kumaar ingee vandu,~        ennai  kuuppi\T{}\T{}aan \textsc{Tamil} \\
+       Kumaar here \textsc{cp}.come me called\\
+    `Kumaar came here and called me.' \citep[based on][266]{Lehmann1989tamil}
+\z
+\z
+--
+   \gll [mang li-vv-a]$_{RELC}$ liyum$_{N}$ vagayak tiyenavaa   \textsc{Sinhala} \\
+        \textsc{1s} write-\textsc{past}-\textsc{rel} letters some exist.\textsc{inanim}   \\
+   `There are some letters that I wrote'  \citep[153]{Karunatillake2004}
+ \z
+\z
+}
+--
+\gll iyee=yut hata=da a\T{}a=da minissu(n-va) m\ae ruvaa \textsc{Sinhala}\\ % bf
+      yesterday=assoc seven=interr eight=interr men(-\textsc{acc}) kill$\backslash$\textsc{past} \\
+    `Again yesterday, seven or eight people were killed.'.
+\z   
+
+\ea \label{ex:acc:sinhala:inanim:acc}
+\gll eyalaa p\ae ppol ge\D{}i-yak(*-va) k\ae puvaa \textsc{Sinhala}\\ % bf
+     they papaw fruit-\textsc{indef.inanim}-\textsc{acc} cut$\backslash$\textsc{past}  \\
+    `They cut a papaw.'
+\z
+
+
+--
+\gll mang malli kenn-ek   \textsc{Sinhala} \\
+     1s younger.brother \textsc{clf.anim}-\textsc{indef.anim} \\
+`I am a younger sibling' 
+\z
+
+\ea
+\gll  minihekgee ka\T{}a-geng kataantaraya-k  enevana\ng{}   \textsc{Sinhala} \\
+      \\
+`When a story comes out of a man's mouth' 
+\z
+
+While the use of Tamil \trs{oru}{one} would be possible in the examples above, in Tamil it is equally grammatical to leave out \em oru\em. This is different from Sinhala and SLM, as the following example shows. In these languages, indefiniteness marking is obligatory, albeit on different sides of the noun:
+--
+       Kumar { }    niitignaayavar -ek { }  \textsc{Sinhala} \\
+       Kumar hatthu prentha.oorang { } { } \textsc{SLM}  \\
+       Kumar one    lawyer        indef one\\
+    `Kumar is a lawyer.' based on \citep[]{Lehmann1989tamil}
+\z
+
+--
+\gll  apee {\em three-tonner} eka-k tibuna passee \textsc{Sinhala}\\ % bf
+      \textsc{1pl.poss} three-tonner \textsc{loan}-\textsc{indef} exist.\textsc{inanim.past} front.\textsc{loc}  \\
+    `There was a three-tonner of ours at the front'
+\z
+}
+
+--
+      \textbf{Mee}  {\em mock} {\em wedding} \textbf{eka}      {  } karan\dz a oon\ae{} \textsc{Sinhala} \\
+      *\textbf{inda} {\em mock} {\em wedding} \textbf{oru}      {  } ceyya  vee\N{}um \textsc{Tamil} \\
+      \textsc{prox} mock wedding=\textsc{indef}  must- make must \\
+    `I have to do this mock wedding.'  (based on K060116nar10)
+\z
+}
+--
+\gll mee iskolee sinhala panti tunak  tiyenavaa/*innavaa   \textsc{Sinhala} \\
+     this school.\textsc{loc} Sinhala classes three exist.\textsc{inanim}/exist.\textsc{anim} \\
+`There are three Sinhala classes in this school.'
+\ex
+
+\gll langkaava rilaw hu\ung ak  *tiyenavaa/innavaa   \textsc{Sinhala} \\
+     Sri{ }Lanka monkeys many exist.\textsc{inanim}/exist.\textsc{anim} \\
+`There are many (macaque) monkeys in Sri Lanka.' \citep[790]{Gair2003}
+\z
+\z
+
+--
+\gll ma-ma na\tz{}a-navaa   \textsc{Sinhala} \\
+      1s-\textsc{nom} dance-\textsc{nonpast}\\
+    `I dance'
+\ex 
+\gll ma-\tz{}a n\ae\tz{}e-navaa   \textsc{Sinhala} \\
+    1s-\textsc{dat} dance$\backslash$\textsc{invol}-\textsc{pres}\\
+    `I get to dancing' \citep[48]{Gair1976sinhalasubject}
+\z
+\z
+}
+--
+\gll miniha-\tz{}a diwe-navaa   \textsc{Sinhala} \\
+     man-\textsc{dat}	run$\backslash$\textsc{invol}-\textsc{nonpast}\\
+      `The man runs (involuntarily).' \citep[13]{Gair1991infl}
+\z
+}
+
+--
+\gll ma=\T{}a kola\umb{}a bas.eka h\ae{}madaama varadinavaa   \textsc{Sinhala}\\
+     1s=\textsc{dat} Colombo bus every.day miss \\
+`I miss the Colombo bus every day' \citep[791]{Gair2003}
+\z
+
+\xbox{\textwidth}{
+--
+\gll miniha-va liss-una \textsc{Sinhala}\\
+      man-\textsc{acc} slip-\textsc{past.invol}\\
+    `The fellow slipped' \citep[51]{Gair1976sinhalasubject}
+\z
+}
+
+--
+\gll ehee polisiy-e\ng{} innavaa  \textsc{Sinhala}\\
+      there police-\textsc{instr} exist.\textsc{anim}\\
+    `There are police there.' \citep[13]{Gair1991infl}
+\z
+}
+
+--
+\gll Siri horaa par-ee duw-anavaa d\ae{}kka   \textsc{Sinhala} \\
+ Siri thief road-\textsc{loc} run-\textsc{nonpast} see$\backslash$\textsc{past}\\
+`Siri saw the thief running on the road.' \citep[806]{Gair2003}
+\z
+
+\ea\label{ex:simult:sinh:song}
+\gll amma=\T{}a maalini sindu kiy-anaava \ae{}huna   \textsc{Sinhala} \\
+     mother=\textsc{dat} Malini song say-\textsc{nonpast} hear$\backslash$\textsc{past} \\
+`Mother heard Malini singing songs.'\citep[806]{Gair2003}
+\z
+
+The semantics of the \em -navaa\em-form and the \em arà\em-form are thus closely parallel. Both can be used for present and future. Additionally, they can be used in subordinate clauses in the past. While the \em navaa\em-form has changed from an erstwhile participle to a present/future form, SLM \em arà- \em is partly on the opposite direction and acquiring participle uses. This extension of the present tense form in the domain of subordinates finds clear role models in Sinhala, but could not possibly be explained by Tamil influence.
+--
+\gll mama Gunapaala ya-navaa-\zero=\textbf{\T{}a} k\ae{}matii  \textsc{Sinhala}\\
+     1s Gunapala go-\textsc{nonpast}(-\textsc{nmlzr})=\textsc{dat} like \\
+    `I like for Gunapala to go there' \citep[796]{Gair2003}
+\z
+}
+
+--
+     mama gedara\T{}a gihilla, Kumaar(-va)  d\ae{}kkaa \textsc{Sinhala} \\
+     see ruuma=nang asàpii, Kumaar=yang suliiyath \textsc{SLM} \\
+     1\textsc{s} house=\textsc{dat} \textsc{cp}.go Kumar=\textsc{acc} \textsc{past}.see\\
+`I went home and saw Kumar.' \citep[based on][269]{Lehmann1989tamil}
+\z
+}
+--
+\glll  Gunapaala gama-\T{}a giy-aama eyaa, ga\ung-ee n\ae\ae{}vvaa \textsc{Sinhala} \\
+    Gunapala nigiri=nang pii=apa, 3s koolang=ka sumandi \textsc{SLM} \\
+     Gunapala village-\textsc{dat} go.\textsc{past}-\textsc{prior} 3s river-\textsc{loc} bathe.\textsc{past}\\
+`When (after) Gunapala went to the village, he (or someone else) bathed in the river.'\citep[811]{Gair2003}
+\z
+}

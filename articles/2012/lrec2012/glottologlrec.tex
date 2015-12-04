@@ -1,0 +1,428 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage{lrec2006}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{url}
+\title{Glottolog/Langdoc: Increasing the visibility of grey literature for low-density languages}
+
+\name{Sebastian Nordhoff, Harald Hammarstr\"om}
+
+\address{Max Planck Institute for Evolutionary Anthropology \\
+               Deutscher Platz 6, 04013 Leipzig, Germany\\
+               sebastian\_nordhoff@eva.mpg.de, harald\_hammarstroem@eva.mpg.de\\}
+
+
+\abstract{
+Language resources can be divided into structural resources treating phonology,
+morphosyntax, semantics etc. and resources treating the social, demographic,
+ethnic, political context. A third type are meta-resources, like bibliographies,
+which provide access to the resources of the first two kinds. This
+poster will present the Glottolog/Langdoc project, a comprehensive bibliography
+providing web access to 180k bibliographical records to (mainly) low visibility
+resources from low-density languages. The resources are annotated for
+macro-area, content language, and document type and are available in \textsc{xhtml}
+and \textsc{rdf}. \\ 
+\newline \Keywords{Language Classification, Bibliography, Linked Data}
+}
+
+\begin{document}
+
+ \maketitleabstract
+ 
+
+\section{The myth of bad state of description}
+
+It is customary to deplore the unsatisfying documentary status of the
+world's language families
+\cite{typ:WALS:Intro,el:Krauss:Extinction}. It is true that for many
+of the world's languages, major Western publishers do not provide
+access to any form of documentation. This does not mean, however, that
+no documentation exists. \cite{HammarstroemEtAl2011Howmany} showed that
+the percentage of languages with decent documentation is far greater
+than previously assumed, the problem is that the relevant works are
+often unpublished PhD theses, manuscripts, or books published by local
+agencies with no distribution channels in the Western world. This
+leads to the perception of a shortage of material, which is not
+necessarily the case.
+
+\section{Langdoc}\label{sec:langdoc}
+\subsection{Charting the descriptive status}
+
+The aim of the Glottolog/Langdoc project is to mobilize these
+resources, increase their visibility, and facilitate their
+discovery. For this purpose, we collected bibliographical records from
+$>$20 bibliographies with detailed coverage of particular areas. EBALL
+\cite{b:Maho:EBALL} for instance contains 50k references for Africa,
+\cite{h:Fabre:2005} contains 60k references for South America (of
+which not all are linguistic in nature). The challenge is to make
+these individual efforts available at a larger scale. At the time of
+writing, the aggregate of all bibliographies is 180k+ references
+focussing on low-density languages.  The bibliographical ground work
+done by these dedicated individuals is exceptional.
+
+
+\begin{table}
+  \begin{tabular}{lr||lr}
+    macro-area   & count &  macro-area   & count \\
+  \hline
+  Africa         & 53710  &   Pacific        & 13775 \\
+  South America  & 21923  &   Eurasia        & 12263  \\
+  North America  & 14880  &   Australia      &  8465  \\
+  \end{tabular}
+ \caption{Coverage by macro-area.}
+\end{table}
+
+
+\subsection{Enriching}
+The source bibliographies differ in the kind and amount of detail they cover. In total, 83 different fields are used to store bibliographic information.  While all input bibliographies list author, title, and year, the coverage of other interesting domains, such as language(s) discussed, document type (grammar, dictionary, text collection etc), or even the language the work is written in, varies. The three parameters just mentioned provide added value to a user in search of references for a given domain. We therefore enriched the initially sparsely populated fields with machine learning techniques.
+
+The document type and the language described in the work are determined based on the title of the work \cite{Hammarstroem2009,cl:Hammarstrom:CLEF2011}. Typical titles are ``A grammar of Lao'' or ``W\"orterbuch der Nyakyusa-Sprache''. The words found in titles fall into three categories: stopwords, words occurring in very many titles (`grammar', `W\"orterbuch'), and words occurring in very few titles (`Lao', `Nyakyusa'). These sets can be automatically established based on informativeness. The very informative words normally refer to the language treated. \cite{Hammarstroem2008} shows that about 70\% accuracy in auto-annotation for language treated is achievable based on the title alone.
+
+Auto-annotation for document type differs from auto-annotation for
+language in that there is only roughly a dozen  document types, while
+there are thousands of languages with tens of thousands of
+names. However, parts of the source collection of documents have
+already been manually annotated as to document type, and Machine Learning
+techniques can be applied to generalize these annotations. \cite{cl:Hammarstrom:CLEF2011} argues that a procedure similar to Decision Trees is the most
+appropriate technique due to some tricky dependencies between title
+words. Accuracy depends somewhat on the frequency and characteristics of
+individual labels, but F-scores in the range of 0.6-0.7 can be achieved.
+
+Automatically inferring the language the work is written in is the simplest
+of the annotation tasks and can be done at near 100\%-accuracy by simply
+looking at frequent title words from each language in question
+\cite{cl:Hammarstrom:CLEF2011}.
+
+%The languages and language name database consists of 7\,299 languages, 42\,768 language name tokens, and 39\,419 unique name strings. 
+
+
+\begin{table}
+\begin{tabular}{lr||lr}
+   reftype & count & reftype & count  \\
+\hline
+ grammar sketch & 11349 & text  		& 816 \\
+ ethnographic 	& 9132  & specific feature 	& 813 \\
+ grammar  	& 8839  & socling  		& 596 \\
+ dictionary 	& 6352  & dialectology 		& 595 \\
+ comparative 	& 6261  & bibliographical 	& 526 \\
+ wordlist  	& 4266  & minimal  		& 463 \\
+ overview  	& 3992  & new testament 	& 137 \\
+ phonology 	& 1767  &   			& \\
+\end{tabular}
+\caption{Coverage by reftype}
+\end{table}
+
+This enriched annotation thus allows users to formulate very targeted queries such as `Word list or dictionary from Nyakyusa written in German or English'.
+
+\subsection{Content search and browse}
+We have electronic copies of 7861 of the references in Langdoc. While we cannot make them available because of copyright issues, we do provide a fulltext search, which allows the user to further narrow down queries. Due to the rather low coverage of references available as full text ($<$5\%), such queries fail to return a lot of legitimate references, but may nevertheless be useful. 
+
+To improve recall in keyword search we use query expansion with the
+$k$-nearest synonyms, where synonyms are automatically inferred using
+Random Indexing. Using Random Indexing both reduces the length of
+word-space vectors (and thus the computational cost of computing
+semantic similarity) and improves accuracy in predicting synonyms
+\cite{cl:Roselletal}.
+
+For users who do not yet know which keywords they are interested in,
+we provide a browsing index, automatically generated from the
+fulltexts.  The browsing index aims to list `latent topics', i.e.,
+topics that the references frequently deal with. In the present
+document collection, topics such as adjectives, pronouns,
+active/stative, \ldots{} may be expected, whereas very specific topics
+such as a language name or a specific morpheme in language should be
+avoided. An approach with TF-IDF weighting of document chunks has
+proven to achieve exactly this \cite{Hammarstrom2012GSLT}. We break down
+documents into chunks of section-length (0.5 to 5 pages in this text
+genre) yielding 110k document chunks. The top-$n$ terms by TF-IDF are
+extracted from each chunk. This finds both latent topics and specific
+terms. To remove the highly specific terms, we may simply filter on
+frequency and keep those terms which occur (as the top-$n$ TD-IDF
+terms) in many chunks. Table \ref{tab:tfidfterms} shows such terms
+extracted (where $n=10$) for the subset of fulltext references written
+in English.
+
+% \begin{tabular}{p{1.2cm}p{.8cm}p{1.2cm}p{.8cm}p{1.2cm}p{.8cm}}
+   
+\begin{table}
+  \begin{tabular}{p{.8cm}rp{.8cm}rp{.8cm}r}
+  term & \#chunks & term & \#chunks & term & \#chunks \\
+  \hline
+  clause & 106 & sentence & 63 & stress & 52\\
+  verb & 94 & object & 63 & relative & 52\\
+  language & 93 & see & 62 & agreement & 52\\
+  languages & 89 & subject & 61 & syllable & 50\\
+  tone & 81 & linguistics & 59 & english & 50\\
+  clauses & 81 & suffix & 58 & plural & 49\\
+  university & 80 & nouns & 58 & phrase & 49\\
+  class & 79 & rule & 57 & vowels & 47\\
+  vowel & 72 & person & 57 & pronouns & 47\\
+  noun & 70 & new & 55 & construction & 46\\
+  verbs & 68 & chinese & 55 & base & 46\\
+  case & 66 & malay & 54 & suffixes & 45\\
+  press & 65 & high & 53 & roots & 45\\
+  \ldots{} & \ldots{}
+  \end{tabular}
+\caption{Terms occuring in the greatest number of document chunks.}
+\label{tab:tfidfterms}
+\end{table}
+%full text search can be useful when searching for references to very rare features like `paucal'. 
+%The most promising method at the moment seems to be Random Indexing
+
+
+% between chunks based on the words they contain.
+% Preliminary results cluster chunks from the same original document together. This proves that the implementation is correct, but further tweaks will be necessary to arrive at more interesting results \cite{Hammarstroem2012Stockholm}. We are now trying to do word-type based , but due to the diverse input documents, we have 1.1m word types. We have computed description vectors for every word and are now experimenting with clustering of the words.
+
+
+We are currently experimenting with various forms of document classification to provide additional ways to browse Langdoc references. 
+
+
+\section{Glottolog}
+The Langdoc repository is complemented by a repository of genealogical
+relations, Glottolog. Glottolog builds upon the classifications
+collected by the Multitree
+project\footnote{\url{http://multitree.linguistlist.org}} and contains
+104 classifications with a combined total of 1\,431 language families
+and 104\,629 nodes. The main classification `Glottolog 2012' contains
+21\,719 nodes in 431 families with a maximum depth of 19 levels. The
+`Glottolog 2012' tree takes the `Multitree Composite 2008' as a
+starting point, but has been thoroughly revised in accordance with
+specialist literature on individual families and subfamilies. This has
+lead to the rejection of many macro-families, such as ``Altaic'', and
+the many updated subgroupings have been implemented. The rejected
+families are retained as `Spurious languoids' and provide links to the
+closest established languoids. As all other languoids, they have URIs.
+
+
+The main classification furthermore responds to some additional constraints (unique names within classifications,  names meaningful without context (no `A' or `Southern'), no one-member subfamilies, regularized treatment of chronolects like Latin).
+
+Glottolog is tightly interlinked with Langdoc. There are 148\,857 links between Langdoc references and the main classification `Glottolog 2012'. When including all classifications, the number of links increases to  1\,638\,038.
+References are retrievable not only from the node they are attached to, but also from all higher nodes. This means that one can formulate queries like `Give me all grammars of (((Central) East) Nuclear) Polynesian', next to maximally general queries like `Give me all grammars of Austronesian' or maximally particular queries like `Give me all grammars of Hawai'ian'. These genealogical queries can be combined with the bibliographical queries mentioned in Sect.\, \ref{sec:langdoc}.
+
+This interlinking can be exploited for sampling purposes. A facility to draw a genetically and areally balanced sample of references of a certain type (grammar, dictionary, etc) is provided in the Glottolog/Langdoc interface. This procedure is fully automated and provides a pseudo-random sample, which are of a higher sampling quality than the convenience samples often used in language typology \cite{NordhoffEtAl2011alt}.
+
+
+Next to the main classfication, Glottolog contains  additional classifications drawn from the Multitree project. Every node of these classifications has a unique ID, reflecting the insight that two researchers using the same name for a node do not always mean the same thing. The meaning of `Altaic' for instance can be taken to include Korean and/or Japanese next to Turkic, Mongolic, and Tungusic. This means that the practice of the Multitree project to assign one and the same 4-letter code to all instances of Altaic (\textsc{altc} in this case) is not granular enough here. This is already evident from the list of alternate names Multitree gives for `Altaic', among which we find `Macro-Altaic' and   `Micro-Altaic', which clearly do not refer to the same entity. Glottolog assigns alphanumeric codes of the pattern \texttt{abcd1234} to all languoids, assuring maximal disambiguation possibilities.
+  
+\section{Linked Data}
+
+All bibliographic records are treated as individual resources with their own
+URIs, as are all languages, dialects, and language families (`languoids'). These
+unique identifiers allow the integration of these resources into the semantic web \cite{NordhoffEtAl2011iswc} according to the principles of Linked Data \cite{BernersLee2006,HeathEtAl2011}.
+
+Glottolog makes use of concepts from the following ontologies:  
+ GOLD,\footnote{\url{http://purl.org/linguistics/gold/}}
+ dcterms,\footnote{\url{http://purl.org/dc/terms/}}
+ wgs84,\footnote{\url{http://www.w3.org/2003/01/geo/wgs84_pos#}}
+ skos,\footnote{\url{http://www.w3.org/2004/02/skos/core#}}
+ lexvo.\footnote{\url{http://lexvo.org/ontology}}
+ Additional concepts are provided in the glottolog ontology available at \url{http://glottolog.livingsources.org/ontologies/glottolog.owl}.
+ 
+Glottolog/Langdoc is integrated into the emerging Linguistic Linked Open Data Cloud (\url{http://wiki.okfn.org/Wg/linguistics/llod}) \cite{ChiarcosEtAl2012tal,Nordhoff2012ldlglottolog}. \cite{ChiarcosEtAl2012ldlexamples} show in principle how a cross-domain query involving Glottolog/Langdoc and a set of annotated corpora can be formulated in SPARQL \cite{PrudhommeauxEtAl2008}. The query shown in Fig. \ref{fig:sparql} retrieves the labels of all syntactic categories associated with a languoid or any of its subnodes (assuming that corpora for the languages are available and that all corpora are annotated with glottolog languoid IDs).
+
+ 
+\begin{figure}
+\tiny
+\begin{verbatim}
+PREFIX glottolog: <http://glottolog.livingsources.org/ontologies/glottolog.owl\#>.
+PREFIX dcterms:  <http://purl.org/dc/terms/>.
+PREFIX powla:    <http://purl.org/powla/powla.owl\#>.
+PREFIX olia:     <http://purl.org/olia/olia.owl\#>.
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema\#>.
+CONSTRUCT { ?languoid <\#uses> ?syntacticCategory }
+WHERE {
+  ?languoid glottolog:sublanguoid ?sublanguoid
+  ?node dcterms:language ?sublanguoid
+  FILTER(regex(str(?languoid),"http://glottolog.livingsources.
+                                 org/resource/languoid/id/.*")).
+  ?node a powla:Node.
+  ?node a ?syntacticCategory
+  FILTER(regex(str(?syntacticCategory),
+               "http://purl.org/olia/olia.owl\#.*")).
+  ?syntacticCategory rdfs:subClassOf olia:SyntacticCategory. 
+\end{verbatim}
+\caption{SPARQL query to retrieve all labels used for corpora of languages below a particular Glottolog node.}
+\label{fig:sparql}
+\end{figure}
+
+The amount of annotated corpora for low-density languages is of course lacking at the moment, but this example can still serve to illustrate the cross-domain interoperability of Linguistic Linked Data.
+
+Next to granular accessibility, references can be downloaded in one bib-file, and all data can be downloaded as an rdf dump.
+
+\section{Modeling as RDF}
+Glottolog/Langdoc makes use of three basic concepts for the modeling of languoids and linguistic resources:
+
+\begin{itemize}
+ \item a \textbf{lectodoc} is a document describing any kind of linguistic variety (any lect). Lectodoc is a subclass of \texttt{frbr:manifestation}.\footnote{\url{http://purl.org/vocab/frbr/core}}
+ \item a \textbf{doculect} is the linguistic system described in one lectodoc. Doculect is a subclass of \texttt{dcmi:linguisticSystem}.\footnote{\url{http://purl.org/dc/terms/}}
+ \item a \textbf{languoid} is a set of doculects. It is a concept instantiated by doculects. Languoids can have sublanguoids and superlanguoids, just as any set can have subsets and supersets. For the time being, we are usings SKOS to model these relations.\footnote{\url{http://www.w3.org/2004/02/skos/core}}
+\end{itemize}
+
+Glottolog/Langdoc provides URIs for every lectodoc, every doculect and every languoid.
+
+
+The provision of URIs means that third parties can make use
+of Glottolog without the need to redo the whole project. Glottolog/Langdoc
+does for instance not believe in a node ``Nostratic'' and does not provide it in its main classification 'Glottolog 2012'. Given the availability of URIs for all top-level languoids (=language families), researchers who do not share
+this opinion could still publish RDF data stating the superset relationship between Nostratic and whatever language families they wish to include there.
+
+\[ 
+\tiny
+\tt 
+\begin{tabular}{p{2.2cm}p{2.4cm}p{3cm}}
+\tt  myproject:Nostratic & \tt  glottolog:sublanguoid &~\tt   glottolog:Indo1235 \\
+			&		 & , \tt   glottolog:Afro1235 \\
+			&		 & , \tt   glottolog:Kart1235 \\
+			&		 & , \tt   glottolog:Ural1235 \\ 
+			&		 & , ... . \\ 
+\end{tabular} 
+ \]
+
+
+Another use case is stating of identity
+of languoids from different authors. As discussed above, language families from different classifications cannot be assumed to refer to the same entity even if they happen to have the same name. This leads to a multiplication of URIs. There are close to 100k unique identifiers for languoids in Glottolog/Langdoc, far beyond the numbers usually used in linguistic typology. Many of these languoids are, however, very similar and can be considered very similar or identical in many (but not all) use cases. The definition of Basque is for instance uncontroversial, and every researcher agrees what should and should not be included in there. Glottolog/Langdoc does not equate these languoids, but other knowledge bases  might want to assert \texttt{owl:sameAs} or \texttt{skos:closeMatch} between different authors' languoids with the name `Basque', making use of the Glottolog/Langdoc URIs.
+
+Given the document-based definition of languoids in Glottolog/Langdoc this can even be done automatically: every languoid which shares the same set of references with another languoid can be assumed to refer to the same entity in the real world. The existence of supplementary references in a languoid is more problematic, as this might be due to deeper coverage of the other languoid, or to a slightly broader coverage.
+
+
+\section{Use Cases}
+We can distinguish the following 6 use cases for Glottolog/Langdoc:
+1)  Query,
+2)  Browse,
+3)  Draw sample,
+4)  Compare,
+5)  Infer, and
+6)  Statistical Analysis.
+
+\subsection{Query}
+A user knowing what they are looking for can use a query mask to search for author, title, document type, languoid etc. 
+
+
+\subsection{Browse}
+A user without a very specific query can browse Glottolog/Langdoc along the links provided inside the project and to related outside projects (Multitree,\footnote{\url{http://multitree.linguistlist.org}}
+ LL-Map \cite{LLMap2009},\footnote{\url{http://www.llmap.org}}
+ LinguistList,\footnote{\url{http://linguistlist.org/forms/langs/}}
+ Ethnologue \cite{Lewis2009},\footnote{\url{http://www.ethnologue.com}}
+ ODIN \cite{Odin2006},\footnote{\url{http://www.csufresno.edu/odin/}}
+ WALS \cite{WALS},\footnote{\url{http://wals.info}}
+ OLAC \cite{OLAC-Bird},\footnote{\url{http://www.language-archives.org/}}
+lexvo \cite{DeMeloEtAl2008lexvo},\footnote{\url{http://www.lexvo.org}} and
+Wikipedia.
+
+\subsection{Sample}
+A very specific use case is the fully automated, and therefore minimally biased, drawing of a sample. Such samples are for instance used in linguistic typology to test the worldwide distribution of linguistic features \cite{RijkhoffEtAl1998sampling,Bakker2011sampling}. Glottolog/Langdoc has the advantage that the sample of languages drawn can be constrained to languages having the required documentation while still being areally and genetically balanced. For instance, in order to do a comparison of phoneme inventories, one needs at least one of `phonological description', `sketch grammar' or `grammar' for each language in the sample. Text collections will not do. Fully random sampling might return languages without the required documentation, which then have to be replaced. This is avoided in Glottolog/Langdoc. The sample will only return languages which respond to the selected criteria. If for some reason, the works relevant for a language cannot be procured, the `replace lg' button allows to replace this language with its nearest genealogical neighbour responding to the selected criteria.
+
+\subsection{Compare}
+More advanced use cases are the graph-theoretic comparison of language classifications. Isomorphism of (sub)graphs of classifications by different authors can for instance be computed with Glottolog data. Another possibility are consensus trees. 
+
+\subsection{Infer}
+A case of inference or automated reasoning was mentioned in the SPARQL query above (Fig.\ \ref{fig:sparql}). 
+ 
+
+% Can you gather information about the languages of the
+% world by counting words?
+% term nr chunks
+% prefix 2398 41.0% suffix 3451
+% term nr chunks
+% prefixes 1497 40.4% suffixes 2205
+% • Dryer 2005 counts of languages (based on reading similar
+% collections of grammars):
+% type nr lgs
+% Moderate Preference for Prefixing 92 44.6% Moderate Preference for Suffixing 114
+% type nr lgs
+% Predominantly Prefixing 54 12.3% Predominantly Suffixing 382
+\subsection{Statistical analysis}
+Finally, one can do statistical analysis of the density of coverage of a particular area or family \cite{HammarstroemEtAl2011Howmany,HammarstroemEtAl2012melanesia}. 
+
+%insert some statistics here
+
+
+\begin{table} 
+\centering
+\tiny
+\begin{tabular}{rrrrrrr|r}
+lvl & AF & AUS & Eurasia & N.AM & PAC & S.AM & \\ 
+\hline
+4 & 588 & 121 & 527 & 249 & 358 & 247 & 2090 \\
+3 & 438 & 83 & 307 & 87 & 405 & 125 & 1445 \\
+2 & 126 & 25 & 156 & 32 & 168 & 53 & 560\\
+$<$2 & 977 & 101 & 637 & 225 & 1099 & 175 & 3214\\
+\hline sum 	& 2129 & 330 & 1627 & 593 & 2030 & 600 & 7309\\
+\hline avg 	& 2.30 & 2.68 & 2.44 & 2.61 & 2.01 & 2.74\\
+\hline \%4 & 27.62 & 36.67 & 32.39 & 41.99 & 17.64 & 41.17\\
+\hline \%$<$2 & 41.66 & 12.42 & 33.68 & 29.17 & 52.41 & 6.50\\
+\end{tabular}
+\caption{Descriptive status of the areas of the world. The best available documentation determines the score: 4=grammar, 3=grammar sketch, 2=phonology or similar, 1=word list, 0=not even a word list published.}
+\label{tab:stats}
+\end{table}
+
+Statistic analysis of Glottolog/Langdoc data can give insights into the descriptive status of the languages of the world (Table \ref{tab:stats}). This table is to be read as follows: 588 African languages have a grammar as their most extensive piece of documentation, while 438 only have a grammar sketch (besides additional material irrelevant for this chart). This table does not count the quantity of documentation but the quality: 1 grammar will beat any number of wordlists.  The other cells are to be interpreted in an analogous way. The table shows that about 2000 languages, or 28\%, are at the highest level of documentation. About 3500 language, or roughly 50\% have either a grammar or a grammar sketch. For 3200 languages, a wordlist is the best they can muster.
+
+\section{Theoretical implications}
+
+The interlinking of languoids and references and the good coverage of languoids allows us to change our definition of language. We have documents covering 7221 different languages in Glottolog/Langdoc, including some not included in ISO 639-3.   Up to now, languages were defined by intension: language X is the language which is spoken there and there. We can now shift to an extensional definition: language X is what is described in the documents D, E, and F. This extensional definition has a number of advantages:
+
+\begin{itemize}
+ \item \textbf{intersubjectivity}: researchers can easily agree on the identity of a document D. Agreeing on the identity of a language L is much more complicated.
+ \item \textbf{computability}. The treatment of bibliographical references is well understood, and various tools for the handling of bibliographical data are available. Furthermore, bibliographical references are discrete, whereas languoids tend to have very fuzzy boundaries. Relying on discrete entities makes computation an easier task.
+ \item \textbf{verifiability}: spurious claims about languages disappear. There are  number of cases of languages with an ISO 639-3 code where it is absolutely unclear what these codes refer to \cite{NordhoffEtAl2011iswc}. Taking documents as the basis of definition entails that one can always trace back where the claim to existence originated. Under the current 639-3 scheme, this is not always possible, as no sources are provided. Cases in point are the languages Cumeral [cum], Omejes  [ome], Ponares  [pod], and Tomedes  [toe]  supposedly spoken in Colombia, where it can not be ascertained whether they exist at all, but there existence cannot be disproved either as the basis for the claim to their existence is not disclosed by SIL, the ISO registrar.
+\end{itemize}
+
+The first and the second point above are intuitively clear. The third point deserves some more elaboration: Currently, researchers rely on ISO 639-3 codes to identify languages.                                                                                                                                                                                                                                                                                                    
+The problem with ISO 639-3 is that the denotation of the codes is not always
+clear. For instance, the codes \texttt{ffi} (Foia Foia), \texttt{hhi} (Hoia Hoia), and \texttt{hhy} (Hoyahoya)
+refer to three Inland Gulf languages spoken in Papua New Guinea. But
+SIL, the ISO registrars, do not give any source for these three languages. As a
+result, it is impossible to ascertain whether  Cridland's (1924) ``Vocabulary of
+Mahigi'' \cite{w:Cridland:Mahigi}, which clearly refers to an Inland Gulf language in the vicinity, would
+actually describe one of the three languages just mentioned, or whether it is an
+independent language. Under a document-centric, extensional approach, one could look up the documents the language is defined by and compare them with Cridland's treatise to evaluate whether this document can be assigned to any of the three languages.
+This approach scales nicely to higher levels of genealogical classification as well: The Inland Gulf languages can be described by the set union of \texttt{ffi}, \texttt{hhi}, \texttt{hhy} etc.
+
+\section{Conclusion}
+Glottolog/Langdoc provides URIs for languoids and documents which makes the domain of world wide linguistics fit for the semantic web and opens it up for a variety of use cases.
+
+\begin{table}
+\tiny
+\begin{tabular}{lll}
+class & subclass of & properties/remarks\\
+\hline
+Lectodoc &   \texttt{frbr:manifestation} & hasdoculect  \\
+Doculect & \texttt{dcmi:linguisticSystem}& haslectodoc  \\
+Languoid & \texttt{skos:concept} & associatedDoculect, sublanguoid, superlanguoid \\%empirical grounding === associatedDoculect
+~~NonterminalLanguoid & Languoid &   w/ sublanguoids\\
+~~~~LanguageFamily    & NonterminalLanguoid  & \\
+~~TerminalLanguoid & Languoid&    w/o sublanguoids\\
+~~~~LivingLanguage & TerminalLanguoid&   \\
+~~~~DeadLanguage & TerminalLanguoid& a cover term for languages not spoken today \\
+~~~~~~ExtinctLineage & DeadLanguage& w/o offspring   \\
+~~~~~~Paleolect & DeadLanguage & w/ offspring  \\
+~~~~~~~~ProtoLanguage & Paleolect &  reconstructed \\ 
+~~~~~~~~ClassicalLanguage & Paleolect & directly attested \\ 
+\end{tabular}    
+\end{table}
+
+
+ 
+% 
+% \section{Figures \& Tables}
+% \subsection{Figures}
+%  
+% 
+% \begin{figure}[h]
+% \begin{center}
+% %\fbox{\parbox{6cm}{
+% %This is a figure with a caption.}}
+% % \includegraphics[scale=0.5]{image1.eps} 
+% \caption{The caption of the figure.}
+% \label{fig.1}
+% \end{center}
+% \end{figure}
+ 
+
+  
+\bibliographystyle{lrec2006}
+\bibliography{nordhoff,glottologlrec}
+
+\end{document}
+

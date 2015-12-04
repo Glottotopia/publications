@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: cliio2.aux
+The style file: natuva.bst
+Database file #1: ansaldo.bib
+Database file #2: asw.bib
+Database file #3: creole.bib
+Database file #4: india.bib
+Database file #5: phon.bib
+Database file #6: malay.bib
+Database file #7: sinhala.bib
+Database file #8: tamil.bib
+Database file #9: nordhoff.bib
+Database file #10: lankahist.bib
+Repeated entry---line 112 of file lankahist.bib
+ : @book{Nuhman2007
+ :                 ,
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "Gairdonotuse"
+refers to entry "Gair1997", which doesn't exist
+Warning--I didn't find a database entry for "conference"
+Warning--I didn't find a database entry for "Gair1997"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--to sort, need author or key in Jaffna
+Warning--to sort, need author or key in Trincomalee
+Warning--empty author in Jaffna
+Warning--empty author in Trincomalee
+Warning--missing school in Trincomalee
+Warning--empty booktitle in Gair1985calque
+Warning--can't use both author and editor fields in Gair1998
+Warning--empty pages in Gair1998someremarks
+Warning--empty booktitle in Gairdonotuse
+Warning--missing publisher in Gairdonotuse
+Warning--missing publisher in Tennent1859
+You've used 22 entries,
+            3313 wiz_defined-function locations,
+            843 strings with 8889 characters,
+and the built_in function-call counts, 11500 in all, are:
+= -- 861
+> -- 252
+< -- 28
++ -- 102
+- -- 68
+* -- 753
+:= -- 1637
+add.period$ -- 75
+call.type$ -- 22
+change.case$ -- 122
+chr.to.int$ -- 20
+cite$ -- 37
+duplicate$ -- 1045
+empty$ -- 1103
+format.name$ -- 124
+if$ -- 2344
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 194
+newline$ -- 125
+num.names$ -- 84
+pop$ -- 412
+preamble$ -- 1
+purify$ -- 109
+quote$ -- 0
+skip$ -- 433
+stack$ -- 0
+substring$ -- 487
+swap$ -- 479
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 183
+warning$ -- 11
+while$ -- 80
+width$ -- 0
+write$ -- 297
+(There were 2 error messages)

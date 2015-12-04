@@ -1,0 +1,234 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Bakker}2011]{Bakker2011sampling}
+Dik Bakker.
+\newblock 2011.
+\newblock Language sampling.
+\newblock In Jae~Jung Song, editor, {\em Handbook of Linguistic Typology}. OUP,
+  Oxford.
+
+\bibitem[\protect\citename{Berners-Lee}2006]{BernersLee2006}
+Tim Berners-Lee.
+\newblock 2006.
+\newblock Linked data.
+\newblock http://www.w3.org/DesignIssues/LinkedData.html, 07.
+
+\bibitem[\protect\citename{Bird and Simons}2001]{OLAC-Bird}
+Steven Bird and Gary Simons.
+\newblock 2001.
+\newblock The olac metadata set and controlled vocabularies.
+\newblock In {\em Proceedings of the ACL 2001 Workshop on Sharing Tools and
+  Resources - Volume 15}, STAR '01, pages 7--18, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+\newblock Online version http://www.language-archives.org.
+
+\bibitem[\protect\citename{Chiarcos \bgroup et al.\egroup
+  }2012a]{ChiarcosEtAl2012ldlexamples}
+Christian Chiarcos, Sebastian Hellmann, and Sebastian Nordhoff.
+\newblock 2012a.
+\newblock Linking linguistic resources: Examples from the open linguistics
+  working group.
+\newblock In Chiarcos et~al. \cite{procLDL2012}, pages 201--216.
+\newblock companion volume of the Workshop on Linked Data in Linguistics 2012
+  (LDL-2012), held in conjunction with the 34th Annual Meeting of the German
+  Linguistic Society (DGfS), March 2012, Frankfurt/M., Germany.
+
+\bibitem[\protect\citename{Chiarcos \bgroup et al.\egroup
+  }2012b]{ChiarcosEtAl2012tal}
+Christian Chiarcos, Sebastian Hellmann, and Sebastian Nordhoff.
+\newblock 2012b.
+\newblock Towards a linguistic linked open data cloud: The open linguistics
+  working group.
+\newblock {\em Traitement Automatique du Langage}.
+
+\bibitem[\protect\citename{Chiarcos \bgroup et al.\egroup }2012c]{procLDL2012}
+Christian Chiarcos, Sebastian Nordhoff, and Sebastian Hellmann, editors.
+\newblock 2012c.
+\newblock {\em Linked Data in Linguistics. Representing Language Data and
+  Metadata}.
+\newblock Springer.
+\newblock companion volume of the Workshop on Linked Data in Linguistics 2012
+  (LDL-2012), held in conjunction with the 34th Annual Meeting of the German
+  Linguistic Society (DGfS), March 2012, Frankfurt/M., Germany.
+
+\bibitem[\protect\citename{Comrie \bgroup et al.\egroup }2005a]{typ:WALS:Intro}
+Bernard Comrie, Matthew~S. Dryer, David Gil, and Martin Haspelmath.
+\newblock 2005a.
+\newblock Introduction.
+\newblock In Bernard Comrie, Matthew~S. Dryer, David Gil, and Martin
+  Haspelmath, editors, {\em World Atlas of Language Structures}, pages 1--8.
+  Oxford University Press.
+
+\bibitem[\protect\citename{Comrie \bgroup et al.\egroup }2005b]{WALS}
+Bernard Comrie, Matthew~S. Dryer, David Gil, and Martin Haspelmath, editors.
+\newblock 2005b.
+\newblock {\em World Atlas of Language Structures}.
+\newblock Oxford University Press.
+
+\bibitem[\protect\citename{Cridland}1924]{w:Cridland:Mahigi}
+E.~Cridland.
+\newblock 1924.
+\newblock Vocabulary of mahigi.
+\newblock {\em British New Guinea Annual Report}, 1923-1924:58--58.
+
+\bibitem[\protect\citename{de Melo and Weikum}2008]{DeMeloEtAl2008lexvo}
+Gerard de~Melo and Gerhard Weikum.
+\newblock 2008.
+\newblock Language as a foundation of the {Semantic Web}.
+\newblock In Christian Bizer and Anupam Joshi, editors, {\em Proceedings of the
+  Poster and Demonstration Session at the 7th {International Semantic Web
+  Conference} ({ISWC} 2008)}, volume 401 of {\em {CEUR WS}}, Karlsruhe,
+  Germany. {CEUR}.
+
+\bibitem[\protect\citename{Fabre}2005]{h:Fabre:2005}
+Alain Fabre.
+\newblock 2005.
+\newblock Diccionario etnoling\"u\'istico y gu\'ia bibliogr\'afica de los
+  pueblos indigenas sudamericanos.
+\newblock Book in Progress at
+  \url{http://butler.cc.tut.fi/~fabre/BookInternetVersio/Alkusivu.html}
+  accessed May 2005.
+
+\bibitem[\protect\citename{Hammarstr\"om and
+  Nordhoff}2011]{HammarstroemEtAl2011Howmany}
+Harald Hammarstr\"om and Sebastian Nordhoff.
+\newblock 2011.
+\newblock How many languages have so far been described?
+\newblock Paper presented at NWO Endangered Languages Programme Conference,
+  Leiden, April 2011.
+
+\bibitem[\protect\citename{Hammarstr\"om and Nordhoff}in
+  press]{HammarstroemEtAl2012melanesia}
+Harald Hammarstr\"om and Sebastian Nordhoff.
+\newblock in press.
+\newblock Achievements and challenges in the description of the languages of
+  melanesia.
+\newblock In Marian Klamer and Nick Evans, editors, {\em Melanesian languages
+  on the Edge of Asia}.
+\newblock Special Issue of Language Documentation \& Conservation.
+
+\bibitem[\protect\citename{Hammarstr\"om}2008]{Hammarstroem2008}
+Harald Hammarstr\"om.
+\newblock 2008.
+\newblock Automatic annotation of bibliographical references with target
+  language.
+\newblock In {\em Proceedings of MMIES-2: Workshop on Multi-source,
+  Multilingual Information Extraction and Summarization}, pages 57--64. ACL.
+
+\bibitem[\protect\citename{Hammarstr\"om}2009]{Hammarstroem2009}
+Harald Hammarstr\"om.
+\newblock 2009.
+\newblock {\em Unsupervised Learning of Morphology and the Languages of the
+  World}.
+\newblock {Ph.D.} thesis, Chalmers University of Technology and University of
+  Gothenburg.
+
+\bibitem[\protect\citename{Hammarstr\"om}2011]{cl:Hammarstrom:CLEF2011}
+Harald Hammarstr\"om.
+\newblock 2011.
+\newblock Automatic annotation of bibliographical references for descriptive
+  language materials.
+\newblock In Pamela Forner, Julio Gonzalo, Jaana Kek\"al\"ainen, Mounia Lalmas,
+  and Maarten de~Rijke, editors, {\em Proceedings of the CLEF 2011 Conference
+  on Multilingual and Multimodal Information Access Evaluation}, volume 6941 of
+  {\em LNCS}, pages 62--73. Berlin: Springer.
+
+\bibitem[\protect\citename{Hammarstr\"om}2012]{Hammarstrom2012GSLT}
+Harald Hammarstr\"om.
+\newblock 2012.
+\newblock Technologies for searching and browsing in descriptive grammars.
+\newblock Paper presented at the annual conference of the Graduate School of
+  Language Technology (GSLT), Gothenburg, Sweden.
+
+\bibitem[\protect\citename{Heath and Bizer}2011]{HeathEtAl2011}
+Tom Heath and Christian Bizer.
+\newblock 2011.
+\newblock {\em Linked Data - Evolving the Web into a Global Data Space}.
+\newblock Morgan \& Claypool, San Rafael.
+
+\bibitem[\protect\citename{Krauss}2007]{el:Krauss:Extinction}
+Michael~E. Krauss.
+\newblock 2007.
+\newblock Mass language extinction and documentation: The race against time.
+\newblock In O.~Miyaoka, O.~Sakiyama, and M.~Krauss, editors, {\em Vanishing
+  Languages of the Pacific Rim}, pages 3--24. Oxford University Press.
+
+\bibitem[\protect\citename{Lewis}2006]{Odin2006}
+W.~D. Lewis.
+\newblock 2006.
+\newblock Odin: A model for adapting and enriching legacy infrastructure.
+\newblock In {\em Proceedings of the e-Humanities Workshop, held in cooperation
+  with e-Science 2006: 2nd IEEE International Conference on e-Science and Grid
+  Computing}. Amsterdam.
+\newblock online version available at http://www.csufresno.edu/odin/.
+
+\bibitem[\protect\citename{Lewis}2009]{Lewis2009}
+M.~Paul Lewis, editor.
+\newblock 2009.
+\newblock {\em Ethnologue: Languages of the World}.
+\newblock SIL, Dallas, 16 edition.
+
+\bibitem[\protect\citename{Maho}2010]{b:Maho:EBALL}
+Jouni~F. Maho.
+\newblock 2010.
+\newblock User guide to {EBALL}.
+\newblock Document (version 19 May 2010) posted at
+  \url{http://goto.glocalnet.net/eball/eballguide.pdf} accessed 3 March 2012.
+
+\bibitem[\protect\citename{Nordhoff and
+  Hammarstr\"om}2011a]{NordhoffEtAl2011alt}
+Sebastian Nordhoff and Harald Hammarstr\"om.
+\newblock 2011a.
+\newblock Countering bibliographical bias with langdoc, a bibliographical
+  database for lesser-known languages.
+\newblock Paper presented at ALT 9, Hong Kong, July 2011.
+
+\bibitem[\protect\citename{Nordhoff and
+  Hammarstr\"om}2011b]{NordhoffEtAl2011iswc}
+Sebastian Nordhoff and Harald Hammarstr\"om.
+\newblock 2011b.
+\newblock Glottolog/langdoc: Defining dialects, languages, and language
+  families as collections of resources.
+\newblock In {\em Proceedings of ISWC 2011}.
+
+\bibitem[\protect\citename{Nordhoff}2012]{Nordhoff2012ldlglottolog}
+Sebastian Nordhoff.
+\newblock 2012.
+\newblock Linked data for linguistic diversity research: Glottolog/langdoc and
+  asjp online.
+\newblock In Chiarcos et~al. \cite{procLDL2012}, pages 191--200.
+\newblock companion volume of the Workshop on Linked Data in Linguistics 2012
+  (LDL-2012), held in conjunction with the 34th Annual Meeting of the German
+  Linguistic Society (DGfS), March 2012, Frankfurt/M., Germany.
+
+\bibitem[\protect\citename{Prudʼhommeaux and
+  Seaborne}2008]{PrudhommeauxEtAl2008}
+Eric Prudʼhommeaux and Andy Seaborne.
+\newblock 2008.
+\newblock Sparql query language for rdf.
+\newblock {\em W3C working draft}, 4(January).
+
+\bibitem[\protect\citename{Rijkhoff and Bakker}1998]{RijkhoffEtAl1998sampling}
+J.~Rijkhoff and D.~Bakker.
+\newblock 1998.
+\newblock Language sampling.
+\newblock {\em Linguistic Typology}, 2-3:263--314.
+
+\bibitem[\protect\citename{Rosell \bgroup et al.\egroup }2009]{cl:Roselletal}
+Magnus Rosell, Martin Hassel, and Viggo Kann.
+\newblock 2009.
+\newblock Global evaluation of random indexing through swedish word clustering
+  compared to the people's dictionary of synonyms.
+\newblock In {\em Proceedings of RANLP 2009}.
+
+\bibitem[\protect\citename{Xie \bgroup et al.\egroup }2009]{LLMap2009}
+Yichun Xie, H.~Aristar-Dry, A.~Aristar, H.~Lockwood, J.~Thompson, D.~Parker,
+  and B.~Cool.
+\newblock 2009.
+\newblock Language and location: Map annotation project - a {GIS}-based
+  infrastructure for linguistics information management.
+\newblock In {\em Computer Science and Information Technology, 2009. IMCSIT
+  '09. International Multiconference on}, pages 305 --311, oct.
+\newblock online version at http://www.llmap.org.
+
+\end{thebibliography}

@@ -1,0 +1,122 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[authoryear]{natbib}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+\setlength{\bibsep}{0.05cm}
+
+%opening
+\title{Merging linguistic databases with the Web Ontology Language (OWL)}
+\author{Sebastian Nordhoff}
+
+\begin{document}
+ 
+\section{Introduction}
+Linguistic typology lives on data. Projects all over the world gather, process, and analyze data. The way how this is done varies wildly, and only few studies have been undertaken on how typological work is organized. Compare this to the domain of field linguistics, where the meta-scientific approach is much more developed, or to biology and chemistry, where there are specialized tools to model workflows (Copernic, VizTrail)
+
+Sample sizes and sampling procedures have received a decent amount of coverage in the past \citep{LT}. But what happens to the grammatical descriptions after the sample has been drawn has been less a matter of scientific inquiry. Obviously, grammatical descriptions are combed for relevant passages which contains data. The wealth of information available is then reduced to an abstract model with a code-book \citep{Nichols}. Ideally, coder's kappa would be applied. 
+
+And then, the voyage into the black hole begins. Eventually, a talk or paper is thrown out of the black box.
+
+finding data 
+collecting of data 
+reducing complexity
+
+problem
+ many datasets 
+ heterogeneous structure
+ different domains 
+  phonology, syntax, lexical semantics (geograhpical)
+ current workflow
+  project
+   collect data from grammars
+   use spreadsheet or local database 
+   run analyses 
+   publish analyses 
+  problems 
+   raw data not available
+   raw data in heterogeneous formats 
+   different concepts Blake&Cysouw
+   different languoids   
+ 
+this paper
+ publish data with RDF
+ merge data
+ cross-query with SPARQL
+
+\section{The current state of the art of linguistic databases}
+
+\section{Issues with the current setup}
+\section{Interoperability}
+Interoperability means that information from different datasets can be combined to allow for more  interesting queries. \citet{ide} define interoperability as `` '', and divide it into syntactic interoperability and semantic interoperability. Syntactic interoperability means that the datasets in question use the same formalism to represent the data, for instance a *csv file with a given structure. Semantic interoperability means that the datasets refer to the same concepts with the same definitions. It is well known that typologists often use slightly different definitions of key terms, which means that merging datasets is often problematic. In order to ensure that two different datasets indeed use the same definition for a concept, such a definition has to be available at a persistent location where it can be looked up. The definition of a concept, as well as relations to other concepts, such as superconcepts, subconcepts or other related concepts is typically stored in an ontology. The general ontology for linguistic description (GOLD) was a first attempt to provide such an ontology.\footnote{Precursors
+ can, however, be found much earlier. The earliest attempt we are aware of is \citet{abc}.
+} 
+
+\subsection{Issues of syntactic interoperability}
+As defined above, syntactic interoperability appears to be quite easy a criterion to meet. Typologists use the same format, and the data are interoperable on a syntactic level. Unfortunately, things are not that simple. To continue the example of the *csv-file, if one researcher uses languages as rows and features as columns, and the second uses features as rows and languages as columns, the researchers can both save their data as *csv, but this will not make their data interoperable on a syntactic level yet. Obviously, a trivial transformation will make the data interoperable, but syntactic interoperably must not require such transformations. It is easy to see that more complex datastructures such as represented in spreadsheets or FileMaker databases are even more prone to run into problems of syntactic interoperability. Evew
+
+ 
+ syntactic
+   FileMaker 
+   SQL
+   RDF
+ semantic    
+   GOLD 
+   language, feature, value 
+   rdf triples
+ accessibility
+  availability
+  legal issues
+   
+\section{desiderata}
+ cross-query
+  TDS
+
+\section{Publish data}  
+publish data lingtyp.owl
+ doculects
+ linguistic describables
+ features  
+ values
+ annotations
+ 
+\section{Merging data}
+merge data 
+ merge features 
+ merge languoids 
+ 
+\section{Case studies}
+case study
+ WALS
+ PHOIBLE
+ ASJP
+
+\section{Cross-querying data}
+cross-query databases 
+ which languages are SOV languages 
+  && have fricatives 
+  && have a ASJP distance of 10 or less to Hebrew
+  && are spoken in altitudes above 1000m
+
+\section{Sample queries}
+sample queries
+ 
+\section{Outlook}
+outlook
+ more datasets
+  current
+  projected 
+  desired
+ more domains
+  altitude
+ visualization
+ user experience
+
+comparative concepts
+ form
+ function
+ sound
+\bibliographystyle{natuva}
+\bibliography{nordhoff} 
+
+\end{document}

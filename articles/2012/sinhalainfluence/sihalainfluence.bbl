@@ -1,0 +1,113 @@
+\begin{thebibliography}{18}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Ansaldo(2008)}]{Ansaldo2008genesis}
+\textsc{Ansaldo}, U. (2008).
+\newblock \enquote{Sri Lanka Malay revisited: Genesis and classification}.
+\newblock In \textsc{Dwyer}, A., D.~\textsc{Harrison} \& D.~\textsc{Rood}
+  (eds.) \enquote{A world of many voices: Lessons from documented endangered
+  languages}, Studies in Language, Amsterdam, Philadelphia: John Benjamins. pp.
+  13--42.
+
+\bibitem[{Bakker(2006)}]{Bakker2006}
+\textsc{Bakker}, P. (2006).
+\newblock \enquote{The Sri Lanka \em Sprachbund\em: The newcomers Portuguese
+  and Malay}.
+\newblock In \textsc{Matras}, Y., A.~\textsc{McMahon} \& N.~\textsc{Vincent}
+  (eds.) \enquote{Linguistic Areas -- Convergence in Historical and Typological
+  Perspective}, Houndmills, New York: Palgrave Macmillan. pp. 135--159.
+
+\bibitem[{Deumert \& Durlemann(2006)}]{DeumertEtAl2006}
+\textsc{Deumert}, A. \& S.~\textsc{Durlemann} (eds.)  (2006).
+\newblock \emph{Structure and Variation in Language Contact}.
+\newblock Amsterdam: John Benjamins.
+
+\bibitem[{Gair(1970[1998])}]{Gair1970}
+\textsc{Gair}, J.~W. (1970[1998]).
+\newblock \enquote{About Colloquial Sinhalese Clause Structures}.
+\newblock In  \cite{Gair1998}.
+
+\bibitem[{Gair(1976)}]{Gair1976sinhalasubject}
+\textsc{Gair}, J.~W. (1976).
+\newblock \enquote{Is Sinhala a Subject Language?}
+\newblock In  \cite{Verma1976}, pp. 39--63.
+
+\bibitem[{Gair(1991)}]{Gair1991infl}
+\textsc{Gair}, J.~W. (1991).
+\newblock \enquote{Subjects, Case and INFL in Sinhala}.
+\newblock In \textsc{Verma}, M. \& K.~P. \textsc{Mohanan} (eds.)
+  \enquote{Experiencer Subjects in South Asian Languages}, Palo Alto: Center
+  for the Study of Language and Information. pp. 13--41.
+\newblock Reprinted in Gair (1998), pp. 65--86.
+
+\bibitem[{Gair(1998)}]{Gair1998}
+\textsc{Gair}, J.~W. (1998).
+\newblock \emph{Sinhala and Other South East Asian Languages}.
+\newblock New York, Oxford: OUP.
+
+\bibitem[{Gair(2003)}]{Gair2003}
+\textsc{Gair}, J.~W. (2003).
+\newblock \enquote{Sinhala}.
+\newblock In \textsc{Cardona}, G. \& D.~\textsc{Jain} (eds.) \enquote{The
+  Indo-Aryan Languages}, London: Routledge. pp. 766--818.
+
+\bibitem[{Hussainmiya(1987)}]{Hussainmiya1987}
+\textsc{Hussainmiya}, B.~A. (1987).
+\newblock \emph{Lost Cousins: The Malays of Sri Lanka}, \emph{Occasional
+  Paper}, vol.~2.
+\newblock Kebangsaan: Universiti Kebangsaan.
+
+\bibitem[{Hussainmiya(1990)}]{Hussainmiya1990}
+\textsc{Hussainmiya}, B.~A. (1990).
+\newblock \emph{Orang Rejimen: The Malays of the Ceylon Rifle Regiment}.
+\newblock Universiti Kebangsaan.
+
+\bibitem[{Lehmann(1989)}]{Lehmann1989tamil}
+\textsc{Lehmann}, T. (1989).
+\newblock \emph{A Grammar of Modern Tamil}.
+\newblock Pondicherry: Pondicherry Institute of Linguistics and Culture.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009phd}
+\textsc{Nordhoff}, S. (2009).
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam.
+
+\bibitem[{Paauw(2004)}]{Paauw2004}
+\textsc{Paauw}, S.~H. (2004).
+\newblock \emph{A Historical Analysis of the Lexical Sources of Sri Lanka
+  Malay}.
+\newblock Master's thesis, York University.
+
+\bibitem[{Slomanson(2006)}]{Slomanson2006cll}
+\textsc{Slomanson}, P. (2006).
+\newblock \enquote{Sri Lankan Malay morphosyntax: Lankan or Malay?}
+\newblock In  \cite{DeumertEtAl2006}, pp. 135--158.
+
+\bibitem[{Smith(2003)}]{Smith2003timing}
+\textsc{Smith}, I.~R. (2003).
+\newblock \enquote{The provenance and timing of substrate influence in Sri
+  Lankan Malay; Definiteness, animacy and accusative case marking.}
+\newblock Paper presented at the South Asian Language Analysis Roundtable
+  XXIII, Austin, Texas.
+
+\bibitem[{Smith \& Paauw(2006)}]{SmithEtAl2006cll}
+\textsc{Smith}, I.~R. \& S.~\textsc{Paauw} (2006).
+\newblock \enquote{Sri Lanka Malay: Creole or convert}.
+\newblock In  \cite{DeumertEtAl2006}, pp. 159--182.
+
+\bibitem[{Smith et~al.(2004)Smith, Paauw \& Hussainmiya}]{SmithEtAl2004}
+\textsc{Smith}, I.~R., S.~\textsc{Paauw} \& B.~A. \textsc{Hussainmiya} (2004).
+\newblock \enquote{Sri Lanka Malay: the state of the art.}
+\newblock \emph{Yearbook of South Asian Languages}, 2004:197--215.
+
+\bibitem[{Verma(1976)}]{Verma1976}
+\textsc{Verma}, M. (ed.)  (1976).
+\newblock \emph{The Subject in South Asian Languages}.
+\newblock Madison: University of Wisconsin South Asia Program.
+
+\end{thebibliography}

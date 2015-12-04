@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: cliio3.aux
+The style file: natmpi.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: malay.bib
+Database file #2: nordhoffcollated.bib
+Repeated entry---line 325 of file nordhoffcollated.bib
+ : @book{NordhoffEd2012brill
+ :                          ,
+I'm skipping whatever remains of this entry
+Database file #3: sinhala.bib
+Database file #4: tamil.bib
+Database file #5: lgctct.bib
+Database file #6: lgchg.bib
+Database file #7: creole.bib
+Database file #8: india.bib
+Database file #9: lankahist.bib
+Repeated entry---line 112 of file lankahist.bib
+ : @book{Nuhman2007
+ :                 ,
+I'm skipping whatever remains of this entry
+Database file #10: ansaldo.bib
+Database file #11: sociolgstcs.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both author and editor fields in Gair1998
+Warning--can't use both author and editor fields in Geiger1973
+You've used 44 entries,
+            3042 wiz_defined-function locations,
+            900 strings with 10991 characters,
+and the built_in function-call counts, 24319 in all, are:
+= -- 2053
+> -- 568
+< -- 70
++ -- 228
+- -- 156
+* -- 1632
+:= -- 3613
+add.period$ -- 182
+call.type$ -- 44
+change.case$ -- 253
+chr.to.int$ -- 45
+cite$ -- 46
+duplicate$ -- 2135
+empty$ -- 2032
+format.name$ -- 286
+if$ -- 4876
+int.to.chr$ -- 6
+int.to.str$ -- 1
+missing$ -- 347
+newline$ -- 229
+num.names$ -- 184
+pop$ -- 815
+preamble$ -- 1
+purify$ -- 225
+quote$ -- 0
+skip$ -- 760
+stack$ -- 0
+substring$ -- 1494
+swap$ -- 869
+text.length$ -- 27
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 357
+warning$ -- 2
+while$ -- 211
+width$ -- 0
+write$ -- 572
+(There were 2 error messages)
