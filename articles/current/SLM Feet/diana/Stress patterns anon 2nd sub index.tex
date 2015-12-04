@@ -1,0 +1,1918 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.0
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T3,T1]{fontenc}
+\usepackage[english,dutch,english]{babel}
+\usepackage[noenc]{tipa}
+\usepackage{tipx}
+\usepackage[geometry,weather,misc,clock]{ifsym}
+\usepackage{pifont}
+\usepackage{eurosym}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage[top=1in,bottom=0.4917in,left=1.25in,right=1.25in,nohead,includefoot,foot=0.5083in,footskip=0.9776in]{geometry}
+\usepackage{makeidx}
+\usepackage{array}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{gb4e}
+
+\usepackage{hyperref}
+\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=Some stress patterns are harder to learn than others , pdfauthor=Diana Apoussidou, pdfsubject=, pdfkeywords=}
+\newcommand\textsubscript[1]{\ensuremath{{}_{\text{#1}}}}
+% Text styles
+\newcommand\textstyleInternetlink[1]{\textcolor{blue}{#1}}
+\makeatletter
+\newcommand\arraybslash{\let\\\@arraycr}
+\makeatother
+% Footnote rule
+\setlength{\skip\footins}{0.0469in}
+\renewcommand\footnoterule{\vspace*{-0.0071in}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent{\rule{0.25\columnwidth}{0.0071in}}\vspace*{0.0398in}}
+% Pages styles
+\makeatletter
+\newcommand\ps@Standard{
+  \renewcommand\@oddhead{}
+  \renewcommand\@evenhead{}
+  \renewcommand\@oddfoot{[Warning: Draw object ignored]}
+  \renewcommand\@evenfoot{\@oddfoot}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+\pagestyle{Standard}
+\makeindex
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+\title{Some stress patterns are harder to learn than others }
+\author{Diana Apoussidou}
+\date{2010-02-18}
+\begin{document}
+{\centering
+\textbf{Some stress patterns are harder to learn than others}\footnote{ This work was funded by the NWO Rubicon grant No. 446-07-030.}
+\par}
+
+
+\section{
+A very brief introduction to stress}
+
+
+Stress in linguistics is the relative prominence\index{prominence} of one syllable in comparison to other syllables. It is part of a language’s prosody\index{prosody} and helps to break up the speech stream into smaller units. Stressed syllables are either louder, higher, and/or longer than unstressed syllables, and more resistant to reduction processes. Of all the flavours that stress comes in, we will focus on word stress\index{stress!word} here (as opposed to higher-level stress such as phrasal or sentence stress\index{stress!sentence}). In the following we will have a look at some basic concepts of stress (section 2), before we come to a case study of Modern Greek\index{Greek!Modern} stress (section 3) and how it can be acquired in computer simulations (section 4). Modern Greek\index{Greek!Modern} stress is intriguing because of its complexity: there are words with final stress, others with penultimate stress, and yet others with antepenultimate stress, irrespective of the phonological structure of the words. On top of that, stress can shift\index{shift} to the right depending on the case (at least in nouns). These shifts are not always realized, adding to the complex pattern. This makes the learnability\index{learnability} of this stress system, i.e. a theoretical approach on how this pattern could in principle be acquired, particularly interesting.
+
+Some words on the terminology: The notions ‘stress’ and ‘accent\index{accent}’ are often used interchangeably in the literature, and sometimes used as discriminating between different phonetic aspects. ‘Accent’ is in general used as a slightly more general term and often refers to sentence accent.
+
+
+\section{
+Phonetic and phonological aspects of stress}
+
+
+\subsection{
+Phonetic aspects: a teaser}
+
+
+Stress\index{Stress} manifests phonetically with one or more correlates. Auditorily or perceptually speaking these are length\index{length}, loudness\index{loudness}, pitch\index{pitch} and vowel quality\index{vowel quality}. Acoustically speaking, the correlates are reflected in duration\index{duration}, intensity\index{intensity} or amplitude, fundamental frequency\index{fundamental frequency} and spectral structure\index{spectral structure} (e.g. Dogil\index{Dogil} \& Williams\index{Williams} 1999; cf. Fry\index{Fry} 1955, Lehiste\index{Lehiste} 1970). The use of these correlates is very language-specific. English\index{English}, for one, is said to have pitch as a stress correlate, combined with a preservation of vowel quality in unstressed syllables and a strong tendency to reduce vowels in unstressed syllables. In Modern Greek\index{Modern Greek}, the language of our case study, stress is characterized by a combination of intensity and duration (McKeever Dauer\index{McKeever Dauer} 1980, Botinis\index{Botinis} 1989). In German\index{German}, duration/length seems to be the main cue for word stress\index{stress!word} (Dogil \& Williams 1999, Jessen\index{Jessen} \& Marasek\index{Marasek} 1995).
+
+All of the above correlates are relative, and all of them can express something else than stress. For instance, the duration\index{duration} of a vowel can be a sign for stress in that stressed syllables are often longer in duration than unstressed ones, but it can also be a sign of an underlyingly long vowel, i.e. phonemic vowel length\index{length}. Pitch can, other than stress, express tone, or prosody\index{prosody} on the sentence level. Despite this inconclusiveness, in a lot of languages speakers usually agree in their judgement about which syllable in a word is the most prominent.
+
+We turn now to a brief overview over some functional aspects of stress.
+
+
+\subsection{
+Functional aspects: Predictable vs. lexical stress\index{stress!lexical}}
+
+
+Stress\index{Stress} is said to have several different functions. Depending on the language, the assignment of stress can be rather predictable (e.g. in languages where the beginning or the end of words is canonically stressed) or it can be unpredictable in the sense that it needs to be learned for each word (so-called lexical stress\index{stress!lexical}\footnote{ The expression ‘lexical stress’ is sometimes used as referring to word stress\index{stress!word} in contrast to sentence stress\index{stress!sentence}.}). In the former case, stress could serve as a means to signal a boundary (see Trubetzkoy\index{Trubetzkoy} 1939, Hyman\index{Hyman} 1977, Karvonen\index{Karvonen} 2008 for the idea of stress as a demarcative function). In the latter case, stress can carry information about the morphological or lexical make-up of a word. Predictable stress systems are also referred to as \textit{fixed} stress\index{stress!fixed} systems, whereas lexical stress systems are also referred to as \textit{free} stress\index{stress!free} systems.
+
+Languages with predictable stress assign it by phonological principles, for instance to a certain position in the word. Consider Finnish\index{Finnish}, where words are stressed initially (indicated by an acute accent\index{accent} ‘´’; examples are taken from Karvonen\index{Karvonen} 2008):
+
+
+\ea Finnish\index{Finnish}:
+{
+\textit{vápaa} ‘free’}
+
+{
+\textit{hélsinki} ‘Helsinki’}
+
+{
+\textit{érgonòmia} ‘ergonomics’}
+\z
+
+In Turkish\index{Turkish}, stress is for the most part final. No matter how many suffixes are attached, stress is always on the ultimate syllable (examples are from Sezer\index{Sezer} 1983):
+
+\ea Turkish\index{Turkish}:
+{
+\textit{tanı-dík} ‘acquaintance’}
+
+{
+\textit{tanı-dık-lár} ‘acquaintances’, }
+
+{
+\textit{tanı-dık-lar-ím} ‘my acquaintances’ }
+\z
+
+Stress\index{Stress} is in these cases edge-oriented, either towards the left or right edge of words. This does not have to be the initial or final syllable; it can also be near an edge.\footnote{ This seems to hold more for the right edge than the left edge of words; post-postinitial stress is so far missing from the typology. See Hyman\index{Hyman} (1977) for an indication of frequent and infrequent edge-oriented patterns.} Regular penultimate stress is common (e.g. in Polish\index{Polish}; e.g. Comrie\index{Comrie} 1976; Hayes\index{Hayes} 1995 and references therein); antepenultimate (e.g. in Macedonian\index{Macedonian}, Comrie 1976) and even postinitial stress are found (e.g. in Dakota\index{Dakota}, Chambers\index{Chambers} 1978). Other phonological factors that can play a role in stress assignment are the complexity of the syllable (\textit{heavy}\index{syllable!heavy} syllables often attract stress in contrast to \textit{light}\index{syllable!light} syllables; see section 2.4).
+
+Languages with largely unpredictable stress pattern are, among others, Russian\index{Russian} (Halle\index{Halle} 1997, Melvold\index{Melvold} 1990, Revithiadou\index{Revithiadou} 1999)\footnote{ See Dogil\index{Dogil} et al (1999:852) for a phonological account of Russian\index{Russian} stress.}, Bulgarian\index{Bulgarian} (Dogil\index{Dogil} et\\\noindent al. 1999:843), and Modern Greek\index{Modern Greek} (e.g. {Philippaki-Warburton}\index{Philippaki-Warburton}{ 1970, 1976)}. In Russian, stems and affixes can be inherently (‘lexically’) marked for stress, and words with marked stems have stress on the stem-syllable (3a), whereas words with unmarked stems have stress on the affix (if that is lexically marked) or on the initial syllable (in case no morpheme is marked for stress).
+
+
+\ea Russian\index{Russian}
+
+{
+a.\ \ rabót+á = \textit{rabóta }‘work-Nom.Sg.’}
+
+{
+\ \ rabót+y = \textit{rabóty} ‘work-Nom.Pl.’}
+
+{
+c.\ \ borod+á = \textit{borodá} ‘beard-Nom.Sg’}
+
+{
+\ \ borod+y = \textit{bórody} ‘beard-Nom.Pl’}
+\z
+
+Modern Greek\index{Modern Greek}, our case study and described in more detail in section 3, behaves quite similar, except that it has a ‘trisyllabic window\index{trisyllabic window}’, i.e. stress can only occur on one of the final three syllables.
+
+In general, the distinction between predictable and unpredictable is continuous rather than absolute: languages with predominantly predictable stress can have exceptions and languages with unpredictable stress can have some phonological restrictions or a preference for a certain pattern. Languages like English\index{English}, Dutch\index{Dutch} or German\index{German} appear to have stress based to a great extent on phonological properties (van der Hulst\index{van der Hulst} 1999, and references therein), but morphology and the lexicon play a role, too. In English, verbs and nouns are sometimes only distinguished by their different stresses: \textit{récord} (noun) versus \textit{recórd} (verb). Since the segmental make-up of verb and noun are the same, the difference in stress has to be lexical rather than phonological. The morphological influence on stress in English shows in words such as \textit{recordabílity}, where the derivational suffix attracts stress away from the root.
+
+\subsection{
+Examples of languages without word stress\index{stress!word}}
+
+Most languages make use of some sort of stress on the word level, however, a few languages appear to lack it altogether (e.g. Betawi Malay\index{Betawi Malay}, Roosman\index{Roosman} 2007; Javanese Indonesian\index{Javanese Indonesian}, Goedemans\index{Goedemans} \& van Zanten\index{van Zanten} 2007; Sri Lankan Malay\index{Sri Lankan Malay}, Nordhoff\index{Nordhoff} 2009, Apoussidou\index{Apoussidou} \& Nordhoff, submitted), or at least have some content words that lack it (Cayuga\index{Cayuga} and Seneca\index{Seneca}, Chafe\index{Chafe} 1977; Central Sierra Miwok\index{Central Sierra Miwok}, Freeland\index{Freeland} 1951; Japanese\index{Japanese}, Poser\index{Poser} 1990; Kinyambo\index{Kinyambo}, Bickmore\index{Bickmore} 1989, 1992; Yupik Eskimo\index{Yupik Eskimo}, Krauss\index{Krauss} 1985). It is debatable whether French\index{French} (Dell\index{Dell} 1984) has word stress\index{stress!word} or not, or whether it only has stress on the phrasal level (Hayes\index{Hayes} 1995). Grammatical words are frequently unstressed. The occurrence of these languages suggests that the principle of \textit{culminativity}\index{culminativity} (that each word or phrase should have one and only one main stress; Liberman\index{Liberman} \& Prince\index{Prince} 1977), once seen as an unviolable universal, is either not universal or not unviolable. At least since the advent of Optimality Theory\index{Optimality Theory} the latter has become an option (e.g. Alderete\index{Alderete} 1999).
+
+
+\subsection{
+Phonological aspects of stress}
+
+In systems with only one stress per word that furthermore falls on one of the two possible edges, it suffices to designate the edge as a phonological rule or constraint. These systems are called \textit{unbounded}\index{stress!unbounded} (Halle\index{Halle} \& Vergnaud\index{Vergnaud} 1987). \textit{Bounded}\index{stress!bounded} stress systems, for instance patterns with stress on the second or third syllable from the edge, and patterns with iterative stress (i.e. patterns that have secondary stresses besides the main stress\index{stress!main} of a word) could be accounted for by counting syllables; this, however, is a rather unelegant approach. Given the often binary nature of stress patterns, for which counting is not necessary, one came up with templates called \textit{feet} that describe the observed patterns. An overview over the initiation of the concept ‘foot\index{foot}’ is given in Hayes\index{Hayes} (1995:40). Hayes furthermore established the foot inventory that is still the basis for most work on metrical issues. The notion of ‘feet’ stems, among others, from grid theory\index{grid theory} (Prince\index{Prince} 1983, Selkirk\index{Selkirk} 1984), where stressed syllables were displayed as grid marks above a segmental tier, and unstressed ones as dots. This representation, exemplified in (1), is even reminiscent of a stylized foot (here with the leg on the left side and the toes pointing to the right):
+
+\ea *
+
+{
+( *  . )}
+
+{
+mo.ra}
+\z
+
+Feet were invoked to explain the often alternating behaviour of stressed and unstressed syllables, and the location of stress within a word. They are often binary (i.e. consisting of two syllables), as e.g. languages such as Pintupi\index{Pintupi} (Hansen \& Hansen 1969) and Finnish\index{Finnish} suggest (2)+(3). In these languages, secondary stress\index{stress!secondary}es are assigned in an alternating manner to every other syllable next to the main stress:
+
+\ea Pintupi\index{Pintupi}:\ \ \textit{múŋu}\ \ \ \   ${\rightarrow}$\ \ (múŋu)\ \ \ \ \ \ ‘orphan’
+
+{
+\textit{\ \ ŋ}\textit{álkunìnpa}\ \   ${\rightarrow}$\ \ (ŋálku)(nìnpa)\ \ \ \ ‘eating’}
+
+{
+\textit{\ \ t}\textit{\textsuperscript{j}}\textit{ámulìmpat}\textit{\textsuperscript{j}}\textit{ùŋku  }${\rightarrow}$ \ \ (t\textsuperscript{j}ámu)(lìmpa)(t\textsuperscript{j}ùŋku)\ \ ‘our relation’}
+\z
+
+\ea Finnish\index{Finnish}: \ \ \textit{érgonòmia\ \   }${\rightarrow}$\ \ (érgo)(nòmi)a\textit{\ \ } \ \ ‘ergonomics’ \z
+
+Languages like Cayuvava\index{Cayuvava} (as in Hayes\index{Hayes} 1981, 1995) can be explained with trisyllabic feet: e.g. \textit{[1F0?]ìhiraríama} ‘I must do’, \textit{maràhahaéiki} ‘their blankets’, \textit{ikitàparerépeha }‘the water is clean’. In other languages such as Modern Greek\index{Modern Greek}, monosyllabic (sometimes \textit{degenerate}) feet can play a role (as we will see later).
+
+\ \ Crucial to the notion of metrical feet is the division into a strong part (the \textit{head}) and a weak part. Left-headed feet are called trochees\index{trochees}, right-headed feet are called iambs\index{iambs}. As indicated in (2) and (3), Pintupi\index{Pintupi} and Finnish\index{Finnish} can be analyzed as having trochees. Pacific Yupik\index{Pacific Yupik} (as in Hayes\index{Hayes} 1995:335 and references therein) can be analyzed as having iambic feet:
+
+\ea Pacific Yupik\index{Pacific Yupik}:\ \ \textit{atáka}\ \   ${\rightarrow}$ (atá)ka\ \ \ \ ‘my father’
+
+{
+\ \ \ \ \ \ \ \ \textit{akútam}\textit{\'{{\textschwa}}}\textit{k}  ${\rightarrow}$ (akú)(tam\'{{\textschwa}}\'{ }k)\ \ ‘kind of food-abl.sg.’}
+\z
+
+Iambic languages tend to make a distinction between heavy\index{syllable!heavy} and light\index{syllable!light} syllables (unstressed syllables are short/shortened and stressed syllables are lengthened/long), whereas trochaic languages do not. This was formulated in an \textit{Iambic/Trochaic Law}\index{Iambic/Trochaic Law} (going back to a perceptual experiment by Bolton\index{Bolton} 1894) that “elements contrasting in intensity\index{intensity} naturally form groupings with initial prominence\index{prominence}”, and “elements contrasting in duration\index{duration} naturally form groupings with final prominence” (phrasing taken from Hayes\index{Hayes} 1995:80). Across languages, this seems to be more of a tendency than a law (see Kager\index{Kager} 1993).
+
+Speaking of heavy\index{syllable!heavy} and light\index{syllable!light} syllables, they bear some explanation. There are languages that do not make a distinction between heavy\index{syllable!heavy} and light\index{syllable!light} syllables irrespective of their syllable structure. Some languages distinguish between open syllables with a short vowel that are light\index{syllable!light}, and open syllables with a long vowel that are heavy\index{syllable!heavy}. In these languages, the heavy\index{syllable!heavy} syllables tend to attract stress. Adding to these are languages that count syllables with closed syllables as heavy\index{syllable!heavy} (e.g. Latin\index{Latin}, Mester\index{Mester} 1984; German\index{German}, Giegerich\index{Giegerich} 1985) or light\index{syllable!light}. Languages that do not have a vowel length\index{length} distinction but count closed syllables as heavy\index{syllable!heavy} (e.g. Spanish\index{Spanish}, Roca\index{Roca} 1999) are apparently rare. Modern Greek\index{Modern Greek} has closed syllables (i.e. syllables ending in a consonant), but no vowel length distinction. Stress\index{Stress} in this case is assigned irrespective of whether a syllable is closed or not.
+
+These are just the very basic principles of stress. As for the acquisition of stress, a learner of a language (at least a L1 learner) has to find out whether his/her language is predominantly predictable, and if so, which phonological grammar renders the correct stress pattern, and if not, what needs to be represented in the lexicon. Let us now turn to a more detailed discussion of stress in Modern Greek\index{Modern Greek}, before we move on to the computational treatment.
+
+\section{
+Modern Greek}\index{Modern Greek}
+
+Modern Greek\index{Modern Greek} word stress\index{stress!word}, especially in nouns, is complex and involves an interaction of the lexicon and the phonology of the language. Modern Greek\index{Greek!Modern} (henceforth simply Greek\index{Greek!Modern}, unless it is contrasted with Ancient Greek\index{Greek!Ancient}) has lexical  stress, meaning that the morphemes of a word can be (and often are) underlyingly specified for stress. Stress\index{Stress} can occur on any of the final three syllables (depending on the word), and in the genitive case stress can shift\index{shift} to the right. It is phonologically restricted in the sense that stress cannot occur farther to the left than on the antepenultimate syllable. The shift in the genitive case is an artefact of Ancient Greek\index{Greek!Ancient}, where it was phonologically conditioned. Nowadays, the shift is lexical and not transparent anymore: speakers use it when using a more formal speech style, but some words undergo it more easily than others. The genitive case is furthermore not frequently used, and speakers reveal insecurities when prompted to produce the genitive stress pattern for certain words. This can be due to the infrequency of the genitive case, i.e. the speakers were not exposed to the genitive case enough to fully acquire the pattern, but it can also be due to the fact that the stress shift in the genitive case is an artefact of Ancient Greek\index{Greek!Modern} and is in conflict with the contemporary phonology of Greek\index{Greek!Modern}.
+
+This paper will give a computational learnability\index{learnability} account of word stress\index{stress!word} in Modern Greek\index{Modern Greek} nouns, showing how the lexical word stress can be acquired using allomorphy\index{allomorphy}, and furthermore showing how some of the stress patterns occurring in Modern Greek\index{Greek!Modern} could be more difficult to acquire than others due to both the restrictions of the grammar and to the infrequency of the genitive case.
+
+\subsection{
+The data}
+
+Stress\index{Stress} in Greek\index{Greek!Modern} is lexical in the sense that morphemes can be underlyingly specified for it. Any of the last three syllables of a word can be stressed (examples are taken from Holton\index{Holton} et al. 1997/2004; dots indicate a syllable boundary and acute accents indicate stress; citation form is the nominative singular, if not specified otherwise):
+
+\ea \begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{0.7045598in}m{1.6150599in}|m{1.7268599in}|m{1.5545598in}}
+
+
+ &
+ antepenultimate &
+ penultimate &
+ ultimate\\\hhline{~---}
+ &
+{ \textit{thá.la.sa} ‘sea’}
+
+{ \textit{va.sí.li.sa} ‘queen’}
+
+ \textit{la.ví.rin.thos} ‘labyrinth’ &
+{ \textit{kó.ri} ‘daughter’}
+
+{ \textit{el.pí.tha} ‘hope’}
+
+{ \textit{fi.ga.té.ra} ‘daughter’}
+
+ \textit{e.fi.me.rí.tha} ‘newspaper’ &
+{ \textit{a.go.rá} ‘market place’}
+
+{ \textit{u.ra.nós} ‘sky’}
+
+ \textit{a.del.fós} ‘brother’\\
+\end{supertabular}
+\end{flushleft}
+\z
+{
+In the genitive case, stress can shift\index{shift} from the antepenultimate of the nominative case to the penultimate syllable (9a) or to the ultimate syllable (9b) or from the penultimate to the ultimate syllable (9c). In other cases, stress does not shift (9d).}
+
+
+\ea a. \ \ \textit{la.ví.rin.thos \~ la.vi.rín.thon}
+
+{
+b. \ \ \textit{thá.la.sa \~ tha.la.són}}
+
+{
+\ \ \textit{va.sí.li.sa \~ va.si.li.són}}
+
+{
+c. \ \ \textit{do.má.ta \~ do.ma.tón}}
+
+{
+d. \ \ \textit{el.pí.tha \~ el.pí.thon}}
+
+\z
+
+In \textit{any} case, stress cannot occur left of the antepenultimate syllable.\footnote{ Apparently, loanwords can violate the trisyllabic window\index{trisyllabic window}, e.g. \textit{kámeraman} ‘cameraman’ (Revithiadou\index{Revithiadou} 1999:95).}
+
+
+
+\subsection{
+Previous analyses}
+
+
+There is consensus in the literature that stress in Greek\index{Greek!Modern} is for the most part lexical. A phonological default applies only when no morpheme of the word is specified for stress; in this case, stress is assigned to the antepenultimate syllable if there is one (Philippaki-Warburton\index{Philippaki-Warburton} 1970, 1976, Ralli\index{Ralli} 1988, Malikouti-Drachman\index{Malikouti-Drachman} \& Drachman\index{Drachman} 1989; Touratzidis\index{Touratzidis} \& Ralli 1992, Drachman \& Malikouti-Drachman 1996, Revithiadou\index{Revithiadou} 1999).\footnote{ See Protopapas\index{Protopapas} et al. (2006) and reference therein for suggesting that the default is actually stress on the penultimate syllable, based on the frequency of this pattern.} Both roots and suffixes can be specified for stress.
+
+Revithiadou\index{Revithiadou} (1999), for instance, proposed that the stress shift\index{shift} of the genitive singular suffix –\textit{u} is caused by an underlying specification in form of a weak foot\index{foot} part. The preceding root gets stressed on its final syllable because the grammar of the language builds a trochaic foot based on the specification of the suffix. While a word like \textit{ánthrop}+\textit{os} ‘human’ is stressed by the phonology, i.e. (ánthro)pos, the genitive singular case -\textit{u}) comes with a lexical foot part, and the phonology will assign a trochaic foot an(thrópu) (‘s’ stands for the strong part of a foot; ‘w’ for the weak part):
+
+\ea Pre-stressing foot\index{foot} structure
+
+{
+\ \ \ \ \ \   F}
+
+{
+\ \ \ \ \ \   /{\textbackslash}}
+
+{
+w\ \ \ \   s  w}
+
+{
+ {\textbar}\ \ \ \   {\textbar}  {\textbar}}
+
+{
+anthrop + u)\ \ =\ \ an(thrópu)}
+\z
+
+The genitive plural suffix –\textit{on} is in Revithiadou\index{Revithiadou}’s (1999) analysis stressed itself, i.e. equipped with a strong foot\index{foot} part –(\textit{on} underlyingly. This results in a monosyllabic feet around the suffix on the surface:
+
+
+\ea Self-stressing foot\index{foot} structure
+
+{
+\ \ \ \ \ \   F}
+
+{
+\ \ \ \ \ \   {\textbar}}
+
+{
+ s\ \ \ \   s}
+
+{
+{\textbar}\ \ \ \   {\textbar}\ \ }
+
+{
+thalas + (on\ \ =\ \ thala(són)}
+\z
+
+Both suffixes can attract stress from the antepenultimate syllable only if adhered to an underlyingly unstressed root. As the data in (5) and (6) show, stress can shift\index{shift} from the antepenult to the penult or ultima, where the suffix \textit{–on} in some cases surfaces as pre-stressing and sometimes as stressed itself (and not only when occurring with roots that are unstressable).
+
+
+\ea Stress\index{Stress} shift\index{shift} from the antepenultimate to the penultimate syllable
+
+{
+\textit{méthodos} \~{} \textit{methódon} ‘method’}
+
+{
+\textit{ánthropos \~{} anthrópon} ‘human’}
+\z
+
+\ea Stress\index{Stress} shift\index{shift} from the antepenultimate to the ultimate syllable
+{
+\textit{thálasa} \~{} \textit{thalasón} ‘sea’}
+
+{
+\textit{trápeza} \~{} \textit{trapezón} ‘bank’}
+\z
+
+This already indicates that there is some kind of allomorphy\index{allomorphy} involved. As the data in (7) furthermore show, stress can also shift\index{shift} from the penult to the ultima:
+
+
+\ea Stress\index{Stress} shift\index{shift} from the penultimate to the antepenultimate syllable
+
+{
+\textit{domáta} \~{} \textit{domatón} ‘tomato’}
+
+{
+\textit{turístas} \~{} \textit{turistón} ‘tourist’}
+\z
+
+According to Revithiadou\index{Revithiadou}’s analysis, the suffix should only be able to attract stress away from the root if the root is underlyingly unstressed. If a word surfaces as stressed on the penultimate syllable in the nominative case, then it has to be underlyingly stressed on that syllable, because otherwise it should be stressed by default on the antepenultimate (if the root is disyllabic or longer). If the root is underlyingly stressed, then the inflectional suffix should not be able to attract stress away from the root due to the ranking of root stress over suffix stress. This kind of stress shift\index{shift} cannot be explained by underlying foot\index{foot} structure as in Revithiadou’s analysis (nor by Apoussidou\index{Apoussidou}’s 2007 account for that matter).
+
+
+An alternative would be allomorphy\index{allomorphy}: in the penult-to-the-ultima case; one could assume either stressless and pre-stressing allomorphs for the non-genitive suffixes, assigning penultimate stress, or one could assume that the root has two allomorphs; one unstressed and one stressed on the final syllable, i.e. \textit{méthod-} \~{} \textit{methód-}. The latter might be less costly for a learner of the language since it is a straightforward interpretation of the input. Moreover, allomorphy exists anyway in the language. Drachman\index{Drachman} et al. (1995) give an account how allomorphs of Greek\index{Greek!Modern} suffixes are chosen on the basis of their own shape and the shape of the root/stem they adhere to. For instance, action nominals can be formed with the suffixes –\textit{imo} and –\textit{ma}. Monosyllabic stems take the disyllabic –\textit{imo}, while polysyllabic stems take the monosyllabic –\textit{ma} (examples taken from Drachman et al. 1995):
+
+
+\ea Action nominals
+
+{
+\textit{vréko} ‘I wet’ {\textgreater} \textit{vréksimo} ‘wetting’}
+
+{
+\textit{skupiso} ‘I sweep’ {\textgreater} \textit{skúpizma} ‘sweeping’}
+\z
+
+
+However, Drachman\index{Drachman} et al. (1995) are suspicious of suffixal alternants that are segmentally identical but behave differently with respect to stress, as in the deverbal agent nominalizer –\textit{tis}. This suffix surfaces as stressed or unstressed depending on the length\index{length} (in terms of syllable count) of the preceding root: \textit{kléf-tis }‘thief’ vs. \textit{skupis-tís }‘sweeper’. Instead of allomorphy\index{allomorphy} they propose catalexis for the behaviour of suffixes like –\textit{tis}, to account for why the unstressed variant adheres to monosyllabic stems and the stressed variant adheres to polysyllabic stems. While they give an elegant account for the distribution of (other) allomorphs on prosodic grounds in Modern Greek, I am less suspicious of unstressed –\textit{tis}/stressed -\textit{tís} as allomorphy, because the catalectic analysis does not apply in a similar case, the genitive plural suffix –\textit{on}, which pretty much looks like the –\textit{tis}/-\textit{tís} case in that it has stressed, pre-stressing and unstressed alternants, but has alternation irrespective of the prosodic shape of the root it adheres to (as I will show below). I would like to argue that roots and suffixes can simply have unstressed and stressed alternants, and they adhere to each other by convention, not necessarily out of prosodic reasons. The reason for this assumption is that the stress-shifting pattern caused by some affixes usually belongs to a more formal register stemming from Ancient Greek\index{Greek!Ancient} (Holton\index{Holton} et al. 1997/2004) and is ‘learned’. I therefore take that the stress-shifting pattern is not part of the natural language acquisition process but an exceptional pattern that is highly lexicalized.
+
+Since the examples show that 1) stress is lexical in Greek\index{Greek!Modern}; 2) allomorphy\index{allomorphy} is needed in one way or another anyway (\textit{méthodos} \~{} \textit{methódon} and \textit{thálasa} \~{} \textit{thalasón}), and 3) underlying foot\index{foot} structure cannot account for all the cases of stress shift\index{shift} (\textit{domáta} \~{} \textit{domatón}), I would like to propose that Greek\index{Greek!Modern} makes use of underlying stress, but that the stress shifts are encoded as allomorphy (similar to Ralli\index{Ralli} \& Touratzidis\index{Touratzidis}’ 1992 approach).
+
+
+\ea Simplified underlying representations
+
+{
+\textit{méthodos} \~{} \textit{methódon}\ \ root allomorphs: {\textbar}méthod-{\textbar} and {\textbar}methód-{\textbar}}
+
+{
+\textit{thálasa} \~{} \textit{thalasón}\ \ root allomorphs: {\textbar}thalas-{\textbar} and {\textbar}thálas-{\textbar}}
+
+{
+\textit{uranós} \~{} \textit{uranón}\ \ suffix allomorphs: {\textbar}-ós{\textbar} and {\textbar}-ón{\textbar}.}
+\z
+
+One more note is in order. The allomorphic behaviour of the affixes cannot be attributed to the declension class or gender of the nouns they belong to. For one, -on is the genitive plural marker for practically all nouns (except for the ones that only occur in the singular). The distribution of stressed/unstressed/pre-stressing –on is rather arbitrary: whether or not a noun takes the stressed or unstressed version does not depend on gender or declension class or prosody\index{prosody} (classification basically taken from Holton\index{Holton} et al. 2004; I left out imparisyllabic nouns), but on its phonological structure in Ancient Greek\index{Greek!Ancient}.
+
+Drachman\index{Drachman} et al. (1995), Revithiadou\index{Revithiadou} (1999) and Apoussidou\index{Apoussidou} (2007) assume underlying foot\index{foot} structure as specification (Inkelas\index{Inkelas} 1994), to account for stress-shifting pattern in nouns caused by e.g. the genitive plural suffix –\textit{on}. I will give an alternative account here, claiming that morphemes are underlyingly stressed in the language, but that there is no need to assume underlying foot structure or pre- and post-stressing mechanisms. Instead, there are only two straightforward underlying specifications: stressed and unstressed. The complex pattern in the language comes about with allomorphy\index{allomorphy}: roots and affixes have underlyingly stressed and unstressed variants. For acquiring the stress patterns, no intricate underlying representations have to be acquired other than are observable in the data.
+
+
+\subsection{
+The shift\index{shift}: a relic}
+
+The stress pattern of Modern Greek is complex because it developed out of the Ancient Greek\index{Greek!Ancient} (AG) pitch\index{pitch} accent\index{accent}. This accent was lexical in AG as well: any of the last three syllables of a word could bear one. But the shift\index{shift} of the accent within the paradigm (the “recessive accent”) was predictable: stress would shift if the final syllable was “heavy\index{syllable!heavy}” (see Steriade\index{Steriade} 1988, Kiparsky\index{Kiparsky} 2003). Final syllables were heavy in AG if they contained either a long vowel (AG had phonemic vowel length\index{length}) or ended in a consonant cluster. The genitive plural suffix –\textit{on} contained a long [o:], written as‘$\omega $’ (an \textit{omega} ‘big o’, as opposed to the short \textit{omikron} ‘small o’). The trisyllabic window\index{trisyllabic window} in AG was therefore a tri\textit{moraic} one (cf. Smith\index{Smith} \& Apoussidou\index{Apoussidou} in prep.). This explains why the accent was attracted away from the antepenultimate syllable in cases like \textit{lavírinthos} \~{} \textit{lavirínthon}. In \textit{lavírinthos}, the final syllable is light\index{syllable!light} (-\textit{os} contained a short vowel: \textit{laví}\textit{\textsubscript{$\mu $}}\textit{ri}\textit{\textsubscript{$\mu $}}\textit{ntho}\textit{\textsubscript{$\mu $}}\textit{s}) and the accent is on the antepenultimate syllable because this syllable happens to contain the third mora from the end. In \textit{lavirínthon}, the final syllable is heavy\index{syllable!heavy} (because the /o/ in –\textit{on} is long: \textit{lavirí}\textit{\textsubscript{$\mu $}}\textit{ntho}\textit{\textsubscript{$\mu \mu $}}\textit{n}), causing the stress to shift a syllable to the right. An accent on the antepenultimate syllable would therefore violate the trimoraic window: *\textit{laví}\textit{\textsubscript{$\mu $}}\textit{ri}\textit{\textsubscript{$\mu $}}\textit{ntho}\textit{\textsubscript{$\mu \mu $}}\textit{n}.
+
+Newton\index{Newton} (1972:12) suggests that vowel length\index{length} is still preserved in the modern language underlyingly, arguing that under this assumption, the stress shift\index{shift} remains predictable. However, Philippaki-Warburton\index{Philippaki-Warburton} (1976) mentions that speakers do not use the shifted forms as much anymore, indicating that speakers are not aware of the Ancient Greek\index{Greek!Ancient} distinction. I argue (in line with Philippaki-Warburton 1976) that speakers of the modern language are not aware of the underlying phonemic vowel length proposed by Newton and that the stress shift is just lexically conditioned, because a) there is no evidence of phonemic vowel length in the phonetic signal, so the question is how speakers of Greek\index{Greek!Modern} come to this knowledge and b) nowadays, stress in at least more informal speech does not shift as often anymore (see also Holton\index{Holton} et al. 2004), which is not explained under the assumption that underlying vowel length is somehow transparent.
+
+It thus appears that the loss of the vowel length\index{length} distinction pulls the rug out from under the phonological condition that caused the stress shift\index{shift}.\footnote{ The stories by Allen\index{Allen} (1689[1999]) and Devine\index{Devine} \& Stephens\index{Stephens} (1994) go that the length\index{length} distinction was lost because the duration\index{duration} of the long vowels was re-interpreted as a stress cue, with a subsequent shortening of all unaccented vowels.} And since the language already made use of lexical stress\index{stress!lexical} anyway, I argue that at least in the nominal paradigm, stress is lexical all the way.
+
+
+\subsection{
+Frequency patterns}
+
+
+As of now, not much quantitative data is available about how many words exist with the different patterns, and how many of them shift\index{shift}. Revithiadou\index{Revithiadou} (1998) compiled a small corpus of 16.000 nouns in -\textit{os} and -\textit{a}, of which she classified 67.5\% as accented and 18.5\% as unaccentable roots (indicating that these words do not shift) and 10.2\% as unmarked ones (indicating that these shift in the genitive case). Protopapas\index{Protopapas} (2006) indicates that penultimate stress is the most frequent (but not overwhelmingly frequent) pattern in MG. However, his count is based on words with two or more syllables, and it is not clear whether antepenultimate stress is simply less frequent  due to the fact that disyllabic words cannot be stressed pre-penultimately. Protopapas et al. (2006) tested whether the stress diacritic in written MG is necessary for correctly reading a word or whether children have alternative strategies for stressing. Again, penultimate position seems to be the most favoured position for stress in MG, but there is no information about stress shifting patterns. Sims\index{Sims} (in press) examined MG speakers in their use of periphrastic constructions to avoid stress shifting patterns in MG, but her sample of nouns does not indicate a percentage of stress-shifting versus non-shifting patterns. None of these studies give a count of the different patterns in terms of possible variation as mentioned by Holton\index{Holton} et al. (1997[2004]) or Philippaki-Warburton\index{Philippaki-Warburton} (1976). The goal of this paper is not a quantitative survey of the occurring variation, but in the following I will give a sample of it, drawn from the Hellenic National Corpus (HNC; \url{http://hnc.ilsp.gr/en/default.asp}) of written texts. The examples are composed of words with three to five syllables and compared with Holton et al. (1997[2004]). Words with final stress in the nominative case are disregarded for the moment, since they never show variation.
+
+
+\ea Sample of frequencies (empty cells rendered a count of zero):
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{0.66775984in}|m{1.1143599in}|m{1.0629599in}|m{1.1920599in}|m{0.34625986in}}
+ gloss &
+ nominative &
+ genitive (shift\index{shift}) &
+ genitive (no shift\index{shift}) &
+ ratio\\\hline
+ ‘sea’ &
+ thálasa (2831) &
+ thalasón (94) &
+\footnotemark{} &
+ 30:1\\\hline
+ ‘tomato’ &
+ domáta (105) &
+ domatón (1) &
+\footnotemark{} &
+ 105:1\\\hline
+ ‘almond’ &
+ amígdalo (16) &
+ amigdálon (3) &
+\footnotemark{} &
+ 5:1\\\hline
+ ‘butter’ &
+ vútiro (99) &
+ \footnotemark{}  &
+ vútiron (1) &
+ 99:1\\\hline
+ ‘sheep’ &
+ próvato (119) &
+ prováton (50) &
+ próvaton (2) &
+{ 2:1}
+
+ 60:1\\\hline
+ ‘man’ &
+ ánthropos (6091) &
+ anthrópon (4281) &
+ ánthropon (11) &
+{ 1,5:1}
+
+ 554:1\\\hline
+ ‘headache’ &
+ ponokéfalos (177) &
+ ponokefálon (3) &
+\footnotemark{} &
+ 59:1\\
+\end{supertabular}
+\end{center}
+\addtocounter{footnote}{-5}
+
+\stepcounter{footnote}\footnotetext{\textsuperscript{+9} According to Holton\index{Holton} et al. (1997[2004]:57; henceforth HMP), these words should always shift\index{shift} in the genitive.}
+\stepcounter{footnote}\footnotetext{}
+\stepcounter{footnote}\footnotetext{\textsuperscript{+11} According to HMP:64, these words should show variation.}
+\stepcounter{footnote}\footnotetext{}
+\stepcounter{footnote}\footnotetext{ According to HMP:52, these words should not shift\index{shift}.}
+\z
+
+Some variation was found in the genitive singular instead of the genitive plural, which is not indicated here. The genitive case is rather rare, with the exception of high-frequency nouns such as \textit{anthrópon} and \textit{thalasón}. There is also no clear pattern as of how frequent one genitive form is over the other, if there is variation. In general, the shifting forms are more frequent than the non-shifting forms (with the exception of one occurrence of \textit{vútiron}). Since the HNC is a corpus of written material only, this rather conservative pattern might be reflecting a more formal register than would be used in spoken language. It suffices to indicate that indeed there exists variation in the stress patterns; if anything, the variation would be bigger in the spoken language. This variation is apparently acquired by some of the speakers at least, and its learnability\index{learnability} will be accounted for here.
+
+\subsection{
+Harmonic allomorphy\index{allomorphy} instead}
+
+
+I argue that the stress pattern is highly lexical and that the use of allomorphs can account for both the shifting and the non-shifting patterns, but that some of the shifting patterns are more difficult to acquire than others. This can be formalized by adopting a framework such as Harmonic Grammar\index{Harmonic Grammar} ({Legendre}\index{Legendre}{, Miyata}\index{Miyata}{ \& Smolensky}\index{Smolensky}{ 1990, Smolensky \& Legendre 2006)}, differing from Optimality Theory\index{Optimality Theory} in that constraint\index{constraint}s can gang up to choose a candidate not preferred by a strict ranking hierarchy.
+
+\ \ Determining the underlying representation for an incoming form works as follows. Learners adopt underlying representations based on what can be observed on the overt level (cf. Smolensky\index{Smolensky} 1996 and references therein). A word that is observed in the nominative singular as stressed on the root, e.g. \textit{thálasa}, leads to the creation of an entry with a stressed root morpheme {\textbar}thálas-{\textbar} and an entry with an unstressed suffix {\textbar}-a{\textbar}, in form of lexical constraint\index{constraint!lexical}s connecting the meaning and syntactic information of the morphemes with their phonological representation. Is the word subsequently observed in the genitive plural form as \textit{thalasón}, an unstressed allomorph for the root is created, {\textbar}thalas-{\textbar}, as well as a stressed suffix morpheme {\textbar}-ón{\textbar}. Since the learner cannot know beforehand whether s/he is learning a language with lexically or grammatically assigned stress, the hypothesized underlying representations are evaluated in combination with their surface structures and overt forms.
+
+In the following, I very roughly outline the working ways of Harmonic Grammar\index{Harmonic Grammar} and apply it to a “grammar” containing lexical constraint\index{constraint!lexical}s. The lexical constraints stem from what can be observed in the overt form (displayed in square brackets ‘[ ]’): a stress on the root in the overt form gives rise to the creation of a lexical constraint linking the meaning (in angle brackets ‘{\textless} {\textgreater}’) of this root to an underlying representation (in pipes ‘{\textbar} {\textbar}’) of this morpheme containing the segments and a mark for the stress on the designated syllable.\footnote{ These assumptions are not trivial; the learner already needs to know what segments are, needs to be able to hear stress, needs to know the meaning, needs to know that there are two morphemes in the word etc. The acquisition of this knowledge is at this point for future research.} For instance, the root ‘sea’ comes in stressed and unstressed flavours: stressed if inflected with the nominative case suffix –a, and unstressed if inflected with the genitive plural suffix –ón. Likewise, a constraint\index{constraint} for unstressed –a and stressed –ón are created:
+
+\ea Creation of lexical constraint\index{constraint!lexical}s
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.18376in}m{2.4212599in}}
+ given: &
+ created:\\
+ ‘sea-Nom.Sg.F’ [thálasa] ${\rightarrow}$ &
+ {\textless}sea{\textgreater}  {\textbar}thálas-{\textbar}; {\textless}Nom.Sg.F{\textgreater} {\textbar}-a{\textbar}\\
+ ‘sea-Gen.Pl’ [thalasón] ${\rightarrow}$ &
+ {\textless}sea{\textgreater} {\textbar}thalas-{\textbar}; {\textless}Gen.Pl{\textgreater} {\textbar}-ón{\textbar}\\
+\end{supertabular}
+\end{center}
+\z
+
+For the genitive plural suffix, a lexical constraint with an unmarked –\textit{on} will be created for words such as \textit{prováton} ‘sheep-Gen.Pl’, and so on and so forth.
+
+In Harmonic Grammar\index{Harmonic Grammar}, constraint\index{constraint}s are not strictly ranked, but are assigned numerical weights (the numbers on top of the constraint names in tableau (19)). Each violation of a constraint is assigned a negative value of -1. The harmonic score\index{harmonic score} (the number that determines the winning candidate) is calculated by multiplying the violation value with the constraint weight\index{weight}, and taking the sum of all the products for a candidate. The harmonic value closest to zero (here: -2.5) determines the winning candidate; in the case of (19) it is the candidate without any lexical specification for stress, which is preferred by the constraint without underlying lexical specifications for the root ‘sea’. For ease of exposition I only use the lexical constraint\index{constraint!lexical}s evaluating the underlying representations, leaving out the surface structures and overt forms.
+
+\ea Determining the underlying representation for morphemes in HG: {\textbar}thalas+a{\textbar}
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{|m{1.2511599in}|m{1.0247599in}|m{1.0247599in}|m{1.0476599in}|m{0.39835986in}|}
+\hline
+ &
+\centering  3 &
+\centering  2.5 &
+\centering  1 &
+\\\hline
+ {\textless}sea+Nom.Sg.F{\textgreater} &
+\centering  {\textless}sea{\textgreater} {\textbar}thalas-{\textbar} &
+\centering  {\textless}sea{\textgreater} {\textbar}thálas-{\textbar} &
+\centering  {\textless}Nom.Sg{\textgreater} {\textbar}-a{\textbar} &
+\\\hline
+\raggedleft  \ding{43} {\textbar}thalas+a{\textbar} &
+ &
+\centering  {}-1 &
+ &
+ {}-2.5\\\hline
+\raggedleft  {\textbar}thálas+a{\textbar} &
+\centering  {}-1 &
+ &
+ &
+ {}-3\\\hline
+\end{supertabular}
+\end{center}
+\z
+
+Under the current weighting\index{weighting} of constraints in (19), the word \textit{thálasa} in the nominative singular is analyzed as underlyingly unmarked for stress. In combination with the genitive plural suffix, different constraints and candidates come into play: combinations of unstressed/stressed roots and unstressed/stressed suffixes. Tableau (20) shows how the candidate is evaluated as the most harmonic one that has an underlyingly unstressed root and the underlyingly stressed allomorph of the genitive plural suffix, -ón: the candidate violates the lexical constraint for a stressed root and the constraint\index{constraint} for an unstressed suffix, but in sum provides the harmonic score\index{harmonic score} closest to zero.
+
+
+\ea Choosing the stressed allomorph of {\textless}Gen.Pl{\textgreater}: [thalasón] [F0D5?] {\textbar}thalas+ón{\textbar}
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{|m{1.0393599in}|m{0.5969598in}|m{0.5969598in}|m{0.7323598in}|m{0.7323598in}|m{0.35665986in}|}
+\hline
+ &
+\centering  3 &
+\centering  2.5 &
+\centering  1.1 &
+\centering  1 &
+\\\hline
+ {\textless}sea+Gen.Pl{\textgreater} &
+\centering { {\textless}sea{\textgreater}}\par
+
+\centering  {\textbar}thalas-{\textbar} &
+\centering { {\textless}sea{\textgreater}}\par
+
+\centering  {\textbar}thálas-{\textbar} &
+\centering { {\textless}Gen.Pl{\textgreater}}\par
+
+\centering  {\textbar}-ón{\textbar} &
+\centering { {\textless}Gen.Pl{\textgreater}}\par
+
+\centering  {\textbar}-on{\textbar} &
+\\\hline
+\raggedleft  {\textbar}thalas+on{\textbar} &
+ &
+\centering  {}-1 &
+\centering  {}-1 &
+ &
+ {}-3.6\\\hline
+\raggedleft  \ding{43}  {\textbar}thalas+ón{\textbar} &
+ &
+\centering  {}-1 &
+ &
+\centering  {}-1 &
+ {}-3.5\\\hline
+\raggedleft  {\textbar}thálas+on{\textbar} &
+\centering  {}-1 &
+ &
+\centering  {}-1 &
+ &
+ {}-4.1\\\hline
+\raggedleft  {\textbar}thálas+ón{\textbar} &
+\centering  {}-1 &
+ &
+ &
+\centering  {}-1 &
+ {}-4\\\hline
+\end{supertabular}
+\end{center}
+\z
+
+In this way, the shift\index{shift} from the antepenultimate syllable to the ultimate syllable can be accounted for without assuming underlying foot\index{foot} structures that would require ad hoc assumptions about how to acquire them.
+
+Next to the shift\index{shift} from the antepenultimate to the ultimate syllable exists the shift from the antepenult to the penult in Greek\index{Greek!Modern}. It turns out that this shift is less easy to accomplish, given the weighting\index{weighting} of the constraints in (20). Tableau (21) shows that the actual winner is the candidate with a specification on both the root and the suffix; unfortunately, the underlying stress is not on the correct syllable. If this candidate is chosen as the underlying form, a surfacing stress on the antepenultimate or ultimate syllable is likely.
+
+\ea Shift from antepenultimate to penultimate syllable? *{\textbar}provát+ón{\textbar} /pro(váton)/
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{|m{1.1906599in}|m{0.8518598in}|m{0.8587598in}|m{0.7962598in}|m{0.7962598in}|m{0.48375985in}|}
+\hline
+ &
+\centering  1.5 &
+\centering  1.4 &
+\centering  1.1 &
+\centering  1 &
+\\\hline
+ {\textless}sheep+Gen.Pl{\textgreater} &
+\centering  {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} &
+\centering  {\textless}sheep{\textgreater} {\textbar}provát-{\textbar} &
+\centering  {\textless}Gen.Pl{\textgreater} {\textbar}-ón{\textbar} &
+\centering  {\textless}Gen.Pl{\textgreater} {\textbar}-on{\textbar} &
+\\\hline
+\raggedleft  {\textbar}provat+on{\textbar} &
+\centering  {}-1 &
+\centering  {}-1 &
+\centering  {}-1 &
+ &
+\raggedleft\arraybslash  {}-4\\\hline
+\raggedleft  {\textbar}provat+ón{\textbar} &
+\centering  {}-1 &
+\centering  {}-1 &
+ &
+\centering  {}-1 &
+\raggedleft\arraybslash  {}-3.9\\\hline
+\raggedleft  {\textbar}próvat+on{\textbar} &
+ &
+\centering  {}-1 &
+\centering  {}-1 &
+ &
+\raggedleft\arraybslash  {}-2.5\\\hline
+\raggedleft  \ding{43} {\textbar}próvat+ón{\textbar} &
+ &
+\centering  {}-1 &
+ &
+\centering  {}-1 &
+\raggedleft\arraybslash  {}-2.4\\\hline
+\raggedleft  {\textbar}provát+on{\textbar} &
+\centering  {}-1 &
+ &
+\centering  {}-1 &
+ &
+\raggedleft\arraybslash  {}-2.7\\\hline
+\raggedleft  {\textbar}provát+ón{\textbar} &
+\centering  {}-1 &
+ &
+ &
+\centering  {}-1 &
+\raggedleft\arraybslash  {}-2.5\\\hline
+\end{supertabular}
+\end{center}
+\z
+
+There are two candidates that have a harmony score close to the winning candidate of (21), {\textbar}próvat+on{\textbar} and {\textbar}provát+ón{\textbar}. The latter candidate has the root allomorph that could result in the aspired shift\index{shift} of stress if the weights for {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} and {\textless}sheep{\textgreater} {\textbar}provát-{\textbar} are switched. However, this would lead to another winning candidate in the nominative form as well. There is no weighting\index{weighting} of the assumed constraints that both accounts for (20) and (21). If the lexical constraint\index{constraint!lexical} {\textless}sheep{\textgreater} {\textbar}provát-{\textbar} outweighs the constraint {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar}, then the root allomorph with final stress would win, something that under a faithful evaluation would result in the wrong surface structure with penultimate stress in the nominative case:
+
+\ea Re-weighting\index{weighting} the constraints
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{|m{1.3254598in}|m{0.8094598in}|m{0.8518598in}|m{0.8101598in}|m{0.48375985in}|}
+\hline
+ &
+\centering  1.5 &
+\centering  1.4 &
+\centering  1.1 &
+\\\hline
+ {\textless}sheep+Nom.Sg{\textgreater} &
+\centering  {\textless}sheep{\textgreater} {\textbar}provát-{\textbar} &
+\centering  {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} &
+\centering  {\textless}Nom.Sg{\textgreater} {\textbar}-o{\textbar} &
+\\\hline
+\raggedleft  {\textbar}provat+o{\textbar} &
+\centering  {}-1 &
+\centering  {}-1 &
+ &
+\raggedleft\arraybslash  {}-2.9\\\hline
+\raggedleft  {\textbar}próvat+o{\textbar} &
+\centering  {}-1 &
+ &
+ &
+\raggedleft\arraybslash  {}-1.5\\\hline
+\raggedleft  \ding{43} {\textbar}provát+o{\textbar} &
+ &
+\centering  {}-1 &
+ &
+\raggedleft\arraybslash  {}-1.4\\\hline
+\end{supertabular}
+\end{center}
+\z
+
+Note that we are still only talking about underlying representations here. There are two ways that could make an antepenultimately stressed representation win in the nominative case and a penultimately stressed representation in the genitive case. One is that unfaithful surface structures assign stress differently than underlyingly present. The other is adopting a stochastic evaluation of the constraint weights (similar to stochastic OT): the candidate with the finally stressed root {\textbar}provát+ón{\textbar} could still win in (21) in some cases if one assumes noise that is added to each evaluation. This slight change in the weighting\index{weighting} can result in the selection of a different candidate. The stochastic feature is adopted in the simulations described below, where different virtual learners are exposed to different stress patterns. The prediction is that the learners exposed to lexical stress\index{stress!lexical} on different positions within a word, but without stress shifts in the genitive case, will learn the pattern correctly, while learners exposed to a stress pattern with a shift\index{shift} in the genitive case will acquire the shift only partially.
+
+
+\section{
+Simulating the acquisition process}
+
+\subsection{
+Computational studies on the learnability\index{learnability} of stress patterns}
+
+
+There has been a considerable amount of research on the computational learnability\index{learnability} of stress. Most studies focused on the learning of the grammatical part (e.g. {Dresher}\index{Dresher}{ \& Kaye}\index{Kaye}{ 1990, Clark}\index{Clark}{ \& Roberts}\index{Roberts}{ 1993, Daelemans}\index{Daelemans}{ et al. 1994, Gupta}\index{Gupta}{ \& Touretzky}\index{Touretzky}{ 1994, Tesar}\index{Tesar}{ 1998, }Tesar \& Smolensky\index{Smolensky} 2000, Heinz\index{Heinz} 2006, 2009, Hayes\index{Hayes} \& Wilson\index{Wilson} 2008), especially on the acquisition of quantity-sensitive or -insensitive systems. More recently the problem of learning on how the respective underlying material could be acquired has been tackled (e.g. Tesar 2004, 2009, Alderete\index{Alderete} et al. 2005, Jarosz\index{Jarosz} 2006). Most of these approaches assume \textit{offline} or \textit{batch} learning, i.e. learning from the complete set of data presented to the learner at the same time. Since it is more likely that infants process input \textit{online}, with one data item at a time, we need an approach capable of that. Further, since we are dealing with a language here that has unpredictable, i.e. lexical stress\index{stress!lexical}, in combination with a phonological restriction, the focus here will be on the acquisition of underlying material in line with the acquisition of the grammatical regularities. For that, Apoussidou\index{Apoussidou}’s (2007) approach of learning underlying forms is adopted, which is capable of handling several levels of hidden structure.
+
+\subsection{
+Tackling the acquisition of hidden structures}
+
+
+As outlined, the stress pattern in Greek\index{Greek!Modern} is complex, but can be broken down into three basic patterns: 1) the phonological default and trisyllabic restriction assigning stress in the antepenultimate (if there is one); 2) lexical stress on different morphemes resulting in lexical stress on the antepenultimate, penultimate and ultimate syllable; 3) like 2), but additionally a stress shift\index{shift} in the genitive case. The patterns co-occur and it is likely that most speakers of Greek\index{Greek!Modern} use all three patterns, resulting in a hybrid stress system. To test the learnability\index{learnability} of the different stress patterns in Greek\index{Greek!Modern}, I set up different groups of virtual learners that are trained on the three basic stress patterns and on two hybrid patterns. Learners are considered as being successful if they render the pattern they have heard correct, i.e. if they reproduce the words they heard in the training phase as they heard them. In addition to that they will be tested on how well they generalize to words they have not heard. All learners are noisy Harmonic-Grammar learners (Boersma\index{Boersma} \& Pater\index{Pater} 2008) and have the same structural and faithfulness constraint\index{constraint!faithfulness}s. They differ in the lexical constraint\index{constraint!lexical}s depending on which words they are exposed to. The weighting\index{weighting} of these constraints comprises the lexicon. The structural constraint\index{constraint!structural}s are given a head start over the lexical and faithfulness constraints (cf. Jesney\index{Jesney} \& Tessier\index{Tessier} 2008), simulating the creation of lexical constraints and with them the faithfulness constraints that the learners should create themselves (in lack of a lexical and faithfulness constraint induction mechanism).
+
+
+\subsection{
+The training sets}
+
+
+I tested five different data sets listed in (23), meaning that different groups of virtual learners are trained on different stress patterns, all including forms in the nominative and genitive case with a ratio of 3:1 (i.e. for each occurrence of a genitive case form there are three occurrences of the corresponding nominative case form).
+
+\ea The training sets
+
+{
+No shift\index{shift}/default}
+
+{
+No shift\index{shift}/lexical}
+
+{
+Always shift\index{shift}}
+
+{
+Sometimes shift\index{shift}}
+
+{
+Some shift\index{shift}}
+\z
+
+The different training sets are idealized learning conditions; in real life, speakers of Greek\index{Greek!Modern} are exposed to different frequencies of all these patterns. The hybrid patterns of (iv.) and (v.) come closest to a real-life scenario; pattern (i.) is a test of the phonological default only, whereas pattern (ii.) comes close to the informal speech style without stress shift\index{shift}, and pattern (iii.) comes close to the formal speech style where stress always shifts.
+
+\subsubsection{
+\textit{No shift}\index{shift}\textit{ and a fixed position for stress}}
+
+The “no shift\index{shift}/default” training set in (i.) tests whether the virtual learners acquire the phonological default (stress on the antepenultimate syllable if there is one) and the trisyllabic window\index{trisyllabic window} restriction (stress not further to the left than the antepenultimate syllable).  It comprises four 2-5-syllable words that have stress on the penult (the 2-syllable words) or on the antepenult (all other words) in all cases, i.e. stress does not shift in the genitive case. The “no shift/default” set is given here:
+
+
+\ea The “no shift\index{shift}/default” training set\footnote{ ‘Nom.’ stands for nominative case; ‘Gen.’ for genitive; ‘Sg.’ for singular; ‘Pl.’ for plural; and ‘M’, ‘F’ and ‘N’ for masculine, feminine and neuter gender, respectively.}
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.68096in}|m{2.41706in}}
+ Nominative singular &
+ Genitive plural\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro]\ \ }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato]}
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo]}
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos] &
+{ {\textless}tree+Gen.Pl{\textgreater} [déndron]\ \ }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [próvaton]}
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amígdalon]}
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokéfalon]\\
+\end{supertabular}
+\end{center}
+\z
+
+The training items consist of the meaning and syntactic information with the phonetic form. Our virtual learners are fed rather these pairs of overt (phonetic) forms and their corresponding meaning than just the phonetic form to enable them to distinguish between lexically and phonologically assigned stress. The overt forms contain segmental information and stress (but no information on foot\index{foot} structure), and the meaning contains the lexical and syntactical information. This means in effect that the virtual learners already know that the words (in our case here) contain a morpheme boundary and also where that boundary is; two things that a learner under more natural conditions is not provided with. What the virtual learners had to come up with themselves were the surface structures (generated by the grammar of the learners; here: feet and stresses) and the underlying representations (generated by the lexicon of the learners; here: underlying stress vs. no underlying stress).
+
+\subsubsection{ \textit{No shift}\index{shift}\textit{ and stress on different positions in different words}}
+
+The “no shift\index{shift}/lexical” training set (ii.) tests whether virtual learners acquire the trisyllabic restriction and lexical stress\index{stress!lexical} on different positions within a word. It comprises six 2-5-syllable words that have stress on either the antepenult, the penult, or ultimate syllable. Stress\index{Stress} does not shift to another syllable in the genitive case.
+
+
+\ea The “no shift\index{shift}/lexical” set
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.68096in}|m{2.41706in}}
+ Nominative singular &
+ Genitive plural\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] \ \ }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] }
+
+{ {\textless}hope+Nom.Sg.F{\textgreater} [elpída] }
+
+{ {\textless}brother+Nom.Sg.M{\textgreater} [adelfós] }
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] }
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos]  &
+{ {\textless}tree+Gen.Pl{\textgreater} [déndron] \ \ }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [próvaton] }
+
+{ {\textless}hope+Gen.Pl{\textgreater} [elpídon] }
+
+{ {\textless}brother+Gen.Pl{\textgreater} [adelfón] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amígdalon] }
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokéfalon] \\
+\end{supertabular}
+\end{center}
+\z
+
+\subsubsection{\textit{Stress}\index{Stress}\textit{ on different positions in different words and shift}\index{shift}\textit{ to the right}}
+
+The “always shift\index{shift}” set in (iii.) comprises six 2-5-syllable words that do not only differ in stress placement, but that furthermore always shift stress in the genitive, either from the antepenult to the penult, from the antepenult to the ultimate or from the penult to the ultimate. This set tests the trisyllabic restriction and lexical stress\index{stress!lexical} on different syllables, as does the “no shift/lexical” set, but in addition, stress shifts to the right. The stress shift is not predictable: sometimes it shifts only one syllable to the right (e.g. in the case of \textit{próvato} \~{} \textit{prováton}), and sometimes it shifts two syllables (e.g. \textit{thálasa} \~{} \textit{thalasón}).
+
+\ea The “always shift\index{shift}” set
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.68096in}|m{2.41706in}}
+ Nominative singular &
+ Genitive plural\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] \ \ }
+
+{ {\textless}tomato+Nom.Sg.F{\textgreater} [domáta] }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] }
+
+{ {\textless}sea+Nom.Sg.F{\textgreater} [thálasa] }
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] }
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos]  &
+{ {\textless}tree+Gen.Pl{\textgreater} [dendrón] \ \ }
+
+{ {\textless}tomato+Gen.Pl{\textgreater} [domatón] }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [prováton] }
+
+{ {\textless}sea+Gen.Pl{\textgreater} [thalasón] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amigdálon] }
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokefálon] \\
+\end{supertabular}
+\end{center}
+\z
+
+The data only contain unstressed nominative suffixes. The genitive plural suffix, which is the same across the genders, appears as stressed in some words and as unstressed in others, depending on the location of the stress in the nominative case and the extent of the stress shift\index{shift}.
+
+\subsubsection{{\itshape
+Shift of stress only sometimes}}
+
+
+The “sometimes shift\index{shift}” set in (iv.) consists of six words (two disyllabic ones, two trisyllabic ones, one quadrisyllabic and one pentasyllabic word), of which two show variation in the genitive plural (\textit{próvato} and \textit{amígdalo}, respectively). It tests whether the virtual learners are able to acquire a pattern where certain words sometimes shift stress in the genitive case and sometimes do not. As before, the trisyllabic restriction still holds:
+
+
+\ea The “sometimes shift\index{shift}” set
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.68096in}|m{2.41706in}}
+ Nominative singular &
+ Genitive plural\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] \ \ }
+
+{ {\textless}mountain+Nom.Sg.N{\textgreater} [vunó] }
+
+{ {\textless}tomato+Nom.Sg.F{\textgreater} [domáta] }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] }
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] }
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos]  &
+{ {\textless}tree+Gen.Pl{\textgreater} [déndron] \ \ }
+
+{ {\textless}mountain+Gen.Pl{\textgreater} [vunón] }
+
+{ {\textless}tomato+Gen.Pl{\textgreater} [domatón] }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [próvaton] }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [prováton] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amigdálon] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amígdalon] }
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokefálon] \\
+\end{supertabular}
+\end{center}
+\z
+
+Again, depending on the extent of the stress shift\index{shift}, the genitive plural suffix appears stressed in some words while it appears as unstressed in others. This set furthermore contains a word with final stress in the nominative case, \textit{vunó}. This means in effect, that there is also variation for the nominative neuter suffix –o, which here appears as stressed in some words (well, one word), but not in others.
+
+\subsubsection{{\itshape
+Shift of stress only in some words, not in others}}
+
+The “some shift\index{shift}” set in (v.) consists of eight words of which five words shift stress and three do not. It tests whether the virtual learners are able to acquire a pattern where some words shift stress in the genitive case and some do not. The difference to the set in (iv.) is that there is no variation in the sense that a certain word sometimes shifts the stress in the genitive case, but rather it either always shifts the stress or it never shifts it.
+
+
+\ea The “some shift\index{shift}” set
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.68096in}|m{2.41706in}}
+ Nominative singular &
+ Genitive plural\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] \ \ }
+
+{ {\textless}mountain+Nom.Sg.N{\textgreater} [vunó] }
+
+{ {\textless}tomato+Nom.Sg.F{\textgreater} [domáta] }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] }
+
+{ {\textless}butter+Nom.Sg.N{\textgreater} [vútiro] }
+
+{ {\textless}brother+Nom.Sg.M{\textgreater} [adelfós] }
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] }
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos]  &
+{ {\textless}tree+Gen.Pl{\textgreater} [déndron] \ \ }
+
+{ {\textless}mountain+Gen.Pl{\textgreater} [vunón] }
+
+{ {\textless}tomato+Gen.Pl{\textgreater} [domatón] }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [próvaton] }
+
+{ {\textless}butter+Gen.Pl{\textgreater} [vutíron] }
+
+{ {\textless}brother+Gen.Pl{\textgreater} [adelfón] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amigdálon] }
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokefálon] \\
+\end{supertabular}
+\end{center}
+\z
+
+This set contains two words that are finally stressed even in the nominative case: \textit{vunó }and \textit{adelfós}. They do not shift\index{shift} stress in the genitive case, i.e. the root remains unstressed in the genitive. As a consequence, the neuter suffix –o and the masculine suffix –os appear as stressed in some words and as unstressed in others. As before, the genitive plural suffix appears as stressed in some words and as unstressed in others.
+
+
+\subsection{
+The constraint\index{constraint}s }
+
+
+Three types of constraints are implemented in the learners: structural constraints evaluating the surface structures and overt forms, faithfulness constraints connecting the phonological surface structures to the underlying representations, and lexical constraints evaluating the underlying representations, comprising the phonological part of the lexicon. The structural and faithfulness constraints shared by all learners are given in (29) (constraints are defined as in Tesar\index{Tesar} \& Smolensky\index{Smolensky} 2000):
+
+
+\ea Structural constraint\index{constraint!structural}s:\ \ \ \ \ \ Faithfulness constraint\index{constraint!faithfulness}s:
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{2.6712599in}m{2.26296in}}
+{\scshape All-Feet-Left/Right (AFL/AFR)}
+
+{\scshape FootBinarity (FtBin)}
+
+{\scshape Iamb}
+
+{\scshape Nonfinality (NonFin)}
+
+{\scshape Parse}
+
+\scshape Trochee &
+{\scshape MaxRoot, MaxAffix}
+
+\\
+\end{supertabular}
+\end{flushleft}
+\z
+
+The number of lexical constraint\index{constraint!lexical}s is not the same for all learners and depend on which forms they are trained on in the learning phase. The lexical constraints take the form of ‘connect meaning and syntactic information to a certain phonological underlying representation’, e.g. {\textless}Nom.Sg.F{\textgreater} {\textbar}-a{\textbar}, where ‘{\textless}Nom.Sg.F{\textgreater}’ stands for the nominative case singular feminine, and ‘{\textbar}-a{\textbar}’ stands for the underlying phonological representation of the suffix.
+
+
+\subsection{
+Predictions}
+
+Several predictions as to how the learners of the different sets are going to perform:
+
+\begin{itemize}
+\item
+{
+The “no shift\index{shift}/default” learners should be able to acquire the trisyllabic window\index{trisyllabic window} and assign stress mainly by the grammar, i.e. the structural constraints. However, an interpretation of the forms as sometimes being lexically stressed underlyingly cannot be excluded.}
+\item
+{
+The “no shift\index{shift}/lexical” learners should acquire the trisyllabic restriction and lexical stress\index{stress!lexical} on the final three syllables within, depending on the word.}
+\item
+{
+The “always shift\index{shift}” learners are expected to acquire stress on the final three syllables depending on the word, and to perform the shift in the genitive case sometimes, but most of the times should display the same stress pattern in the genitive case as in the nominative case.}
+\item
+{
+The “sometimes shift\index{shift}” and the “some shift” learners are expected to learn lexical stress\index{stress!lexical} as well as the shift, but to a lesser extent than the “always shift” learners, due to a less frequent occurrence of the shift.}
+\end{itemize}
+
+\subsection{
+Computer settings}
+
+All training sets have words of a length\index{length} of two to five syllables in common, as well as the trisyllabic restriction (i.e. that stress never occurs to the left of the antepenultimate syllable).
+
+Depending on the training set the virtual learners were supplied with different sets of lexical constraint\index{constraint!lexical}s. Only lexical constraints concerning forms that were actually observed in the training sets were implemented in the virtual learners (for instance, learners of the “no shift\index{shift}/lexical” set did not have a lexical constraint for the word ‘mountain’, {\textless}mountain{\textgreater} {\textbar}vun-{\textbar}, that the learners of the “sometimes” and “some shift” set had).
+
+In both virtual comprehension and production, the learners could choose from a list of candidate quadruplets consisting of meaning, underlying representation, surface structure and overt forms. The candidates within one tableau differed with respect to the underlying stress specification (stressed/unstressed), the foot\index{foot} and stress structures on the surface level (iambs\index{iambs} vs. trochees\index{trochees}, monosyllabic vs. disyllabic feet, final syllable extrametricality\index{extrametricality}, and direction of parsing) and different stress positions on the overt level.
+
+The virtual learners were all stochastic Harmonic Grammar\index{Harmonic Grammar} learners (Boersma\index{Boersma} \& Pater\index{Pater} 2008) raised in the Praat programme (Boersma \& Weenink\index{Weenink} 2008). For each training set, ten virtual learners were conceived. They all heard 200 000 items in their training phase, in a randomized order and with slightly different frequencies (because the forms were drawn randomly from the different sets and the total number of forms of each set are not always dividers of 200 000), but a rough ratio of 3:1 nominative vs. genitive case forms. Plasticity, i.e. the amount that constraints were shifted in case of an error, was set to 1 and did not change in the course of learning. Noise was set to 2 (enabling constraints to switch for each new evaluation of a form). The structural constraint\index{constraint!structural}s were ranked at a 100 initially, while the faithfulness and lexical constraint\index{constraint!lexical}s were ranked at 0. This was to prevent an initial influence of the lexical constraints over the structural constraints, to simulate the creation of the lexical constraints (that were implemented but should in principle be created by the learners themselves).
+
+
+\subsection{
+Results}
+
+ In all conditions, variation occurred within all learners, not across learners.
+
+\subsubsection{
+\textit{The “no shift}\index{shift}\textit{/default” virtual learners}}
+
+As mentioned above, the “no shift\index{shift}/default” learners were trained on four different words (one disyllabic, one trisyllabic, one quadrisyllabic and one five-syllable word) in the nominative and the genitive case (eight words in total repeated about 25 000 times each). The virtual learners were supplied with the structural and faithfulness constraint\index{constraint!faithfulness}s discussed in section (7.2). Since the stress did not shift in the genitive case, seven lexical constraints were implemented: one for each root (in this case underlyingly stressed {\textless}tree{\textgreater} {\textbar}déndr-{\textbar}, {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar}, {\textless}almond{\textgreater} {\textbar}amígdal-{\textbar} and {\textless}headache{\textgreater} {\textbar}ponokéfal-{\textbar}) and one for each encountered suffix (underlyingly unstressed {\textless}Nom.Sg.N{\textgreater} {\textbar}-o{\textbar}, {\textless}Nom.Sg.M.{\textgreater} {\textbar}-os{\textbar} and {\textless}Gen.Pl{\textgreater} {\textbar}-on{\textbar}). Table (30) shows the results for the training data (pairs of meaning and phonetic form). Learning can be called successful, since all virtual learners reproduce the data they heard to a hundred percent correct:
+
+\ea Results of the “no shift\index{shift}/default” condition:
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.4636598in}|m{0.30045986in}|m{2.2212598in}|m{0.30045986in}}
+ Nominative singular &
+\raggedleft  \% &
+ Genitive plural &
+\raggedleft\arraybslash  \%\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro]}
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato]}
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo]}
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos] &
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft  100 &
+{ {\textless}tree+Gen.Pl{\textgreater} [déndron]\ \ }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [próvaton]}
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amígdalon]}
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokéfalon] &
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft\arraybslash  100\\
+\end{supertabular}
+\end{center}
+\z
+
+Variation occurred on the hidden levels that the virtual learners had to come up with themselves: the underlying representations and surface structures, respectively. The candidates that the virtual learners could choose from were quadruplets of meaning, underlying representation, surface structure with feet, and the overt forms. These quadruplets differed in whether the underlying morphemes were stressed or not, and in foot\index{foot} structures on the surface level. For instance, for the meaning {\textless}tree{\textgreater}, two possible underlying representations were included, {\textbar}dendr-{\textbar} and {\textbar}déndr-{\textbar}.\footnote{ Although not observed in this training set, unstressed underlying forms were always included as possible candidate parts as the most unmarked representations.} In addition, all possible underlying representations were combined with surface structures with different foot structures and hence different positions of stress. The combined overt forms only carried the stress of the respective surface structure, i.e. there is never a mismatch between the stress of a surface structure and its accompanying overt form. Table 1. (see appendix) shows a sample of the candidate lists for each word, namely the variation in the winning candidate quadruplets that only differ in the underlying forms (both forms are deemed equally correct because they would sound the same on the phonetic level).\footnote{ The complete list of all assumed candidates are omitted for reasons of space.} We can see that the virtual learners slightly prefer the candidates with underlyingly stressed root morphemes to the underlyingly unmarked ones. The surface structures (represented in slashes ‘/ /’) did not vary: the grammars of the virtual learners assign binary feet, even to the cost of violating final syllable extrametricality\index{extrametricality} in the disyllabic words.
+
+{\centering
+Insert Table 1. here
+\par}
+
+In short, the virtual learners were able to acquire the stress pattern and assigned stress always on the antepenultimate syllable (except for the disyllabic forms). However, they had a slight preference to assume underlyingly stressed root morphemes. At this point the question arises whether the virtual learners truly acquired the trisyllabic restriction as a phonological rule, or whether they simply assign lexical stress\index{stress!lexical} to every word. In anticipation of this question, the virtual learners were implemented before learning with words that matched the training forms in number of syllables, but that the virtual learners did not get to hear during the training phase. In the test phase, when prompted to produce these unheard words, it appeared that even these generalizations were correct: all unheard words were accordingly stressed, even though no lexical constraint\index{constraint!lexical}s for these words existed. They were stressed only by the weighting\index{weighting} of the structural constraint\index{constraint!structural}s, as can be seen in Table 2. (see appendix).
+
+{\centering
+Insert Table 2. here
+\par}
+
+
+In these cases, the virtual learners assigned about chance probability of underlyingly stressed and unstressed representations.
+
+The next section shows the outcome of the “no shift\index{shift}/lexical” set, where the virtual learners do not only have to learn the trisyllabic restriction, but also that stress can occur on any of the last three syllables.
+
+\subsubsection{
+\textit{No shift}\index{shift}\textit{/lexical}}
+
+In addition to the four words of the “no shift\index{shift}/default” set, the “no shift/lexical” set includes two more words: a trisyllabic word with penultimate stress and a trisyllabic word with ultimate stress. Again, stress does not shift to another syllable in the genitive form. The virtual learners of this set are supplied with 16 lexical constraints (in addition to the structural and faithfulness constraints): eight for the roots, and eight for the suffixes. The excess lexical constraints are due to the fact that the two suffixes –os and \nobreakdash-on appear as stressed in the ultimately stressed word for “brother”, while they appear as unstressed in the other words. In addition, a feminine suffix –a occurs.
+
+It can be said that the “no shift\index{shift}/lexical” virtual learners were also successful in acquiring the correct stress pattern, as can be seen from the table in (31).
+
+\ea Results of the “no shift\index{shift}/lexical” condition
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{2.47816in}|m{0.31505984in}|m{2.2365599in}|m{0.35315984in}}
+ Nominative singular &
+\raggedleft  \% &
+ Genitive plural &
+\raggedleft\arraybslash  \%\\\hline
+ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] &
+\raggedleft  100 &
+ {\textless}tree+Gen.Pl{\textgreater} [déndron] &
+\raggedleft\arraybslash  100\\
+ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] &
+\raggedleft  100 &
+ {\textless}sheep+Gen.Pl{\textgreater} [próvaton] &
+\raggedleft\arraybslash  100\\
+ {\textless}hope+Nom.Sg.F{\textgreater} [elpída] &
+\raggedleft  100 &
+ {\textless}hope+Gen.Pl{\textgreater} [elpídon] &
+\raggedleft\arraybslash  100\\
+ {\textless}brother+Nom.Sg.M{\textgreater} [adelfós] &
+\raggedleft  100 &
+ {\textless}brother+Gen.Pl{\textgreater} [adelfón] &
+\raggedleft\arraybslash  99.9\\
+ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] &
+\raggedleft  100 &
+ {\textless}almond+Gen.Pl{\textgreater} [amígdalon] &
+\raggedleft\arraybslash  100\\
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos] &
+\raggedleft  100 &
+ {\textless}headache+Gen.Pl{\textgreater} [ponokéfalon] &
+\raggedleft\arraybslash  100\\
+\end{supertabular}
+\end{flushleft}
+\z
+
+However, in the hidden structures more variation occurs; this time both on the surface level and the underlying level (Table 3.). All virtual learners chose the according underlying specification (stressed/unstressed) in the roots, as observed in the data, but alternated with respect to the specification of the genitive plural suffix, as can be expected from the training data. On the surface, feet were still invariably binary, but ranged from trochees\index{trochees} to iambs\index{iambs}. Extrametricality became rather unimportant with the inclusion of finally stressed words.
+
+{\centering
+Insert Table 3. here
+\par}
+
+{As can be seen from the generated unheard forms below, the trisyllabic restriction was acquired as well. However, due to the fact that lexical stress}\index{stress!lexical}{ appeared on different positions, variation occurred as to where stress could fall in these words (Table 4.).}
+
+{\centering
+Insert Table 4. here
+\par}
+
+In sum it can be said that the lexical specifications of this training condition are learned: the roots are underlyingly stressed on their respective syllable. The trisyllabic restriction is acquired in the sense that stress is never assigned pre-antepenultimately, even in untrained words. However, the antepenultimate syllable is not the default position in untrained words. Even though variation occurs even on the phonetic level, a preference for underlyingly unstressed, overtly finally stressed forms (e.g. {\textbar}stafid+a{\textbar} /sta.(fi.dá)/ [stafidá]) can be observed. This is surprising, because the genitive case suffix occurred as stressed in only one form, \textit{adelfón}.
+
+Structurally speaking, binary feet are preferred over extrametricality\index{extrametricality} and uniformity of foot\index{foot} type (i.e. both iambs\index{iambs} and trochees\index{trochees} are generated).
+
+\subsubsection{\itshape
+Shifting always}
+
+The “always shift\index{shift}” set tests the trisyllabic restriction and lexical stress on different syllables. The set comprises six 2-5-syllable words that do not only differ in stress placement, but that also shift stress in the genitive, either from the antepenult to the penult, from the antepenult to the ultima or from the penult to the ultima.
+
+The virtual learners of this condition struggled to acquire the pattern, and had a considerably high error quota.\footnote{ It is possible that with even more training, the learners would become a little bit better, but considering the amount of training data and the rather big learning steps, this seems not likely.} Not only do the learners have problems with learning the lexical stress\index{stress!lexical} of the nominative case (something the learners in the second condition had no problems with), but also some shifts in the genitive seem to be harder to acquire than others. Shifts from the penult to the ultima are acquired comparatively well, while shifts from the antepenult to the ultima or the penult are poorly acquired:
+
+\ea Results of the “always shift\index{shift}” condition:
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.4775598in}|m{0.34415984in}|m{2.23236in}|m{0.35385984in}}
+ Nominative singular &
+\raggedleft  \% &
+ Genitive plural &
+\raggedleft\arraybslash  \%\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] }
+
+{ {\textless}tomato+Nom.Sg.F{\textgreater} [domáta] }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] }
+
+{ {\textless}sea+Nom.Sg.F{\textgreater} [thálasa] }
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] }
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos]  &
+\raggedleft { 89.0}\par
+
+\raggedleft { 82.2}\par
+
+\raggedleft { 72.5}\par
+
+\raggedleft { 68.4}\par
+
+\raggedleft { 80.0}\par
+
+\raggedleft  68.5 &
+{ {\textless}tree+Gen.Pl{\textgreater} [dendrón] }
+
+{ {\textless}tomato+Gen.Pl{\textgreater} [domatón] }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [prováton] }
+
+{ {\textless}sea+Gen.Pl{\textgreater} [thalasón] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amigdálon] }
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokefálon]  &
+\raggedleft { 93.6}\par
+
+\raggedleft { 45.0}\par
+
+\raggedleft { 12.8}\par
+
+\raggedleft { 2.6}\par
+
+\raggedleft { 16.1}\par
+
+\raggedleft\arraybslash  28.8\\
+\end{supertabular}
+\end{center}
+\z
+
+Even in this case though the trisyllabic restriction is acquired; there is no preference for a clear stress pattern in unheard words, but neither the erroneously stressed words of the trained condition nor the unheard forms are stressed further to the left than the antepenult. These learners therefore acquire the trisyllabic restriction as well.
+
+The virtual learners hence have more difficulty in acquiring the “always shifting” pattern. This connects to what can be observed for real speakers of Greek\index{Greek!Modern}, which display variation and even insecurities about the stress placement especially in the genitive case.
+
+\subsubsection{\itshape
+Shifting sometimes}
+
+The “sometimes shift\index{shift}” set tests whether the virtual learners are able to acquire a pattern where certain words sometimes shift stress in the genitive case and sometimes not. The set consists of six words, of which two show variation in the genitive plural. This pattern is acquired better than the “always shifting” condition, but compared to the nominative case, the genitive case is considerably badly acquired.
+
+\ea Results of the “sometimes shift\index{shift}” condition:
+
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.4684598in}|m{0.35315984in}|m{2.31706in}|m{0.34555984in}}
+ Nominative singular &
+\raggedleft  \% &
+ Genitive plural &
+\raggedleft\arraybslash  \%\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] \ \ }
+
+{ {\textless}mountain+Nom.Sg.N{\textgreater} [vunó] }
+
+{ {\textless}tomato+Nom.Sg.F{\textgreater} [domáta] }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] }
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] }
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos]  &
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft { 93.5}\par
+
+\raggedleft { 85}\par
+
+\raggedleft { 80.8}\par
+
+\raggedleft  76.2 &
+{ {\textless}tree+Gen.Pl{\textgreater} [déndron] \ \ }
+
+{ {\textless}mountain+Gen.Pl{\textgreater} [vunón] }
+
+{ {\textless}tomato+Gen.Pl{\textgreater} [domatón] }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [próvaton] }
+
+{ \ \ \ \   [prováton] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amígdalon] }
+
+{ \ \ \ \   [amigdálon] }
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokefálon]  &
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft { 50.9}\par
+
+\raggedleft { 71.2}\par
+
+\raggedleft { 6.7}\par
+
+\raggedleft { 64.1}\par
+
+\raggedleft { 12}\par
+
+\raggedleft\arraybslash  23.9\\
+\end{supertabular}
+\end{center}
+\z
+
+In the ‘sometimes shift\index{shift}’-condition, the non-shifting forms were better acquired than the shifting forms. This looks like it could not be a frequency effect since both genitive variants were presented equally often; however, considering the nominative forms, the non-shifting stress genitive cases add up to the ones in the nominative case. This result is in contrast to the small sample count of the HNC, where shifting genitive forms outnumbered the non-shifting genitive forms. Even in the untrained forms though, the trisyllabic restriction is obeyed.
+
+\subsubsection{
+\textit{Some shift}\index{shift}\textit{, some don’t}}
+
+The learners of the “some shift\index{shift}” set behave similar to the “sometimes shift” learners, in that they acquire the nominative case forms better than the genitive case forms. Words that shift their stress in the genitive case are furthermore produced less often correct than the nominative forms of not-shifting genitive forms.
+
+\ea Results of the “some shift\index{shift}” condition:
+\begin{center}
+\tablehead{}
+\begin{supertabular}{m{2.50046in}|m{0.34485984in}|m{2.25456in}|m{0.34485984in}}
+ Nominative singular &
+\raggedleft  \% &
+ Genitive plural &
+\raggedleft\arraybslash  \%\\\hline
+{ {\textless}tree+Nom.Sg.N{\textgreater} [déndro] \ \ }
+
+{ {\textless}mountain+Nom.Sg.N{\textgreater} [vunó] }
+
+{ {\textless}tomato+Nom.Sg.F{\textgreater} [domáta] }
+
+{ {\textless}sheep+Nom.Sg.N{\textgreater} [próvato] }
+
+{ {\textless}butter+Nom.Sg.N{\textgreater} [vútiro] }
+
+{ {\textless}brother+Nom.Sg.M{\textgreater} [adelfós] }
+
+{ {\textless}almond+Nom.Sg.N{\textgreater} [amígdalo] }
+
+ {\textless}headache+Nom.Sg.M{\textgreater} [ponokéfalos]  &
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft { 99.9}\par
+
+\raggedleft { 100}\par
+
+\raggedleft { 66.1}\par
+
+\raggedleft { 99.3}\par
+
+\raggedleft { 80.2}\par
+
+\raggedleft  72.4 &
+{ {\textless}tree+Gen.Pl{\textgreater} [déndron] \ \ }
+
+{ {\textless}mountain+Gen.Pl{\textgreater} [vunón] }
+
+{ {\textless}tomato+Gen.Pl{\textgreater} [domatón] }
+
+{ {\textless}sheep+Gen.Pl{\textgreater} [próvaton] }
+
+{ {\textless}butter+Gen.Pl{\textgreater} [vutíron] }
+
+{ {\textless}brother+Gen.Pl{\textgreater} [adelfón] }
+
+{ {\textless}almond+Gen.Pl{\textgreater} [amigdálon] }
+
+ {\textless}headache+Gen.Pl{\textgreater} [ponokefálon]  &
+\raggedleft { 100}\par
+
+\raggedleft { 100}\par
+
+\raggedleft { 80.3}\par
+
+\raggedleft { 99.9}\par
+
+\raggedleft { 32.6}\par
+
+\raggedleft { 80.4}\par
+
+\raggedleft { 16.8}\par
+
+\raggedleft\arraybslash  27.8\\
+\end{supertabular}
+\end{center}
+\z
+
+The unheard words were produced with mainly stress on the penult in the nominative case and on the ultima in the genitive case, with the exception of words ending in –o and –os: since they occurred as stressed in some nominative case forms, they tilted the results to final stress in the nominative case in words with these suffixes. These learners as well acquired the trisyllabic restriction.
+
+\subsection{
+Resulting weights}
+
+In all conditions, AFR ended up with the highest weight\index{weight} (way above AFL), and the genitive plural unstressed allomorph {\textbar}-on{\textbar} with one of the lowest. \textsc{FtBin} and \textsc{Parse} never moved, indicating that they were never violated by a winning candidate (hence no error detection that could have elicited a re-weighting\index{weighting}). This could have been due to the fact that they started out with higher initial ranking than the faithfulness and lexical constraints. \textsc{Trochee} always ended up higher than \textsc{Nonfinal }and\textsc{ Iamb}, and \textsc{Max}(R) always ended up higher than \textsc{Max}(A). The weights of the structural constraint\index{constraint!structural}s caused binary feet in all surface forms across learners and conditions, to the cost of syllable extrametricality\index{extrametricality} and uniformity of rhythm (the learners both exhibited trochees\index{trochees} and iambs\index{iambs} in their surface forms). Together, the weights of the structural constraints ensured the preservation of the trisyllabic window\index{trisyllabic window} across all conditions.
+
+In the ‘no-shift\index{shift}/default’-condition, the lexical constraint\index{constraint!lexical}s hardly moved, as can be expected, since in this condition, stress was supposed to be assigned phonologically and not lexically.
+
+{\centering
+Insert Table 5 here
+\par}
+
+In the ‘no-shift\index{shift}/lexical’-condition, the lexical constraints pertaining to stressed allomorphs were weighted higher than most of the lexical constraints pertaining to unstressed allomorphs, reflecting the fact that in this condition, stress should have been underlyingly marked.
+
+{\centering
+Insert Table 6 here
+\par}
+
+In the ‘always shift\index{shift}’-condition, the lexical constraints ended up with weights still close to 0, their starting point. This is due to the fact that the training data contained conflicting items, and therefore led to the nominative case being less well acquired than in the ‘no shift/lexical’-condition (which differed only in the genitive case from the ‘always shift’-condition). The genitive case shift was even more poorly acquired probably because of its lesser frequency in the training data. The shift across two syllables in \textit{thálasa} \~{} \textit{thalasón} is especially poorly acquired; this could also be a frequency effect.
+
+{\centering
+Insert Table 7 here
+\par}
+
+In the ‘sometimes shift\index{shift}’-condition, the main difference to the ‘always shift’-condition is that the lexical constraint\index{constraint!lexical}s for the nominative suffixes have moved, resulting in an even worse acquisition of the shift.
+
+{\centering
+Insert Table 8 here
+\par}
+
+In the ‘some shift\index{shift}’-condition, the weight\index{weight} of \textsc{Max}(A) is much lower than in the other conditions, in relation to the other contraints. This is connected to the lexical constraints for the unstressed affix-allomorphs, which end up ranked, in opposition to the other conditions, where these lexical constraints often remained unranked.
+
+{\centering
+Insert Table 9 here
+\par}
+
+In general, lexical constraints pertaining to unstressed allomorphs often did not move in the course of learning.
+
+
+\section{
+Discussion and Conclusion}
+
+All virtual learners were able to acquire the trisyllabic restriction even for words that they had not been trained on. However, neither stress on the antepenultimate (as proposed by e.g. Philippaki-Warburton\index{Philippaki-Warburton} 1970) nor the penultimate syllable (as proposed by Protopapas\index{Protopapas} et al. 2006) were the default pattern for untrained forms; rather, the final syllable was a preferred position. Apart from that, the stress patterns were acquired with different degrees of success. The no shift\index{shift}/default and the no shift/lexical pattern were acquired correctly; the child generations did not differ in their overt forms from the parent generations. In the former pattern, the structural constraint\index{constraint!structural}s are responsible for stress assignment, in the latter, mainly the lexicon. The patterns including a shift in the genitive case were less successfully acquired. While stress on different positions within words was acquired less well than in the no shift conditions, it was better acquired than the shifts. Among the shifts, the ones from the penult to the ultima were acquired better than shifts from the antepenult to the ultima or the penult. Moreover, the nominative case forms were more poorly acquired in the always-shift condition than in the two hybrid patterns, where the nominative case forms were almost always produced correctly. While an in-depth analysis of the learning paths could shed some light on this issue, it is unlikely that frequency was the cause for this effect. The virtual learners were exposed to nominative vs. genitive forms in a 3:1 ratio, however, the genitive plural suffix occurred much more often than any of the roots or other suffixes simply because it was the only one for the genitive case, while for the nominative case different suffixes occurred depending on the gender of the form. Raising the occurrence of the genitive case (let’s say, to a 1:1 ratio) would therefore probably not improve the learnability\index{learnability} of the shift, and would only worsen the learnability of the nominative case. One could think of ways to improve the learnability results, by e.g. using a different framework, or by including different representations in the lexicon, or by using a different learning device, or all of them together. For instance, whole-word parses where incoming words are not broken up into morphemes but are parsed as a whole were not included in the candidate set. Neither were pre-stressing representations of suffixes included that could yield different results.\footnote{ I thank Joe Pater\index{Pater} for suggesting this idea to me.} However, the aim was to model the existing variation in contemporary Modern Greek, and not the perfect acquisition of the possible patterns. This aim has been achieved. I therefore would like to suggest that the poor learnability of the stress shift in the genitive case of the virtual learners stands for the difficulties and variation that real speakers of Greek\index{Greek!Modern} display. Transferring the results of the computational simulations to spoken Greek\index{Greek!Modern}, this would mean that the variation in the spoken language is due to an irreconcilability of grammatical and lexical demands of the different patterns, resulting from the Ancient variant. An empirical study of the variation in real Modern Greek\index{Greek!Modern} (i.e. whether speakers have problems in producing the genitive shift in general, or whether they only have problems with some shifts) could shed more light on how far the proposed model is correct.
+
+\section{\bfseries
+References}
+
+Alderete, J. (1999). Morphologically governed accent in Optimality Theory. Doctoral dissertation, University of Massachusetts Amherst. [New York: Routledge, 2001].\\\noindent
+Alderete, J., A. Brasoveanu, N. Merchant, A. Prince, \& B. Tesar (2005). Contrast analysis aids in the learning of phonological underlying forms. In \textit{The Proceedings of WCCFL 24}, pp. 34-42.\\\noindent
+Allen, W. S. (1968[1999]). {\textit{Vox Graeca}}. Cambridge University Press.\\\noindent
+Apoussidou (2007). \textit{The learnability of metrical phonology}. Doctoral dissertation, LOT Dissertation Series No. 148.\\\noindent
+Apoussidou, D. \& S. Nordhoff (submitted to \textit{Phonology}). Feet in Sri Lankan Malay: No stress, please! Ms.\\\noindent
+Bickmore, L. (1989). Kinyambo prosody. Doctoral dissertation, University of California, Los Angeles.\\\noindent
+Bickmore, L. (1992). Multiple phonemic stress levels in Kinyambo. \textit{Phonology} 9:155-198.\\\noindent
+Boersma, P. \& J. Pater (2008).{Convergence properties of a gradual learning algorithm for Harmonic Grammar. Ms, University of Amsterdam and UMass Amherst. Available at http://roa.rutgers.edu/.}\\\noindent
+Boersma, P. \& D. Weenink (2008). {\textit{Praat: doing phonetics by computer}}. [Computer program]. Retrieved from \href{http://www.praat.org/}{\textstyleInternetlink{www.praat.org}}.\\\noindent
+Bolton, T. L. (1894). Rhythm. \textit{American Journal of Psychology} 6:145-238.\\\noindent
+Chafe, W. L. (1977). Accent and related phenomena in the Five Nations Iroquois Languages. In L. Hyman, \textit{Studies in stress and accent}. Southern California Occasional Papers in Linguistics 4. University of Southerns California: Los Angeles.\\\noindent
+Chambers, J.K. (1978). Dakota accent. In E. Cook \& J. Kaye (eds), \textit{Linguistic Studies of Native Canada}. University of British Columbia Press: Vancouver, pp 3-18.\\\noindent
+Clark, R. \& I. Roberts (1993). A computational model of language learnability and language change.\textit{Linguistic Inquiry}24: 299-345.\\\noindent
+Comrie, B. (1976). Irregular stress in Polish and Macedonian. \textit{International Review of Slavic Linguistics}1:227-240.\\\noindent
+Daelemans,  W., S. Gillis \& G. Durieux (1994). The acquisition of stress: a data-oriented approach.\textit{Computational Linguistics} 20: 421-451.\\\noindent
+Dell, F. (1984). L’accentuation des phrases en francais. In \textit{Forme sonore du langage}, eds. F. Dell, D. Hirst, and J.-R. Vergnaud. Hermann, Paris, pp. 65-122.\\\noindent
+Devine, A. M. \& Laurence D. Stephens (1994). \textit{The prosody of Greek speech}. New York, Oxford: Oxford University Press.\\\noindent
+Dogil, G. \& B. Williams (1999). The phonetic manifestation of word stress. In \textit{Word prosodic systems in the languages of Europe}, ed. by Harry van der Hulst. Mouton de Gruyter: Berlin, New York.\\\noindent
+Dogil, G., J. Gvozdanović \& S. Kodzasov (1999). Slavic languages. In \textit{Word prosodic systems in the languages of Europe}, ed. by Harry van der Hulst. Mouton de Gruyter: Berlin, New York.
+Drachman, G., R. Kager and A. Malikouti-Drachman (1995). Greek allomorphy: an Optimality account. In M. Dimitrova-Vulchanova \& L. Hellan (eds.), \textit{Papers from the First Conference on Formal Approaches to South Slavic Languages}, Plovdiv, 345-361. [University of Trondheim Working Papers in Linguistics 28.]\\\noindent
+Dresher, E.  B. \& J. Kaye (1990). A computational learning model for metrical phonology. \textit{Cognition} 34:137-195.\\\noindent
+Freeland, L. S. (1951). Language of the Sierra Miwok. Memoir 6 \textit{of International Journal of American Linguistics}. Indiana University, Bloomington.\\\noindent
+Fry, D. (1955). Duration and intensity as physical correlates of linguistic stress. \textit{Journal of the Acoustic Society of America }27:765-768.\\\noindent
+Giegerich, H. (1985). \textit{Metrical phonology and phonological structure}. Cambridge Studies in Linguistics 43. Cambridge University Press: Cambridge.\\\noindent
+Goedemans, R. \& E. van Zanten (2007). Stress and accent in Indonesian. In V. van Heuven \& E. van Zanten (eds.), \textit{Prosody in Indonesian Languages}, pp. 35-62.\\\noindent
+Gupta, P. \& D. Touretzky (1994). Connectionist models and linguistic theory: Investigations of stress systems in language. \textit{Cognitive Science }18(1):1-50.\\\noindent
+Halle, M. \& J.-R. Vergnaud (1987).\textit{An essay on stress}. Cambridge, MA: MIT Press.\\\noindent
+Hansen, K. C. \& L. E. Hansen (1969). Pintupi phonology. \textit{Oceanic Linguistics }8(2):153-170.\\\noindent
+Hayes, B. (1981). \textit{A metrical theory of stress rule}s. Doctoral dissertation, MIT.\\\noindent
+Hayes, B. (1995). \textit{Metrical stress theory. Principles and case studies}. University of Chicago Press: Chicago, London.\\\noindent
+Hayes, B. \& C. Wilson (2008). A maximum entropy model of phonotactics and phonotactic learning. \textit{Linguistic Inquiry }39:379-440.\\\noindent
+Heinz, J. (2006). Learning Quantity-Insensitive Stress Patterns via Local Inference. \textit{Proceedings of The Association for Computational Linguistics Special Interest Group in Phonology }6 (ACL-SIGPHON 06).\\\noindent
+Heinz, J. (2009). On the role of locality in learning stress patterns. \textit{Phonology} 26(2):303-351.\\\noindent
+Holton, D., P. Mackridge \& I. Philippaki-Warburton (1997/2004). \textit{Greek: A comprehensive grammar of the modern language}. Routledge: London \& New York.\\\noindent
+Hulst, H. van der (1999). \textit{Word prosodic systems in the languages of Europe}. Ed. Mouton de Gruyter: Berlin, New York.\\\noindent
+Hyman, L. (1977). Studies in stress and accent. \textit{Southern California Occasional Papers in Linguistics }4, University of Southerns California, Los Angeles.\\\noindent
+Hyman, L. 1977. On the nature of linguistic stress. In Larry Hyman (ed.), \textit{Studies in stress and accent}, 37-82. Los Angeles: University of Southern California, Department of Linguistics.\\\noindent
+Inkelas, S. (1994). Exceptional Stress-Attracting Suffixes in Turkish: Representations vs. the Grammar. In H. van der Hulst, R. Kager, and Wim Zonneveld (eds.),\textit{ The Prosody-Morphology Interface}. Cambridge University Press.\\\noindent
+Jarosz, G. (2006). Rich lexicons and restrictive grammars: Maximum likelihood learning in Optimality Theory. Doctoral dissertation, Johns Hopkins University, Baltimore, MD.\\\noindent
+Jessen, M. \& K. Marasek (1995). Acoustic correlates of word stress and the tense/lax opposition in the vowel system of German. In \textit{Phonetic AIMS} 2.2:143-146.\\\noindent
+Kager, R. (1993). Alternatives to the Iambic - Trochaic Law. In \textit{Natural Language and Linguistic Theory} 11(3):381-432.\\\noindent
+Karvonen, D. (2008). Explaining Nonfinality: Evidence from Finnish. \textit{Proceedings of the 26th West Coast Conference on Formal Linguistics}, ed. C. B. Chang and H. J. Haynie, 306-314. Somerville, MA: Cascadilla Proceedings Project.\\\noindent
+Kiparsky, P. (1972). Explanation in phonology. In Peters, S. (ed.), \textit{Goals in linguistic theory}, I89-227. Englewood Cliffs: Prentice-Hall.\\\noindent
+Kiparsky, P. (2003). Accent, syllable structure, and morphology in Ancient Greek. In E. Mela Athanasopoulou (ed.) \textit{Selected Papers from the 15}\textit{\textsuperscript{th }}\textit{International Symposium on Theoretical and Applied Linguistics}, 81-106. Thessaloniki, 2003.\\\noindent
+Krauss, M. (1985). Supplementary notes on Central Siberian Yupik prosody. In M. Krauss, \textit{Yupik Eskimo Prosodic Systems: Descriptive and Comparative Studies}, Alaska Native Language Center, Fairbanks.\\\noindent
+Legendre, G., Y. Miyata, \& P. Smolensky (1990). Can connectionism contribute to syntax? Harmonic Grammar, with an application. In \textit{Proceedings of the 26th Regional Meeting of the Chicago Linguistic Society}, ed. by M. Ziolkowski, M. Noske, and K. Deaton, 237-252. Chicago: Chicago Linguistic Society.\\\noindent
+Lehiste, I. (1970). \textit{Suprasegmentals}. Cambridge, MA: MIT Press.\\\noindent
+Melvold, J. L. (1990). Structure and stress in the phonology of Russian. \textit{MIT Working Papers in Linguistics}. MIT, Cambridge.\\\noindent
+Mester, R. A. (1994). The quantitative trochee in Latin. \textit{Natural Language and Linguistic Theory }12:1-61.\\\noindent
+Newton, B. (1972). \textit{The generative interpretation of dialect. A study of Modern Greek phonology}. Cambridge University Press.\\\noindent
+Nordhoff, S. (2009). \textit{A grammar of Upcountry Sri Lanka Malay}. Doctoral dissertation, LOT Dissertation series.\\\noindent
+Philippaki-Warburton, I. (1970). \textit{On the verb in Modern Greek}. Bloomington: Indiana University publications.\\\noindent
+Philippaki-Warburton, I. (1976). On the boundaries of morphology and phonology: a case study from Modern Greek. \textit{Journal of Linguistics} 12:259-278.\\\noindent
+Poser, W. J. (1990). Evidence for foot structure in Japanese. \textit{Language} 66(1):78-105.\\\noindent
+Prince, A. S. (1983). Relating to the Grid. \textit{Linguistic Inquiry }14:19-100.\\\noindent
+Protopapas, A. (2006). On the use and usefulness of stress diacritics in reading Greek. \textit{Reading and Writing }19:171–198.\\\noindent
+Protopapas, A., S. Gerakaki \& S. Alexandri (2006). Lexical and default stress assignment in reading Greek. \textit{Journal of Research in Reading}, Vol. 29(4), p418-432.\\\noindent
+Ralli, A. \& L. Touratzidis (1992). A computational treatment of stress in Greek inflected forms. \textit{Language and Speech }35(4):435-453.\\\noindent
+Revithiadou, A. (1999). \textit{Headmost accent wins}. Doctoral dissertation, LOT Dissertation Series No. 15.\\\noindent
+Roca, I. M. (1999). Stress in the Romance languages. In \textit{Word prosodic systems in the languages of Europe, }ed. H. van der Hulst, Mouton de Gruyter: Berlin, New York, pp 659-811.\\\noindent
+Roosman, L. (2006). Melodic structure in Toba Batak and Betawi Malay word prosody. In V. van Heuven \& E. van Zanten (eds.), \textit{Prosody in Indonesian Languages}, pp. 89-115.\\\noindent
+Selkirk, E. (1984). \textit{Phonology and Syntax: The Relation between Sound and Structure}. MIT Press, Cambridge, MA, and London, England.\\\noindent
+Sezer, E. (1983). On non-final stress in Turkish. \textit{Journal of Turkish Studies} 5:61-69.\\\noindent
+Sims, A. (in press). Avoidance strategies, periphrasis and paradigmatic competition in Modern Greek. In \textit{Periphrasis and paradigms}., eds. J.P. Blevins and F. Ackerman. Stanford, CA: CSLI.\\\noindent
+Smith, N. \& D. Apoussidou (in prep.). Recessive accent in Ancient Greek\index{Greek!Ancient} revisited: The final coda effect.\\\noindent
+Smolensky, P. (1996). On the comprehension/production dilemma in child language. \textit{Linguistic Inquiry }27:720-31.\\\noindent
+Smolensky, P., \& G. Legendre (2006). \textit{The harmonic mind: From neural computation to Optimality-Theoretic grammar}. Cambridge, MA: MIT Press.\\\noindent
+Steriade, D. (1988). Greek Accent; a case for preserving structure. \textit{Linguistic Inquiry }19: 271-314.\\\noindent
+Tesar, B. (1998). An iterative strategy for language learning. \textit{Lingua} 104:131-145.\\\noindent
+Tesar, B. (2004). Contrast analysis in phonological learning. Ms., ROA 695.\\\noindent
+Tesar, B. (2009). Learning Phonological Grammars for Output-Driven Maps. To appear in \textit{The Proceedings of NELS 39}. ROA-1013.\\\noindent
+Tesar, B. \& P. Smolensky (2000). \textit{Learnability in Optimality Theory}. Cambridge, MA: MIT Press.\\\noindent
+Trubetzkoy, N. S. (1939). \textit{Grundzüge der Phonologie}. Prague. [\textit{Principles of phonology}, Berkeley: University of California University Press, 1969.]
+
+\section{}Appendix
+
+{
+{Table 1: no shift}\index{shift}{/default results with hidden structure}}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{5.0601597in}|m{0.5545598in}}
+
+[]  {Underlying variation}\footnotemark{}
+ &
+\raggedleft\arraybslash  \%\\\hline
+ {\textless}tree+Nom.Sg.N{\textgreater}\ \ \ \ {\textbar}dendr+o{\textbar} /(dén.dro)/ [déndro] &
+\raggedleft\arraybslash  44.4\\
+ \ \ \ \ \ \ \ \ {\textbar}déndr+o{\textbar} &
+\raggedleft\arraybslash  55.6\\\hline
+ {\textless}tree+Gen.Pl{\textgreater}\ \ \ \ \ \ {\textbar}dendr+on{\textbar} /(dén.dron)/ [déndron] &
+\raggedleft\arraybslash  44.2\\
+ \ \ \ \ \ \ \ \ {\textbar}déndr+on{\textbar} &
+\raggedleft\arraybslash  55.8\\\hline
+ {\textless}sheep+Nom.Sg.N{\textgreater} \ \ \ \ {\textbar}provat+o{\textbar} /(pró.va).to/ [próvato] &
+\raggedleft\arraybslash  41.5\\
+  \ \ \ \ \ \ \ \ {\textbar}próvat+o{\textbar} &
+\raggedleft\arraybslash  58.5\\\hline
+ {\textless}sheep+Gen.Pl{\textgreater} \ \ \ \ {\textbar}provat+on{\textbar} /(pró.va).ton/ [próvaton] &
+\raggedleft\arraybslash  41.3\\
+  \ \ \ \ \ \ \ \ {\textbar}próvat+on{\textbar} &
+\raggedleft\arraybslash  58.7\\\hline
+ {\textless}almond+Nom.Sg.N{\textgreater} \ \ \ \ {\textbar}amigdal+o{\textbar} /a.(míg.da).lo/ [amígdalo] &
+\raggedleft\arraybslash  50.2\\
+ \ \  \ \ \ \ \ \ {\textbar}amígdal+o{\textbar} &
+\raggedleft\arraybslash  49.8\\\hline
+ {\textless}almond+Gen.Pl{\textgreater} \ \ \ \ {\textbar}amigdal+on{\textbar} /a.(míg.da).lon/ [amígdalon] &
+\raggedleft\arraybslash  50.2\\
+  \ \ \ \   \ \ \ \ {\textbar}amígdal+on{\textbar} &
+\raggedleft\arraybslash  49.8\\\hline
+ {\textless}headache+Nom.Sg.M{\textgreater}\ \ {\textbar}ponokefal+os{\textbar} /po.no.(ké.fa).los/ [ponokéfalos] &
+\raggedleft\arraybslash  25.8\\
+  \ \ \ \ \ \  \ \ {\textbar}ponokéfal+os{\textbar} &
+\raggedleft\arraybslash  74.2\\\hline
+ {\textless}headache+Gen.Pl{\textgreater} \ \ \ \ {\textbar}ponokefal+on{\textbar} /po.no.(ké.fa).lon/ [ponokéfalon] &
+\raggedleft\arraybslash  25.6\\
+  \ \ \ \ \ \ \ \ {\textbar}ponokéfal+on{\textbar} &
+\raggedleft\arraybslash  74.4\\
+\end{supertabular}
+\end{flushleft}
+\footnotetext{ Dots represent syllable boundaries that were given the learners for free.}
+{
+{Table 2.: results of no shift}\index{shift}{/default untrained words}}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{5.0601597in}|m{0.5545598in}}
+
+[]  Untrained words:
+ &
+\raggedleft\arraybslash  \%\\\hline
+  {\textless}bath+Nom.Sg.N{\textgreater}\ \ {\textbar}banj+o{\textbar} /(bán.jo)/ [bánjo] &
+\raggedleft\arraybslash  49.9\\
+  \ \ \ \ \ \ {\textbar}bánj+o{\textbar} /(bán.jo)/ &
+\raggedleft\arraybslash  50.1\\\hline
+  {\textless}bath+Gen.Pl{\textgreater} \ \ {\textbar}banj+on{\textbar} /(bán.jon)/ [bánjon] &
+\raggedleft\arraybslash  49.9\\
+  \ \ \ \ \ \ {\textbar}bánj+on{\textbar} &
+\raggedleft\arraybslash  50.1\\\hline
+  {\textless}butter+Nom.Sg.N{\textgreater} \ \ {\textbar}vutir+o{\textbar} /(vú.ti).ro/ [vútiro] &
+\raggedleft\arraybslash  50.2\\
+ \ \ \ \ \ \ {\textbar}vútir+o{\textbar} &
+\raggedleft\arraybslash  49.8\\\hline
+  {\textless}butter+Gen.Pl{\textgreater} \ \ {\textbar}vutir+on{\textbar} /(vú.ti).ron/ [vútiron] &
+\raggedleft\arraybslash  50.2\\
+  \ \ \ \ \ \ {\textbar}vútir+on{\textbar} &
+\raggedleft\arraybslash  49.8\\\hline
+  {\textless}smile+Nom.Sg.N{\textgreater} \ \ {\textbar}xamojel+o{\textbar} /xa.(mó.je).lo/ [xamójelo] &
+\raggedleft\arraybslash  49.9\\
+ \ \ \ \ \ \ {\textbar}xamójel+o{\textbar} &
+\raggedleft\arraybslash  50.1\\\hline
+  {\textless}smile+Gen.Pl{\textgreater} \ \ {\textbar}xamojel+on{\textbar} /xa.(mó.je).lon/ [xamójelon] &
+\raggedleft\arraybslash  50\\
+  \ \ \ \ \ \ {\textbar}xamójel+on{\textbar} &
+\raggedleft\arraybslash  50\\\hline
+  {\textless}railway+Nom.Sg.M{\textgreater} \ \ {\textbar}sidirodrom+os{\textbar} /si.di.(ró.dro).mos/ [sidiródromos] &
+\raggedleft\arraybslash  50.2\\
+  \ \ \ \ \ \ {\textbar}sidiródrom+os{\textbar} &
+\raggedleft\arraybslash  49.8\\\hline
+  {\textless}railway+Gen.Pl{\textgreater} \ \ {\textbar}sidirodrom+on{\textbar} /si.di.(ró.dro).mon/ [sidiródromon] &
+\raggedleft\arraybslash  49.9\\
+  \ \ \ \ \ \ {\textbar}sidiródrom+on{\textbar} &
+\raggedleft\arraybslash  50.1\\
+\end{supertabular}
+\end{flushleft}
+{
+{Table 3.: results for hidden structures for the no shift}\index{shift}{/lexical condition}}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.91156in}|m{0.7031598in}}
+
+[]  Underlying and surface variation
+ &
+\raggedleft\arraybslash  \% correct\\\hline
+ {\textless}tree+Nom.Sg.N{\textgreater} \ \ {\textbar}déndr+o{\textbar} /(dén.dro)/ [déndro] &
+\raggedleft\arraybslash  100\\\hline
+ {\textless}tree+Gen.Pl{\textgreater} \ \ \ \ {\textbar}déndr+on{\textbar} /(dén.dron)/ [déndron] &
+\raggedleft\arraybslash  27.8\\
+ \ \ \ \ \ \ {\textbar}déndr+ón{\textbar} &
+\raggedleft\arraybslash  72.2\\\hline
+ {\textless}sheep+Nom.Sg.N{\textgreater} \ \ {\textbar}próvat+o{\textbar} /(pró.va).to/ [próvato] &
+\raggedleft\arraybslash  100\\\hline
+ {\textless}sheep+Gen.Pl{\textgreater} \ \ {\textbar}próvat+on{\textbar} /(pró.va).ton/ [próvaton] &
+\raggedleft\arraybslash  27.9\\
+ \ \ \ \  \ \ {\textbar}próvat+ón{\textbar} &
+\raggedleft\arraybslash  72.1\\\hline
+ {\textless}hope+Nom.Sg.F{\textgreater} \ \ {\textbar}elpíd+a{\textbar} /(el.pí).da/ [elpída] &
+\raggedleft\arraybslash  29.9\\
+ \ \ \ \ \ \ \ \   /el.(pí.da)/ &
+\raggedleft\arraybslash  70.1\\\hline
+ {\textless}hope+Gen.Pl{\textgreater}  \ \ {\textbar}elpíd+on{\textbar} \ \ /(el.pí).don/ [elpídon] &
+\raggedleft\arraybslash  6.5\\
+ \ \ \ \  \ \ \ \ \ \ /el.(pí.don)/ &
+\raggedleft\arraybslash  21.5\\
+ \ \ \ \ \ \ {\textbar}elpíd+ón{\textbar} \ \ /(el.pí).don/ &
+\raggedleft\arraybslash  23.3\\
+ \ \ \ \ \ \ \ \ \ \ /el.(pí.don)/ &
+\raggedleft\arraybslash  48.7\\\hline
+ {\textless}brother+Nom.Sg.M{\textgreater} \ \ {\textbar}adelf+ós{\textbar} /a.(del.fós)/ [adelfós] &
+\raggedleft\arraybslash  100\\\hline
+ {\textless}brother+Gen.Pl{\textgreater} \ \ {\textbar}adelf+ón{\textbar} /a.(del.fón)/ [adelfón] &
+\raggedleft\arraybslash  99.9\\\hline
+ {\textless}almond+Nom.Sg.N{\textgreater} \ \ {\textbar}amígdal+o{\textbar} /a.(míg.da).lo/ [amígdalo] &
+\raggedleft\arraybslash  100\\\hline
+ {\textless}almond+Gen.Pl{\textgreater} \ \ {\textbar}amígdal+on{\textbar} /a.(míg.da).lon/ [amígdalon] &
+\raggedleft\arraybslash  27.9\\
+ \ \ \ \   \ \ {\textbar}amígdal+ón{\textbar} &
+\raggedleft\arraybslash  72.1\\\hline
+ {\textless}headache+Nom.Sg.M{\textgreater} {\textbar}ponokéfal+os{\textbar} /po.no.(ké.fa).los/ [ponokéfalos] &
+\raggedleft\arraybslash  5.9\\
+ \ \ \ \ \ \  {\textbar}ponokéfal+ós{\textbar} &
+\raggedleft\arraybslash  94.1\\\hline
+ {\textless}headache+Gen.Pl{\textgreater} \ \ {\textbar}ponokéfal+on{\textbar} /po.no.(ké.fa).lon/ [ponokéfalon] &
+\raggedleft\arraybslash  100\\
+\end{supertabular}
+\end{flushleft}
+{
+{Table 4.: results for unheard forms for the no shift}\index{shift}{/lexical condition}}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.8719597in}|m{0.40595984in}}
+
+[]  Untrained forms:
+ &
+\raggedleft\arraybslash  \%\\\hline
+ {\textless}bath+Nom.Sg.N{\textgreater}\ \ {\textbar}banj+o{\textbar} /(bán.jo)/ [bánjo] &
+\raggedleft\arraybslash  17.1\\
+ \ \ \ \   \ \ \ \ /(ban.jó)/ [banjó] &
+\raggedleft\arraybslash  58.6\\
+ \ \ \ \   \ \ {\textbar}bánj+o{\textbar} /(bán.jo)/ [bánjo] &
+\raggedleft\arraybslash  17.2\\
+ \ \ \ \   \ \ {\textbar}banj+ó{\textbar} /(ban.jó)/ [banjó] &
+\raggedleft\arraybslash  7.1\\\hline
+ {\textless}bath+Gen.Pl{\textgreater}\ \ \ \ {\textbar}banj+ón{\textbar} /(ban.jón)/ [banjón] &
+\raggedleft\arraybslash  100\\\hline
+ {\textless}butter+Nom.Sg.N{\textgreater} \ \ {\textbar}vutir+o{\textbar} /(vú.ti).ro/ [vútiro] &
+\raggedleft\arraybslash  2.4\\
+ \ \ \ \ \ \ \ \  /(vu.tí).ro/ [vutíro] &
+\raggedleft\arraybslash  9.8\\
+ \ \ \ \ \ \ \ \  /vu.(tí.ro)/ [vutíro] &
+\raggedleft\arraybslash  29.7\\
+ \ \ \ \ \ \ \ \  /vu.(ti.ró)/ [vutiró] &
+\raggedleft\arraybslash  49.3\\
+ \ \ \ \ \ \ {\textbar}vútir+o{\textbar} /(vú.ti).ro/ [vútiro] &
+\raggedleft\arraybslash  2.4\\
+ \ \ \ \ \ \ {\textbar}vutir+ó{\textbar} /vu.(ti.ró)/ [vutiró] &
+\raggedleft\arraybslash  6.4\\\hline
+ {\textless}butter+Gen.Pl{\textgreater} \ \ {\textbar}vutir+ón{\textbar} /vu.(ti.rón)/ [vutirón] &
+\raggedleft\arraybslash  99.9\\\hline
+ {\textless}raisin+Nom.Sg.F{\textgreater} \ \ {\textbar}stafid+a{\textbar} \ \ /(stá.fi).da/ [stáfida] &
+\raggedleft\arraybslash  4.3\\
+ \ \ \ \ \ \ \ \ \ \ /(sta.fí).da/ [stafída] &
+\raggedleft\arraybslash  4.1\\
+ \ \ \ \ \ \ \ \ \ \ /sta.(fí.da)/ [stafída] &
+\raggedleft\arraybslash  12.1\\
+ \ \ \ \ \ \ \ \ \ \ /sta.(fi.dá)/ [stafidá] &
+\raggedleft\arraybslash  27.2\\
+ \ \ \ \ \ \ {\textbar}stafíd+a{\textbar} \ \ /(sta.fí).da/ [stafída] &
+\raggedleft\arraybslash  4\\
+ \ \ \ \ \ \ \ \ \ \ /sta.(fí.da)/ [stafída] &
+\raggedleft\arraybslash  12.0\\
+ \ \ \ \ \ \ {\textbar}stafid+á{\textbar} \ \ /sta.(fi.dá)/ [stafidá] &
+\raggedleft\arraybslash  36.3\\\hline
+ {\textless}raisin+Gen.Pl{\textgreater} \ \ {\textbar}stafid+ón{\textbar} /sta.(fi.dón)/ [stafidón] &
+\raggedleft\arraybslash  99.9\\\hline
+ {\textless}sky+Nom.Sg.M{\textgreater} \ \ {\textbar}uran+ós{\textbar} /u.(ra.nós)/ [uranós] &
+\raggedleft\arraybslash  100\\\hline
+ {\textless}sky+Gen.Pl{\textgreater} \ \ \ \ {\textbar}uran+ón{\textbar} /u.(ra.nón)/ [uranón] &
+\raggedleft\arraybslash  99.9\\\hline
+ {\textless}smile+Nom.Sg.N{\textgreater} \ \ {\textbar}xamojel+o{\textbar} \ \ /xa.(mó.je).lo/ [xamójelo] &
+\raggedleft\arraybslash  2.4\\
+ \ \ \ \ \ \ \ \ \ \ /xa.(mo.jé).lo/ [xamojélo] &
+\raggedleft\arraybslash  9.8\\
+ \ \ \ \ \ \ \ \ \ \ /xa.mo.(jé.lo)/ [xamojélo] &
+\raggedleft\arraybslash  29.8\\
+ \ \ \ \ \ \ \ \ \ \ /xa.mo.(je.ló)/ [xamojeló] &
+\raggedleft\arraybslash  49.3\\
+ \ \ \ \ \ \ {\textbar}xamójel+o{\textbar} \ \ /xa.(mó.je).lo/ [xamójelo] &
+\raggedleft\arraybslash  2.4\\
+ \ \ \ \ \ \ {\textbar}xamojel+ó{\textbar} \ \ /xa.mo.(je.ló)/ [xamojeló] &5
+\raggedleft\arraybslash  6.3\\\hline
+ {\textless}smile+Gen.Pl{\textgreater}  \ \ {\textbar}xamojel+ón{\textbar} /xa.mo.(je.lón)/ [xamojelón] &
+\raggedleft\arraybslash  99.9\\\hline
+ {\textless}railway+Nom.Sg.M{\textgreater} \ \ {\textbar}sidirodrom+ós{\textbar} /si.di.ro.(dro.mós)/ [sidirodromós] &
+\raggedleft\arraybslash  100\\\hline
+ {\textless}railway+Gen.Pl{\textgreater}  \ \ {\textbar}sidirodrom+ón{\textbar} /si.di.ro.(dro.món)/ [sidirodromón] &
+\raggedleft\arraybslash  99.9\\
+\end{supertabular}
+\end{flushleft}
+{
+Resulting weights:}
+
+{
+Table 5: The {\textquotesingle}no shift\index{shift}/default{\textquotesingle}-condition}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{3.37616in}m{0.51155984in}}
+\scshape AFR &
+\raggedleft\arraybslash \scshape 107\\
+\scshape Troch &
+\raggedleft\arraybslash \scshape 106.8\\
+\scshape \{FtBin, Nonfinal; Parse \} &
+\raggedleft\arraybslash \scshape 100\\
+\scshape Iamb &
+\raggedleft\arraybslash \scshape 93.2\\
+\scshape AFL &
+\raggedleft\arraybslash \scshape 93\\
+\scshape MaxR &
+\raggedleft\arraybslash \scshape 3.8\\
+ {\textless}headache{\textgreater} {\textbar}ponokéfal-{\textbar} &
+\raggedleft\arraybslash  1.5\\
+ {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} &
+\raggedleft\arraybslash  0.5\\
+ {\textless}tree{\textgreater} {\textbar}déndr-{\textbar} &
+\raggedleft\arraybslash  0.3\\
+ {\textsc{\{ MaxA; }}{{\textless}Nom.Sg{\textgreater} {\textbar}-a{\textbar}, {\textbar}-o{\textbar}, {\textbar}-os{\textbar}; {\textless}Gen.Pl{\textgreater} {\textbar}-on{\textbar} \}} &
+\raggedleft\arraybslash \scshape 0\\
+ {\textless}almond{\textgreater} {\textbar}amígdal-{\textbar} &
+\raggedleft\arraybslash  0\\
+\end{supertabular}
+\end{flushleft}
+{
+Table 6: The {\textquotesingle}no shift\index{shift}/lexical{\textquotesingle}-condition}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{5.22266in}m{0.38725984in}}
+ AFR &
+\raggedleft\arraybslash  134.7\\
+\scshape Iamb &
+\raggedleft\arraybslash  100.6\\
+\scshape \{ FtBin; Parse \} &
+\raggedleft\arraybslash  100\\
+\scshape Troch &
+\raggedleft\arraybslash  99.4\\
+\scshape Nonfinal &
+\raggedleft\arraybslash  65.6\\
+ AFL &
+\raggedleft\arraybslash  65.3\\
+\scshape MaxR &
+\raggedleft\arraybslash  39.5\\
+ {\textless}headache{\textgreater} {\textbar}ponokéfal-{\textbar} &
+\raggedleft\arraybslash  39.5\\
+ {\textless}almond{\textgreater} {\textbar}amígdal-{\textbar} &
+\raggedleft\arraybslash  36.7\\
+ {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} &
+\raggedleft\arraybslash  36.4\\
+ {\textless}tree{\textgreater} {\textbar}déndr-{\textbar} &
+\raggedleft\arraybslash  27.5\\
+ {\textless}hope{\textgreater} {\textbar}elpíd-{\textbar} &
+\raggedleft\arraybslash  26.3\\
+\scshape MaxA &
+\raggedleft\arraybslash  12.5\\
+ {\textless}Nom.Sg.M{\textgreater} {\textbar}-ós{\textbar} &
+\raggedleft\arraybslash  9.2\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-ón{\textbar} &
+\raggedleft\arraybslash  7.5\\
+ {\textless}Nom.Sg.N{\textgreater} {\textbar}-o{\textbar} &
+\raggedleft\arraybslash  2\\
+ \{ {\textless}Nom.Sg.F{\textgreater} {\textbar}-a{\textbar}, {\textbar}-as{\textbar}; {\textless}mountain{\textgreater} {\textbar}vun-{\textbar}; {\textless}tomato{\textgreater} {\textbar}domát-{\textbar}; {\textless}brother{\textgreater} {\textbar}adelf-{\textbar} \} &
+\raggedleft\arraybslash  0\\
+ {\textless}Nom.Sg.N{\textgreater} {\textbar}-ó{\textbar} &
+\raggedleft\arraybslash  {}-2\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-on{\textbar} &
+\raggedleft\arraybslash  {}-7.5\\
+ {\textless}Nom.Sg.M{\textgreater} {\textbar}-os{\textbar} &
+\raggedleft\arraybslash  {}-9.2\\
+\end{supertabular}
+\end{flushleft}
+{
+Table 7: The {\textquotesingle}{always shift}\index{shift}{{\textquotesingle}-condition}}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{2.12196in}m{0.42955986in}}
+\scshape AFR &
+\raggedleft\arraybslash  132.1\\
+\scshape Troch &
+\raggedleft\arraybslash  101.4\\
+\scshape \{ FtBin, Parse \} &
+\raggedleft\arraybslash  100\\
+\scshape Iamb &
+\raggedleft\arraybslash  98.6\\
+\scshape Nonfinal &
+\raggedleft\arraybslash  68.9\\
+\scshape AFL &
+\raggedleft\arraybslash  67.9\\
+\scshape MaxR &
+\raggedleft\arraybslash  17.3\\
+\scshape MaxA &
+\raggedleft\arraybslash  14.5\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-ón{\textbar} &
+\raggedleft\arraybslash  11.8\\
+ {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} &
+\raggedleft\arraybslash  6.3\\
+ {\textless}almond{\textgreater} {\textbar}amígdal-{\textbar} &
+\raggedleft\arraybslash  5.8\\
+ {\textless}sea{\textgreater} {\textbar}thalas-{\textbar} &
+\raggedleft\arraybslash  5.5\\
+ {\textless}tomato{\textgreater} {\textbar}domát-{\textbar} &
+\raggedleft\arraybslash  5.3\\
+ {\textless}almond{\textgreater} {\textbar}amigdál-{\textbar} &
+\raggedleft\arraybslash  5.2\\
+ {\textless}sheep{\textgreater} {\textbar}provát-{\textbar} &
+\raggedleft\arraybslash  4.8\\
+ \{ {\textless}Nom.Sg{\textgreater} {\textbar}-o{\textbar}; {\textbar}-as{\textbar}; {\textbar}-os{\textbar}; {\textbar}-a{\textbar} \} &
+\raggedleft\arraybslash  0\\
+ {\textless}tree{\textgreater} {\textbar}déndr-{\textbar} &
+\raggedleft\arraybslash  {0}\footnotemark{}\\
+ {\textless}tomato{\textgreater} {\textbar}domat-{\textbar} &
+\raggedleft\arraybslash  {}-5.3\\
+ {\textless}sea{\textgreater} {\textbar}thálas-{\textbar} &
+\raggedleft\arraybslash  {}-5.5\\
+ {\textless}headache{\textgreater} {\textbar}ponokéfal-{\textbar} &
+\raggedleft\arraybslash  {}-7.3\\
+ {\textless}headache{\textgreater} {\textbar}ponokefál-{\textbar} &
+\raggedleft\arraybslash  {}-7.7\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-on{\textbar} &
+\raggedleft\arraybslash  {}-11.8\\
+\end{supertabular}
+\end{flushleft}
+\footnotetext{ This {\textquotesingle}0{\textquotesingle} was the average of all the weights for this constraint across learners and is therefore different from the constraints that did not move.}
+{
+Table 8: The {\textquotesingle}sometimes shift\index{shift}{\textquotesingle}-condition}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{3.4851599in}m{0.32055986in}}
+\scshape AFR &
+\raggedleft\arraybslash  127.8\\
+\scshape Iamb &
+\raggedleft\arraybslash  104.4\\
+\scshape \{ FtBin; Parse \} &
+\raggedleft\arraybslash  100\\
+\scshape Troch &
+\raggedleft\arraybslash  95.6\\
+\scshape Nonfin &
+\raggedleft\arraybslash  73.2\\
+\scshape AFL &
+\raggedleft\arraybslash  72.2\\
+ {\textless}tree{\textgreater} {\textbar}déndr-{\textbar} &
+\raggedleft\arraybslash  42.4\\
+\scshape MaxR &
+\raggedleft\arraybslash  42.3\\
+\scshape MaxA &
+\raggedleft\arraybslash  18.1\\
+ {\textless}almond{\textgreater} {\textbar}amígdal-{\textbar} &
+\raggedleft\arraybslash  15.4\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-ón{\textbar} &
+\raggedleft\arraybslash  14\\
+ {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} &
+\raggedleft\arraybslash  13.8\\
+ {\textless}headache{\textgreater} {\textbar}ponokéfal-{\textbar} &
+\raggedleft\arraybslash  10.4\\
+ {\textless}mountain{\textgreater} {\textbar}vun-{\textbar} &
+\raggedleft\arraybslash  5.4\\
+ {\textless}tomato{\textgreater} {\textbar}domat-{\textbar} &
+\raggedleft\arraybslash  4.6\\
+ {\textless}Nom.Sg.F{\textgreater} {\textbar}-a{\textbar} &
+\raggedleft\arraybslash  4.2\\
+ {\textless}Nom.Sg.M{\textgreater} {\textbar}-os{\textbar} &
+\raggedleft\arraybslash  2.9\\
+ {\textless}Nom.Sg.N{\textgreater} {\textbar}-o{\textbar} &
+\raggedleft\arraybslash  1.3\\
+ \{ {\textless}Nom.Sg.M{\textgreater} {\textbar}-as{\textbar}; {\textless}hope{\textgreater} {\textbar}elpíd-{\textbar}; {\textless}brother{\textgreater} {\textbar}adelf-{\textbar} \} &
+\raggedleft\arraybslash  0\\
+ {\textless}Nom.Sg.N{\textgreater} {\textbar}-ó{\textbar} &
+\raggedleft\arraybslash  {}-1.3\\
+ {\textless}almond{\textgreater} {\textbar}amigdál-{\textbar} &
+\raggedleft\arraybslash  {}-2.2\\
+ {\textless}Nom.Sg.M{\textgreater} {\textbar}-ós{\textbar} &
+\raggedleft\arraybslash  {}-2.9\\
+ {\textless}tomato{\textgreater} {\textbar}domát-{\textbar} &
+\raggedleft\arraybslash  {}-4.6\\
+ {\textless}sheep{\textgreater} {\textbar}provát-{\textbar} &
+\raggedleft\arraybslash  {}-5\\
+ {\textless}headache{\textgreater} {\textbar}ponokefál-{\textbar} &
+\raggedleft\arraybslash  {}-7.5\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-on{\textbar} &
+\raggedleft\arraybslash  {}-14\\
+\end{supertabular}
+\end{flushleft}
+{
+Table 9: The {\textquotesingle}some shift\index{shift}{\textquotesingle}-condition}
+
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.50596in}m{0.35595986in}}
+\scshape AFR &
+\raggedleft\arraybslash  129.2\\
+\scshape Iamb &
+\raggedleft\arraybslash  105.8\\
+\scshape \{ FtBin, Parse \} &
+\raggedleft\arraybslash  100\\
+\scshape Troch &
+\raggedleft\arraybslash  94.2\\
+\scshape Nonfinal &
+\raggedleft\arraybslash  71.2\\
+\scshape AFL &
+\raggedleft\arraybslash  70.8\\
+\scshape MaxR &
+\raggedleft\arraybslash  47.9\\
+ {\textless}tree{\textgreater} {\textbar}dándr-{\textbar} &
+\raggedleft\arraybslash  47.2\\
+ {\textless}headache{\textgreater} {\textbar}ponokáfal-{\textbar} &
+\raggedleft\arraybslash  42.5\\
+ {\textless}sheep{\textgreater} {\textbar}próvat-{\textbar} &
+\raggedleft\arraybslash  40.1\\
+ {\textless}butter{\textgreater} {\textbar}vútir-{\textbar} &
+\raggedleft\arraybslash  32\\
+ {\textless}almond{\textgreater} {\textbar}amígdal-{\textbar} &
+\raggedleft\arraybslash  29.2\\
+ {\textless}headache{\textgreater} {\textbar}ponokefál-{\textbar} &
+\raggedleft\arraybslash  27.6\\
+\scshape MaxA &
+\raggedleft\arraybslash  26.3\\
+ {\textless}butter{\textgreater} {\textbar}vutír-{\textbar} &
+\raggedleft\arraybslash  17.1\\
+ {\textless}Nom.Sg.M{\textgreater} {\textbar}-ós{\textbar} &
+\raggedleft\arraybslash  15.5\\
+ {\textless}almond{\textgreater} {\textbar}amigdál-{\textbar} &
+\raggedleft\arraybslash  11.2\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-ón{\textbar} &
+\raggedleft\arraybslash  11\\
+ {\textless}Nom.Sg.F{\textgreater} {\textbar}-a{\textbar} &
+\raggedleft\arraybslash  5.5\\
+ {\textless}tomato{\textgreater} {\textbar}domat-{\textbar} &
+\raggedleft\arraybslash  4.7\\
+ {\textless}Nom.Sg.N{\textgreater} {\textbar}-o{\textbar} &
+\raggedleft\arraybslash  3.2\\
+ {\textless}Nom.Sg.M{\textgreater} {\textbar}-as{\textbar}; {\textless}mountain{\textgreater} {\textbar}vun-{\textbar}; {\textless}hope{\textgreater} {\textbar}elpíd-{\textbar}; {\textless}brother{\textgreater} {\textbar}adelf-{\textbar} &
+\raggedleft\arraybslash  0\\
+ {\textless}Nom.Sg.N{\textgreater} {\textbar}-ó{\textbar} &
+\raggedleft\arraybslash  {}-3.2\\
+ {\textless}tomato{\textgreater} {\textbar}domát-{\textbar} &
+\raggedleft\arraybslash  {}-4.7\\
+ {\textless}Gen.Pl{\textgreater} {\textbar}-on{\textbar} &
+\raggedleft\arraybslash  {}-11\\
+ {\textless}Nom.Sg.M{\textgreater} {\textbar}-os{\textbar} &
+\raggedleft\arraybslash  {}-15.5\\
+\end{supertabular}
+\end{flushleft}
+\printindex
+\end{document}

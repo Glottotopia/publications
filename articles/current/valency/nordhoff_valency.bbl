@@ -1,0 +1,90 @@
+\begin{thebibliography}{14}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Adelaar(1991)}]{Adelaar1991}
+\textsc{Adelaar}, K.~A. (1991).
+\newblock \enquote{Some notes on the origin of Sri Lankan Malay}.
+\newblock In  \cite{Steinhauer1991}, pp. 23--37.
+
+\bibitem[{Gair(1991)}]{Gair1991infl}
+\textsc{Gair}, J.~W. (1991).
+\newblock \enquote{Subjects, Case and INFL in Sinhala}.
+\newblock In \textsc{Verma}, M. \& K.~P. \textsc{Mohanan} (eds.)
+  \enquote{Experiencer Subjects in South Asian Languages}, Palo Alto: Center
+  for the Study of Language and Information. pp. 13--41.
+\newblock Reprinted in Gair (1998), pp. 65--86.
+
+\bibitem[{Gair(2003)}]{Gair2003}
+\textsc{Gair}, J.~W. (2003).
+\newblock \enquote{Sinhala}.
+\newblock In \textsc{Cardona}, G. \& D.~\textsc{Jain} (eds.) \enquote{The
+  Indo-Aryan Languages}, London: Routledge. pp. 766--818.
+
+\bibitem[{Garusinghe(1962)}]{Garusinghe1962}
+\textsc{Garusinghe}, D. (1962).
+\newblock \emph{Sinhala, the Spoken Idiom}.
+\newblock M\"unchen: Max Hueber.
+
+\bibitem[{Hengeveld(fc)}]{Hengeveldfctransparency}
+\textsc{Hengeveld}, K. (fc).
+\newblock \enquote{Transparency in Functional Discourse Grammar}.
+\newblock \emph{Linguistics in Amsterdam}, 99(99).
+
+\bibitem[{Lehmann(1989)}]{Lehmann1989tamil}
+\textsc{Lehmann}, T. (1989).
+\newblock \emph{A Grammar of Modern Tamil}.
+\newblock Pondicherry: Pondicherry Institute of Linguistics and Culture.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009phd}
+\textsc{Nordhoff}, S. (2009).
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam.
+
+\bibitem[{Nordhoff(2010)}]{Nordhoff2010valency}
+\textsc{Nordhoff}, S. (2010).
+\newblock \enquote{No Valency Classes in Sri Lanka Malay}.
+\newblock Paper presented at the workshop on valency classes, Max Planck
+  Institute for Evolutionary Anthropology, Leipzig, August 2010.
+
+\bibitem[{Nordhoff(2011)}]{Nordhoff2011copula}
+\textsc{Nordhoff}, S. (2011).
+\newblock \enquote{Having come to be a copula in Sri Lanka Malay -- an unusual
+  grammaticalization path}.
+\newblock \emph{Folia Linguistica}, 45(1):103--126.
+
+\bibitem[{Nordhoff(fc)}]{Nordhofffctransparency}
+\textsc{Nordhoff}, S. (fc).
+\newblock \enquote{Transparency in Sri Lanka Malay}.
+\newblock \emph{Linguistics in Amsterdam}, 99(99).
+
+\bibitem[{Nordhoff(forthcoming{\natexlab{a}})}]{Nordhofffcjoat}
+\textsc{Nordhoff}, S. (forthcoming{\natexlab{a}}).
+\newblock \enquote{Jack-of-all-trades: The Sri Lankan Malay property word}.
+\newblock In \textsc{van Lier}, E. \& J.~\textsc{Rijkhoff} (eds.)
+  \enquote{Flexible word classes: a typological study of underspecified
+  parts-of-speech}, Oxford: OUP.
+\newblock Paper presented at the Workshop on flexible languages, Amsterdam.
+
+\bibitem[{Nordhoff(forthcoming{\natexlab{b}})}]{Nordhofffcsvc}
+\textsc{Nordhoff}, S. (forthcoming{\natexlab{b}}).
+\newblock \enquote{Multi-verb constructions in Sri Lanka Malay}.
+\newblock \emph{Journal of Pidgin and Creole Languages}.
+
+\bibitem[{Paauw(2004)}]{Paauw2004}
+\textsc{Paauw}, S.~H. (2004).
+\newblock \emph{A Historical Analysis of the Lexical Sources of Sri Lanka
+  Malay}.
+\newblock Master's thesis, York University.
+
+\bibitem[{Steinhauer(1991)}]{Steinhauer1991}
+\textsc{Steinhauer}, H. (ed.)  (1991).
+\newblock \emph{Papers in Austronesian linguistics}, \emph{Pacific
+  Linguisitics}, vol.~1.
+\newblock Canberra: The Australian National University.
+
+\end{thebibliography}

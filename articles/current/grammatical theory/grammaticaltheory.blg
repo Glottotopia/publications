@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: grammaticaltheory.aux
+The style file: natuva.bst
+Database file #1: asw.bib
+Database file #2: grammaticography.bib
+Repeated entry---line 587 of file grammaticography.bib
+ : @book{AmekaEtAl2006
+ :                    ,
+I'm skipping whatever remains of this entry
+Database file #3: grammars.bib
+Database file #4: nordhoff.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--missing publisher in AmekaEtAl2006
+Warning--missing publisher in Drude2002
+Warning--empty pages in Drude2002
+Warning--missing publisher in Frohnmeyer1889
+Warning--empty pages in LehmannEtAl2004
+Warning--empty pages in Mosel2006craft
+Warning--empty booktitle in Gabelentz1891
+Warning--missing publisher in Gabelentz1891
+Warning--empty pages in Gabelentz1891
+You've used 53 entries,
+            3313 wiz_defined-function locations,
+            1003 strings with 12161 characters,
+and the built_in function-call counts, 28932 in all, are:
+= -- 2053
+> -- 816
+< -- 89
++ -- 312
+- -- 223
+* -- 2053
+:= -- 4134
+add.period$ -- 162
+call.type$ -- 53
+change.case$ -- 314
+chr.to.int$ -- 52
+cite$ -- 62
+duplicate$ -- 2578
+empty$ -- 2726
+format.name$ -- 437
+if$ -- 5851
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 473
+newline$ -- 273
+num.names$ -- 226
+pop$ -- 1022
+preamble$ -- 1
+purify$ -- 281
+quote$ -- 0
+skip$ -- 1096
+stack$ -- 0
+substring$ -- 1082
+swap$ -- 1224
+text.length$ -- 38
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 411
+warning$ -- 9
+while$ -- 206
+width$ -- 0
+write$ -- 669
+(There was 1 error message)

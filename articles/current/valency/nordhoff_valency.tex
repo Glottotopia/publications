@@ -1,0 +1,785 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lingsty,ipashortcuts,gb4n}
+\usepackage[authoryear]{natbib}\usepackage{anysize}
+\marginsize{2.5cm}{2.5cm}{2.5cm}{3cm}
+
+\author{Sebastian Nordhoff}
+\title{Case frames in Sri Lanka Malay}
+
+\newcommand{\rbox}[2]{\fbox{
+                       \parbox{#1}{\centering #2}
+                          }
+}
+
+\begin{document}
+\maketitle
+
+\section{Introduction} 
+\let\eachwordtwo=\rm
+
+Sri Lanka Malay is a language with direct linking between semantic role and morphosyntactic expression. This direct link is established by means of case enclitics, and these clitics neatly map onto semantic roles. For instance, the clitic \em =yang \em is used to express patient, and patient can generally not be expressed by any other means. Similarly, \em =nang \em expresses recipient, and recipient cannot be expressed by any other means. 
+
+This is different from languages like English, where the mapping between semantic roles and morphosyntactic expression is more involved. Typically, direct objects are patients or themes in English, but this general rule does not hold in a number of cases. For instance, a patient can be found in subject position, typically reserved for agents, after passivization. 
+
+\ea The city was destroyed by Caesar. \z
+
+Or, a recipient can be found in direct object position after dative shift.
+
+\ea John gave me the cake. \z
+
+Finally, a goal can be found in direct object position with locative alternation
+
+\ea John loaded the truck with hay. \z
+
+In languages like English, it is therefore necessary to keep track of the transformations applied in a particular sentence in order to successfully decode the propositional content. This is not necessary in Sri Lanka Malay, where no such alternations exist. Sri Lanka Malay is a WYSIWYG language \citep{Hengeveldfctransparency,Nordhofffctransparency} as far as the encoding and decoding of argument structure is concerned: what you seen in morphology (the enclitic) is what you get in semantics (the thematic role).
+
+
+gloss verb caseframe
+
+\section{Basics of SLM morphosyntax}
+Sri Lanka Malay (SLM) is a language based on Malay vocabulary and Dravidian grammar. Its grammar differs dramatically from any other variety of Malay, so that it is considered `a language in its own right' \citep{Adelaar1991}, rather than a dialect of Malay/Indonesian, e.g. Riau Indonesian (Gil, this volume).
+
+Among the features which distinguish SLM from Malay/Indonesian, we find 
+\begin{itemize}
+ \item retroflexes, prenasalized stops, vowel length, consonant length
+ \item relatively abundant morphology, e.g. infinitives or participles
+ \item SOV word order
+ \item postpositions
+ \item preposed relative clauses
+ \item grammaticalized indefiniteness marking
+ \item copula constructions  \citep{Nordhoff2011copula}
+ \item solid word class distinctions \citep{Nordhofffcjoat}
+ \item serial verbs \citep{Nordhofffcsvc}
+\end{itemize}
+
+It is thus about as different from Malay/Indonesian as English is from Marathi as far as grammar is concerned. Its lexicon, on the other hand, is solidly Malay with about 90\% cognacy with other Malay varieties \citep{Paauw2004}.
+
+In the context of valency, word order, head marking, and dependent marking are the most interesting domains. These shall briefly be discussed here.
+
+
+\subsection{Word order}
+SLM word order is generally head final, with SOV being the normal case for pragmatically neutral sentences. Note that there are no grammatical relations in SLM, so that NP NP V would actually be more appropriate than SOV. A model sentence is given in \xref{ex:intro:sov}
+
+\ea \label{ex:intro:sov}
+\gll Itthu    baathu=yang    incayang Seelong=dering laayeng nigiri=nang asà-baapi. \\
+ \textsc{dist} stone=\textsc{acc} \textsc{3s.polite} Ceylon-\textsc{abl} other country=\textsc{dat} \textsc{cp}-bring\\
+`These stones, he brought them from Ceylon to other countries.' (K060103nar01)
+\z   
+
+Note that the realization of four NPs is very atypical; it is more common to only have one overt NP, with the other NPs being dropped. The nature of the NPs has no bearing on the possibility to drop them; any NP can be dropped at any time. The order of the prenominal NPs is governed by pragmatic considerations of topicality. As far as morphosyntax is concerned, word order is free. In pragmatically neutral contexts, all NPs are preverbal. For focalization purposes, right extraposition of one NP is possible. 
+
+Example \xref{ex:intro:sov} also shows the main device SLM uses for the indication of semantic roles: postpositions. We find the accusative marker \em =yang\em, the dative marker \em =nang \em and the ablative marker \em =dering\em. The pronoun \trs{incayang}{he} does not take a postposition in this sentence. In the context of this paper, I will consider NPs like \em incayang \em to be in the nominative.
+
+
+\subsection{Head marking}
+While the encoding of semantic roles/valency is quite rich as far as dependents are concerned, such is not the case for verbs: there is no agreement and the existence of any diathesis marking on the verb is debatable (see below).
+
+\subsection{Dependent marking}\label{sec:dependentmarking}
+The question of `who did what to whom'  is anwered by case enclitics in Sri Lanka Malay. These morphemes are also often analyzed as postpositions, a theoretical problem common in head-final languages. \citet{Nordhoff2009phd} adduces evidence for their status as clitics, rather than affixes or independent words. Table \ref{tab:enclitics} gives an overview of the most common morphemes and their meanings. We will mainly be concerned with the morphemes in the first column for the remainder of this paper.
+
+\begin{table}
+\centering
+\begin{tabular}{ll|l|ll}
+    =yang & accusative &&   =kapang  & when\\
+    =nang & dative     &&   =siking  & because\\
+    =dering & ablative &&   =lanthran& because\\
+    =ka  & locative    &&   =subbath & because\\
+	&              &&   =sàsaama & comitative\\
+	&              &&   sduuduk & ablative\\
+\end{tabular}
+\caption{Case enclitics in Sri Lanka Malay and their glosses}
+\label{tab:enclitics}
+\end{table}
+
+Examples \xref{ex:intro:yang} - \xref{ex:intro:ka} show prototypical instances of the use of these enclitics.
+
+\ea\label{ex:intro:yang}
+\gll Itthusubbath   deram pada    jaalang arà-kijja  butthul ruuma pada=\textbf{yang}   arà-picca-kang. \\ % bf
+     therefore \textsc{3pl} \textsc{pl} road \textsc{non.past}-make correct house \textsc{pl}=\textsc{acc} \textsc{non.past}-broken-\textsc{caus}  \\
+    `Therefore, they build the street, they demolish  many houses.'  (K051222nar04)
+\z  
+
+\ea\label{ex:intro:nang}
+\gll Kithang lorang\textbf{=nang}   baaye mliiga athi-kaasi. \\
+     \textsc{1pl} \textsc{2pl}=\textsc{dat} good palace \textsc{irr}-give  \\
+    `We will give you beautiful palaces.' (K051213nar06)
+\z
+
+\ea\label{ex:intro:dering}
+\gll Kaaya oorang=dering=jo arà-cuuri. \\
+     rich man=\textsc{abl}=\textsc{emph} \textsc{non.past}-steal \\
+    `It was from rich people that he stole.'  (K051206nar02)
+\z 
+
+\ea\label{ex:intro:ka}
+\gll Minnyak \textbf{klaapa}=\textbf{ka} gooreng. \\
+     coconut.oil coconut=\textsc{loc} fry  \\
+    `Fry it in coconut oil.' (K060103rec02)
+\z 
+
+In certain cases, the enclitics can be dropped. This is most notably found in topicalizations as in \xref{ex:intro:topicalization}, where the locative marker \em =ka \em is dropped.
+
+\ea\label{ex:intro:topicalization} 
+\gll Seelong=\zero{} samma thumpath=\zero{} mlaayu aada. \\
+ Ceylon all place Malay exist\\
+    `In Sri Lanka, there are Malays everywhere.' (K051222nar04)
+\z 
+
+The accusative marker \em =yang \em is furthermore often dropped if the context of the sentence already makes it clear which referent is the agent (\trs{baapa}{father}) and which referent is the patient (\trs{pohong}{tree}), as reverse roles are very unlikely.
+
+\ea\label{ex:intro:yangdrop}
+\gll Baapa  derang=pe     kubbong=ka   hatthu pohong=\zero{} nya-poothong. \\
+      father \textsc{3pl}=\textsc{poss} garden=\textsc{loc} \textsc{indef} tree \textsc{past}-cut \\
+    `My father cut a tree in their garden.' (K051205nar05)
+\z
+
+Taking a look at a number of semantic roles and a number of case enclitics, one can map the ways how they relate to each other. This is shown in Figure \ref{tab:casemappings}.
+
+
+Above, I have argued that there is a clear and direct mapping between semantic roles and morphosyntactic expression. Taking a look at Table \ref{tab:casemappings}, we see that this overstates the regularities. It is common that a morpheme can be used for more than function, and, more problematically, several functions can be encoded by more than one morpheme. This is the case for the coding of patient by both \em =yang \em and \em =nang\em, as well as the coding of goal by both \em =nang \em and \em =ka\em.
+
+Looking more closer into these cases, it appears however that they are not of the same type as passivization, dative shift or locative alternation are in English. The use of \em =nang \em for marking arguments normally seen as patients is restricted to a very small set of three verbs: 
+\trs{puukul}{hit}, 
+\trs{thee\umb ak}{shoot},
+\trs{thiikam}{stab}. In all of these three cases, we are dealing with transfer or impact, so that the semantic role could as well be interpreted as goal or recipient. This can be seen from the fact that the English verb \em to receive \em can also be used felicitously in at least two of the three contexts (\em receive a shot, receive a blow\em). The use of \em receive a stab \em is less idiomatic in English, but it is clear that an analysis as goal of stabbing or recipient of stabbing is entirely within the realm of possibilities, showing that what we first took as a patient is indeed not a patient in Sri Lanka Malay, but rather a recipient. This thus relieves us of the unfortunate one-to-many mapping of roles and cases. There is a lexical specification of which highly transitive verbs take a recipient (the three just discussed), and which take a patient (all the others). There is no way to alter this and to make a verb from group 1 take \em =yang\em, or to make a verb from group 2 take \em =nang\em.
+
+The second one-to-many mapping concerns the encoding of goal. This is discussed below in Section \ref{sec:casealternations}
+
+To sum up, even with the two minor glitches just presented, it seems fair to say that Sri Lanka Malay is very close to a direct mapping of semantic roles onto morphosyntax.
+
+
+\begin{table}
+\begin{center}
+% use packages: array
+\begin{tabular}{cccc}
+
+yang & nang & ka & dering \\
+\hline
+\hline
+\\
+\multicolumn{2}{c}{\rbox{3cm}{pat} } & \rbox{1cm}{loc}    &  \rbox{1cm}{instr}     \\
+\rbox{1cm}{theme}    & \multicolumn{2}{ c }{\rbox{3cm}{goal} } &  \rbox{1cm}{src}      \\
+       & \rbox{1cm}{rec}          &            & \rbox{1cm}{path}     \\
+	& \rbox{1cm}{ben} 	 &            &		\\
+	& \rbox{1cm}{purp} 	 &            &		\\
+	& \rbox{1cm}{exp} 	 &            &		\\
+\end{tabular}
+\end{center}
+\caption{Mapping of case enclitics and semantic roles in Sri Lanka Malay}
+\label{tab:casemappings}
+\end{table}
+
+\subsection{Some complications: Modals, institutions and involitive derivation}
+Verbs are the prototypical assigners of case in all morphosyntactic theories. In Sri Lanka Malay, there are two additional processes which lead to the epxression of case on an NP, and which are unrelated to verbs. These are modals and institutional actors. A third process, involitive derivation, changes the feature [+volition] of a verb to [-volition]. As a process, a former actor will lack volition and will instead be coded as an experiencer. These three cases will now be exemplified in turn. 
+
+Sri Lanka Malay has a lexical category of modals, whose main members are \trs{boole}{can}, \trs{thàrboole}{cannot}, \trs{maau}{want} and \trs{thussa}{want.not}. These words have in common that they assign the infinitive \em mà- \em to their clausal complement, and the dative \em =nang \em to the agent of the verb of their clausal complement. This is exemplified in \xref{ex:modals:boole:noboole} and \xref{ex:modals:boole:boole}. In \xref{ex:modals:boole:noboole}, we see a plain clause without case marking on the NP. In \xref{ex:modals:boole:boole}, where a modal is added, we see that the verb is marked for infinitive with \em mà-\em, and the NP takes the dative marker \em =nang\em. 
+
+\ea\label{ex:modals:boole:noboole}
+\gll Tony arà-nyaanyi\\
+Tony \textsc{nonpast}-sing\\
+`Tony sings.'
+\z
+
+\ea\label{ex:modals:boole:boole}
+\gll Tony=nang mà-nyaanyi boole\\
+Tony=\textsc{dat} \textsc{inf}-sing can\\
+`Tony can sing.'
+\z
+
+When the modal is precliticized, the infinitive marker is dropped.
+
+
+\ea 
+\gll Tony=nang boole-nyaanyi\\
+Tony=\textsc{dat} \textsc{can}-sing\\
+`Tony can sing.'
+\z
+
+In cases like \xref{ex:modals:boole:boole}, the coding of the actor is thus not as expected. Given that the propositional content changes as far as its epistemic value is concerned, we are, however, not dealing with a morphosyntactic alternation expressing the same semantic content, but with a difference in semantic content mirrored by a difference in morphosyntactic encoding. Still, it is important to point out that not all instances of case marking in Sri Lanka Malay are due to the 1:1-mapping argued for above.
+
+Another case where an unrelated process obscures the 1:1-mapping are institutional actors like governments, armies or law enforcement. Institutional actors in Sri Lanka Malay take ablative marking instead of the normal \zero{} marking. This does not depend on the number of arguments the verb takes, and it does also not alter the coding of the remaining arguments. Examples \xref{ex:instit:nom}-\xref{ex:instit:abl} show the difference in encoding of non-institutional and institutional actors. In \xref{ex:instit:nom}, we are dealing with a non-institutional actor, where we find \zero{}-marking. The institutional actor in \xref{ex:instit:abl} receives ablative marking. Again, it is not possible to swap these markings, as this would lead to ungrammaticality.
+
+\ea\label{ex:instit:nom}
+\gll Tony arà-dhaathang\\
+     Tony \textsc{nonpast}-come\\
+    `Tony is coming.' 
+\z
+
+\ea\label{ex:instit:abl}
+\gll Police=dering arà-dhaathang\\
+     police=\textsc{abl} \textsc{nonpast}-come\\
+    `The police are coming.' 
+\z
+
+Note that in the English translation, the difference in institutional status is also reflected, namely in the use of the plural agreement on the verb rather than the singular. Like the modals, institutional actors obscure the direct link between thematic role and morphosyntactic expression, but do not give rise to a free alternation of cases frames, which could be exploited for stylistic purposes for instance.
+
+
+Finally, there is a productive derivational process in Sri Lanka Malay, the so-called `involitive derivation'. The prefix \em kànà\em, when applied to a verb, changes the feature [volition] to [--volition] and makes the new verb assign the dative to a former agent. This is shown in examples \xref{ex:kana:nokana} - \xref{ex:kana:kana}. In \xref{ex:kana:nokana}, the singer is volitional and is \zero{}-marked, whereas in \xref{ex:kana:kana}, he is non-volitional, and is marked with the dative. One can argue that \em kànà-\em changes the semantic role a verb assigns from agent to experiencer, the latter unwilfully taking part in the action.
+
+\ea\label{ex:kana:nokana}
+\gll Tony arà-nyaanyi\\
+     Tony \textsc{nonpast}-sing\\
+     `Tony is singing.'
+\z
+
+\ea\label{ex:kana:kana}
+\gll Tony=nang arà-kànà-nyaani\\
+    Tony=\textsc{dat} \textsc{nonpast}-\textsc{invol}-sing\\
+   `Tony is singing involuntarily/against his will.'
+\z 
+
+
+To sum up this section, case marking in Sri Lanka Malay mainly depends on the lexical verb and the thematic roles it licenses. There is generally a transparent relation between the case selected and the underlying thematic role. This can be obscured by processes unrelated to argument structure, namely modals, institutional actors, and involitive derivation.
+We will now see how these cases are employed in predicates with between zero and four arguments.
+
+\section{Valency patterns}
+
+\subsection{One-place predicates}
+SLM is a role-dominated language with no grammatical relations. The semantic role of a referent is directly reflected in morphosyntax through the case marker selected (See Section \ref{sec:dependentmarking}). One-place-predicates can have their arguments marked with either nominative, accusative, dative, or instrumental. The discussion of case frames will therefore be restricted to these four cases here, setting aside spatial and temporal cases, among others. Cases not assigned by the verb, but by a modal or an `institutional actor' are marked by an asterisk
+
+
+
+\ea \label{ex:oneplaceschema}
+$
+\left[
+\left\{
+\begin{array}{c}
+   \rm NOM\\ 
+   \rm DAT\\
+   \rm ACC\\ 
+   \rm DAT*\\ 
+   \rm ABL* 
+\end{array}
+\right\}
+\right]
+$
+\z
+
+
+As for one-place predicates, nominative is the most common case \xref{ex:val:1:nom}. 
+Dative is assigned for experiencers \xref{ex:val:1:dat}, or if a modal is present in the clause \xref{ex:val:1:mod}. 
+Accusative-marking is very restricted in one-place predicates and has only been found on one verb \trs{thìnggalam}{sink}  \xref{ex:val:1:acc}.
+The instrumental finally is not condintioned by semantic role, but by the nature of the referent: if it is an institution, such as a government or a committee, use the instrumental, otherwise, stick with the semantic role the verb assigns  \xref{ex:val:1:instr}.
+
+\ea\label{ex:val:1:nom}
+\gll Itthukapang      Tony Hassan=\zero{} su-pii. \\ % bf
+      then Tony Hassan \textsc{past}-go \\
+    `Then Tony Hassan left.' (K060116nar09)
+\z
+ 
+\ea\label{ex:val:1:dat}
+\gll Go=\textbf{dang}    karang bannyak thàràsìggar. \\
+     1s.familiar=dat now very sick  \\
+    `I am now very sick.' (B060115nar04)
+\z
+
+\ea\label{ex:val:1:acc}
+\gll {\em Titanic} kappal=\textbf{yang} su-thìnggalam. \\
+     Titanic ship=\textsc{acc} \textsc{past}-sink  \\
+    `The ship ``Titanic'' sank.' (K081104eli05)
+\z
+
+\ea\label{ex:val:1:mod}
+\gll   Kithang=\textbf{nang}   \el{}    {\em two} {\em o'clock}=ke=sangke  bole=duuduk. \\
+      \textsc{1pl}=\textsc{dat} { }    two o'clock=\textsc{simil}=until can-stay  \\
+    `We can stay up until two o' clock.' (K061026rcp04)
+\z
+
+\ea\label{ex:val:1:instr}
+\gll {\em Police}=\textbf{dering} su-dhaathang. \\
+     police=abl \textsc{past}-come  \\
+    `The police came.' (K081105eli02)
+\z
+
+
+
+Overall, nominative marking is by far the most frequent, follow by are well-developed dative for actors lacking volition (see below), mainly experiencers. The accusative is rare, and the instrumental is not conditioned by the verb.
+
+\subsection{Two-place predicates}\label{sec:argstr:Two-placepredicates}
+With two place predicates, we have to distinguish the actor argument and the undergoer argument. The actor can be described in exactly the same way as for one-place predicates: normally, it is encoded in the nominative, but lack of volition or modals in the clause trigger dative marking. Institutional actors take the instrumental. Note that accusative marking for actors is not attested in SLM.\footnote{Accusative marking for actors is found in the adstrate Sinhala \citep[791]{Gair2003}, so that accusative marking for actors is not a completely absurd idea.}
+
+The non-actor argument will normally be in the accusative, although the accusative marker \em =yang \em is often dropped. Recipients and beneficiaries, as well as some rare patients (of the verbs \trs{puukul}{hit}, \trs{thiikam}{stab} \trs{theembak}{shoot}) will also be in the dative. Askees are in the locative.
+
+\ea \label{ex:twoplaceschema}
+$\left[
+\left\{
+ \begin{array}{c}
+  \rm NOM\\
+  \rm DAT*\\
+  \rm ABL*
+ \end{array}
+\right\}
+\left\{
+ \begin{array}{c}
+  \rm NOM\\ 
+  \rm ACC \\ 
+  \rm DAT \\ 
+  \rm ABL \\
+  \rm LOC 
+ \end{array}
+ \right\}
+\right]
+$
+\z
+
+Note that the forces operating on the actor argument (modals, institutions) are independent of the forces operating on the undergoer argument, which is only conditioned by the thematic roles the verb assigns. As a result, any of the 3$\times$5 possible combinations in \xref{ex:twoplaceschema} is grammatical.
+
+I will not illustrate the different possibilities for actors here, as these are identical to what has been said above for one-place arguments. As far as the undergoer argument is concerned, it can be marked as 
+nominative \xref{ex:val:2:nomnom} or 
+accusative \xref{ex:val:2:nomacc}.
+
+
+\ea\label{ex:val:2:nomnom}
+\gll Baapa$_{A}$   derang=pe     kubbong=ka   hatthu pohong$_{P}$=\zero{} nya-poothong. \\
+      father \textsc{3pl}=\textsc{poss} garden=\textsc{loc} \textsc{indef} tree \textsc{past}-cut \\
+    `My father cut a tree in their garden.' (K051205nar05)
+\z
+
+\ea\label{ex:val:2:nomacc}
+\gll  Ithukapang       lorang=pe     leher$_{P}$=(\textbf{yang})  kithang$_{A}$=\zero{} athi-poothong. \\
+      then \textsc{2pl}=\textsc{poss} neck=\textsc{acc} \textsc{1pl} \textsc{irr}-cut \\
+    `Then we will cut your neck.' (K051213nar06)
+\z
+
+
+Dative marking of the undergoer argument is also found, but refers to three semantically distinct concepts: some patients are marked with the dative, as explained above. An examples for this is given in \xref{ex:val:2:nomdat:p}.
+
+\ea\label{ex:val:2:nomdat:p}
+\gll   Rose-red$_{A}$=\zero{} buurung$_{P}$=\textbf{nang}   su-puukul. \\
+      Rose-red bird=\textsc{dat} \textsc{past}-hit \\
+    `Rose-red hit the bird.' (K070000wrt04)
+\z
+
+
+If a modal is present in a clause with a verb which already assigns dative to the non-actor, both actor and non-actor will be marked with the dative, giving rise to ambiguity.
+ 
+\ea\label{ex:val:2:datdat:mod}
+\gll Se$_{A}$=\textbf{dang} Farook$_{P}$=\textbf{nang} bole=puukul. \\
+     \textsc{1s=dat} Farook=\textsc{dat} can=hit  \\
+    `I can hit Farook.' (K081104eli05)
+\z 
+
+In those cases, the actor is normally associated with the leftmost argument, as in \xref{ex:val:2:datdat:mod}, while the undergoer is the other argument. When using pointing gestures, this can be overruled, as in \xref{ex:val:2:datdat:mod:point}.
+
+\ea\label{ex:val:2:datdat:mod:point}
+\gll Ini kaaka$_{A/P}$=nang itthu kaaka$_{P/A}$=nang bole=puukul. \\
+     \textsc{prox} elder.brother=\textsc{dat} \textsc{dist} elder.brother=\textsc{dat} can=hit  \\
+    `This brother can hit that brother.'
+    `That brother can hit this brother.' (K081104eli05)
+\z
+ 
+A more typical use of the dative is the marking of beneficiaries, as in \xref{ex:val:2:nomdat:b}. Recipients are not found in two-place predicates, since they necessarily involve an item received, and therefore are three-place predicates.
+
+\ea\label{ex:val:2:nomdat:b}
+\gll Derang pada=\zero{}$_{A}$ arà-banthu cinggala  raaja=\textbf{nang}$_{R}$. \\
+     \textsc{3pl} \textsc{pl} \textsc{non.past}-help Sinhala king=\textsc{dat}  \\
+    `They help the Sinhalese king.' (K051206nar03)
+\z
+
+Finally, goal of  motion is also marked with the dative (\ref{ex:val:2:nomdat:g}b).
+
+
+
+\ea\label{ex:val:2:nomdat:g}
+\ea
+\gll Guunung$_{L}$=\textbf{ka}=jo kithang$_{A}$ arà-duuduk;  \\
+      mountain=\textsc{loc}=\textsc{emph} \textsc{1pl} \textsc{non.past}-stay \\
+    `It is in the hills that we live,' 
+\ex
+\gll guunung$_{G}$=\textbf{nang}=jo kithang$_{A}$ arà-pii.\\
+    mountain=\textsc{dat}=\textsc{emph} \textsc{1pl} \textsc{non.past}-go \\
+    `it is to the hills that we go.' (B060115prs01)
+\z
+\z
+
+Example \xref{ex:val:2:nomdat:g} also serves to illustrate the use of the locative in two-place predicates, in this case \trs{duuduk}{reside}.
+ 
+% Another use of the locative is to mark the askee of a question.
+% \ea\label{ex:val:2:nomloc:q}
+% \gll \\
+% \\
+% `.'
+% \z
+% 
+% The askee of a question can also be marked with the ablative.
+% 
+% \ea\label{ex:val:2:nomabl:q}
+% \gll \\
+% \\
+% `.'
+% \z
+
+The ablative is used with two-place predicates to encode the source of motion, as in \xref{ex:val:2:nomabl:src}.
+
+\ea\label{ex:val:2:nomabl:src} 
+\gll Spaaru$_{A}$  Indonesia$_{SRC}$=dering      dhaathang aada. \\
+some Indonesia=\textsc{abl} come exist \\
+`Some came from Indonesia.' (K060108nar02)
+\z
+
+Another use of the ablative, namely instrument, is rarer two-place predicates, since an instrument normally requires an additional participant to manipulate, so that we are dealing with at least three participants, which is the topic of the next section. An exception to this generalization is \xref{ex:val:2:nomabl:instr} , where we find two uses of instruments in the act of playing.
+ 
+\ea\label{ex:val:2:nomabl:instr} 
+\gll \zero$_{A}$ Thaangang$_{INSTR}$=\textbf{dering} bukang kaaki$_{INSTR}$\textbf{=dering} masà-maayeng. \\
+      { } hand=\textsc{abl} \textsc{neg.nonv} leg=\textsc{abl} must-play \\
+    `You must play not with the hands, but with the feet.' (N060113nar05)
+\z 
+
+ 
+
+
+% Institutional actors take the instrumental as usual. The other argument can be marked with \em =yang \em \xref{ex:pred:argstr:2:instracc}, or bear no marking \xref{ex:pred:argstr:2:instrzero}.
+% 
+% \ea\label{ex:val:2:instracc:p}
+% \gll See=\textbf{yang} {\em police}\textbf{=dering} nya-preksa. \\
+%      \textsc{1s}=\textsc{acc} police=\textsc{abl} \textsc{past}-enquire  \\
+%     `The police questioned me.' (K051213nar01)
+% \z
+% 
+% \ea\label{ex:val:2:instrzero:p}
+% \gll {\em British}  Government=\textbf{dering}   {\em Malaysia} Indonesia,   inni nigiri pada=\zero{}    samma peegang. \\
+%     British Government=\textsc{abl}  Malaysia Indonesia \textsc{prox} country \textsc{pl}  all catch\\
+%    `The British Government captured Malaysia and Indonesia,  those countries.' (K051213nar06)
+% \z
+% 
+% When modal proclitics are considered, the actor can receive dative marking. In \xref{ex:pred:argstr:2:zerodat:baaca}, \trs{kithang}{we} receives dative marking and the theme of reading, \trs{mulbar}{Tamil}, is zero-marked.
+%  
+% \ea\label{ex:val:2:datzero:mod}
+% \gll Kithang=\textbf{nang} baaye=nang mulbar=\zero{} bole=baaca. \\
+%       \textsc{1pl}=\textsc{dat} good=\textsc{dat} Tamil can=read \\
+%     `We can read Tamil well.'  (K051222nar06)
+% \z     
+% 
+% Accusative marking of the undergoer is still possible when a modal proclitic is used. This is found for instance in \xref{ex:pred:argstr:2:accdat:aathi}.
+%  
+% \ea\label{ex:val:2:datacc:mod}
+% \gll   aathi=\textbf{yang} sajja hatthu oorang=\textbf{nang} bole=ambel. \\
+%         liver=\textsc{acc} only one man=\textsc{dat} can-take \\
+%     `Only one person can take the liver.'
+% \z 
+
+We have assumed that the actor always is in the nominative in the examples above, barring presence of modals or institutional actors. With experiencer verbs, the actor/experiencer can actually be in the dative, and the undergoer/stimulus either in the nominative
+or in the accusative. 
+
+\ea\label{ex:val:2:datnom}
+\gll [svaara$_{ST}$ hatthu]=\zero{}  derang$_{EXP}$=\textbf{nang}   su-dìnngar. \\
+     noise \textsc{indef} \textsc{3pl}=\textsc{dat} \textsc{past}-hear  \\
+    `They heard a noise.' (K070000wrt04)
+\z
+
+\ea\label{ex:val:2:datacc}
+\gll se=dang$_{EXP}$ ini oorang$_{T}$=yang thaau\\
+1s=\textsc{dat} \textsc{prox} man=\textsc{acc} know \\
+`I know this man.'
+\z
+
+%  (and a common South Asian construction  \citep[159ff]{Masica1976}).
+
+
+
+To sum up, two-place predicates normally have zero-marked actors, and undergoers are either marked for accusative or dative, with locative and ablative being more marginal possibilities. In special cases, actors can be marked for dative. 
+% All case markers can optionally be dropped \citep{Ansaldo2005ms, Ansaldo2008genesis, Ansaldo2009book}.
+
+% G051222nar01.txt:\tx se=dang se=ppe    biinile      thiiga
+% G051222nar01.txt:\tx aanak pada araduuduk
+
+
+\subsection{Three-place predicates}\label{sec:argstr:Three-placepredicates}
+Three-place predicates are typically predicates of transfer, i.e. giving and taking away. As such, they include an agent, a theme, and a goal (or source). The agent is typically in the nominative, although modals in the sentence can change this to dative, and institutional agents trigger instrumental marking, as always.  The theme is either unmarked (=nominative) or in the accusative. Recipients are marked by the dative, and sources by the ablative. This is schematized in \xref{ex:threeplaceschema}.
+
+
+\ea \label{ex:threeplaceschema}
+$
+\left[
+\left\{\begin{array}{c}\rm NOM \\ \rm DAT*\\ \rm ABL* \end{array}\right\}
+\left\{\begin{array}{c}\rm NOM \\ \rm ACC  \end{array}\right\}
+\left\{\begin{array}{c}\rm DAT \\ \rm ABL  \end{array}\right\}
+\right]
+$
+\z
+
+
+The following examples illustrate these patterns for the verb \trs{kaasi}{give}.
+
+\ea 
+\gll Se=ppe    baapa$_{A}$=\zero{}  incayang$_{R}$=\textbf{nang}    ummas$_{T}$=\zero{} su-kaasi. \\
+      \textsc{1s}=\textsc{poss} father \textsc{3s.polite}=\textsc{dat} gold \textsc{past}-give\\
+    `My father gave him gold.'  (K070000wrt04)
+\z   
+
+\ea
+\gll  \zero$_{A}$ incayang$_{R}$=nang    [{\em appointed} {\em member}=pe     hathu  thumpathan]$_{T}$=yang   anà-kaasi. \\
+      { } \textsc{3s.polite}=\textsc{dat} appointed member=\textsc{poss} \textsc{indef} post=\textsc{acc} government=\textsc{loc} \textsc{past}-give \\
+    `(They) gave him a post as appointed member in the government.' (N061031nar01)
+\z
+ 
+
+% \ea
+% \gll Derang=pe umma$_{A}$=\zero{}   derang$_{R}$=\textbf{nang}  [jaithan=\zero=le,  jaarong  pukurjan=\zero=le]$_{T}$      su-aajar. \\
+%      \textsc{3pl}=\textsc{poss}  mother \textsc{3pl} sewing=\textsc{addit} needle work=\textsc{addit} \textsc{past}-teach \\
+%     `Their mother taught them sewing and needle work.' (K070000wrt04)
+% \z
+
+% \ea 
+% \gll {\em Police}=\textbf{dering} see=\textbf{yang} {\em remand}=nang su-kiiring. \\
+%      police=abl \textsc{1s}=\textsc{acc} remand=\textsc{dat} \textsc{past}-send  \\
+%     `The police sent me into custody.' (K081105eli02)
+% \z
+
+% \ea
+% \gll Kithang=\textbf{nang} miskin pada=nang duvith bole=kaasi. \\
+%      \textsc{1pl}=\textsc{dat} poor \textsc{pl}=\textsc{dat} money can=give  \\
+%     `We can give money to the poor.' (K081104eli05)
+% \z
+
+\subsection{Four-place predicates}
+Four-place predicates nearly exclusively involve transfer of a theme from a source to a goal. As such the typical case frame is [NOM ACC ABL DAT]. An example is \xref{ex:args:4}. The accusative marker can be dropped as usual.
+
+
+\ea \label{ex:fourplaceschema}
+$
+\left[
+\left\{\begin{array}{c}\rm NOM \\ \rm DAT*\\ \rm ABL* \end{array}\right\}
+\left\{\begin{array}{c}\rm NOM \\ \rm ACC  \end{array}\right\}
+\rm DAT
+~
+\rm ABL
+\right]
+$
+\z
+
+\ea\label{ex:args:4}
+\gll Itthu    baathu$_{T}$=\textbf{yang}    incayang$_{A}$=\zero{} Seelong$_{SRC}$=\textbf{dering} laayeng nigiri$_{R}$=\textbf{nang} asà-baapi. \\
+ \textsc{dist} stone=\textsc{acc} \textsc{3s.polite} Ceylon-\textsc{abl} other country=\textsc{dat} \textsc{cp}-bring\\
+`These stones, he brought them from Ceylon to other countries.' (K060103nar01)
+\z
+
+
+\subsection{Summary of valency structure}\label{sec:argstr:Summaryofargumentrstructure}
+To sum up the repartition of zero, accusative, dative and instrumental, on the roles of S, A, P and R, the following can be said:
+% \footnote{The Sinhala facts are very similar to this. This was found out only after writing this chapter. See \citet{Gair1976sinhalasubject,Gair1991infl,Henadeerage2002}.}
+
+\begin{itemize}
+ \item The dative marker can be found on R and P. Additionally, it can be found on S and A if they are experiencers. Furthermore, modals can assign the dative to S or A
+ \item The accusative marker can be found on P and in rare instances on S
+ \item The ablative marker can be found on S and A when they are institutional. It can furthermore be found on instruments and sources, widely construed.
+ \item Zero can be found on S, A and P. Zero is never found on R.
+\end{itemize}
+
+\section{Alternations}
+\subsection{Uncoded alternations: Case}\label{sec:casealternations}
+The case to use in a given context is pretty much fixed in Sri Lanka Malay. There is normally no choice to use one marker or another. One instance where more than one case is available to encode the same content is the choice between dative and locative for goal of motion.
+
+\ea
+  \ea
+  \gll Tony Kluu\umb{}u=\textbf{nang} su-pii\\
+  Tony Colombo=\textsc{dat} \textsc{past}-go\\
+  `Tony went to Colombo.'
+  \ex
+  \gll Tony Kluu\umb{}u=\textbf{ka} su-pii\\ 
+  Tony Colombo=\textsc{loc} \textsc{past}-go\\
+  `Tony went to Colombo.'
+  \z
+\z
+
+
+
+This is a systematic alternation in Sri Lanka Malay. Goal of motion may be either expressed by \em =nang\em, as it were the recipient of the motion, or by \em =ka\em, like stative location. There seems to be free variation between the two forms. Also, there are otherwise no morphosyntactic repercussions of choosing one form over another. 
+This contrasts with the English passive for instance, where a different encoding of the patient triggers different encoding of the agent, and a difference in voice marking as well. 
+
+A second alternation, even more restricted, is the choice between locative and ablative for the verb \trs{mintha}{ask}. The ablative is normally used when the item requested is tangible, whereas the locative is used when information is requested.
+
+For all other semantic roles, the mapping is deterministic. What you see in semantics is what you get in morphosyntax, and there is no way to change this.
+
+Depending on the analysis of the accusative marker \em =yang\em, one could argue that there is a alternation between \zero{}-marked nominative and \em =yang\em-marked accusative for certain verbs. 
+
+\ea 
+\gll Baapa   derang=pe     kubbong=ka   hatthu pohong=\zero{} nya-poothong. \\
+      father \textsc{3pl}=\textsc{poss} garden=\textsc{loc} \textsc{indef} tree \textsc{past}-cut \\
+    `My father cut a tree in their garden.' (K051205nar05)
+\z
+
+\ea 
+\gll  Ithukapang       lorang=pe     leher=(\textbf{yang})  kithang=\zero{} athi-poothong. \\
+      then \textsc{2pl}=\textsc{poss} neck=\textsc{acc} \textsc{1pl} \textsc{irr}-cut \\
+    `Then we will cut your neck.' (K051213nar06)
+\z
+
+An analysis involving the optionality of \em =yang\em, which only surfaces in order to disambiguate, seems to be the better solution, though. 
+
+
+ 
+\subsection{Coded alternations: Verb}
+
+Sri Lanka Malay is not a language with strict subcategorization for the number of arguments a verb takes. It is always possible to drop arguments, and in most cases, it is possible to add arguments without further ado. There are a number of additional morphosyntactic devices which are related to the number of arguments a verb takes and which will be discussed in this section. These devices comprise the causative suffix, the prefix \em kasi- \em and the postverbal `vector verbs' \trs{kaasi}{give} and \trs{ambel}{take}.
+
+\subsubsection{Causative -king}
+The most trivial case is the causative morpheme \em -king \em with the allomorph \em -kang\em. This morpheme attaches to a verb or an adjective and introduces and additional causer, who causes the initial actor to take part in the event denoted by the predicate. Examples \xref{ex:king:adj1}-\xref{ex:king:tr} show this for an adjective, an `intransitive' verb and a `transitive' verb.
+
+\ea \label{ex:king:adj1}
+\gll Itthuka asà-thaaro, itthu=yang arà-\textbf{panas}$_{adj}$\textbf{-king}. \\
+      \textsc{dist}=\textsc{loc} \textsc{cp}-put \textsc{dist}=\textsc{acc} \textsc{non.past}-hot-\textsc{caus} \\
+    `Having put (it) there, you heat it.'  (B060115rcp02)
+\z
+
+\ea \label{ex:king:intr}
+\gll Inni=ka inni daalang=ka kithang aayer masà-\textbf{mlidi}$_{v.intr}$\textbf{-king}. \\ % bf
+  \textsc{prox}=\textsc{loc} \textsc{prox} inside=\textsc{loc} \textsc{1pl} water must=boil-\textsc{caus}     \\
+    `On this, inside this, we must boil water/bring the water to a boil.'  (B060115rcp02)
+\z
+
+\ea \label{ex:king:tr}
+\gll De laaye hathu nigiri=nang anà-baapi, \textbf{buunung}$_{v.tr}$\textbf{-king}=nang. \\ % bf
+      3\textsc{s.impolite} other \textsc{indef} country=\textsc{dat} \textsc{past}-bring kill-\textsc{caus}=\textsc{dat}\\
+    `They brought him to another country to have him executed.'  (K051206nar02)
+\z
+
+\subsubsection{Prefix \em kasi-\em}
+There are two, possibly three, verbs in Sri Lanka Malay which can be argued to involve a valency-changing derivation with the element \em kasi\em, related to \trs{kaasi}{give} \citep{Nordhofffcsvc}. These are \trs{kasithaau}{inform}  from \trs{thaau}{know}, \trs{kasikaaving}{to give in marriage} from \trs{kaaving}{marry}, and \trs{kasikìnnal}{introduce} from \trs{kìnnal}{know, be acquainted}. In all the three cases, a recipient is added as a new semantic role. Recipients are not among the roles the verbs without \em kasi \em assign. The morpheme \em kasi- \em is the mechanism closest to a valency-changing device Sri Lanka Malay has, but, as stated above, it is limited to a handful of verbs and probably lexicalized.
+
+\subsubsection{Vector verb \em kaasi\em}
+At first sight, there is another process which seems to add a beneficiary, the vector verb \trs{kaasi}{give}. Note that this form is obviously etymologically related to the form just discussed, but has a long vowel and occurs after the verb it modifies, not before.
+
+Combinations of V+\em kaasi \em are used to mark beneficiaries as in \xref{ex:valencychange:kaasi:biilang}, where the fact of receiving explanations is highlighted as beneficial. Related constructions in Sinhala and Tamil have been termed `alterbenefactive' \citep[227]{Lehmann1989tamil}.
+
+\ea\label{ex:valencychange:kaasi:biilang}
+   \gll Kithang=pe     ini      {\em younger} {\em generation}=nang=jo     konnyong masà-\textbf{biilang} \textbf{kaasi}, masà-aajar. \\
+    \textsc{1pl}=\textsc{poss} \textsc{prox} younger generation=\textsc{dat}=\textsc{emph} few must-say give must-teach\\
+ `It is to the younger generation that we must explain it, must teach it.' 
+\z
+
+The question which arises is whether \em kaasi \em changes the valency structure of the verb it modifies. Already example \xref{ex:valencychange:kaasi:biilang} suggests that this is unlikely. The verb \trs{biilang}{say} typically takes three arguments, a speaker, a message, and an adressee. This fact does not change through the addition of \em kaasi \em in \xref{ex:valencychange:kaasi:biilang}. This is even clearer in \xref{ex:valencychange:kaasi:aajar}. \em Kaasi \em could be thought to increase valency, but example \xref{ex:valencychange:kaasi:aajar} shows that it does in fact not have any influence on the quantity of arguments.
+
+\ea\label{ex:valencychange:kaasi:aajar}
+\gll Itthu muusing,  [Islam igaama  nya-\textbf{aajar} \textbf{kaasi} \zero{}] Jaapna  Hindu {\em teacher}. \\
+      \textsc{dist} time Islam religion \textsc{past}-teach give { } Jaffna Hindu teacher \\
+    `At that time, those who taught Islamic religion were Hindu teachers from Jaffna.' (K051213nar03)
+\z
+
+The verb \trs{aajar}{teach} has already three argument before derivation, an agent, a theme, and a recipient/beneficiary. The same three roles are present after \em kaasi \em is added, but the beneficial component is highlighted. It is impossible to claim that \em kaasi \em adds an argument to \em aajar\em, since the number of arguments does not change. Furthermore, we also note that the quality of arguments does not change: the semantic roles are exactly idendtical, with the proviso that the ambiguous status of recipient/beneficiary is definitely changed to beneficiary in the \em kaasi\em-clause. This semanitc difference, however, is not discernible in case-marking since both recipients and beneficiaries are marked by the dative.
+
+
+\subsubsection{Vector verb \em ambel\em}
+Next to the vector verb \trs{kaasi}{give}, we also find the vector verb \trs{ambel}{take}, which is in a number of respects the opposite of \em kaasi\em. \em Kaasi \em highlights the alterbenefactive aspect of a certain event; \em ambel \em highlights the self-beneficial aspect.\footnote{There
+  are other usages of \em ambel \em which will not be discussed here. The reader is referred to \citet{Nordhoff2009phd} and \citet{Nordhofffcsvc}.}
+An example  is \xref{ex:vector:ambel:ambel}, where the normally neutral action of catching is marked as self-benefactive. 
+
+\ea\label{ex:vector:ambel:ambel}
+\gll {\em British} government {\em Malaysia} Indonesia ini nigiri pada samma anà-\textbf{peegang} \textbf{ambel}. \\
+     British government Malaysia Indonesia \textsc{prox} country \textsc{pl} all \textsc{past}-catch take. \\
+    `The British government captured Malaysia, Indonesia, all these countries.' (K051213nar06,K081104eli06)% optional
+\z
+
+Compare this to \xref{ex:vector:ambel:noambel}, where the action is not beneficial, and \em ambel \em is absent.
+
+\ea\label{ex:vector:ambel:noambel}
+\gll \zero{} {\em Heart} attack asà-\textbf{peegang},   baapa=le       su-nii\u n\u ggal. \\
+      {  } heart attack \textsc{cp}-catch father=\textsc{addit} \textsc{past}-die\\
+    `(My father) got a heart attack and died as well.' (K051205nar05,K081104eli06)% ambel not possible
+\z
+
+Note that neither the number of arguments nor their morphosyntactic coding change with regard to the sentence without \em ambel\em, showing that self-benefactive \em ambel \em triggers no morphosyntactic changes.
+
+The last process, related to self-benefactive \em ambel\em, is reflexive \em ambel\em. This is often found together with the emphatic clitic \em =jo\em, although this is optional.
+
+
+\ea \label{ex:vector:ambel:refl}
+\gll Incayang incayang=\textbf{yang}(=jo) su-buunung \textbf{ambel}. \\
+       \textsc{3s.polite} \textsc{3s.polite}=\textsc{acc}=\textsc{emph} \textsc{past}-kill take \\
+    `He killed himself.' (K081106eli01) %ambel must be there
+\z
+
+
+The question is again whether this changes the quantity or quality of arguments. The answer is again negative. Even when \em ambel \em or \em =jo \em are present, it is possible to express both the agent and the patient, as shown in \xref{ex:vector:ambel:refl}. This is normally not done for obvious pragmatic reasons of economy.
+
+We can say that the sentence in \xref{ex:vector:ambel:refl} has an agent NP and a patient NP just like its non-reflexive counterpart, e.g. \xref{ex:vector:ambel:contr}.
+
+\ea\label{ex:vector:ambel:contr}
+\gll Kaake baapa=yang su-buunung. \\
+      grandad father=\textsc{dat} \textsc{past}-kill \\
+    `His grandad  killed his father.'   (K081103eli04)
+\z
+
+These NPs in \xref{ex:vector:ambel:refl} and \xref{ex:vector:ambel:contr} are marked in the same way, so that there is no reason to suspect morphosyntactic reflexes of valency structure.
+
+The best candidates for valency-changing operations, \em kasi\em-V, V \em kaasi\em, and \em V ambel \em were discussed in this section. The first of these operations might be seen as valency-changing, but is restricted to three lexemes. The remaining two looked promising at first sight, but had to be discarded after closer scrutiny because they affected neither quantity nor quality of arguments.
+
+
+\subsection{Other alternations}
+ 
+Sri Lanka Malay can drop any NP if its recoverable from context. This means that it is perfectly normal for a three-place verb like \trs{kaasi}{give} to be uttered in isolation as in \xref{ex:prodrop:kaasi}.
+
+\ea \label{ex:prodrop:kaasi}
+\gll su-kaasi\\
+ \textsc{past}-give\\
+`X gave Y to Z (and, you, my dear interlocutor will surely be smart enough to figure out who X, Y, and Z are)'.
+ \z
+
+It is clear that there are no slots which obligatorily have to be filled in Sri Lanka Malay. As such, the question arises how a sentence like \xref{ex:prodrop:kaasi} can be distinguished from a sentence like \xref{ex:prodrop:uujang}.
+
+\ea\label{ex:prodrop:uujang}
+\gll su-uujang\\
+   \textsc{past}-rain\\
+  `(It) rained.'
+\z
+
+The overt morphosyntactic structure is exactly parallel. Where the two sentences \xref{ex:prodrop:kaasi} and \xref{ex:prodrop:uujang} can be distinguished is by the possibility to add new referents. This is patently simple for \xref{ex:prodrop:kaasi}, see \xref{ex:prodrop:kaasi:extrareferents}, but nigh impossible for \xref{ex:prodrop:uujang} barring very contrived contexts.
+
+\ea\label{ex:prodrop:kaasi:extrareferents}
+\gll Tony kaake=nang ini car=yang su-kaasi\\
+   Tony grandfather=\textsc{dat}  \textsc{prox} car=\textsc{acc} past-give\\
+`Tony gave this car to Grandfather.'
+\z
+
+While it is very difficult to add more referents to \trs{uujang}{rain}, similar problems are not found with \trs{kaasi}{give}. The question arises whether the (im)possibility to add new referents might not be a better cue to case frame membership than the (im)possibility to leave out certain referents.
+
+Taking a look at a prototypical transitive predicate like \trs{poothong}{cut}, it is immediately obvious that referents bearing the dative and the ablative can be added without problems. The normal transitive sentence in \xref{ex:proaddition:plain} can be made to accommodate four NPs. The resulting sentence is \xref{ex:proaddition:added}  and is as such then indistinguishable in argument structure from \xref{ex:args:4}.
+
+\ea\label{ex:proaddition:plain}
+\gll Tony ini daaging=yang arà-poothong \\
+     Tony \textsc{prox} meat=\textsc{acc} \textsc{nonpast}-cut\\
+    `Tony cuts this meat.'
+\z
+
+\ea\label{ex:proaddition:added}
+\gll Tony piiso=dering ini daaging=yang   kaake=nang arà-poothong\\
+    Tony knife=\textsc{abl} \textsc{prox} meat=\textsc{acc}  grandfather=\textsc{dat} \textsc{nonpast}-cut\\
+    `Tony cuts this meat for his grandfather with a knife.'
+\z
+
+NPs referring to space or time can also be added to the sentence without problems, a fact which is little surprising. All predicates can accommodate a phrase like \trs{Kluu\umb u=ka}{in Colombo} or \trs{soore=ka}{in the evening}. Out of the case markers surveyed in this chapter (\trs{=yang}{acc},\trs{=nang}{dat},\trs{=ka}{loc},\trs{=dering}{abl}), there is only one which cannot be added to a predicate without further ado: the accusative marker \em =yang\em. Augmenting a predication with beneficiaries, instruments, locations and points in time is no problem, but adding an extra patient is extremely difficult. This clear separation, and the absence of similar patterns elsewhere, suggests that SLM verbs can be divided into two-classes: those which can take an argument with \em =yang \em (but might drop it), and those which never can take such an argument. This is the main difference made in the SLM lexicon as far as verbs go. These two classes will now be surveyed in turn.
+
+\section{Verb classes in Sri Lanka Malay}
+\subsection{Verbs taking \em =yang\em}
+These are verbs which have semantic component of affectedness in them, and which thus assign a patient. Patient-taking verbs can be intransitive, like \trs{thìnggalam}{sink}, transitive like \trs{poothong}{cut}, ditransitive like \trs{kaasi}{give} or tritransitive like \trs{kiiring}{send}.
+
+\subsection{Verbs not taking \em =yang \em}
+These are verbs which either do not have any connection with affectedness at all in their meaning (\trs{dhaathang}{come}), or whose affected argument is conceived of as a recipient rather than a patient in Sri Lanka.\footnote{Sinhala 
+ aligns with SLM in this respect. See \citet[36,92]{Garusinghe1962} and \citep[18f]{Gair1991infl}. The behaviour of Tamil dialects in Sri Lanka is understudied and cannot be commented on here.
+} 
+This set comprises atransitive verbs like \trs{uujang}{rain}, intransitive verbs like \trs{laari}{run}, and transtive verbs like \trs{maaki}{scold}. Verbs with three or more places typically involve a patient or a theme and hence show a possibility to include \em =yang\em-phrases. Themes are normally marked by \zero{}, but by choosing a referent ranging high on the scales of animacy, definiteness, individuatedness, and topicality, \em =yang\em-marking becomes an option.
+
+Verbs not taking \em =yang \em can be derived by the causativizer \em -king \em and then allow the use of \em =yang\em.
+
+
+\section{Conclusion}  
+Grammatical information which is non-predictable and arbitrary is stored in the lexicon. The English lexicon has to store that \em eat \em can have one or two arguments, but that \em devour \em has exactly two. The intransitive option is not available for this verb. What is there to store in the SLM lexicon, and in how far does it inform our theorizing about valency? It is clear that the minimal number of argument slots is not an important category in SLM. In discourse, the number of arguments is quite low due to the frequent dropping of whole NPs. Any verb in SLM can be used with 0 realized arguments without leading to ungrammaticality. The maximum number of arguments an SLM verb can take is not important either. In English, verbs like \em hesitate \em do not take any non-actor argument, despite semantically plausible interpretations of a string like \em I hesitate the decision \em being available without causing too much of a headache.
+In SLM, NPs taking the dative \em =nang \em or the ablative \em =dering \em can always be added. This shows that the number of arguments any verb can take is always between 0 and at least 3.\footnote{We 
+ exclude the meteorological verb \trs{uujang}{rain} for the moment, where one could think of a context with an instrument and a beneficiary, but will need a lot of time of convincing speakers of the acceptability of this context.}
+The distinction between intransitive, transitive and ditransitive is thus not an important one in Sri Lanka Malay, and in fact, the presentation above structured into 0-place up to 4-place arguments is more an expository device than a solid fact about the language. The assignment of verbs into any of those four categories was based on their translational equivalents in English; I am not aware of any morphosyntactic test in SLM to arrive at a similar qualification.
+
+The quantity of arguments is thus not what speakers have to store in the lexicon, since this is basically only constrained by semantic plausibililty, which is found in knowledge of the world, or the `encyclopedia'. What must be stored in the lexicon, however, is the quality of arguments in some cases. Very often, the arguments simply match what semantics would predict (dative for recipient, ablative for instrument), but especially for the \em =yang\em-cases, there is a certain degree of arbitrariness. For instance, the intransitive verb \trs{thìnggalam}{sink} takes \em =yang\em-marking, while the semantically very similar verb \trs{jaatho}{fall} does not and governs a \zero{}-marked NP, in other words a nominative. Furthermore, the transitive verb \trs{giigith}{bite} takes a \em =yang\em-marked NP, while the semantically similar \trs{thiikam}{stab} takes an NP marked for dative by \em =nang\em.
+
+But does this knowledge need to be stored in the lexicon? Above, I have argued that the special dative marking for the three transitive verbs \trs{thee\umb ak}{shoot}, \trs{puukul}{hit}, and \trs{thiikam}{stab} is in fact not a case of lexical irregularity, but instead a case of different conceptualization of the world. As far as the worldview of the SLM speakers goes, and different from Middle European views, these actions do not take a patient, but a recipient of the damage inflicted. This is thus knowledge about the world, and not linguistic knowledge. The mapping of this world knowledge upon linguistic structures is then straightforward.
+
+What SLM speakers need to know in order to produce the right case frames in their language is thus the knowledge of which actions require which semantic role, encyclopedic knowledge. The mapping of these semantic roles upon morphosyntax is then trivial and does not need recourse to the lexicon.
+
+A first presentation of the content of this paper was given in Leipzig in August 2010 \citep{Nordhoff2010valency}. It was entitled `No valency classes in SLM'. The reason for this was that there is basicaly no argument/adjunct-distinction. Furthermore, everything can be done with encyclopedic knowledge in this language as far as case frames are concerned. Since then, I have realized that SLM verbs can be partitioned in meaningful classes on the basis of the cases which occur with these verbs. The repartition of verbs into these classes can lead to interesting questions, e.g. why are \trs{banthu}{help} and \trs{puukul}{hit} in the same [NOM DAT]-class? So, SLM verbs do fall into classes, but these classes are direct reflexes of semantics, and there is no need to explain a grammatical phenomenon in terms of morphosyntax or lexical subcategorization if a semantic explanation is readily available. For these reasons I conclude that the grammatical category of syntactic valency is meaningless in the context of SLM studies, but that semantic valency can fruitfully be investigated and lead to interesting results.
+
+
+\bibliographystyle{natuva}
+\bibliography{ansaldo,asw,creole,india,malay,sinhala,tamil,islam,sociolgstcs,lgctct,lgchg,lankahist,fieldwork,phon,wortarten,grammaticalization,activestative,grammars,nordhoff}
+
+\end{document}

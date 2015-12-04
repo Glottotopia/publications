@@ -1,0 +1,307 @@
+\begin{thebibliography}{53}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Ameka et~al.(2006)Ameka, Dench \& Evans}]{AmekaEtAl2006}
+\textsc{Ameka}, F., A.~\textsc{Dench} \& N.~\textsc{Evans} (eds.)  (2006).
+\newblock \emph{Catching Language -- The standing challenge of grammar
+  writing}.
+
+\bibitem[{Bloomfield(1962)}]{Bloomfield1962}
+\textsc{Bloomfield}, L. (1962).
+\newblock \emph{The Menomini Language}.
+\newblock New Haven, London: Yale University Press.
+
+\bibitem[{Bow et~al.(2003)Bow, Hughes \& Bird}]{BowEtAl2003}
+\textsc{Bow}, C., B.~\textsc{Hughes} \& S.~\textsc{Bird} (2003).
+\newblock \enquote{Towards a general model for interlinear text}.
+\newblock \emph{Proceedings of the EMELD Language Digitization Project
+  Conference}.
+\newblock
+  \urlprefix\url{http://www.linguistlist.org/emeld/workshop/2003/bowbadenBird-%
+paper.pdf}.
+
+\bibitem[{Buechel(1939)}]{Buechel1939}
+\textsc{Buechel}, E. (1939).
+\newblock \emph{A Grammar of Lakota}.
+\newblock Rosebud: Rosebud Educational Society.
+
+\bibitem[{Comrie(1998)}]{Comrie1998}
+\textsc{Comrie}, B. (1998).
+\newblock \enquote{Ein Strukturrahmen für deskriptive Grammatiken: Allgemeine
+  Bemerkungen}.
+\newblock In  \cite{Zaefferer1998ed}, pp. 7--16.
+
+\bibitem[{Cristofaro(2006)}]{Cristofaro2006}
+\textsc{Cristofaro}, S. (2006).
+\newblock \enquote{The organization of reference grammars: a typologist user's
+  point of view}.
+\newblock In  \cite{AmekaEtAl2006}, pp. 137--170.
+
+\bibitem[{Croft(2001)}]{Croft2001rcg}
+\textsc{Croft}, W. (2001).
+\newblock \emph{Radical Construction Grammar}.
+\newblock Oxford: OUP.
+
+\bibitem[{Culicover \& Jackendoff(2005)}]{CulicoverEtAl2005}
+\textsc{Culicover}, P. \& R.~\textsc{Jackendoff} (2005).
+\newblock \emph{Simpler Syntax}.
+\newblock Oxford: OUP.
+
+\bibitem[{Drude(2002)}]{Drude2002}
+\textsc{Drude}, S. (2002).
+\newblock \enquote{Advanced glossing -- A language documentation format and its
+  implementation with Shoebox}.
+\newblock In \textsc{Austin}, P., H.~\textsc{Dry} \& P.~\textsc{Wittenburg}
+  (eds.) \enquote{Proceedings of the International LREC workshop on Resources
+  and Tools in Field Linguistics}, .
+
+\bibitem[{Epps(2008)}]{Epps2008}
+\textsc{Epps}, P. (2008).
+\newblock \emph{A Grammar of Hup}.
+\newblock Berlin, New York: Mouton de Gruyter.
+
+\bibitem[{Evans \& Levinson(2009)}]{EvansEtAl2009BBS}
+\textsc{Evans}, N. \& S.~\textsc{Levinson} (2009).
+\newblock \enquote{The myth of language universals}.
+\newblock \emph{Behavioral and Brain Sciences}, 32:429--492.
+
+\bibitem[{Farrar \& Langendoen(2003)}]{FarrarEtAl2003}
+\textsc{Farrar}, S. \& T.~\textsc{Langendoen} (2003).
+\newblock \enquote{A linguistic ontology for the semantic web.}
+\newblock \emph{GLOT International}, 7:200--203.
+
+\bibitem[{Fillmore \& Kay(1993)}]{FillmoreEtAl1993CxG}
+\textsc{Fillmore}, C.~J. \& P.~\textsc{Kay} (1993).
+\newblock \emph{Construction grammar coursebook : chapters 1 thru 11}.
+\newblock Berkeley: University of California.
+
+\bibitem[{Foley \& {Van Valin}(1984)}]{FoleyEtAl1984}
+\textsc{Foley}, W.~A. \& R.~D. \textsc{{Van Valin}} (1984).
+\newblock \emph{Functional syntax and universal grammar}.
+\newblock Cambridge: CUP.
+
+\bibitem[{Frohnmeyer(1889)}]{Frohnmeyer1889}
+\textsc{Frohnmeyer}, L.~J. (1889).
+\newblock \emph{A progressive grammar of the Malayalam language}.
+
+\bibitem[{Goldberg(1995)}]{Goldberg1995CxG}
+\textsc{Goldberg}, A.~E. (1995).
+\newblock \emph{Constructions : a construction grammar approach to argument
+  structure}.
+\newblock Chicago: The University of Chicago Press.
+
+\bibitem[{Good(2004)}]{Good2004}
+\textsc{Good}, J.~. .~. (2004).
+\newblock \enquote{The descriptive grammar as a (meta)database}.
+\newblock Paper presented at the EMELD Language Digitization Project Conference
+  2004. http://linguistlist.org/emeld/ workshop/2004/jcgood-paper.html.
+
+\bibitem[{Grevisse \& Goosse(1995)}]{GrevisseEtAl1995}
+\textsc{Grevisse}, M. \& A.~\textsc{Goosse} (1995).
+\newblock \emph{Nouvelle Grammaire Fran\c aise}.
+\newblock Brussels: De Boeck \& Larcier, 3rd edn.
+
+\bibitem[{Haspelmath(1993)}]{Haspelmath1993}
+\textsc{Haspelmath}, M. (1993).
+\newblock \emph{A Grammar of Lezgian}.
+\newblock Berlin, New York: Mouton de Gruyter.
+
+\bibitem[{Haspelmath(2007)}]{Haspelmath2007LT}
+\textsc{Haspelmath}, M. (2007).
+\newblock \enquote{Pre-established categories don't exist: Consequences for
+  language description and typology}.
+\newblock \emph{Linguistic Typology}, 11(1):119--132.
+
+\bibitem[{Hengeveld(1989)}]{Hengeveld1989}
+\textsc{Hengeveld}, K. (1989).
+\newblock \enquote{Layers and operators in Functional Grammar}.
+\newblock \emph{Journal of Linguistics}, 25(1):127--157.
+
+\bibitem[{Hengeveld \& Mackenzie(2008)}]{HengeveldEtAl2008fdg}
+\textsc{Hengeveld}, K. \& L.~\textsc{Mackenzie} (2008).
+\newblock \emph{Functional Discourse Grammar}.
+\newblock Oxford: Oxford University Press.
+
+\bibitem[{Jespersen(1924)}]{Jespersen1924}
+\textsc{Jespersen}, O. (1924).
+\newblock \emph{The Philosophy of Grammar}.
+\newblock London: Allen \& Unwin.
+
+\bibitem[{Lehmann(1980)}]{Lehmann1980}
+\textsc{Lehmann}, C. (1980).
+\newblock \enquote{Aufbau einer Grammatik zwischen Sprachtypologie und
+  Universalienforschung}.
+\newblock In \textsc{Seiler}, H., G.~\textsc{Brettschneider} \&
+  C.~\textsc{Lehmann} (eds.) \enquote{Wege zur Universalienforschung},
+  T\"ubingen: Narr. pp. 29--37.
+
+\bibitem[{Lehmann(1993)}]{Lehmann1993}
+\textsc{Lehmann}, C. (1993).
+\newblock \emph{On the system of semasiological grammar},
+  \emph{Allgemein-Vergleichende Grammatik}, vol.~1.
+\newblock Bielefeld: Universität Bielefeld, Universität München.
+
+\bibitem[{Lehmann(1998)}]{Lehmann1998}
+\textsc{Lehmann}, C. (1998).
+\newblock \enquote{Ein Strukturrahmen für deskriptive Grammatiken}.
+\newblock In  \cite{Zaefferer1998ed}, pp. 39--52.
+
+\bibitem[{Lehmann(2002)}]{Lehmann2002}
+\textsc{Lehmann}, C. (2002).
+\newblock \enquote{Structure of a comprehensive presentation of a language}.
+\newblock In \textsc{Tsunoda}, T. (ed.) \enquote{Basic materials in minority
+  languages}, Osaka: Osaka Gakuin University. pp. 5--33.
+
+\bibitem[{Lehmann(2004{\natexlab{a}})}]{Lehmann2004docu}
+\textsc{Lehmann}, C. (2004{\natexlab{a}}).
+\newblock \enquote{Documentation of grammar}.
+\newblock In \textsc{Sakiyama}, O., F.~\textsc{Endo}, H.~\textsc{Watanabe} \&
+  F.~\textsc{Sasama} (eds.) \enquote{Lectures on endangered languages: 4. From
+  Kyoto Conference 2001}, Osaka: Osaka Gakuin University. pp. 61--74.
+
+\bibitem[{Lehmann(2004{\natexlab{b}})}]{Lehmann2004funkt}
+\textsc{Lehmann}, C. (2004{\natexlab{b}}).
+\newblock \enquote{Funktionale Grammatikographie}.
+\newblock In \textsc{Premper}, W. (ed.) \enquote{Dimensionen und Kontinua.
+  Beiträge zu Hansjakob Seilers Universalienforschung.}, Bochum: N.
+  Brockmeyer. pp. 147--165.
+
+\bibitem[{Lehmann \& Maslova(2004)}]{LehmannEtAl2004}
+\textsc{Lehmann}, C. \& E.~\textsc{Maslova} (2004).
+\newblock \enquote{Grammaticography}.
+\newblock In \textsc{Booij}, G., C.~\textsc{Lehmann}, J.~\textsc{Mugdan} \&
+  S.~\textsc{Skopeteas} (eds.) \enquote{Morphologie. Ein Handbuch zur Flexion
+  und Wortbildung}, , vol.~2Berlin, New York: de Gruyter.
+
+\bibitem[{Lewis(2006)}]{Lewis2006}
+\textsc{Lewis}, W.~D. (2006).
+\newblock \enquote{ODIN: A Modle for Adapting and Enriching Legacy
+  Infrastructure}.
+\newblock Paper presented at the e-Humanities workshop at e-Science 2006.
+
+\bibitem[{Li \& Thompson(1981)}]{LiEtAl1981}
+\textsc{Li}, C.~N. \& S.~A. \textsc{Thompson} (1981).
+\newblock \emph{Mandarin Chinese -- A functional reference grammar}.
+\newblock Berkeley: University of California Press.
+
+\bibitem[{Mosel(2006)}]{Mosel2006craft}
+\textsc{Mosel}, U. (2006).
+\newblock \enquote{Grammaticography: The art and craft of writing grammars}.
+\newblock In  \cite{AmekaEtAl2006}.
+
+\bibitem[{Newman(2000)}]{Newman2000}
+\textsc{Newman}, P. (2000).
+\newblock \emph{The Hausa Language -- An encyclopedic reference grammar}.
+\newblock New Haven, London: Yale University Press.
+
+\bibitem[{Noonan(2006)}]{Noonan2006}
+\textsc{Noonan}, M. (2006).
+\newblock \enquote{Grammar writing for a grammar-reading audience}.
+\newblock \emph{Studies in Language}, 30(2):351--365.
+
+\bibitem[{Nordhoff(2007{\natexlab{a}})}]{Nordhoff2007mpi}
+\textsc{Nordhoff}, S. (2007{\natexlab{a}}).
+\newblock \enquote{The grammar authoring system GALOES}.
+\newblock Paper presented at the workshop ``Wikifying research'' at the MPI
+  Leipzig.
+
+\bibitem[{Nordhoff(2007{\natexlab{b}})}]{Nordhoff2007alt}
+\textsc{Nordhoff}, S. (2007{\natexlab{b}}).
+\newblock \enquote{Grammar writing in the Electronic Age}.
+\newblock Paper presented at the ALT VII conference in Paris.
+
+\bibitem[{Nordhoff(2007{\natexlab{c}})}]{Nordhoff2007dobes}
+\textsc{Nordhoff}, S. (2007{\natexlab{c}}).
+\newblock \enquote{Growing a grammar with GALOES}.
+\newblock Paper presented at the Dobes workshop at the MPI Nijmegen.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008jldc}
+\textsc{Nordhoff}, S. (2008).
+\newblock \enquote{Electronic reference grammars for typology -- challenges and
+  solutions}.
+\newblock \emph{Journal for Language Documentation and Conservation},
+  2(2):296--324.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009phd}
+\textsc{Nordhoff}, S. (2009).
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam.
+
+\bibitem[{Payne(2006)}]{Payne2006}
+\textsc{Payne}, T. (2006).
+\newblock \enquote{A grammar as a communicative act or What does a grammatical
+  description really describe?}
+\newblock \emph{Studies in Language}, 30(2):367--383.
+
+\bibitem[{Peterson(2002)}]{Peterson2002}
+\textsc{Peterson}, J. (2002).
+\newblock \emph{Cross-Linguistic Reference Grammar (Final report)}.
+\newblock München: Centrum für Informations- und Sprachverarbeitung.
+
+\bibitem[{Rice(2006)}]{Rice2006}
+\textsc{Rice}, K. (2006).
+\newblock \enquote{A typology of good grammars}.
+\newblock \emph{Studies in Language}, 30(2):385--415.
+
+\bibitem[{Schiering et~al.(forthcoming)Schiering, Bickel \&
+  Hildebrandt}]{SchieringEtAlfc}
+\textsc{Schiering}, R., B.~\textsc{Bickel} \& K.~A. \textsc{Hildebrandt}
+  (forthcoming).
+\newblock \enquote{The prosodic word is not universal, but emergent}.
+\newblock \emph{Journal of Linguistics}.
+
+\bibitem[{Schultze-Berndt(1998)}]{SchultzeBerndt1998}
+\textsc{Schultze-Berndt}, E. (1998).
+\newblock \enquote{Zur Interaktion von semasiologischer und onomasiologischer
+  Grammatik: Der Verbkomplex im Jaminjung}.
+\newblock In  \cite{Zaefferer1998ed}, pp. 149--176.
+
+\bibitem[{Seiler(1985)}]{Seiler1985}
+\textsc{Seiler}, W. (1985).
+\newblock \emph{Imonda, a Papuan language}.
+\newblock Canberra: Department of Linguistics.
+
+\bibitem[{{Van Valin} \& Foley(1997)}]{VanValinEtAl1997rrg}
+\textsc{{Van Valin}}, R.~D. \& W.~A. \textsc{Foley} (1997).
+\newblock \emph{Syntax -- Structure, meaning and function}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[{{von der Gabelentz}(1891)}]{Gabelentz1891}
+\textsc{{von der Gabelentz}}, G. (1891).
+\newblock \enquote{Die Sprachwissenschaft. Ihre Aufgaben, Methoden und
+  bisherigen Ergebnisse}.
+\newblock Leipzig.
+
+\bibitem[{Weber(2006)}]{Weber2006grow}
+\textsc{Weber}, D. (2006).
+\newblock \enquote{Thoughts on growing a grammar}.
+\newblock \emph{Studies in Language}, 30(2):417--444.
+
+\bibitem[{Willett(1991)}]{Willett1991}
+\textsc{Willett}, T.~L. (1991).
+\newblock \emph{Southeastern Tepehuan}.
+\newblock Dallas: SIL.
+
+\bibitem[{Zaefferer(1998{\natexlab{a}})}]{Zaefferer1998ed}
+\textsc{Zaefferer}, D. (ed.)  (1998{\natexlab{a}}).
+\newblock \emph{Deskriptive Grammatik und allgemeiner Sprachvergleich}.
+\newblock Tübingen: Niemeyer.
+
+\bibitem[{Zaefferer(1998{\natexlab{b}})}]{Zaefferer1998}
+\textsc{Zaefferer}, D. (1998{\natexlab{b}}).
+\newblock \enquote{Ein Strukturrahmen für deskriptive Grammatiken: Die
+  Beschreibung sprachlicher Funktionen.}
+\newblock In  \cite{Zaefferer1998ed}, pp. 29--38.
+
+\bibitem[{Zaefferer(2006)}]{Zaefferer2006}
+\textsc{Zaefferer}, D. (2006).
+\newblock \enquote{Realizing Humboldt's dream: Cross-linguistic
+  grammaticography}.
+\newblock In  \cite{AmekaEtAl2006}, pp. 113--136.
+
+\end{thebibliography}
