@@ -1,0 +1,152 @@
+\begin{thebibliography}{23}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Ameka et~al.(2006)Ameka, Dench \& Evans}]{AmekaEtAl2006}
+\textsc{Ameka}, F., A.~\textsc{Dench} \& N.~\textsc{Evans} (eds.)  (2006).
+\newblock \emph{Catching Language -- The standing challenge of grammar
+  writing}.
+
+\bibitem[{Berners-Lee(2006)}]{BernersLee2006}
+\textsc{Berners-Lee}, T. (2006).
+\newblock \enquote{Tim Berners-Lee Date: 2006-07-27}.
+\newblock \urlprefix\url{http://www.w3.org/DesignIssues/LinkedData.html}.
+
+\bibitem[{Borthwick(1999)}]{Borthwick1999}
+\textsc{Borthwick}, A. (1999).
+\newblock \emph{A Maximum Entropy Approach to Named Entity Recognition}.
+\newblock Ph.D. thesis, New York University.
+
+\bibitem[{Bow et~al.(2003)Bow, Hughes \& Bird}]{BowEtAl2003}
+\textsc{Bow}, C., B.~\textsc{Hughes} \& S.~\textsc{Bird} (2003).
+\newblock \enquote{Towards a general model for interlinear text}.
+\newblock \emph{Proceedings of the EMELD Language Digitization Project
+  Conference}.
+\newblock
+  \urlprefix\url{http://www.linguistlist.org/emeld/workshop/2003/bowbadenBird-%
+paper.pdf}.
+
+\bibitem[{Cysouw(2009)}]{Cysouw2009micropub}
+\textsc{Cysouw}, M. (2009).
+\newblock \enquote{Micropublication: footnotes for the 21st Century}.
+\newblock Paper presented at the workshop ``Small Tools for Cross-Linguistic
+  Research'', June 2009, University of Utrecht.
+
+\bibitem[{Deerwester et~al.(1990)Deerwester, Dumais, Furnas, Landauer \&
+  Harshman}]{DeerwesterEtAl1990}
+\textsc{Deerwester}, S., S.~T. \textsc{Dumais}, G.~W. \textsc{Furnas}, T.~K.
+  \textsc{Landauer} \& R.~\textsc{Harshman} (1990).
+\newblock \enquote{Indexing by latent semantic analysis}.
+\newblock \emph{Journal ofthe American Society for Informotion Science},
+  41:391--407.
+
+\bibitem[{Good(2004)}]{Good2004}
+\textsc{Good}, J.~. .~. (2004).
+\newblock \enquote{The descriptive grammar as a (meta)database}.
+\newblock Paper presented at the EMELD Language Digitization Project Conference
+  2004. http://linguistlist.org/emeld/ workshop/2004/jcgood-paper.html.
+
+\bibitem[{Heath \& Bizer(2011)}]{HeathEtAl2011}
+\textsc{Heath}, T. \& C.~\textsc{Bizer} (2011).
+\newblock \emph{Linked Data - Evolving the Web into a Global Data Space}.
+\newblock San Rafael: Morgan \& Claypool.
+
+\bibitem[{Klamer(2010)}]{g:Klamer:Teiwa}
+\textsc{Klamer}, M. (2010).
+\newblock \emph{A Grammar of Teiwa}, \emph{Mouton Grammar Library}, vol.~49.
+\newblock Berlin: Mouton de Gruyter.
+
+\bibitem[{Lehmann(1980)}]{Lehmann1980}
+\textsc{Lehmann}, C. (1980).
+\newblock \enquote{Aufbau einer Grammatik zwischen Sprachtypologie und
+  Universalienforschung}.
+\newblock In \textsc{Seiler}, H., G.~\textsc{Brettschneider} \&
+  C.~\textsc{Lehmann} (eds.) \enquote{Wege zur Universalienforschung},
+  T\"ubingen: Narr. pp. 29--37.
+
+\bibitem[{Lehmann(1989)}]{Lehmann1989comparativegrammar}
+\textsc{Lehmann}, C. (1989).
+\newblock \enquote{Language description and general comparative grammar}.
+\newblock In \textsc{Graustein}, G. \& G.~\textsc{Leitner} (eds.)
+  \enquote{Reference grammars and modern linguistic theory}, Tübingen: M.
+  Niemeyer. pp. 133--162.
+
+\bibitem[{Lehmann(1993)}]{Lehmann1993}
+\textsc{Lehmann}, C. (1993).
+\newblock \emph{On the system of semasiological grammar},
+  \emph{Allgemein-Vergleichende Grammatik}, vol.~1.
+\newblock Bielefeld: Universität Bielefeld, Universität München.
+
+\bibitem[{Lehmann(1998)}]{Lehmann1998}
+\textsc{Lehmann}, C. (1998).
+\newblock \enquote{Ein Strukturrahmen für deskriptive Grammatiken}.
+\newblock In  \cite{Zaefferer1998ed}, pp. 39--52.
+
+\bibitem[{Lehmann(2004{\natexlab{a}})}]{Lehmann2004docu}
+\textsc{Lehmann}, C. (2004{\natexlab{a}}).
+\newblock \enquote{Documentation of grammar}.
+\newblock In \textsc{Sakiyama}, O., F.~\textsc{Endo}, H.~\textsc{Watanabe} \&
+  F.~\textsc{Sasama} (eds.) \enquote{Lectures on endangered languages: 4. From
+  Kyoto Conference 2001}, Osaka: Osaka Gakuin University. pp. 61--74.
+
+\bibitem[{Lehmann(2004{\natexlab{b}})}]{Lehmann2004funkt}
+\textsc{Lehmann}, C. (2004{\natexlab{b}}).
+\newblock \enquote{Funktionale Grammatikographie}.
+\newblock In \textsc{Premper}, W. (ed.) \enquote{Dimensionen und Kontinua.
+  Beiträge zu Hansjakob Seilers Universalienforschung.}, Bochum: N.
+  Brockmeyer. pp. 147--165.
+
+\bibitem[{Lehmann \& Maslova(2004)}]{LehmannEtAl2004}
+\textsc{Lehmann}, C. \& E.~\textsc{Maslova} (2004).
+\newblock \enquote{Grammaticography}.
+\newblock In \textsc{Booij}, G., C.~\textsc{Lehmann}, J.~\textsc{Mugdan} \&
+  S.~\textsc{Skopeteas} (eds.) \enquote{Morphologie. Ein Handbuch zur Flexion
+  und Wortbildung}, , vol.~2Berlin, New York: de Gruyter.
+
+\bibitem[{Mosel(2006)}]{Mosel2006craft}
+\textsc{Mosel}, U. (2006).
+\newblock \enquote{Grammaticography: The art and craft of writing grammars}.
+\newblock In  \cite{AmekaEtAl2006}.
+
+\bibitem[{Nordhoff(2008)}]{Nordhoff2008jldc}
+\textsc{Nordhoff}, S. (2008).
+\newblock \enquote{Electronic reference grammars for typology -- challenges and
+  solutions}.
+\newblock \emph{Journal for Language Documentation and Conservation},
+  2(2):296--324.
+
+\bibitem[{Nordhoff(forthcoming)}]{Nordhofffcfufomp}
+\textsc{Nordhoff}, S. (forthcoming).
+\newblock \enquote{The grammatical description as a collection of form-meaning
+  pairs}.
+\newblock In \textsc{Nordhoff}, S. (ed.) \enquote{Electronic Grammaticography},
+  Manoa: University of Hawai'i Press.
+
+\bibitem[{Penton et~al.(2004)Penton, Bow, Bird \& Hughes}]{PentonEtAl2004}
+\textsc{Penton}, D., C.~\textsc{Bow}, S.~\textsc{Bird} \& B.~\textsc{Hughes}
+  (2004).
+\newblock \enquote{Towards a general model for linguistic paradigms}.
+\newblock \emph{Proceedings of EMELD 2004}.
+
+\bibitem[{Sperberg-McQueen \& Burnard(2010)}]{TEIGuidelines}
+\textsc{Sperberg-McQueen}, C.~M. \& L.~\textsc{Burnard} (2010).
+\newblock \emph{TEI P5: Guidelines for Electronic Text Encoding and
+  Interchange}.
+\newblock Oxford, Providence, Charlottesville, Nancy: TEI Consortium.
+
+\bibitem[{{von der Gabelentz}(1891)}]{Gabelentz1891}
+\textsc{{von der Gabelentz}}, G. (1891).
+\newblock \enquote{Die Sprachwissenschaft. Ihre Aufgaben, Methoden und
+  bisherigen Ergebnisse}.
+\newblock Leipzig.
+
+\bibitem[{Zaefferer(1998)}]{Zaefferer1998ed}
+\textsc{Zaefferer}, D. (ed.)  (1998).
+\newblock \emph{Deskriptive Grammatik und allgemeiner Sprachvergleich}.
+\newblock Tübingen: Niemeyer.
+
+\end{thebibliography}

@@ -1,0 +1,607 @@
+{\rtf1\ansi\uc1\deff13\deflang1024
+{\fonttbl{\f0\fnil\fcharset0 Zapf Chancery;}
+{\f1\fnil\fcharset204 Zapf Chancery;}
+{\f2\fnil\fcharset204 Times;}
+{\f3\fnil\fcharset204 Helvetica;}
+{\f4\fnil\fcharset204 Helvetica;}
+{\f5\fnil\fcharset204 Courier;}
+{\f6\fnil\fcharset2 Symbol;}
+{\f7\fnil\fcharset0 MT Extra;}
+{\f8\fnil\fcharset238 Zapf Chancery;}
+{\f9\fnil\fcharset238 Times;}
+{\f10\fnil\fcharset238 Helvetica;}
+{\f11\fnil\fcharset238 Helvetica;}
+{\f12\fnil\fcharset238 Courier;}
+{\f13\fnil\fcharset0 Times;}
+{\f14\fnil\fcharset0 Helvetica;}
+{\f15\fnil\fcharset0 Helvetica;}
+{\f16\fnil\fcharset0 Courier;}
+}
+{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+}
+{\stylesheet
+{\s0\fs20\snext0 Normal;}
+{\s2\ql\sb240\sa60\keepn\f13\b\fs40 \sbasedon0\snext0 heading 1;}
+{\s2\ql\sb240\sa60\keepn\f13\b\fs40\li0 \sbasedon0\snext0 heading 1;}
+{\s1\ql\sb240\sa60\keepn\f13\b\fs40\li0 \sbasedon0\snext0 heading 1;}
+{\s6\ql\sb240\sa60\keepn\f13\b\fs24\li2048 \sbasedon0\snext0 heading 5;}
+{\s3\ql\sb240\sa60\keepn\f13\b\fs32\li512 \sbasedon0\snext0 heading 2;}
+{\s7\ql\sb240\sa60\keepn\f13\b\fs24\li2560 \sbasedon0\snext0 heading 6;}
+{\s4\ql\sb240\sa60\keepn\f13\b\fs32\li1024 \sbasedon0\snext0 heading 3;}
+{\s5\ql\sb240\sa60\keepn\f13\b\fs24\li1536 \sbasedon0\snext0 heading 4;}
+{\s6\ql\sb240\sa60\keepn\f13\b\fs24 \sbasedon0\snext0 heading 5;}
+{\s1\qc\sb240\sa60\keepn\f13\b\fs40 \sbasedon0\snext0 part;}
+{\s3\ql\sb240\sa60\keepn\f13\b\fs32 \sbasedon0\snext0 heading 2;}
+{\s7\ql\sb240\sa60\keepn\f13\b\fs24 \sbasedon0\snext0 heading 6;}
+{\s4\ql\sb240\sa60\keepn\f13\b\fs32 \sbasedon0\snext0 heading 3;}
+{\s5\ql\sb240\sa60\keepn\f13\b\fs24 \sbasedon0\snext0 heading 4;}
+}
+{\info
+{\title Original file was london2011archiving.tex}
+{\doccomm Created using latex2rtf 1.9.19 (released Nov 20 2007) on Thu Sep 15 16:43:32 2011
+}
+}
+{\footer\pard\plain\f13\fs20\qc\chpgn\par}
+\paperw11960\paperh16900\margl2500\margr2560\margt2520\margb1820\pgnstart0\widowctrl\qj\ftnbj\f13\aftnnar
+{
+\par\pard\qc {\fs30 \pard\qc\sl240\slmult1 \fi300 Archiving Grammatical Descriptions}
+\par\pard\qc {\fs24 Sebastian Nordhoff & Harald Hammarstr\'f6m}
+\par\pard\qc {\fs24 }
+\par\pard\qc {\fs24 }
+\par\pard\qc {\fs24 }\par
+{\pard\qj\sl240\slmult1 \fi0 \qc{\b Abstract}\par
+\pard\qj\sl240\slmult1 \li1024\ri1024\fi0 We argue that grammatical descriptions should be archived not in a monolithic but in a granular way, making use of the framework of the Text Encoding Initiative. We show how tags of the extant framework and additions crafted for descriptive linguistics can be applied to linguistic text. Granular annotation with Uniform Resource Identifiers for all elements will allow grammatical descriptions (and their parts! ) to become part of the Semantic Web. We add to existing formalizations of low-level elements by providing a schema for the higher order organization of grammatical descriptions and discuss how legacy descriptions can be parsed and annotated in a scalable manner. \par
+}\pard\qj\sl240\slmult1 \sb120 \fi300 keywords: archiving, grammatical description, schema, linked data, named entity recognition, latent semantic analysis\par
+\pard\qj\sl240\slmult1 \sb240 \fi0 {\s3\ql\sb240\sa60\keepn\f13\b\fs32 1  Archives\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 There are several aspects to archiving, whose importance varies according to the discipline. The origin of archiving is archiving artifacts, i.e. physical objects (a vase, an axe, a book). In recent years, there has been a movement towards digital archiving, where one archives a \i representation \i0 of an artifact (a 3D-model of a vase or an axe, a scan of a book), i.e. a digital surrogate of the artifact. The last aspect finally is archiving content, which only works for artifacts containing text. Here we are not concerned with the physical form (quart, folio, parchment, papyri), but rather with the string of characters making up the document. \par
+\pard\qj\sl240\slmult1 \fi300 When archiving a grammatical description, we can illustrate the three aspects just mentioned as follows: you can archive the printed book (the artifact) and take care of optimal conditions regarding humidity, temperature, exposure to sunlight etc. Or you could archive a *tiff-scan of the book where every page is represented in excellent resolution and color depth. This would be a representation of the artifact. In this case, you lose non-visual information, like touch or smell of the book. Finally, you could archive the string of characters which make up the content of the book. Here you lose visual information as well (colour, page layout, exact font used, miniatures etc.), although some of it can be recorded as meta-information.\par
+\pard\qj\sl240\slmult1 \fi300 In the context of grammatical description, the last aspect (archiving content) is clearly the most important. While there are some masterpieces of editorship in the grammatical literature, what is produced in language documentation normally excels by content rather than layout, typeset or paper choice. What is to be preserved for future generations is the content, not necessarily the physical arrangement of glyphs on a support. This is even more the case for documents "born-digital" where the physical support does not exist until the user prints the document. References to the physical shape of the document (page breaks, line breaks) can also be stored, but this is not central here.\par
+\pard\qj\sl240\slmult1 \fi300 Concerning archiving texts, we can make two further distinctions: either archive the whole text as a monolithic block without internal structure, a very long array of characters so to speak, or use a more granular approach and record the elements which constitute the text (headings, sections, footnotes, cross-references, etc). This more granular approach allows for easier search for particular items in the text, allows for easier updates if necessary, and allows for easier integration in the Semantic Web. In the remainder of this paper, I will advocate such a granular approach to archiving grammatical descriptions using the framework of the Text Encoding Initiative (TEI, {Sperberg-McQueen & Burnard}, 2010).\par
+\pard\qj\sl240\slmult1 \fi300 With regard to archives, we can distinguish two more axes: orientation and perfectivity. The first axis, orientation, refers to the focus of the archive being inward or outward: Is it important to get stuff into the archive (store), or is it important to get stuff out of the archive to the interested user (serve)?  A good archive will necessarily try to serve both functions as well as possible, but scarcity of resources means that often a choice has to be made. The second axis, which I term perfectivity, in analogy to the distinction in linguistic aspect, refers to the state of completeness an archive requires. A \lquote perfective\rquote  archive only accepts finished documents. It is not possible to modify archived documents. The archive is read-only, so to speak. A non-perfective archive will store whatever there is, without requiring completedness.It is always possible to modify parts of the archived content. A version history can of course be kept to assure that the evolution of the content can be traced. I will assume an outward-oriented, non-perfective archive as the right paradigm for grammatical descriptions.\par
+\pard\qj\sl240\slmult1 \fi300 {Good} (2004) conceives of a grammatical description as a meta-database of nested \lquote annotations\rquote . The grammatical description is seen as a collection of short chunks, which are largely independent of each other, but with explicit relations to each other. {Nordhoff} (2008) argues that grammatical descriptions are best seen as non-linear texts (i.e. hypertexts) where every individual reader will follow their own path of exploration (skip phonology, start with syntax, jump back to morphology as required, use table of contents and index extensively).\par
+\pard\qj\sl240\slmult1 \fi300 The use of rather atomic linguistic facts as the basis of the creation of linguistic knowledge has been argued for by {Cysouw} (2009), who advocates the use of \lquote micro-publications\rquote , very short statements about one linguistic fact of one particular language. To pull the ideas of these three authors together: A grammatical description is a non-linear meta-database of micropublications.\par
+\pard\qj\sl240\slmult1 \fi300 A granular approach jibes well with this model, as items can be added or modified on a local basis, whereas in the monolithic approach, every local modification would also be a global modification. The granular approach also allows easier serving of particular chunks, because of easier retrieval. Finally, a granular approach will allow to uniquely identify chunks and refer to them in Semantic Web frameworks such as RDF{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.w3.org/RDF/}
+ or OWL.{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.w3.org/TR/owl-features/}
+\par
+\pard\qj\sl240\slmult1 \sb240 \fi0 {\s3\ql\sb240\sa60\keepn\f13\b\fs32 2  Granular text\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 Let us illustrate the meaning of granular text with an example\par
+{\pard\qj\sl240\slmult1 \fi0 \pard\ql\b0\i0\scaps0\f16 
+\par  <div id="ch3" type="chapter" n="3" >
+\par   <head>Morphology</head>
+\par   <div id="ch3s1" type="section" n="1">
+\par    <head>Nominal morphology</head>
+\par    <p>
+\par     In contrast to <ref target="#verbalmorphology"> verbal morphology
+\par     </ref> Nominal morphology is very important in <languagename iso6393="qqq">
+\par     Ugubugu</languagename>. This can be seen from example <ptr target="#ch3s1ex1" />.
+\par     Especially the <technicalterm    ontology="GOLD" value="case marker">case marker
+\par     </technicalterm> <phraseglosspair><phrase lg="qqq">ka</phrase><gloss type="Leipzig">
+\par     ACC</gloss></phraseglosspair> is important here.
+\par    </p>
+\par    <lgex id="ch3s1ex1" number="1">
+\par     <sourceline> ... </sourceline>
+\par     <interlinear> ... </interlinear>
+\par     <translationline> </translation>
+\par    </lgex>
+\par   </div>
+\par  </div>
+\par \par
+}\pard\qj\sl240\slmult1 \sb60 \fi300 We can observe a number of points from the example above:\par
+{\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 1.\tab Important elements in the texts like headings, examples, or cross-references are explicitly labelled \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 2.\tab There are unique references to paragraphs and examples. \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 3.\tab Some terms are enclosed in semantic markup. This includes technical terms and object language terms. \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 4.\tab The semantic markup includes references to definitions of the terms used, in the case the GOLD ontology{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://linguistics-ontology.org/}
+ and the Leipzig Glossing Rules.{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.eva.mpg.de/lingua/resources/glossing-rules.php}
+ \par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 This markup combined with unique references allows to integrate such a chunk into the semantic web. For instance, one could retrieve all sections of grammatical descriptions in the archive which make reference to the concept of "case marker" as defined in GOLD, even if the actual terms employed differ.\par
+\pard\qj\sl240\slmult1 \sb240 \fi0 {\s3\ql\sb240\sa60\keepn\f13\b\fs32 3  Linked Data\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 We will briefly illustrate the usefulness of such a granular resource within the Linked Data paradigm ({Heath & Bizer}, 2011), without going into too much detail. The five steps for Linked Data are ({Berners-Lee}, 2006).\par
+{\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 {*}\tab make your stuff available on the Web (whatever format) under an open license \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 {**}\tab make it available as structured data (e.g., Excel instead of image scan of a table) \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 {***}\tab use non-proprietary formats (e.g., CSV instead of Excel) \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 {****}\tab use URIs to identify things, so that people can point at your stuff \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 {*****}\tab link your data to other data to provide context \par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 A granular approach to grammatical descriptions has the advantage that we can use the granular entities as parts of semantic statements. We can say "This section covers a topic which is also found in GOLD" or "This section is a close, but not perfect, match of what is found in GOLD".\par
+\pard\qj\sl240\slmult1 \fi300 Three things are important in order to arrive at such a generalization: The arguments of the relation must be identifiable, they must have Uniform Resource Identifiers (URIs); the relation must be defined; and the formalism to link the relation and the arguments must be established.\par
+\pard\qj\sl240\slmult1 \fi300 URIs can, for the purpose of this paper, be equated with web addresses of a certain format. Relations are defined in a number of vocabularies, of which RDFS{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.w3.org/TR/rdf-schema/}
+, OWL, Dublin Core{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://dublincore.org/}
+, SKOS{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.w3.org/2004/02/skos/}
+, GOLD and lexvo{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.lexvo.org/}
+ are the most important ones for descriptive linguistics. The formalism to link those together, finally, is RDF{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.w3.org/RDF/}
+, here represented in a variant called N3{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.w3.org/DesignIssues/Notation3.html}
+. There is no space here to discuss details, but an example will show the general approach:\par
+\pard\qj\sl240\slmult1 \fi300 <grammararchive:123/chapter/4/section/5> <rdfs:seeAlso> <gold:Infix> .  RDF predications are written in SVO (i.e. predicate-medial) notation. In this case, Chapter 4, Section 5 of the book with the ID 123 is the subject, {\f16 gold:Infix} in GOLD is the object, and the two are linked by the \lquote verb\rquote , the predicate {\f16 rdfs:seeAlso}. Crucially, all of the three items are \i dereferenceable\i0 , which means that a definition of what they mean can be looked up on the Internet.{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}The actual Internet addresses have been abbreviated here, one would look up http://www.grammararchive.org/grammar/123/chapter/4/section/5\par
+\pard\qj\sl240\slmult1 \fi0 http://www.w3.org/2000/01/rdf-schema#seeAlso\par
+\pard\qj\sl240\slmult1 \fi0 http://linguistics-ontology.org/gold/2010/Infix. }
+\par
+\pard\qj\sl240\slmult1 \fi300 The take-home message here is that only a granular approach with transparent URIs allows archived grammatical descriptions to be incorporated into the Semantic Web.\par
+\pard\qj\sl240\slmult1 \sb240 \fi0 {\s3\ql\sb240\sa60\keepn\f13\b\fs32 4  Textual elements in linguistics\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 In order to create a schema for grammatical descriptions, one needs to take stock of the elements which are found in this type of work. There are some elements which are share with other types of texts, such as paragraphs, headings, or cross-references. For those, the vocabulary provided by the TEI can be used. In linguistic texts, there are also a number of elements not listed in TEI. These will be discussed below.\par
+\pard\qj\sl240\slmult1 \sb120 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 4.1  Named entities\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 Named entities refer to concepts which have a definition of the particular text under discussion. Examples include countries, cities, persons, but also languages, books and linguistic concepts. Named entities are enclosed in the relevant semantic markup. An example is provided below.\par
+{\pard\qj\sl240\slmult1 \fi0 \pard\ql\b0\i0\scaps0\f16 
+\par <language iso639-2="cpp">Diu Indo-Portuguese</> is spoken in the
+\par  <city geonamesID="1272502">city of Diu</city> in the <country
+\par  ISO-3166-1="IN">Indian></country> <province ISO-3166-2="IN-DD">
+\par  territory  of Daman and Diu</province>. <person gnd="118611046">
+\par  Hugo Schuchardt</person> and <person gnd="115161023"> Sebastio
+\par  Dalgado</person> provided the first description of this dialect;
+\par  the latest work is Cardoso's <book ISBN="978-90-78328-87-2">A
+\par  grammar of Indo-Portuguese</book>. 
+\par \par
+}\pard\qj\sl240\slmult1 \sb60 \fi300 The extraction of named entities from a given text (Named Entity Recognition) is an important subfield of computational text linguistics (e.g. {Borthwick}, 1999).\par
+\pard\qj\sl240\slmult1 \fi300 Linguistic concepts can be also be treated as named entities if they are defined outside of the text under discussion. Place where such concepts are defined include GOLD or lexvo for instance. An example is given below.\par
+{\pard\qj\sl240\slmult1 \fi0 \pard\ql\b0\i0\scaps0\f16 
+\par  <languagename iso639-3="tgl"> Tagalog </languagename> has
+\par  <technicalterm GOLD="Infix">infixes</technicalterm>.
+\par \par
+}\pard\qj\sl240\slmult1 \sb180 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 4.2  Object language\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 In linguistic texts, frequent reference is made to languages which are not the metalanguage of the text. These are commonly typeset in italics. A semantic representation would be as follows.\par
+{\pard\qj\sl240\slmult1 \fi0 \pard\ql\b0\i0\scaps0\f16 
+\par  Italian <objectlanguage iso639-3="ita">cinque</objectlanguage>
+\par  corresponds to Spanish <objectlanguage iso639-3="spa">cinco
+\par  </objectlanguage>.
+\par \par
+}\pard\qj\sl240\slmult1 \sb60 \fi300 The attribute {\f16 iso639-3} refers to the ISO 639-3 code{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}http://www.sil.org/iso639-3/}
+ of the language.\par
+\pard\qj\sl240\slmult1 \sb120 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 4.3  Phrase-gloss pairs\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 Grammatical descriptions very often provide translations of object language terms directly after them.\par
+{\pard\qj\sl240\slmult1 \fi0 \pard\ql\b0\i0\scaps0\f16 
+\par  Spanish <phraseglosspair><phrase iso639-3="spa"> dolor </phrase><gloss
+\par  iso639-3="eng">pain</gloss><phraseglosspair> preserves Latin intervocalic
+\par  l, while Portuguese    <phraseglosspair><phrase iso639-3="por"> dor 
+\par  </phrase><gloss iso639-3="eng">pain</gloss><phraseglosspair> does not.
+\par \par
+}\pard\qj\sl240\slmult1 \sb180 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 4.4  Exemplars\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 The most salient textual element found in grammars is the example, of which the traditional three-line interlinear glossed text is the best known. It is not the case, however, that this traditional three-liner provides a sufficient model of examples used in linguistic texts. In Marian Klamer\rquote s \i A Grammar of Teiwa \i0 ({Klamer}, 2010), only 40% of the examples conform to a rigid specification of a three line text with the same number of tokens in the first and second lines. The other 60% deviate from this model in one way or another (subexamples, missing lines, extra lines, missing quotation marks around translations etc.).\par
+\pard\qj\sl240\slmult1 \fi300 For these reasons, we have to specify an \i example container\i0 , which provides the numbering and a paragraph where the actual linguistic content can be found. This content can be of varying nature. We have found the following to be recurring types, but there might be more:\par
+{\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab three-liners with interlinear morpheme translation \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab two liners with lexeme and gloss \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab two liners with tones and lexemes \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab two-liners for minimal pairs \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab one liners with lexeme{{<}}etymology \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab ungrammatical one-liners \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab ungrammatical one-liners with IMT but no translation \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab three liners with lexeme, phonetic transcription, gloss, no translation \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab four-liners with orthographic text, phonetic text, IMT, gloss \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab four-liners with orthographic text, morphemes, IMT, gloss \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab four-liners with intonation, text, IMT, gloss \par
+\pard\qj\sl240\slmult1 \sb50 \li600\fi-300 \bullet\tab ... \par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 We will not provide a full specification for all the subtypes of examples listed here. Schemas for some of those types can be found in {Bow et\~al.} (2003).\par
+\pard\qj\sl240\slmult1 \fi300 A linguistic example can either occur within a paragraph or between paragraphs. In the latter case, it has to be included in an otherwise empty paragraph\par
+{\pard\qj\sl240\slmult1 \fi0 \pard\ql\b0\i0\scaps0\f16 
+\par <p>
+\par  English shows subject-verb agreement as 
+\par  <examplecontainer n="1">
+\par   <example type="oneliner"> 
+\par    <exline type="objectlanguage" iso639-3="eng">The dog bark*(s)</exline>
+\par   </example>
+\par  </examplecontainer>
+\par shows. This is also found in French, Spanish, and German (see below).
+\par </p>
+\par 
+\par <p>
+\par  <examplecontainer n="2">
+\par   <example type="threeliner>
+\par    <exline type="objectlanguage" iso639-3="fra">Tu regarde-*(s)</exline>
+\par    <exline type="IMT">2s watch-2s</exline>
+\par    <exline> 'You are watching.'</exline>
+\par   </example>
+\par  </examplecontainer>
+\par </p>
+\par 
+\par <p>
+\par  <examplecontainer n="3">
+\par   <example type="threeliner>
+\par    <exline type="objectlanguage" iso639-3="spa">(Tu) mira*(s)</exline>
+\par     ...
+\par   </example>
+\par  </examplecontainer>
+\par </p>
+\par 
+\par <p>
+\par  <examplecontainer n="4">
+\par   <example type="threeliner>
+\par    <exline type="objectlanguage" iso639-3="fra">Du sieh-*(st)</exline>
+\par    ...
+\par   </example>
+\par  </examplecontainer>
+\par </p>
+\par  
+\par \par
+}\pard\qj\sl240\slmult1 \sb60 \fi300 Linguistic examples are techincally {{{\i n}{\f6\'B4}{\i m}}} tables. These can be serialized either horizontally (cells are elements of rows) or vertically (cells are elements of columns). Both solutions have their advantages, and they can be transformed into each other, so that this is a matter of personal taste. Linguistic example tables, like any other table, take up a lot of space when written in XML; therefore they are not formalized here. \par
+\pard\qj\sl240\slmult1 \sb120 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 4.5  Paradigms\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 Another textual element frequently found in linguistic works is the paradigm. This is a special kind of table. Its formalization is quite complex, so that the reader is referred to {Penton et\~al.} (2004) here.\par
+\pard\qj\sl240\slmult1 \sb120 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 4.6  References\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 Linguistic texts contains many references. These are of different types. There are references to items in the text, like examples or other chapters. For these, the existing TEI-elements {\f16 {{<}}ref{{>}}} and {\f16 {{<{\i p}{\i t}{\i r}>}}} (pointer) can be used. References to items outside the text can be divided into references to the origin of the material (corpus, dictionary), and references to the literature. References to the literature can be handled with the existing TEI elements {\f16 {{<}}biblstruct{{>}}} and {\f16 {{<}}listbibl{{>}}}. References to a corpus or a dictionary are encoded as attributes of the element they refer to.\par
+{\pard\qj\sl240\slmult1 \fi0 \pard\ql\b0\i0\scaps0\f16 
+\par  The <language iso639-3="sci">Sri Lanka Malay</language> word 
+\par <phraseglosspair><phrase iso639-3="sci" src="Nordhoff2009">
+\par thaanm</phrase><gloss iso639-3="eng">to plant</gloss>
+\par </phraseglosspair> is also found in the <langauge linguasphere="">
+\par Jakarta dialect of Indonesian<language> <bibitem src="Adelaar1985"
+\par  isbn="978-0858834088"/>
+\par  This is discussed in more detail in section <ptr target="Jakartan Influence" />
+\par \par
+}\pard\qj\sl240\slmult1 \sb180 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 4.7  Tables and Figures\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 Tables and figures can be handled according to the general TEI-guidelines, which provide the elements {\f16 {{<}}table{{>}}} and {\f16 {{<}}figure{{>}}}. A special kind of table found in linguistic descriptions is the phoneme chart. Due to the lengthy nature of table descriptions in XML, this will not be illustrated here.\par
+\pard\qj\sl240\slmult1 \sb240 \fi0 {\s3\ql\sb240\sa60\keepn\f13\b\fs32 5  Markup philosophies\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 There are two types of markup which are commonly used when describing the structure of a text. The examples above have all been in so-called \i inline \i0 markup. This means that the metainformation abouth the text, tags in this case, is found interspersed within the actual content. The alternative is standoff markup. In this case, the text is left untouched and the markup is written to another file. The stretch of text to which a particular markup refers is indicated by character counts, the offset, for instance (8,23) to refer to the stretch of characters from the 8th character to the 23rd character.\par
+\pard\qj\sl240\slmult1 \fi300 Standoff markup has the advantage that one does not need write access to the file one describes. The archive could just provide a read-only copy, and the annotation can be store at another location. Multiple, overlapping, or even conflicting annotations can be provided. The drawback of standoff annotations is that they are more difficult to read, and their vulnerability to changes in character count. Suppose you have the Dutch word \i Frankr\u255?k \i0 in a text, which consists of 8 letters. Later, you decide to use the more standard spelling \i Frankrijk\i0 . This changes the offset of all following characters by one, invalidating all standoff markup after this point. Another example is changing the orthographic represenation of long /a:/ from /aa/ to /\u257a/, which will affect offsets very badly. The final example is a more subtle one: in Unicode, you can combine some characters with others, to yield glyphs like {\u265c}{{\field{\*\fldinst{ EQ {\\s\\up5({\fs16 {\i w}})}}}{\fldrslt }}}. The preceding character is clearly a composite, but for common characters like \i \u233?\i0 , there are two ways to represent them: either as {{<}}e{{>}}+{{<}}{\field{\*\fldinst EQ \\O(, {\up6 {\field{\*\fldinst SYMBOL 162 \\f "Symbol" \\h}{\fldrslt }}})}{\fldrslt }}{{>}}, or as {{<}}\u233?{{>}}. This is not discernible on visual inspection of the human-readable text: The glyphs produced are identical. But in the first case, all following offsets will be greater by one than in the latter case.\par
+\pard\qj\sl240\slmult1 \fi300 If the file which is to contain the markup is read-only, it is unlikely to change, and the problems just described can be ignored (although the Unicode composite character problem might still arise). If the file is not sealed and might be updated for typos or other errata, standoff is not a viable option. For this paper, we will restrict ourselves to inline markup. The disadvantage of inline annotation is that it does not allow for overlapping or conflicting annotations. We feel, however, that the exact beginning and end of a linguistic example, a paragraph, or a heading, are hardly every contentious, or overlapping, and that thus the major strengths of standoff markup do not come into play anyway.\par
+\pard\qj\sl240\slmult1 \sb240 \fi0 {\s3\ql\sb240\sa60\keepn\f13\b\fs32 6  Proposals\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 The structure of grammatical descriptions has been treated in {Lehmann} (1980, 1989, 1993, 1998, 2004{b}); {Lehmann & Maslova} (2004); {Lehmann} (2004{a}); {Good} (2004), and {Nordhoff} (2008). There is no space here to review the proposals in detail. One basic insight is that the order of elements in a grammatical description is quite free. There is no particular reason to treat phonology before morphology or vice versa. In the same vein, there is no particular order between verbal morphology and nominal morphology, between consonant phonemes and vowel phonemes, between relative clauses and purposive clauses etc. This means that the linear order forced by a book can be dispensed with. As an archivist, one will of course always preserve the linear order as well, but for use in the Semantic Web, the linear order is more of a burden. A second insight is that there are two fundamental perspectives to form-meaning relations ({von der Gabelentz}, 1891; {Lehmann & Maslova}, 2004; {Mosel}, 2006; {Nordhoff}, 2008, forthcoming): form-to-function and function-to-form. Dissolving the linear order of a book means that the sections can be regrouped into form-to-function part (semasiological part) and a function-to-form part (onomasiological part). This is of course easier to achieve for descriptions written with this insight in mind than for legacy descriptions, where the authors often changes perspective.\par
+\pard\qj\sl240\slmult1 \sb120 \fi0 {\s4\ql\sb240\sa60\keepn\f13\b\fs32 6.1  Macrostructure\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 The macrostructure of a document refers to the greater elements, their order and their relations to each other. We can distinguish the frontmatter with table of contents, preface, acknowledgments, the backmatter with bibliography, index, appendices etc. and the mainmatter, where the central content of the document resides. {\f16 {{<}}front{{>}}},{\f16 {{<}}main{{>}}}, and {\f16 {{<}}back{{>}}} are provided by TEI so that these tags can simply be taken over for grammatical descriptions. The markup of the frontmatter and the backmatter is not very different between grammatical descriptions and other kinds of documents, so that those two items will be disregarded here. As for the mainmatter, things are more interesting. We can distinguish background chapters, which treat the location, history, demography, and sociology of the language, from structural chapters dealing with phonology, morphology, syntax etc. For the division of the structural chapters, {Lehmann & Maslova} (2004), following some basic structuralist insights, propose a division into \i expressive subsystem \i0 and the \i significative subsytem\i0 . The expressive subsystem contains segmental phonology and graphology/orthography. The significative subsystem contains the meaning-bearing items. These can be approached from a formal point of view (semasiology) and from a functional point of view (onomasiology). Within the semasiological approach, we can distinguish different types of meaning-bearing items: morphemes, constructions, and intonation contours. Within the onomasiological domain, we can distinguish different kinds of meaning: propositional content, discourse structures, pragmatics (speech acts). All remaining subdivisions would be language-particular. The general structure can be modeled in a general TEI-schema. Note that some of that the linear order of many extant grammatical description does not coincide with the order proposed here. For instance, intonation is commonly treated within phonology, whereas here it is seen as a meaning-bearing entity, which is different from phonemes, which distinguish meaning, but do not bear meaning by themselves. An application of this schema thus requires reorganization of the content. We will go into more detail about reorganization of content below.\par
+\pard\qj\sl240\slmult1 \fi300 An overview of the schema is given as a boxplot in Figure {\field{\*\fldinst{\lang1024 REF BMfig_boxplot \\* MERGEFORMAT }}{\fldrslt{1}}}.\par
+{\pard\qj\sl240\slmult1 \sb240 \fi300  
+{\pict\picscalex77\picscaley77\picw15844\pich17776\picwgoal8983\pichgoal10078\pngblip
+89504e470d0a1a0a0000000d4948445200000257000002a0080200000039cecf72000000017352474200aece1ce9000000097048597300000ec400000ec401952b0e1b0000000774494d4507db0817071b1588375b5f0000001974455874436f6d6d656e74004372656174656420776974682047494d5057810e1700002000
+4944415478daecdd775c53e7fe07f0ef490221404440011571a028eebdeac055ad7b5fd16aadb55ac7156badb7d5daaa6dbdadad57d0aa38aafe5ce000078a222a8a220a02a27580221b99018440f6f9fd11c41802c485217edeafbefa8a274f9e9c7c13f2c959cfc3b02c4b0000001f240e4a0000004841000000a4200000
+0052100000c0e8f1500223b7d50a3578654df9a8810119918d1a00b60501000090820000004841000000a4200000005210000000290800008014040000400a020000200501000090820000004841000000a4200000200501000090820000004841000000a4200000005210000000290800008014040000400a020000200501
+000090820000004841000000a4200000005210000000290800008014040000400a020000200501000090820000004841000000a4200000005210000000290800008014040000400a020000200501000090820000004841000000a420000000521000000029f881904aa52ccba20e0000d5e2a1044640a5523d78f020222222
+2222223232f2ce9d3b2291c8d2d212950100400a1aade2e2625f5f5f1f1f9f888888e2e2621404000029f841b871e3c6ae5dbb0e1f3eac33fccccccc381ceceb0600400a1a17a954ba7dfbf61d3b76dcbb77afe2bd8d1a351a3972e4a851a3060f1e6c6e6e8e72010020058dc7c58b17172c58101f1fafb59ccfe7bbbbbb2f
+5cb8b05bb76ea812000052d0d86465652d5dbaf4d0a1435acbedecece6cf9fbf60c1023b3b3b5409000029686c542ad5f6eddb57ac58515050a0b99c6198f9f3e7fff6db6f42a110550200400a1a218944326ddab4e3c78f6b2d777575ddb56b579f3e7d50220000a4a0712a2c2c1c33664c6868a8d6f23163c61c3e7cd8cc
+cc0c2502007873389fde10656464f4ebd7af6204babbbbfbf9f9210201009082462b3e3ebe4f9f3e77efded55a3e63c68c03070ef078d87c0700786bf0956a7011f8d1471fe5e6e66a2d6fd7aedd8e1d3b702d3c0000b6058d565e5edec891232b46a0b9b9398e05020020058d995c2e1f376edce3c78f2bdeb576edda366d
+daa04400004841a3b562c58a6bd7ae555ceee0e0b060c102d40700002968b4828383376cd8a0f3aee5cb970b0402940800e05d60301deb7b575454d4ba75eb8c8c8c8a77f1f9fcbcbc3c0b0b8bd7ef7dab152afcca9af251030332221b35006c0b1ab3356bd6e88c40221a3060c01b4520000020050dd9c3870f376dda54e9
+8fe0112350220000a4a0d15abb76ad5c2eafecdedebd7ba34400004841e394909070e4c8912a1a383838a04a00004841e3e4e9e9a9542aab68606f6f8f2a010020058d905c2ef7f1f1a9a2819999199f8f931501009082c6283030302f2faf8a0652a914d7b1000020058dd3a953a7aa6ec0b26c4949090a05008014344221
+2121d5b6a938b236000020056bbdd4d4d4c4c4447d9aa15600004841635371125d9d525252502b0000a4a0b1898f8fd7a7594242026a0500801434364f9e3cd1a7d9bd7bf7502b0000a4a0b1292828400a020020053f50c5c5c5fa348b8b8bab6294510000400ad64a7a669b5c2e8f8d8d45b90000908246c5dada5acf9637
+6fde44b90000908246c5d6d656cf961111112817000052d0a8d8d8d8605b10000029886dc16ac4c7c7171616a262000048c10f31055996c54e510000a4e0079a828443830000484123e3ececac7fe35bb76ea16200004841e3d1ac59b3ba75ebead91823c8000020058d4da74e9df46cf9e4c9138944828a010020058d47e7
+ce9df56ca9542ae3e2e250310000a4a0f1e8d2a58bfe8d31c512000052f003dd1624a2f4f474540c00e0ade3a104ef4bebd6ad0502416969a93e8dd3d2d20c67cd93f2548f73541597f76fc1337df90375efa96afb35d9f2a1a68e755ffabd2596b18722e50a15cdef67fa7aeb5058ca1e8996df4c527ed29637b193093e4e
+00806dc15a86cbe576e8d041cfc699999986b3e67b6ec8431f2b8ba474eaae62ecf6d26229e58ad93581d2f442ed68cc2e526dbe2c2b966af72012b3a7ee2862d354afbd0e1376964eeb6e32afafe9025f894c814f1300605bb016ead5ab979ec3848ac562c359ed2e8db9633bf0d41b64fbb8f2711d7944d4cd892ba9305b
+d44017edad43b5c6d61c177b8e58fa9a2b1097a57a90a9b43065ba37e166fd26c4070900b02d582bf5e9d347cf9625252586b3daea08d4d2a23ec7d5819351c8ee0c936dbf264b2b28dbce638888e8f43f8adde1f262295bde9e797e8365e9dc7dc5e6cbb2db694a9d4f77f5b1f2af2bb28b71655b7c292255e03d855c4917
+1e2a9ee4aaf0290200a4606dd5bb776f3d5b2a14b560af5fe633b6ef06f1844e264ed69caebf89e5cf436de32559f003c56fe7a51f6d28a9b8bdb8d44f622764dc5c7823b6969c88d57e991e47255945aacf7a9aec09977f71a09488b81c86c72186c8cc84e1e1f30b0048c1daab71e3c60d1b36d4a765fdfaf50dffe58865
+eca0565c5b0be623676e76119b535cb6e5f7555f13afc966d7bfb148ca53f9df7e2906431f2b13725519856cb248e562c7d97c45a6796f64b2f2fc03c5a4ce26423366d364b30391f2907845a3ba4cfb461c531ef575e63ad9e0030c006f04c705dfb38e1d3b66646454dbccc1c1c1f05f8b733dceba31661b2eca2c4c8988
+542cabdef129306588a89e25d3a73957ebe4d2c86465f37a9c6e4e5c22f29d6d6ec27da9c3e0878a7a9665bb4e6d2c18577b6ed813e540177c680100db82469482fa34b3b7b737fcd7129fad1ae35d32bbb7c99c8f745fffc061c8be0ea3b984cba1bb192a873a8cfa3fadfda51c86d20b5e1c4a149a517d4b069f1900400a
+1a0f3d2f9670747434c09557b1c4be08293a11abb01230d6e64c6e314b440a2595ca5fdc2d91d3e31cd5f88e65d7f6a9ef18e4c20d89577886c8542ca5e6abfc5ede5f3ab683494abe2a265549442c4b5945ecd80e2644a452918a35ac52648854a939d59faa939cad5cf17fe288f8777594572c61779e936c3b53fd45a861
+f7e573bc8af0070850690adeba75ab63c78e93274ff6f4f45cbf7e7dcf9e3d9393935fb577994cf61aeba4f9a8d7eba116d1738aa5fefdfb1bda9adf49579e88953f93b07bc2e505a52c110d6dcd0d4f548ede5612784f6163c1fc785a4a44e33b9a781c95f8dc927fe32fd93d43602764882859a4ba99a88c4c56f238ccfa
+7166cb8f4b844b8b26ef2a9dd9f3a5ebdf5d1d38dba69acd3e20f1b925fffe9474fd3833873a4c7a017b385a915dc4fa46c9cb0f3dbe779b4f957a9daafe3cde0231eb1d589a5df0ae4e6d1515b1a76e4a6313ab49d95219fb2843b9f7420d0dd1ae6229af0867f382816258b6d2ef91891327f6eedd7bd9b26544f4e4c913
+226adebcf92bf5feebafbfae5cb9f255d749f351afd7432d929d9d5deddeceb66ddbfef3cf3faff9045bad6af2e58865ac4a454233a6b094159a311c868828b798cd15b32deb73b895fce81289cb1a30baf6771649d8f442b6992d875f6307049bf25fa9b944c6b6f92abfb04495b6cf567d10b40aade68a36ccb11cd5c3f4
+1dadfb37bb8ac512d67b513597513eca50bace1329026ae2acabc3a1527b6b8e5bfbd71de2674436bea9e1dda9ea7b8579fe9df4ecd9332b2b2b5b5bdbbcbcbc63c78e0d1c38303030d0c3c3232f2fefcc993385858593274f6ed0a0415e5e9e9f9fdfc4891377eddad5b367cf274f9efcfefbef8d1a351a33668c8d8d8d48
+243a72e4c8d4a95377eedcd9aa55ab112346ecdebd5ba1507cf5d5571c0ee7c2850b6969692626261289a4fc51274e9cd0ec212d2d2d2020402e977ff1c517128944734d18a6b61e2eb2b3b3333333ab7ae2a4e1c387d7969763f13c03ac042fde917a964cbd2a8fe7d9583036169536109a31adcd0cfafd3d7459fae71c8b
+59ff2bf2b92c9dfdb159f9f24bb1f27f92153d5c78bd5a9b68fc5995ddb872572e57b2b6424ea7e6bc4bb1b2968d7879cf5437e3e493fbf16d8565bf17aede93c73e51b836e60eee64aafea754ced6abc3a95787f3304d41444ef5b92e8db8176fcb188619d4d144b37f2262590a8a963dca50f66b6bd2a979d91ffbb57bf2
+d8444583974faf3d1f2dcb2e54b568c0edd6d284cb29ebe4f25db9537d8e544e21776423bb9b36b1e30645cb527354ee03f816664cc5fe59962abe906bf7e4f3b714adfc97455d0ba653735e7cbaf2e26d59133bae931da75d139ce804ef5f35c70523222276eddab578f1e29c9c1c220a0f0ff7f0f0b87efd7a4242426e6e
+eebc79f3dcdddd870d1bd6bf7fffecececb0b0b0afbffefadcb9739d3a759a3061c2f0e1c3391ccea44993d4d3c94646462e5ebc382424a44f9f3e5f7cf1c55f7ffdd5be7d7b5f5f5f3f3fbf2b57aefcfdf7dfb366cdf2f5f5e572b9e58f1a376e5cf9edacac2c6f6fefafbefa4a2c16cf983143734d6ac5b57455b0b2aa66
+736dc48811f8a41ab28bb1b2097df833079b6dd53820b7606bb18a65a7f6e78ffdf9996fa88e6172f65f92888ad88ecd7987af4a87ff58b8f144c9f918d9e90899fbef6587eb3cb61767e5ab3e1b62b6e782e40baf2222129832c357152a94d4c896733a42f6eddfe2e60e5c22ba9faa2c2cd1b1cb71e9ae62bbba1cb7f626
+237e2a3c112e25a29f0e886313155f0e170446be38d6b0706b717a9eca7d80d9ca7de20e0b455ea74a89c82f4cfac98f853bce4a826364e10f1403bf2bf43a591a97a6dc7f49327f4bb1cefe75be104b01c33761047c323365d272551bfc4be68d1088a5ecc91b327c72a016a4a0ababeba851a3468d1a55be51c2e57267cd
+9ab579f3e683070fb66cd9d2d4d4b455ab56ddbb77dfbd7bf7c71f7f6c6262327dfaf461c386d9dada1617171391a5a52587c321a261c38671389cf1e3c77ff4d147eddbb7efdebd7befdebddddcdc1213135d5d5dbffbeebbe8e8688944a21e2a4cfd287373f3f2db3e3e3e3299ecf0e1c342a1b04e9d3a9a6b626252bb07
+53160a8555bf0503070ec427d5605dbb27efdbc68488168e12443d56dc8c93abb7a2d27295433a99dad5e5acfdd4422878695b56c5d2ea83e2b99f08a6f4e373189ada9fef588f3bb083e97f2699ff3cc322ecbe9c8822e315e7a36593faf2850266d33ce1814b92903bf26e2d79c3bb9a5e8a95310ccd1e6a763f45512056
+11d153916a7c6fedbdb8a1ffc8139e2a33f254c9d92a9746dccd01a5f7921587ae48178e1298f2c863ac40ddac44ca7a0796ba7530e172c87d8099c0945932564044133fe237b5e37477e12d1e23f09a679998a51cd7db74f118c17793cdd56b58b17f9d2fa453731edf8469e3c46bedc8bd97a28879a2c87ba69adc973fb0
+03c6400783df23aafe82767070183f7ebc5c2ed7da4d9a9898587ebb79f3e6229148f3815c2e57a5aaf4783887c3511f8fe470382a958ac7e3edddbbf7d34f3f6dd5aa5565c729b3b2b25c5d5da74e9d4a442ccb2a95cadabb17544bd567007df7dd7746f34a8dd2f6b312076bceea8362226a60c3d9725ad2b39549d87db9
+9d55d94fcc799f98693de40fbf125b2167f5f4177f7d5c0e99f389888402462a678928384656ef790f3642c6b5312fecbe7c600793d91f9bfd74a064f924f3e018798f56267b2f48660c326ba06bf480c8784573076eb7963c22f2fd4f1d131efd1d24696a57764966f9f14bbe0953d79249ca5235b3e7b22c953f291171b9
+0cdf84212a5b37f56d01bf6c0d2bf6aff38568eadfcec494c7387f215a3c46b072aa393e3c500bb605cb23cdcc4cfb2fb9478f1ea1a1a1eadbf9f9f983070fd66ac0308c3a08954a65d5fdffef7fff6bd4a851d7ae5d150a05c330eaf6ea9c2befa16ddbb69e9e9e05050544e4e3e363346f00cbb24f9f3eadecde264d9a4c
+9b360d1f5383959ea76a64cbf9e30b8bd5d32d564fb7d8f8a5e591abd2dc672a132edd7ef262477ddacbe39dce1d6e763749f1a77f55e794723894aef128a13953df8a4344a37bf0b30a54d71fc8257276e978c1ae2089ef15a9fb00beae3f5bba9ba470b0e6a8ff93c8a854463915e6fde07268ff3775561f14efbd20097f
+28dfbac052cfd75eb1ff6a3144a1ebeb6e5960b92758326d3daed300c34ec15bb76eddb973e7ca952b9ab39c0705059594949c39738688dcdddd5d5c5c56ac58e1ebeb6b6b6b3b6cd8b0f3e7cf8bc5e26bd7aeddb973272727273434b451a3461e1e1eb9b9b944141c1c2c93c92e5fbe1c1f1f9f9898181a1a9a919171fbf6
+ed5bb76e356fde7cd3a64dab57afcecfcf0f0808e072b9ea47f1f9fcf21ea64e9ddab871e366cd9a75eedcd9c1c141734d6ab5ecececf2edec8abefdf65b1e0f671018aebf024ae70c7bf10371421fbe50c06c3f2b19d4d134eab162df4509113d48555e8c9569fcee216b4b8edfca3a6b0f955cb82d2b5fa8d98088c6f6e2
+a7e428631214ea2559f9aab1bd4c89c884479f0ee47ffa47d17437fee81efc8262f66e92a25e1d8ed6c38968500793903b72cf93a52a965273547e61d2feed4cee2429d4572b2a54a462cb2ebb3c7859e2ff439d5943cc762f113a37e06afe44abe2b557ec5fe70b5107ad54cee617b357fe913f4c55ce186476ee67abf007
+727c7ec01054fa0ddbad5bb7f8f878ad8523478e2cdfcfc9e1707c7d7dd3d2d2f87cbe7a47e5983163cabfd0f3f2f28868d6ac5944a43e6e3774e8d0f2c79627eb891327d437264e9c686969c9b2ac42a1e072b9e58fba73e74ef9edd3a74f272525595b5bab4f27a9628f6b2d12111151d95d5dba7499376f1e3ea306ebd0
+65e9e680d2b64db8cd1b70d5d784443d969bf2e8f7a3254dec383fcfb0f87c63d1b2bfc5bd5af38e7e5fa7ec7764b42c2d57752e4ab6e653f3811d4c26ad7bb6f92b4bbbba9cf43cd5e908596b47deb130a98aa5c3a1d27ff5e76f5b289ced59b47c9279ec13c5fad9160ed6655137fb63b3a72255537b2e117d36c44cf300
+5b72b6f2669ca254cade4f517668c65b3fdb62f9eee295ff276edf9477ee67abba16ccd2f182613f144ceacbb730634c79cc96d3a5ff1e2d4878aa72989e6769c608f88c7303eeb68596ed9af042ff91a7e4a8026fc9babbf04edd9011d191abd229fdf80137a53985aa0bb765433a996af57f2956aef385f46b6bb2647bf1
+4fd32dea5a3033373cfb699ac5bd14c5f753b047140c0253f5cf3d78d766ce9cb97ffffe8acb4d4d4da3a2a2dab56bf7a64f50b3d70bea43c5527e096b6bc1d4c0a35ed32b5e2f58999c42555129ab3e8df3f51495b2e979aa66f61cf531b9728562d6ca8221a26725aca5a0ecba4c9d44456cee3355cb86dcf283cb192295
+4a4576753945a52a5b21a7b894dd74aa74f11881a898154bd8b45c65e02dd9c62ff5dd2f5ab1ff8a58969e95b056168c4c411c86129e2aad2d19bbba7a0f5c85eb05e1bd6c0b420d90c9640101013aef5ab366cd5b88408374345a6e5f87716bc9ab8147bd5ff5ad38f5dfec478850c0b476d411a256cf7f0dd431afe66781
+8d90b111bed443c3e7a7d2a8af4af43c599a9aa314f01927014344f9c5aafeed5ee1eccd8afdebf8adcd94adb07acae5568e5cfced83e1c038a2ef93b7b7b7fa7c1f2d3d7bf6fcf6db6f0d7ce52fc529365d96dd487ce9d427cd197159962ec6295244aa9854a5f755599e9825a26b09caf9be92a81455f99cba5ab3eceaf3
+a8f86cd5b6abb2c07b8a7f32302ed79b9a3e90ff345fe5f4595ef725f993d63d4bcdd171d10500b605e1ed1389446bd6aca9b8bc69d3a6fefefeea83a3066b81af644227ded4ae26ed7f2df69a6c36b5ab0911791c95f46bc1fdaca7c97c5fc9a148f95057de8cbda58b06983ad461ae2628fd6f2bceffdbdc924f7c1e094c
+c8ecf92ebea57e92193d4d1ad5e50dfb4bbcf55f028982adfa516905aa0d1765dba69af9c5c84fde91b76b88afec37d2cc9e7bea472bd401b02d08356dd5aa555a17591291bdbd7d7070b09e53efbe2f971f29d20a54435af3ec84ccda517c219f215d33e2da0b19476bce4017de7f3ee6ff3c8a1ff64449449d1cb97c1ed3
+a601a7b53d8774cdb23bb5ab49d58fbaf7541593aacc13b393bb9860ae4100c0b660ade4e3e3b375eb56ad855656564141412d5ab430f0950f4b50aaa78620a2797dcb4685d639232e972173532222a1192355e8380f4be72cbb553faa7f0bae29979c7f2a5eec66ba72b8293e4b00806dc15ae6e6cd9bb367cfd65a28140a
+4f9f3eade7a4bbef970997b99df6e2805c5a818a5e7746dcaa67d9d589212674a9c5967f99ed09974ddb538a8f130020056b937bf7ee8d1b374e6b12095757d7888888be7dfbd68a9730a815372a45b9efa69c881e64aa2e3e54522533e26a6ec7bd740db582f24b58aa6496ddaa1f75e5b1e261a66a460f93738b2cc29f28
+f189028037c15dbd7a35aa5063ce9e3dfbc9279fa88714283765ca94d3a74fbfab638191bfbdf52e1b5a71785c5a724cb2e58aec61966aed28331e87ea5b320dac981f02645602e6e02dc5e7bd4c9f4958efabb23a02a65d438e6f94fcc243a5ab03a75d436e4c9af2ef30b9a335a75d43ae7d1d8e8529f3dd49c9efc1b22b
+8f947f4c30bbfe4459f5a3cc78ccbf8f4a1a5871c29e2806baf07a357b07a711d5c5910243d2f25bd400de1d5c355f435896ddb469d337df7ca339aa2a8fc75bbf7efdd75f7ffd0e9ff89d5d359f53cc1649d8e6f55eda9da0cf8cb82c4bcf24ace6048455cfb2abf5289982381c4ac851599b33e58727dfb2a638efd490e0
+aa79400ad676ea991723232335170e1c3870e3c68deffc40e0569c048f14440a02540ac705dfade8e8e82953a6f4eddb5733029d9d9dfdfdfd2f5dba542bce850100306238fef14e2426261e3a74e8e0c1830f1e3cd05c6e6565b572e54a0f0f0f53539ce20f00801434160a85223838382a2a2a3a3a3a3a3a3a393959ab41
+dbb66de7cf9f3f73e6ccaa6796070000a460ed939b9b3b62c4081df5e5f1c68f1fbf70e1c2010306a04a000048c10f0897cbfdedb7df162f5eac9e1f1100000c0dce8e7987944ae5b265cb9a366dfacb2fbfe4e4e4a02000004841e3646d6dbd65cb96d9b36777e8d081c77b690b3b232363d5aa558d1b37fefcf3cf636363
+512b0000c381eb05df3e894472eddab503070ef8fbfb171515bdf4a383c3f9fcf3cfd7ad5b67676757436b83eb055f03ae173428b85e10b02d58bb9899990d193264efdebd5959593e3e3e9d3a752abf4ba552fdfdf7df2e2e2e9e9e9e0a8502b50200400a1a2d81403075ead4a8a8a89d3b77dadbdb972f2f2c2cfcfaebaf
+3b76ec181212822a010020058dbac41cce9c39731e3d7a3467ce1ccde5f7efdf1f3264c8ba75ebb0531a00002968e48442e1ce9d3bfff8e30f0ee745cd552ad5ca952b274e9ca875f810000090824668d9b265fefefe6666669a0b8f1f3fdeb367cff8f878d40700002968e4c68e1dbb7bf76ead850f1e3ce8d9b3e7eddbb7
+511f0000a4a0917377775fb56a95d6c2828282e1c387272424a03e0000484123b766cd9a8ae38e6665650d1d3af4e9d3a7a80f000052d098310ce3e5e555717ea5c4c4c4e1c387171414a0440000484163d6a2450b0f0f8f8acbefdcb9336bd62cd40700002968e456ac58c1e7eb18acebe4c993fbf6ed437d00009082c6ac
+6eddbac3860dd379978787477a7a3a4a04008014346693274fd6b9bca0a0e08b2fbe407d00009082c6cccdcdadb2bb8282828e1d3b8612010020058d96838383e6986a5ad6ad5b8712010020058d168fc7737070a8ecde989898c0c040540900002968b42c2d2dabb8179b83000048416356f58412616161515151a8120000
+52d0383d7bf6acea0667ce9c4195000090824648241289c5e2aadb9c3d7b16850200400a1aa1a4a4a46adb444444e4e5e5a1560000484163939898586d1b954a75f9f265d40a000029686ceedebdab4fb3949414d40a000029686c626363f569969999895a010020058dcd9d3b779082000048c10f516e6eee93274ff46999
+95958572010020058dca8d1b3750040000a4e0072a3c3c5ccf961616162817000052102908000048c1da8f65d9e8e8683d1bdbd9d9a16200004841e3919898585858a867e3468d1aa16200004841e3111313a37f63a420000052f0c34dc166cd9aa162000048c10f3105198669d3a60d2a06008014341efa9f1ae3e4e48473
+4401009082c623333353ff41d1dab66d8b8a010020058dc7c3870ff56fdca54b17540c000029683c727373f56fdcb3674f540c000029683c5e69eef81e3d7aa062000048c10f31059b34698281630000908246452412e9d912bb43010090821feeb6205210000029f8e16e0be2a020000052d0d8300ca34f332e978bcb2400
+009082c6c6d2d2529f66cececee6e6e62817000052d0a8d4a953479f6618350600002968849a366daa4fb376eddaa1560000484163e3e2e2a24fb3162d5aa0560000484163a3e74c494e4e4ea815000052d008b705edededab6dd6b87163d40a0000296884060c18506d1b8c9d06008014344e23468ca8b60d26d70500400a
+1aa70913260804822a1a9899997138788300009082c64828148e1f3fbe8a0652a9542e97a35000004841e3b478f1e22aee6559363b3b1b550200400a1aa79e3d7b0e1a34a88a06595959a812000052d068fdf8e38f55dc7bebd62d940800002968b4060c183065ca94caee3d7bf62c4a0400801434661b366ca86c8a898b17
+2fca6432940800002968b41c1d1d376cd8a0f3aea2a2a243870ea14400004841633677eedc891327eabcebd75f7f552a952811000052d098eddcb9b379f3e615973f7efcf8c08103a80f000052d098595b5b9f3973c6dadabae25dcb962dcbc8c8408900009082c6ac75ebd6fefefea6a6a65acb7373733ffdf453954a8512
+010020058d999b9bdb9933672a9e321a121252f5958500008014340643860cb97cf972c539957efdf5d755ab56a13e0000484123d7b56bd7ebd7af573c59e6975f7e59b26409cbb22811000052d098393b3b5fbf7ebd4b972e5acbbdbcbc468e1c9992928212010020058d99bdbdfd952b57162d5aa435cbe0d9b367dbb56b
+b765cb166c14020020058d99a5a5e5e6cd9b232222ba75eba6b9bca8a868d1a2453d7af4387af428aea90700400a1ab3ae5dbbdebc7973f3e6cd5656569acb6fddba3565ca94162d5a787a7a161515a1500000af8ac15eb55ae4e9d3a76bd6ac3974e850c5cc13080443860c193d7af4a851a31a3468f0e28ead56a8db2b6b
+ca470d0cc808cc350d4841d0505c5cecebebbb73e7ce8888081def28c374ebd6edead5ab7c3e1f298814440a0220058dd69d3b7776eedce9e3e3939797a77557515151d9a5f74841a4205210002968c458968d8f8fbff9dc9d3b77e47239521029881404400a7e882412497474748f1e3d783c1e521029881404a81a0f2530
+326666667dfaf4411d0000f4812b2500000029080000f0e1c11e5163c6300c8a0046f041c6e90b806d41000000a4200000005210000000290800008014040000787538f9fb59b59d0000200049444154cad8dfe01da8c1ab6b8212181076186a00d816040000400a020000200501000090820000004841000000a420000000
+5210000000290800008014040000400a0200002005010000908200008014040000400a020000200501000090820000004841000000a4200000005210000000290800008014040000400a02000020050100006a051e4a0000508becdbb72f2929a97bf7ee3d7af4b0b5b54541908200001f908c8c8c356bd6a8542a8661060d
+1a3467ce9cf1e3c7f3f97c54e6f5302ccba20ac6fc06ef400d5e5d1394c080b0c350036db9b9b9a74f9ff6f6f6be79f32611d9dadafef2cb2f73e7cee57070900b29084841a42052f08371eddab5458b16c5c6c61251cf9e3d77eedcd9be7d7b94e595e0870300406dd5b76fdfc8c8c8a54b9712d1cd9b377bf7ee1d141484
+b220053f5c52a9141bf7001f141313930d1b36fcf0c30f4424168b478f1e7de0c00194457fd8235abba954aa070f1e444444444444444646deb973472412595a5abe7883b147f435608fa821c11e51bdaac4b223468c3877ee1c1171381c3f3fbf71e3c6a12c4841a3555c5cecebebebe3e3131111515c5cac795751511152
+10298814fc00252525b9b8b8c8e572223237378f8a8a6addba35ca522dec11ad656edcb83167ce9c060d1a7cf9e597972e5dd28a403333339c2406f0616adab4e9942953d4b74b4a4aa64f9fae542a5116a4a091904aa59b366d6ad7ae5defdebdfffefb6fadf06bd4a8d1dcb9734f9d3a959797676e6e8e72017c98c68c19
+537e3b3a3a7ac70eec0baa1ef688d602172f5e5cb060417c7cbcd6723e9fefeeeebe70e1c26eddba55fa06e3afe035608fa821c11e51fdddbb77af5dbb76e5ff7474744c48483035354565b02d585b6565654d9f3e7dc890215a11686767f7d34f3fa5a4a4ecd9b3a78a0804800f8ad6806a696969010101280b52b05652a9
+54dbb66d6bddbaf5a143875edab66398050b163c7efc78f5ead5767676281400942b2d2dd55a72ecd83194a56a1847d41049249269d3a61d3f7e5c6bb9ababebae5dbbfaf4e983120140454f9f3ed55a72e5ca1594052958cb1416168e1933263434546bf99831630e1f3e6c6666861201804e4949491573313f3fdfdada1a
+c5a90cf6881a968c8c8c7efdfa558c407777773f3f3f44200054e1eeddbb3abf5550196c0bd60ef1f1f11f7ffc717272b2d6f2193366ecddbb1717020240d56262622a2e944824d53e303a3a5a241295a5028f676363e3e2e2a2f5b37bdfbe7da5a5a5f3e6cdabb637fd5bbe76574949493b76ec98387162d7ae5ddff0d9f1
+c56a4011f8d1471f558cc076eddaedd8b103110800556359563dd19296ba75eb56fbd84e9d3af9f9f94d9a34492412c964b2f3e7cfb76bd7eecb2fbfd4bc34d9cccc4c2010e87cb84aa5cacbcbd3a7e5abaaacabfcfcfc2d5bb6e4e4e4e8ff90cae07a4183909797d7ab57afc78f1f6b2d3737378f8c8c6cd3a6cd6bf78ceb
+055f07ae1734a82f775c2fa89f070f1ee8fcaec8cfcfd72708fffaebafdf7efb2d2d2d4dfdcfecececdebd7bb76ad52a3030b0dac71e3e7cd8dededecdcdad265fafb3b3f3962d5b860f1ffe86fd600be3fd93cbe5e3c68dab188144b476edda37894000f870e8dc10e4f178565656afd19b9d9ddd7ffffbdfb367cf969f65
+9a909070f9f265228a8f8fdfb66d5b6060e03ffffc4344d7ae5d9b3f7f7e5454d4eddbb7355bb22c7bf1e2c59494949898186f6f6fcd8dc5f3e7cf1f3870e0c68d1b0a8542bd2576e9d2a50b172e1415151515155db870a1fcdc88ca9e9488188621a2e8e868adceab7d76ad15400abe7f2b56acb876ed5ac5e50e0e0e0b16
+2c407d00401f3a0f0ab66edd5a9d16af61e8d0a144141212424477efde9d306182afaf6f5a5ada860d1be6cd9b27168b4f9e3c49449696967c3e5f2010a88f2396b73c7cf8f0f0e1c3376edc78fefcf9d3a74fbbbbbbabbb5db870617a7ababbbbfbca952b3b74e8e0e5e545441d3b761c356a545c5c9c50282c2828983061
+42d54faa76f6ecd9cb972f9f3d7b76dab469ea25d53e7bc515400abe67c1c1c11b366cd079d7f2e5cbdfd6be7500307af7efdfafb8b04b972eafdda17a23f2d9b36744d4be7dfb8f3ffe9888eeddbb1713139397973779f2e48103071251a74e9df87c7e9b366dd4535894b79c3a75aaa3a3e3c08103fff39ffffcfcf3cf61
+616144545252e2ededede6e6c6e572dddddd0502c192254b88c8d6d6b67c329ca64d9baa6f54f1a46a03060c58ba74e94f3ffda4eebcda67d7b90248c1f7a9a8a868d6ac593a0fcdf2f9fcb973e7a24400a0a7c4c4c4b79b82ea6bf0cb3389cbe51251fffefd4d4d4d9d9d9d7ff8e187ce9d3beb7ca0baa5fa867a7c7fa150
+28954ad5df6c75ebd6555fd7c8b26cbd7af5aa5e87aa9f54ddb9b9b9b9baf36a9f5de70ae04a89f769cd9a35955dca3360c0000b0b0b9408005e29b4de620a1e3d7ad4d4d454bd73b21cc330a1a1a1070f1efceebbefeeddbb577188ab6a536dfffefdab57af4e4e4e0e0f0fdfba75ab66cf953daada27d5ff34cf8a2b8014
+7c6f1e3e7cb869d3a6caee1d316244cdad4a4a348945eacf1af12da9615be25b1211e525d1d51dd4792235e9fafeeb251553c421522968c0fcdaf766672551d4792a125183e6d47518e5679263ab37ea2d7007f59d482ddfcdfb221153c821522a68d47cfc9dd6162ccb969494682d343131d17fb47d954aa5f9cff0f0f09f
+7efa69d3a64d8e8e8e9a4973e5ca95c68d1bcf9831a353a74eea0387ea68914aa5e583d4946792663895df3e78f0a0bfbfbfadadedac59b3349fd1d2d2323f3f9f88e2e3e3d5730557fda43a3baff6d92bae00f688be376bd7ae2d7fa72beaddbb77cdad4ae34e147594764e2549112584d10f2d28d49b88a8249f42b65071
+8e41d4ab4444774e515a6cadfb72a23d2b68fb526ad387262ea5e61dc96b2e1d58fd467d16e753c0162a7c67ef4b91886e9ca227b1f823ad451886a938b768bb76edf43cb7e0d6ad5b274e9c1089441e1e1e6bd7ae5db060c1860d1b4e9d3a557eed796262627878786464645c5cdccc9933030202ce9c39f3fdf7dfabefed
+d7afdf92254b828282345b7a7b7ba7a7a79f3e7d3a2d2dedd8b1632a95eaf0e1c344949090e0e0e0606d6dddb061c37efdfa959ff33965ca94cf3ffffcd34f3f2d282890cbe57bf6eca9e2492f5dba94999979f6ecd9d4d4d493274faa542af5b8e1d53e7bc515c0f582ef47424242ab56adaa98093a3939d9c9c9e92dfc6d
+e879bde0454fbae849eb928888827ea7e32b686d1cd9b5a095ce346d0bb51d6e10553bfa0dc9c434ddfb9d3fd15bbc5ef0e05a8a3843ff0b23eef3fd2e4a05edf886e67bbd51b79f3bd3c22dd4ed9dbd2f3bbe218998167b1bc2db8eeb05f5d4bc7973ad43839f7df6d9debd7bdfeeb3c864320e87939090606d6d5d3ead0d
+cbb2cf9e3dd3e7928ce2e2e24d9b362d5ebc58241289c5e2b4b4b4c0c0c08d1b37aaef7dfcf871c3860d1986914aa59ad738ea7cd2d7fc0d596105b047f4fdf0f4f4ac220289c8dedefebdad5ca3f6c4aa282f89ec5a907a4f7d4a34254550d7c964f17cf6b24757292d961ab852ebc1655b3c7197c8ae2589f328f1e68b96
+2c4bf78328fb11b5e8478d3b953d36fe32d938915c4a7121d47e24d936a17b41949f4adddd896fa1bbffe73f775fdcd6d9e0fe792acaa6fa2da8693762b8f4f82a2964c430d47a30c9259410465c136ad9bfe62a999f493ebfd27f0ebc884022e2f268fc92b2dbb121d4c0991e47939d13b5e84279191471865815f51849f5
+1c8988ee5ea1a6ede97134652652bf4964593e26324344f4389ae222a8df64aaf3bcda514194fe88daf523e74e4444772e537d27924be94e08f51849764d282a887252c9cd9dcc9e97fa9fabf424969c5ca95325a5d6d98088a2ce536136356c412dbb11874bff3caf76a7c12493d0fd30e29a50fbfef863af319d3b77d64a
+c156ad5abdf56751cfd9abd533c3307a5e95e8e9e9999a9a2a1008d4bff2f3f3f3fbf77ff12169d1a285fa86d626acce277dedef5ead15c01ed1f7402e97fbf8f854d1c0cccc8ccfe7bfb7f5bb1f4ce6d6d4b4fbf32fc1b3147f99fe394bbbcaaec8a1c31e549445bd3fa3eb7b68df174444b70e93d770bab091ee9fa73ba7
+69e7f34b738e2e25a11db9b8d1e61174fb041151b41f6dfa844277d083607a124eff1b4817bd282b8e6eeca743f32bed5f8bce063e0ba9209dbabbd3c995b4b6035df2225373fa6b1495e413119998d1ddc0b2f0a8311181a49051ab9e2f96484ba8b8802cada9e4195d394c2b87d3b13fe8b20f9dde46f999f44d5ffa6802
+d577a2455d4921a773bbe85b37f25d47d7fce8c8efb4b42fc93406848c3c4b772e53e459fafdf9fbb26329d5b5a38e6eb46a045d3f41d7fce8874fe8ec0e8a09a6fbe1b47c209df0a2b438bab89f363f2ff5360fcacfa2a19fd1f93db45157a92b6bf0d742ca4b273777dabb92e677a0135ec437a71f4751513e1191a91945
+0412c3e08fbd267df2c9275a4b1a376e6c682b397dfaf4a74f9f3a393975efde7dd2a449a9a9a9e3c78f7fbf2b806dc1f7203030506b20032d52a9946559a686bf4424c5747507e524505e122dbd4882e7bfec5c0650e709e4e2467ff627224a8aa4fbe7e95f5e4444ffda44cb1b50cf4fa9fb543afe3db51a481dc7509b8f
+697d5f22a247a194934005194444f62e14b2993a8da32e13e9e40fd4b43b75994862112db5a54ee3c8b609d9b5249f4595f6dfeac51542ba1b34eb4957bce997c7c4e1527777bab28d062f2122ea3797ee06529749444425226ad9af464b2aca202232d3385a93934a5bff4d772ed3da3334e05fb4e77b6ad387dcdc89889e
+2650c74154c796da7e4405d9549843c3e7d0360fea369c3a0fa1dc349ae54cd78f973526a20e03e8a309d4c18d96f52722ba1b4a4f13282f8388a8910b9dda4cbf5da4fffb815cba53df895424a2c9b6d4671cd935a1862d69eb2222a2f8488a3e5fb66f76fe26726f40833ea58e1aa5aeac81b484ce78d3a4c7c4e1929b3b
+9dde56b6753b622e450652bf49444445226ad70f7fec3569c284094b962c118bc5e54bcaafc0331ccd9a353b75ea9441ad00b605df836a3f043a4ff77ae7cc2ca9df5c9af03bcd3f4e8d352e0332352ffbbf5c4a44f420982c9f5fe26361430eae94104644c4e196b5e40b49212d8babfacda969376ada8dbef4a5b9479e7f
+e8b8c4e3bfe8d9447d5b50f6a8cafa2fa7b3018f4fe675292fa96cc76079838f97d1adc394974c71212fed3bad19360d89883235765239b6a22e43c9da81ba0c252262386455bfecae06cef4f93af2db40218788885855d99e496b0722a27a8ed4aa07a53f7ad115dfbcecffeaf7253e921c9a934b3772e9462b7c69c591b2
+52abcbcbd728355f40322911517430d5795e28a10d39b9d2fd974b5d5903133e59d6a5ace7d5b67ade66e232ba7298b2932936843a0fc65f7a4d7fdc6c6cbefaea2bcd25ea532ea16a48c1f7403d2251d57273730d6fc5d9b22fee82748dec149265fd4a3e5c5c4abf4b751ccafe934bf47a926afbd7d980c3a5d9fb296035
+5ddf4b4fc269daf38b906c9ca8db143abf9ea2fda8ebe49a2e588f91646a4661fe5aaf90185d7f77e9f1b47a0c0d9b4dc3e7e8eecdc2aaecf85f851f4d65d54eba4bd60e65ffe9536d8643791a9514085f4472d50d385c5abe9f0eaca6e0bdf4209c163dafb69d13f59f4247d6d3353fea37197fe935ef3ffff94ffdfa2fde
+c4d8589ce88b14343ca9a9a93a8778a8d8ac66034e452f5f2df4d237ace6ed8e63499442a931654b9e6551a7b1ba5bb61a44712174d1935815e5a752b49f8e3e2baaacff6a57e0e6419aef4f7d66d167bba9bef38b0e877f47d7f792c0aa6c03b42659dbd3dc0d74723325fd53699bf2b25f3f41165664694dcf728988940a
+92951211494bca5e697a3cf518f9d22f12cdb2741a44b12174dc935815e5a4d235bfea4bdd7b2c65a750c2f34a166451ef974b5d45834b0769953f0d9d454b7753038d6affeb3b0ade4b165665db9d50b3ead7afefedfde2ccde63c78e55713996b1dab76fdff6eddb9182864be764d015a5a4a4d4dc3a254552ec292a7c4a
+913e24297ab1fce1257a9649ff9ca5fc548a3d49ac8aa28f5103579ab68dfe6f3645fad0f1ef69e27aaae3400f2f51413add3d4df969147d8c5815dd3a4c8e1d68c27af25b4e8b85b47d32f59a4944f428944429f44f203dcba21bfb89886e1da16799141b40c539f4e082eefe89282f99126f52522411abbb414e022d73a0
+afad697943faa31f653c0f1efb56e43a94fa7cfe7edeef510b68e96ef29c433ebf5274305ddc4fb7ced1a0e94444d1c1949f49970e507e26115197a1743f9c7e1a4d118124b4a17d3f96f5707213c586d0eeef68ca7fc8be2911d1ed4b24caa4c8b394934ae1278955d1d563d4ac037db19efe5e4ee384f4eb641a3c93ee86
+524e0a4506527e165ddc4f44147a84f233e9460015e650cc057272a57f6fa3ffcda6cb3eb4e77bfa627dd9ded7ec648abb49f19144acee0644f43481dc1d6892354d6b48dff47b11f3ea5dbe1f7f8ebff4f765c284091e1e1e65fb17d2d3b76cd9f2a15500f30b1a3a4f4fcfafbffebada666bd7ae5db56ad59b3fddbb9a5f
+50524405e954af59f51b58621115e7925dcb573b63b0dafeb51a488be9d2261ab498c422928aa9208dee06d2948d651b31be8bc8fd55be0bdec5fc82b969949f45024b6ae0fcd285132fbd2831b12a1208495c48e642623834ce92365c23133ed936240b3dce442f12d1b35c6af82ad52e2da2dc74726856e9d65bc506a5c5
+7472138d5d4c4522928829378d220369def36a6f59448bdee6372fae177ce58ab1eccc99330f1c3840441616166161611d3b7644592a8373446bda93274ff46976efde3dc3feb9252487d67ab5b4b0210b9bb7dfbf56838b9e244a251301d938111195e453cbfe949340d98f28f3217518f3fe2b56cfb1ec12c0aa5ed4f36b
+f834038fcb2327577d9f456843c257acb640488d5bbf5a83139e94934a7c01099c88888af3a97d7f7a9a40e98f28f521f51e833ff3f78b61983d7bf6d4ad5bf7afbffe128bc5a3478f0e0a0a7275753590d5bb7cf9b2939393542a0d09091939726493264d828282525353ddddddcb074f6659362828e8d1a347fdfaf5ebd4
+a913116564649c397346a5528d1c39d2d1d19165d94b972eb56cd9322f2fefe6cd9b93274fb6b52d3b6a9e9090909a9a3a60c080ca1a10d1f9f3e7b3b3b35bb468d1ad5b37ec11ad69050505c6908286a6c7742a7c4adf3bd1baeeb47d12e5a752e7f174fb04794f245909b5ad855b132a255d3a48d212ba72988a0b0c6bdd
+064e27d1539ae1448bbbd32f93282795fa8ca7eb27e8e789242da1aed8763380ed1b1e6ff3e6cdfbf7efb7b0b0484d4dedd3a7cfd1a3470d61c5fcfcfc3ef9e4931d3b760407078787870f1c38d0cbcb2b2e2e6efffefdf3e7bf18b776e9d2a57676766e6e6e23468c3871e244666666dfbe7d274c98e0e4e4d4b56b57b95c
+5ed9f481af31bf20f688d6b4091326e8330abb898989582c36313179d35f853b50f257d704253020d823fa26d2d2d2befdf65b5f5f5f7a3edae7c89123dfe7a01c44aeaeaebffcf2cbc48913452291adad6d52525293264dce9e3dbb68d1a2848404220a0d0dfdf3cf3fd553cbfdf9e79f5c2e77c78e1dfffdef7f77eddaa5
+1ea72d3d3dbd61c386cd9a35f3f2f21a33664c4c4c4cdfbe7dcb2f94fcf6db6f8b8a8abcbdbd7536282929110a858f1f3f6ed6acd9ae5dbbb66ddb863da2354dcf53b6e472796c6cacfee3c1030054e4e8e8e8e3e3b378f1e23ffffcf3e4c99357af5eb5b2b2d2738fd43bc2e572d531ac1efe5b7d5b2010944f01181919d9
+bc7973f5b79fafafaf898989adadedba75eb366cd8a0de65aa9efe42e7f481a4f7fc82cd9a3553cf2f883da2354d3df3883e6edebc897201c09bebddbbb79f9fdfc58b176d6d6d0b0b0b0d7c6db95ceeddbb771d9e934824f1f1f163c68c993d7bf69c3973debc73f5fc827bf7ee55cf2f8814ac699a4768ab161111817201
+c09bbb74e9d2983163060d1a94979757a3b3b6e952ed61b8418306858484787a7aaa54aad4d4543f3fbf13274e585959595b5bab8713512814a5a5a56f38bfe0ac59b376efdeedecec8c14ac693636fa9ec2876d410078430f1f3e1c3972e4e0c183cf9d3bb778f1e2274f9e5cbf7efd3dae4f6868684a4a4a6060605656d6
+fefdfb89e8c89123999999010101393939172e5c20a20e1d3aac5fbf7ef9f2e542a170f2e4c93367ce1c3a74687878f8e8d1a30303036d6c6c7efcf1c74b972ee99c3e10f30bd6025bb76e5db870a13e2d1986c9cfcfd773be924a3bc1d931af0167c718129c1df3da9b5cebd7afffe1871f140a85ababebf1e3c7dfc5444b
+ef8e4824cacdcd6dd9b2a57a5e01b158ac52a98442616161a15028e4705e73130ef30bbe7ffaef11655936222262e8d0a1281a00bc92a2a2a29933679e387182887af5ea75eedcb937fc3d5df36c6c6c34f79c955f4af8862f04f30bd6a614241c1a048057279148468f1ead8e40474747f5413594450df30bbe7fcececefa
+37be75eb162a0600fa53a95453a64cb972e54af9a68fbdbd3dca520ef30b1ac47b50b76e5d3d1b6304190078259e9e9e010101eadb6ddbb69d3871226a5235a4e07ba01e164f1f4f9e3c914824a81800e8e3d1a3472b57ae2cffe7f8f1e35113a4a021eadcb9b39e2d954a655c5c1c2a0600fa58b3668de6efe6da75522852
+f003d2a54b17fd1bab07d60300a85a5252927abcd072969696280b52b0766f0b12517a7a3a2a0600d5f2f3f3532a959a4bdeef78a14841a854ebd6adf59f0a392d2d0d1503806a9d3f7f5e6b49727232ca821434445c2eb743870e7a36cecccc44c500a05a0f1e3ca8760920050d45af5ebdf46c593e6916004015b2b3b3b5
+96c4c6c6a22c484103d5a74f1f3d5b969494a05c00502d994ca6b5242e2e0e87069182064affc94d140a05ca0500d5120a855a4b5896c5d434484103d5b871e3860d1bead3b27efdfa281700544be757ca8d1b375019a4a081ead8b1a33ecd1c1c1c502b00a896ce318a31163152b0d6a72046c205007db46ddbb6e2428c45
+8c14345c7a5e2ce1e8e8885a0140b5740e4a9594942497cb511ca4a021d2738aa5fefdfba35600502d9de7dcb12cfbf4e95314072968889a366d5a6d9bb66ddb625b1000f4e1e4e4d4a041838acb71b10452d040d9d9d999999955dd66f8f0e1281400e849e7701c15af2304a4a0a1b0b2b2aabac1881123502500d093ceb9
+4b2d2c2c5019a4a081aa7895ab265757d7810307a24a00a0279da7893a3939a13248410355f59e8aefbefb8e6118540900f4d4a44913ad25cececed816440a1aa8aacfdd6ad2a4c9b469d3502500d09f9d9d9dd692c18307a32c484103959d9d5dc5753cdf7efb2d8fc7439500407f15bf34dcdddd5116a4a0818a8888a8ec
+ae2e5dbacc9b370f25028057929393a3f9cf8e1d3bbab9b9a12c48410375f4e8519dcb4d4d4dffeffffe0f1b8200f0aab4460dfde5975f5013a4a08192c9640101013aef5ab3664dbb76ed5022007855c78f1f2fbf3d7efcf851a346a126484103e5ededad7340879e3d7b7efbedb7a80f00bcaa989898c0c040f5edc68d1b
+efdcb91335410a1a289148b466cd9a8acb9b366deaefefcfe572512200782552a9f48b2fbe60599688844261404080adad2dca82143450ab56ad1289445a0bededed838383f59c7a1700a09c42a1f8fcf3cf63626288a87efdfa972e5dd273e236400abe073e3e3e5bb76ed55a686565151414d4a2450bd407005e494e4ece
+f8f1e37d7c7c88a859b366616161ddba754359908206eae6cd9bb367cfd65a28140a4f9f3e8ddf6e00f04a2412c9f6eddbdbb46973faf4698661e6cd9b171d1dddb2654b54e695e074fc9a73efdebd71e3c6492412cd85aeaeaefefefead5bb7467d00401f2a95eac68d1b274f9edcb3678ffa02c1be7dfbfef1c71f3a2794
+00a4a0a1387bf6ecd4a9539f3d7ba6b970ca94297ffffdb7a5a525ea03007a5abe7cf9860d1b88a84183064b962cf9f2cb2fdbb46983b2bcfd148c8a8acacfcf373535ad38d7f9e3c78f9392921886e9ddbbb7b9b9b9ce87efdbb7afb4b41403a01011cbb29b366dfae69b6f944ae58bbaf378ebd7affffaebaf511f007825
+43860ce9d1a347af5ebd3059c4bb4dc10e1d3acc9c39d3d7d7f7e6cd9b3d7af4d0bc6be2c489292929f1f1f195452011553b7fecebed07c8cfcf579ffeab79db908585857dfdf5d79191919a0b070e1cb871e3461c080480d780c9b7dfae4acf8e313131e9d2a54bcb962d7ffffd77cde5414141a5a5a5f6f6f6f5ebd7afa2
+df2953a6cc9c39f3edaeebd1a347efdebd5bf1b6618a8e8e9e32654adfbe7d3523d0d9d9d9dfdf1fe7310300187a0a1211c330df7cf3cd8913271e3d7a54bef0c08103d3a74fd76c969191b173e7ceeddbb7a7a5a5952f4c4848b87cf932cbb2172f5e4c4949898989f1f6f6cecbcb53df7bf9f2e5274f9e3c78f060ebd6ad
+c9c9c9ea70ddb56b97582caeacdb6bd7aecd9f3f3f2a2aeaf6eddb9ab7898865d973e7ce6ddebc59fd4f220a09094949493971e2447474740d17343131f1d75f7f6dd3a64dd7ae5d35470ab5b2b25abf7efdfdfbf7c78f1f8f8f1d008081a8e6ec98c1830777eedcf98f3ffed8b1630711ddbe7dbb4d9b369a53bf666666aa
+3777222222ba76ed9a969666626272f7eedd4f3ffdb477efde9999993366cc58b468918383c3d5ab57fdfdfdcf9f3fefe7e7f7e9a79f7a7878346cd8303232f2cf3ffff4f0f06018c6cfcf2f343474dfbe7d3abbb5b4b4e4f3f9028140bdaf55f3f6d2a54b67cc98d1a851a361c3866dddba552a95ce9c3973eedcb9d9d9d9
+75ead479d7c30829148ae0e0e0a8a8a8e8e8e8e8e86875a86b6adbb6edfcf9f367ce9c59f5ccf2ef0226e90523c010a98744017827d8cafdf1c71f8f1e3df2f5f5e5f3f94f9f3e655976debc79f9f9f9fffdef7f5bb56aa56ef3f8f163f5b03d85858544949e9eae5ebe6cd9b279f3e6b12cdbb469d393274fb22c1b1d1d6d
+6e6eaebeb775ebd6c78e1d635956bd75989494c4b26c606060f3e6cdabe8b6499326212121ea06e5b7af5cb9327af4e88080808080800103060c1a348865d966cd9a1d3a7488ad1195cd94cbe3f1264f9eacde207e5ff0f106a3ff9a027843d55f293169d2a4152b56787979cd9f3fbf4e9d3a75ebd6d5bcd7d9d979ddba75
+1b366cb0b0b02022954aa55e5e3e182697cb559f4423140aa55269f9423e9f4f44eabbd4b70502417983cabaad283232b279f3e6eab1127c7d7d4d4c4c8888c3e1547dd8f25de372b9bffdf6dbe2c58bd5eb030000b5728fa8fa0b7de9d2a52b57aecccfcf5fb16285d6bdf1f1f13367ce3c7bf6ac50289c3f7ffedb5a2dfd
+bbe572b977efde75707050ff333d3ddd10c87d06c60000200049444154caaa542a972d5bf6bffffd6ffefcf9f3e6cd7b5f91ccb2ec96e15b8cfe436cd204170beb7627f98611bc8abfce2dc45b09ef4e5567c7a8542af55eb5d9b3679b989888c562f5e529e5cb89e8c48913565656d6d6d6b9b9b944a450284a4b4b49633f
+bee67e399d0b75d2d92d97cb954aa5f9f9f9eaf053df1e346850484888a7a7a74aa54a4d4df5f3f32b5ff99aa9a0b5b5f5962d5b66cf9edda14307ada97133323256ad5ad5b871e3cf3fff3c3636169f3600805a938291919167ce9cd9bd7b776a6aaa4020f8f7bfffbd6cd932228a8888080c0c4c4e4e3e72e4484949c9d0
+a143c3c3c3478f1e1d1818686363f3e38f3f12516262627878786464a4b7b7777a7afae9d3a7d3d2d28e1d3ba652a90e1f3e1c1a1a9a9292121818989595b57fff7e223a72e4486666664040404e4ece850b17884867b7fdfaf55bb26449505090e6ed0e1d3aac5fbf7ef9f2e542a170f2e4c93367ce0c0e0ececccc3c70e0
+406666660d5490cfe72f58b0e0efbfff8e8d8d2d2a2a0a0e0efeecb3cf344f84914aa57bf7eeedd2a5cb9c3973b2b3b3f1990300301ccc9b9f4321168b552a9550282c2c2c140a851ccedb19a1bb62b72ccb3e7bf6cccaca4abd35597e9b884422516e6e6ecb962d0de4acc8d2d2d293274ffefefbefe5176fa8595959ad5e
+bd7ad1a2455a5b8def0ef6887ec8b04714e0f5b705f5676161a1def4b1b2b27a5b11a8b35b8661ca634ff33611d9d8d8b8b8b818ce8501028160ead4a95151513b77eeb4b7b72f5f5e5858f8f5d75f77ecd8312424041f3e0000634841a8b4b81cce9c39731e3d7a3467ce1ccde5f7efdf1f3264c8ba75eb703103000052d0
+c80985c29d3b77fef1c71f9a1bca2a956ae5ca9513274e2c2a2a4289000cd3be7dfbb66fdf5ed9bd62b178e7ce9ddbb66d7bbbdd0252d0382d5bb6ccdfdf5f6b90f1e3c78ff7ecd9333e3e1ef50130406666660281a0b27b4522d1a953a75ee3f4efaabb851a86f9056bced8b16377efde3d6dda34cd850f1e3ce8d9b36748
+4848a74e9d502200833265ca942aee6ddcb8b18b8b8be6e8c76fa55b400a1a337777f7070f1efcfcf3cf9a0b0b0a0a860f1f1e1616e6ecec8c1201542d3e3efee2c58b4d9a347172726ad7ae1d11b12c1b1414f4e8d1a37efdfaa97f4d5ebe7cd9c9c9492a958684848c1c39b2499326414141a9a9a9eeeeeeeae1a8323232
+ce9c39a352a9468e1ce9e8e8a8b35b224a4848484d4d75737323a2ab57afc6c6c6bababa0e1e3cb87c6534cfc8d3d98088ce9f3f9f9d9ddda2458b6eddba71b95c866134bb85f70e7b446bda9a356b468c18a1b5302b2b6be8d0a1950d490a006a6969691b366c98376f9e582c3e79f2a47ae1d2a54bedececdcdcdc468c18
+71e2c4093f3fbf4f3ef964c78e1dc1c1c1e1e1e103070ef4f2f28a8b8bdbbf7fbf7a202af560fd13264c707272eadab5ab5c2ed7d9edddbb77274c98e0ebeb4b441e1e1e5959599f7df6d99e3d7bbef8e28b8a2b565983850b17a6a7a7bbbbbbaf5cb9b243870e5e5e5e9add0252f043c4308c979797a9a9a9d6f2c4c4c4e1
+c387171414a0440095b977ef5e4c4c4c5e5edee4c993070e1c4844a1a1a1090909191919c9c9c92e2e2e9b376f9e387162d3a64dbb77efbe78f1622f2fafc4c4c471e3c62d5ebcf8bbefbe0b0b0b2322b1583c68d0205b5bdb8f3efa283b3b3b2727a762b744d4be7dfb8f3ffe9888222323cf9f3f3f69d224a150b869d3a6
+03070e685de95459839292126f6f6f3737372e97ebeeee2e1008962c5952de2d20053f5c2d5ab4f0f0f0a8b8fcce9d3bb366cd427d002ad3bf7f7f5353536767e71f7ef8a173e7cea4319e7eb76edd7c7d7d8f1c3942d58dd75f3e58ffa143878848a55255ec564d3d2b40707070bd7af5d44b6c6c6c5c5d5dd5695aaeb206
+7c3ebf6eddba49494944c4b26c799bf2c9060029f8e15ab16285fa2f53cbc99327d5332c0280ce5d29a1a1a15bb66cd9b3678ffa44b3f2f1f4d5241249b59dc4c7c78f193366f6ecd9e517f256ecf6a56f490e4773987ea150a8353e7e650db85ceefefdfb57af5ebd77efdef0f0f0ad5bb7e21d440a4299ba75eb0e1b364c
+e75d1e1e1e0632330680a1b972e5cac3870f67cc9871eedcb9f0f07022d2399e7ed5e351541cacffdcb9735addaaa9fb193b766c4a4a4a4c4c8c7a495656d6d8b163f56c70f0e0417f7fff59b366eddebdbbfcf4370c9781140422a2c99327eb5c5e5050a0f3f0fb9b4b7996129717f738ff71c5bb724a72e2f2e2e2f2e264
+4ad96bf79f579a77ead1a99467298656eaacc2942bf78f9d8fddf7303d8225f669fe13435bc31bf167421ff8bfd3a710153f4dcd8b4bcd8b4bcb8b2b9515d7f00b8ccbb8792ff5da9bf7c3b2eccc9933030202ce9c39f3fdf7df1351c5f1f4ab1dafbfe260fd15bb258d5901b85ceeb66ddb66cf9eede3e3f3fdf7dfaf5fbf
+5e3d955b7272f2cd9b372323235996d5d980881212121c1c1cacadad1b366cd8af5fbf7ffef9a7bc5b5c286c283b18f0abe47d494b4b6bdcb87165f71e3d7a74d2a4496ffe2c9aa3692b59e5bebbfba29e467ddbebdb26564d349bfdf7fa7f45a5a29ffafd64696af9faafe8599a67a4e7ec8eb3dbd46b539395ac62346d95
+4ae913f6bb5c291bde69968da54352f6bd93b7b6b571ec35b2cb9c37fb2e5695488b2cccacde5627b79e042b14b25e2e23df6e65b446d3be9570eee6e3d3d3faaeb2b6b0af2266a48a1233138bb79258e55d3dce8c56aae4ad1af67c8d7e3447d396c9641c0e272121c1dadadaceceee45c6bfe278fa5a83f52b140a9ddd6a
+2a2a2a4a4f4f6fd6ac99ce63193a1b1417176fdab469f1e2c52291482c16a7a5a50506066edcb811df7ed8160422220707872a061f5fb76edd5b7f462ec36d2c6c5cdfbc7e7062b0e6f207b90f644a591d7e9d3789402272ace36869626950453e7a63637661ea2cb7d50e759b9af2cc5c1a769d3de867b942fa86dd463db9
+902e7afc163be9d67ce85b8fc08aac2ded198653450412d1e3ac98bca28cb7f2749a5db570e8f27a11a8c5d4d494c7e3b56ad54a2bab5e753c7dadc1fa2beb569350286cddba756511a8b381a7a7677272b24020707272727575b5b0b0e8dfbf3fbefa90825086c7e395ef36a9282626263030f0ed6ffb33cce0a68363b363
+734a72ca17463c8de8deb0bb56cb84fc842b2957e2f2e2ca97c48be2f325f977b2efa43e4b25a247a24725f292b8bcb8b0b4b01279c9f32720224a7d967a2df59a585e36a6064becfddcfb5752aea415a595f7f648f428b73437539c199af2ffecdd797c1365fe38f0cf4ceea4699bde173d68297739e42a0202b282a820a0
+08de28ca22fe0071dd45d1d717d1655d59e47091cb15e590434e39cb59a0851eb450dad2fb6e93a6479a344773cfef8f292124691ba0d036fdbc5fbc78a533cf3c337932994fe6789ecf1559938c0ec6d72aaf592ec9da2f55a3aeb95a7135bb365bac72ea302d5355c7671f183fe0be713abcdd0207878f6fde86ea9b97b2
+0fe456a558d6985b9522535557d4e55db97348ad55d0d3e90baa59e589625911001456dfda93f05d595d4e457d3e00e4896fc854d5b74ae3cbeb7273c5a93955295a83466bd0e454a51448d22debcd15a75eccda575c93d91c21eeafa4b6b1325f9ce670ab9cdfb0073d55abaccf536a1b6a1b2bb32a12b4063500481a8a2e
+dfd957db585e77b7cdc50d4599e5972befed060e960200b54e71a73231bb2241a56deeea635395425357252bb0acdbc96abbba37de784322918486860e1f3efc95575ea9a8a8983163061efa300aa27bdcdc5a3b737a1ca78300d0dbbb770f618ff325e7e93f2b95958182402679df284207730f36ea1b47068d4caa4ada93
+b50700d2abd337a56d3a5f72fe86e4c6d58aabd72aaf6d48dd10571c77537af35cc9b91f527e30980df4b277eaee14c80ab2ebb27fcdf8959e7238f7b0902dec25eab5396df3ed9adb00704b7aeba7b49f122b1273eb724b14251b5237c497c54bd5d21471cabe3bfb1c2e25d7ca2f945e181332466fd267de8d25adcbaebc
+6ea6cca13e7d6ca687fbf50780fdd7fea3d4c862a35fbc96777ce7e5550070a3e8dc86d3ffef7ce6ef772a936e975fdd7ef10b006850d79cbbbd7b5cdf993a63d3adb2cb00c061f1990c168bc96131d8378ace6e3cf5ffce66ec4c2d8cbb7ce7600fafe8ff9e592a95977259fc269d72f3b9cfe835fe9ef01d4551c3239ffb
+29eed3d4a2b3369554c90ab79cfd2cb528cee15639bf610fa440927e3c6d5346e9c58afa9cd2daacb3193b0080c5e43048269364314816005ccd3dd8a46fec133432a72ae962d69e9696d2e81a0f27ffd0d37fb01bcfebc0f57f9b29934d55f54af1e95bdb0baa9bc3bc93d5ba808888883ffffcb3aaaa2a3535f5e0c183af
+bdf61a1ef4300aa2fbb49e50223131312d2ded71ac7752c4a4647172a3ae1100122a12c6868eb59e5ba628cba9cb19e23f84cbe4bedaf7d514494abe2c7f68c0504f8e678467c47b83de7bbdffeba34346b319ec7e3efde6f49bb374f8d25a4d6d86b4794ce12851d4c4f0895323a716c98b00a0b0a1b04e53a7d029645a99
+9fc02fbe2c1e0006fb0ff6e2798579848d0f1bff6a9f57eb9bea63fc62c6878d7faee773c50dc50e9792a82495ca4ab5413d2460482faf5e4e35af4606005c26df7e5669ed9d3b9549437b3ecb65f15f7bfab3e482d379e21bc3239f1309fc7b070d9b3cf89de9c316165567d0672d1575b92a9de2a99e937a070d03801ede
+d12c921de4d933c0337c58e4739e02df48ff411f4cfad75be3be14703d38ace65192bd8581cde7d0e2b406754ddfe011429ed7b4617fe5b2f83695047b45f50b19d5d2560180931bf6407a053e25e08a82bda28746fc6564d48b12793100f80843182453e4162812f8d728ca2aea7222fd87b098dcb17d5fcd97a454c9f21d
+2e6530e943bca3b92c41a067cf26bd927ef4c6ba2a6f6150a877f36f11e7ab4508a3a0eb6b6c6c6cbdc0c993271fc77a07fb0ff6e478c697c537681bb84c2e8f79dff0f6b9f5b9961b847c163f40104047268220846ca17549214708009e5ccf708f70cb255636834dff6f341be998eacdf70e750f0d750f9d1733effdc1cd
+8fbf9204499f80b2182c00687e4db28c94e3a5a244510c82b1f2eacae305c77b087b38f336857c2f00b05ca3b3965399e4c6f5a45f0b38ee01a2083ab49004c966720180c3e61b4d7a00880e18ca60b0bedc3bfd58ea4fa1debd1d5d6426dd78a25636a3509a21bc5b605cdf990343c738a884245bd9aa87dbb0b6bffc04c1
+a43f2c26c76436daccada8cfe5dedd0db82cbe4810403f5b6bbf9407df6754af69b74a2fe44b6e400bdd0008827cd06a11c228e8e2e8c7c65a2f73faf4e9c7f2a913e4c4f089572baec615c73d13fa8cdd018b905b450e2e93dbe653333c264fd0c2538524418a9562778e3bfdcf603238b985b64b11f0c9884f66f79d9d54
+95b4e3b65357cc06848c260932a72ad966ba4a2b270852aeaeb9f71e59fc162319417cf6d2f6b963965fcb3bfef3c5156dae9400db07341824b3b2eede33f10d56ebb50f15ce6ed5836fd8832208426db51bb0985c5e0bbb815c5d73327d6bdfe0d87e21a3dbb15a84300aba387a5ca5d6a5a4a4d4d7d7b7e34a2dbfd36383
+6319244367d289b8227a3a05cdb362fc621ab40d958d95004001d5a86b8cf18ba16799c16c5d1b1dd228a0a46a697fdffe000056a7017485d15ed105b2824b6597288a6ad036dc92deb29edb12fba50a658552b57444d088454f2d2a919738f366456efe5386cc3b75f31799aada32b14e292e96de1e14fe0cfdb049f37b6c
+920d0e7bc666abe857f992b46a79e9a85e53174ffdb1587adb72ea6630eb35bac6bbad7aaf59382cbe46a70400a9a29c3ea7e91334acac2e2729ff240048e42596c75eeeab84a200a0a5ad727ec39cf8f4adeab9ef13a0ee4671d26436ea0c9a08bf18fa71157a6e93ae31c22fc6e152c535b7d94c1e87c5d7ea5500405126
+a3c9605d9575fdce57fb281e3aff2dea86182b57aec456e810d7ae5da3c73c6cfdb03562c4887efd1ebefb5deaee54cbeb3245d995f22b6abdda4fe027600b0c66436c70ac3bc7bd4c5176b9fc72b5bada4fe0e7cdf3f6e078b873dc4f149ce032b9372437624362433d4273eb73af555e3353e608cf080e93030071c5715a
+a396cfe22754240cf21b14ed1d9d2fcb4fac4ce432b9816e8137a53773eb73038581d15ed11c26e758feb173a5e70a658533facc6091acc286c2abe557d90c769847587a757a566d96882bf2e279258993f265f93d3d7bd26bb15eaa41dbf047ce1fee5cf76279716fafdee19ee1f77662cf9096de7eefa06126b3717fe29a
+7a95a4b6b1e24e6592dea41b1a3151c81579087c8ea5fec463bb25179e7ebaf7b430df7eb9e2d42b770ef1588220afa81b456773aa92033dc3590cf6bec4351e7c9f226946efe0613dfd060240455d5e62ee31919b7fa3a62e31f798c96c8cf48fe1b0f800a0d0d49ebcf9bf8aba5c379e28bbe29a27df7760e81806c1d87f
+7d6d7cf6816a79e9b4610b4892615d0987c5bb94b5bf5e2579aae75f82bc226db60a009cdf301b52c5bd8772652a7166f955994ac2630bdc793e52456976c5550e93ebe51654589d56519f27720bf0760bac6bacc8a9bae6c615057b450b38eec90527384c6ebee4469f90583f8fd04a59befd52fe1e61378acf54cb8b4992
+943414a9748a70df8124c9b054c5627232cb2f2b9b64c15ed12281bf93d57abb35df589dfae68807ddeda552e90f3ffca0d1685e7cf145d73b74ecdcb9f3d8b1631a8dc6cbcb8b1e28153dd2650fec35df5156ae5cf9f5d75fb759ec871f7ef8e4934f1e7a2dd6bde61f88d6a855e814de3c6f9bc7472d969d5fb66ce43226
+c9f4e078d8dc59b4a73168547a95afc0d7fe82a1934b99cc2682206a35b57c16dfe6f6642bbde66946b3a1465161a64c011e61f4cda7e6f768d0c8d5353ec220eb89f6cb9240d63656f2394221cfcb7266a6d5ab5bba9457d358e1c9f725803098f5fcbb9baad436e8f41a1ff760eb7365879538b3552d6d980d9b5ef34e5e
+2fd01bb5ecbb1fa8c1a855e914ee3c6f06d95a2e5283490f9499c5e4ea8d4d2c06f76ebfbdfbaabaafbc73d5d2ac7bcd3befd34f3f55abd55bb66c71bd43c777df7db762c50ab3d94c10c4c48913e7cf9f3f63c68c563a32a2d66196dd0e939191e14cb1eaeaea0ed93c2e93cb65725b2f4312648020c099daf82c3e9ff5c0
+3f5aad9762900c00f06fb5c7778b7b39c90a12f574f01e59fc00ab73ca969605007fcffb86da218068e56e969f7bf3c33b2cb8776012724542aec8994a9cd9aa9636ac5d7e195bc72d16932b6a6b370000d6dd807d7fcc23d82dfc3c72b2da965cbc78312b2b6bc48811a34635ff00b2cf9aeb7c0ffa2e67f9f2e5f3e7cf3f
+71e2c4962d5b2e5cb870e1c2056f6fef6fbffdf6c30f3f6c65200ed4e2710c9ba0a3dcbeedd4bd9c8e8a82ad3053e65449aac16448af4e6f3236e147899ea48f3efac86c36cf993367faf4e974ae5afbacb92edf083e3e3eefbefb6e5252d2d5ab57070d1a545f5fbf70e1c2d1a347676666e21e8251b06ba8abab2b2e76aa
+5394542aed743b0d410e0f1cfee3e41f5f8c7ab1cd6ba108b5a3f8f8f8cacaca499326f9f9f9ad5ab58a1e05cd3e6b6ef769903163c6a4a6a62e5bb60c00929393636363e3e2e2703f79207845b463242525612320f4a01213132d437d2e58b0807e61c99a2b100800c06c3677ab3661b1586bd7aee5f3f9df7efbad5aad7e
+e9a5977ef9e59737df7c13f7163c17ecd4ac7398b58efe622384e823fead5bb72c7f56565682a3acb9ddd0aa55aba64c9902000683e19d77de397af428ee2d1805310a22e46a264e9c989696b673e74e00c8c9c9b970e10238ca9adbd4d4d4dd9e7e270862f3e6cd2c168b3e1b7ee38d377273737187c128d8495114959e9e
+ee64e15652bd20d4dd0c1b36ec9b6fbe99376f9e9f9fdf3ffef18f3973e600807dd65c4bfedb3b77ee749fc6090f0f9f3dbb39838a46a379e38d374c2613ee336dc2fb821da0a4a444a1503859383838185b0c218b2fbffc72c182054aa5b267cfe6de2f43860c91482474d6dc59b3660985429224131212ba61e34c9b366d
+cf9e3df4ebf4f4f46ddbb62d5cb810f7193c17ec746edebce97c618c8208d9f0f5f5b584409a4dd6dc6edb32fdfbf7b7fe73f5ead57abd1e77188c825d3b0a464444608b21849ce1eded6dfd676565e5f1e3c7b159300a76e1284810c4a30c228a10ea569a9a6c47b13878f020360b46c14ec7f94763424343f11951849093
+241289cd94cb972f63b36014ec5caaabab9d1f14cde62a3f4208b5c23e5f9b4422696868c09669053e23faa43d50279ea143873ecaba5c784061d47d6c223ec6d4374e72388ea8582c168944d83818053b0bba63af93468e1c892d86107292c3670eb45a6da7dac8f4f474994cd61c81984c9148d4af5f3fbabfff43dbb973
+6753539365503d8c829dda03e58e1f3162c4a3ac8ba2a88fa336b97e9b16e16ee59852e4e502efe237d95cfc289dfcbe272727db4ff7f4f4ec54db3978f0e0458b161d3870e0e8d1a32c162b2e2eeea5975edab061c38c19331eba4e2ef7e113756114ecbc51302c2c0c078e410839293737572e97db4fb7e93ed1e14892ec
+dfbf3f8fc71b3b762c008c1a358ac964bef5d65b3535357c3effe1eab40c9a8351b00bb05c0a68135e0e450839cfe1892093c9f4f0f0e8e45b1e1818a856ab552a159fcfa7282a2e2eaea0a060ecd8b183070f0647299401e0d2a54b919191e9e9e9a1a1a143870e2d2a2aaaa8a8183f7e3c4551172f5eecd5ab577d7d7d72
+72f2abafbe6af91170f6ecd99a9a9aa8a8a861c38631180ccb6313f88c68e73d17c4288810729ec39b827dfaf4e99c4fc999cd6683c160329932323256af5e3d7ffe7cfad2d7b265cbfcfcfcc68f1f3f75ead4a3478f3a4ca1bc7ffffe2953a6ac59b366efdebd9b376fcecccc9c3973269d72999eb56eddbab367cf9e3871
+62eedce6cbe98b162daaaaaa9a3b77ee8a152b626262366cd880e7825de05cf0116f0a2284ba158743873fe273e68f8f4aa5fafefbef0d06c38d1b371a1a1a264d9a040057ae5c292a2a128bc500101d1dfde38f3f0e1c38d02685725050d06bafbdf6f9e79f8f1e3dda12e49e7bee39a552090073e6ccf9fcf3cf274c9830
+6ddab4e79e7b6ecc983100a0d168b66cd9525858c86030e6ce9dbb79f3e6a54b976214ec304efe2e6330189d76f7450875422525255d280ababbbbaf58b1827ebd6ddbb63973e670b9dcc2c2c29e3d7b0e1b360c00f6eddbc762b1bcbdbd1da6502649d2d7d7d7fa8069fd9abebf28140a753a1d0070381c4f4fcfd2d2d288
+88088aa27c7c7cacb704af883e696e6e6ece148b8c8c7ce81bc508a16ec87ee098ce1c05adbdfefaeb00909090c0603032333303eed26ab5ed924299c160ecdab56be5ca95bffefaebf5ebd77ffae927ebb9782ed801bf809c2986a3c620849c47519446a3b199c862b1e8f3aacec6724a473b7ffe3c004c9a3429303070d9
+b265ebd7af5fbc78715555d5912347b45a2d9d42991e728b4ea1cce3f16c2ab11e57c1e1eb3d7bf61c3e7cd8dbdbfbdd77dfb5d9183c177cd2c2c3c39d293660c0006c2b8490930882b0bf7a3460c0003a60742aa9a9a9478f1e95c9644b962c59b56ad582050bbef9e69b5f7ffd75f2e4c9313131df7ffffddffffe77a150
+f8eaabafbefdf6dbf6299401e0dcb973d5d5d5bb77efa643634949c9f5ebd7535353f3f3f32f5ebc58555575e2c489cacaca83070f9acde6fdfbf7034051515140408048240a0a0a1a3b766c5656d6bda6c3a1899eb0a3478f3ad339f4b7df7e7bfbedb71f7d75d86bbe3bc35ef3dd4acf9e3d6d6e0dbef3ce3bbffefa6b97
+7b233299acaeaeae57af5ef453146ab59a4ea1ac5028e814ca0f5aa14aa5dab871e3e2c58b6532995aadaeacac3c75ead4ba75ebe8b97845f44973325352686828b61542c87943860cb18982bd7bf7ee8a6fc4cbcbcbcbebde0f384b5e9d87eef8b87efdfa8a8a0a1e8f471f571b1a1ac68d1b67998b57449fb4e8e8687f7f
+ff368bf5e8d103db0a21e4bce79f7f1e0f230ebdf1c61b128924343474f8f0e1afbcf24a454585f505393c17ec00cf3cf3cc8103075a2f8363a721841ec8cc9933972e5daa56ab2d539c7c22dde5454444fcf9e79f2dcdc573c10e3075ead436cb60725d84d003f1f2f2faeb5fff6a3d05330b3a03a360c7fc646bfdc12d2e
+97fb1077801142dddc3ffef10febbee4191919d82618053b23a150d8fa63a23a9d8e1e2e0f21849ce7ebebbb65cb16cb9f070f1eec8647929d3b776eddba15a36067b778f1e256e6521455535383ad84107a503367ce5cb26409fdbaaaaa6ad3a64dddad05b85cee03f592c428d831468e1c3971e2c4560a48a5526c2584d0
+4358b76edd9b6fbe49bffef2cb2fbbdb75d1d9b3673f50676b8c821d861e04a125376edcc02642083d04822076ecd8f1f1c71f03805aad7ee9a5977272723acfe6c5c7c7171717e7e4e4fcf4d34f65656500101717f7f3cf3f5b3fdd4a51d49933677efcf1c75bb76ed153c462f1f6eddbb76edd5a59594917b870e1427979
+f9cd9b37b76cd9629db1aea8a8283e3ebe95020070f6ecd9ddbb77272525198d46c6ca952b71a7e910e1e1e1393939d9d9d90ee73299cc3973e63cfa5a4e6d4cb5feb35657213354371aeb95c6fa26938a43f218c493eb2d93a74c96ea4afd38a14e4e779673cfc1c9405207e246a857423d0bb82c60b754520f4d79909205
+57cd60f6828027d132902c85523f68e7a112f40f725d4862c82c37a436991bdc485fa559ca25dddb776354e6da6ced093629e093a2075a70c63f0676c2efefce9d3b9392925a1aa553ad56fff6db6f292929c3870fef90cd234972ead4a951515167cf9eadababdbb3674f64646467189df8d0a143b366cd62b158b5b5b5c9
+c9c9df7cf30d00d4d7d7efdbb72f2121c1f2c0c4b265cb468f1e1d1919f9fcf3cf4746467a7a7a3efdf4d3ebd6ad53a95453a74e5dba74e91f7ffc316bd62cb3d92c954acf9f3f7fe0c081b7de7a0b003233335f7bed358542a156ab1d160080458b160985c237df7c73debc796bd6acc173c18eb476edda963af45cb87041
+afd7b7fb1a7d382145aaf4b3d25ff4669d445bbcbb7c655663c2137bbf0c82c52458004001a535a9eda73f565e102885923fe1470178f2a0b57e54a7617b2f18de1fc65c86fd26303d8e8da180d282550b008b09ac0edc155335bbaa8d3911eca7d904ff84f20b8931bbdd57a1a7d4b9bab35a73a36b7c795bbff92493c9fe
+fcf3cf0ebf14f9e69b6fe6e6e6ce9933472e97cf9e3d7bdcb871870f1fa6930d759459b3668587870f1f3e7cf1e2c51b366c28292979f9e597172f5ebc7cf9f2c4c444ba8c25cb605959199d6550ad56db64199c33674e4848c8840913b44faefd0000200049444154fef18f7f7cf3cd379665070e1cf8dc73cf01404b05e8
+5c83e3c78fa7730df2783cec35df91424242d6ae5dbb60c102fb594aa5f2f7df7fb71ffefc512f9500216207b0349c9e8218003083e94aedfe1ebcde1e2cdf27f07ea3dc9a93bc14aa6ef219c2605e2f9be98f9b08fc092045d0dad83d7290ca40ca02b61f84bd07ff7a4c5b520837f9200c86bb2d001d99fe464f69727571
+6f887e2581c92745cf908b6b8c79edff2b8411ce25842ef3e59d3d7b762b737bf4e8111d1d6d7d89af030f327bf7ee5dbc78f17ffef39f63c78e5dbd7ad5c3c3432e9777e02631180c0e870300f4f0dff46b1e8f6709cfa9a9a9ce6419b4cf2368a9dff2c2be807dae413c17ec601f7ef8e1ac59b31ccefae73fff6932991e
+ebdabdd94114508d4619005435e52b8d0dc5eadbb5ba0a7aae585b94a9b85cd974ef80286e2ad09a35154d79771a1375e6fbd2b8d814961b6ab21aaf9669b2657ab1a58cc25057d55420d1165daedd57ab2bafd3555a4f6f61a55465539ed2d850ababcc6a4cb03e837cf4f3b14ac85342432d546641027d66a6848632c836
+83a902f21aa1ae7993a028132e57c2bd76a8827c253414c3ed5aa800802a286884ba06a8ce822b4a90014039e4dc816b06683e9b5783e20e246643820ae4002081a2cbb0af16caebe06e0b405d1514b4b43a879bdaaebf8d4800e266d31f14980140c4081331c2e85952638e8e52490c5905ba8b7acab25eaaca9091ab8b93
+99ca5a9e02d5c6ec1cdd995a63e17dab0290994af275e77594eaa137f8ead5abfffdef7f2f5cb8d0bcee96ef00d994a4b5795fcae6161400e4e7e76fdebcf9d4a953965c04f4cda7565664934fdbe1963c31b1b1b1870e1dba70e182b7b7b742a1e8e447c5c79465d052b94dae418c821d6ffbf6ed3d7bf67470ba5058b87b
+f7eec7baea0a4d2e87e4fb73420b54e9c7259b6ecacf17a86e64355e0580ab75079b8c8d7d8423731a932ed6ec01803b8dd78e8837a435c415ab6ea6cbcf1daefac144357745b229ac32ca6fc92ff4771f6330eb8bd59974997abdf874f5f602551a8be03008269360314896f574872ba5372c437eb1a229a7549d7556baa3
+bdde7b01a41f874d1970b102724a21eb2cec00001208021804001398043000e02a1c6c82c63e303207922ec21ecb8237e17c01dcc882ab4570eb38fc940d8915905b0d2547614306c4cb419a072997611f0068a0f130fcd01306bb81d701f8b7194c2ce03080c90416035800500fe2d3b0bd00d21caeaea54d6d472c823b98
+372b5b7bfc64e35752630e00f8317b034081ee529cf29b4cedb132434a96f6f869e54afa134fd5ece691eefecc7e1754ffae30dc70382559f30b455111ecd19754ff29d55fbff76bc990516dc8a932645c55fff7e1b676c9922552a9f49d77ded9b163c7fbefbf0f00fbf7ef9f3265caba75ebce9e3d7be2c489b973e7b654
+12000e1d3af4fcf3cf6fdbb6eddcb973d7af5f9f3061c2860d1bf2f2f276eddab570e14200a8aeae1e3366cccc99334343439f7aea2983c1505959495fb351abd5c78e1d0380cccccc993367eedbb7af9515b5becd4fd8c58b17a74d9b3671e2c4fafafad8d8d88e3de2b599c868e2c489972e5d5abf7ebdd96caea8a83874
+e8d0d1a347e92c837575757037cb609b39055b2a40e71a7cf7dd777ff9e597c8c8488c821d4f24129d3c79522472f0c8c0dffef637b158dcee6b3450baecc6c4ebf54795c6fae9418bd924af97db5001d333901b31d9ffbd09beafd7e8ca2a3439916e43582477acefabf9aa94aaa6fc7eeea399043b94dfef19df392f072d
+55186a8bd51900605f385371b95657a935a9a3dc8684dcbdece9cd0e0ae5f701001f4e0883608ad8812296bff574872bede5f69480210ae6450ff5fccb48af1725dae2f66a845ef0940044c1103d14fe32125e9440310008c0d31b8248600642a41044355056013991308405dcb1f06a3ea454417e2f182a00cf4088980cef
+4d80d72361b03b78f941580c8c1f03af36427d4f888981f143e139ba4e03e843209a0b8240e8d904ca2650f9400803982208a4afcd7a435028f4010087ab6b6953dbd740eecb13ddfea6a75471ca6faea837ea290d00f4e24c60129c60e6a051fcf7260bbf529aa4e58654a9315769966acc72b5b9ce9d0cccd1c6d94fa936
+de519b6581ac015cc27d30ef5526c1b5acc89fd5b71f77ea20decc87bbe89a9a9a7af6ecd9575e794528146edcb871f7eedd972e5d727807c8614970e2be94fd2da8ececec9b376fd6d7d7bffaeaab13264c00ab9b4fadaca8f56d7e628797dcdcdc175e78e1d9679f3d73e6cce2c58b8b8b8baf5dbbd68187bb2b57ae9497
+979f3a754a2a95eedab50b000e1c38505d5d7dfcf8f1dada5a3addae3359065bca2368c935b865cb168705c02ed720de17ec14faf4e973f8f0e1c99327db3c11535757f7e69b6f9e3f7fbe7d075463119cfeee4fdb5d1623b80ca1e51c91cb687e7e844bf245ac0089b63898174d1020600801c08de9e9c709971b6a1d1626
+089241307695af1ce4f1cc53a229f75f796be98a5c8b2b25098249b201804d724c94b11ddb810482096c006003c7040e6aae805ceedde768b8c0174180048a83219a00820b42ebed6700130058c00200fa351358749d1ee0330aa6dd820b4ce0000005548b2dd0c2ea9cd9d476b881c41a1ae831f08ef65446d321136598e0
+f6293d9d477a00009ff4f261462acdd54de60621e9e7cd8800807182ff4712cc22dd659b29f9baf396474ca339cfde773d0ad800c08087fc28cf9d3be7e3e343bff6f2f2eadbb76f6262e2840913ecef00b554b2cdfb5291919136b7a0c68d1bc766b3232323172f5ebc62c50a9b9b4fadacc8c9028fef94ebfbefbffff2cb
+2f8d4663dfbe7d8f1c39d219122d8d1b374ea954d2af3ff8e0830f3ef8807ebd76eddab56bd75a9f00bcf7de7b962c8343860c9148247496c159b366d15906b55a2d5d78f9f2e5cb972fa75f4744445cb972857e6d1955d5ba804aa59a366ddaf9f3e72db906f15cb0b3183f7efcc99327ed1f19bd74e952eb3d0b1f078220
+d4a67bf7cf592497c7b0dd3036c9e39282160a0b67047ff28ccfec1c65d239a7af613ab3d227dd0e40a8c16a9380dbfac3a50ec9a1e6246ced0bb1fd60f41358dd43308181be8cc900d640eef411fc772a0de9f6d19a4df039841b41900da60a1ee949ff33517a075380d160bc7783506396393c4a3fcc0f1792acaaaab2fc
+29140aad87cd7cb89236ec6f41110471e5ca954d9b36edd8b1e3f5d75f7fd0153df4963c0aa5523973e6cce5cb971b8dc651a3465dbf7ebdcbe51af4f2f28a8e8eb6dc5e15080442a110003c3c3c1ee5ac60fdfaf565656574aec1be7dfb0a04028c829dc8a44993e2e3e3ed732afdf39ffffceaabafdaf11722d5d2018832
+37ff9ee2c7280d0db5cd4faf504da6c60841ccddaba9f4bd404a6190860bfa3b2ccc21790d7a696fe188970217556b4bec0f7c04419a28a3d5f335542b2ba51ef9d069b530655d83c39a29b8d73e1110433f93d2bc49d018013177cb9b9ddcaa62b8cd061e07f85a5001000526231808204d60d4c1fd2dd0f2eadab1111cb6
+4bbeeea2a55a21e92f640410d07cf43152f4f509aad12409660d0960f6af36dec9d19da680529bebcb0c29f6530259fdeb4d2545faab00a03055498c598eb6fc61dec5f4e9d3e9a760e83d592a954e9f3e1d1cdd016aa924b4755fcafe16d4993367727373df7aebad3367ce5cbf7edda6923637a9952d794cb45aed4b2fbd
+74f4e85100080909a1df111e6069f6b906b1d77ce71214143473e6cc13274ed8a444b972e58a5c2e9f3c79b2cd83676db2e9355fa32bbbdd78a5c120f164f9ba33bd2c5de62b9a727394d7cc600ee046b0480e8fe12660ba27379ce090dc7ce58d3eeeb17497f634799cdea4e532f8d98d09e1824121bc6800b02fcc217957
+eafe1030dcab75c5c1bcde01dc70006834d4672a2e2b8db2605eb4ca28cb69bce6c61479b3832cd3a3dc867ab3036d565ad9949fdd78954372bdd84185eab48aa63c113bc09b1d78df9b74b6d7bc3813aeca40c203813bf848a1341bae7280eb054185905601792208e0022f0bae48a0c813fcf8e02e042f01b827c3090e70
+f3e1461f88f583d00ac8cd816b66300740040b386228cc82ab4c60fb415811a4974296104442f0ca852431e4fb434f6f08ba0167aaa198045202452a5084c340198873e09a1b88bc21a811ea33e1b212645130d41b026d56070095906fbfa9de10d8e65b76b2d73c05e61cdde96a638e9ed2d4990a72756747f1dfe7935e00
+90a93d66a0346cd22d4f772194352c80d59f477a30094e7ad3be6cdd71a9316718ef0d37d2c7668a90f42308f28666679eee9cc22c1ecc7b850446b531bb407f894df03c19216586148931d39311e2c9086973f3ac7bcdfbfafa0606067ef9e5971e1e1e7bf6ec99376fdeb061c32e5ebcb865cb167777f7010306ecdbb7ef
+fcf9f37dfbf61d3f7ebc7d49faabb479f3663e9f3f6cd8b03ffef8e3f8f1e3a1a1a16161613b76ec888f8f8f8d8d1d3060c037df7c73edda352693999090505555d5a74f9f65cb96050606d25732478d1a555252f2e38f3f9696964e9830a14f9f3ef62b2a2b2bdbb871635959d9d8b163fbf5ebe7704b1e13b3d93c6bd6ac
+b367cfd27ffef2cb2f1dd573bf7312894473e7cefdf4d34f3ffcf0c3d9b3670f18308068f3711df4e449a5d2a953a7a6a7a7db4c7ffef9e7b76cd9121afa00238c7c1cf5f063e91acc5a9549e1cef4b604cb6d25cb66062d63104c01d3834df25a2a6ca24c04108dc65a0ec9e7311c7611a3f466ad4d0d2dadb46d458ff7e3
+308056050a77f0663c6c566a03e801cc2ce0eaa189055c0208004a0f5a36f01ec7eaee5d16137939793268a0742c82a33089cd60f26404d3cfc702c0eff27953842b19c0e4912236c1b72ca0a3543ab3d29d1100774f19eda768a94603a515928f9a2ffa37d95cfbcb7d555555111111f42dbdd62f0c3a59d29a5aada66f41
+29140aa15068341a49922c2a2a1289442da5bf6e73450fb7250fe1871f7ef8f4d3e67bbafdfbf7b774ed402dc12ba29d91bfbfffe5cb973ffef8639bcbdfa74f9f1e3060c0a64d9b9ecc6f1716c915b1fc6da21149902276807d00b32ecc201824417ab2fc5b08810040380c812dadb463b1802b02ff4789492c60b3800b00
+6ce0ddbdd248380c81edb2ba0747b0082e00e1c1081631422d21f0ee3182f460045b874000e0106eee8c404bc07338854bb83f7a0874482814f6e9d3c79970e27c496b36b7a0d86c3693c9ecddbb774b21d099153ddc963ca8828202cbf33b00d07a06378451b053737373fbf1c71f5352526c2e9e2895ca8f3ffe78c48811
+7ffcf1c7e3ee536f73d12c5f956a301b0a54e93a73137e402e8f0273b13ed148e94bf54974c709d4f97dfdf5d796272701a0cb3d11d321f08a686767369b7ffae9a72fbffcd27ec487f0f0f0254b96bcfffefbf4ef56871ee58a68975184bb89634e5f11edd4ecaf8822874a4b4ba3a2a2ac7f1c1f3972e4e5975fc696c173
+c12efe0991e4c71f7f9c9393b360c1029b68575a5afac9279ff8fbfb4f9b366dfbf6ed1289049b0ba16eebd0a14336d7873a76bc508c82a83d0506066ed9b2851ede70c48811d6b39a9a9a8e1f3ffee1871f0607078f1831a263078c47087514cb73a116f428a908a3a0eb7073739b3f7f7e7272724646c6c71f7feceded6d
+3d97a2a8d4d45483c1800d855037649f4ab75325d7c52888da534c4ccc8f3ffe585b5b9b9b9bfbdb6fbf7df4d1474f3df5148bf5a809ea0c66fd9dc6447a346d84ba969d3b776eddbad5c9c26ab57afbf6ed9b376f76a516a8a9a9b199d2e1090ebb041c47b40b2308a277efdebd7bf77efbedb70140abd5a6a7a773b9dc87
+ae50675697a833054ccff6dd4e0a289d49c365089ec052edbcd9a0e182a0c32be91228a0f4949a4374d8a0770fb4e7d359708383835de923b0cfcb9d97972797cb3d3d3d01e1b96077c0e572478f1ecd643efc2f1b37a6c893ddfe1dbc0a5537ebf5e227b3547b6e36dcac077167a8a44b28d3273598ca3b700366cf9e4dff
+1c74069d05d7c53e02fb67c5298a4a4e4ec663239e0ba216a98d8a324d160554187f805bf329608b23b45536e5cbf4623f4e383d221a0088b545f5ba4a113b208447774ba22a9bf23d587e5a935aaa2b8d120ce13204744edd61a2c91c92e7c30901a0ca353972436d1037d28713e2f4528f9d1c6a2a214f085e4210794110
+9d0877184ce600cf0742aa20df1d7c6ba14208221d3451400540180054431903184110d5dc44902f03b11f84074038dccda64b57a2058dfd52d6d5fa420fba35ca21470eb54110e903219d6127d1981baa0c3729a0425843e861d500a0da98dd60aaf06144f932a300a0c69897a4f92586fb329b107831c21a4d128931db8d
+f41190de9e8c1eedbe4967cf9eada9a9898a8a1a366c1883c1a087152c2a2aaaa8a8183f7e3c005cbc78312b2b6bc48811a3468d6ade57c5e293274f9acde6175e7821242404ecb2e0ba80a0a0a0c6c6469b8949494993274fc6631d9e0b2247473753e361f10f3d0583dd985e072aff6da65aeb837fb9763f05542fb7a74e
+556f7da08cb836397513ea0ef318c2605eafe392cdc5eadb4e2ef5b8a9407e0b2ef4873106d0174326005827c2b549abeb03c127617303d4b080ab07cd69d8dedc44b09f02aa173c750ab6d22973ad2bb15fcaa65aba920438cc036130f43a0e9b8be17687ef244d66f919e5ca50f60801e97da2f10b3398c051065d26c165
+102c06c166004b6396ddd19d8ce63c6ba4741586b476dfa4458b16555555cd9d3b77c58a153131311b366c80fbd3de7ef4d14766b379ce9c39d3a74fa7a7d827ce75c96f746464a4fdc41b376ee0b10ea32072cc60d687f0a2b90c4120b7679349d96452b554b2aaa9406592f7e0f5e6318423bd5e60931ce733e25ae7d415
+37152a8c756a9342699479b2fd3215f100d0e6524fa0296420a9854a2da8a3604808f40200eb44b8366975b9206041f3385842687e4cb70a0a5420ef01bd79201c092fb081635389fd5236d50280180a1550a7068512649ee09709f11dbe93184117c0eacf21dcfc98bdb554a3d6dce83083ae17238c04a60723d883112437
+55ca4c653a4a19c61e19c0ecd7ce3fdd349a2d5bb68c1f3f9ec160cc9d3b97c7e32d5dba14acd2dec6c7c75756564e9a34c9cfcf6fd5aa55f44542fbc4b92ef98deedfbfbffdc4ecec6c3cd6b50eaf88765f1e2c9f515ed36ec92f30c916b3bfd224da62fedd547ffdddc700405a43dc4364c4add1957930bde9f41493fde7
+9177c7ab7c7c79749dbd9404510c60ec829583e099a7608a7d019bb4ba0e9a088af9777301f687314eaed7a6da1a28f3006f3a8fc464b8d73e1d4848fa0fe5cdb9a33dc924e8104ed51af35bcaa04bf367f621817144b1b40f674a0cb79d072ee170389e9e9ea5a5a5111111144559b2d7c2ddb4b789898996d13e172c5860
+3949b2499ceb92dfe8a14387da4f2c2d2d35180c8ffe00399e0b22172437d49cacdedad73db69fb08decaf24c1a8d5dd4b13aa32ca1f2e232e4190f57a319fe14eff33519de5c2140130033e790666e740d239d8e1dc12365f24462d583511c89d59ca6e36590f623eb8d3ff4cd0f1edd368925c54fd278a33be1767c2dd8d
+6c33832e3159f87f23f9f38af497afa8ffdbbedbc3603076eddab572e5ca5f7ffdf5faf5eb3ffdf4934d01168b75ebd62dcb9f959595e02871ae4b8a8d8db59f4851148e2a8551103956acbecd26791c92af35dfcdfe4a191ce63e0de145d7eacaf394c900d0a0afae6cca7ba08cb8969cba21bce8caa6820cc5250a2895b1
+a1487debbe722d2cf5049aa20a0a1b40da1b46bc048baaa1c41293ee4f847bef0482051c7aba1c6ae85b6521105d0be579900c000d505d0979f695d82f65536d0844574241065ca28052414311dceaf09da4dc70834df0d984406b560280194c7ecc5e0e33e892409a29a39e524b8d398d26714ff6d867dd96d79a0ada7d93
+f6ecd973f8f0e177df7df7975f7eb1be13460f893c71e2c4b4b4b49d3b7702404e4ece850b17c051e2dca6a626d71b423934343430d041d6491c47ad8d9f569865d7b5d964d9b5c624d8371ace546b8b4982943415a94c0a6f4e7096e2aad2280be446599fdb09981e244126d41dca6cbcd260908ef47a81cf74b74fc3db52
+46dc3a5d059d533784d79b4572aecb8ea5379c136b0b477bcf6012ac3697f26607b5f1261b1eb59514507b05fe10807b351407436ffa09cf3aa8a013e16aa0d13aad2e006840910a676aa1820f6ee57047009ee1d09f0432010e65c29506908e84174820ad2bf186209ba564505d0be5d6d5f2c19d059ceb702c1dce89a170
+34cc60c2235dc87232cb6e2b9804e7b6f670ad319f04468d314f636e88e63ccb20583619740140662a2dd45f1290de24c14ad1fcca2745b5c6fc00567ffa21d247619d651700d6ac59f3e9a79fae5bb76ee3c68d478f1e1d3162849f9f9f25eded1b6fbce1efefbf74e9d24d9b36e5e6e6ae5ab58ac964f2f97c9bc4b93131
+319b376fa6b3e0fafafabaccf73d3131313737d766e2fbefbf1f14148407c316afc1604e09d7d67a4e0983590f6066915cbdb989457289562fd935995406b3d69de563b5b8931971efcba9ab356bb4269527cbb7ad2b842d66e2b5f5c839254c60228068845a0ef079f76ed4b59808970e9c02f000204c60e4dc2dd3042a03
+68ddc1e7be77615589c3a56c6841a3059527b4d93e6d6b979c12464a4701c522b87a4ac3229af3233acaa04be9a92636c1378391004269aa6193022ee1fee81b609d5342a5526ddcb871f1e2c532994cad565756569e3a756addba75368bd4d6d62a95ca9e3d7b5aa6d824ceb5c9dce93256ad5af57ffff77f3613efdcb9d3
+b76f5f3c18b6f8530f9ba03b63916cfa8533c186c770b3b9f9c722b922d299013beecba9cb25f95c92ffa04b3dde4b22c000004ff0b7dd006871033cc0f7ee57e8dee91a0fdc78e0d64a250e97b2c1053e17f89de818d1fc5c0c5827dae512ee76118ea00b90c004007746e0e3d898f5ebd7575454f078bcd0d05000686868
+18376e9c7d315f5f5f9b333cfab91800f0f0f070e16fb4c3c744e9b6422dc1fb8208a12ee38d37de904824a1a1a1c3870f7fe595572a2a2a309dbab5b0b0309b29919191965f0008cf0511425d5b4444c49f7ffe89edd0124b2f118b679f7d169b05cf051142a87b9cd6d80d233c77ee5c6c168c820821d42dd80c8b3368d0
+207a605584511021845c9fcda8a1df7efb2db60946418410ea2e8e1c3962793d63c68c175f7c11db04a3204208750b376fde3c75ea14fdba478f1edbb76fc736c128881042dd824ea77bfffdf7e951508442e1f1e3c7bdbdbdb159300a228490eb331a8df3e6cdbb79f32600f8fafa5ebc7871d0a041d82c18051142c8f5d5
+d6d6ce983163efdebd00101111919898386cd8306c168c820821e4e2b45aedd6ad5bfbf5eb77e2c4098220162c58909e9edeab572f6c99078263c72084505762369b9392928e1d3bb663c70eba83e0983163d6ac59336ad4286c1c8c820821e4e2fefef7bfaf5dbb1600020303972e5dfac1071ff4ebd70f9b05a320420875
+0b93264d1a3162c4a851a330590446418410ea76a64c99828dd08ef0e9188410421805114208a1ee87a0c71a40aef9e9120436027201789842782e88104208611444082184300a228410421805114208218c82082184d083c367445d5cdd7be3b0111e549a988f8dd0794c3e73061b01e1b920420821845110218410c22888
+104208611444082184300a228410421805114208218c8208218410464184104208a320420821845110218410c228881042086114440821845110218410c22888104208611444082184300a228410421805114208218c8208218410464184104208a320420821845110218410c22888104208611444082184300a2284104218
+05114208218c8208218410464184104208a320420821845110218410c22888104208611444082184300a228410421805114208218c8208218410464184104208a320420821845110218410c22888104208611444082184300a228410421805114208218c8208218410464117a7d3e9288ac2764008a13631b1095c80d96cce
+c9c9494949494949494d4dbd7dfbb64c26737373c3964108218c822e4ba552eddbb76fefdebd2929292a950a1b042184300a760b4949493ffffcf3fefdfb1d063f2e974b9278ad1b2184300aba169d4eb775ebd66ddbb6656767dbcf0d0e0e7ee185175e7cf1c5679f7d96cfe763732184104641d771e1c2858f3efa283f3f
+df663a87c3993b77eea2458b860d1b86ad84104218055d8d542a5db66cd9efbfff6e33ddcfcf6fe1c2851f7df4919f9f1fb61242086114743566b379ebd6ad5f7cf1855c2eb79e4e10c4c2850bbffbee3ba15088ad84104218055d9056ab7dfdf5d78f1c396233bd6fdfbe3ffffcf3e8d1a3b189104208a3a06b522814d3a6
+4dbb72e58acdf469d3a6eddfbf9fcbe562132184d0a3c3e7e93b23b1583c76ec58fb103877eedc43870e61084408218c822e2b3f3f7ff4e8d199999936d3df7aebadddbb77339978fa8e1042ed060fa99d2e043efdf4d375757536d3070c18b06ddb36ec0b8f1042782ee8b2eaebeb5f78e105fb10c8e7f3f15e2042086114
+74650683e1e5975f2e2c2cb49fb56ad5aa7efdfa6113218410464197f5c5175f242424d84f0f0808f8e8a38fb07d104208a3a0cb3a77eedcdab56b1dcefafbdfffcee3f1b089104208a3a06b522a95efbefbaec3bcb81c0ee7c30f3fc4264208218c822eebebafbf168bc50e673df3cc330281009b082184300abaa6dcdcdc
+8d1b37b63477ead4a9d84408218451d065ad5ab5ca6030b434373636169b082184300abaa6a2a2a203070eb452202020005b092184300abaa6f5ebd79b4ca6560af8fbfb632b218410464117643018f6eedddb4a012e97cbe170b0a1104208a3a00b3a75ea547d7d7d2b05743a9dc3ee13082184300a76797ffef967eb0528
+8ad26834d85008218451d0055dba74a9cd32f6236b238410c228d8e555545494949438530cdb0a2184300aba1afb24ba0e959797635b218410464157939f9fef4cb1a2a2226c2b8410c228e86a8a8b8b9d29969d9d8d6d85104218055d8d5c2ec7288810421805bb29954ae54cb1bcbcbc5646194508218451b04b7232b619
+0c868c8c0c6c2e8410c228e8524422919325939393b1b9104208a3a04bf1f6f676b2644a4a0a36174208611474295e5e5e782e8810421805f15cb00df9f9f90a85025b0c2184300a76c7284851145e144508218c82dd340a02de1a4408218c822e263232d2f9c2376edcc0164308218c82ae232222c2d3d3d3c9c238820c42
+086114743583070f76b2647171b156abc5164308218c82ae63c890214e9634994c797979d86208218451279748c00000171549444154d0750c1d3ad4f9c29862092184300a76d3734100a8aaaac2164308a176c7c426e8287dfaf4e1f1784d4d4dce14aeacacecb46f245ba6aed3360f0eded39ddbc38d6b3d777f618dd664
+7aa777e0a3afa8516f3c565a9756ab9c142c7a31dc07772184109e0b76610c06232626c6c9c2d5d5d59df68df4f3125ca894cd3997152460db844000e032082e83e17041330532dd03e48d7af762ceac9ebeeff40ef8ec7aa1de4ce12e8410c228d8b58d1a35cac9926ab5bad3be0b0220da93efce62f6f2e0dbcf9d1ee1fb
+5a949fc305ff2cadcd69d038b996424553be42c3673286f80873e68e629304ee3f08218c825ddbe8d1a39d2ca9d168bae87b2c556a13ab150050d4d8b4235772be5296d3a006806469e367d70a33ea94593207013e49aaf839477c4522a7ffac54ebce57ca0c66eab2585ea6c44e2308218c822e213636d6c99246a3b12bbe
+c19c06f53b17ef1c29ae15ab753f6555bed33b5063349f2997018080c56033482e93c161d89ed57d915c54db649813e5bfb740ba24211f001804c124090280cb201978168810c228e81a7af4e8111414e44c495f5fdfaef806fb8a04138244009027d764d6ab1b748669e13e63023d0060809780c3207a7bf26daea3deac53
+c657c95f0af7716331568f8c3c585493209107f2d97d450236498cf4770f117070cf41086114741183060d72a658404040177d83f4995e6c80078b24861d4c5d9d5e3ad0dbad95f297c5722f6ef3a3cb220eb397273fa5a611f713841046c16e1d05fdfdfdbbd6fb6ad41b6b9bf4963f0980e35307fd3b366a6f8174417c6e
+2b0b120012cdbd05dd580c6f2e0bf71384d063d2627fc1f4f474994cd65c88c9148944fdfaf563b11eec78545656b675ebd6975f7e79c48811d8d60e39d959222424a433bf0b330526eabeae0b3fe78897c4f400007aeab56a459080333bd26fa09760565c56f34f3082d09bcc72bdd1937d6f3f7c3ed4fb5fe96599f5aa81
+de6e14406d93e1f9506f00305394b9dbef2d652a954ca7a37f2b4408851e6c76ebe5b3e5f2b355559ff4ef8f5f34841ef85c70f0e0c1870e1d7aedb5d7381c0e97cb8d8b8b8b8c8c3c72e4c803d52e97cbb76cd9525353d30ec759b3b9bebedefe7557e7648aa571e3c675dab79059af3a5156a7d01b3f88cffddbb5c24f12
+0b9e3f71ab5ca5631044b9529b5aa3bc59a72c54342dba921757213b5b215b1ad31cd163fd3d5624175faa6ab0ae2dda93bf6674d4e284fcc3c5b5dfde28f9bfe1117e3cb644a33f5a525bd7643852525baf3574dbaf6b989b5bae5cfef98d1bde5c6e9b21506f3289d5ea7338ea10420f772e489264fffefd793cded8b163
+0160d4a8514c26f3adb7deaaa9a9e1f3f94ed63e68d0a0f67aace38f3ffef0f7f71f3f7ebccdebae2e3c3cbccd32fdfbf7efcce78203bddd0e3c37c0e1ac5021f7f8d41800d09ba9797d024b95daa77c853e77af706e1c1badd41bddd9b63be15bd10133227c251add8b61de6c060900817cf6dad1bdd68eee85dfd8103737
+92207a08046d96643318fd44226c31841e320ada0b0c0c54abd52a958acfe78bc5e293274f9acde6175e78c17280be78f1625656d6881123ac3b831344f373ed972f5f36180cdedede43860c898f8f0f0d0dd5e974972e5d7ae18517c2c2c2e2e2e22a2a2ae6ce9d2b100800c0a6fe848484850b17ae58b1c2d3d353a55259
+5e0f1e3c98a2a8b8b8b8828282b163c7d2b98a2e5dba141919999e9e1e1a1afa40235677083f3f3f2e97db7ae2a42953a674f5fd8ceee41ee5c1b39e4800d887409a1b8be1b00f3eb2460164d4d70709044abd3e57a1181b10e07ef79e45764343b152e9c5e158174eabababd268068844914261ae42d1643402407f912857
+2e3751545f4fcf9646f941c885b5f1748cd96c36180c269329232363f5ead5f3e7cff7f3f3abaeae1e3366cccc99334343439f7aea2983c100001f7df491d96c9e3367cef4e9d3f7eddb675fd5ae5dbb6432d9a041830e1d3af4fcf3cf6fdbb6eddcb973d7af5f9f3061c2860d1bf2f2f276eddab570e14200b0afdfcdcd8d
+c3e1f0783c2e976bfd1a00962d5be6e7e7377efcf8a953a71e3d7a74fffefd53a64c59b366cddebd7b376fdedc253e030f0f8fd60b4c9d3a15f75464ef8a44b2222ded4869695a7d7d726ded771919cddfb5c2c262a5f2f9909094ba3a4be16db9b99e6cf62091e8abb4b46b35352102c1cec2c2bdc5c56c92bc565363309b
+3104223c177440a5527dfffdf70683e1c68d1b0d0d0d93264d0200b55a3d71e2446f6fefa79f7ebaa6a6a6b6b6363f3fbfb2b2929ebb6ad52aa15068134a57ae5cf9e1871fd2cfc8cc9a35ebcb2fbf1c3e7cf8ac59b3643299b7b7f7cb2fbf1c1616d6ab57af8f3ffed861fd83070fe67038fdfaf5ebd3a70f00585e5fb972
+a5a8a8482c1603407474f48f3ffe78e1c285cf3fff7cf4e8d173e7ceed2a9f815028944aa52dcdeddbb7ef840913704f45f69e090cfca5a0609097d7283fbfa7bcbd97a5a40040994a754922f965ec580098111a4adf17cc6c68906834f53a1d00040b047f96958df6f35b1e13f3d76bd7f6161585080423ba668754841e7b
+147477775fb16245f36fc96ddbe6cc99c3e572a74f9fbe7af5eab56bd7d2572fcd66736262a29f5ff358910b162cb0a964cd9a35dedede2b57aeb44c6130181c0e0700e85b8cf46b1e8fa7d3e900203232d2a6fe96362f3535b567cf9ec3860d03807dfbf6d18fb09224d9b5fa98ebf5fa56e62e5fbedc72551921db8b3904
+c161300080c7641acc660048a9adf5e7355f7966df3dbdcb572802f8fc68777700f8222686419200e0cfe37d101dbd3d2f6f8f4bdc6247e821bf44ce177dfdf5d701202121213f3f7fdab469efbdf7defcf9f3e9592c16ebd6ad5b96923669803efcf0c3ccccccfffce73f4eaec8befe9630188ccccccc80bb5abfbbd63951
+142591485a9a1b161646373b424ed299cd0abbdf552441942a95220e87fe673099e8e952ad768048b4392707db0d611474c0e624ecfcf9f3003069d2a4a3478f7a78788844a2baba3a00301a8db1b1b16969693b77ee04809c9c9c0b172e581fe54522d1a1438756ad5a45d7404f6c65bdf6f537353531180c9d4ed7d0d040
+073ffaf5c489132f5dbab47efd7ab3d95c515171e8d021875bde99d5d4d4d037561dfaecb3cf984ccc0189eefbd944ddfff7bd9700003050242a512af3140a003051cd067b7965c86447caca288aaad56a13a4520088abac7cdacf6fd9c081c97575892d5f9347c8b531ac2f545a4b4d4dfdef7fff5b5050505353939a9afa
+fbefbfefdbb7ef5ffffad7ac59b3f87cfe37df7c73edda352693999090505555b560c1022e97bb74e9d24d9b36e5e6e6ae5ab58a3e76c7c5c56ddfbe5d28144e9f3efdf6eddb6bd6ac090e0eaeababdbba752b9fcf1f366cd81f7ffc71fcf8f1d0d0d0b0b0b01d3b76c4c7c7c7c6c60e1830c0a6fe975e7a293333f37ffffb
+5f4848c88001036edebc49bf7ef6d9670502c1f2e5cbfffdef7f5fbe7c79cd9a3557af5efddffffe673018626363dddcdc3aff0770e9d2a5bd7bf73a9c3574e8d02d5bb690e4238defa339b6e371bf8546bdf14051cd8e5c89d14c457bbac2839d1265271dada654a53a515e5ea652b9b3d9013c5eae4271b2a282cf6486bb
+b9c55757dfacafefe1e636d2d7b7c964da969b2b6e6a2a512a8b944a018b35cacf8fcb64eec8cf3f505a9a2993cdefd327b9a6e64859d9f4b0303e9399ddd0f0677979985018e244078c272feacd37f1488d1e1fa2f5d3b296a8d56ab3d92c140a150a855028a48fd4b5b5b54aa5b267cf9e8fbe59f6f55314d5d8d8483f4e
+69fd1a006432595d5d5daf5ebdbae2fdb3b7df7e7bd7ae5df6d3d96c765a5ada8001031eb1febaf71e7b77fb996732774fea9727d7bc7e2e3be3b5912e90f92f4ddce56379bd4e475194279bad31992cdd27940643a35e1f241074ad4f68f2993378a4468fcf435e6d13dcfdcd68fd94bfafaf6f7b3d96625f3f41100e5f03
+80979797979757576c7dbd5e7ffcf87187b3befefaeb470f814f804df25bfc467512de777b0aba5b5d4b10b25842160eca8a507b4441d42eb66cd92297cbeda78f1c39f2b3cf3eeb0c5b98209187bbf36ed7ab42049c186f370ae05255437163d3287f8f015e02ebe4b7e1426e98900b003665daac8402b82a91f774e73568
+0d69b5ca69113e5e9ce623f555893cb74133c45738ccb7b9ef8d7de5458d4d57c4f21e6e9c6001a7af48803b1542e881604e890e2393c9befefa6bfbe9e1e1e1870f1f6674822ecc474b6a5f3b9bb529b3f27071ed8e5c09007c9552ecc3653d1de031e75cd6a9f27a87c96f6dcab459095d604b76d525b1fc6ca56c417c1e
+5dcfdfaf179a2998d1d3f7adf3d9474a6a1d566e9fbc172184300a760d5f7df595256b8785bfbfffb973e79c4cbdfbb8bd1ce11b20e00cf773ff797c9f754ff7ba5ead286d6caad6e82b54ba4877decf77c4f6c96fedcbb459c98c08df403e674c80c7e281219f0f094bae51004062b542acd63d13e4e9c3652d1f1ae6c664
+38acdc3e792f42083d10bc22da31f6eeddfbd34f3fd94cf4f0f0888b8b8b8a8aea54bf922ce9fd6ed629c384bcc13e6e00b07d7c1fa6a3a7601c9669b31206013c260300dc580cbd8902801469a30faf3967c23bbd035b5a96cf64d0c97b3fe817b46c5028ee5708218c825d407272f27befbd67335128149e3871c2c9a4bb
+1d824110390d6abfbbc1c93a17aef3659ca9040098249155afb2fc2956eb82041cfb65054c383e75d0c1e29a6f6e94e435687e7bb61fee5d08a107fdad8f9ea8ececec975f7ed966989bbe7dfba6a4a48c1933a6136eb0f96e5f9ab1419e0912f9d6ec2a3305556add89d23ab04b7eebb04c9b955877d6a1800280b1819e19
+f5aafd853500902fd75c91c81d2e7bad5a51a0d0cc8ef43bf0dc80d45a25ee5d08a107fe7ddf52af79f4389c3e7dfaf9e79fb749113c7bf6ec13274e3ca67b818fd26b3e5edcb0275f6a3453c3fddc052c862f8fcd6731be492bdd985971bd5ab172784483cef84bae3859da18e9c1f3e3b1f94c076592a48ad62b49ad69fc
+35af5ac862f615f18f94d45e16cba33df9e383454c92f832a5e87f3992028566f990300649d82f2bd6e83f4f2af2e77392a58d63033d9ef2756f9746ebb4bde6bb27ec358f1eab87ec358f1e1445511b376efcf4d34f4d77877004002693f9fdf7df7ff2c9278f6fbdedde6bbe416794e90c3ddd79c4239471a61200a8d71a
+540613dd01c3e1b27a334502942ab59e1ca62579efa373815ef3ae047bcda3c70aef0b3e098989899f7cf2496a6aaaf5c4091326ac5bb7ae33df087448c4618a38cc472ce34c2500e0cd6579dbc536eb651d26ef450821e7e17dc1c72b3d3d7df6ecd963c68cb10e81919191870f1fbe78f162970b81082184e782a86d2525
+25bffffefb9e3d7b72eecf59e3e1e1b162c58a254b96b0d96c6c258410c228e8228c46e3b973e7d2d2d2d2d3d3d3d3d3cbcaca6c0af4efdf7fe1c2856fbffdb65028c4e64208218c822ea5aeae6eead4a90eda97c99c3163c6a2458b9e79e6196c258410c228d88d30188cefbefb6ef1e2c52c1cc81f21843a257c3ae63132
+994c7ffbdbdfc2c3c3bffdf6dbdada5a6c108410c228e89a4422d1a64d9bde7befbd98981826f3be336cb158fcd5575ff5e8d163debc79191919d8560821d47960aff9f6a7d56a13121276efde7df8f061a5f2be61bd48929c376fdeead5abfdfcfc9eccc63c815cf3ae077bcd772ad86b1ee1b96017c3e572274d9af4ebaf
+bf4aa5d2bd7bf70e1e3cd832cb6c36ffef7fff8b8e8e5ebf7ebdd168c4b64208218c822e8bc7e3cd9933272d2d6dfbf6edfefefe96e90a85e2934f3e193468d0a54b97b095104208a3a04b373149ce9f3fbfa0a060fefcf9d6d3efdcb93369d2a4d5ab57e345698410c228e8e28442e1f6eddbd7ac594392f7dadc6c36af58
+b162d6ac5936b70f114208611474417ffbdbdf0e1f3ecce5de9724e1c8912323478ecccfcfc7f64108218c822e6efaf4e9bffcf28bcdc49c9c9c912347deba750bdb072184300abab8b973e77ef5d5573613e572f99429538a8a8ab07d104208a3a08bfbfaebafedc71d954aa57ff9cb5f241209b60f42086114746504416c
+d8b0c13ebf524949c9942953e4723936114208611474655151514b962cb19f7efbf6ed77df7d17db072184300abab82fbef882c3e1d84f3f76ecd8ce9d3bb17d104208a3a02bf3f4f49c3c79b2c3594b962ca9aaaac2264208218c82aeecd5575f75385d2e97bffffefbd83e08218451d0958d1f3fbea559717171070f1ec4
+264208218c822e2b2020c07a4c351bab57afc6264208218c822e8bc964060404b434f7e6cd9ba74e9dc2564208218c822ecbcdcdad95b9783a88104218055d59eb0925121313d3d2d2b095104208a3a06b6a6c6c6cbdc0c99327b195104208a3a00b92c9646ab5baf532a74f9fc6864208218c822ea8b4b4b4cd32292929f5
+f5f5d85608218451d0d5949494b459c66c36c7c7c7635b218410464157939999e94cb1f2f2726c2b8410c228e86a3232329c29565d5d8d6d85104218055dcdeddbb7310a22841046c1eea8aeaeaeb8b8d8999252a9149b0b2184300aba94a4a4246c048410c228d84d5dbf7eddc9920281009b0b2184300a62144408218451
+b0eba3282a3d3dddc9c27e7e7ed86208218451d07594949428140a270b070707638b2184104641d771f3e64de70b63144408218c82dd370a464444608b21841046c1ee18050982e8d7af1fb61842086114741dce3f1a131a1a8acf882284104641d7515d5dedfca068fdfbf7c7164308218c82ae233737d7f9c243870ec516
+4308218c82aea3aeeeffb777c7206d6d71008713fbb051a2221db2582b2aa683531505872a527860a16005277178885d8254706da73a0a1671ca2a22086e6297628b20447d055d0aa58338582ae2721dd450f386c7a3a2364db7d7e3f78df79ce99fe1e7f126f71e96beb9b3b3d3c40054301cbff4eef88e8e0e130350c19b
+58c17bf7ee79700c800a06e5e8e8a8c49dfe1d0aa08237f72ca882002a7873cf826e0a02a86068e2f17829db6eddbae56712002a189a643259cab6a6a6a6caca4ae30250c1a054575797b2cd5363005430400d0d0da56c6b6d6d352b00150c4d4b4b4b29db9a9b9bcd0a40054353e29b92eaebebcd0a4005033c0ba652a99f
+6ebb7bf7ae5901a86080babbbb7fbac7b3d30054304c7d7d7d3fdde3e5ba002a18a6a74f9f56545414d9904824caca7c40002a18a2aaaaaafefefe221b4e4f4ff3f9bc4101a86098c6c6c68aac160a85838303530250c130757676f6f6f616d9f0f5eb57530250c160bd7cf9b2c8ead6d6961101a860b0babbbb0707077fb4
+bab2b26244002a18b2a9a9a91fbd62e2eddbb76767674604a082c1aaabab9b9a9aba76298aa2f9f979230250c1908d8e8e0e0c0c5cbb343939f9eddb37230250c19065b3d9c6c6c6abd73f7ffe3c3737673e002a18b2dadadae5e5e5dadadaab4b131313fbfbfb4604a08221bb7ffffed2d2527979f9a5eb878787434343e7
+e7e74604a08221ebe9e9595e5ebefa95d1d5d5d5e2bf2c04400543f0e8d1a377efde5d7da7d2e4e4e48b172fcc07400503d7d6d6b6bebe7ef5cb32af5ebd7afefc79a150302200150c595353d3fafafa83070f2e5d7ffdfaf5e3c78ff7f6f68c08400543964aa5debf7f9fc9642ebd65706565a5b5b5757676d6a110400543
+964c26676666363636dadbdb2f5e8fa22893c97474742c2e2efa4d3d800a86acadad2d97cbcdccccd4d4d45cbcbeb5b5353838d8dcdc3c3d3d1d45914101a860a09f5359592693f9f8f1e3b367cfaaaaaa2e2eedeeee8e8f8fa752a9274f9e64b3d92f5fbe18174089e2ee2dfd768e8f8f171616b2d9ecc6c6c6359f683cde
+dedebeb6b676fbf6ed582c76f8d74313fb557fef571ac2ffc79f6fde1802ce827c974c2647464672b9dcf6f6762693b973e7cec5d542a1b0b9b999cfe70d0ac059307c8542e1d3a74fb9ffececece4f3f9288afe7d008db3a0b3a0b32014f18711fcf67fc8c4e3e9743a9d4e0f0f0fc762b19393930f1f3e241209930150c1
+1b27914874757599034029dc1704400501e0e6f1ed18009c0501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501400501e0bb7f00828c7b626b75babc0000
+000049454e44ae426082}
+ \par
+\pard\qc\sl240\slmult1 \fi0 {Figure {\*\bkmkstart BMfig_boxplot}1{\*\bkmkend BMfig_boxplot}: A boxplot of the structure of grammatical descriptions}{\field{\*\fldinst TC "1 A boxplot of the structure of grammatical descriptions" \\f f}{\fldrslt }}\par
+}\pard\qj\sl240\slmult1 \sb480 \fi0 {\s3\ql\sb240\sa60\keepn\f13\b\fs32 7  Incorporation\par
+}\pard\qj\sl240\slmult1 \sb60 \fi0 A minute annotation of each document is clearly a desideratum as the above sections have shown, but it will take too much time to manually annotate even only the most significant works. Therefore, we have to use computational techniques. We use 7500 scanned and OCRed grammatical descriptions to test scalability. The first part will be to divide the works into sections. This can be done using pattern matching, and we are getting quite good results here. Related to this is the recognition of linguistic examples, which requires more sophisticated pattern matching. The ODIN project{\up16\chftn}
+{\*\footnote \pard\plain\s246\f13\fs20 {\up16\chftn}ODIN}
+ has achieved some success in this domain. The second step is named entity recognition. We have not started working on this yet. The third step is an automatic semantic analysis of each section. We are currently working on Latent Semantic Analysis ({Deerwester et\~al.}, 1990) of the 120000 sections we extracted and will report our results in future publications.\par
+\pard\qj\sl240\slmult1 \fi300 So far for the legacy content. As far as future content is concerned, the application of the schema will be the easier if the authoring software is compatible with the schema on a semantic and a syntactic level. We have made good experiences with the conversion of documents written in LaTeX and HTML. The GALOES grammar authoring platform currently stores text files, but can be made to store DocBook, which will be a very good input format for a schematization process. This is on our agenda for the future.\par
+\pard\qj\sl240\slmult1 \fi300 The direct link between a semantically structured grammar authoring environment and an archive would mean that the task of the archiver changes from an iteration of acquire-conform- incorporate-acquire-conform-incorporate to a more continuous model, where granular pieces of archive material automatically find their place in the archive.\par
+\pard\qj\sl240\slmult1 \fi300 For the production of linguistic knowledge, this system means that the traditional cycle of gather-process-condense-publish-archive will be compressed, and that the primary data (gather) the transcription (process) and the analyses (condense) can be archived as they are gathered without going through the intermediate stage of a book publication. This is thus a movement towards micropublications in the sense of {Cysouw} (2009).\par
+{\pard\qj\sl240\slmult1 \sb120 \fi0 {\plain\b\fs32 References}\par
+\pard\qj\sl240\slmult1 \sb60 \li450\fi-450 {\scaps Ameka}, F., A.\~{\scaps Dench} & N.\~{\scaps Evans} (eds.) (2006). {\i Catching Language \endash  The standing challenge of grammar writing}.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Berners-Lee}, T. (2006). \ldblquote Tim Berners-Lee Date: 2006-07-27\rdblquote . URL {\f16 http://www.w3.org/DesignIssues/LinkedData.html}.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Borthwick}, A. (1999). {\i A Maximum Entropy Approach to Named Entity Recognition}. Ph.D. thesis, New York University.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Bow}, C., B.\~{\scaps Hughes} & S.\~{\scaps Bird} (2003). \ldblquote Towards a general model for interlinear text\rdblquote . {\i Proceedings of the EMELD Language Digitization Project Conference}. URL {\f16 http://www.linguistlist.org/emeld/workshop/2003/bowbadenBird-paper.pdf}.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Cysouw}, M. (2009). \ldblquote Micropublication: footnotes for the 21st Century\rdblquote . Paper presented at the workshop \ldblquote Small Tools for Cross-Linguistic Research\rdblquote , June 2009, University of Utrecht.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Deerwester}, S., S.\~T. {\scaps Dumais}, G.\~W. {\scaps Furnas}, T.\~K. {\scaps Landauer} & R.\~{\scaps Harshman} (1990). \ldblquote Indexing by latent semantic analysis\rdblquote . {\i Journal ofthe American Society for Informotion Science}, 41:391\endash 407.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Good}, J.\~. .\~. (2004). \ldblquote The descriptive grammar as a (meta)database\rdblquote . Paper presented at the EMELD Language Digitization Project Conference 2004. http://linguistlist.org/emeld/ workshop/2004/jcgood-paper.html.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Heath}, T. & C.\~{\scaps Bizer} (2011). {\i Linked Data - Evolving the Web into a Global Data Space}. San Rafael: Morgan & Claypool.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Klamer}, M. (2010). {\i A Grammar of Teiwa}, {\i Mouton Grammar Library}, vol.\~49. Berlin: Mouton de Gruyter.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Lehmann}, C. (1980). \ldblquote Aufbau einer Grammatik zwischen Sprachtypologie und Universalienforschung\rdblquote . In {\scaps Seiler}, H., G.\~{\scaps Brettschneider} & C.\~{\scaps Lehmann} (eds.) \ldblquote Wege zur Universalienforschung\rdblquote , T\'fcbingen: Narr. pp. 29\endash 37.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Lehmann}, C. (1989). \ldblquote Language description and general comparative grammar\rdblquote . In {\scaps Graustein}, G. & G.\~{\scaps Leitner} (eds.) \ldblquote Reference grammars and modern linguistic theory\rdblquote , T\u252?bingen: M. Niemeyer. pp. 133\endash 162.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Lehmann}, C. (1993). {\i On the system of semasiological grammar}, {\i Allgemein-Vergleichende Grammatik}, vol.\~1. Bielefeld: Universit\u228?t Bielefeld, Universit\u228?t M\u252?nchen.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Lehmann}, C. (1998). \ldblquote Ein Strukturrahmen f\u252?r deskriptive Grammatiken\rdblquote . In {Zaefferer} (1998), pp. 39\endash 52.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Lehmann}, C. (2004{a}). \ldblquote Documentation of grammar\rdblquote . In {\scaps Sakiyama}, O., F.\~{\scaps Endo}, H.\~{\scaps Watanabe} & F.\~{\scaps Sasama} (eds.) \ldblquote Lectures on endangered languages: 4. From Kyoto Conference 2001\rdblquote , Osaka: Osaka Gakuin University. pp. 61\endash 74.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Lehmann}, C. (2004{b}). \ldblquote Funktionale Grammatikographie\rdblquote . In {\scaps Premper}, W. (ed.) \ldblquote Dimensionen und Kontinua. Beitr\u228?ge zu Hansjakob Seilers Universalienforschung.\rdblquote , Bochum: N. Brockmeyer. pp. 147\endash 165.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Lehmann}, C. & E.\~{\scaps Maslova} (2004). \ldblquote Grammaticography\rdblquote . In {\scaps Booij}, G., C.\~{\scaps Lehmann}, J.\~{\scaps Mugdan} & S.\~{\scaps Skopeteas} (eds.) \ldblquote Morphologie. Ein Handbuch zur Flexion und Wortbildung\rdblquote , , vol.\~2Berlin, New York: de Gruyter.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Mosel}, U. (2006). \ldblquote Grammaticography: The art and craft of writing grammars\rdblquote . In {Ameka et\~al.} (2006).\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Nordhoff}, S. (2008). \ldblquote Electronic reference grammars for typology \endash  challenges and solutions\rdblquote . {\i Journal for Language Documentation and Conservation}, 2(2):296\endash 324.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Nordhoff}, S. (forthcoming). \ldblquote The grammatical description as a collection of form-meaning pairs\rdblquote . In {\scaps Nordhoff}, S. (ed.) \ldblquote Electronic Grammaticography\rdblquote , Manoa: University of Hawai\rquote i Press.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Penton}, D., C.\~{\scaps Bow}, S.\~{\scaps Bird} & B.\~{\scaps Hughes} (2004). \ldblquote Towards a general model for linguistic paradigms\rdblquote . {\i Proceedings of EMELD 2004}.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Sperberg-McQueen}, C.\~M. & L.\~{\scaps Burnard} (2010). {\i TEI P5: Guidelines for Electronic Text Encoding and Interchange}. Oxford, Providence, Charlottesville, Nancy: TEI Consortium.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps {von der Gabelentz}}, G. (1891). \ldblquote Die Sprachwissenschaft. Ihre Aufgaben, Methoden und bisherigen Ergebnisse\rdblquote . Leipzig.\par
+\pard\qj\sl240\slmult1 \li450\fi-450 {\scaps Zaefferer}, D. (ed.) (1998). {\i Deskriptive Grammatik und allgemeiner Sprachvergleich}. T\u252?bingen: Niemeyer.\par
+}}}

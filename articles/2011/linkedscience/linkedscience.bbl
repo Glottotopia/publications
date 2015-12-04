@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{ling:GoodHendryx:Categorization}
+Good, J., Hendryx-Parker, C.: Modeling contested categorization in linguistic
+  databases. Proceedings of the EMELD 2006 Workshop on Digital Language
+  Documentation: Tools and Standards: The State of the Art. Lansing, Michigan.
+  June 20-22, 2006
+  \url{http://www.linguistlist.org/emeld/workshop/2006/papers/GoodHendryxParke%
+r-Modelling.pdf} (2006)
+
+\bibitem{ling:HammarstromNordhoff:LangDoc}
+Hammarstr\"om, H., Nordhoff, S.: Langdoc: Bibliographic infrastructure for
+  linguistic typology. Oslo Studies in Language  to appear,  to appear (2011)
+
+\end{thebibliography}

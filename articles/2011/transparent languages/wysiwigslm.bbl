@@ -1,0 +1,25 @@
+\begin{thebibliography}{3}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Adelaar(1985)}]{Adelaar1985}
+\textsc{Adelaar}, K.~A. (1985).
+\newblock \emph{Proto-Malayic; The reconstruction of its phonology and parts of
+  its morphology and lexicon}.
+\newblock Ph.D. thesis, Leiden University.
+
+\bibitem[{Hengeveld \& Mackenzie(2008)}]{HengeveldEtAl2008fdg}
+\textsc{Hengeveld}, K. \& L.~\textsc{Mackenzie} (2008).
+\newblock \emph{Functional Discourse Grammar}.
+\newblock Oxford: Oxford University Press.
+
+\bibitem[{Nordhoff(2009)}]{Nordhoff2009phd}
+\textsc{Nordhoff}, S. (2009).
+\newblock \emph{A Grammar of Upcountry Sri Lanka Malay}.
+\newblock Ph.D. thesis, University of Amsterdam.
+
+\end{thebibliography}

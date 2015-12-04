@@ -1,0 +1,1042 @@
+Having come to be a copula in Sri Lanka
+Malay – an unusual grammaticalization path
+
+
+Sebastian Nordhoff
+
+
+January 7, 2010
+
+Abstract
+
+
+1 Introduction
+
+
+Languages with copulas are widely known in Europe and beyond, but languages
+without a copula are also frequently encountered. If languages without a copula
+develop one over time, the source is normally either a former locational verb or
+a deictic (Stassen 1997:91). In this paper, I want to highlight yet another source
+for a copula, namely the participle of the verb COME, which has grammaticalized
+into a copula in Sri Lanka Malay.
+
+I will first give some information on Sri Lanka Malay (Section 2) and the
+types of copula sentences we find in that language (Section 3). I will then show
+that neither other varieties of Malay nor the contact languages Sinhala and Tamil
+provide models for the development of this particular copula in Sri Lanka Malay
+(Section 4). I then discuss common sources for the grammaticalization of copulas
+in Section 5 and common targets of grammaticalization for the verb COME in
+Section 6, showing that the particular combination COME!copula is not attested.
+
+
+2 Sri Lanka Malay
+
+
+Sri Lanka Malay is the language of the descendents of soldiers, exiles, convicts
+and slaves who were brought to the island by the colonial powers of the Dutch
+and the British between roughly 1650 and 1850 (Hussainmiya 1990). The grammar
+of the language has changed dramatically ever since (Adelaar 1991, Smith
+et al. 2004, Ansaldo 2008, Nordhoff
+2009) and has shed most of its Austronesian origins to align with the Sri Lankan sprachbund (Bakker 2006), although some
+traces of Malay grammar still remain (Slomanson 2006). For instance, the language
+has changed from SVO to SOV and from prepositional to postpositional.
+The language has developed more than 20 new bound morphemes, mainly for
+the marking of TAM and case, which is virtually unheard of in other parts of the
+Malay world. Most of the changes the language has undergone since its arrival on
+the island 350 years ago were triggered by language contact. The copula, however,
+does not seem to have a clear origin in any contact language or any historical
+variety of Malay.
+
+3 The Copula in Sri Lanka Malay
+
+
+The copula in Sri Lanka Malay is homophonous to the conjunctive participle of the
+verb dhaathang ‘come’. The Sri Lanka Malay verb can take a number of prefixes,
+one of them being the conjunctive participle. This form is used to indicate that the
+event depicted in the clause thus marked is prior to the event in the main clause.
+In this sense, it is similar to an English construction like Having done X, having
+done Y, finally Z happened. An illustration of this form is given in (1).
+
+(1) a. Oorang pada asà-pìrrang,
+man pl
+cp-wage.war
+‘After having waged war’
+b. derang=nang asà-banthu,
+3pl=dat cp-help
+‘and after having helped them’
+c. siini=jo su-cii˘n˘ggal.
+here=emph past-settle
+‘the people settled down right here.’ (K051222nar03)
+
+Alternatives to the form with asà-shown in (1) are the form with =apa shown
+in (2) and the form with both asà-and =apa, shown in (3). These three forms
+seem to be functionally equivalent.
+
+(2) a. Oorang pada thiikam=apa
+  man pl=dat
+  shoot=cp
+  ‘People having been stabbed,/People were stabbed and’
+b. oorang pada=nang thee ˘mbak=apa
+  man pl
+  stab=cp
+  ‘people having been shot,/people were shot and’
+c. se=dang bannyak creeveth pada su-aada.
+  1s=dat much trouble pl past-exist
+  ‘I had a lot of problems.’ (K051213nar01)
+
+(3) a. Siithu asà-blaajar=apa,
+	there cp-learn=after
+      ‘After having learned there,’
+    b.thaaun nnamblas=ka se skuul asà-luppas=apa,
+      year sixteen=loc 1s school cp-leave=after
+      ‘after having left the school at 16,’
+
+c.
+pukuran asà-caari anà-pii.
+work cp-find past-go
+‘I looked for work and went (away).’ (K060108nar01)
+The Sri Lanka Malay copula is built around the lexical verb dhaathang ‘come’
+in its conjunctive participle form. All three forms mentioned above are possible
+for the copular use. The following three examples illustrate this.
+
+(4)	Se=ppe naama asàdhaathang Cintha Sinthani.
+	1s=poss name copula Chintha Sinthani.
+	‘My name is Chintha Sinthani.’ (B060115prs04)
+
+
+
+(5) Se=ppe baapa dhaathangapa  Jinaan Samath.
+    1s=poss father copula	Jinaan Samath.
+    ‘My father was Jinaan Samath.’ (N060113nar03)
+(6) Estate=pe field ocer asàdhaathangapa kithang=pe kaake
+    estate=poss field ocer copula 1pl=poss grandfather.
+    ‘The estate field ocer was our grandfather.’ (N060113nar03)
+
+The three examples above illustrate the use of (asà)dhaathang(apa) as a copula.
+Any of the three forms mentioned could also be used as a conjunctive participle
+proper when combined with dhaathang ‘come’, as shown in the following
+three examples.
+
+(7) a. Moonyeth pada=le asà-dhaathang
+	monkey pl=addit cp-come
+	‘The monkeys would go and’
+    b. creeveth athi-kaasi.
+      trouble irr-give
+      ‘cause (some other) trouble.’ (K070000wrt01)
+
+(8) a. oorang mlaayu siithu=dering dhaathang=apa
+	man malay there=abl come=after
+	‘The Malay men came from there and’
+    b.  cinggala raaja=nang=le anà-banthu
+	Sinhala king=dat=addti past-help
+      ‘helped the Sinhalese king.’ (K051206nar04)
+
+(9) a. incayang islaam=nang asà-dhaathang=apa
+	3s.polite Islam=dat cp-come=cp
+	‘He came to Islam.’
+    b. inni siigith=nang asà-dhaathang
+      prox mosque=dat	cp-come
+      ‘and came to the mosque.’
+    c. giini girja
+      like.this make
+      ‘and does like this (=observes Islamic rites).’ (K051220nar01)
+
+The interpretation as involving an event of coming is mandatory in examples
+(7)-(9), but impossible in examples (4)-(6). We are thus dealing with polysemy of
+the form (asà)dhaathang(apa).
+
+In the languages of the world which have a copula, it is normally used for
+one or more types of non-verbal predicates (Stassen 1997). The predication types
+which are often found to require support by a copula are property assignment
+(John is tall), class inclusion (John is a doctor), existence (There is a solution)
+and location (John is in Dubai). Additionally, identification (The murderer was the
+butler; I am John) and specification (The president is Obama) also often require
+the use of a copula (Hengeveld 1992). This is actually exactly what we find in
+English, where the copula ‘to be’ is present in all these cases.
+
+In Sri Lanka Malay, the copula is mainly used for naming people and for indications
+of group membership. Property assignment or location are not areas which
+trigger the use of the copula. Among these uses, naming is the most common one
+and has been illustrated in (4) and (5) above. Apart from naming, the copula is
+most frequently used for indicating membership in ethnic, professional or gender
+classes or groups. These three uses are given in (10)-(12). The three forms with
+asà-, =apa and asà-...=apa appear to be used indiscriminately for these functions.
+
+(10) a. Se=ppe daughter-in-law=pe mother asàdhaathang bìnggaaliethnicgroup.
+	1s=poss daughter-in-law=poss mother copula Bengali
+	‘My daughter-in-law’s mother is Bengali.’
+      b. Ithukapang daughter-in-law=pe father asàdhaathang Malay
+	then daughter-in-law=poss father copula mlaayuethnicgroup.
+	‘Then my daughter-in-law’s father is Malay.’ (K051206nar08)
+
+(11) [Seelong=nang duppang duppang anà-dhaathang mlaayu] asàdhaathang oorang ikkangprofession.
+     [Ceylon=dat before before past-come Malay] copula man fish
+      ‘The Malays who came to Ceylon very early were fishermen.’ (K060108nar02)
+
+
+(12) Kàthama aanak dhaathangapa klaakigender.
+      first child copula male
+    ‘My oldest child is a boy.’ (G051222nar01)
+
+Another use frequently found use is the indication of kinship relations, another
+type of class membership. Example (13) illustrates this.
+
+(13) Baapa=pe umma asàdhaathang kaake=pe aadekin.
+      Father=poss mother copula grandfather=poss younger.sibling.
+      ‘My paternal grandmother was my grandfather’s younger sister.’ (K051205nar05)
+
+All the functions mentioned above, with the exception of naming, have in
+common that they indicate group membership. Another function is the use of
+the copula in identificational or specificational sentences. The following two examples
+show the use of the copula to further specify or identify the nature of a
+problem.
+
+(14) [Itthu vakthu kithang=nang nya-aada] asàdhaathang ini JVP katha hathu problem.
+      dist time 1pl=dat past-exist copula prox JVP quot indef problem.
+      ‘What we had at that time was the so-called JVP-problem.’ (K051206nar10)
+
+
+(15) suda karang [kithang=nang aada problem] dhaathangapa  kithang=pe aanak pada mlaayu thama-oomong
+     thus now 1pl=dat exist problem copula 1pl=poss  child pl Malay neg.nonpast-speak
+      ‘So, the problem we are having now is that our children do not speak Malay.’ (G051222nar01)
+
+To sum up, of the functions commonly associated with the copula, ‘class membership’
+seems to be central for the Sri Lanka Malay case, while identification is
+another use. Identificational uses of the copula are very common as far as naming
+is concerned, but far less common for the types of identification and specification
+illustrated with examples (14)-(15).
+
+The domains of property assignment and location do not seem to trigger the
+use of the copula in Sri Lanka Malay, as illustrated in (16) and (17).
+
+(16) Theembok (*asàdhaathang) puuthi
+      wall copula	white
+    (intended reading ‘The wall is white.’)
+(17) Tony (*asàdhaathang) Kluu˘mbu=ka
+    Tony copula Colombo=loc
+    (intended reading ‘*Tony is in Colombo.’, possible reading ‘Tony has arrived
+in Colombo.’)
+
+While class inclusion as described above often does show the copula, but it
+is by no means obligatory. The copula can be left out in all the sentences above
+without aecting truth conditions. This means that together with the sentence in
+(11), (18) is also grammatical.
+
+(18) [Seelong=nang duppang duppang anà-dhaathang mlaayu] ∅  oorang ikkang.
+      Ceylon=dat before before past-come Malay] man fish
+      ‘The Malays who came to Ceylon very early were fishermen.’
+
+
+It appears that the use of the copula is conditioned more by considerations
+of information structure than by syntax or semantics. Especially topic-comment
+structures seem to trigger the use of the copula (cf. Li & Thompson 1977:420).
+The stretch preceding the (asà)dhaathang(apa) is the topic, while the following
+portion is the comment.
+
+It is not necessary for the topic to be nominal. In (19), we see an adverbial
+topic dovulu ‘in former times’, the comment on which is preceded by abbisdhaathang,
+an idiolectal variant of asàdhaathang. In (20), we have a spatial topic
+siini ‘here’ instead of a temporal topic.
+
+(19)  dovulu abbisdhaathang muuka thama-thuuthup
+      earlier copula face neg.irr-close
+      ‘Earlier, the women would not cover their faces.’ (K061026prs01)
+(20)	Siini dhaathangapa mixed, mixed community
+	here copula mixed mixed community
+	‘What we get here is a mixed, a mixed community.’ (G051222nar04)
+
+Occasionally, the comment can be quite elaborate as in the following two examples.
+
+(21) Itthu abbisdhaathang custard powder=dering=jo arà-kirja.
+     dist copula custard powder=abl=emph non.past-make
+    ‘As for this one, it is such that it is made with custard powder.’
+
+(22) a. Sepakthakrowpe rules dhaathangapa
+	sepaktakrow=poss rules copula
+	‘The Sepaktakrow rules are as follows:’
+     b. inni hathu badminton court=ka arà-maayeng
+	prox indef badminton court=loc non.past-play
+	‘You play it on a badminton court;’
+      c. game hatthu itthe same measurement ambel=apa; height=le  same=jo
+	  game indef dist same measurement take=after height=additsame=emph
+      ‘(For) a game, you take the same measurements, and then the height
+(of the net) is also the same.’ (N060113nar05)
+
+Furthermore, use of the copula seems to be strengthened by the presence of
+loanwords in the sentence, as is already evident from the preceding example. Most
+of the Malays have an above average command of English for the Sri Lankan
+context, and it cannot be excluded that the use of lexical material from English
+(loanwords) activates grammatical structures of English as well, in this case the
+requirement for a copula in predications of class membership.
+
+
+4 Where does the copula come from?
+
+The copula is both synchronically and diachronically analyzable as conjunctive
+participle of the lexical verb dhaathang ‘come’. The first Malays who arrived in
+Ceylon in the 17th century communicated in Vehicular Malay, a trade language
+used in and around the Indonesian archipelago (Smith 2003, Smith et al. 2004).
+The language has changed considerably in the last three centuries and has typologically
+converged towards the local languages Tamil and Sinhala (Smith et al.
+2004, Smith & Paauw 2006, Ansaldo 2005, 2008, Nordhoff
+2009). Given these
+historical facts, three possible origins for the copula can be suggested: Indonesian
+varieties of Malay, and Sinhala or Tamil. In this section, I will discuss the copula-
+like structures we find in these languages and the possibility of their influence om
+the development of Sri Lanka Malay.
+
+4.1 Copulas in Indonesian varieties
+In Indonesian there exist two copulas, adalah and ialah, which are restricted to
+very formal varieties Sneddon (2006:98f) informs us that
+
+
+ [t]he copulas adalah and ialah optionally occur in F[ormal ]I[ndonesian]
+ to link a subject and nominal predicate, and sometimes an adjectival
+ predicate [...] with adalah being considerably more common than
+ ialah.
+ Adalah also occurs in C[olloquial ]J[akarta ]I[ndonesian], although
+ it is very rare; in about half the texts it did not occur. In most of
+ the others it occurred with very limited frequency. It was only in the
+ meetings and in the two most formal interviews [...] that it occurred
+ frequently. [...] It can be said that adalah is marked for formality
+ while ialah, being entirely absent form CJI, is very highly marked for
+ formality.
+
+The immigrants to Sri Lanka were mostly soldiers temporarily garrisoned in
+Batavia/Jakarta and spoke a very colloquial variety of Malay, remote from any
+formal standard (Adelaar 1991, Smith et al. 2004, Nordhoff
+2009). It is unlikely
+that Formal Indonesian (or the equivalent historical variety) has had a significant
+impact on their speech. The sociolinguistic profile of Colloquial Jakarta Indonesian
+is closer to what would have been appropriate for the immigrants, although
+the relations between the colloquial varieties of the 17th century and the contemporary
+varieties are not exactly straightforward (Grijns 1991, Adelaar & Prentice
+1996). The copula adalah can be found in CJI although it is extremely rare. The
+following is an example of the copula in informal speech.
+
+(23) 	Yang pasti bakal ngebikin gua terpesona banget adalah cewek
+	which certain will make me enchanted very copula girl
+	dengan rambut panjang yang tergerai, terus anggun CJI
+	with hair long which flowing then elegant
+	‘What would certainly very much enchant me is an elegant girl with long
+flowing hair.’ (Sneddon 2006:79)
+
+This specificational use of the copula in (23) is similar to example (14), repeated
+as (24) for convenience.
+
+(24) [Itthu vakthu kithang=nang nya-aada] asàdhaathang ini JVP katha hathu problem
+      dist time 1pl=dat past-exist copula prox JVP quot  indef problem
+    ‘What we had at that time was the so-called JVP-problem.’(K051206nar10)
+
+While the functional properties of the copulas in CJI and SLM are similar, they
+are morphologically very dierent. The Indonesian form is composed of the existential
+plus the imperative/emphatic clitic, but the Sri Lankan form is composed
+of the verb ‘to come’ and the conjunctive participle prefix asà-. It cannot be excluded
+that a construction involving a copula crossed the Bay of Bengal with the
+immigrants, but given the formal register with which this construction occurs in
+Indonesia, this is not very likely. An additional argument against a historical relatedness
+of the SLM and CJI constructions is the use of dhaathang ‘come’ in SLM.
+Dhaathang would have had to replace the existential ada without any particular
+motivation. One reason for the replacement of the morphological composition of
+the copula could be influence from the adstrates. This will be discussed in the
+following section.
+
+4.2 Copulas in Sinhala and Tamil
+
+Colloquial Sinhala has no copula as such, but uses a predicative sux -yi on adjectives
+ending with a vowel (25). Adjectives which end in a consonant (26), and
+other word classes ending in any sound do not take this sux (27).
+
+(25) mee amu miris hari særa-yi Colloquial Sinhala
+     prox raw chillis really strong-yi
+    ‘These green chillies are really strong.’ (Gair 2003:794)
+
+(26) mee dawasw@l@ haal bohom@ ganaN(*-yi) Sinhala
+     prox days rice very expensive(-yi)
+    ‘These days (uncooked) rice is very expensive.’ (Gair 2003:795)
+
+(27) mam@ govi-yek(*-yi) Sinhala
+      1s farmer-indef(-yi)
+    ‘I am a farmer.’ (Gair 1998:241)
+
+In Literary Sinhala, a similar sux -mi is also used for nominal predications,
+as in (28).
+
+(28)   mama goviyekmi Literary Sinhala
+      1s-nom farmer.nom.1sg
+      ‘I am a farmer.’ (Gair 1998:242)
+
+There is some discussion of whether mi in should indeed be analyzed as a copula,
+or rather as an agreement sux (Gair 1998:242). Whatever the right analysis
+of -mi and similar forms, it is clear that the variety of Sinhala the Malays were
+exposed to did not feature this form. The most copula-like element they are likely
+to have encountered is -yi, which does not suggest itself as possible model for the
+Sri Lanka Malay copula. Its form as a sux is very dierent from the verbal form
+employed by Sri Lanka Malay, and its use for adjectival predications is precisely
+one where the use of the Sri Lanka Malay copula is not found.
+
+In Tamil, the existential iru is sometimes analyzed as a copula. This verb is
+used for predications of existence as in (29) but also for locational predications as
+in (30).
+
+(29) kumaar-ukku oru paiya	iru-kki-aar¯n¯ Tamil
+    Kumar-dat one boy iru-pres-3sm
+  ‘Kumar has one boy/There exists one boy to Kumar.’ (Lehmann 1989:188)
+
+
+
+(30) intak1 kiraama-tt-ilrrmuu(iru-kki koovil
+      this village-obl-loc three temple iru-pres-3sn
+‘There are three temples in this village.’ (Lehmann 1989:173)
+
+Uses for property word predications (31) and nominal predications (32) are
+ungrammatical.
+
+tpa(*irukkieducation
+
+
+-atu) Tamil
+
+
+u
+
+
+r
+¯
+
+
+n
+¯
+
+
+(31)
+ippu mukkiyam
+atu) Tamil
+
+
+importance (iru.3sn)
+
+
+‘Education is important.’ (Lehmann 1989:172)
+
+
+n
+
+r
+¯
+
+
+r
+
+
+(*irukkiatu/*irukkiaa
+
+Kumar lawyer (iru.3sn/iru.3sm)
+‘Kumar is a lawyer.’ (Lehmann 1989:171)
+
+
+While in (31) and (32) the English translational equivalent has a copula, it
+does not seem pertinent to grant the same status to the Tamil form. An analysis as
+an existential can cover both the meanings given in (29) and (30), namely ‘A boy
+exists (for Kumar)’ and ‘Temple exist in this village’, while excluding the readings
+‘Education exists importance’ and ‘Kumar exists a lawyer’. This is precisely
+
+1The dot ·
+separates the grammatical word from the first part of a long consonant which is
+the result of certain morphosyntactic environments. The words in isolation would be inta and
+kiraama. One could also choose to write inta kkiraama to correctly represent pronunciation and
+orthography, but Lehmann chooses to leave the first part of the long consonant as the coda of the
+preceding syllable, although he separates it with a dot to indicate the special status.
+
+
+
+(32) kumaar vakkiil
+) Tamil
+
+
+
+what we find in (31) and (32). It is true that iru is sometimes found in nominal
+predications as in (33), but in that case, the noun is adverbialized by aakalaay,
+and the construction can actually be shown to have a locational reading as well
+(cf. Lehmann 1989:174).
+
+iru-nt-aa
+
+Kumar lawyer-adv
+iru-past-3sm
+‘Kumar was a lawyer.’ (Lehmann 1989:174)
+
+
+villagethreetempleexist locprox
+=
+t
+˙
+
+
+Whatever analysis one prefers for iru, this Tamil form seems to be closer related
+to the Sri Lanka Malay form aada,2 which would be used for translations of
+
+n
+¯
+
+
+(29) and (30), given in (34) and (35).
+(34)
+Ini nigiri=ka thiiga koovil aada SLM
+‘There are three (Hindu) temples in this village.’
+
+(35)
+Kumaar=nang hatthu aanak klaaki aada SLM
+Kumar=dat
+one child male exist
+‘Kumar has one boy.’
+While iru and aada are quite similar, the parallels between iru and (asà)dhaathang(apa)
+are less striking, and it seems unlikely that Sri Lanka Malay emulated the Tamil
+form iru with (asà)dhaathang(apa).
+
+Sinhala and Tamil both have conjunctive participles, too. The conjunctive
+participle forms of the verb meaning ‘to come’ in Sinhala (ævillaa) and Tamil
+(vantu) are not used in a copular sense in these languages; they can only be used
+in the original reading of temporal anteriority.
+
+pantiya=
+
+class=dat
+
+
+(33) kumaar vakkiil-aakalaay
+Tamil
+
+
+(36) a. lamayaa
+a
+
+
+ævillaa,
+
+
+child
+
+
+come.cp
+
+
+‘The child came to the class and/The child having come to class,’
+
+b.
+liyuma livvaa Sinhala
+letter write
+‘(he) wrote the letter.’ (Karunatillake 2004:161)
+2Note that SLM aada and CJI adalah are dierent, although they obviously share the element
+ada, a historical existential.
+
+12
+
+
+
+(37)
+naa
+
+tomorrow
+‘Tomorrow Kumar will come and/Kumar having come tomorrow,’
+
+
+canti-pp-aa
+
+n
+¯
+
+
+l
+˙
+
+
+ai kumaar va-ntu,
+
+
+a.
+Kumar
+
+
+come-cp
+
+
+b.
+e˙nka1pl-acc
+l
+˙
+
+
+-aic
+
+
+Tamil
+
+
+meet-fut-3sm
+
+
+‘(he) will meet us.’ (Lehmann 1989:267)
+
+To sum up, while the Malay ancestor language, Sinhala, and Tamil all have
+structures which come at least close to a copula, none of these structures is similar
+enough to the SLM structure as to suggest itself as the driving force behind the
+development of the copula in Sri Lanka Malay. It thus seems likely that the copula
+in Sri Lanka Malay is an independent development.
+
+5
+The
+emergence
+of
+copulas
+
+
+The most common etymological source for copulas is an existential (Munro 1977)
+or a positional verb (Stassen 1997:94). Stassen illustrates this with data from
+Kiowa gathered by Watkins, which are repeated here.3 In (38) we see the last
+reflexes of the original positional/locational use of do:. This locational use has
+given way to the general use of do: as a copula, which can be seen in (39). In
+return, most of the original uses of do: for locational purposes are now expressed
+by other morphemes, e.g. -cél in (40). Do: has thus nearly fully completed the
+grammaticalization from locational verb to copula.
+
+(38)
+Kiowa
+
+
+O
+
+e
+
+O
+
+p’
+·
+h·
+gyà-d·
+
+
+moon gone pl-be
+‘There is (temporarily) no moon.’ (Watkins 1984:216)
+
+
+(39) té·
+O
+
+O
+
+kygú bà-d·
+
+
+all Kiowa 2pl-be
+‘You are all Kiowas.’ (Watkins 1984:227)
+
+
+Kiowa
+
+
+􀀀e
+
+O
+
+􀀀Oe
+˙
+
+
+gl -cél
+
+here
+‘There are two pieces of hair in the soup.’ (Watkins 1984:211)
+
+
+3Stassen uses the 1980 PhD-thesis; in this article, I use the newer version (Watkins 1984) and
+add stripped diacritics back in place.
+
+13
+
+(40)
+yí·
+
+
+kícòy-kyà Kiowa
+
+
+two hair 3dual-be.in soup-in
+
+
+
+The other common source for copulas are pronouns. This can be seen in the
+famous example from Chinese (Li & Thompson 1977).
+
+(41) jì yù qí sh¯eng yòu yù qi sˇı, shì
+huò yˇe Archaic
+Chinese
+already wish 3sg
+live also wish 3sg
+die this indecision dcl
+‘Wishing him to live and whishing him to die, this is indecision.’ (Li & Thompson
+1977:424)
+
+The demonstrative shì in this construction type was reanalyzed as a copula shì
+(Li & Thompson 1977:424).
+
+(42) nèi-ge rén shì
+xuésh¯eng Modern
+Mandarin
+that-clf
+man cop
+student
+‘That man is a student’ (Li & Thompson 1977:422)
+
+Next to Chinese, this pattern is for instance found in Hebrew, Arabic and furthermore
+in a number of North American and African languages (Stassen (1997:77–
+91)).
+
+With regard to Sri Lanka Malay, we can say that the existential aada is dierent
+from asàdhaathangapa and does not seem to be very much grammaticalized
+towards a copula. The deictics ini and itthu are not recruited for copular purposes
+either. Changes from lexical meanings like ‘coming’ to more grammatical meanings
+like ‘copula’ have been investigated under the umbrella of grammaticalization.
+The verb ‘come’ is a frequent source of a number of grammatical functions,
+so that an investigation of the directions of development of this verb might shed
+light on what we find in Sri Lanka Malay. Stassen (1997:92) notes that a minor
+class of sources for the grammaticalization of copulas includes motion verbs
+like ‘go’ and ‘come’, but unfortunately he does not cite languages illustrating the
+‘come’ case, so that it is not possible to compare the Sri Lanka Malay case to
+other purported instances of this path.
+
+6
+Grammaticalization
+paths
+of
+COME
+
+
+In the languages of the world, verbs meaning ‘to come’ often undergo grammaticalization
+and can be used for a variety of grammatical functions. In French, venir
+de is used to express immediate past, but the venitive meaning is bleached: it is
+possible to say Jean vient de partir, literally ‘John comes from leaving’, meaning
+that John has just left (and not that he has just come back). Heine & Kuteva
+(2002:68–78) list a number of grammaticalization targets for COME: consecutive,
+continuous, hortative, venitive, ablative, near past, benefactive, change-of-state,
+
+14
+
+
+future, proximative, purpose. The copula is not found among them. The closest
+example to a copular use of COME I am aware of is the use as an auxiliary in
+passive constructions, as found in Italian. In Italian, the verb venire can be used to
+form passives as in (43). Those passives always have a dynamic interpretation.4
+
+(43) Era chiaro che i ragazzi veni-vano maltratta-t-i Italian
+was clear that the children come-3pl.impft
+illtreat-ppl-pl
+‘It was obvious [that] the children were being ill-treated.’ (Maiden &
+Robustelli 2000:282)
+
+As in the Sri Lanka Malay case, the verb meaning ‘to come’ has lost its original
+venitive meaning. There is no motion towards the deictic center involved in
+(43). In Italian as in Sri Lanka Malay, the verb meaning ‘to come’ is completely
+bleached and serves a purely grammatical function, which would in both cases be
+fulfilled in English by the copula ‘to be’. However, the similarities end here. In
+Italian, venire is used as an auxiliary for diathesis, which is part of a larger construction
+involving a past participle. Both the auxiliary and the participle agree
+in number with the subject of the sentence. In the Sri Lanka Malay case, the
+absence of other verbs in the sentence suggests that asàdhaathang is not an auxiliary.
+There is no particple either, let alone agreement. Furthermore, the Sri Lanka
+Malay copula typically surfaces in intransitive, non-verbal predications, while the
+Italian passive construction with venire requires at least a bivalent verb. The Italian
+construction has a dynamic reading, while in the Sri Lanka Malay cases, a
+stative reading is the norm. For naming uses for instance, a dynamic reading is
+completely excluded. This all suggests that the grammaticalization path of Sri
+Lanka Malay dhaathang ‘come’ is not the comparable to Italian venire, nor to
+any other of the cases discussed in Heine & Kuteva (2002). With the knowledge
+we have today, it seems that this grammaticalization from COME to a copula is
+unique to Sri Lanka Malay.
+
+7
+Possible
+grammaticalization
+paths
+
+
+In the preceding sections, I have ruled out inheritance of the copula construction,
+or emergence through language contact. I have also shown that the existing literature
+on grammaticalization paths does not cover the phenomenon encountered in
+Sri Lanka Malay. Given this paucity of literature to hook on to, some speculation
+as to the possible development may be warranted. One possible path from COME
+
+4For some diachronic information on this development, see Michaelis (1997) and Giacalone
+Ramat (2000)
+
+15
+
+
+to the copula would lead over an intermediate resultative stage. This resultative
+reading of come is found for instance in English constructions like (44).
+
+(44)
+A dream come true
+In this case, the original motion meaning of to come has been lost. There is
+no spatial motion involved. What remains is the change of state from A to A’,
+which is also what we observe in motion events like John came home from work.
+In (44), the state of the dream changes from unrealized to realized/true.5 While
+in English, this resultative reading is restricted to a small set of words (*A man
+come tall, *A T-shirt come grey), in other languages, it has a wider application. In
+To’aba’ita, the verb mai ‘come’ has an ingressive/resultative meaning when used
+with a property concept as in (45).
+
+(45)
+fanua-’e rodo na-mai To’aba’ita
+place-it:pfv
+be.dark perf-come
+‘It has become dark.’ (Lichtenberk 1991:487)
+Heine & Kuteva (2002:74) note that “[t]his grammaticalization appears to be
+particularly common in pidgin and creole languages.” While it is not entirely clear
+whether Sri Lanka Malay should be seen as a Creole (Smith & Paauw 2006) or
+not (Ansaldo 2008, Nordhoff
+2009) it is clear that the immigrants to Sri Lanka
+spoke Vehicular Malay, a trade language for inter-ethnic communication which
+has been likened to a pidgin (Adelaar & Prentice 1996). As such, it is interesting
+to note that Fa d’Ambu Creole Portuguese (46), Guayanese Creole French (47),
+and Seychelles Creole French (48) show the resultative reading of the copula as
+well.6
+
+(46) tyipa bi sxa dual eli kumu pasa Fad’Ambu
+stomach come part
+hurt 3s east surpass
+‘His stomach hurt; he had eaten to much.’ (Post 1992:159)
+
+
+(47)
+i vini malad Guayanese
+Creole
+French
+3s come sick
+‘He has become sick.’ (Corne 1971:90)
+5Note also that the string come is present in English become, and venir ‘come’ is found in
+French devenir ‘become’ and several Romance cognates.
+
+6Furthermore, this is also found in Ghanaian Pidgin English (Huber 1996) and Chinook Jargon
+(Grant 1996:236).
+
+16
+
+
+(48) i n vin larpâter Seychelles
+Creole
+French
+he cpl
+come surveyor
+‘He became a surveyor.’ (Corne 1977:80)
+
+The grammaticalization from ‘to come’ to a resultative marker is the first step
+in a grammaticalization chain I want to propose. The second case involves the
+change from resultative to stative. For this case, especially the Seychelles Creole
+French example in (48) is interesting. It shows a great resemblance to one of the
+main uses of the SLM copula, namely membership in a (professional class) as in
+
+(11) or also in (49) below.
+(49) Umma=pe baapa dhaathangapa hathu inspector of police. SLM
+mother=poss
+father copula
+indef
+inspector of police.
+‘My mother’s father was an inspector of police.’ (N060113nar03)
+
+The dierence between the Seychelles Creole French example in (48) and the
+Sri Lanka Malay example in (49) is the change from resultative to stative. The
+Seychellois sentence is necessarily resultative, while the SLM sentence is necessarily
+stative. In the Sri Lanka Malay sentence, the information is not about
+the grandfather having passed an exam, thereby becoming an inspector of police
+(unlike the Seychellois surveyor). Rather, it is the first mentioning of the grandfather
+in this text, indicating his profession as a stative predicate without forcing a
+resultative interpretation.
+
+However, it is logically necessary that the grandfather must have made the
+step from prospective inspector of police to certified inspector of police at one
+point in time since it is unlikely that he was born inspector. With many predicates
+there is a reciprocal entailment between the stative reading and a prior ingressive
+/resultative one. This is especially true for predicates of profession: If you
+become a professor, you are then a professor; if you are a priest, you must have
+become a priest before.7 The second step of the grammaticalization chain is then
+the change from a resultative reading entailing stative to a pure stative reading.
+This is likely to have been pioneered by predicates of profession, which are still
+one of the most frequent predicates found with the copula in Sri Lanka Malay.
+Only later would other predicates where a resultative meaning is impossible (e.g.
+sex) have followed suit. The proposed development can then be summarized as
+follows:
+
+(50) come>resultative>resultative entailing stative>copula (professions)>copula
+7A similar case of resultative entailing a subsequent stative reading is Latin cognovi in the
+perfect, literally ‘I have learnt’, which very often means ‘I know now’ with a present reading.
+
+17
+
+
+(other predicates)
+
+8
+Conclusion
+
+
+Sri Lanka Malay has a copula, which is mainly used for naming and predications
+of class membership, although some information structure use especially
+with regard to topic and comment is also found. This copula is derived from
+the conjunctive participle form of the verb dhaathang ‘come’. Neither the formal
+properties of the copula, nor its functional uses show parallels to any of the
+possible languages of origin, i.e. Indonesian varieties, Sinhala, or Tamil. This
+suggests an independent development. This independent development, however,
+is not of a type attested in the literature on grammaticalization and seems to be
+a new grammaticalization path not found up to now. While further research is
+needed, a promising hypothesis is the development through an intermediate stage
+of a resultative marker, as found in other contact languages like Seychelles Creole
+French. This marker would then lose its resultative reading for predicates of profession
+and become a semantically void copula, which then spreads to other types
+of intransitive predication.
+
+References
+
+
+Adelaar, K. A. (1991). “Some notes on the origin of Sri Lankan Malay”. Canberra:
+The Australian National University. pp. 23–37.
+Adelaar, K.A. &D. J. Prentice
+(1996). “Malay: its history, role and spread”.
+Walter de Gruyter. pp. 673–693.
+
+Ansaldo, U. (2005). “Typological admixture in Sri Lanka Malay.
+The case of Kirinda Java.” Unpublished manuscript, available at
+http://home.medewerker.uva.nl/u.ansaldo/index.html.
+
+Ansaldo, U. (2008). “Sri Lanka Malay revisited: Genesis and classification”. In
+Dwyer, A., D. Harrison
+& D. Rood
+(eds.) “A world of many voices: Lessons
+from documented endangered languages”, Studies in Language, Amsterdam,
+Philadelphia: John Benjamins. pp. 13–42.
+
+Baker, P. & A. Syea
+(eds.) (1996). Changing meaning , changing functions: Papers
+relating to grammaticalization in contact languages. London: University
+of Westminster Press.
+
+Bakker, P. (2006). “The Sri Lanka Sprachbund: The newcomers Portuguese and
+Malay”. In Matras, Y., A. McMahon
+& N. Vincent
+(eds.) “Linguistic Areas
+
+– Convergence in Historical and Typological Perspective”, Houndmills, New
+York: Palgrave Macmillan. pp. 135–159.
+18
+
+
+Corne, C. (1971). “Le patois créole français de la Guyane (St. Laurent de Maroni):
+Esquisse de grammaire”. Te Reo, 14:81–103.
+
+Corne, C. (1977). Seychelles Creole grammar: Elements for Indian Ocean Proto-
+Creole reconstruction. Tübingen: Narr.
+
+Deumert, A. & S. Durleman
+(eds.) (2006). Structure and Variation in Language
+Contact. Amsterdam: John Benjamins.
+
+Gair, J. W. (1998). Sinhala and Other South East Asian Languages. New York,
+Oxford: OUP.
+
+Gair, J. W. (2003). “Sinhala”. In Cardona, G. & D. Jain
+(eds.) “The Indo-Aryan
+Languages”, London: Routledge. pp. 766–818.
+
+Giacalone
+Ramat, A. (2000). “On some grammaticalization patterns for auxiliaries”.
+In J.C.Smith
+& D. Bentley
+(eds.) “Historical Linguistics 1995. Vol.I:
+General issues and non-Germanic languages”, Amsterdam: John Benjamins.
+pp. 125–154.
+
+Grant, A. P. (1996). “The evolution of functional categories in Grand Ronde
+Chinook Jargon: Ethnolinguistic and grammatical considerations”. In Baker &
+Syea (1996), pp. 225–242.
+
+Grijns, C. D. (1991). Jakarta Malay. Ph.D. thesis, Universiteit Leiden.
+
+Heine, B. & T. Kuteva
+(2002). World lexicon of grammaticalization. Cambridge:
+Cambridge University Press.
+
+Hengeveld, K. (1992). Non-verbal Predication: Theory, Typology, Diachrony.
+Berlin: Mouton de Gruyter.
+
+Huber, M. (1996). “The Grammaticalization of aspect markers in Ghanaian Pidgin
+English”. In Baker & Syea (1996), pp. 53–70.
+
+Hussainmiya, B. A. (1990). Orang Rejimen: The Malays of the Ceylon Rifle Regiment.
+Universiti Kebangsaan.
+
+Karunatillake, W. S. (2004). An Introduction to Spoken Sinhala. Colombo:
+Gunasena, 3rd edn.
+
+Lehmann, T. (1989). A Grammar of Modern Tamil. Pondicherry: Pondicherry
+Institute of Linguistics and Culture.
+
+Li, C. N. (1977). Mechanisms of syntactic change. Austin: University of Texas
+Press.
+
+Li, C. N. & S. Thompson
+(1977). “A mechanism for the development of copular
+morphemes”. In Li (1977), pp. 419–444.
+
+Lichtenberk, F. (1991). “Semantic change and heterosemy in grammaticalization”.
+Language, 67(3):475–509.
+
+Maiden, M.& C. Robustelli
+(2000). A Reference Grammar of Modern Italian.
+Lincolnwood: NTC.
+
+Michaelis, S. (1997). “Antikausativ als Brücke zum Passiv: fieri, venire und
+
+19
+
+
+
+se im Vulgärlateinischen und Altitalienischen”. In Dahmen, W., G. Holtus,
+
+J. Kramer, M. Metzeltin, W. Schweickard
+& O. Winkelmann
+(eds.) “Neuere
+Beschreibungsmethoden der romanischen Syntax”, Tübingen: Narr.
+Munro, P. (1977). “From existential to copula: The history of Yuman be ”. InLi
+(1977).
+Nordhoff, S. (2009). A Grammar of Upcountry Sri Lanka Malay. Ph.D. thesis,
+University of Amsterdam.
+Post, M. (1992). “The serial verb construction in Fa d’Ambu”. In “Actas do
+Colóquio Sobre Crioulos de Base Lexical Portuguesa”, Lisbon: Edicoes Colibri.
+pp. 153–169.
+
+Slomanson, P. (2006). “Sri Lankan Malay morphosyntax: Lankan or Malay?” In
+Deumert & Durleman (2006), pp. 135–158.
+
+Smith, I. R. (2003). “The provenance and timing of substrate influence in Sri
+Lankan Malay; Definiteness, animacy and accusative case marking.” Paper
+presented at the South Asian Language Analysis Roundtable XXIII, Austin,
+Texas.
+
+Smith, I. R. & S. Paauw
+(2006). “Sri Lanka Malay: Creole or convert”. In Deumert
+& Durleman (2006), pp. 159–182.
+Smith, I. R., S. Paauw
+& B. A. Hussainmiya
+(2004). “Sri Lanka Malay: the state
+of the art.” Yearbook of South Asian Languages, 2004:197–215.
+Sneddon, J. N. (2006). Colloquial Jakartan Indonesian, Pacific Linguistics, vol.
+
+581. Canberra: Australian National University.
+Stassen, L. (1997). Intransitive Predication. Oxford: Clarendon Press.
+Watkins, L. J. (1984). A grammar of Kiowa. Lincoln, London: University of
+Nebraska Press.
+
+20
+
+
+

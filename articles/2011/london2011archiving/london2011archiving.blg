@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: london2011archiving.aux
+The style file: natuva.bst
+Database file #1: nordhoff.bib
+Database file #2: hhling.bib
+Database file #3: grammaticography.bib
+Repeated entry---line 587 of file grammaticography.bib
+ : @book{AmekaEtAl2006
+ :                    ,
+I'm skipping whatever remains of this entry
+Database file #4: asw.bib
+Database file #5: grammars.bib
+Database file #6: malay.bib
+Database file #7: hh.bib
+Database file #8: compu.bib
+Repeated entry---line 27 of file compu.bib
+ : @article{BowEtAl2003
+ :                     ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--missing publisher in AmekaEtAl2006
+Warning--empty pages in LehmannEtAl2004
+Warning--empty pages in Mosel2006craft
+Warning--empty pages in Nordhofffcfufomp
+Warning--empty booktitle in Gabelentz1891
+Warning--missing publisher in Gabelentz1891
+Warning--empty pages in Gabelentz1891
+You've used 23 entries,
+            3313 wiz_defined-function locations,
+            846 strings with 9123 characters,
+and the built_in function-call counts, 13873 in all, are:
+= -- 943
+> -- 461
+< -- 50
++ -- 158
+- -- 126
+* -- 1071
+:= -- 1925
+add.period$ -- 73
+call.type$ -- 23
+change.case$ -- 146
+chr.to.int$ -- 22
+cite$ -- 30
+duplicate$ -- 1253
+empty$ -- 1275
+format.name$ -- 248
+if$ -- 2794
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 219
+newline$ -- 124
+num.names$ -- 106
+pop$ -- 494
+preamble$ -- 1
+purify$ -- 129
+quote$ -- 0
+skip$ -- 519
+stack$ -- 0
+substring$ -- 433
+swap$ -- 630
+text.length$ -- 31
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 189
+warning$ -- 7
+while$ -- 90
+width$ -- 0
+write$ -- 300
+(There were 2 error messages)

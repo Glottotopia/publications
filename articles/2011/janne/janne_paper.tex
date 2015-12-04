@@ -1,0 +1,571 @@
+\documentclass[english,11pt,twoside]{article}
+
+\include{OSLa-template}
+
+\begin{document}
+
+\def\forfatteren{Harald Hammarstr\"om}
+\def\forfatterto{Sebastian Nordhoff}
+\def\forfattertre{Martin Haspelmath}
+
+\def\forfhead{Forsker and Science TODO}
+\def\tilknytning{Radboud Universiteit Nijmegen, TODO MPI EVA}
+\def\tittel{Bibliographic Infrastructure for Linguistic Typology}
+
+
+
+\begin{center}
+\item
+%\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}\textrm{\tittel} \textrm{\tittellast}}
+%\addtocontents{toc}{\textrm{\forfatteren} and \forfatterto, \textit{\tilknytning}\par}
+\huge\sc\MakeLowercase{\tittel} 
+
+\end{center}
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\bigskip
+
+{\centering
+\large\textsc{H\,A\,R\,A\,L\,D\, H\,A\,M\,M\,A\,R\,S\,T\,R\,\"O\,M} \textsc{and} \textsc{T\,O\,V\,E\, S\,C\,I\,E\,N\,T\,I\,S\,T} \\ %TODO
+\textit{\tilknytning}
+\par}
+
+
+\bigskip
+\bigskip
+
+\newcounter{saveenum}
+\begin{abstract}
+  The present paper describes an ongoing project to make bibliography
+  website for Linguistic Typology, with a near-complete database of
+  references to documents that contain descriptive data on the
+  languages of the world.  This is intended to provide typologists
+  with a more precise and compehensive way to search for information
+  on languages, and for the specific kind information that they are
+  interested in. The annotation scheme devised is a trade-off between
+  annotation effort and search desiderata. The end goal is a website
+  with browse, searche, update, new items subscription and download
+  facilities, which can hopefully be enriched by spontaneous
+  collaborative efforts.
+\end{abstract}
+
+\section{Introduction}
+Language Typology is the subfield of linguistics concerned with
+\emph{the systematic study or the unity and variation of the languages
+  of the world}. Like many discplines, there are various
+infrastructural needs which are not yet in place. A central such need
+is as follows. Typically, the material for study for a typologist is a
+document with descriptive information on a language. With some 7 000
+languages in the world \citep{h:Ethnologue:16}, the number of relevant
+such documents grows far beyond the capacity of single typologists. At
+present, single individuals have to manage micro-collections of
+references for their own use, which means not only gathering and
+re-typing them but also performing very time-consuming searches. The
+present paper describes a project aimed at eradicating this enormous
+duplication of work, by providing a free and (if not complete) very
+extensive collection of bibliographical references\footnote{Many of
+  the actual documents that the references point to are difficult to
+  access, tucked away only here and there in libraries across the
+  world. Arguably, there is a similar superfluous duplication of work
+  involved in accessing them. However, the present paper does not
+  address this matter, which appears to be vastly more complicated
+  than collecting only the references.} available for download,
+search, subscription etc via a website.
+
+In essence, the goal is as follows:
+\begin{itemize}
+\item Delineate a class of bibliographical references, namely those to
+  descriptive materials
+\item Annotate them with focus (what language, family, etc.) and with
+  type (wordlist, phonology, grammar etc.) such that
+\begin{itemize}
+\item basic search criteria are met
+\item the focus and type annotation has good automatization prospects
+\end{itemize}
+\item Provide an updateable website interface
+\end{itemize}
+
+We will first define the scope of the proposed collection of
+references, and discuss some existing databases. Next, we will address
+issues of annotation and search desiderata. Finally, we will
+touch issues of updating management, community contribution and
+crediting.
+
+\section{The Scope of the Bibliographical Database}
+\subsection{Desired Scope}
+At present, a bibliography of all relevant research articles, e.g.,
+'all articles ever written in linguistics' or even 'all articles
+relevant for typology', however useful, seems much too large to be
+feasible. However, a bibliography of \emph{descriptive} materials of
+the languages of the world is a fairly well-delineable class. For
+short, a bibliographic reference to a publication with
+descriptive/documentational data and/or metadata (number of speakers,
+location etc) we be called a {\bf BDP}. The class of BDPs, as opposed
+to a mix of general linguistics articles, is of salient usefulness for
+a typologist. Further, albeit with some work, it appears to be within
+scope to archieve a (near-)complete such database the following sense:
+\begin{itemize}
+\item[A)] For every language, include the most extensive piece(s) of
+  documentation, \emph{and}
+\item[B)] Beyond that, include ``as much as possible''
+\end{itemize}
+This policy implies that
+\begin{itemize}
+\item for a small language with only a wordlist to its documentation, that BDP should be included
+\item for a bigger language with countless articles/books, a major
+  dictionary/text/grammar collection should be included, but not
+  necessarily every single BDP ever written about the language (but,
+  of course, any amount of these are also welcome)
+\end{itemize}
+
+\subsection{Collecting References}
+Language documentation and description is, and has been, an extremely
+decentralised activity. For well over two centuries, there has been
+intensive collection of data on the languages of the world by
+missionaries, anthropologists, travellers, naturalists, amateurs,
+colonial officials, and not least linguists. For natural reasons, all
+these people, including the linguists, hail from all parts of the
+world and call from maximally dispersed research environments. As a
+result, finding and tracking references to descriptive materials is
+not a straightforward task.
+
+Traditionally, bibliographies would be elaborated and published in
+book form, by individual researchers, often experts on some area or
+language family, who happened to take to take on the matter after
+decades of collection. These, when available and recent, are excellent
+guides, but do not cover the entire world (unless accumulated -- see
+below), which is usually the frame of interest of the
+typologist. There are also a few bibliographies which have world-wide
+scope, but which are imperfect to the needs of the typologist in one
+or the other way. For example, the Ethnologue
+website\footnote{\url{http://www.ethnologue.com} accessed 1 Jan
+  2010. The printed edition in book form does not have all the
+  references that the website has.}  by SIL International lists
+references, but almost all of them are to works by SIL affiliated
+authors -- a significant but small subset of the entire author space
+-- and systematically excludes languages that went extinct before
+1950, even if they are well-documented. The Linguistic Bibliography
+Online website\footnote{\url{http://www.blonline.nl/public/} accessed
+  1 Jan 2010. Printed editions in book form appear annually.}
+systematically fails to include MA/PhD theses and items from minor
+countries, and requires a subscription fee. The Worldcat
+catalogue\footnote{\url{http://www.worldcat.org} accessed 1 Jan 2010.}
+also fails to include many MA/PhD theses and other items for minor
+countries, and has no way of singling out linguistically relevant
+publications (though some entries have annotation, altogether this is
+so unsystematic that, e.g., it is of little use for a small Papuan
+language). Google, google scholar, google books are, of course,
+resources with enormous coverage, but for browsing or zooming in on a
+specific language or area, it is difficult to come up with
+high-precision searches.
+
+Now, given how decentralised language description is, one may doubt
+why it should even be possible to build a bibliographical database
+that meets high standards of completeness and precision. Who knows of
+all the obscure BDPs? We submit that experts of countries/language
+families/areas do tend to know the BDPs, obscure and non-obscure, of
+their respective field of interest. These experts write overviews and
+handbooks on a regular basis. For example, one type of overview with
+BDPs is a traditional printed book bibliography, such as:
+\begin{quote}
+{\small
+Paul Newman 1996 \emph{Hausa and the Chadic Language Family: A Bibliography},
+K\"oln: K\"oppe [African Linguistic Bibliographies 6].}
+\end{quote}
+Another type of overview is a descriptive overview, i.e., an overview
+of what languages there are and a little about their nature in a
+certain area, such as:
+\begin{quote}
+{\small
+Donald C. Laycock 1968 \emph{Languages of the Lumi Subdistrict}, Oceanic Linguistics VII(1):36-66}
+\end{quote}
+Further, perhaps the most common kind of overview with bibliographical references to the languages covered is a historical-comparative work, such as:
+\begin{quote}
+{\small
+Lucien Adam 1893 \emph{Mat\'eriaux pour servir \`a l'\'etablissement d'une grammaire compar\'ee des dialectes de la famille Caribe},
+Paris: J.~Maisonneuve [Biblioth\`eque Linguistique Am\'ericaine XVII].}
+\end{quote}
+In addition, there are sociolinguistically oriented overviews, such as:
+\begin{quote}
+{\small
+Shearer, Walter and Sun Hongkai 2002 \emph{Speakers of the Non-Han Languages and Dialects of China}, Lewiston, NY: Edwin Mellen Press [Chinese Studies 20]}
+\end{quote}
+and so on. Thus, going through all such overviews and handbooks
+collecting the references, is a systematic procedure for attaining a
+satisfactory world-wide bibliographical database. However, this only
+holds if there exist (recent) experts covering the whole world and
+that all their handbooks and overviews can be enumerated, since they
+too, are of the same decentralised nature as the descriptive works on
+the languages themselves. The difference is that there are much fewer
+experts, areas, families and countries than there are languages, so
+the matter is more manageable. Nevertheless, the absolute number of
+overviews exceeds 5 000, according to our own collections so far.
+
+\subsection{Some Existing Resources}
+Related to the above questions of how to collect and what to collect,
+significant headways have already been made in the actual work of
+doing the collection. Table \ref{res} lists some existing resources 
+of special interest to the present project.
+
+\begin{table}
+\begin{tabular}{l r l l l r r r}
+  & \# Refs & Contents & Area & Coverage & \multicolumn{2}{c}{Annotation} & Date\\ \hline
+  EBALL & 60 164 & Everything & Africa & Full & 100\% & L \& T & Sep 2009\\
+  DEPIS & 30 176 & Everything & S America & Full & 100\% & L & Sep 2009\\
+  WGB    & 15 103 & DD & World & 85\%? & 100\% & T & Dec 2009\\
+  MPIEVA & 13 966 & Everything & World & ? & 62-93\% & L \& T & Sep 2009\\
+  WALS  &  5 633 & Mainly DD & World & ? & 99\% & L & Aug 2005\\
+  SIL   & 18 464 & Mainly DD \& VP & World  & 70\%? & 100\% & L \& T & Sep 2009\\
+  SILPNG & 13 110 & Mainly DD \& VP & Papua  & Full & 100\% & L \& T & Sep 2004\\
+\end{tabular}
+\caption{Some existing bibliographical resources and their size, contents, annotation and the time the information was culled. Abbrevations are L = Language, T = Type, DD = Descriptive Data, VP = Vernacular Publications.}
+\label{res}
+\end{table}
+
+All the resources of Table \ref{res} are updated regularly, wherefore
+we report the time the information was collected.  The Electronic
+Bibliography of African Languages and Linguistics (EBALL)\footnote{See
+  \url{http://goto.glocalnet.net/maho/eball.html}, accessed 1 Jan
+  2010. WEB-BALL by Guillaume S\'eg\'erer is an online query interface
+  that is based on an independently updated earlier version of EBALL
+  (with ca 50\% of the entries of the 2009 version) found at
+  \url{http://sumale.vjf.cnrs.fr/Biblio/index.html} accessed 1 Jan
+  2010.} by Jouni Filip Maho, the Diccionario Etnolog\"u\'istico y
+Gu\'ia Bibliogr\'afica de los Pueblos Ind\'igenas Sudamericanos (here
+abbreviated DEPIS)\footnote{See
+  \url{http://butler.cc.tut.fi/~fabre/BookInternetVersio/Alkusivu.html}
+  accessed 1 Jan 2010.} by Alain Fabre, World Grammar Bibliography
+(WGB) by Harald Hammarstr\"om are bibliographies collected by single
+dedicated individuals following more or less the methodology outlined
+above; to go through all overviews. While EBALL and DEPIS strive to
+include everything, not just BDPs, on the respective languages,
+including all references to work done on relatively well-studied
+languages (such as Aymara or Hausa) and including non-descriptive work
+where the language in question is brought up (for example, in a
+dicussion of the merits of a linguistic theory), WGB only strives to
+include the best descriptive work(s) on every language. This is the
+reason WGB has worldwide scope but is much smaller than the respective
+area-specialist bibliographies. MPIEVA is the online queryable library
+catalog of the Max Planch Institute of Evolutionary
+Anthropology\footnote{\url{http://www.eva.mpg.de/english/library.htm}
+  accessed 1 Jan 2010.}. In contrast to many other libraries, there is
+a dedication to collect descriptive data on the languages of the
+world, and most of the entries are annotated with iso-639-3 codes
+which makes it relatively simple to extract the part of the catalogue
+which refers to descriptive works. The WALS is a multi-person landmark
+typological project whose bibliography is iso-639-3 annotated and
+available on the web\footnote{\url{http://wals.info/refdb/search}
+  accessed 1 Jan 2010}. The SIL Bibliography is the
+bibliography\footnote{\url{http://www.ethnologue.com/bibliography.asp}
+  accessed 1 Jan 2010.} of missionary/linguist organisation SIL
+International whose members have worked on a significant part of the
+world's lesser described languages. SILPNG is paper bibliography
+\citep{hb:SILPNG:1956-1990,hb:SILPNG:1991-2000,hb:Feldpausch:2001-2003,hb:Feldpausch:2004}
+the Papua New Guinea branch of SIL, where a significant part of the
+world's lesser described languages are found.  SIL is decentralised,
+and not all SILPNG ref is included in SIL.
+
+Access and license matters to the above collections are not yet clear,
+but it is likely that all of them can be used for benevolent purposes.
+
+
+%TODO here
+%lagg till .bib
+%http://ling.lll.hawaii.edu/faculty/stampe/AA/Munda/BIBLIO/biblio.authors
+%http://ling.lll.hawaii.edu/faculty/stampe/SEA/Huffman/SEALang-Bib
+
+%-SIL
+%http://www.ethnologue.com/bibliography.asp
+%-Sealang
+%-Wichmann
+%-umi.bib
+%-jeffgood_rosetta.xls
+
+\section{Annotation and Search Desiderata}
+Essentially, the typologist is looking for a BDP at the intersection of a set of languages with a set of documents. Properties of languages which can be interesting to the typologist are for example 'belonging to family X', 'spoken in country Y', 'unwritten' or 'endangered'. Properties of documents the typologist may be looking for are for example  'at least 200 pages', 'contains wordlist', 'contains a section on adjectives' or 'contains interlinear glossed text'.
+
+From the searchers viewpoint, the more and the more detailed
+content-annotation the better, but from the annotators viewpoint, more
+and more detailed annotation is may be more and more work, unless the
+annotation can be (semi-)automatized. In general, we only have access
+to the text of the BDP itself, not the actual document it refers
+to. Therefore, inferences depending on page counts or words that tend
+to occur in the title are possible, e.g., the name of the language(s)
+being treated often appears in the title (see below), but we cannot
+tell, e.g., whether there is a chapter/section on 'adjectives' or
+whether numerals are included in a wordlist.
+
+Based on experience, the authors propose the following annotation
+scheme as a compromise between search desiderata, annotation work and
+(semi-)automatizabillity.
+\begin{description}
+\item[Identity:] The language(s) the BDP treats. As a baseline, we
+  suggest iso-639-3\footnote{See
+    \url{http://www.sil.org/iso639-3/default.asp} accessed 1 Jan 2010}
+  codes should be used as the identity registry. Other identity
+  schemes, notably the doculect-langoid scheme
+  \citet{ling:CysouwGood:Langoid,ling:GoodHendryx:Categorization} are
+  more dynamic, and will in the end supersede the special status of
+  the level of a maximal set of mutually intelligible varieties, which
+  is the backbone of the iso-639-3 division
+  \citep[7-18]{h:Ethnologue:16}. However, iso-639-3 codes are
+  preferable as a baseline since linguists are used to them and they
+  have better automatization properties. Furthermore, there already
+  exists databases from which location, speaker number, genealogical
+  classification etc.~can be retrieved from iso-639-3 codes.
+\item[Type:] The type/content of the document the BDP refers to. As a
+  midway between our impression of typologists search desiderata,
+  already existing annotation (e.g., from library catalogues) and
+  (semi-)automatizability, we propose the following relatively
+  uncontroversial hieracharchy:
+  \begin{itemize}
+\item  (full-length) descriptive grammar
+\item  grammar sketch
+\item  dictionary
+\item  description of some element of grammar (i.e., noun class system, verb morphology etc)
+\item  phonological description
+\item  text (collection)
+\item  wordlist
+\item  document with meta-information about the language (i.e., where spoken, non-intelligibility to other languages etc.)
+%\item note on unpublished manuscripts or people engaged in studying
+%  the language
+\end{itemize}
+\end{description}
+
+We wish to stress the importance of partial automatizability of BDP
+annotation, which is some kind of guarantee that the endeavor will
+actually lead to a finished product and that updates are not very
+expensive. 
+
+As an example of how partial automatization of BDPs may work, we walk
+through an experiment described in \citet{cl:Hammarstrom:MMIES2} on
+how iso-639-3 language identity codes may be extracted from the title
+line of a BDP.
+
+More formally, the problem may be cast as follows:
+\begin{description}
+\item[Given:] A database of the world's languages (consisting minimally of $<$unique-id, language-name$>$-pairs)
+\item[Input:] A bibliographical reference to a work with descriptive language data (= a BDP) of (at least one of) the language in the database
+\item[Desired output:] The identification of which language(s) is described in the bibliographical reference
+\end{description}
+Unfortunately, the problem is not simply a clean database lookup! For 
+example, a BDP might look as follows:
+\begin{quote}
+Dammann, Ernst 1957 \emph{Studien zum Kwangali: Grammatik, Texte, Glossar}, 
+Hamburg: Cram, de Gruyter \& Co. [Abhandlungen aus dem Gebiet der Auslandskunde / Reihe B, V\"olkerkunde, Kulturgeschichte und Sprachen 35]
+\end{quote}
+This reference happens to be written in German. In general, the
+metalanguage could be any language (ca 30 actually occur). The
+reference happens to describe a Namibian-Angolan language called
+Kwangali, iso-639-3 \emph{kwn} and the task is to automatically infer
+this using a database of the world's languages and/or databases of
+other annotated bibliographical entries, but without humanly tuned
+thresholds. In the iso-639-3 database, each language has a three
+letter id, a canonical name and a set of variant and/or dialect names,
+for example
+\begin{quote}
+  Canonical name: Kwangali\\
+  iso-639-3: kwn\\
+  Alternative names: $\{$Kwangali, Shisambyu, Cuangar, Sambio, Kwangari, Kwangare, Sambyu, Sikwangali, Sambiu, Kwangali, Rukwangali$\}$.
+\end{quote}
+
+The languages and language name database consists of 7 299 languages,
+42 768 language name tokens, 39 419 unique name strings. It is not yet
+well-understood how ``complete'' this language name database is, but
+as a rough indication we manually checked 100 randomly chosen
+bibliographical entries, whose titles contained a total of 104
+language names.  43 of these names (41.3\%) existed in the database as
+written, and 66 (63.5\%) existed in the database allowing for
+variation in spelling.
+
+The size of the language name database is both a blessing and a
+burden.  It may first seem as simple as looking up every word in the
+title of a BDP and pick the language whose name matches at least one
+word.  Unfortunately, such a procedure only gets around 20\%
+accuracy. Too see why, consider the following example BDP:
+\begin{quote}
+Anne Gwena\"i\'elle Fabre 2002 \emph{\'Etude du Samba Leko, parler d'Allani (Cameroun du Nord, Famille Adamawa)}, PhD Thesis, Universit\'e de Paris III -- Sorbonne Nouvelle
+\end{quote}
+The iso-639-3 codes whose language name matches at least one word in
+the title is shown in Table \ref{nul}. It so happends that such a common
+strings of letters as \emph{du} happens to be a language name! The correct
+classification is this case is only $\{ndi\}$. 
+
+\begin{table}
+\begin{tabular}{|l|l||l|l|}
+\hline
+$Words(e_t)$ & $LN(Words(e_t))$ & $Words(e_t)$ & $LN(Words(e_t))$\\ 
+\hline
+\'etude    & $\{\}$ & cameroun & $\{\}$\\
+du       & $\{dux\}$ & du & $\{dux\}$\\
+samba    & $\{ndi, ccg, smx\}$ & nord & $\{\}$\\
+leko     & $\{ndi, lse, lec\}$ & famille & $\{\}$\\
+parler   & $\{\}$ & adamawa & $\{\}$\\
+d'allani & $\{\}$ & & \\
+\hline
+\end{tabular}
+\caption{For an example entry $e_t$, we show how many iso-639-3 identities is asssociated with each word in the title of the entry.}
+\label{nul}
+\end{table}
+
+Clearly, we cannot guess blindly which word(s) in the title indicate
+the target language. But we can exploit some domain specific
+properties:
+\begin{itemize}
+\item A title of a publication in language description typically
+  contains
+\begin{enumerate}
+\item One or few words with very precise information on the target
+  language(s), namely the name of the language(s)
+\item A number of words which recur throughout many titles, such as
+  'a', 'grammar', etc.
+\end{enumerate}
+\item Most of the languages of the world are poorly described, there
+  are only a few, if any, publications with original descriptive data.
+\end{itemize}
+Thus a more clever way is to divide the words in the title into two
+groups, informative and non-informative, and only use the informative
+ones for lookup. How can we measure the informativeness of a word $w$?
+Let $WC(w)$ = the number of distinct codes associated with $w$ in the
+training data (set of already annotated BDPs) or Ethnologue database.
+Then for each word $w$, we get a value of informativeness. The
+question remains, at which point (above which value?) of
+informativeness do we get a near-unique language name rather than a
+relatively ubiquitous non-informative word? Luckily, we are assuming
+that there are only those two kinds of words, and that at least one
+near-unique language will appear. Thus, if we cluster the values into
+two clusters, the two categories are likely to emerge nicely.  The
+simplest kind of clustering of scalar values into two clusters is to
+sort the values and put the border where the relative increase is the
+highest. The following example illustrates the method:
+\begin{quote}
+W. M. Rule 1977 \emph{A Comparative Study of the Foe, Huli and Pole Languages of Papua New Guinea}, University of Sydney, Australia [Oceania Linguistic Monographs 20]
+\end{quote}
+
+Table \ref{wc} shows the title words and their associated number of
+codes (sorted in ascending order).
+
+\begin{table*}[t]
+\centering
+\begin{tabular}{l|l|l|l|l|l|l|l|}
+\hline
+        & foe & pole & huli & papua & guinea & comparative\\ \hline
+$WC(w)$ & 1   & 2    & 3    & 57    & 106    & 110\\ \hline
+Rel.Inc.& 1.0 & 2.0  & 1.5  & 19.0  & 1.86   & 1.04\\ \hline\hline
+        & new & study & languages & and & a & the & of\\ \hline
+$WC(w)$ & 145 & 176 & 418 & 1001 & 1101 & 1169 & 1482\\ \hline
+Rel.Inc.& 1.32 & 1.21 & 2.38 & 2.39 & 1.10 & 1.06 & 1.27\\ \hline
+\end{tabular}
+\caption{The values of $WC(w)$ for $w$ taken from an example entry (mid row).
+  The bottom row shows the \emph{relative increase} of the sequence of values
+  in the mid-row, i.e., each value divided by the previous value (with
+  the first set to 1.0).}
+\label{wc}
+\end{table*}
+The highest relative increase is 19.0 between Huli and Papua. Thus,
+Foe, Pole and Huli are deemed near-unique and the rest
+non-informative. In this example, the three near-unique identifiers
+are correctly singled out.
+
+The above method achieves about 70\% accuracy, which can be slightly
+improved by allowing for spelling variants and disambiguation schemes
+(for details see \citealt{cl:Hammarstrom:MMIES2}).
+
+So far we have not experimented with type-annotation, but
+impressionistically a similar level of accuracy seems achieveable.
+
+\section{Organisation and Management}
+As already declared, the goal is a website with a compehensive and
+annotated BDP bibliography with functionality such as browsing,
+searching, updating, new items subscription and downloading. BDPs
+have a well-defined structure (author, year, title, address, publisher etc) and there are no interesting technical
+aspects of providing a web-interface to them.
+
+At present, a functioning website of this kind is not far away. However, it is
+useful to also consider how to best keep it updated, and how to make
+it a functioning collaborative resource. To encourage the submitting
+of additions/corrections by the public, and to give credit where
+credit is due, the information on who submitted the entry should be
+saved and displayed. Another option is to allow major resources to be
+``published'' on the website's umbrella, with a clear identity
+surrounding it. The advantage of putting it under the umbrella would
+be that it is integrated in tools and search scopes of the overarching
+website.
+
+Slightly more challening than browsing for document properties is the browsing of language family  trees. Depending on the scope of the research question, speech varieties smaller or bigger than the traditional `language' are of interest. For instance, dialectologists will find it useful to narrow down their searches to the dialects of Croatian spoken in Italy instead of stopping at the language level of `Croatian' \texttt{ISO 639-3 hrv} and be provided with information about Standard Croatian and other irrelevant dialects. On the other hand, comparatists will find it useful to have a node of all Scandinavian Northern Germanic languages together instead of having to collect the references for each language separately (\texttt{ISO 639-3 swe}, \texttt{ISO 639-3 nor}, \texttt{ISO 639-3 dan}, etc). This is even more relevant for less well-known language families and large-scale typology, where queries like ``Give me a reference to every full description of a Nilotic language'' are perfectly normal. It is therefore interesting to go beyond the flat list provided by \texttt{ISO 639-3} and add information about genetic nodes above and below the level of language as defined by the ISO-codes.
+
+Existing genetic linguistic classifications can be exploited for this purpose. The multitree-project\footnote{\url{http://linguistlist.org/multitree/}} contains a number of different linguistic classifications of the languages of the world in XML-format. Among these are  so-called `composite trees', which combine   classfications of one family by different authors, diverging in scope and detail, into a much larger tree. These composite trees contain information about  dialects as well as overarching large family classifications on a continental scale. A language typologist can select a node on the tree which corresponds to the scope of his or her study (dialect, language, language family, or any level in between). This node can then be used in database queries, together with the BDP properties mentioned above. A query on a node will return all documents which are attached to the node itself or any of its daughter nodes.
+
+A major problem is that the assignment of BDPs to arbitrary nodes is more difficult to automatize than the assignment of BDPs to the standardized set of 7589 ISO-language names. For the time being we aim at attaching all BDPs to nodes which have an ISO-code as a start. Chosen users will be granted the right to reassign BDPs to other nodes interactively in a browser interface. Most typically, this will mean assigning a particular BDP to a subvariety below the node with the ISO-code, e.g.
+
+Sammartino A. (2004), Grammatica della lingua croatomolisana, Fondazione “Agostina Piccoli”, Montemitro – Profil international, Zagreb
+
+would be reassigned from the node \texttt{$<$node name="Croatian" iso639-3="hrv"$>$} to \texttt{$<$node name="Molise Croatian" iso639-3=""$>$}.
+This graphical user interface will also allow users to add new BDPs and to assign them to the relevant nodes, assuring that the project will go with the times.
+
+
+
+
+\section{Conclusion}
+The present paper describes a project to make bibliography website for
+Linguistic Typology, with a near-complete database of references to
+documents that contain descriptive data on the languages of the world.
+This provides typologists with a more precise and compehensive way to
+search for information on languages, and for the specific kind
+information that they are interested in. The annotation scheme devised
+is a trade-off between annotation effort and search desiderata. In
+addition to saving time, such a database also has other uses.  For
+example, there are so far unanswered questions about exactly how many
+and which languages of the world have been described, which have not,
+and which have partial descriptions. Another use has to do with the
+growing uneasiness of typologists towards the notion of language as a
+maximal set of mutually intelligible varieties. The typologist may
+also be interested in sub-language-level varieties and contrast
+between them, and may therefore want to build a catalogue of varieties
+(rather than languages). Such a catalogue of varieties is naturally based
+on the target documents of BDP:s, and defining a variety reduces to saying
+which BDP:s fall within it.
+
+\bibliographystyle{apalike}
+\bibliography{numerals,donthave,numwo,ling,grammars,miscbooks}
+
+\end{document}
+
+
+Re: RILIVS information to speakers
+jannebj@gmail.com [jannebj@gmail.com] on behalf of Janne Bondi Johannessen [jannebj@iln.uio.no]
+Sent: 	Monday, November 09, 2009 6:45 PM
+To: 	
+Janne [j.b.johannessen@iln.uio.no]; Øystein Vangsnes [oystein.vangsnes@hum.uit.no]; Therese Leinonen [t.leinonen@rug.nl]; patrik.bye@uit.no; Jan Pieter Kunst [jan.pieter.kunst@meertens.knaw.nl]; Franca Wesseling [franca.wesseling@meertens.knaw.nl]; Diana Santos [Diana.Santos@sintef.no]; Dag Trygve Truslew Haug [d.t.t.haug@ifikk.uio.no]; Xavier Villalba [Xavier.Villalba@uab.cat]; Eiríkur Rögnvaldsson [eirikur@hi.is]; Christian-Emil Ore [c.e.s.ore@edd.uio.no]; Harald Hammarström; j.pritchard@sheffield.ac.uk; Steven Krauwer [s.krauwer@uu.nl]; Hans-Jörg Bibiko [bibiko@eva.mpg.de]; Bert Vaux [bertvaux@gmail.com]
+Cc: 	
+Kristin Hagen [kristiha@iln.uio.no]
+Attachments: 	
+Dear RILIVS speakers.
+It's a while ago since our nice workshop, and I hope  you all think back on it with as fond memories as I do. I would like to remind you of the paper, that I hope you'll all submit for the book in the OSLa series. Yes, the deadline is in January, but I suspect some of you have already written it up. If you have, there is no reason to wait with submitting. We have an assistant who would love to start soon.
+
+Let me remind you that the information about the paper, format etc. is here: http://www.hf.uio.no/tekstlab/rilivs/practical.html
+Publication in OSLa - Oslo Studies of Language
+
+More information will appear before mid October. A template is provided for Word documents here, a template for LaTeX (which we recommend) here. See also LaTeX examples: .tex or .pdf.
+
+Each paper should:
+
+• Be max 15 pages
+• Follow the OSLa template
+• Be submitted by January 10, 2010
+• Be submitted to the OSLa web system (further instructions to appear shortly)
+
+Each paper will be reviewed anonymously by two reviewers.
+
+(Let me also remind you that if you would like your presentation to be downloadable at the website, it is not too late! Just send it to me or to Kristin: kristiha@iln.uio.no.)
+Best wishes
+from Janne
+
+-- 
+Janne Bondi Johannessen
+Professor, The Text Laboratory, ILN
+University of Oslo
+P.O.Box 1102 Blindern, N-0317 Oslo, Norway
+Tel: +47 22 85 68 14, mob.: +47 928 966 34
+www.hf.uio.no/tekstlab

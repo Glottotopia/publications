@@ -1,0 +1,128 @@
+\contentsline {section}{\numberline {0.1}archives}{4}
+\contentsline {subsection}{\numberline {0.1.1}archiving}{4}
+\contentsline {subsubsection}{\numberline {0.1.1.1}artefacts}{4}
+\contentsline {subsubsection}{\numberline {0.1.1.2}digital surrogate of artefact}{4}
+\contentsline {subsubsection}{\numberline {0.1.1.3}content}{4}
+\contentsline {paragraph}{\numberline {0.1.1.3.1}in linguistics, texts seem to be the most important aspect}{4}
+\contentsline {paragraph}{\numberline {0.1.1.3.2}recoverability of original layout}{4}
+\contentsline {subsection}{\numberline {0.1.2}archiving text}{4}
+\contentsline {subsubsection}{\numberline {0.1.2.1}monolithic}{4}
+\contentsline {paragraph}{\numberline {0.1.2.1.1}tiff}{4}
+\contentsline {subsubsection}{\numberline {0.1.2.2}full text}{4}
+\contentsline {paragraph}{\numberline {0.1.2.2.1}pdf}{4}
+\contentsline {paragraph}{\numberline {0.1.2.2.2}long long list of characters}{4}
+\contentsline {subsubsection}{\numberline {0.1.2.3}granular text}{4}
+\contentsline {paragraph}{\numberline {0.1.2.3.1}snippets}{4}
+\contentsline {paragraph}{\numberline {0.1.2.3.2}-quot;micro-publications-quot;}{4}
+\contentsline {subsection}{\numberline {0.1.3}status}{5}
+\contentsline {subsubsection}{\numberline {0.1.3.1}static/dead}{5}
+\contentsline {subsubsection}{\numberline {0.1.3.2}dynamic/live}{5}
+\contentsline {section}{\numberline {0.2}granular text}{5}
+\contentsline {subsection}{\numberline {0.2.1}structured text}{5}
+\contentsline {subsection}{\numberline {0.2.2}unique references}{5}
+\contentsline {subsection}{\numberline {0.2.3}semantic markup}{5}
+\contentsline {subsection}{\numberline {0.2.4}constituting elements}{5}
+\contentsline {subsection}{\numberline {0.2.5}Linked Data}{5}
+\contentsline {subsection}{\numberline {0.2.6}how to get stuff into the archive -- how to get stuff out of the archive}{5}
+\contentsline {section}{\numberline {0.3}textual elements in linguistics}{5}
+\contentsline {subsection}{\numberline {0.3.1}prose}{5}
+\contentsline {subsection}{\numberline {0.3.2}exemplars}{5}
+\contentsline {subsubsection}{\numberline {0.3.2.1}textual}{5}
+\contentsline {paragraph}{\numberline {0.3.2.1.1}IGT}{5}
+\contentsline {subparagraph}{\numberline {0.3.2.1.1.1}Hughes et al}{5}
+\contentsline {subsubsection}{\numberline {0.3.2.2}lexical}{5}
+\contentsline {paragraph}{\numberline {0.3.2.2.1}plain}{5}
+\contentsline {paragraph}{\numberline {0.3.2.2.2}etymology}{5}
+\contentsline {paragraph}{\numberline {0.3.2.2.3}phonological}{5}
+\contentsline {paragraph}{\numberline {0.3.2.2.4}phonetic}{5}
+\contentsline {paragraph}{\numberline {0.3.2.2.5}word-gloss pairs}{5}
+\contentsline {subsection}{\numberline {0.3.3}paradigms}{6}
+\contentsline {subsubsection}{\numberline {0.3.3.1}bird}{6}
+\contentsline {subsubsection}{\numberline {0.3.3.2}collation of exemplars}{6}
+\contentsline {subsection}{\numberline {0.3.4}references}{6}
+\contentsline {subsubsection}{\numberline {0.3.4.1}sourcing}{6}
+\contentsline {paragraph}{\numberline {0.3.4.1.1}corpus}{6}
+\contentsline {subparagraph}{\numberline {0.3.4.1.1.1}text collectioin}{6}
+\contentsline {subparagraph}{\numberline {0.3.4.1.1.2}dictionary}{6}
+\contentsline {paragraph}{\numberline {0.3.4.1.2}literature}{6}
+\contentsline {subsubsection}{\numberline {0.3.4.2}cross-references}{6}
+\contentsline {subsection}{\numberline {0.3.5}named entities}{6}
+\contentsline {subsubsection}{\numberline {0.3.5.1}languages}{6}
+\contentsline {subsubsection}{\numberline {0.3.5.2}people}{6}
+\contentsline {subsubsection}{\numberline {0.3.5.3}linguistic concepts}{6}
+\contentsline {paragraph}{\numberline {0.3.5.3.1}GOLD}{6}
+\contentsline {subsection}{\numberline {0.3.6}tables}{6}
+\contentsline {subsection}{\numberline {0.3.7}figures}{6}
+\contentsline {subsection}{\numberline {0.3.8}phoneme charts}{6}
+\contentsline {subsection}{\numberline {0.3.9}chunk}{6}
+\contentsline {section}{\numberline {0.4}philosophies}{6}
+\contentsline {subsection}{\numberline {0.4.1}markup philosophies}{6}
+\contentsline {subsubsection}{\numberline {0.4.1.1}inline vs standoff}{6}
+\contentsline {paragraph}{\numberline {0.4.1.1.1}standoff}{6}
+\contentsline {subparagraph}{\numberline {0.4.1.1.1.1}standoff allows for multiple, overlapping annotations}{6}
+\contentsline {subparagraph}{\numberline {0.4.1.1.1.2}no write access to original doc}{7}
+\contentsline {subparagraph}{\numberline {0.4.1.1.1.3}standoff is vulnerable to offset changes}{7}
+\contentsline {paragraph}{\numberline {0.4.1.1.2}inline}{7}
+\contentsline {subparagraph}{\numberline {0.4.1.1.2.1}inline cannot handle overlaps}{7}
+\contentsline {subparagraph}{\numberline {0.4.1.1.2.2}inline is more robust}{7}
+\contentsline {paragraph}{\numberline {0.4.1.1.3}prefer inline}{7}
+\contentsline {subparagraph}{\numberline {0.4.1.1.3.1}annotatioins are rather short}{7}
+\contentsline {subparagraph}{\numberline {0.4.1.1.3.2}non-contentious}{7}
+\contentsline {subparagraph}{\numberline {0.4.1.1.3.3}third-party standoff annotatioin still possible}{7}
+\contentsline {subsection}{\numberline {0.4.2}database philosophies}{7}
+\contentsline {subsubsection}{\numberline {0.4.2.1}document dbs}{7}
+\contentsline {paragraph}{\numberline {0.4.2.1.1}couchdb}{7}
+\contentsline {paragraph}{\numberline {0.4.2.1.2}mongo}{7}
+\contentsline {paragraph}{\numberline {0.4.2.1.3}linear}{7}
+\contentsline {paragraph}{\numberline {0.4.2.1.4}slow search}{7}
+\contentsline {paragraph}{\numberline {0.4.2.1.5}sloppy validation}{7}
+\contentsline {paragraph}{\numberline {0.4.2.1.6}semi-structured data}{7}
+\contentsline {subsubsection}{\numberline {0.4.2.2}relational dbs}{7}
+\contentsline {paragraph}{\numberline {0.4.2.2.1}non-linear}{7}
+\contentsline {paragraph}{\numberline {0.4.2.2.2}faster}{7}
+\contentsline {paragraph}{\numberline {0.4.2.2.3}rigid validation}{7}
+\contentsline {paragraph}{\numberline {0.4.2.2.4}structured data}{8}
+\contentsline {subsubsection}{\numberline {0.4.2.3}graph dbs}{8}
+\contentsline {section}{\numberline {0.5}proposals}{8}
+\contentsline {subsection}{\numberline {0.5.1}jeff good}{8}
+\contentsline {subsubsection}{\numberline {0.5.1.1}annotation}{8}
+\contentsline {paragraph}{\numberline {0.5.1.1.1}XML}{8}
+\contentsline {paragraph}{\numberline {0.5.1.1.2}recursive}{8}
+\contentsline {subsection}{\numberline {0.5.2}nordhoff}{8}
+\contentsline {subsubsection}{\numberline {0.5.2.1}Idea}{8}
+\contentsline {paragraph}{\numberline {0.5.2.1.1}Every paragraph treats exactly one topic}{8}
+\contentsline {subparagraph}{\numberline {0.5.2.1.1.1}form-to-function}{8}
+\contentsline {subparagraph}{\numberline {0.5.2.1.1.2}function to form}{8}
+\contentsline {subsubsection}{\numberline {0.5.2.2}elements}{8}
+\contentsline {paragraph}{\numberline {0.5.2.2.1}chunk}{8}
+\contentsline {subparagraph}{\numberline {0.5.2.2.1.1}XML}{8}
+\contentsline {subparagraph}{\numberline {0.5.2.2.1.2}non-recursive}{8}
+\contentsline {paragraph}{\numberline {0.5.2.2.2}section}{8}
+\contentsline {subparagraph}{\numberline {0.5.2.2.2.1}lede}{8}
+\contentsline {subparagraph}{\numberline {0.5.2.2.2.2}list of sections}{8}
+\contentsline {subparagraph}{\numberline {0.5.2.2.2.3}recursive}{8}
+\contentsline {subsubsection}{\numberline {0.5.2.3}macrostructure}{8}
+\contentsline {paragraph}{\numberline {0.5.2.3.1}frontmatter}{8}
+\contentsline {paragraph}{\numberline {0.5.2.3.2}mainmatter}{9}
+\contentsline {subparagraph}{\numberline {0.5.2.3.2.1}background}{9}
+\contentsline {subparagraph}{\numberline {0.5.2.3.2.2}distinguishing meaning}{9}
+\contentsline {subparagraph}{\numberline {0.5.2.3.2.3}carrying meaning}{9}
+\contentsline {paragraph}{\numberline {0.5.2.3.3}backmatter}{9}
+\contentsline {section}{\numberline {0.6}ingestion}{9}
+\contentsline {subsection}{\numberline {0.6.1}legacy documents}{9}
+\contentsline {subsubsection}{\numberline {0.6.1.1}chunking}{9}
+\contentsline {paragraph}{\numberline {0.6.1.1.1}7845 documents}{9}
+\contentsline {paragraph}{\numberline {0.6.1.1.2}1436 could be chunked}{9}
+\contentsline {paragraph}{\numberline {0.6.1.1.3}1087 of those have between 10 and 1000 sections}{9}
+\contentsline {paragraph}{\numberline {0.6.1.1.4}808 have between 50 and 500 sections}{9}
+\contentsline {paragraph}{\numberline {0.6.1.1.5}see diagram}{9}
+\contentsline {subsubsection}{\numberline {0.6.1.2}extracting examples}{9}
+\contentsline {paragraph}{\numberline {0.6.1.2.1}ODIN}{9}
+\contentsline {subsubsection}{\numberline {0.6.1.3}semantic analysis}{9}
+\contentsline {paragraph}{\numberline {0.6.1.3.1}pending}{9}
+\contentsline {subsection}{\numberline {0.6.2}future -quot;born digital-quot; documents}{10}
+\contentsline {subsubsection}{\numberline {0.6.2.1}GALOES}{10}
+\contentsline {subsubsection}{\numberline {0.6.2.2}gather-process-condense-publish-archive}{10}
+\contentsline {subsubsection}{\numberline {0.6.2.3}-quot;publication lag-quot;}{10}
+\contentsline {subsubsection}{\numberline {0.6.2.4}-quot;immediate archiving-quot;}{10}
+\contentsline {subsubsection}{\numberline {0.6.2.5}micropublication}{10}

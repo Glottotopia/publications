@@ -1,0 +1,90 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: copula.aux
+The style file: natuva.bst
+I couldn't open database file ansaldo.bib
+---line 121 of file copula.aux
+ : \bibdata{ansaldo
+ :                 ,asw,creole,india,phon,malay,sinhala,tamil,nordhoff,lankahist,wortarten,grammars}
+I'm skipping whatever remains of this command
+I found no database files---while reading file copula.aux
+Warning--I didn't find a database entry for "Stassen1997"
+Warning--I didn't find a database entry for "Slomanson2006cll"
+Warning--I didn't find a database entry for "Ansaldo2005ms"
+Warning--I didn't find a database entry for "Hussainmiya1990"
+Warning--I didn't find a database entry for "Adelaar1991"
+Warning--I didn't find a database entry for "SmithEtAl2004"
+Warning--I didn't find a database entry for "Ansaldo2008genesis"
+Warning--I didn't find a database entry for "Nordhoff2009phd"
+Warning--I didn't find a database entry for "Bakker2006"
+Warning--I didn't find a database entry for "Hengeveld1992nvpttd"
+Warning--I didn't find a database entry for "LiEtAl1977cop"
+Warning--I didn't find a database entry for "Smith2003timing"
+Warning--I didn't find a database entry for "SmithEtAl2006cll"
+Warning--I didn't find a database entry for "Sneddon2006CJI"
+Warning--I didn't find a database entry for "Grijns1991"
+Warning--I didn't find a database entry for "AdelaarEtAl1996"
+Warning--I didn't find a database entry for "Gair2003"
+Warning--I didn't find a database entry for "Gair1998"
+Warning--I didn't find a database entry for "Lehmann1989tamil"
+Warning--I didn't find a database entry for "Karunatillake2004"
+Warning--I didn't find a database entry for "Munro1977"
+Warning--I didn't find a database entry for "Watkins1984"
+Warning--I didn't find a database entry for "HeineEtAl2002"
+Warning--I didn't find a database entry for "Michaelis1997venire"
+Warning--I didn't find a database entry for "Giacalone2000venire"
+Warning--I didn't find a database entry for "MaidenEtAl2000"
+Warning--I didn't find a database entry for "Lichtenberk1991hetero"
+Warning--I didn't find a database entry for "Huber1996"
+Warning--I didn't find a database entry for "Grant1996"
+Warning--I didn't find a database entry for "Post1992fadambu"
+Warning--I didn't find a database entry for "Corne1971gcf"
+Warning--I didn't find a database entry for "Corne1977scf"
+Warning--I didn't find a database entry for "Chaudenson"
+Warning--I didn't find a database entry for "EFW"
+Warning--I didn't find a database entry for "Bolle"
+Warning--I didn't find a database entry for "BakerEtAlEd1996"
+Warning--I didn't find a database entry for "LiEd1977mech"
+Warning--I didn't find a database entry for "DeumertEtAl2006"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 0 entries,
+            3313 wiz_defined-function locations,
+            760 strings with 6126 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 8
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 9
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 8
+(There were 2 error messages)

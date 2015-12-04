@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: wysiwigslm.aux
+The style file: natuva.bst
+Database file #1: asw.bib
+Database file #2: malay.bib
+Database file #3: nordhoff.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 3 entries,
+            3313 wiz_defined-function locations,
+            705 strings with 5555 characters,
+and the built_in function-call counts, 1423 in all, are:
+= -- 101
+> -- 43
+< -- 4
++ -- 17
+- -- 12
+* -- 93
+:= -- 223
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 16
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 124
+empty$ -- 125
+format.name$ -- 24
+if$ -- 274
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 22
+newline$ -- 24
+num.names$ -- 12
+pop$ -- 54
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 52
+stack$ -- 0
+substring$ -- 35
+swap$ -- 51
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 9
+width$ -- 0
+write$ -- 46
