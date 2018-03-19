@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[german]{babel}
+\usepackage{libertine}
+\usepackage[hyphens]{url}
+\urlstyle{same}
+\author{Sebastian Nordhoff}
+ \usepackage[
+backend=biber,
+bibstyle=biblatex-langsci-unified, 
+sorting=ydnt,
+dashed=false
+]{biblatex}
+\title{Vollständiges Schriftenverzeichnis}
+\addbibresource{nordhoffglobal.bib} 
+
+\defbibenvironment{nodis}
+  {\list
+     {}
+     {\setlength{\leftmargin}{\bibhang}%
+      \setlength{\itemindent}{-\leftmargin}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\clearfield{extradate}\item}
+  
+\defbibfilter{books}{
+  type=book or
+  type=thesis
+} 
+\defbibfilter{collection}{
+  type=inproceedings or
+  type=incollection
+} 
+\defbibfilter{talk}{
+  type=misc or
+  type=unpublished
+} 
+\begin{document}
+   
+\maketitle 
+
+\nocite{*}
+\sloppy
+\printbibliography[env=nodis,title={Bücher}, filter=books]
+\printbibliography[env=nodis,title={Artikel}, type=article]
+\printbibliography[env=nodis,title={Beiträge in Sammelbänden}, filter=collection]s
+\printbibliography[env=nodis,title={Vorträge}, filter=talk]
+
+\end{document}
+
+\end{document}
