@@ -1,0 +1,42 @@
+\documentclass[a4paper,10pt]{book}
+\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+
+% \renewcommand{\bibitem}[2][]{\\[.4em]}
+\renewcommand{\thebibliography}[2][]{\vspace{-1em}}{}
+\newcommand{\urlprefix}{}
+% \renewcommand{\refname}{}
+\setcounter{secnumdepth}{-1}
+
+%opening
+\author{Sebastian Nordhoff}
+\usepackage[authoryear]{natbib}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+
+
+\begin{document}
+\chapter*{Vollständiges Schriftenverzeichnis}
+\section{Monographien}
+\noindent
+\input{./nordhoffmonographs.bbl}
+
+\section{Sammelbände}
+\noindent
+\input{./nordhoffeditor.bbl}
+
+\section{Artikel}
+\noindent
+\input{./nordhoffarticles.bbl}
+
+\section{Web}
+\noindent
+\input{./nordhoffweb.bbl}
+ 
+\section{Poster}
+\input{./nordhoffposters.bbl}
+
+\section{Vorträge}
+\noindent
+\input{./nordhofftalks.bbl}
+
+\end{document}

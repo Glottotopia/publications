@@ -1,0 +1,55 @@
+\documentclass[a4paper,10pt]{book}
+% \usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+
+
+%opening
+\author{Sebastian Nordhoff}
+\usepackage[authoryear]{natbib}
+\bibpunct[:]{(}{)}{,}{a}{}{,}
+
+
+\usepackage[dvipdfm, bookmarks, colorlinks, breaklinks, pdftitle={Sebastian Nordhoff - CV},pdfauthor={Sebastian Nordhoff}]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue}
+
+\renewcommand{\bibitem}[2][]{\\[.4em]}
+\renewcommand{\thebibliography}[2][]{\vspace{-1em}}{}
+\newcommand{\urlprefix}{}
+% \renewcommand{\refname}{}
+\setcounter{secnumdepth}{-1}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+
+
+% for f in *tex; do latex $f; done; for f in *aux; do bibtex $f; done; pdflatex nordhoffglobal_en.tex
+
+\begin{document}
+\chapter*{Complete list of publications}
+\section{Monographs}
+\noindent
+\input{./nordhoffmonographs.bbl}
+
+\section{Edited Volumes}
+\noindent
+\input{./nordhoffeditor.bbl}
+
+\section{Articles}
+\noindent
+\input{./nordhoffarticles.bbl}
+
+\section{Web}
+\noindent
+\input{./nordhoffweb.bbl}
+ 
+\section{Posters}
+\input{./nordhoffposters.bbl}
+
+\section{Talks}
+\noindent
+\input{./nordhofftalks.bbl}
+
+\begin{center}
+{\footnotesize \href{http://www.glottotopia.de/nordhoffglobal\_en.pdf}{http://www.glottotopia.de/nordhoffglobal\_en.pdf} — Last updated: \today
+}
+\end{center}
+\end{document}
