@@ -38,6 +38,11 @@ dashed=false
   type=misc or
   type=unpublished
 } 
+\defbibfilter{artikel}{
+  type=inproceedings or
+  type=incollection or
+  type=article
+} 
 \begin{document}
    
 \maketitle 
@@ -45,8 +50,9 @@ dashed=false
 \nocite{*}
 \sloppy
 \printbibliography[env=nodis,title={Bücher}, filter=books]
-\printbibliography[env=nodis,title={Zeitschriftenartikel}, type=article]
-\printbibliography[env=nodis,title={Beiträge in Sammelbänden}, filter=collection]
+% \printbibliography[env=nodis,title={Zeitschriftenartikel}, type=article]
+% \printbibliography[env=nodis,title={Beiträge in Sammelbänden}, filter=collection]
+\printbibliography[env=nodis,title={Artikel}, filter=artikel]
 \printbibliography[env=nodis,title={Vorträge}, filter=talk]
 
 \end{document}
