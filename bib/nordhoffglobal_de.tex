@@ -11,7 +11,10 @@ sorting=ydnt,
 dashed=false
 ]{biblatex}
 \title{Vollständiges Schriftenverzeichnis}
-\addbibresource{nordhoffglobal.bib} 
+\addbibresource{nordhoffarticles.bib} 
+\addbibresource{nordhoffmonographs.bib} 
+\addbibresource{nordhoffeditor.bib} 
+\addbibresource{nordhofftalks.bib} 
 
 \defbibenvironment{nodis}
   {\list
@@ -42,8 +45,8 @@ dashed=false
 \nocite{*}
 \sloppy
 \printbibliography[env=nodis,title={Bücher}, filter=books]
-\printbibliography[env=nodis,title={Artikel}, type=article]
-\printbibliography[env=nodis,title={Beiträge in Sammelbänden}, filter=collection]s
+\printbibliography[env=nodis,title={Zeitschriftenartikel}, type=article]
+\printbibliography[env=nodis,title={Beiträge in Sammelbänden}, filter=collection]
 \printbibliography[env=nodis,title={Vorträge}, filter=talk]
 
 \end{document}
