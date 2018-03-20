@@ -8,7 +8,8 @@
 backend=biber,
 bibstyle=biblatex-langsci-unified, 
 sorting=ydnt,
-dashed=false
+dashed=false,
+maxbibnames=99
 ]{biblatex}
 \title{Vollständiges Schriftenverzeichnis}
 \addbibresource{nordhoffarticles.bib} 
@@ -43,6 +44,10 @@ dashed=false
   type=incollection or
   type=article
 } 
+
+\AtEveryBibitem{\clearfield{extradate}}
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}} 
 \begin{document}
    
 \maketitle 
