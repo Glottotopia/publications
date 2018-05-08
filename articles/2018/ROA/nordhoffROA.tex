@@ -1,8 +1,4 @@
 \documentclass[12pt]{article}
-\usepackage{libertine}
-\usepackage{booktabs}
-\usepackage{url}
-\urlstyle{same}
 \usepackage[
 	bookmarks=true,bookmarksopen=true,bookmarksopenlevel=1,%
 	bookmarksdepth=5,
@@ -11,16 +7,11 @@
 	breaklinks=true,
 	draft=false,
 	plainpages=false,
-	pdfusetitle=true,  % puts author and title in automatically, maybe only in final mode?
-	pdfkeywords={}
-	%ps2pdf=true
-	]{hyperref}
-	
+	pdfusetitle=true,  
+	pdfkeywords={} 
+	]{hyperref}	
 \hypersetup{colorlinks=false, pdfborder={0 0 0}}  
-\usepackage[margin=25mm]{geometry}
-\usepackage{todonotes}
-% \usepackage{natbib}
-\usepackage{pdfpages}
+
 \usepackage[
 	natbib=true,
 	style=apa, 
@@ -28,12 +19,17 @@
 	]{biblatex}
 \usepackage[american]{babel}
 \DeclareLanguageMapping{american}{american-apa}
+\bibliography{roa}
+
+\usepackage{libertine} 
+\usepackage{url}
+\urlstyle{same}
+
 \title{Outcompeting Gold: sharing basics for collaborative approaches to publishing}
 \author{Sebastian Nordhoff, Language Science Press}
 \date{} 
-\bibliography{roa}
 
-\usepackage{moreverb}
+\usepackage{moreverb}%for word count
 \immediate\write18{texcount -inc -incbib -sum main.tex|grep "Sum count"|sed s/Sum/Word/ > /tmp/wordcount.tex}
 \newcommand\wordcount{\verbatiminput{/tmp/wordcount.tex}}
 \begin{document}
