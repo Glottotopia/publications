@@ -1,16 +1,16 @@
 \documentclass[12pt]{article}
-\usepackage[
-	bookmarks=true,bookmarksopen=true,bookmarksopenlevel=1,%
-	bookmarksdepth=5,
-	bookmarksnumbered=true,
-	hyperindex=true,%
-	breaklinks=true,
-	draft=false,
-	plainpages=false,
-	pdfusetitle=true,  
-	pdfkeywords={} 
-	]{hyperref}	
-\hypersetup{colorlinks=false, pdfborder={0 0 0}}  
+% \usepackage[
+% 	bookmarks=true,bookmarksopen=true,bookmarksopenlevel=1,%
+% 	bookmarksdepth=5,
+% 	bookmarksnumbered=true,
+% 	hyperindex=true,%
+% 	breaklinks=true,
+% 	draft=false,
+% 	plainpages=false,
+% 	pdfusetitle=true,  
+% 	pdfkeywords={} 
+% 	]{hyperref}	
+% \hypersetup{colorlinks=false, pdfborder={0 0 0}}  
 
 \usepackage[
 	natbib=true,
@@ -21,17 +21,23 @@
 \DeclareLanguageMapping{american}{american-apa}
 \bibliography{roa}
 
-\usepackage{libertine} 
-\usepackage{url}
-\urlstyle{same}
+% \usepackage{libertine} 
+% \usepackage{url}
+% \urlstyle{same}
 
 \title{Outcompeting Gold: sharing basics for collaborative approaches to publishing}
 \author{Sebastian Nordhoff, Language Science Press}
 \date{} 
 
-\usepackage{moreverb}%for word count
-\immediate\write18{texcount -inc -incbib -sum main.tex|grep "Sum count"|sed s/Sum/Word/ > /tmp/wordcount.tex}
-\newcommand\wordcount{\verbatiminput{/tmp/wordcount.tex}}
+% \usepackage{moreverb}%for word count
+% \immediate\write18{texcount -inc -incbib -sum main.tex|grep "Sum count"|sed s/Sum/Word/ > /tmp/wordcount.tex}
+% \newcommand\wordcount{\verbatiminput{/tmp/wordcount.tex}}
+
+% \newcommand{\url}[1]{#1}
+\newcommand{\citep}[1]{(#1)}
+\newcommand{\citet}[1]{(#1)}
+% \newcommand{url}[1]{#1}
+% \newcommand{url}[1]{#1}
 \begin{document}
 
 \maketitle
@@ -91,11 +97,11 @@ In the context of the OpeAire project ``Full disclosure: replicable strategies f
 Our calculations based on 4 years of operation between 2014 and 2018 suggest that the average cost of a book with Language Science Press is between 3500 and 5000 EUR. This is considerably less than the information on cost prices of books we get from other sources \citep{MaronEtAl2016,FerwerdaEtAl2018}.
 even astonishingly so. There might be a reason for this: Language Science Press does not spend money on measures to prevent people from accessing the content (paywalls, logins, etc), which come with an overhead of authentication, billing, marketing, and user support. This actually makes the operations much leaner, and thus more cost-effective, proving Björn Brembs conjecture ``Are we paying US\$ 3000 per article just for paywalls?''\footnote{\url{http://bjoern.brembs.net/2014/07/are-we-paying-us3000-per-article-just-for-paywalls}}
 
- 
+  
 \section{Outcompeting Gold}            
 In the current research landscape, scientists have a choice between different outlets for their publications. They could go for a traditional reader-pays publishing house; they could try to find funds for Gold processing charges; or they could opt for a community based publisher such as Language Science Press, the Open Library of Humanities\footnote{\url{https://www.openlibhums.org}} or SciPost.\footnote{\url{https://scipost.org/}}  The former two types are set up in a competitive mode; the latter type is set up in a collaborative mode. I have argued that when we pitch the competitive mode against the collaborative mode, bizarrely enough, the collaborative mode will be more cost-effective, and paradoxically, collaboration as a principle outcompetes competition. 
  
-\wordcount
+% \wordcount
 
 \sloppy
 \printbibliography
