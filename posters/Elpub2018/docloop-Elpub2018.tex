@@ -35,6 +35,9 @@
 \usetheme{Default}
 \usetikzlibrary{arrows,quotes,positioning}
 \usepackage{url}
+\newcommand{\pictitle}[1]{
+\colorbox{blue}{\color{white}#1}
+}
 \begin{document}
 
  % Title block with title, author, logo, etc.
@@ -116,14 +119,14 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 \begin{tikzpicture}
 
 \def \n {4}
-\def \radius {18cm}
+\def \radius {15cm}
 \def \margin {8} % margin in angles, depends on the radius
 \def \offset {110} 
 
-\node[draw, rectangle] (src) at ({90 * (4 - 1) + \offset}:\radius) [xshift=15cm] {edit\includegraphics[width=30cm]{src.png}};
-\node[draw, rectangle] (pdf) at ({90 * (3 - 1) + \offset}:\radius) [xshift=15cm]  {publish\includegraphics[width=30cm]{pdf.png}};
-\node[draw, rectangle] (ph)  at ({90 * (2 - 1) + \offset}:\radius) {annotate\\\includegraphics[width=30cm]{paperhive.png}};
-\node[draw, rectangle] (gh)  at ({90 * (1 - 1) + \offset}:\radius) {manage issues\includegraphics[width=30cm]{github.png}};
+\node[draw, rectangle, text width=30cm] (src) at ({90 * (4 - 1) + \offset}:\radius) [xshift=15cm] {\pictitle{edit}\\\includegraphics[width=30cm]{src.png}};
+\node[draw, rectangle, text width=13cm] (pdf) at ({90 * (3 - 1) + \offset}:\radius) [xshift=10cm]  {\pictitle{publish}\\\includegraphics[width=13cm]{pdf.png}};
+\node[draw, rectangle, text width=30cm] (ph)  at ({90 * (2 - 1) + \offset}:\radius) {\pictitle{annotate}\\\includegraphics[width=30cm]{paperhive.png}};
+\node[draw, rectangle, text width=15cm] (gh)  at ({90 * (1 - 1) + \offset}:\radius) {\pictitle{manage issues}\\ \includegraphics[width=15cm]{github.png}};
   
  
 \path[line width=1.5mm, bend right=20, out=30, in=130,->] (src.south east) edge ["generate"]   (pdf.east) {};  
@@ -132,7 +135,7 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 \path[line width=1.5mm, bend right=20, out=30, in=130,->] (gh.north east) edge ["address issues"]     (src.north) {};   
 
 % % \node [right of=src] {test};
-\node [left = 6cm of gh,yshift=-1cm] {\includegraphics[width=5cm]{docloop.pdf}};
+\node [left = 6cm of gh,yshift=-3cm] {\includegraphics[width=5cm]{docloop.pdf}};
 \end{tikzpicture}
 }
 % \note{Note with default behavior}
