@@ -25,7 +25,9 @@
 \documentclass[a0paper,landscape]{tikzposter} %Options for format can be included here
 
  % Title, Author, Institute
-\title{DocLoop}
+\title{DocLoop-OER
+%  Channelling reader feedback into Open Educational Resources
+ }
 \author{Sebastian Nordhoff \& Andreas Pittrich}
 \institute{Language Science Press \qquad\qquad  DocLoop  \qquad}
 % \titlegraphic{LogoGraphic Inserted Here}
@@ -36,8 +38,12 @@
 \usetikzlibrary{arrows,quotes,positioning}
 \usepackage{url}
 \newcommand{\pictitle}[1]{
-\colorbox{blue}{\color{white}#1}
+\fbox{\color{black}\Large #1\vphantom{fj}}
 }
+\newcommand{\arrowlabel}[1]{
+\colorbox{white}{\color{black}\Large\bfseries #1\vphantom{fj}}
+}
+\setlength\fboxsep{10pt}
 \begin{document}
 
  % Title block with title, author, logo, etc.
@@ -83,11 +89,9 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 
 \block[titleleft]{Give it a try!}{
 \begin{itemize}
- \item  Leave a comment at \url{http:/someurl.com}
- \item Check Github issue list at \url{https://github.com}
- \item Use the laptop next to this poster or your own device
-%  \includgraphics{qr-paperhive.pdf}
-[QR code goes here]
+ \item  Leave a comment at \url{https://paperhive.org/documents/remote?type=langsci&id=oldmacdonald}
+ \item Check Github issue list at \url{https://github.com/langsci/oldmacdonald/issues}\\
+ \parbox{10cm}{\item Use the laptop next to this poster or your own device}~~\parbox{6cm}{\includegraphics[width=5cm]{qrcode.eps}} 
 \end{itemize}
 }
 
@@ -108,10 +112,11 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 % \end{subcolumns}
 
  % Bottomblock
-\block[titleleft]{Funding}{
-\includegraphics[width=2cm]{prototypefund.pdf}Prototypefund
-    
-}
+% \block{}{\hfill
+% \raggedright
+% Supported by
+% \includegraphics[width=13mm]{prototypefund.pdf}Prototypefund   
+% }
  % FIRST column
 \column{0.8}% Width set relative to text width
 
@@ -123,19 +128,19 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 \def \margin {8} % margin in angles, depends on the radius
 \def \offset {110} 
 
-\node[draw, rectangle, text width=30cm] (src) at ({90 * (4 - 1) + \offset}:\radius) [xshift=15cm] {\pictitle{edit}\\\includegraphics[width=30cm]{src.png}};
-\node[draw, rectangle, text width=13cm] (pdf) at ({90 * (3 - 1) + \offset}:\radius) [xshift=10cm]  {\pictitle{publish}\\\includegraphics[width=13cm]{pdf.png}};
-\node[draw, rectangle, text width=30cm] (ph)  at ({90 * (2 - 1) + \offset}:\radius) {\pictitle{annotate}\\\includegraphics[width=30cm]{paperhive.png}};
-\node[draw, rectangle, text width=15cm] (gh)  at ({90 * (1 - 1) + \offset}:\radius) {\pictitle{manage issues}\\ \includegraphics[width=15cm]{github.png}};
+\node[draw, rectangle, text width=38cm] (src) at ({90 * (4 - 1) + \offset}:\radius) [xshift=15cm, yshift=1cm] {\pictitle{Editor}\\\includegraphics[width=38cm]{src.png}};
+\node[draw, rectangle, text width=15cm] (pdf) at ({90 * (3 - 1) + \offset}:\radius) [xshift=10cm]  {\pictitle{Viewer}\\\includegraphics[width=15cm]{pdf.png}};
+\node[draw, rectangle, text width=38cm] (ph)  at ({90 * (2 - 1) + \offset}:\radius) {\pictitle{PaperHive}\\\includegraphics[width=38cm]{paperhive.png}};
+\node[draw, rectangle, text width=17cm] (gh)  at ({90 * (1 - 1) + \offset}:\radius) {\pictitle{Issue tracker}\\ \includegraphics[width=17cm]{github.png}};
   
  
-\path[line width=1.5mm, bend right=20, out=30, in=130,->] (src.south east) edge ["generate"]   (pdf.east) {};  
-\path[line width=1.5mm, bend left=20, out=30, in=130,->] (pdf.south west) edge ["upload"]     (ph.south) {};  
-\path[line width=1.5mm, bend right=20, out=30, in=130,->,loosely dashed, blue] (ph.north west) edge ["harvest comments"]     (gh.west) {};  
-\path[line width=1.5mm, bend right=20, out=30, in=130,->] (gh.north east) edge ["address issues"]     (src.north) {};   
+\path[line width=5mm,,lightgray, bend right=20, out=30, in=150,->] (src.south east) edge ["\arrowlabel{generate pdf}"]   (pdf.east) {};  
+\path[line width=5mm,,lightgray, bend left=20, out=30, in=130,->] (pdf.south west) edge ["\arrowlabel{send to PaperHive}"]     (ph.south) {};  
+\path[line width=5mm, bend right=20, out=30, in=150,->,dash pattern=on 3pt off 12pt, blue] (ph.north west) edge ["\arrowlabel{harvest comments}"]     (gh.west) {};  
+\path[line width=5mm,,lightgray, bend right=20, out=30, in=130,->] (gh.north east) edge ["\arrowlabel{address issues}"]     (src.north) {};   
 
 % % \node [right of=src] {test};
-\node [left = 6cm of gh,yshift=-3cm] {\includegraphics[width=5cm]{docloop.pdf}};
+\node [left = 6cm of gh,yshift=-6cm] {\includegraphics[width=5cm]{docloop.pdf}};
 \end{tikzpicture}
 }
 % \note{Note with default behavior}
