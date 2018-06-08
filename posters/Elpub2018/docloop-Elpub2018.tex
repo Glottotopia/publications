@@ -49,12 +49,15 @@
  % Title block with title, author, logo, etc.
 \maketitle
 \begin{columns} 
-\column{0.66}  
-\block[titleleft]{Use case\vphantom{j}}{
+\column{0.22}  
+\block[titleleft]{Starting point\vphantom{j}}{
 Readers can already annotate documents on the web with PaperHive or hypothes.is. But how to get their comments to the original authors in a usefule format? 
+}
+\column{0.45}  
+\block[titleleft]{Solution\vphantom{j}}{
  DocLoop closes a gap between annotations on the readers side todo lists on the author's side. Readers' comments are directly fed into author's issue management tools. These comments can easily be addressed in future versions of the document. Which can then be annotated. And fed into todo lists. And incorporated. Repeat ad lib.
  }
-\column{0.33}  
+\column{0.32}  
 \block[titleleft]{Empowerment}{
  A low-threshold way to leave comments makes it easier for demographic groups less represented in academia to make their voice heard. 
  This is especially impotant for textbooks, which should reflect the diversity of human society. 
@@ -128,7 +131,7 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 \def \margin {8} % margin in angles, depends on the radius
 \def \offset {110} 
 
-\node[draw, rectangle, text width=38cm] (src) at ({90 * (4 - 1) + \offset}:\radius) [xshift=15cm, yshift=1cm] {\pictitle{Editor}\\\includegraphics[width=38cm]{src.png}};
+\node[draw, rectangle, text width=38cm] (src) at ({90 * (4 - 1) + \offset}:\radius) [xshift=15cm, yshift=2cm] {\pictitle{Editor}\\\includegraphics[width=38cm]{src.png}};
 \node[draw, rectangle, text width=15cm] (pdf) at ({90 * (3 - 1) + \offset}:\radius) [xshift=10cm]  {\pictitle{Viewer}\\\includegraphics[width=15cm]{pdf.png}};
 \node[draw, rectangle, text width=38cm] (ph)  at ({90 * (2 - 1) + \offset}:\radius) {\pictitle{PaperHive}\\\includegraphics[width=38cm]{paperhive.png}};
 \node[draw, rectangle, text width=17cm] (gh)  at ({90 * (1 - 1) + \offset}:\radius) {\pictitle{Issue tracker}\\ \includegraphics[width=17cm]{github.png}};
