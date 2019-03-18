@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -e 'create table paperhive (bookID int, commentID int,  proofreaderID text,  pagenumber int,  startpos int,  endpos int,  title text,  body text);\n.mode csv\n.separator "\t"\n.import all.tsv paperhive' | sqlite3 paperhive.db
