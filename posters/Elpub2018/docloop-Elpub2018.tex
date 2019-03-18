@@ -25,7 +25,7 @@
 \documentclass[a0paper,landscape]{tikzposter} %Options for format can be included here
 
  % Title, Author, Institute
-\title{DocLoop-OER
+\title{DocLoop: harvesting reader feedback for Open Educational Resources
 %  Channelling reader feedback into Open Educational Resources
  }
 \author{Sebastian Nordhoff \& Andreas Pittrich}
@@ -47,15 +47,15 @@
 \begin{document}
 
  % Title block with title, author, logo, etc.
-\maketitle
+\maketitle[width=85cm]
 \begin{columns} 
-\column{0.22}  
+\column{0.23}  
 \block[titleleft]{Starting point\vphantom{j}}{
-Readers can already annotate documents on the web with PaperHive or hypothes.is. But how to get their comments to the original authors in a usefule format? 
+Readers can already annotate documents on the web with PaperHive or hypothes.is. But how to get their comments to the original authors in a useful format? 
 }
 \column{0.45}  
 \block[titleleft]{Solution\vphantom{j}}{
- DocLoop closes a gap between annotations on the readers side todo lists on the author's side. Readers' comments are directly fed into author's issue management tools. These comments can easily be addressed in future versions of the document. Which can then be annotated. And fed into todo lists. And incorporated. Repeat ad lib.
+ DocLoop closes a gap between annotations on the readers side and todo lists on the author's side. Readers' comments are directly fed into author's issue management tools. These comments can easily be addressed in future versions of the document. Which can then be annotated. And fed into todo lists. And incorporated. Repeat ad lib.
  }
 \column{0.32}  
 \block[titleleft]{Empowerment}{
@@ -78,14 +78,15 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 } 
 
 \begin{subcolumns}
-    \subcolumn{0.5} \block{Source adapters}{PaperHive\\ (hypothes.is)}
-    \subcolumn{0.5} \block{Target adapters}{GitHub\\(Trello)\\(Redmine)\\(Wiki)}
+    \subcolumn{0.5} \block{Source adapters}{\begin{itemize}\item PaperHive\item (hypothes.is)\end{itemize} }
+    \subcolumn{0.5} \block{Target adapters}{\begin{itemize}\item GitHub\item(Trello)\item(Redmine)\item(Wiki)\end{itemize}}
 \end{subcolumns}
 
 \block[titleleft]{Technology}{
 \begin{itemize}  
  \item  Node.JS
  \item  MongoDB 
+ \item \url{https://github.com/docLoop}
  \item GNU General Public License v3.0
 \end{itemize}
 }
@@ -94,7 +95,7 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 \begin{itemize}
  \item  Leave a comment at \url{https://paperhive.org/documents/remote?type=langsci&id=oldmacdonald}
  \item Check Github issue list at \url{https://github.com/langsci/oldmacdonald/issues}\\
- \parbox{10cm}{\item Use the laptop next to this poster or your own device}~~\parbox{6cm}{\includegraphics[width=5cm]{qrcode.eps}} 
+ \parbox{10cm}{\item Use the laptop next to this poster or your own device}~~\parbox{5cm}{\includegraphics[width=4cm]{qrcode.eps}} 
 \end{itemize}
 }
 
@@ -115,11 +116,16 @@ Readers can already annotate documents on the web with PaperHive or hypothes.is.
 % \end{subcolumns}
 
  % Bottomblock
-% \block{}{\hfill
-% \raggedright
+\block{}{ 
 % Supported by
 % \includegraphics[width=13mm]{prototypefund.pdf}Prototypefund   
-% }
+\scriptsize\noindent
+The 22nd International Conference on Electronic Publishing.
+Connecting the Knowledge Commons: 
+From Projects to Sustainable Infrastructure.
+June 2018.
+University of Toronto
+}
  % FIRST column
 \column{0.8}% Width set relative to text width
 
