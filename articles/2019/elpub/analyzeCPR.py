@@ -308,13 +308,14 @@ for book in d:
     for i, c in enumerate(lengthranks): 
         pr = c[1]
         avgrankd[pr] = i #store rank of this proofreader 
-    countvalues = [countrankd[key] for key in countrankd]    
-    avgvalues = [avgrankd[key] for key in countrankd]   
+    factor = 50/len(countrankd)
+    countvalues = [countrankd[key]*factor for key in countrankd]    
+    avgvalues = [avgrankd[key]*factor for key in countrankd]   
     
     print(lengthranks) 
     for i,k in enumerate(countvalues):
         ax1.scatter(countvalues[i],avgvalues[i])
-        plt.text(countvalues[i], avgvalues[i], [x[:3] for x in countrankd.keys()][i], fontsize=9)
+        #plt.text(countvalues[i], avgvalues[i], [x[:3] for x in countrankd.keys()][i], fontsize=9)
 fig1.show()
 fig1.savefig("allscatter.png")
 
