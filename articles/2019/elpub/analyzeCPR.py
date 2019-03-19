@@ -242,44 +242,68 @@ pagenumbers={
         
     
 #avg title length
-titles = [x[0] for x in session.query(Paperhive.title).all()]
-bodies = [x[0] for x in session.query(Paperhive.body).all()]
+#titles = [x[0] for x in session.query(Paperhive.title).all()]
+#bodies = [x[0] for x in session.query(Paperhive.body).all()]
  
-titlelengths = [len(x) for x in titles]
-bodylengths = [len(x) for x in bodies if x!='']
+#titlelengths = [len(x) for x in titles]
+#bodylengths = [len(x) for x in bodies if x!='']
  
-avgtitlelength = sum(titlelengths)/len(titlelengths)
-avgbodylength = sum(bodylengths)/len(bodylengths)
+#avgtitlelength = sum(titlelengths)/len(titlelengths)
+#avgbodylength = sum(bodylengths)/len(bodylengths)
 
 
-print("Average title length:",avgtitlelength)
-print("Average body length:",avgbodylength)
+#print("Average title length:",avgtitlelength)
+#print("Average body length:",avgbodylength)
 
-boxplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength.png")  
-barplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength_b.png")  
+#boxplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength.png")  
+#barplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength_b.png")  
 
-boxplot(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength.png")  
-power(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength_p.png") 
+#boxplot(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength.png")  
+#power(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength_p.png") 
 
-mostfrequentcomments = ['"%s": %s'%x 
-                            for x in 
-                            session.query(Paperhive.title,
-                                          func.count(distinct(Paperhive.commentID)).label('count')
-                                          ).group_by(Paperhive.title)\
-                                        .order_by('count')\
-                                        .all()[-25:][::-1]
-                        ]
-print("Most frequent comments")                            
-print("\n".join(["\t%s"%x for x in mostfrequentcomments]))                            
+#mostfrequentcomments = ['"%s": %s'%x 
+                            #for x in 
+                            #session.query(Paperhive.title,
+                                          #func.count(distinct(Paperhive.commentID)).label('count')
+                                          #).group_by(Paperhive.title)\
+                                        #.order_by('count')\
+                                        #.all()[-25:][::-1]
+                        #]
+#print("Most frequent comments")                            
+#print("\n".join(["\t%s"%x for x in mostfrequentcomments]))                            
 
 #cluster
 fourtuple = session.query(Paperhive.bookID,Paperhive.proofreaderID,Paperhive.title,Paperhive.body).all()
-d= {}
+d = dict(zip(pagenumbers.keys(),[{} for x in pagenumbers])) 
 for book, pr, title, body in fourtuple:
     try:
-        d[(book,pr)].append(len(title)+len(body))
+        d[book][pr].append(len(title)+len(body))
     except KeyError:
-        d[(book,pr)]=[len(title)+len(body)]
+        d[book][pr]=[len(title)+len(body)]
+for book in d: 
+    counts = []
+    avgs = []
+    countranks = []
+    lengthranks = []
+    for pr in d[book]:
+        commentcount = len(d[book][pr])
+        avgcommentlength = sum(d[book][pr])/len(d[book][pr]) 
+        counts.append(commentcount)
+        countranks.append((commentcount,pr))
+        avgs.append(avgcommentlength)
+        lengthranks.append((avgs,pr))
+    print(countranks)
+    countranks.sort()
+    print(countranks)
+    #lengthranks.sort()
+    #print(lengthranks)
+    0/0
+    fig1, ax1 = plt.subplots()
+    #plt.ylim(bottom,top)
+    ax1.set_title("count and avg length of comments (ranked)%s"%book)
+    ax1.scatter(counts,avgs)
+    fig1.show()
+    fig1.savefig("%s.png"%book)
 
 #proofreader crossed page (xy chart)
 
