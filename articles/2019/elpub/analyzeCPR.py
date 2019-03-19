@@ -323,9 +323,6 @@ pagenumbers={
 
 fivetuple = session.query(Paperhive.bookID,Paperhive.proofreaderID,Paperhive.pagenumber,Paperhive.title,Paperhive.body).all()
 
-fig1, ax1 = plt.subplots()
-#plt.ylim(bottom,top)
-ax1.set_title("relative comment length per stretch")
 d = {}
 for book, proofreader, pagenumber, title, body in fivetuple: 
     try:
@@ -340,6 +337,7 @@ for book, proofreader, pagenumber, title, body in fivetuple:
 #pprint.pprint(d)        
 masterratios = []
 masterprogress = []
+masterpageprogress = []
 for key in d: 
     pagenumbers = sorted(d[key].keys())
     #print(pagenumbers)
@@ -352,23 +350,46 @@ for key in d:
         except IndexError: #reached end of list
             stretches = [pagenumbers[i:j] for i, j in zip([0] + splitters, splitters + [None])] 
     for stretch in stretches:
-        stretchlength = stretch[-1]-stretch[0]
+        startpage = stretch[0]
+        stretchlength = stretch[-1]-stretch[0]+1
         stretchcomments = []
+        consolidatedpagecomments = []
+        pageswithcomments = []
         for pagenumber in stretch:
             pagecomments = d[key][pagenumber]
             stretchcomments += pagecomments
+            commentsthispage = len(pagecomments)
+            pageswithcomments += [(pagenumber+1-startpage) for x in range(commentsthispage)]  
         totalstretchcomments = len(stretchcomments)
         totallengthcomments = sum(stretchcomments)
         avglengthcomment = totallengthcomments/totalstretchcomments
-        ratios = [(x/avglengthcomment)**.05 for x in stretchcomments] #dampen outliers
+        ratios = [(x/avglengthcomment) for x in stretchcomments] 
         progress = [n/len(stretchcomments) for n, x in enumerate(stretchcomments)]
+        print(pageswithcomments)
+        print(stretchlength)
+        pageprogress = [p/stretchlength for p in pageswithcomments]
+        print(pageprogress)
         masterratios += ratios
-        masterprogress += progress
+        masterprogress += progress 
+        masterpageprogress += pageprogress
         #print(zip(progress,ratios))
-ax1.scatter(masterprogress,masterratios,s=.1)
-plt.plot(np.unique(masterprogress), np.poly1d(np.polyfit(masterprogress, masterratios, 1))(np.unique(masterprogress)))
+        
+#fig1, ax1 = plt.subplots()
+#plt.ylim(0,5)
+#ax1.set_title("relative comment length per stretch")
+#ax1.scatter(masterprogress,masterratios,s=.1)
+#plt.plot(np.unique(masterprogress), np.poly1d(np.polyfit(masterprogress, masterratios, 1))(np.unique(masterprogress)))
+#fig1.show()
+#fig1.savefig("stretches.png")
+
+
+fig1, ax1 = plt.subplots()
+plt.ylim(0,5)
+ax1.set_title("relative comment length per stretch according to position of page")
+ax1.scatter(masterpageprogress,masterratios,s=.1)
+plt.plot(np.unique(masterpageprogress), np.poly1d(np.polyfit(masterpageprogress, masterratios, 1))(np.unique(masterpageprogress)))
 fig1.show()
-fig1.savefig("stretches.png")
+fig1.savefig("stretchespages.png")
         #normalize
         #plot
                 
