@@ -285,23 +285,36 @@ for book in d:
     avgs = []
     countranks = []
     lengthranks = []
-    for pr in d[book]:
+    
+    countrankd  = {}
+    avgrankd  = {}
+    
+    for pr in d[book]: 
         commentcount = len(d[book][pr])
         avgcommentlength = sum(d[book][pr])/len(d[book][pr]) 
         counts.append(commentcount)
         countranks.append((commentcount,pr))
         avgs.append(avgcommentlength)
-        lengthranks.append((avgs,pr))
-    print(countranks)
+        lengthranks.append((avgcommentlength,pr))        
+    #print(countranks)
     countranks.sort()
-    print(countranks)
-    #lengthranks.sort()
-    #print(lengthranks)
-    0/0
+    for i, c in enumerate(countranks): 
+        pr = c[1]
+        countrankd[pr] = i #store rank of this proofreader 
+    lengthranks.sort() 
+    for i, c in enumerate(lengthranks): 
+        pr = c[1]
+        avgrankd[pr] = i #store rank of this proofreader 
+    countvalues = [countrankd[key] for key in countrankd]    
+    avgvalues = [avgrankd[key] for key in countrankd]   
+    
+    print(lengthranks) 
     fig1, ax1 = plt.subplots()
     #plt.ylim(bottom,top)
     ax1.set_title("count and avg length of comments (ranked)%s"%book)
-    ax1.scatter(counts,avgs)
+    for i,k in enumerate(countvalues):
+        ax1.scatter(countvalues[i],avgvalues[i])
+        plt.text(countvalues[i], avgvalues[i], [x[:3] for x in countrankd.keys()][i], fontsize=9)
     fig1.show()
     fig1.savefig("%s.png"%book)
 
