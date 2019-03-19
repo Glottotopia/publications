@@ -272,6 +272,14 @@ mostfrequentcomments = ['"%s": %s'%x
 print("Most frequent comments")                            
 print("\n".join(["\t%s"%x for x in mostfrequentcomments]))                            
 
+#cluster
+fourtuple = session.query(Paperhive.bookID,Paperhive.proofreaderID,Paperhive.title,Paperhive.body).all()
+d= {}
+for book, pr, title, body in fourtuple:
+    try:
+        d[(book,pr)].append(len(title)+len(body))
+    except KeyError:
+        d[(book,pr)]=[len(title)+len(body)]
 
 #proofreader crossed page (xy chart)
 
