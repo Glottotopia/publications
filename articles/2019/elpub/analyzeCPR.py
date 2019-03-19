@@ -280,6 +280,9 @@ for book, pr, title, body in fourtuple:
         d[book][pr].append(len(title)+len(body))
     except KeyError:
         d[book][pr]=[len(title)+len(body)]
+fig1, ax1 = plt.subplots()
+#plt.ylim(bottom,top)
+ax1.set_title("count and avg length of comments (ranked)%s"%book)
 for book in d: 
     counts = []
     avgs = []
@@ -309,14 +312,11 @@ for book in d:
     avgvalues = [avgrankd[key] for key in countrankd]   
     
     print(lengthranks) 
-    fig1, ax1 = plt.subplots()
-    #plt.ylim(bottom,top)
-    ax1.set_title("count and avg length of comments (ranked)%s"%book)
     for i,k in enumerate(countvalues):
         ax1.scatter(countvalues[i],avgvalues[i])
         plt.text(countvalues[i], avgvalues[i], [x[:3] for x in countrankd.keys()][i], fontsize=9)
-    fig1.show()
-    fig1.savefig("%s.png"%book)
+fig1.show()
+fig1.savefig("allscatter.png")
 
 #proofreader crossed page (xy chart)
 
