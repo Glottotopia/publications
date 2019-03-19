@@ -7,6 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import func
 from sqlalchemy import distinct
 
+import math
 import numpy as np
 import matplotlib.pyplot as plt
 import pprint
@@ -273,51 +274,111 @@ pagenumbers={
 #print("\n".join(["\t%s"%x for x in mostfrequentcomments]))                            
 
 #cluster
-fourtuple = session.query(Paperhive.bookID,Paperhive.proofreaderID,Paperhive.title,Paperhive.body).all()
-d = dict(zip(pagenumbers.keys(),[{} for x in pagenumbers])) 
-for book, pr, title, body in fourtuple:
-    try:
-        d[book][pr].append(len(title)+len(body))
-    except KeyError:
-        d[book][pr]=[len(title)+len(body)]
+#fourtuple = session.query(Paperhive.bookID,Paperhive.proofreaderID,Paperhive.title,Paperhive.body).all()
+#d = dict(zip(pagenumbers.keys(),[{} for x in pagenumbers])) 
+#for book, pr, title, body in fourtuple:
+    #try:
+        #d[book][pr].append(len(title)+len(body))
+    #except KeyError:
+        #d[book][pr]=[len(title)+len(body)]
+#fig1, ax1 = plt.subplots()
+##plt.ylim(bottom,top)
+#ax1.set_title("count and avg length of comments (ranked)%s"%book)
+#for book in d: 
+    #counts = []
+    #avgs = []
+    #countranks = []
+    #lengthranks = []
+    
+    #countrankd  = {}
+    #avgrankd  = {}
+    
+    #for pr in d[book]: 
+        #commentcount = len(d[book][pr])
+        #avgcommentlength = sum(d[book][pr])/len(d[book][pr]) 
+        #counts.append(commentcount)
+        #countranks.append((commentcount,pr))
+        #avgs.append(avgcommentlength)
+        #lengthranks.append((avgcommentlength,pr))        
+    ##print(countranks)
+    #countranks.sort()
+    #for i, c in enumerate(countranks): 
+        #pr = c[1]
+        #countrankd[pr] = i #store rank of this proofreader 
+    #lengthranks.sort() 
+    #for i, c in enumerate(lengthranks): 
+        #pr = c[1]
+        #avgrankd[pr] = i #store rank of this proofreader 
+    #factor = 50/len(countrankd)
+    #countvalues = [countrankd[key]*factor for key in countrankd]    
+    #avgvalues = [avgrankd[key]*factor for key in countrankd]   
+    
+    #print(lengthranks) 
+    #for i,k in enumerate(countvalues):
+        #ax1.scatter(countvalues[i],avgvalues[i])
+        ##plt.text(countvalues[i], avgvalues[i], [x[:3] for x in countrankd.keys()][i], fontsize=9)
+#fig1.show()
+#fig1.savefig("allscatter.png")
+
+
+fivetuple = session.query(Paperhive.bookID,Paperhive.proofreaderID,Paperhive.pagenumber,Paperhive.title,Paperhive.body).all()
+
 fig1, ax1 = plt.subplots()
 #plt.ylim(bottom,top)
-ax1.set_title("count and avg length of comments (ranked)%s"%book)
-for book in d: 
-    counts = []
-    avgs = []
-    countranks = []
-    lengthranks = []
-    
-    countrankd  = {}
-    avgrankd  = {}
-    
-    for pr in d[book]: 
-        commentcount = len(d[book][pr])
-        avgcommentlength = sum(d[book][pr])/len(d[book][pr]) 
-        counts.append(commentcount)
-        countranks.append((commentcount,pr))
-        avgs.append(avgcommentlength)
-        lengthranks.append((avgcommentlength,pr))        
-    #print(countranks)
-    countranks.sort()
-    for i, c in enumerate(countranks): 
-        pr = c[1]
-        countrankd[pr] = i #store rank of this proofreader 
-    lengthranks.sort() 
-    for i, c in enumerate(lengthranks): 
-        pr = c[1]
-        avgrankd[pr] = i #store rank of this proofreader 
-    factor = 50/len(countrankd)
-    countvalues = [countrankd[key]*factor for key in countrankd]    
-    avgvalues = [avgrankd[key]*factor for key in countrankd]   
-    
-    print(lengthranks) 
-    for i,k in enumerate(countvalues):
-        ax1.scatter(countvalues[i],avgvalues[i])
-        #plt.text(countvalues[i], avgvalues[i], [x[:3] for x in countrankd.keys()][i], fontsize=9)
+ax1.set_title("relative comment length per stretch")
+d = {}
+for book, proofreader, pagenumber, title, body in fivetuple: 
+    try:
+        d[(book,proofreader)]
+    except KeyError:        
+        d[(book,proofreader)] = {}
+    try:
+        d[(book,proofreader)][pagenumber]
+    except KeyError:
+        d[(book,proofreader)][pagenumber] = []
+    d[(book,proofreader)][pagenumber].append(len(title)+len(body))
+#pprint.pprint(d)        
+masterratios = []
+masterprogress = []
+for key in d: 
+    pagenumbers = sorted(d[key].keys())
+    #print(pagenumbers)
+    splitters = []
+    stretches = [[pagenumbers]]
+    for i,number in enumerate(pagenumbers):
+        try:
+            if pagenumbers[i+1] > pagenumbers[i] + 20: 
+                splitters.append(i+1)
+        except IndexError: #reached end of list
+            stretches = [pagenumbers[i:j] for i, j in zip([0] + splitters, splitters + [None])] 
+    for stretch in stretches:
+        stretchlength = stretch[-1]-stretch[0]
+        stretchcomments = []
+        for pagenumber in stretch:
+            pagecomments = d[key][pagenumber]
+            stretchcomments += pagecomments
+        totalstretchcomments = len(stretchcomments)
+        totallengthcomments = sum(stretchcomments)
+        avglengthcomment = totallengthcomments/totalstretchcomments
+        ratios = [(x/avglengthcomment)**.05 for x in stretchcomments] #dampen outliers
+        progress = [n/len(stretchcomments) for n, x in enumerate(stretchcomments)]
+        masterratios += ratios
+        masterprogress += progress
+        #print(zip(progress,ratios))
+ax1.scatter(masterprogress,masterratios,s=.1)
+plt.plot(np.unique(masterprogress), np.poly1d(np.polyfit(masterprogress, masterratios, 1))(np.unique(masterprogress)))
 fig1.show()
-fig1.savefig("allscatter.png")
+fig1.savefig("stretches.png")
+        #normalize
+        #plot
+                
+        #commentcount = len(d[book][pr])
+        #avgcommentlength = sum(d[book][pr])/len(d[book][pr]) 
+        #counts.append(commentcount)
+        #countranks.append((commentcount,pr))
+        #avgs.append(avgcommentlength)
+        #lengthranks.append((avgcommentlength,pr))        
+
 
 #proofreader crossed page (xy chart)
 
