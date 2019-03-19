@@ -41,6 +41,21 @@ def boxplot(data, bottom, top, label, filename):
     fig1.show()
     fig1.savefig(filename)
     
+def barplot(data, bottom, top, label, filename):
+    fig1, ax1 = plt.subplots()
+    #plt.ylim(bottom,top)
+    ax1.set_title(label)
+    min_ = min(data)
+    max_ = max(data)
+    x = [i+min_ for i in range(max_+1-min_)]
+    d = dict(zip(x,[0 for i in x]))
+    for el in data: 
+        d[el] += 1
+    y = [d[i] for i in x]
+    plt.bar(x,y)
+    fig1.show()
+    fig1.savefig(filename)
+    
 def scatter(data, bottom, top, label, filename):
     fig1, ax1 = plt.subplots()
     plt.ylim(bottom,top)
@@ -193,39 +208,69 @@ pagenumbers={
 #power(commentsperproofreaderlist,0,max(commentsperproofreaderlist)+1,'Comments per proofreader',"commentsperproofreader_p.png") 
 
 #longest streak
-proofreaderbookpagetuples = session.query(Paperhive.proofreaderID,Paperhive.bookID,Paperhive.pagenumber).distinct().all()
-proofreaderbookpagetuples.sort()
-maxstreak = 0   
-proofreaders = [x[0] for x in proofreaderbookpagetuples]
-bookIDs= [x[1] for x in proofreaderbookpagetuples]
-pages = [x[2] for x in proofreaderbookpagetuples]
-d = {}
-for proofreader in proofreaders:
-    d[proofreader] = {}
-    for bookID in bookIDs:
-        d[proofreader][bookID] = []
-for pr, b, pg in proofreaderbookpagetuples: 
-        d[pr][b].append(pg) 
-for pr in d:
-    for b in d[pr]:
-        maxcount = 0
-        pagelist = sorted(d[pr][b])
-        count = 1
-        for i, p in enumerate(pagelist):
-            try:
-                if pagelist[i+1] == pagelist[i]+1:
-                    count += 1
-                    if count > maxcount:
-                        maxcount = count
-                else:
-                    count = 1
-            except IndexError:
-                pass
-        if maxcount > maxstreak:
-            print("Proofreader %s has %s consecutive pages with comments in book %s" %( pr,maxcount,b))            
-            maxstreak = maxcount
+#proofreaderbookpagetuples = session.query(Paperhive.proofreaderID,Paperhive.bookID,Paperhive.pagenumber).distinct().all()
+#proofreaderbookpagetuples.sort()
+#maxstreak = 0   
+#proofreaders = [x[0] for x in proofreaderbookpagetuples]
+#bookIDs= [x[1] for x in proofreaderbookpagetuples]
+#pages = [x[2] for x in proofreaderbookpagetuples]
+#d = {}
+#for proofreader in proofreaders:
+    #d[proofreader] = {}
+    #for bookID in bookIDs:
+        #d[proofreader][bookID] = []
+#for pr, b, pg in proofreaderbookpagetuples: 
+        #d[pr][b].append(pg) 
+#for pr in d:
+    #for b in d[pr]:
+        #maxcount = 0
+        #pagelist = sorted(d[pr][b])
+        #count = 1
+        #for i, p in enumerate(pagelist):
+            #try:
+                #if pagelist[i+1] == pagelist[i]+1:
+                    #count += 1
+                    #if count > maxcount:
+                        #maxcount = count
+                #else:
+                    #count = 1
+            #except IndexError:
+                #pass
+        #if maxcount > maxstreak:
+            #print("Proofreader %s has %s consecutive pages with comments in book %s" %( pr,maxcount,b))            
+            #maxstreak = maxcount
         
     
+#avg title length
+titles = [x[0] for x in session.query(Paperhive.title).all()]
+bodies = [x[0] for x in session.query(Paperhive.body).all()]
+ 
+titlelengths = [len(x) for x in titles]
+bodylengths = [len(x) for x in bodies if x!='']
+ 
+avgtitlelength = sum(titlelengths)/len(titlelengths)
+avgbodylength = sum(bodylengths)/len(bodylengths)
+
+
+print("Average title length:",avgtitlelength)
+print("Average body length:",avgbodylength)
+
+boxplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength.png")  
+barplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength_b.png")  
+
+boxplot(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength.png")  
+power(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength_p.png") 
+
+mostfrequentcomments = ['"%s": %s'%x 
+                            for x in 
+                            session.query(Paperhive.title,
+                                          func.count(distinct(Paperhive.commentID)).label('count')
+                                          ).group_by(Paperhive.title)\
+                                        .order_by('count')\
+                                        .all()[-25:][::-1]
+                        ]
+print("Most frequent comments")                            
+print("\n".join(["\t%s"%x for x in mostfrequentcomments]))                            
 
 
 #proofreader crossed page (xy chart)
