@@ -1,8 +1,6 @@
 import sys
 import json
 import requests
-import numpy
-import matplotlib.pyplot as plt
 
 # let us first obtain the Paperhive document ID related to a LangSci book ID
 lsID = sys.argv[1]
