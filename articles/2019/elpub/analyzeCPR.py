@@ -134,7 +134,7 @@ pagenumbers={
 #output 
 print("number of books",len(session.query(Paperhive.bookID).distinct().all()))
 
-#totalpages = sum([pagenumbers[key] for key in pagenumbers.keys()])
+totalpages = sum([pagenumbers[key] for key in pagenumbers.keys()])
 print("total number of pages",totalpages)
 
 print("number of pages with comments",len(session.query(Paperhive.bookID,Paperhive.pagenumber).distinct().all()))
