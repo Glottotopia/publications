@@ -132,147 +132,133 @@ pagenumbers={
 }
  
 #output 
-#print("number of books",len(session.query(Paperhive.bookID).distinct().all()))
+print("number of books",len(session.query(Paperhive.bookID).distinct().all()))
 
 #totalpages = sum([pagenumbers[key] for key in pagenumbers.keys()])
-#print("total number of pages",totalpages)
+print("total number of pages",totalpages)
 
-#print("number of pages with comments",len(session.query(Paperhive.bookID,Paperhive.pagenumber).distinct().all()))
-
-#totalcomments=len(session.query(Paperhive.bookID,Paperhive.commentID).distinct().all())
-#print("number of comments",totalcomments) 
-
-#print("number of different proofreaders",len(session.query(Paperhive.proofreaderID).distinct().all()))
-
-#print("avg number of comments per page",(0.0+totalcomments)/totalpages)
-
-#for bookID in pagenumbers:
-    #numberofcomments = totalcomments=len(session.query(Paperhive)\
-                                            #.filter(Paperhive.bookID==bookID)\
-                                            #.all()
-                                            #)
-    ##print("{}: {} comments; {:.2f} per page".format(bookID, numberofcomments,  (0.0+numberofcomments)/pagenumbers[bookID]))
-    
-##booklength    
-#booklengths = [pagenumbers[key] for key in pagenumbers]
-#boxplot(booklengths,0,max(booklengths)+10,'Book lengths in pages',"booklengths.png")
-##scatter(booklengths,0,max(booklengths)+10,'Book lengths in pages',"booklengths_s.png")
-#power(booklengths,0,max(booklengths)+10,'Book lengths in pages',"booklengths_p.png")
-
-##amount of comments
-#numberofcommentsd = dict(session.query(Paperhive.bookID,func.count(Paperhive.commentID)).group_by(Paperhive.bookID).all())
-#numberofcommentslist = [numberofcommentsd[key] for key in numberofcommentsd]
-#boxplot(numberofcommentslist,0,max(numberofcommentslist)+10,'Comments per book',"commentsperbook.png")
-##scatter(numberofcommentslist,0,max(numberofcommentslist)+10,'Comments per book',"commentsperbook_s.png")
-#power(numberofcommentslist,0,max(numberofcommentslist)+10,'Comments per book',"commentsperbook_p.png")
-
-##comment density
-#commentsperpage = {}
-#for key in pagenumbers:
-    #commentsperpage[key] = numberofcommentsd[key]/pagenumbers[key]
-
-#commentsperpagelist = [commentsperpage[key] for key in commentsperpage]
-#boxplot(commentsperpagelist,0,max(commentsperpagelist)+1,'Comments per page per book',"commentsperpageperbook.png")
-##scatter(commentsperpagelist,0,max(commentsperpagelist)+1,'Comments per page per book',"commentsperpageperbook_s.png")
-#power(commentsperpagelist,0,max(commentsperpagelist)+1,'Comments per page per book',"commentsperpageperbook_p.png")
-
-
-##number of proofreaders (long tail) 
-#proofreadersperbook = sorted(session.query(func.count(distinct(Paperhive.proofreaderID)), Paperhive.bookID ).group_by(Paperhive.bookID).all(),reverse=True)
-#proofreadersperbooklist = [x[0] for x in proofreadersperbook]
-#boxplot(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook.png") 
-#barplot(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook_b.png") 
-##scatter(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook_s.png") 
-#power(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook_p.png") 
-    
-##Comments for each page    
-#commentsforeachpage = session.query(Paperhive.bookID,Paperhive.pagenumber,func.count(Paperhive.commentID)).group_by(Paperhive.bookID, Paperhive.pagenumber).all()
-#print("highest number of comments: book %s on page %s has %s comments"% sorted(commentsforeachpage, key=lambda x: x[2])[-1])
-#commentsforeachpagelist = sorted(x[2] for x in commentsforeachpage)
-#boxplot(commentsforeachpagelist,0,max(commentsforeachpagelist)+1,'Comments per page',"commentsperpage.png")  
-#power(commentsforeachpagelist,0,max(commentsforeachpagelist)+1,'Comments per page',"commentsperpage_p.png")  
-
-##books per proofreader 
-#booksperproofreader = sorted(session.query(func.count(distinct(Paperhive.bookID)), Paperhive.proofreaderID ).group_by(Paperhive.proofreaderID).all(),reverse=True)
-#booksperproofreaderlist = [x[0] for x in booksperproofreader]
-#power(booksperproofreaderlist,0,max(booksperproofreaderlist)+1,'Books per proofreader',"booksperproofreader_p.png") 
-
-
-##pages per proofreader #TODO
-#pagesperproofreader = sorted(session.query(func.count(Paperhive.pagenumber), Paperhive.proofreaderID).distinct(Paperhive.bookID,Paperhive.pagenumber).group_by(Paperhive.pagenumber,Paperhive.bookID).all(),reverse=True)
-#pagesperproofreaderlist = [x[0] for x in pagesperproofreader]
-#power(pagesperproofreaderlist,0,max(pagesperproofreaderlist)+1,'Pages per proofreader',"pagesperproofreader_p.png") 
-
-##comments per proofreader 
-#commentsperproofreader = sorted(session.query(func.count(Paperhive.commentID), Paperhive.proofreaderID).group_by(Paperhive.proofreaderID).all(),reverse=True)
-#commentsperproofreaderlist = [x[0] for x in commentsperproofreader]
-#power(commentsperproofreaderlist,0,max(commentsperproofreaderlist)+1,'Comments per proofreader',"commentsperproofreader_p.png") 
-
-##longest streak
-#proofreaderbookpagetuples = session.query(Paperhive.proofreaderID,Paperhive.bookID,Paperhive.pagenumber).distinct().all()
-#proofreaderbookpagetuples.sort()
-#maxstreak = 0   
-#streaktext = ''
-#proofreaders = [x[0] for x in proofreaderbookpagetuples]
-#bookIDs= [x[1] for x in proofreaderbookpagetuples]
-#pages = [x[2] for x in proofreaderbookpagetuples]
-#d = {}
-#for proofreader in proofreaders:
-    #d[proofreader] = {}
-    #for bookID in bookIDs:
-        #d[proofreader][bookID] = []
-#for pr, b, pg in proofreaderbookpagetuples: 
-        #d[pr][b].append(pg) 
-#for pr in d:
-    #for b in d[pr]:
-        #maxcount = 0
-        #pagelist = sorted(d[pr][b])
-        #count = 1
-        #for i, p in enumerate(pagelist):
-            #try:
-                #if pagelist[i+1] == pagelist[i]+1:
-                    #count += 1
-                    #if count > maxcount:
-                        #maxcount = count
-                #else:
-                    #count = 1
-            #except IndexError:
-                #pass
-        #if maxcount > maxstreak:
-            #streaktext = "Proofreader %s has %s consecutive pages with comments in book %s" %( pr,maxcount,b)            
-            #maxstreak = maxcount
-#print(streaktext)        
-    
-##avg title length
-#titles = [x[0] for x in session.query(Paperhive.title).all()]
-#bodies = [x[0] for x in session.query(Paperhive.body).all()]
+print("number of pages with comments",len(session.query(Paperhive.bookID,Paperhive.pagenumber).distinct().all()))
  
-#titlelengths = [len(x) for x in titles]
-#bodylengths = [len(x) for x in bodies if x!='']
+#booklength    
+booklengths = [pagenumbers[key] for key in pagenumbers]
+boxplot(booklengths,0,max(booklengths)+10,'Book lengths in pages',"booklengths.png")
+#scatter(booklengths,0,max(booklengths)+10,'Book lengths in pages',"booklengths_s.png")
+power(booklengths,0,max(booklengths)+10,'Book lengths in pages',"booklengths_p.png")
+
+#amount of comments
+numberofcommentsd = dict(session.query(Paperhive.bookID,func.count(Paperhive.commentID)).group_by(Paperhive.bookID).all())
+numberofcommentslist = [numberofcommentsd[key] for key in numberofcommentsd]
+boxplot(numberofcommentslist,0,max(numberofcommentslist)+10,'Comments per book',"commentsperbook.png")
+#scatter(numberofcommentslist,0,max(numberofcommentslist)+10,'Comments per book',"commentsperbook_s.png")
+power(numberofcommentslist,0,max(numberofcommentslist)+10,'Comments per book',"commentsperbook_p.png")
+
+#comment density
+commentsperpage = {}
+for key in pagenumbers:
+    commentsperpage[key] = numberofcommentsd[key]/pagenumbers[key]
+
+commentsperpagelist = [commentsperpage[key] for key in commentsperpage]
+boxplot(commentsperpagelist,0,max(commentsperpagelist)+1,'Comments per page per book',"commentsperpageperbook.png")
+#scatter(commentsperpagelist,0,max(commentsperpagelist)+1,'Comments per page per book',"commentsperpageperbook_s.png")
+power(commentsperpagelist,0,max(commentsperpagelist)+1,'Comments per page per book',"commentsperpageperbook_p.png")
+
+
+#number of proofreaders (long tail) 
+proofreadersperbook = sorted(session.query(func.count(distinct(Paperhive.proofreaderID)), Paperhive.bookID ).group_by(Paperhive.bookID).all(),reverse=True)
+proofreadersperbooklist = [x[0] for x in proofreadersperbook]
+boxplot(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook.png") 
+barplot(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook_b.png") 
+#scatter(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook_s.png") 
+power(proofreadersperbooklist,0,max(proofreadersperbooklist)+1,'Proofreaders per book',"proofreadersperbook_p.png") 
+    
+#Comments for each page    
+commentsforeachpage = session.query(Paperhive.bookID,Paperhive.pagenumber,func.count(Paperhive.commentID)).group_by(Paperhive.bookID, Paperhive.pagenumber).all()
+print("highest number of comments: book %s on page %s has %s comments"% sorted(commentsforeachpage, key=lambda x: x[2])[-1])
+commentsforeachpagelist = sorted(x[2] for x in commentsforeachpage)
+boxplot(commentsforeachpagelist,0,max(commentsforeachpagelist)+1,'Comments per page',"commentsperpage.png")  
+power(commentsforeachpagelist,0,max(commentsforeachpagelist)+1,'Comments per page',"commentsperpage_p.png")  
+
+#books per proofreader 
+booksperproofreader = sorted(session.query(func.count(distinct(Paperhive.bookID)), Paperhive.proofreaderID ).group_by(Paperhive.proofreaderID).all(),reverse=True)
+booksperproofreaderlist = [x[0] for x in booksperproofreader]
+power(booksperproofreaderlist,0,max(booksperproofreaderlist)+1,'Books per proofreader',"booksperproofreader_p.png") 
+
+
+#pages per proofreader #TODO
+pagesperproofreader = sorted(session.query(func.count(Paperhive.pagenumber), Paperhive.proofreaderID).distinct(Paperhive.bookID,Paperhive.pagenumber).group_by(Paperhive.pagenumber,Paperhive.bookID).all(),reverse=True)
+pagesperproofreaderlist = [x[0] for x in pagesperproofreader]
+power(pagesperproofreaderlist,0,max(pagesperproofreaderlist)+1,'Pages per proofreader',"pagesperproofreader_p.png") 
+
+#comments per proofreader 
+commentsperproofreader = sorted(session.query(func.count(Paperhive.commentID), Paperhive.proofreaderID).group_by(Paperhive.proofreaderID).all(),reverse=True)
+commentsperproofreaderlist = [x[0] for x in commentsperproofreader]
+power(commentsperproofreaderlist,0,max(commentsperproofreaderlist)+1,'Comments per proofreader',"commentsperproofreader_p.png") 
+
+#longest streak
+proofreaderbookpagetuples = session.query(Paperhive.proofreaderID,Paperhive.bookID,Paperhive.pagenumber).distinct().all()
+proofreaderbookpagetuples.sort()
+maxstreak = 0   
+streaktext = ''
+proofreaders = [x[0] for x in proofreaderbookpagetuples]
+bookIDs= [x[1] for x in proofreaderbookpagetuples]
+pages = [x[2] for x in proofreaderbookpagetuples]
+d = {}
+for proofreader in proofreaders:
+    d[proofreader] = {}
+    for bookID in bookIDs:
+        d[proofreader][bookID] = []
+for pr, b, pg in proofreaderbookpagetuples: 
+        d[pr][b].append(pg) 
+for pr in d:
+    for b in d[pr]:
+        maxcount = 0
+        pagelist = sorted(d[pr][b])
+        count = 1
+        for i, p in enumerate(pagelist):
+            try:
+                if pagelist[i+1] == pagelist[i]+1:
+                    count += 1
+                    if count > maxcount:
+                        maxcount = count
+                else:
+                    count = 1
+            except IndexError:
+                pass
+        if maxcount > maxstreak:
+            streaktext = "Proofreader %s has %s consecutive pages with comments in book %s" %( pr,maxcount,b)            
+            maxstreak = maxcount
+print(streaktext)        
+    
+#avg title length
+titles = [x[0] for x in session.query(Paperhive.title).all()]
+bodies = [x[0] for x in session.query(Paperhive.body).all()]
  
-#avgtitlelength = sum(titlelengths)/len(titlelengths)
-#avgbodylength = sum(bodylengths)/len(bodylengths)
+titlelengths = [len(x) for x in titles]
+bodylengths = [len(x) for x in bodies if x!='']
+ 
+avgtitlelength = sum(titlelengths)/len(titlelengths)
+avgbodylength = sum(bodylengths)/len(bodylengths)
 
 
-#print("Average title length:",avgtitlelength)
-#print("Average body length:",avgbodylength)
+print("Average title length:",avgtitlelength)
+print("Average body length:",avgbodylength)
 
-#boxplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength.png")  
-#barplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength_b.png")  
+boxplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength.png")  
+barplot(titlelengths,0,max(titlelengths)+1,'Title length',"titlelength_b.png")  
 
-#boxplot(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength.png")  
-#power(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength_p.png") 
+boxplot(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength.png")  
+power(bodylengths,0,max(bodylengths)+1,'Body length',"bodylength_p.png") 
 
-#mostfrequentcomments = ['"%s": %s'%x 
-                            #for x in 
-                            #session.query(Paperhive.title,
-                                          #func.count(distinct(Paperhive.commentID)).label('count')
-                                          #).group_by(Paperhive.title)\
-                                        #.order_by('count')\
-                                        #.all()[-50:][::-1]
-                        #]
-#print("Most frequent comments")                            
-#print("\n".join(["\t%s"%x for x in mostfrequentcomments]))                            
+mostfrequentcomments = ['"%s": %s'%x 
+                            for x in 
+                            session.query(Paperhive.title,
+                                          func.count(distinct(Paperhive.commentID)).label('count')
+                                          ).group_by(Paperhive.title)\
+                                        .order_by('count')\
+                                        .all()[-50:][::-1]
+                        ]
+print("Most frequent comments")                            
+print("\n".join(["\t%s"%x for x in mostfrequentcomments]))                            
 
 #cluster
 fourtuple = session.query(Paperhive.bookID,Paperhive.proofreaderID,Paperhive.title,Paperhive.body).all()
